@@ -1,0 +1,68 @@
+.site__header {
+	width: 100%;
+	height: 80px;
+	background-color: #182534;
+}
+
+.header__wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__title-block {
+	display: flex;
+	align-items: center;
+}
+
+.header__logo {
+	width: 100px;
+	height: 80px;
+	background-color: #0088CC;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 30px;
+}
+
+.header__title {
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 120%;
+	color: #FFFFFF;
+}
+
+.header__telegram-block {
+	position: relative;
+	z-index: 1;
+}
+
+.header__link {
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 120%;
+	color: #FFFFFF;
+	transition: 0.3s ease;
+}
+
+.header__telegram-logo {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -25px;
+	z-index: -1;
+	transition: 0.3s ease;
+}
+
+.header__link:hover {
+	color: #0088CC;
+	.header__telegram-logo {
+		left: 150px;
+	}
+}
