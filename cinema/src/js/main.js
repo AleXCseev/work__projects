@@ -25,20 +25,35 @@ $(function () {
 		})
 
 		$(selector).swiperight(function(e) {
-			console.log("swipe")
 			if (acarousel.isAnim()) return false;
 			var move = acarousel.move(1);
 			changeActive(move);
 			return false;
 		})
 
-		setInterval(function () {
-			if (acarousel.isAnim()) return false;
-			var move = acarousel.move(-1);
-			changeActive(move);
-			return false;
+		var interval = setInterval(function () {
+			if($(window).width() > 700) {
+				if (acarousel.isAnim()) return false;
+				var move = acarousel.move(-1);
+				changeActive(move);
+				return false;
+			}
 		}, 5000)
 
+		$(selector).mouseenter(function() {
+			clearInterval(interval)
+		})
+
+		$(selector).mouseleave(function() {
+			interval = setInterval(function () {
+				if($(window).width() > 700) {
+					if (acarousel.isAnim()) return false;
+					var move = acarousel.move(-1);
+					changeActive(move);
+					return false;
+				}
+			}, 5000)
+		})
 
 		$(window).resize(function () {
 			acarousel.init();
@@ -46,6 +61,10 @@ $(function () {
 	}
 
 	carousel(".slider", ".move__mark");
+
+	$(".open__description").click(function () {
+		$(this).parents().eq(1).toggleClass("active")
+	})
 })
 
 

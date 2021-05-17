@@ -317,6 +317,10 @@
 	color: #0088CC;
 }
 
+.open__description {
+	display: none;
+}
+
 .main__link {
 	margin: auto;
 	width: 250px;
@@ -393,6 +397,14 @@
 	left: 50%;
 	transform: translateX(-50%);
 	margin-left: 740px;
+}
+
+.mobile__grains-small {
+	display: none;
+}
+
+.mobile__grains-big {
+	display: none;
 }
 
 
