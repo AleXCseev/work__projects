@@ -1,0 +1,53 @@
+.site__header {
+	width: 100%;
+	height: auto;
+	background-image: url("../img/header.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+}
+
+.header__content {
+	width: 100%;
+	height: auto;
+	margin-top: 608px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.site__title {
+	font-family: "Cormorant Garamond", serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 120px;
+	line-height: 120%;
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
+}
+
+.site__subtitle {
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 120%;
+	color: #FFFFFF;
+	margin-bottom: 100px;
+}
+
+.header__links {
+	display: flex;
+	width: 660px;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+.header__link {
+	transition: 0.3s ease;
+}
+
+.header__link:hover {
+	transform: translateY(-5px);
+}

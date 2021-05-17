@@ -126,18 +126,8 @@
 		width: 280px;
 		height: 400px;
 		position: relative;
-		transform-style: preserve-3d;
 		transition: 0.8s ease;
 		margin: 0 15px 20px;
-		&:hover {
-			transform: rotateY(180deg);
-			.card__img {
-				backface-visibility: hidden;
-			}
-			.card__description {
-				z-index: 1;
-			}
-		}
 	}
 	.card__img {
 		width: 100%;
@@ -164,7 +154,6 @@
 		display: flex;
 		flex-direction: column;
 		z-index: -1;
-		transform: rotateY(180deg);
 		transition: 0.8s ease;
 	}
 	.card__rating {
@@ -325,18 +314,19 @@
 		width: 280px;
 		height: 400px;
 		position: relative;
-		transform-style: flat;
 		transition: 0.8s ease;
 		margin: 0 0 20px;
 		margin-bottom: 129px;
 		z-index: 1000;
 		&:hover {
-			transform: none;
 			.card__img {
-				backface-visibility: visible;
+				opacity: 1;
+				visibility: visible;
 			}
 			.card__description {
 				z-index: auto;
+				opacity: 1;
+				visibility: visible;
 			}
 		}
 	}
@@ -377,6 +367,7 @@
 			left: 50%;
 			width: 100%;
 			transform: translate(-50%, -50%);
+			pointer-events: auto;
 		}
 	}
 
@@ -395,6 +386,8 @@
 		transform: none;
 		transition: 0.8s ease;
 		overflow: hidden;
+		opacity: 1;
+		visibility: visible;
 	}
 
 	.card__rating {
