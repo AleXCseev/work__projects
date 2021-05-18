@@ -1,0 +1,159 @@
+@font-face {
+  font-family: Roboto;
+  font-weight: 500;
+  src: url("../fonts/Roboto-Medium.woff2");
+}
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 900;
+  src: url("../fonts/Roboto-Black.woff2");
+}
+
+@font-face {
+  font-family: Sarpanch;
+  font-weight: 500;
+  src: url("../fonts/Sarpanch-Medium.woff2");
+}
+
+@font-face {
+  font-family: Sarpanch;
+  font-weight: 900;
+  src: url("../fonts/Sarpanch-Black.woff2");
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+img {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+*:focus-visible {
+  outline: none;
+}
+
+p {
+  width: 100%;
+}
+
+a, button {
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  background-color: #031B34;
+}
+
+.site__wrapper {
+  width: 100%;
+  height: auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.container {
+  width: 1140px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.site__header {
+  width: 100%;
+  height: auto;
+}
+
+.header__wrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+
+.header__girl {
+  position: absolute;
+  top: 0;
+  left: -200px;
+}
+
+.header__bg {
+  position: absolute;
+  top: 0;
+  left: -200px;
+}
+
+.header__avocado {
+  position: absolute;
+  top: 0;
+  right: -534px;
+}
+
+.header__title {
+  font-family: Sarpanch, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 103px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #BBFFA3;
+  text-shadow: 0 0 30px rgba(13, 22, 2, 0.5);
+  margin-top: 260px;
+}
+
+.header__subtitle {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 100px;
+}
+
+.header__btn {
+  margin-bottom: 100px;
+}

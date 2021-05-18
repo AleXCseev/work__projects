@@ -1,0 +1,60 @@
+.site__header {
+	width: 100%;
+	height: auto;
+}
+
+.header__wrapper {
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.header__girl {
+	position: absolute;
+	top: 0;
+	left: -200px;
+}
+
+.header__bg {
+	position: absolute;
+	top: 0;
+	left: -200px;
+}
+
+.header__avocado {
+	position: absolute;
+	top: 0;
+	right: -534px;
+}
+
+.header__title {
+	font-family: Sarpanch, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 103px;
+	line-height: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #BBFFA3;
+	text-shadow: 0 0 30px rgba(13, 22, 2, 0.5);
+	margin-top: 260px;
+}
+
+.header__subtitle {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: right;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 100px;
+}
+
+.header__btn {
+	margin-bottom: 100px;
+}
