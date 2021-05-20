@@ -1,0 +1,416 @@
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 1680px) {
+	.card__wrapper {
+		width: 645px;
+		right: -258px;
+	}
+	.like {
+		top: 130px;
+		left: -282px;
+	}
+	.heart {
+		top: 91px;
+		right: -282px;
+		z-index: 1;
+	}
+	.phone__img {
+		position: absolute;
+		top: 160px;
+		left: -395px;
+		width: 1100px;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 1440px) {
+	.container {
+		width: 1000px;
+	}
+	.site__main {
+		width: 100%;
+		height: 800px;
+		background-image: url("../img/bg.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		position: relative;
+	}
+	.phone__img {
+		top: 210px;
+		left: -315px;
+		width: 900px;
+	}
+	.like {
+		top: 155px;
+		left: -227px;
+		width: 150px;
+	}
+	.heart {
+		top: 116px;
+		right: -228px;
+		z-index: 1;
+		width: 150px;
+	}
+	.emoji {
+		bottom: 48px;
+		right: 290px;
+		width: 150px;
+	}
+	.main__wrapper:before {
+		right: -1050px;
+	}
+	.main__header-block {
+		margin-top: 30px;
+		margin-bottom: 80px;
+	}
+	.main__text {
+		font-size: 36px;
+		margin-right: 150px;
+	}
+	.btn__link {
+		margin-right: 150px;
+	}
+	.card__wrapper {
+		top: 80px;
+		width: 526px;
+		height: 680px;
+		right: -200px;
+	}
+	.card {
+		width: 160px;
+		height: 260px;
+	}
+	.card__column {
+		height: 542px;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 1366px) {
+	.site__main {
+		height: 740px;
+	}
+	.phone__img {
+		top: auto;
+		left: -240px;
+		width: 750px;
+		bottom: 0px;
+	}
+	.like {
+		top: 155px;
+		left: -144px;
+		width: 150px;
+	}
+	.heart {
+		top: 122px;
+		right: -157px;
+		z-index: 1;
+		width: 150px;
+	}
+	.main__text {
+		font-size: 34px;
+		margin-right: 200px;
+	}
+	.btn__link {
+		margin-right: 200px;
+	}
+	.card__wrapper {
+		top: 140px;
+		width: 460px;
+		height: 573px;
+		right: -125px;
+	}
+	.card__column {
+		height: 480px;
+	}
+	.card {
+		width: 140px;
+		height: 230px;
+	}
+}
+
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 1080px) {
+	.container {
+		width: 900px;
+	}
+	.site__main {
+		height: 700px;
+	}
+	.main__wrapper:before {
+		width: 1300px;
+		height: 1300px;
+		top: -300px;
+		right: -950px;
+	}
+	.phone__img {
+		top: auto;
+		left: -200px;
+		width: 600px;
+		bottom: 0px;
+	}
+	.like {
+		top: 140px;
+		left: -100px;
+		width: 150px;
+	}
+	.heart {
+		top: 140px;
+		right: -108px;
+		width: 150px;
+	}
+	.card__wrapper {
+		top: 140px;
+		width: 400px;
+		height: 525px;
+		right: -70px;
+	}
+	.card__column {
+		height: 418px;
+	}
+	.card {
+		width: 120px;
+		height: 200px;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 880px) {
+	.container {
+		width: 700px;
+	}
+	.site__main {
+		height: auto;
+	}
+	.card__wrapper {
+		position: static;
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.card__column {
+		height: auto;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.btn__link-2 {
+		display: block;
+	}
+	.card {
+		width: 280px;
+		height: 415px;
+	}
+	.main__wrapper:before {
+		display: none;
+	}
+	.main__header-block {
+		justify-content: center;
+		margin-bottom: 17px;
+	}
+	.main__text {
+		font-size: 34px;
+		margin-right: 0;
+		margin-bottom: 60vw;
+	}
+	.btn__link {
+		margin-right: 0;
+	}
+	.phone__img {
+		top: 219px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100vw;
+		bottom: auto;
+	}
+	.emoji {
+		bottom: 100px;
+		right: -18px;
+		width: 150px;
+	}
+	.heart {
+		top: 100vw;
+		right: -35px;
+		width: 150px;
+	}
+	.like {
+		top: 155vw;
+		left: -50px;
+		width: 150px;
+		z-index: 1;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 700px) {
+	.container {
+		width: calc(100% - 30px);
+	}
+	.card {
+		width: 44vw;
+		height: 60vw;
+	}
+	.heart {
+		top: 120vw;
+		right: -35px;
+		width: 150px;
+	}
+	.like {
+		top: 180vw;
+		left: -50px;
+		width: 150px;
+		z-index: 1;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 480px) {
+	.site__main {
+		background-image: url(../img/mobile-bg.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		position: relative;
+	}
+	.phone__img {
+		top: 219px;
+		width: 120vw;
+	}
+	.header__logo-wrapper {
+		width: 100px;
+		height: 100px;
+		min-width: 100px;
+		min-height: 100px;
+	}
+	.main__header-block {
+		width: 334px;
+	}
+	.header__title {
+		font-size: 36px;
+	}
+	.main__text {
+		font-size: 30px;
+		margin-right: 0;
+		margin-bottom: 72vw;
+	}
+	.card {
+		width: 42vw;
+		height: 65vw;
+	}
+	.like {
+		top: 217vw;
+		left: -26px;
+		width: 100px;
+		z-index: 1;
+	}
+	.heart {
+		top: 150vw;
+		right: -21px;
+		width: 100px;
+	}
+	.emoji {
+		bottom: 125px;
+		right: -18px;
+		width: 100px;
+	}
+	.site__footer {
+		height: 100px;
+	}
+	.footer__wrapper {
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.copyright {
+		margin-bottom: 10px;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 414px) {
+	.phone__img {
+		top: 219px;
+		width: 140vw;
+	}
+	.main__text {
+		font-size: 30px;
+		margin-right: 0;
+		margin-bottom: 82vw;
+	}
+	.like {
+		top: 230vw;
+		left: -25px;
+		width: 100px;
+		z-index: 1;
+	}
+	.heart {
+		top: 165vw;
+		right: -21px;
+		width: 100px;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 375px) {
+	.like {
+		top: 239vw;
+		left: -25px;
+		width: 100px;
+		z-index: 1;
+	}
+	.heart {
+		top: 170vw;
+		right: -21px;
+		width: 100px;
+	}
+}
+
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 320px) {
+	.header__title {
+		font-size: 28px;
+	}
+	.main__header-block {
+		width: 290px;
+	}
+	.main__text {
+		width: 100%;
+		font-size: 25px;
+		margin-right: 0;
+		margin-bottom: 82vw;
+	}
+	.phone__img {
+		top: 210px;
+		width: 140vw;
+	}
+	.btn__link {
+		width: 290px;
+		height: 146px;
+	}
+	.btn__link span {
+		right: 36px;
+	}
+	.heart {
+		top: 176vw;
+		right: -21px;
+		width: 100px;
+	}
+	.like {
+		top: 248vw;
+		left: -25px;
+		width: 100px;
+		z-index: 1;
+	}
+	.site__footer span {
+		font-size: 14px;
+	}
+}
+

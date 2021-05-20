@@ -10,8 +10,23 @@ $(function () {
 		dots : true,
 		items: 5,
 		margin: 30,
+		autoplay: true,
 		onChange: callback,
 		onInitialized: initialized,
+		responsive:{
+			0:{
+				margin: 27,
+			},
+			320:{
+				margin: 15,
+			},
+			375:{
+				margin: 17.5,
+			},
+			414: {
+				margin: 30,
+			}
+		}
 	});
 
 	function callback(event) {
