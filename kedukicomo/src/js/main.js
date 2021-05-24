@@ -13,8 +13,19 @@ $(function () {
 		slidesToShow: 5,
 		slidesToScroll: 1,
 		dots: true,
+		autoplay: true,
+		autoplaySpeed: 3000,
 		prevArrow: $(".slider__btn-prev"),
 		nextArrow: $(".slider__btn-next"),
+		responsive: [
+			{
+			  breakpoint: 600,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			  }
+			},
+		]
 	})
 
 	function initialCardSlider(selector, btnsSelector) {
@@ -39,8 +50,19 @@ $(function () {
 		slidesToShow: 2,
 		slidesToScroll: 1,
 		dots: false,
+		autoplay: true,
+		autoplaySpeed: 5000,
 		prevArrow: $(".review__btn-prev"),
 		nextArrow: $(".review__btn-next"),
+		responsive: [
+			{
+			  breakpoint: 800,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			  }
+			},
+		]
 	})
 
 	$('a[data-rel^=lightcase]').lightcase({
