@@ -30,6 +30,7 @@
 	background-color: #266B00;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 20px;
+	overflow: hidden;
 }
 
 .modal__bg {
@@ -224,10 +225,10 @@
 @media (max-width: 880px) {
 	.modal__wrapper {
 		width: 668px;
-		height: 398px;
+		height: 640px;
 	}
 	.modal__area {
-		margin-bottom: 75px;
+		margin-bottom: 25px;
 	}
 	.modal__autor {
 		justify-content: flex-start;
@@ -248,15 +249,20 @@
 
 @media (max-width: 700px) {
 	.modal__wrapper {
-		width: 290px;
-		height: 508px;
+		width: 320px;
+		height: 554px;
 		padding: 20px;
+		border-radius: 0px;
+		padding: 40px 20px 32px;
 	}
 	.modal form {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
 		align-items: flex-start;
+	}
+	.name__input {
+		width: 100%;
 	}
 	.send {
 		margin-top: 20px;
@@ -268,7 +274,7 @@
 		height: auto;
 		flex-direction: column;
 		justify-content: space-between;
-		align-items: flex-start;
+		align-items: center;
 		margin: 0;
 	}
 	.file {

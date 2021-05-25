@@ -1,6 +1,6 @@
 $(function () {
 	AOS.init({
-		disable : "phone",
+		disable : 'mobile',
 		// offset : -100,
 	});
 
@@ -154,9 +154,22 @@ $(function () {
 
 	$("body").on('click', '[href*="#"]', function (e) {
 		var fixedOffset = 0;
-		if ($(document).width() <= 600) {
-			fixedOffset = -200;
+		if ($(document).width() <= 768) {
+			fixedOffset = 300;
 		}
+		if ($(document).width() <= 414) {
+			fixedOffset = 900;
+		}
+		if ($(document).width() <= 375) {
+			fixedOffset = 820;
+		}
+		if ($(document).width() <= 360) {
+			fixedOffset = 960;
+		}
+		if ($(document).width() <= 360) {
+			fixedOffset = 1000;
+		}
+
 		$('html, body')
 			.stop()
 			.animate({ scrollTop: $(this.hash).offset().top + fixedOffset }, 1000);

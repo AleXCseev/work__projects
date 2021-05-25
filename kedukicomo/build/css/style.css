@@ -1,31 +1,32 @@
 @font-face {
   font-family: Roboto;
   font-weight: normal;
-  src: url("../fonts/Roboto-Regular_0.woff");
+  src: url("../fonts/Roboto-Regular.woff2");
 }
 
 @font-face {
   font-family: Roboto;
   font-weight: 500;
-  src: url("../fonts/Roboto-Medium_0.woff");
+  src: url("../fonts/Roboto-Medium.woff2");
 }
 
 @font-face {
   font-family: Roboto;
   font-weight: 900;
-  src: url("../fonts/Roboto-Black_0.woff");
+  src: url("../fonts/Roboto-Black.woff2");
 }
 
 @font-face {
   font-family: Roboto;
   font-weight: bold;
-  src: url("../fonts/Roboto-Bold_0.woff");
+  src: url("../fonts/Roboto-Bold.woff2");
 }
 
 @font-face {
-  font-family: Saira Stencil One;
+  font-family: 'Saira Stencil One';
   font-weight: normal;
-  src: url("../fonts/SairaStencilOne-Regular.woff2");
+  src: url("../fonts/SairaStencilOne-Regular.eot");
+  src: url("../fonts/SairaStencilOne-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SairaStencilOne-Regular.woff2") format("woff2");
 }
 
 *, *::before, *::after {
@@ -161,7 +162,7 @@ body {
   text-align: center;
   font-family: Roboto, sans-serif;
   font-weight: bold;
-  font-size: 90px;
+  font-size: 84px;
   line-height: 105px;
   color: #FFFFFF;
   opacity: 0.8;
@@ -464,6 +465,48 @@ body {
   text-align: center;
   color: #000000;
   opacity: 0.15;
+}
+
+.pulse {
+  animation-name: pulse;
+  -webkit-animation-name: pulse;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.7;
+  }
+  50% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.7;
+  }
 }
 
 .site__main {
@@ -1042,7 +1085,7 @@ body {
 
 .card__title {
   width: 100%;
-  font-family: Saira Stencil One, sans-serif;
+  font-family: 'Saira Stencil One', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 62px;
@@ -1463,6 +1506,7 @@ body {
   background-color: #266B00;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .modal__bg {
@@ -1704,10 +1748,10 @@ body {
 @media (max-width: 880px) {
   .modal__wrapper {
     width: 668px;
-    height: 398px;
+    height: 640px;
   }
   .modal__area {
-    margin-bottom: 75px;
+    margin-bottom: 25px;
   }
   .modal__autor {
     -webkit-justify-content: flex-start;
@@ -1729,9 +1773,11 @@ body {
 
 @media (max-width: 700px) {
   .modal__wrapper {
-    width: 290px;
-    height: 508px;
+    width: 320px;
+    height: 554px;
     padding: 20px;
+    border-radius: 0px;
+    padding: 40px 20px 32px;
   }
   .modal form {
     display: -webkit-flex;
@@ -1742,6 +1788,9 @@ body {
     justify-content: flex-end;
     -webkit-align-items: flex-start;
     align-items: flex-start;
+  }
+  .name__input {
+    width: 100%;
   }
   .send {
     margin-top: 20px;
@@ -1755,8 +1804,8 @@ body {
     flex-direction: column;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
+    -webkit-align-items: center;
+    align-items: center;
     margin: 0;
   }
   .file {
@@ -2482,6 +2531,7 @@ body {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    z-index: 100;
   }
   .footer__boot-1 {
     top: 200px;
@@ -2711,7 +2761,7 @@ body {
   }
   .site__footer:before {
     content: "";
-    width: 500px;
+    width: 480px;
     height: 900px;
     margin-left: 0px;
     bottom: 0px;
@@ -2719,6 +2769,31 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center bottom;
+  }
+  .footer__wrapper {
+    width: 100%;
+  }
+  .footer__boot-1 {
+    top: 160px;
+    width: 360px;
+    margin-left: 60px;
+    z-index: 2;
+  }
+  .footer__boot-2 {
+    top: 150px;
+    z-index: 1;
+    width: 330px;
+  }
+  .footer__title {
+    font-size: 6.5vw;
+  }
+  .footer__wrapper .header__price {
+    width: 100%;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+  }
+  .footer__bottom-block {
+    height: 80px;
   }
 }
 
@@ -2837,6 +2912,9 @@ body {
     width: 100%;
     margin-top: 60px;
   }
+  .review__section .slick-list {
+    height: 325px;
+  }
   .review__slide {
     width: calc(100% - 30px);
   }
@@ -2844,8 +2922,19 @@ body {
     width: calc(100% - 30px);
   }
   .review__text {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: normal;
+  }
+  .site__footer:before {
+    width: 414px;
+    height: 850px;
+  }
+  .footer__boot-1 {
+    width: 370px;
+  }
+  .footer__boot-2 {
+    width: 340px;
+    margin-left: -60px;
   }
 }
 
@@ -2864,6 +2953,9 @@ body {
   }
   .review__text {
     font-size: 14px;
+  }
+  .site__footer:before {
+    margin-left: 18px;
   }
 }
 
@@ -2967,5 +3059,24 @@ body {
   }
   .review__text {
     font-size: 13px;
+  }
+  .site__footer:before {
+    width: 380px;
+    height: 850px;
+    margin-left: 32px;
+  }
+  .footer__boot-1 {
+    width: 300px;
+  }
+  .footer__boot-2 {
+    width: 280px;
+    margin-left: -60px;
+  }
+  .footer__title {
+    font-size: 7vw;
+    margin-bottom: 340px;
+  }
+  .footer__wrapper .header__price {
+    margin-bottom: 150px;
   }
 }
