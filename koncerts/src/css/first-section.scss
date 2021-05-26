@@ -58,12 +58,12 @@
 
 .item__link {
 	position: absolute;
-	right: 0;
+	right: 50px;
 	top: 50%;
 	transform: translateY(-50%);
 	cursor: pointer;
 	transition: 0.3s ease;
-	font-family: Exo 2;
+	font-family: "Exo 2", sans-serif;
 	font-style: italic;
 	font-weight: bold;
 	font-size: 18px;
@@ -96,6 +96,21 @@
 		box-shadow: 0px 0px 30px rgba(255, 0, 0, 0.5);
 		border-radius: 3px;
 	}
+}
+
+.overflow__block {
+	height: 0px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 1s ease;
+	transform: translateY(-500px)
+}
+
+.overflow__block.active {
+	height: auto;
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0px)
 }
 
 .main__information {
@@ -136,6 +151,8 @@
 .info__img-wrapper {
 	position: relative;
 	overflow: hidden;
+	width: 830px;
+	height: 468px;
 	min-width: 830px;
 	min-height: 468px;
 	margin-right: -200px;
@@ -223,7 +240,13 @@
 	line-height: 58px;
 	color: #C70000;
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
+}
+
+.btn__section-wrapper {
+	width: auto;
+	height: auto;
+	padding-top: 30px;
 }
 
 .btns__section {
@@ -254,14 +277,18 @@
 		transition: 0.3s ease;
 		padding: 0;
 		margin: 0;
+		opacity: 0;
 	}
 
-	input:before {
-		content: attr(data-date);
+	label:hover:before {
+		border: 1px solid #C70000;
+	}
+
+	.input__date {
 		position: absolute; 
-		top: -30px;
-		left: 50%;
-		transform: translateX(-50%);
+		bottom: 3px;
+		right: -55px;
+		transform: rotate(90deg);
 		font-family: "Exo 2", sans-serif;
 		font-style: italic;
 		font-weight: normal;
@@ -271,21 +298,19 @@
 		color: #FFFFFF;
 	}
 
-	input:checked {
+	input:checked + label:before{
 		border: none;
 		background-color: #C70000;
-		&:before {
-			color: #C70000;
-		}
 	}
 
-	input:checked + label {
+	input:checked + label,
+	input:checked + label span{
 		color: #C70000;
 	}
 
-	input:disabled,
+	input:disabled + label:before,
 	input:disabled + label,
-	input:disabled:before {
+	input:disabled + label span {
 		color: rgba(255, 255, 255, 0.4);
 		border-color: rgba(255, 255, 255, 0.4);
 	}
@@ -294,17 +319,38 @@
 		font-family: "Exo 2", sans-serif;
 		font-style: italic;
 		font-weight: normal;
-		font-size: 18px;
-		line-height: 22px;
+		font-size: 17px;
+		line-height: 100%;
 		text-align: right;
 		color: #FFFFFF;
 		transform: translateX(-50%) rotate(-90deg);
 		position: absolute;
-		bottom: -96px;
+		bottom: -107px;
 		left: 50%;
-		width: 160px;
+		width: 180px;
+		height: 22px;
+		min-height: 22px;
 		text-align: right;
 		cursor: pointer;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	label:before {
+		content: "";
+		position: absolute;
+		bottom: 1px;
+    	right: -25px;
+		width: 20px;
+		height: 20px;
+		background-color: #000;
+		border-radius: 100%;
+		border: 1px solid #FFFFFF;
+		cursor: pointer;
+		transition: 0.3s ease;
+		padding: 0;
+		margin: 0;
 	}
 }
 
@@ -323,6 +369,7 @@
 	padding: 50px 65px;
 	.item__link {
 		right: 50px;
+		overflow: inherit;
 	}
 }
 
@@ -356,28 +403,37 @@
 .input__name {
 	width: 300px;
 	height: 32px;
-	font-family: Exo 2;
+	font-family: "Exo 2", sans-serif;
 	font-style: italic;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 22px;
-	color: #C70000;
+	color: #000;
 	display: flex;
 	align-items: center;
-	border-bottom: 1px solid #C70000;
+	border-bottom: 1px solid #000;
+	transition: 0.3s ease;
 }
 
 .input__name::placeholder {
-	color: #C70000;
+	color: #000;
 }
 
 .input__name:focus {
-	color: #000000;
-	border-bottom: 1px solid #000;
+	color: #C70000;
+	border-bottom: 1px solid #C70000;
 }
 
 .input__name:focus::placeholder {
-	color: #000000;
+	color: #C70000;
 }
 
+.form__text {
+	font-family: "Exo 2", sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	color: #585858;
+}
 
