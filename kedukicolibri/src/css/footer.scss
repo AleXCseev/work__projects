@@ -1,0 +1,145 @@
+.site__footer {
+	width: 100%;
+	height: auto;
+}
+
+.footer__wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+
+	.title__stack {
+		top: auto;
+		bottom: 160px;
+		margin-left: -600px;
+	}
+
+	.title__stack-white {
+		top: auto;
+		bottom: 85px;
+		margin-left: -415px;
+	}
+
+	.header__price {
+		top: 215px;
+		left: 170px;
+	}
+
+	.header__price-right {
+		top: 100px;
+		right: 540px;
+	}
+} 
+
+.footer__wrapper:before {
+	content: "";
+	position: absolute;
+	top: 130px;
+    left: -50px;
+	width: 600px;
+	height: 600px;
+	background: radial-gradient(50% 50% at 50% 50%, #FFE249 0%, rgba(255, 226, 73, 0) 100%);
+	opacity: 0.8;
+}
+
+.footer__girl {
+	position: absolute;
+	bottom: 0;
+	right: -385px;
+	z-index: -1;
+}
+
+.footer__bg {
+	position: absolute;
+	bottom: 0;
+	left: -110px;
+	z-index: -1;
+}
+
+.footer__boot-1 {
+	position: absolute;
+    width: 440px;
+    top: 80px;
+    left: -120px;
+}
+
+.footer__boot-2 {
+	position: absolute;
+	top: 170px;
+    left: 170px;
+}
+
+.footer__pattern-1 {
+	position: absolute;
+    bottom: 175px;
+    left: -230px;
+    opacity: 0.8;
+    width: 625px;
+    transform: rotate(-45deg);
+}
+
+.footer__pattern-2 {
+	position: absolute;
+	bottom: -280px;
+    left: -535px;
+    opacity: 0.8;
+    width: 625px;
+    transform: rotate(45deg);
+}
+
+.footer__pattern-3 {
+	position: absolute;
+	top: -280px;
+    left: -535px;
+    opacity: 0.8;
+    width: 625px;
+    transform: rotate(45deg);
+}
+
+.footer__content {
+	width: 520px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.header__order-btn {
+		margin-bottom: 120px;
+	}
+} 
+
+
+.footer__title {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 56px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-shadow: 4px 4px 0px #1D252F;
+	margin-top: 200px;
+	margin-bottom: 92px;
+}
+
+.footer-dev {
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+	width: 650px;
+	text-align: center;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	color: #000000;
+}
+
+.itcreative-link {
+	color: inherit;
+}
+
