@@ -6,11 +6,10 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<link rel="stylesheet" href="./libs/lightcase.css">
+	<link rel="stylesheet" href="./libs/animations.css">
 	<link rel="stylesheet" href="./libs/aos.css">
 	<link rel="stylesheet" href="./libs/owl.carousel.min.css">
 	<link rel="stylesheet" href="./libs/owl.theme.default.min.css">
-	<link rel="stylesheet" href="./libs/slick.css">
-	<link rel="stylesheet" href="./libs/slick-theme.css">
 	<link rel="stylesheet" href="./css/style.css" />
 	<title>KEDUKI COLIBRI</title>
 </head>
@@ -30,14 +29,14 @@
 					<img src="./img/header-boot1.png" alt="" class="header__boot-1">
 					<img src="./img/header-girl.png" alt="" class="header__girl">
 					<img src="./img/header-boot2.png" alt="" class="header__boot-2">
-					<div class="header__price">
+					<div class="header__price floating">
 						<div class="price">
 							<img src="./img/price.png" alt="" class="header__price-img">
 							<span class="old__price">1 000 грн</span>
 							<span class="new__price">1 000 грн</span>
 						</div>
 					</div>
-					<div class="header__price-right">
+					<div class="header__price-right floating">
 						<div class="price">
 							<img src="./img/price-right.png" alt="" class="header__price-img">
 							<span class="old__price">1 000 грн</span>
@@ -45,9 +44,9 @@
 						</div>
 					</div>
 					<div class="titles__block">
-						<h2 class="header__title-white header__title-left">самая</h2>
-						<h3 class="header__title-black header__title-center">продаваемая</h3>
-						<h2 class="header__title-white header__title-right">модель</h2>
+						<h2 class="header__title-white header__title-left">ДЛЯ НЕЕ</h2>
+						<h3 class="header__title-black header__title-center">ДЛЯ НЕГО</h3>
+						<h2 class="header__title-white header__title-right">ЛУЧШЕЕ!</h2>
 					</div>
 					<div class="title__stack">
 						<span class="title__stack-text title__stack-text1">top</span>
@@ -73,34 +72,34 @@
 			<div class="preview__section">
 				<div class="container">
 					<div class="preview__content">
-						<h3 class="preview__title">модель итальянского  бренда KEDUKI</h3>
+						<h3 class="preview__title">САМЫЕ ТОПОВЫЕ МОДЕЛИ ИТАЛЬЯНСКОГО БРЕНДА </h3>
 						
 						<div class="preview__wrapper">
 							<div class="preview preview__1">
-								<img src="./img/preview-1.png" alt="" class="preview__img">
-								<img src="./img/header-girl.png" alt="" class="preview__people">
+								<img data-src="./img/preview-1.png" alt="" class="preview__img lazyload">
+								<img data-src="./img/header-girl.png" alt="" class="preview__people lazyload">
 								<h4 class="preview__name">keduki Colibri 7724</h4>
 							</div>
 							<div class="preview preview__2">
-								<img src="./img/preview-2.png" alt="" class="preview__img">
-								<img src="./img/header-man.png" alt="" class="preview__people">
+								<img data-src="./img/preview-2.png" alt="" class="preview__img lazyload">
+								<img data-src="./img/header-man.png" alt="" class="preview__people lazyload">
 								<h4 class="preview__name">keduki Leone 7753</h4>
 							</div>
 							<div class="preview preview__3">
-								<img src="./img/preview-3.png" alt="" class="preview__img">
-								<img src="./img/girl-2.png" alt="" class="preview__people">
+								<img data-src="./img/preview-3.png" alt="" class="preview__img lazyload">
+								<img data-src="./img/girl-2.png" alt="" class="preview__people lazyload">
 								<h4 class="preview__name">GRANDE LADIES 7588</h4>
 							</div>
 						</div>
 						<div class="preview__btn-block">
 							<a href="#card" class="header__order-btn">Заказать</a>
-							<p class="preview__text">*При покупке весенних кед, скидка <span>на зимние модели <span class="bold">400 грн</span></span></p>
+							<p class="preview__text">*И не забудь о приятной скидке <span>на вторую пару обуви!</span></p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="video__section">
-				<img src="./img/pattern-line.png" alt="" class="video__line">
+				<img data-src="./img/pattern-line.png" alt="" class="video__line lazyload">
 				<div class="container">
 					<div class="video__content">
 						<div class="title__stack">
@@ -117,9 +116,9 @@
 							<span class="title__stack-text title__stack-text4">2021</span>
 							<span class="title__stack-text title__stack-text5">2021</span>
 						</div>
-						<img src="./img/header-boot2.png" alt="" class="video__boot-1">
-						<img src="./img/video-boot2.png" alt="" class="video__boot-2">
-						<img src="./img/pattern.png" alt="" class="video__pattern">
+						<img data-src="./img/header-boot2.png" alt="" class="video__boot-1 lazyload">
+						<img data-src="./img/video-boot2.png" alt="" class="video__boot-2 lazyload">
+						<img data-src="./img/pattern.png" alt="" class="video__pattern lazyload">
 						<div class="video" data-video="9vyGu2O7xNQ"></div>
 					</div>
 				</div>
@@ -127,68 +126,67 @@
 			<div class="galary__section">
 				<div class="container">
 					<img src="./img/pattern-2.png" alt="" class="galary__pattern">
-					<div class="galary">
-						<div class="galary__column galary__column-1">
-							<div class="galary__img-wrapper1">
-								<a href="./img/galary/1.jpg" data-rel="lightcase:galary">
-									<img src="./img/galary-1.png" alt="" class="galary__img">
-								</a>
+					<div class="galary__wrapper">
+						<div class="galary">
+							<div class="galary__column galary__column-1">
+								<div class="galary__img-wrapper1">
+									<a href="./img/galary/1.jpg" data-rel="lightcase:galary">
+										<img data-src="./img/galary-1.png" alt="" class="galary__img lazyload">
+									</a>
+								</div>
+							</div>
+							<div class="galary__column galary__column-2">
+								<div class="galary__img-wrapper2">
+									<a href="./img/galary/2.jpg" data-rel="lightcase:galary">
+										<img data-src="./img/galary-2.png" alt="" class="galary__img lazyload">
+									</a>
+								</div>
+								<div class="galary__img-wrapper3">
+									<a href="./img/galary/3.jpg" data-rel="lightcase:galary">
+										<img data-src="./img/galary-3.png" alt="" class="galary__img lazyload">
+									</a>
+								</div>
+							</div>
+							<div class="galary__column galary__column-3">
+								<div class="galary__img-wrapper4">
+									<a href="./img/galary/4.jpg" data-rel="lightcase:galary">
+										<img data-src="./img/galary-4.png" alt="" class="galary__img lazyload">
+									</a>
+								</div>
+								<div class="galary__img-wrapper5">
+									<a href="./img/galary/5.jpg" data-rel="lightcase:galary">
+										<img data-src="./img/galary-5.png" alt="" class="galary__img lazyload">
+									</a>
+								</div>
+								<div class="galary__img-wrapper6">
+									<a href="./img/galary/6.jpg" data-rel="lightcase:galary">
+										<img data-src="./img/galary-6.png" alt="" class="galary__img lazyload">
+									</a>
+								</div>
 							</div>
 						</div>
-						<div class="galary__column galary__column-2">
-							<div class="galary__img-wrapper2">
-								<a href="./img/galary/2.jpg" data-rel="lightcase:galary">
-									<img src="./img/galary-2.png" alt="" class="galary__img">
-								</a>
-							</div>
-							<div class="galary__img-wrapper3">
-								<a href="./img/galary/3.jpg" data-rel="lightcase:galary">
-									<img src="./img/galary-3.png" alt="" class="galary__img">
-								</a>
-							</div>
+						<div class="galary__text-wrapper">
+							<p class="galary__text">
+								<span>keduki Colibri</span>		
+							</p>
 						</div>
-						<div class="galary__column galary__column-3">
-							<div class="galary__img-wrapper4">
-								<a href="./img/galary/4.jpg" data-rel="lightcase:galary">
-									<img src="./img/galary-4.png" alt="" class="galary__img">
-								</a>
-							</div>
-							<div class="galary__img-wrapper5">
-								<a href="./img/galary/5.jpg" data-rel="lightcase:galary">
-									<img src="./img/galary-5.png" alt="" class="galary__img">
-								</a>
-							</div>
-							<div class="galary__img-wrapper6">
-								<a href="./img/galary/6.jpg" data-rel="lightcase:galary">
-									<img src="./img/galary-6.png" alt="" class="galary__img">
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="galary__text-wrapper">
-						<p class="galary__text">
-							<span>keduki Colibri</span>		
-						</p>
 					</div>
 				</div>
 			</div>
 			<div class="sprey__section">
 				<div class="container">
 					<div class="sprey">
-						<img src="./img/pattern.png" alt="" class="sprey__pattern">
-						<img src="./img/sprey-bg.png" alt="" class="sprey__bg">
+						<img data-src="./img/pattern.png" alt="" class="sprey__pattern lazyload">
+						<img data-src="./img/sprey-bg.png" alt="" class="sprey__bg lazyload">
 						<div class="sprey__block">
-							<img src="./img/sprey.png" alt="" class="sprey__img">
+							<img data-src="./img/sprey.png" alt="" class="sprey__img lazyload">
 							<h3 class="sprey__title">
-								ЗАЩИТНЫЙ СПРЕЙ И КВАБРОНЬ ECCO
+								ЗАЩИТНЫЙ СПРЕЙ
 							</h3>
 							<div class="sprey__wrapper">
 								<div class="sprey__left">
 									<p class="sprey__text">
-										Защитный спрей ECCO REPEL для всех видов кож, замши, нубука, текстиля, меха и синтетических материалов.
-									</p>
-									<p class="sprey__text">
-										Водоотталкивающий спрей ECCO REFRESH даже при сильном намокании материала верха нейтрализует сырость и увеличивает срок службы.
+										Универсальный защитный спрей, который помогает сохранить обувь и аксессуары чистыми, сухими и без пятен. Подходит для обуви из гладкой кожи, замши, нубука и ткани, прошел тестовые испытания на коже и синтетических материалах.
 									</p>
 									<div class="sprey__price">
 										<div class="price">
@@ -218,76 +216,76 @@
 				</div>
 			</div>
 			<div class="card__section">
-				<img src="./img/pattern-line.png" alt="" class="card__line-top">
-				<img src="./img/pattern-line.png" alt="" class="card__line-bottom">
+				<img data-src="./img/pattern-line.png" alt="" class="card__line-top lazyload">
+				<img data-src="./img/pattern-line.png" alt="" class="card__line-bottom lazyload">
 				<div class="container">
 					<div class="card card__1">
-						<img src="./img/card-bg.png" alt="" class="card__bg">
-						<img src="./img/preview-1.png" alt="" class="card__preview">
-						<img src="./img/card1-boot.png" alt="" class="card__boot">	
+						<img data-src="./img/card-bg.png" alt="" class="card__bg lazyload">
+						<img data-src="./img/preview-1.png" alt="" class="card__preview lazyload">
+						<img data-src="./img/card1-boot.png" alt="" class="card__boot lazyload">	
 						<div class="card__left">
 							<h3 class="card__title">
-								keduki Leone 7721
+								KEDUKI COLIBRI
 							</h3>
 							<div class="card__galary">
 								<div class="card__galary-row">
 									<div class="card__galary-img">
 										<a href="./img/card-1/1.jpg" data-rel="lightcase:card1">
-											<img src="./img/card-1/1.jpg" alt="фото">
+											<img data-src="./img/card-1/1.jpg" alt="фото" class="lazyload">
 										</a>
 									</div>
 									<div class="card__galary-img">
 										<a href="./img/card-1/2.jpg" data-rel="lightcase:card1">
-											<img src="./img/card-1/2.jpg" alt="фото">
+											<img data-src="./img/card-1/2.jpg" alt="фото" class="lazyload">
 										</a>
 									</div>
 									<div class="card__galary-img">
 										<a href="./img/card-1/3.jpg" data-rel="lightcase:card1">
-											<img src="./img/card-1/3.jpg" alt="фото">
+											<img data-src="./img/card-1/3.jpg" alt="фото" class="lazyload">
 										</a>
 									</div>
 								</div>
 								<div class="card__galary-row">
 									<div class="card__galary-img">
 										<a href="./img/card-1/4.jpg" data-rel="lightcase:card1">
-											<img src="./img/card-1/4.jpg" alt="фото">
+											<img data-src="./img/card-1/4.jpg" alt="фото" class="lazyload">
 										</a>
 									</div>
 									<div class="card__galary-img">
 										<a href="./img/card-1/5.jpg" data-rel="lightcase:card1">
-											<img src="./img/card-1/5.jpg" alt="фото">
+											<img data-src="./img/card-1/5.jpg" alt="фото" class="lazyload">
 										</a>
 									</div>
 									<div class="card__galary-img">
 										<a href="./img/card-1/6.jpg" data-rel="lightcase:card1">
-											<img src="./img/card-1/6.jpg" alt="фото">
+											<img data-src="./img/card-1/6.jpg" alt="фото" class="lazyload">
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="row">
-								<span class="text text__bold">Сезон:</span>
-								<span class="text">Весна-Лето 2020</span>
+								<span class="text text__bold">Пол:</span>
+								<span class="text">Женские</span>
 							</div>
 							<div class="row">
-								<span class="text text__bold">Каблук:</span>
-								<span class="text">ниже 30 мм</span>
+								<span class="text text__bold">Сезон:</span>
+								<span class="text">Весна-лето</span>
 							</div>
 							<div class="row">
 								<span class="text text__bold">Верх:</span>
-								<span class="text">натуральная кожа</span>
-							</div>
-							<div class="row">
-								<span class="text text__bold">Подкладка:</span>
-								<span class="text">комбинированная</span>
+								<span class="text">Натуральная кожа</span>
 							</div>
 							<div class="row">
 								<span class="text text__bold">Подошва:</span>
-								<span class="text">полиуретан</span>
+								<span class="text">TPU</span>
 							</div>
 							<div class="row">
 								<span class="text text__bold">Стиль:</span>
 								<span class="text">casual</span>
+							</div>
+							<div class="row">
+								<span class="text text__bold">Цвет:</span>
+								<span class="text">Комбинированный</span>
 							</div>
 						</div>
 						<div class="card__right" id="card">
@@ -304,19 +302,18 @@
 								<div class="input__wrapper">
 									<input type="tel" class="input" placeholder="Телефон" required>
 								</div>
-								<p class="preview__text">*При покупке весенних кед, скидка <span>на зимние модели <span class="bold">400 грн</span></span></p>
+								<p class="preview__text">На вторую пару - <span>отличная скидка!</span></p>
 								<div class="card__sizes">
 									<div class="size__info">
 										<span class="size__text">Размер:</span>
 										<span class="size">26.5 см</span>
 									</div>
 									<div class="size__btns">
-										<button type="button" class="size__btn active" data-size="26.5 см">40</button>
-										<button type="button" class="size__btn" data-size="27 см">41</button>
-										<button type="button" class="size__btn" data-size="27.5 см">42</button>
-										<button type="button" class="size__btn" data-size="28 см">43</button>
-										<button type="button" class="size__btn" data-size="28.5 см">44</button>
-										<button type="button" class="size__btn" data-size="29 см">45</button>
+										<button type="button" class="size__btn active" data-size="24 см">37</button>
+										<button type="button" class="size__btn" data-size="24.5 см">38</button>
+										<button type="button" class="size__btn" data-size="25 см">39</button>
+										<button type="button" class="size__btn" data-size="25.5 см">40</button>
+										<button type="button" class="size__btn" data-size="26 см">41</button>
 									</div>
 								</div>
 								<button type="submit" class="header__order-btn">Заказать</button>
@@ -324,72 +321,72 @@
 						</div>
 					</div>
 					<div class="card card__2">
-						<img src="./img/card-bg.png" alt="" class="card__bg">
-						<img src="./img/preview-2.png" alt="" class="card__preview">
-						<img src="./img/card2-boot.png" alt="" class="card__boot">	
+						<img data-src="./img/card-bg.png" alt="" class="card__bg lazyload">
+						<img data-src="./img/preview-2.png" alt="" class="card__preview lazyload">
+						<img data-src="./img/card2-boot.png" alt="" class="card__boot lazyload">	
 						<div class="card__left">
 							<h3 class="card__title">
-								keduki Leone 7721
+								keduki Leone
 							</h3>
 							<div class="card__galary">
 								<div class="card__galary-row">
 									<div class="card__galary-img">
 										<a href="./img/card-2/1.jpg" data-rel="lightcase:card2">
-											<img src="./img/card-2/1.jpg" alt="">
+											<img data-src="./img/card-2/1.jpg" alt="" class="lazyload">
 										</a>
 									</div>
 									<div class="card__galary-img">
 										<a href="./img/card-2/2.jpg" data-rel="lightcase:card2">
-											<img src="./img/card-2/2.jpg" alt="">
+											<img data-src="./img/card-2/2.jpg" alt="" class="lazyload">
 										</a>
 									</div>
 									<div class="card__galary-img">
 										<a href="./img/card-2/3.jpg" data-rel="lightcase:card2">
-											<img src="./img/card-2/3.jpg" alt="">
+											<img data-src="./img/card-2/3.jpg" alt="" class="lazyload">
 										</a>
 									</div>
 								</div>
 								<div class="card__galary-row">
 									<div class="card__galary-img">
 										<a href="./img/card-2/4.jpg" data-rel="lightcase:card2">
-											<img src="./img/card-2/4.jpg" alt="">
+											<img data-src="./img/card-2/4.jpg" alt="" class="lazyload">
 										</a>
 									</div>
 									<div class="card__galary-img">
 										<a href="./img/card-2/5.jpg" data-rel="lightcase:card2">
-											<img src="./img/card-2/5.jpg" alt="">
+											<img data-src="./img/card-2/5.jpg" alt="" class="lazyload">
 										</a>
 									</div>
 									<div class="card__galary-img">
 										<a href="./img/card-2/6.jpg" data-rel="lightcase:card2">
-											<img src="./img/card-2/6.jpg" alt="">
+											<img data-src="./img/card-2/6.jpg" alt="" class="lazyload">
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="row">
-								<span class="text text__bold">Сезон:</span>
-								<span class="text">Весна-Лето 2020</span>
+								<span class="text text__bold">Пол:</span>
+								<span class="text">Мужские</span>
 							</div>
 							<div class="row">
-								<span class="text text__bold">Каблук:</span>
-								<span class="text">ниже 30 мм</span>
+								<span class="text text__bold">Сезон:</span>
+								<span class="text">Весна-лето</span>
 							</div>
 							<div class="row">
 								<span class="text text__bold">Верх:</span>
-								<span class="text">натуральная кожа</span>
-							</div>
-							<div class="row">
-								<span class="text text__bold">Подкладка:</span>
-								<span class="text">комбинированная</span>
+								<span class="text">Натуральная кожа и замша</span>
 							</div>
 							<div class="row">
 								<span class="text text__bold">Подошва:</span>
-								<span class="text">полиуретан</span>
+								<span class="text">TPU</span>
 							</div>
 							<div class="row">
 								<span class="text text__bold">Стиль:</span>
 								<span class="text">casual</span>
+							</div>
+							<div class="row">
+								<span class="text text__bold">Цвет:</span>
+								<span class="text">Комбинированный</span>
 							</div>
 						</div>
 						<div class="card__right">
@@ -406,7 +403,7 @@
 								<div class="input__wrapper">
 									<input type="tel" class="input" placeholder="Телефон" required>
 								</div>
-								<p class="preview__text">*При покупке весенних кед, скидка <span>на зимние модели <span class="bold">400 грн</span></span></p>
+								<p class="preview__text">На вторую пару - <span>отличная скидка!</span></p>
 								<div class="card__sizes">
 									<div class="size__info">
 										<span class="size__text">Размер:</span>
@@ -426,72 +423,72 @@
 						</div>
 					</div>
 					<div class="card card__3">
-						<img src="./img/card-bg.png" alt="" class="card__bg">
-						<img src="./img/preview-3.png" alt="" class="card__preview">
-						<img src="./img/card3-boot.png" alt="" class="card__boot">	
+						<img data-src="./img/card-bg.png" alt="" class="card__bg lazyload">
+						<img data-src="./img/preview-3.png" alt="" class="card__preview lazyload">
+						<img data-src="./img/card3-boot.png" alt="" class="card__boot lazyload">	
 						<div class="card__left">
 							<h3 class="card__title">
-								keduki Leone 7721
+								KEDUKI GRANDE LADIES
 							</h3>
 							<div class="card__galary">
 								<div class="card__galary-row">
 									<div class="card__galary-img">
 										<a href="./img/card-3/1.jpg" data-rel="lightcase:card3">
-											<img src="./img/card-3/1.jpg" alt="">
+											<img data-src="./img/card-3/1.jpg" alt="" class="lazyload">
 										</a>
 									</div>
 									<div class="card__galary-img">
 										<a href="./img/card-3/2.jpg" data-rel="lightcase:card3">
-											<img src="./img/card-3/2.jpg" alt="">
+											<img data-src="./img/card-3/2.jpg" alt="" class="lazyload">
 										</a>
 									</div>
 									<div class="card__galary-img">
 										<a href="./img/card-3/3.jpg" data-rel="lightcase:card3">
-											<img src="./img/card-3/3.jpg" alt="">
+											<img data-src="./img/card-3/3.jpg" alt="" class="lazyload">
 										</a>
 									</div>
 								</div>
 								<div class="card__galary-row">
 									<div class="card__galary-img">
 										<a href="./img/card-3/4.jpg" data-rel="lightcase:card3">
-											<img src="./img/card-3/4.jpg" alt="">
+											<img data-src="./img/card-3/4.jpg" alt="" class="lazyload">
 										</a>
 									</div>
 									<div class="card__galary-img">
 										<a href="./img/card-3/5.jpg" data-rel="lightcase:card3">
-											<img src="./img/card-3/5.jpg" alt="">
+											<img data-src="./img/card-3/5.jpg" alt="" class="lazyload">
 										</a>
 									</div>
 									<div class="card__galary-img">
 										<a href="./img/card-3/6.jpg" data-rel="lightcase:card3">
-											<img src="./img/card-3/6.jpg" alt="">
+											<img data-src="./img/card-3/6.jpg" alt="" class="lazyload">
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="row">
-								<span class="text text__bold">Сезон:</span>
-								<span class="text">Весна-Лето 2020</span>
+								<span class="text text__bold">Пол:</span>
+								<span class="text">Женские</span>
 							</div>
 							<div class="row">
-								<span class="text text__bold">Каблук:</span>
-								<span class="text">ниже 30 мм</span>
+								<span class="text text__bold">Сезон:</span>
+								<span class="text">Весна-лето</span>
 							</div>
 							<div class="row">
 								<span class="text text__bold">Верх:</span>
-								<span class="text">натуральная кожа</span>
-							</div>
-							<div class="row">
-								<span class="text text__bold">Подкладка:</span>
-								<span class="text">комбинированная</span>
+								<span class="text">Натуральная кожа</span>
 							</div>
 							<div class="row">
 								<span class="text text__bold">Подошва:</span>
-								<span class="text">полиуретан</span>
+								<span class="text">TPU</span>
 							</div>
 							<div class="row">
 								<span class="text text__bold">Стиль:</span>
 								<span class="text">casual</span>
+							</div>
+							<div class="row">
+								<span class="text text__bold">Цвет:</span>
+								<span class="text">Комбинированный</span>
 							</div>
 						</div>
 						<div class="card__right">
@@ -508,19 +505,19 @@
 								<div class="input__wrapper">
 									<input type="tel" class="input" placeholder="Телефон" required>
 								</div>
-								<p class="preview__text">*При покупке весенних кед, скидка <span>на зимние модели <span class="bold">400 грн</span></span></p>
+								<p class="preview__text">На вторую пару - <span>отличная скидка!</span></p>
 								<div class="card__sizes">
 									<div class="size__info">
 										<span class="size__text">Размер:</span>
 										<span class="size">26.5 см</span>
 									</div>
 									<div class="size__btns">
-										<button type="button" class="size__btn active" data-size="26.5 см">40</button>
-										<button type="button" class="size__btn" data-size="27 см">41</button>
-										<button type="button" class="size__btn" data-size="27.5 см">42</button>
-										<button type="button" class="size__btn" data-size="28 см">43</button>
-										<button type="button" class="size__btn" data-size="28.5 см">44</button>
-										<button type="button" class="size__btn" data-size="29 см">45</button>
+										<button type="button" class="size__btn active" data-size="23.5 см">36</button>
+										<button type="button" class="size__btn" data-size="24 см">37</button>
+										<button type="button" class="size__btn" data-size="24.5 см">38</button>
+										<button type="button" class="size__btn" data-size="25 см">39</button>
+										<button type="button" class="size__btn" data-size="25.5 см">40</button>
+										<button type="button" class="size__btn" data-size="26 см">41</button>
 									</div>
 								</div>
 								<button type="submit" class="header__order-btn">Заказать</button>
@@ -533,81 +530,53 @@
 				<div class="review__wrapper owl-carousel owl-theme">
 					<div class="review">
 						<div class="review__photo">
-							<img src="./img/review/1 (1).jpg" alt="" class="review__img">
+							<img data-src="./img/review/3.jpg" alt="" class="review__img lazyload">
 						</div>
-						<h4 class="autor__name">Александра Ткаченко</h4>
+						<h4 class="autor__name">Дина Пащенко</h4>
 						<p class="review__text">
-							Модель изготовлена из натуральных  материалов  премиум-класса, произведенных на кожевенных заводах Италии.
+							Мне очень понравились Кедуки Леоне по цветам, я заказывала себе Колибри, и заодно приобрела мужу Леоне. Оба вчера оценили удобство обуви - отлично просто! Спасибо, мы безумно довольны!
 						</p>
-						<p class="review__text">
-							Эксклюзивная подошва  повторяет естественные изгибы стопы, обеспечивает отличную амортизацию
-						</p>
-						<div class="review__date">15 марта 2021</div>
+						<div class="review__date">27 апреля 2021</div>
 					</div>
 					<div class="review">
 						<div class="review__photo">
-							<img src="./img/review/1 (1).jpg" alt="" class="review__img">
+							<img data-src="./img/review/5 (1).jpg" alt="" class="review__img lazyload">
 						</div>
-						<h4 class="autor__name">Александра Ткаченко</h4>
+						<h4 class="autor__name">Олег Варчук</h4>
 						<p class="review__text">
-							Модель изготовлена из натуральных  материалов  премиум-класса, произведенных на кожевенных заводах Италии.
+							Заказал позавчера, сейчас забрал на Новой почте. Оперативно. На первый взгляд, кроссы качественные, из дорогих материалов.Посмотрю, как себя покажут.
 						</p>
-						<p class="review__text">
-							Эксклюзивная подошва  повторяет естественные изгибы стопы, обеспечивает отличную амортизацию
-						</p>
-						<div class="review__date">15 марта 2021</div>
+						<div class="review__date">19 мая 2021</div>
 					</div>
 					<div class="review">
 						<div class="review__photo">
-							<img src="./img/review/1 (1).jpg" alt="" class="review__img">
+							<img data-src="./img/review/5.jpg" alt="" class="review__img lazyload">
 						</div>
-						<h4 class="autor__name">Александра Ткаченко</h4>
+						<h4 class="autor__name">Алена Карпенко</h4>
 						<p class="review__text">
-							Модель изготовлена из натуральных  материалов  премиум-класса, произведенных на кожевенных заводах Италии.
+							Колибри у меня уже есть, я ими безумно довольна - мало того, что офигенно удобные, так еще и необычные! Взяла себе еще и Grande Ladies, они  такие нежные! Классная у вас обувь, спасибо!
 						</p>
-						<p class="review__text">
-							Эксклюзивная подошва  повторяет естественные изгибы стопы, обеспечивает отличную амортизацию
-						</p>
-						<div class="review__date">15 марта 2021</div>
+						<div class="review__date">25 мая 2021</div>
 					</div>
 					<div class="review">
 						<div class="review__photo">
-							<img src="./img/review/1 (1).jpg" alt="" class="review__img">
+							<img data-src="./img/review/6.jpg" alt="" class="review__img lazyload">
 						</div>
-						<h4 class="autor__name">Александра Ткаченко</h4>
+						<h4 class="autor__name">Олеся Штохина</h4>
 						<p class="review__text">
-							Модель изготовлена из натуральных  материалов  премиум-класса, произведенных на кожевенных заводах Италии.
+							Быстро получила свою пару, удобно, что можно оплачивать при получении! Надела прям на почте, не удержалась) Красивая обувь!
 						</p>
-						<p class="review__text">
-							Эксклюзивная подошва  повторяет естественные изгибы стопы, обеспечивает отличную амортизацию
-						</p>
-						<div class="review__date">15 марта 2021</div>
+						<div class="review__date">16 мая 2021</div>
 					</div>
 					<div class="review">
 						<div class="review__photo">
-							<img src="./img/review/1 (1).jpg" alt="" class="review__img">
+							<img data-src="./img/review/6 (2).jpg" alt="" class="review__img lazyload">
 						</div>
-						<h4 class="autor__name">Александра Ткаченко</h4>
+						<h4 class="autor__name">Максим Шатко</h4>
 						<p class="review__text">
-							Модель изготовлена из натуральных  материалов  премиум-класса, произведенных на кожевенных заводах Италии.
+							Взял себе Keduki Leone, показал жене сайт, она выбрала Grande Ladies. По доставке и внешнему виду вообще супер, спасибо! Надеюсь, стоят своих денег и в носке будет прекрасно!
 						</p>
-						<p class="review__text">
-							Эксклюзивная подошва  повторяет естественные изгибы стопы, обеспечивает отличную амортизацию
-						</p>
-						<div class="review__date">15 марта 2021</div>
-					</div>
-					<div class="review">
-						<div class="review__photo">
-							<img src="./img/review/1 (1).jpg" alt="" class="review__img">
-						</div>
-						<h4 class="autor__name">Александра Ткаченко</h4>
-						<p class="review__text">
-							Модель изготовлена из натуральных  материалов  премиум-класса, произведенных на кожевенных заводах Италии.
-						</p>
-						<p class="review__text">
-							Эксклюзивная подошва  повторяет естественные изгибы стопы, обеспечивает отличную амортизацию
-						</p>
-						<div class="review__date">15 марта 2021</div>
+						<div class="review__date">15 мая 2021</div>
 					</div>
 				</div>
 				<a role="button" class="add__review">Оставить отзыв</a>
@@ -616,23 +585,23 @@
 		<footer class="site__footer">
 			<div class="container">
 				<div class="footer__wrapper">
-					<img src="./img/pattern.png" alt="" class="footer__pattern-1">
-					<img src="./img/pattern.png" alt="" class="footer__pattern-2">
-					<img src="./img/pattern.png" alt="" class="footer__pattern-3">
-					<img src="./img/footer-girl.png" alt="" class="footer__girl">
-					<img src="./img/footer-bg.png" alt="" class="footer__bg">
-					<img src="./img/header-boot1.png" alt="" class="footer__boot-1">
-					<img src="./img/header-boot2.png" alt="" class="footer__boot-2">
-					<div class="header__price">
+					<img data-src="./img/pattern.png" alt="" class="footer__pattern-1 lazyload">
+					<img data-src="./img/pattern.png" alt="" class="footer__pattern-2 lazyload">
+					<img data-src="./img/pattern.png" alt="" class="footer__pattern-3 lazyload">
+					<img data-src="./img/footer-girl.png" alt="" class="footer__girl lazyload">
+					<img data-src="./img/footer-bg.png" alt="" class="footer__bg lazyload">
+					<img data-src="./img/header-boot1.png" alt="" class="footer__boot-1 lazyload">
+					<img data-src="./img/header-boot2.png" alt="" class="footer__boot-2 lazyload">
+					<div class="header__price floating">
 						<div class="price">
-							<img src="./img/price.png" alt="" class="header__price-img">
+							<img data-src="./img/price.png" alt="" class="header__price-img lazyload">
 							<span class="old__price">1 000 грн</span>
 							<span class="new__price">1 000 грн</span>
 						</div>
 					</div>
-					<div class="header__price-right">
+					<div class="header__price-right floating">
 						<div class="price">
-							<img src="./img/price-right.png" alt="" class="header__price-img">
+							<img data-src="./img/price-right.png" alt="" class="header__price-img lazyload">
 							<span class="old__price">1 000 грн</span>
 							<span class="new__price">1 000 грн</span>
 						</div>
@@ -643,7 +612,7 @@
 						<span class="title__stack-text title__stack-text3">top</span>
 						<span class="title__stack-text title__stack-text4">top</span>
 						<span class="title__stack-text title__stack-text5">top</span>
-						<img src="./img/pattern-element.png" alt="" class="title__stack-img">
+						<img data-src="./img/pattern-element.png" alt="" class="title__stack-img lazyload">
 					</div>
 					<div class="title__stack-white">
 						<span class="title__stack-text title__stack-text1">2021</span>
@@ -651,7 +620,7 @@
 						<span class="title__stack-text title__stack-text3">2021</span>
 						<span class="title__stack-text title__stack-text4">2021</span>
 						<span class="title__stack-text title__stack-text5">2021</span>
-						<img src="./img/pattern-element.png" alt="" class="title__stack-img">
+						<img data-src="./img/pattern-element.png" alt="" class="title__stack-img lazyload">
 					</div>
 					<div class="footer-dev">
 							ТОВ "ShokSale" проспект Дмитрия Яворницкого, 50, Днепр, 49000 ЕГРПОУ 39729741
@@ -662,8 +631,7 @@
 					</div>
 					<div class="footer__content">
 						<h3 class="footer__title">
-							Модель изготовлена 
-							из натуральных  материалов 
+							ЯРКАЯ ОБУВЬ ДЛЯ ЯРКИХ ЛИЧНОСТЕЙ!
 						</h3>
 						<a href="#card" class="header__order-btn">Заказать</a>
 					</div>
@@ -708,7 +676,6 @@
 	<script src="./libs/lazysizes.min.js"></script>
 	<script src="./libs/lightcase.js"></script>
 	<script src="./libs/aos.js"></script>
-	<script src="./libs/slick.min.js"></script>
 	<script src="./js/main.js"></script>
 </body>
 

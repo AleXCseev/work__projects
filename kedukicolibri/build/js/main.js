@@ -9,25 +9,33 @@ $(function () {
 		// autoplay: true,
 		// onChange: callback,
 		// onInitialized: initialized,
-		// responsive:{
-		// 	0:{
-		// 		margin: 27,
-		// 	},
-		// 	320:{
-		// 		margin: 15,
-		// 	},
-		// 	375:{
-		// 		margin: 17.5,
-		// 	},
-		// 	414: {
-		// 		margin: 30,
-		// 	}
-		// }
+		responsive:{
+			290: {
+				items: 2,
+			},
+			900: {
+				items: 3,
+			},
+			1280: {
+				items: 4,
+			}
+		}
 	});
 // 	AOS.init({
 // 		disable : 'mobile',
 // 		// offset : -100,
 // 	});
+
+	if($(window).width() <= 700) {
+		$(".preview__wrapper").addClass("owl-theme owl-carousel").owlCarousel({
+			loop: true,
+			nav : false,
+			dots : true,
+			items: 2,
+			margin: 20,
+		});
+	}
+
 
 
 	$('a[data-rel^=lightcase]').lightcase({

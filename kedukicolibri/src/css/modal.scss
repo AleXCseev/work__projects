@@ -287,23 +287,26 @@
 
 @media (max-width: 700px) {
 	.modal__wrapper {
-		width: 320px;
+		width: calc(100% - 30px);
 		height: 554px;
 		padding: 20px;
 		border-radius: 0px;
 		padding: 40px 20px 32px;
 	}
 	.modal form {
+		width: 290px;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
-		align-items: flex-start;
+		align-items: center;
+		margin: auto;
 	}
 	.name__input {
 		width: 100%;
 	}
 	.send {
 		margin-top: 20px;
+		width: 280px;
 	}
 	.modal__area {
 		margin-bottom: 75px;
@@ -350,5 +353,23 @@
 	}
 	.privacy-policy__text {
 		font-size: 14px;
+	}
+}
+
+@media (max-width: 320px) {
+	.modal__wrapper {
+		width: 100%;
+		height: 554px;
+		padding: 20px;
+		border-radius: 0px;
+		padding: 40px 20px 32px;
+	}
+	.modal form {
+		width: 290px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		margin: auto;
 	}
 }
