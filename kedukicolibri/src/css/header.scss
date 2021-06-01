@@ -125,7 +125,7 @@
 	font-style: normal;
 	font-weight: normal;
 	font-size: 22px;
-	line-height: 100%;
+	line-height: 1;
 	text-align: center;
 	color: #1D252F;
 	position: relative;
@@ -148,7 +148,7 @@
 	font-style: normal;
 	font-weight: 900;
 	font-size: 30px;
-	line-height: 35px;
+	line-height: 1.2;
 	text-align: center;
 	color: #FFFFFF;
 	align-self: center;
@@ -170,7 +170,7 @@
 	font-style: normal;
 	font-weight: 900;
 	font-size: 64px;
-	line-height: 100%;
+	line-height: 1;
 	text-align: center;
 	text-transform: uppercase;
 	color: #FFFFFF;
@@ -194,7 +194,7 @@
 	font-style: normal;
 	font-weight: normal;
 	font-size: 36px;
-	line-height: 100%;
+	line-height: 1;
 	text-align: center;
 	text-transform: uppercase;
 	color: #1D252F;
@@ -216,11 +216,12 @@
 	font-style: normal;
 	font-weight: 900;
 	font-size: 130px;
-	line-height: 100%;
+	line-height: 1;
 	text-transform: uppercase;
 	text-shadow: 3.78872px 3.78872px 0px #1D252F;
 	position: relative;
 	z-index: 6;
+	user-select: none;   
 }
 
 .title__stack-text2 {
@@ -287,11 +288,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: Roboto;
+	font-family: Roboto, sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
-	line-height: 100%;
+	line-height: 1;
 	text-transform: uppercase;
 	color: #1D252F;
 	border-left: 6px solid #1D252F;

@@ -112,10 +112,11 @@
 
 .footer__title {
 	font-family: Roboto, sans-serif;
+	width: 100%;
 	font-style: normal;
 	font-weight: 900;
 	font-size: 48px;
-	line-height: 56px;
+	line-height: 1.3;
 	text-align: center;
 	text-transform: uppercase;
 	color: #FFFFFF;
@@ -134,7 +135,7 @@
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 1.2;
 	text-align: center;
 	color: #000000;
 }

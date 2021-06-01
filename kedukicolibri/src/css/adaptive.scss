@@ -286,7 +286,6 @@
 		top: 50%;
 		right: -365px;
 		width: 320px;
-		-webkit-transform: translateY(-50%);
 		transform: translateY(-50%);
 	}
 	.card__section {
@@ -364,7 +363,7 @@
 	}
 	.preview__title {
 		font-size: 38px;
-		line-height: 130%;
+		line-height: 1.3;
 		margin-bottom: 40px;
 	}
 	.preview__img {
@@ -372,7 +371,6 @@
 	}
 	.preview__name {
 		font-size: 13px;
-		line-height: 19px;
 		width: 400px;
 		top: 184px;
 		left: -178px;
@@ -507,7 +505,6 @@
 		top: 50%;
 		right: 0px;
 		width: 363px;
-		-webkit-transform: translateY(-50%);
 		transform: translateY(-50%);
 		margin-top: 120px;
 	}
@@ -526,7 +523,6 @@
 	}
 	.footer__title {
 		font-size: 42px;
-		line-height: 130%;
 		margin-top: 50px;
 		margin-bottom: 500px;
 	}
@@ -562,18 +558,15 @@
 		margin-left: -85px;
 	}
 	.footer__wrapper .header__price-right {
-		top: 175px;
-		right: auto;
-		left: 50%;
-		transform: translateX(-50%);
-		margin-left: 133px;
-	}
+		top: 165px;
+    	right: 90px;
+		margin: 0;
+	} 
 	.footer__wrapper .header__price {
 		display: block;
-		top: 250px;
-		left: 50%;
-		transform: translateX(-50%);
-		margin-left: -30px;
+		top: 230px;
+    	left: 226px;
+		margin: 0px;
 	}
 	.footer__pattern-3 {
 		display: none;
@@ -594,7 +587,6 @@
 	}
 	.header__order-btn {
 		margin: auto;
-		// margin-bottom: 50px;
 	}
 	.header__title-white {
 		font-size: 48px;
@@ -656,7 +648,6 @@
 	}
 	.preview__title {
 		font-size: 30px;
-		line-height: 130%;
 		width: 100%;
 		margin-bottom: 60px;
 		margin-top: 76px;
@@ -666,7 +657,6 @@
 	}
 	.preview__title {
 		font-size: 30px;
-		line-height: 130%;
 		width: 100%;
 		margin-bottom: 600px;
 		margin-top: 76px;
@@ -836,7 +826,6 @@
 	}
 	.galary__text span {
 		font-size: 24px;
-		line-height: 100%;
 	}
 	.card {
 		width: 100%;
@@ -909,6 +898,17 @@
 		left: -25px;
 		width: 560px;
 	}
+	.footer__wrapper .header__price-right {
+		top: 165px;
+        right: 10px;
+		margin: 0;
+	} 
+	.footer__wrapper .header__price {
+		display: block;
+		top: 230px;
+    	left: 130px;
+		margin: 0px;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -979,7 +979,6 @@
 		right: auto;
 		left: 50%;
 		width: 300px;
-		-webkit-transform: translateY(-50%);
 		transform: translate(-50%, -50%);
 		margin-top: 115px;
 	}
@@ -1053,7 +1052,7 @@
 	}
 	.old__price {
 		font-size: 16px;
-		margin-bottom: 9px;
+		margin-bottom: 13px;
 	}
 	.new__price {
 		font-size: 20px;
@@ -1064,7 +1063,6 @@
 	}
 	.preview__title {
 		font-size: 26px;
-		line-height: 130%;
 		width: 100%;
 		margin-bottom: 600px;
 		margin-top: 76px;
@@ -1100,7 +1098,6 @@
 		font-style: normal;
 		font-weight: bold;
 		font-size: 30px;
-		line-height: 130%;
 		color: #FFFFFF;
 		margin-bottom: 20px;
 	}
@@ -1114,7 +1111,6 @@
 		.new__price {
 			font-weight: bold;
 			font-size: 36px;
-			line-height: 100%;
 		}
 	}
 	.sprey__right .header__order-btn {
@@ -1143,17 +1139,17 @@
 			width: 115px;
 			height: 66px;
 			top: 53vw;
-			margin-left: -1vw;
+			left: 38vw;
 		}
 		.header__price-right {
 			width: 115px;
 			height: 66px;
 			top: 39vw;
-			margin-left: 32vw;
+			left: 66vw;
 		}
 		.old__price {
 			font-size: 16px;
-			margin-bottom: -2px;
+			margin-bottom: 2px;
 		}
 	}
 	.footer__wrapper .title__stack {
@@ -1166,7 +1162,6 @@
 	}
 	.footer__title {
 		font-size: 30px;
-		line-height: 130%;
 		margin-top: 50px;
 		margin-bottom: 100vw;
 	}
@@ -1227,7 +1222,6 @@
 @media (max-width: 375px) {
 	.footer__title {
 		font-size: 30px;
-		line-height: 130%;
 		margin-top: 50px;
 		margin-bottom: 110vw;
 	}
@@ -1268,7 +1262,6 @@
 	}
 	.footer__title {
 		font-size: 30px;
-		line-height: 130%;
 		margin-top: 50px;
 		margin-bottom: 114vw;
 	}
@@ -1298,7 +1291,6 @@
 	}
 	.preview__title {
 		font-size: 22px;
-		line-height: 130%;
 		width: 100%;
 		margin-bottom: 600px;
 		margin-top: 76px;
@@ -1380,13 +1372,13 @@
 		width: 115px;
 		height: 66px;
 		top: 59vw;
-		margin-left: 3vw;
+		// left: 0;
 	}
 	.footer__wrapper .header__price-right {
 		width: 115px;
 		height: 66px;
 		top: 44vw;
-		margin-left: 32vw;
+		left: 58vw;
 	}
 	.footer__wrapper .title__stack {
 		bottom: 98vw;

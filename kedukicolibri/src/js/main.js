@@ -21,10 +21,11 @@ $(function () {
 			}
 		}
 	});
-// 	AOS.init({
-// 		disable : 'mobile',
-// 		// offset : -100,
-// 	});
+	
+	AOS.init({
+		disable : 'mobile',
+		// offset : -100,
+	});
 
 	if($(window).width() <= 700) {
 		$(".preview__wrapper").addClass("owl-theme owl-carousel").owlCarousel({

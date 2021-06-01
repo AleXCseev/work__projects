@@ -17,6 +17,11 @@ select::-ms-expand {
 	display: none;
 }
 
+input::placeholder {
+	color: inherit;
+	opacity: 1;
+}
+
 img {
 	user-select: none;
 	pointer-events: none;
