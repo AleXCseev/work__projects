@@ -4,11 +4,12 @@ $(function () {
 		loop: true,
 		nav : false,
 		dots : true,
+		dotsEach: true,
 		items: 4,
 		margin: 30,
-		// autoplay: true,
-		// onChange: callback,
-		// onInitialized: initialized,
+		autoplay:true,
+		autoplayTimeout: 4000,
+		autoplayHoverPause: true,
 		responsive:{
 			290: {
 				items: 2,
@@ -16,16 +17,24 @@ $(function () {
 			900: {
 				items: 3,
 			},
-			1280: {
+			1281: {
 				items: 4,
 			}
 		}
 	});
-	
+
 	AOS.init({
 		disable : 'mobile',
 		// offset : -100,
 	});
+
+	$(window).resize(function() {
+		AOS.refresh();
+	})
+
+	if($(window).width() < 1080) {
+		$(".card__boot").removeAttr("data-aos");
+	}
 
 	if($(window).width() <= 700) {
 		$(".preview__wrapper").addClass("owl-theme owl-carousel").owlCarousel({
@@ -34,18 +43,26 @@ $(function () {
 			dots : true,
 			items: 2,
 			margin: 20,
+			dotsEach: true,
+			autoplay:true,
+			autoplayTimeout: 4000,
+			autoplayHoverPause: true,
 		});
 	}
 
 
-
-	$('a[data-rel^=lightcase]').lightcase({
-		swipe: true,
-		showCaption: false,
-		maxHeight: 1200,
-		speedIn: 0,
-		speedOut: 0,
+	$('[data-fancybox]').fancybox({
+		loop: true,
 	});
+
+
+	// $('a[data-rel^=lightcase]').lightcase({
+	// 	swipe: true,
+	// 	showCaption: false,
+	// 	maxHeight: 1200,
+	// 	speedIn: 0,
+	// 	speedOut: 0,
+	// });
 
 	function modal() {
 		$(".add__review").click(function () {
