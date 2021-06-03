@@ -1,0 +1,384 @@
+.card__section {
+	width: 100%;
+	height: auto;
+	padding: 130px 0 50px;
+	position: relative;
+	z-index: 1;
+}
+
+.card__wrapper {
+	width: 100%;
+	height: auto;
+}
+
+.card__bg {
+	position: absolute;
+	top: -100px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.card {
+	 width: 100%;
+	 height: auto;
+	 display: flex;
+	 justify-content: space-between;
+	 position: relative;
+}
+
+.card__jalyfish {
+	position: absolute;
+    top: -160px;
+    right: -60px;
+    width: 171px;
+}
+
+.card__jalyfish-2 {
+	position: absolute;
+	bottom: -200px;
+    left: -320px;
+	opacity: 0.3;
+}
+
+.card__octopus {
+	position: absolute;
+	top: -180px;
+    left: -240px;
+}
+
+.card__jalyfish-3 {
+	position: absolute;
+	bottom: -390px;
+    left: -160px;
+}
+
+.card__1 {
+	margin-bottom: 300px;
+}
+
+.card__2 {
+	margin-bottom: 300px;
+}
+
+.card__3 {
+	margin-bottom: 115px;
+	.card__color-block {
+		width: 280px;
+	}
+}
+
+.card:before {
+	content: "";
+	width: 500px;
+	height: 500px;
+	background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+	opacity: 0.7;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.card__buble {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.card__boot-1 {
+	position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 75px;
+}
+
+.card__boot-2 {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.card__left {
+	width: 267px;
+	height: auto;
+}
+
+.card__title {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 42px;
+	line-height: 1.4;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 24px;
+}
+
+.card__info {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 1.4;
+	text-align: right;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.card__info-bold {
+	font-weight: bold;
+	text-align: left;
+}
+
+
+.card__right {
+	width: 280px;
+	height: auto;
+}
+
+.card__delivery {
+	width: 100%;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 1.3;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	span {
+		font-family: Roboto, sans-serif;
+		font-weight: 900;
+		font-size: 15px;
+		line-height: 1.3;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FBFF41;
+	}
+}
+
+.card form {
+	margin-top: 40px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card__input {
+	width: 280px;
+	height: 52px;
+	background-color: rgba(171, 255, 255, 0.15);
+	border-radius: 10px;
+	outline: none;
+	padding: 0 20px;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.card__size-wrapper {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.size__text {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.card__size-block {
+	width: 30px;
+	height: 80px;
+	position: relative;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.card__size-btn {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #FFFFFF;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1;
+	color: #FFFFFF;
+	opacity: 0.3;
+	transition: 0.3s ease;
+	cursor: pointer;
+	outline: none;
+}
+
+.card__size {
+	position: absolute;
+	bottom: 14px;
+    left: -10px;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1;
+	color: rgba(255, 255, 255, 0.5);
+	transform: rotate(90deg);
+	width: 50px;
+	transition: 0.3s ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.card__size-block.active {
+	.card__size-btn {
+		opacity: 1;
+	}
+	.card__size {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.card__price {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.card__galary {
+	width: 750px;
+	height: auto;
+	position: absolute;
+	bottom: -115px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: space-between;
+}
+
+.card__galary-item {
+	width: 100px;
+	height: 65px;
+	overflow: hidden;
+	box-shadow: 0px 4px 4px rgba(171, 255, 255, 0.25);
+	position: relative;
+}
+
+.card__galary-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	pointer-events: auto;
+	width: 100%;
+	height: auto;
+	transition: 0.3s ease;
+}
+
+.card__galary-img:hover {
+	width: 110%;
+}
+
+.card__color-block {
+	width: 440px;
+	height: 54px;
+	background: linear-gradient(270deg, rgba(8, 107, 153, 0.5) 0%, rgba(8, 107, 153, 0) 100%);
+	border-radius: 0px 50px 50px 0px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card__color-left {
+	width: 240px;
+}
+
+.card__color-text {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.3;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	span {
+		font-weight: 900;
+		font-size: 20px;
+		line-height: 1.3;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FBFF41;
+	}
+}
+
+.card__color-right {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.card__color {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.4;
+	color: #FFFFFF;
+	margin-right: 10px;
+}
+
+.card__color-btn {
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	cursor: pointer;
+	outline: none;
+	margin-right: 10px;
+	opacity: 0.4;
+	transition: 0.3s ease;
+}
+
+.card__color-btn:hover {
+	border: 2px solid #000;
+}
+
+.card__color-btn.active {
+	opacity: 1;
+}
+
+.card__color-btn.black {
+	background-color: #000;
+}
+
+.card__color-btn.white {
+	background-color: #fff;
+}
+
+.card__color-btn.red {
+	background-color: red;
+}
+
+

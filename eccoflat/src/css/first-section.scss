@@ -330,6 +330,8 @@
 	height: 482px;
 	background: #FFFFFF;
 	box-shadow: 0px 4px 30px rgba(171, 255, 255, 0.5);
+	position: relative;
+	z-index: 10;
 	.container {
 		height: 100%;
 	}
