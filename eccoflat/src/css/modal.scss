@@ -37,7 +37,8 @@
 	position: absolute;
 	top: 50%;
     left: 50%;
-	width: 110%;
+	width: auto;
+	height: 105%;
 	z-index: -1;
 	transform: translate(-50%, -50%);
 }
@@ -301,7 +302,7 @@
 @media (max-width: 700px) {
 	.modal__wrapper {
 		width: calc(100% - 30px);
-		height: 554px;
+		height: auto;
 		padding: 20px;
 		border-radius: 0px;
 		padding: 40px 20px 32px;
@@ -321,9 +322,7 @@
 		margin-top: 20px;
 		width: 280px;
 	}
-	.modal__area {
-		margin-bottom: 75px;
-	}
+
 	.modal__autor {
 		height: auto;
 		flex-direction: column;
@@ -341,6 +340,7 @@
 	.modal__area {
 		height: 168px;
 		margin: 0;
+		margin-bottom: 35px;
 	}
 	.modal__star-raiting {
 		order: 3;
@@ -357,7 +357,7 @@
 	.privacy-policy__wrapper {
 		width: calc(100% - 30px);
 		height: 500px;
-		padding: 50px 30px;
+		padding: 50px 15px;
 		overflow: auto;
 	}
 	.privacy-policy__headline {

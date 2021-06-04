@@ -92,13 +92,16 @@
     left: 50%;
     transform: translateX(-50%);
     margin-left: 75px;
+	width: 350px;
 }
 
 .card__boot-2 {
-	position: absolute;
-	top: 30px;
-	left: 50%;
-	transform: translateX(-50%);
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    margin-left: 20px;
 }
 
 .card__left {

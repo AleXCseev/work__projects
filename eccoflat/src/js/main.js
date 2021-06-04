@@ -9,23 +9,23 @@ $(function () {
 		autoplay:true,
 		autoplayTimeout: 4000,
 		autoplayHoverPause: true,
-		// responsive:{
-		// 	290: {
-		// 		items: 2,
-		// 	},
-		// 	900: {
-		// 		items: 3,
-		// 	},
-		// 	1281: {
-		// 		items: 4,
-		// 	}
-		// }
+		responsive:{
+			290: {
+				items: 2,
+			},
+			900: {
+				items: 3,
+			},
+			1281: {
+				items: 4,
+			}
+		}
 	});
 
-// 	AOS.init({
-// 		disable : 'mobile',
-// 		// offset : -100,
-// 	});
+	AOS.init({
+		disable : 'mobile',
+		// offset : -100,
+	});
 
 // 	$(window).resize(function() {
 // 		AOS.refresh();
@@ -225,7 +225,7 @@ $(function () {
 
 			$(selector + " .card__galary-img").each(function() {
 				var galary = $(this).attr("data-" + color);
-				$(this).hide().attr("src", galary).fadeIn(500)
+				$(this).attr("src", galary)
 				$(this).parent().attr("href", galary)
 			})
 		}
