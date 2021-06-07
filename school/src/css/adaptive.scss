@@ -1,0 +1,120 @@
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 1440px) {
+	.container {
+		width: 1200px;
+	}
+}
+
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 1280px) {
+	.container {
+		width: 1000px;
+	}
+	.header__name {
+		margin-right: 30px;
+	}
+	.header__right {
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.working__hours {
+		margin-right: 0px;
+		margin-bottom: 10px;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 1000px) {
+	.container {
+		width: 800px;
+	}
+	.site__header {
+		border: none;
+		height: 85px;
+		transition: 0.3s ease;
+		.container {
+			width: 100%;
+		}
+		.site__menu {
+			opacity: 0;
+			visibility: hidden;
+		}
+		.header__right {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+	.site__header.active {
+		height: 100vh;
+		.site__menu {
+			opacity: 1;
+			visibility: visible;
+		}
+		.header__right {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	.header__wrapper {
+		height: 100vh;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.header__left {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+	.header__name {
+		width: 100%;
+		margin: 0px;
+		padding: 15px 100px;
+		border-bottom: 5px solid #1D51D6;
+	}
+	.menu__item {
+		width: 100%;
+		height: 50px;
+		padding: 0px;
+		border-bottom: 1px solid #1D51D6;
+	}
+	.menu__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.header__right {
+		width: 100%;
+		height: auto;
+	}
+	.site__menu {
+		height: auto;
+		width: 100%;
+	}
+	.menu__list {
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+		align-items: center;
+	}
+	.burger__menu {
+		display: block;
+		top: 25px;
+    	right: 60px;
+	}
+
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 1440px) {
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 1440px) {
+}

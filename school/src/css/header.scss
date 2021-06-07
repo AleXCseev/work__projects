@@ -1,0 +1,183 @@
+
+.site__header {
+	width: 100%;
+	height: auto;
+	background: #3F75FF;
+	border-bottom: 5px solid #1D51D6;
+	position: fixed;
+	z-index: 1000;
+}
+
+.header__wrapper {
+	width: 100%;
+	height: 85px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__left {
+	width: auto;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+
+.header__name {
+	display: flex;
+	align-items: center;
+	margin-right: 60px;
+}
+
+.header__logo {
+	margin-right: 10px;
+}
+
+.header__title {
+	font-family: Raleway, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 1;
+	color: #FFFFFF;
+}
+
+.site__menu {
+	width: auto;
+	height: 100%;
+}
+
+.menu__list {
+	display: flex;
+	list-style: none;
+	width: auto;
+	height: 100%;
+}
+
+.menu__item {
+	width: auto;
+	height: 100%;
+	padding: 0px 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s ease;
+}
+
+.menu__link	{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	font-family: Raleway, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 85px;
+	color: #FFFFFF;
+}
+
+.menu__item.active {
+	background: #1D51D6;
+}
+
+.menu__item:hover {
+	background: #1D51D6;
+}
+
+.header__right {
+	display: flex;
+}
+
+.working__hours {
+	font-family: Raleway, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1;
+	color: #FFFFFF;
+	margin-right: 50px;
+	text-align: left;
+}
+
+.languages {
+	font-family: Raleway, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1;
+	color: #FFFFFF;
+	p a{
+		color: #FFFFFF;
+		font-family: Raleway, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 1;
+	}
+	p a.active {
+		font-weight: 600;
+	}
+}
+
+.burger__menu {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+
+	div {
+		width: 40px;
+		height: 3px;
+		background-color: #fff;
+		border-radius: 2px;
+		position: relative;
+		transition: 0.1s ease;
+	}
+
+	div:before {
+		content: "";
+		position: absolute;
+		width: 40px;
+		height: 3px;
+		background-color: #fff;
+		border-radius: 2px;
+		top: -14px;
+		left: 0;
+		transition: all 0.3s ease;
+	}
+
+	div:after {
+		content: "";
+		position: absolute;
+		width: 40px;
+		height: 3px;
+		background-color: #fff;
+		border-radius: 2px;
+		top: 14px;
+		left: 0;
+		transition: all 0.3s ease;
+	}
+}
+
+.burger__menu.active {
+	div {
+		background: transparent;
+	}
+	div:before {
+		transform-origin: center left;
+		transform: rotate(45deg);
+	}
+	div:after {
+		transform-origin: center left;
+		transform: rotate(-45deg);
+	}
+}
+
+
