@@ -67,6 +67,13 @@
 	z-index: -1;
 }
 
+.airplane__one {
+    position: absolute;
+    bottom: -20px;
+    left: 422px;
+    z-index: -1;
+}
+
 .main__title {
 	font-family: Raleway, sans-serif;
 	font-style: normal;
@@ -365,10 +372,15 @@
 	min-width: 100px;
 	min-height: 100px;
 	border-radius: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	margin-right: 20px;
+	position: relative;
+}
+
+.advantage__img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .advantage__title {

@@ -61,3 +61,13 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.social__logo {
+	transition: 0.3s ease;
+}
+
+.social__logo-wrapper:hover {
+	.social__logo {
+		transform: scale(1.2);
+	}
+}

@@ -6,34 +6,16 @@ $(function () {
 		items: 1,
 		dots: true,
 		margin: 30,
-		// autoplay:true,
-		// autoplayTimeout: 4000,
-		// autoplayHoverPause: true,
-		// responsive:{
-		// 	290: {
-		// 		items: 2,
-		// 	},
-		// 	900: {
-		// 		items: 3,
-		// 	},
-		// 	1281: {
-		// 		items: 4,
-		// 	}
-		// }
+		autoplay:true,
+		autoplayTimeout: 4000,
+		autoplayHoverPause: true,
 	});
 
-// 	AOS.init({
-// 		disable : 'mobile',
-// 		// offset : -100,
-// 	});
-
-// // 	$(window).resize(function() {
-// // 		AOS.refresh();
-// // 	})
-
-// // 	if($(window).width() < 1080) {
-// // 		$(".card__boot").removeAttr("data-aos");
-// // 	}
+	AOS.init({
+		disable : 'mobile',
+		once: true,
+		// offset : -100,
+	});
 
 	$('[data-fancybox]').fancybox({
 		loop: true,
@@ -90,8 +72,7 @@ $(function () {
 		})
 		
 		$(".menu__item").click(function(e) {
-			if($(window).width() <= 1000) {
-				console.log("ok")
+			if($(window).width() <= 1080) {
 				$(".burger__menu").removeClass("active")
 				$(".site__header").removeClass("active")
 			}
@@ -100,5 +81,6 @@ $(function () {
 	}
 
 	mobileMenu()
+
 })
 

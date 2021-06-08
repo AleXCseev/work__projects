@@ -264,10 +264,15 @@
 	min-height: 100px;
 	background: #3F74FF;
 	border-radius: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	margin-right: 20px;
+	position: relative;
+}
+
+.contact__logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .contact__title {
@@ -287,4 +292,8 @@
 	font-size: 18px;
 	line-height: 1.67;
 	color: #1E1E1E;
+}
+
+.list__photo-mobile {
+	display: none;
 }
