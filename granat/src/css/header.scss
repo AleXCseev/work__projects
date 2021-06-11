@@ -6,6 +6,7 @@
 	background-position: center;
 	background-size: cover;
 	position: relative;
+	padding-bottom: 30px;
 }
 
 .site__header:before {
@@ -15,7 +16,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .header__wrapper {
@@ -79,6 +80,7 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	pointer-events: none;
 }
 
 
@@ -93,6 +95,7 @@
 	position: relative;
 	margin: 0 10px;
 	transition: 0.3s ease;
+	pointer-events: auto;
 	span {
 		font-size: 40px;
 		line-height: 1;
@@ -162,8 +165,44 @@
     font-size: 22px;
     line-height: 1.5;
 	text-transform: uppercase;
+	margin-bottom: 10px;
 }
 
-.header__timer {
-	margin-bottom: 30px;
+.header__order-btn {
+	margin: 35px 0;
+	width: 320px;
+	height: 56px;
+	border-radius: 56px;
+	color: #fff;
+	background-color: #58870c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.3s ease;
+	font-size: 17;
+	font-weight: bold;
+}
+
+.header__order-btn:hover {
+	background-color: #719438;
+}
+
+.advantage {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.advanatge__logo {
+	margin-right: 30px;
+}
+
+.advantage__text {
+	text-align: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.2;
 }
