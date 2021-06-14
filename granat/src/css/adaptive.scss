@@ -187,6 +187,8 @@
 	}
 	.advanatge__logo {
 		margin-right: 20px;
+		min-width: 32px;
+		flex-shrink: 0;
 	}
 	.information__title {
 		font-size: 8vw;

@@ -67,6 +67,15 @@
 	}
 }
 
+.card__center {
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 .card:before {
 	content: "";
 	width: 500px;
@@ -107,6 +116,7 @@
 .card__left {
 	width: 267px;
 	height: auto;
+	margin-right: 590px;
 }
 
 .card__title {
@@ -188,6 +198,10 @@
 	line-height: 1;
 	color: #FFFFFF;
 	margin-bottom: 10px;
+}
+
+.card__input::placeholder {
+	color: #FFFFFF;
 }
 
 .card__size-wrapper {
@@ -308,7 +322,7 @@
 	border-radius: 0px 50px 50px 0px;
 	position: absolute;
 	bottom: 0;
-	left: 0;
+	left: -320px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

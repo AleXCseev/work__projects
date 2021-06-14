@@ -105,6 +105,7 @@
 	margin-bottom: 20px;
 	cursor: pointer;
 	position: relative;
+	opacity: 0.8;
 }
 
 .file .file__photo {
@@ -113,14 +114,16 @@
 	border-radius: 100%;
 	background-color: #fff;
 	position: relative;
+	overflow: hidden;
 	img {
 		display: none;
-		width: 90px;
-		height: 90px;
+		width: 100%;
+		height: auto;
 		border-radius: 100%;
 		position: absolute;
-		top: 0;
-		left: 0;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 		z-index: 100;
 	}
 }

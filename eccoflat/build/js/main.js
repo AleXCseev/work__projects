@@ -24,16 +24,13 @@ $(function () {
 
 	AOS.init({
 		disable : 'mobile',
+		once: true,
 		// offset : -100,
 	});
 
-// 	$(window).resize(function() {
-// 		AOS.refresh();
-// 	})
-
-// 	if($(window).width() < 1080) {
-// 		$(".card__boot").removeAttr("data-aos");
-// 	}
+	$(window).resize(function() {
+		AOS.refresh();
+	})
 
 	$('[data-fancybox]').fancybox({
 		loop: true,
