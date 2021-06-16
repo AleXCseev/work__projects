@@ -10,17 +10,33 @@ $(function () {
 		// autoplay:true,
 		// autoplayTimeout: 4000,
 		// autoplayHoverPause: true,
-		// responsive:{
-		// 	290: {
-		// 		items: 2,
-		// 	},
-		// 	900: {
-		// 		items: 3,
-		// 	},
-		// 	1281: {
-		// 		items: 4,
-		// 	}
-		// }
+		responsive:{
+			290: {
+				items: 1,
+				stagePadding: 0,
+				margin: 40,
+				center: true,
+				dots: true,
+			},
+			600: {
+				items: 1,
+				stagePadding: 35,
+				margin: 40,
+				center: true,
+				dots: true,
+			},
+			800: {
+				margin: 15,
+				stagePadding: 10,
+			},
+			1081: {
+				margin: 40,
+				stagePadding: 35,
+			},
+			1440: {
+				margin: 70,
+			}
+		}
 	});
 
 	$.raty.path = 'img/raty';
@@ -122,9 +138,18 @@ $(function () {
 
 	$('[href*="#"]').on('click', function (e) {
 		var fixedOffset = 0;
-		// if ($(document).width() <= 768) {
-		// 	fixedOffset = 300;
-		// }
+		if ($(document).width() <= 414) {
+			fixedOffset = 400;
+		}
+		if ($(document).width() <= 375) {
+			fixedOffset = 300;
+		}
+		if ($(document).width() <= 360) {
+			fixedOffset = 400;
+		}
+		if ($(document).width() <= 320) {
+			fixedOffset = 450;
+		}
 
 		$('html, body')
 			.stop()
@@ -132,30 +157,49 @@ $(function () {
 		e.preventDefault();
 	});
 
-	function carousel(selector, btnSelector, active) {
+	function carousel(selector, btnSelector) {
 		var acarousel = $(selector).acarousel();
+
+		function changeActive(move) {
+			var index = acarousel.getPos(move).index;
+			$(".move").removeClass("active").eq(index).addClass("active");
+			}
+
+			changeActive();
+			
+			$(".move").click(function () {
+			if (acarousel.isAnim()) return false; 
+			var index = $(".move").index(this);
+			var move = acarousel.moveByIndex(index);
+			changeActive(move);
+			return false;
+			});
 
 		$(selector).swiperight(function() {
 			if (acarousel.isAnim()) return false; 
-			acarousel.move(1);
+			var move = acarousel.move(1);
+			changeActive(move);
 			return false;
 		})
 
 		$(selector).swipeleft(function() {
 			if (acarousel.isAnim()) return false; 
-			acarousel.move(-1);
+			var move = acarousel.move(-1)
+			changeActive(move);;
 			return false;
 		})
 
 		$(btnSelector + " .move__back").click(function () {
 			if (acarousel.isAnim()) return false; 
-			acarousel.move(1);
+			var move = acarousel.move(1);
+			changeActive(move);
 			return false;
 		});
 			
 		$(btnSelector + " .move__next").click(function () {
 			if (acarousel.isAnim()) return false; 
-			acarousel.move(-1);
+			var move = acarousel.move(-1)
+			changeActive(move);;
 			return false;
 		});
 

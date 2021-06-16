@@ -60,7 +60,7 @@
 	border: 1px solid #888888;
 	box-sizing: border-box;
 	border-radius: 4px;
-	font-family: Montserrat, sans-serif;
+	font-family: inherit;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 50px;
@@ -74,7 +74,7 @@
 }
 
 .name__input::placeholder {
-	font-family: Montserrat, sans-serif;
+	font-family: inherit;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 50px;
@@ -94,7 +94,7 @@
 	// margin-left: 30px;
 	cursor: pointer;
 	span {
-		font-family: Montserrat, sans-serif;
+		font-family: inherit;
 		font-weight: normal;
 		font-size: 16px;
 	}
@@ -151,7 +151,7 @@
 	height: 50px;
 	justify-content: flex-end;
 	align-items: center;
-	font-family: Montserrat, sans-serif;
+	font-family: inherit;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 21px;
@@ -184,16 +184,17 @@
 	border: 1px solid #888888;
 	box-sizing: border-box;
 	border-radius: 4px;
-	font-family: Montserrat, sans-serif;
+	font-family: inherit;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 130%;
 	color: #444444;
 	padding: 13px 20px;
+	background-color: #fff;
 }
 
 .modal__area::placeholder {
-	font-family: Montserrat, sans-serif;
+	font-family: inherit;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 130%;
@@ -205,7 +206,7 @@
 	height: 50px;
 	background: #5B67C8;
 	border-radius: 4px;
-	font-family: Montserrat, sans-serif;
+	font-family: inherit;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 21px;
@@ -288,7 +289,7 @@
 
 .privacy-policy__headline {
 	width: 100%;
-	font-family: Montserrat, sans-serif;
+	font-family: inherit;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 26px;
@@ -299,7 +300,7 @@
 }
 
 .privacy-policy__text {
-	font-family: Montserrat, sans-serif;
+	font-family: inherit;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
@@ -347,7 +348,7 @@
 	.modal__wrapper {
 		width: 290px;
 		height: 508px;
-		padding: 20px;
+		padding: 60px 20px;
 	}
 	.modal form {
 		display: flex;
@@ -386,8 +387,8 @@
 		width: 100%;
 		height: 50px;
 		bottom: auto;
-		margin-bottom: 40px;
-		margin-top: 40px;
+		margin-bottom: 20px;
+    	margin-top: 20px;
 		justify-content: flex-start;
 	}
 

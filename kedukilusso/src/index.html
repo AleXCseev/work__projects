@@ -58,9 +58,9 @@
 			<div class="information__block">
 				<div class="container">
 					<div class="information__wrapper">
-						<img src="./img/information-girl.png" alt="" class="information__girl">
-						<img src="./img/shell.png" alt="" class="information__shell">
-						<img src="./img/glasses.png" alt="" class="imformation__glasses">
+						<img data-src="./img/information-girl.png" alt="" class="information__girl lazyload">
+						<img data-src="./img/shell.png" alt="" class="information__shell lazyload">
+						<img data-src="./img/glasses.png" alt="" class="imformation__glasses lazyload">
 						<div class="information__header-wrapper">
 							<h2 class="information__title">
 								Lorem ipsum dolor 
@@ -74,18 +74,18 @@
 							<div class="information__galary-wrapper">
 								<div class="information__img-wrapper information__img-wrapper1">
 									<a data-fancybox="info" href="./img/info-1.jpg">
-										<img src="./img/info-1.jpg" alt="" class="information__img">
+										<img data-src="./img/info-1.jpg" alt="" class="information__img lazyload">
 									</a>
 								</div>
 								<div class="information__img-wrapper information__img-wrapper2">
 									<a data-fancybox="info" href="./img/info-2.jpg">
-										<img src="./img/info-2.jpg" alt="" class="information__img">
+										<img data-src="./img/info-2.jpg" alt="" class="information__img lazyload">
 									</a>
 								</div>
 							</div>
 							<div class="information__img-wrapper information__img-wrapper3">
 								<a data-fancybox="info" href="./img/info-3.jpg">
-									<img src="./img/info-3.jpg" alt="" class="information__img">
+									<img data-src="./img/info-3.jpg" alt="" class="information__img lazyload">
 								</a>
 							</div>
 						</div>
@@ -98,6 +98,8 @@
 						<img src="./img/advantage-right.png" alt="" class="advantage__right">
 						<img src="./img/advantage__boot.png" alt="" class="advantage__boot">
 						<img src="./img/dots.png" alt="" class="dots__left">
+						<h2 class="advantage__title">LUSSO</h2>
+						<div class="advantage__circle"></div>
 						<div class="information__btn information__btn-1">
 							<div class="advantage advantage__1">
 								<img src="./img/advantage-1.png" alt="" class="advantage__img">
@@ -134,8 +136,6 @@
 								</p>
 							</div>
 						</div>
-						<h2 class="advantage__title">LUSSO</h2>
-						<div class="advantage__circle"></div>
 					</div>
 					<div class="galary__block">
 						<img src="./img/dots.png" alt="" class="galary__dots">
@@ -159,28 +159,34 @@
 							<div class="slider__wrapper">
 								<div class="slide slide__1">
 									<a data-fancybox="slider" href="./img/galary/1.jpg">
-										<img data-src="./img/galary/1.jpg" alt="" class="slide__img lazyload">
+										<img src="./img/galary/1.jpg" alt="" class="slide__img lazyload">
 									</a>
 								</div>
 								<div class="slide slide__2">
 									<a data-fancybox="slider" href="./img/galary/2.jpg">
-										<img data-src="./img/galary/2.jpg" alt="" class="slide__img lazyload">
+										<img src="./img/galary/2.jpg" alt="" class="slide__img lazyload">
 									</a>
 								</div>
 								<div class="slide slide__3">
 									<a data-fancybox="slider" href="./img/galary/3.jpg">
-										<img data-src="./img/galary/3.jpg" alt="" class="slide__img lazyload">
+										<img src="./img/galary/3.jpg" alt="" class="slide__img lazyload">
 									</a>
 								</div>
 								<div class="slide slide__4">
 									<a data-fancybox="slider" href="./img/galary/4.jpg">
-										<img data-src="./img/galary/4.jpg" alt="" class="slide__img lazyload">
+										<img src="./img/galary/4.jpg" alt="" class="slide__img lazyload">
 									</a>
 								</div>
 							</div>
 							<div class="move__mark">
 								<div class="move__next">
 									<img src="./img/arrow.png" alt="">
+								</div>
+								<div class="move__dots">
+									<a class="move"></a>
+									<a class="move"></a>
+									<a class="move"></a>
+									<a class="move"></a>
 								</div>
 								<div class="move__back">
 									<img src="./img/arrow.png" alt="">
@@ -194,7 +200,7 @@
 				<div class="container">
 					<div class="card__wrapper">
 						<div class="card card__1" id="card">
-							<img src="./img/card-leaf1.png" alt="" class="card__leaf-1">
+							<img data-src="./img/card-leaf1.png" alt="" class="card__leaf-1 lazyload">
 							<div class="card__header">
 								<img src="./img/logo.png" alt="" class="card__logo">
 								<h3 class="card__name">Lusso</h3>
@@ -291,7 +297,7 @@
 							</form>
 						</div>
 						<div class="card card__2">
-							<img src="./img/card-leaf2.png" alt="" class="card__leaf-2">
+							<img data-src="./img/card-leaf2.png" alt="" class="card__leaf-2 lazyload">
 							<div class="card__header">
 								<img src="./img/logo.png" alt="" class="card__logo">
 								<h3 class="card__name">Lusso</h3>
@@ -388,7 +394,7 @@
 							</form>
 						</div>
 						<div class="card card__3">
-							<img src="./img/card-leaf4.png" alt="" class="card__leaf-4">
+							<img data-src="./img/card-leaf4.png" alt="" class="card__leaf-4 lazyload">
 							<div class="card__header">
 								<img src="./img/logo.png" alt="" class="card__logo">
 								<h3 class="card__name">Lusso</h3>
@@ -485,10 +491,10 @@
 							</form>
 						</div>
 						<div class="sprey">
-							<img src="./img/card-leaf3.png" alt="" class="card__leaf-3">
+							<img data-src="./img/card-leaf3.png" alt="" class="card__leaf-3 lazyload">
 							<div class="sprey__left">
 								<div class="sprey__header">
-									<img src="./img/ecco-logo.png" alt="" class="sprey__logo">
+									<img data-src="./img/ecco-logo.png" alt="" class="sprey__logo lazyload">
 									<h3 class="sprey__name">Sprey</h3>
 								</div>
 								<div class="sprey__price">
@@ -513,7 +519,7 @@
 								</form>
 							</div>
 							<div class="sprey__center">
-								<img src="./img/sprey.png" alt="" class="sprey__img">
+								<img data-src="./img/sprey.png" alt="" class="sprey__img lazyload">
 							</div>
 							<div class="sprey__right">
 								<p class="sprey__text">
@@ -536,6 +542,7 @@
 		<footer class="site__footer">
 			<div class="container">
 				<div class="review__block">
+					<img data-src="./img/footer-flower.png" alt="" class="review__flower lazyload">
 					<h3 class="review__title">
 						отзывы наших покупателей
 					</h3>
@@ -608,14 +615,15 @@
 					<a role="button" class="add__review">Оставить отзыв</a>
 				</div>
 				<div class="footer__wrapper">
-					<img src="./img/footer-flowers.png" alt="" class="footer__flowers">
-					<img src="./img/footer-boot.png" alt="" class="footer__boot">
-					<img src="./img/footer-girl.png" alt="" class="footer__girl">
-					<img src="./img/footer-leaf1.png" alt="" class="footer__leaf-1">
-					<img src="./img/footer-leaf2.png" alt="" class="footer__leaf-2">
-					<img src="./img/footer-leaf3.png" alt="" class="footer__leaf-3">
-					<img src="./img/footer-leaf4.png" alt="" class="footer__leaf-4">
-					<img src="./img/footer-flower.png" alt="" class="footer__flower">
+					<img data-src="./img/footer-flowers.png" alt="" class="footer__flowers lazyload">
+					<img data-src="./img/footer-boot.png" alt="" class="footer__boot lazyload">
+					<img data-src="./img/footer-girl.png" alt="" class="footer__girl lazyload">
+					<img data-src="./img/footer-girlmobile.png" alt="" class="footer__girl-mobile lazyload">
+					<img data-src="./img/footer-leaf1.png" alt="" class="footer__leaf-1 lazyload">
+					<img data-src="./img/footer-leaf2.png" alt="" class="footer__leaf-2 lazyload">
+					<img data-src="./img/footer-leaf3.png" alt="" class="footer__leaf-3 lazyload">
+					<img data-src="./img/footer-leaf4.png" alt="" class="footer__leaf-4 lazyload">
+					<img data-src="./img/footer-flower.png" alt="" class="footer__flower lazyload">
 					<div class="header__sale">
 						<span>50%</span>
 					</div>
