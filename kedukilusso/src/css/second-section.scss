@@ -63,20 +63,25 @@
 .card__header {
 	padding: 0 50px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 	align-items: baseline;
+	margin-bottom: 10px;
+}
+
+.card__logo {
+    width: 130px;
 }
 
 .card__name {
 	font-family: Roboto, sans-serif;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 36px;
+	font-size: 30px;
 	line-height: 1;
 	text-transform: uppercase;
 	color: #7D2C8B;
-	margin-bottom: 26px;
+	margin: 0px 10px 10px;
 }
 
 .card__price {

@@ -62,6 +62,12 @@
 		right: -510px;
 		left: auto;
 	}
+	.sprey__right {
+		width: 350px;
+	}
+	.sprey__left {
+		width: 418px;
+	}
 	.review {
 		width: 440px;
 		height: 190px;
@@ -106,7 +112,13 @@
 
 /////////////////////////////////////////////////////////////////////
 @media (max-width: 1280px) {
-	
+	.galary__left {
+		width: 400px;
+		height: auto;
+	}
+	.galary__title {
+		font-size: 32px;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -373,6 +385,13 @@
 	.footer__content {
 		margin-left: 60px;
 	}
+	.sprey__text {
+		font-size: 16px;
+		margin-bottom: 5px;
+	}
+	.sprey__info {
+		font-size: 16px;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -390,8 +409,9 @@
 		padding-bottom: 50px;
 	}
 	.header__title {
-		width: 75%;
+		width: 85%;
 		margin-bottom: 460px;
+		font-size: 30px;
 	}
 	.header__girl {
 		top: 160px;
@@ -592,8 +612,8 @@
 		margin-bottom: 215px;
 	}
 	.review {
-		width: 630px;
-		height: 160px;
+		width: 100%;
+		height: 140px;
 	}
 	.owl-nav {
 		display: flex;
@@ -632,6 +652,7 @@
 		padding-bottom: 0px;
 	}
 	.footer__title {
+		font-size: 30px;
 		margin-bottom: 490px;
 	}
 	.footer__logo {
@@ -989,7 +1010,7 @@
 @media (max-width: 414px) {
 	.header__title {
 		width: 100%;
-		font-size: 7vw;
+		font-size: 6vw;
 		margin-bottom: 132vw;
 	}
 	.header__girl {
@@ -1047,7 +1068,7 @@
 		height: 150vw;
 	}
 	.information__title {
-		font-size: 7vw;
+		font-size: 6vw;
 	}
 	.information__text {
 		font-size: 4.5vw;
@@ -1078,7 +1099,7 @@
 		margin-left: 12vw;
 	}
 	.advantage__boot {
-		top: 0;
+		top: 12px;
 	}
 	.galary__title {
 		margin-top: 30px;
@@ -1119,6 +1140,9 @@
 	}
 	.card__section {
 		padding: 50px 0;
+	}
+	.card__logo {
+		margin-bottom: 10px;
 	}
 	.card__foto-wrapper {
 		width: 31%;
@@ -1215,6 +1239,9 @@
 		left: -40px;
 		width: 140px;
 	}
+	.add__review {
+		align-self: center;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -1261,6 +1288,7 @@
 	}
 	.card__name {
 		font-size: 9vw;
+		text-align: center;
 	}
 	.sprey__logo {
 		margin-right: 10px;
@@ -1271,7 +1299,7 @@
 	}
 	.review {
 		width: 100%;
-		height: 220px;
+		height: 210px;
 	}
 	.footer__girl-mobile {
 		top: 230px;
@@ -1280,7 +1308,7 @@
 	}
 	.footer__title {
 		margin-bottom: 480px;
-		font-size: 7vw;
+		font-size: 6vw;
 	}
 	.footer__wrapper .header__sale {
 		right: auto;
@@ -1346,7 +1374,7 @@
 		width: 320px;
 	}
 	.galary__title {
-		font-size: 26px;
+		font-size: 22px;
 	}
 	.galary__dots {
 		top: auto;
@@ -1384,10 +1412,15 @@
 	.new__price {
 		font-size: 24px;
 	}
+	.card__header {
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
 	.card__name {
+		margin: 0;
+		padding: 0;
 		margin-bottom: 10px;
-		margin-left: 0px;
-		padding-right: 20px;
 	}
 	.card__logo {
 		width: 145px;
@@ -1421,7 +1454,7 @@
 	}
 	.footer__title {
 		margin-bottom: 460px;
-		font-size: 7vw;
+		font-size: 6vw;
 	}
 	.footer__line .container {
 		font-size: 12px;
@@ -1436,5 +1469,9 @@
 	}
 	.sprey__info {
 		font-size: 4.5vw;
+	}
+	.review {
+		width: 100%;
+		height: 200px;
 	}
 }

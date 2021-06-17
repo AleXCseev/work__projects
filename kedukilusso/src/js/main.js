@@ -50,8 +50,9 @@ $(function () {
 	AOS.init({
 		disable : 'mobile',
 		once: true,
-		// offset : -100,
+		// offset : -200,
 	});
+
 
 	$(window).resize(function() {
 		AOS.refresh();
@@ -59,6 +60,7 @@ $(function () {
 
 	$('[data-fancybox]').fancybox({
 		loop: true,
+		infobar: false,
 	});
 
 	function modal() {
@@ -256,7 +258,6 @@ $(function () {
 			var getBigFotoSrc = $(selector + " .main__foto .card__img").attr("src");
 			if( getSrc !== getBigFotoSrc) {
 				$(selector + " .main__foto .card__img").hide().attr("src", getSrc).fadeIn(1000);
-				console.log($(selector + " .main__foto .card__img"))
 				$(selector + " .main__foto .card__img").parent().attr("href", getSrc);
 			}
 			return false
@@ -312,8 +313,8 @@ $(function () {
 		animateElement(".card__1 .card__galary", "fade__in")
 		animateElement(".card__2 .card__galary", "fade__in")
 		animateElement(".card__3 .card__galary", "fade__in")
-		parallax(".site__header", ".parallax")
-		parallax(".footer__wrapper", ".parallax__2")
+		parallax("body", ".parallax")
+		parallax("body", ".parallax__2")
 	}
 })
 
