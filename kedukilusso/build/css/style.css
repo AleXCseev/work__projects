@@ -1019,6 +1019,38 @@ body {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
   padding: 30px;
+  visibility: hidden;
+}
+
+.fade__in {
+  animation-name: stretchLeft;
+  -webkit-animation-name: stretchLeft;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  transform-origin: 100% 0%;
+  -ms-transform-origin: 100% 0%;
+  -webkit-transform-origin: 100% 0%;
+  visibility: visible;
+}
+
+@-webkit-keyframes stretchLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretchLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .main__foto {
@@ -1061,6 +1093,11 @@ body {
   overflow: hidden;
   position: relative;
   cursor: pointer;
+}
+
+.card__foto-wrapper .card__img {
+  width: 100%;
+  height: auto;
 }
 
 .sprey {
@@ -2203,6 +2240,7 @@ body {
     width: 396px;
     left: -415px;
     padding-bottom: 20px;
+    visibility: visible;
   }
   .main__foto {
     height: 270px;
@@ -3118,6 +3156,10 @@ body {
   .review__text {
     font-size: 4.2vw;
   }
+  .review__flower {
+    top: -5px;
+    right: -65px;
+  }
   .footer__line span {
     margin-right: 2px;
   }
@@ -3289,8 +3331,9 @@ body {
     font-size: 26px;
   }
   .galary__dots {
-    top: 440px;
-    left: -125px;
+    top: auto;
+    bottom: 422px;
+    left: -135px;
   }
   .galary__text {
     font-size: 16px;
@@ -3369,5 +3412,11 @@ body {
     top: 25px;
     left: -70px;
     width: 125px;
+  }
+  .sprey__text {
+    font-size: 4.5vw;
+  }
+  .sprey__info {
+    font-size: 4.5vw;
   }
 }

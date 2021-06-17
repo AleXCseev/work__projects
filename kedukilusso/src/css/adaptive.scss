@@ -274,6 +274,7 @@
 		width: 396px;
 		left: -415px;
 		padding-bottom: 20px;
+		visibility: visible; 
 	}
 	.main__foto {
 		height: 270px;
@@ -1169,6 +1170,10 @@
 	.review__text {
 		font-size: 4.2vw;
 	}
+	.review__flower {
+		top: -5px;
+		right: -65px;
+	}
 	.footer__line span {
 		margin-right: 2px;
 	}
@@ -1344,8 +1349,9 @@
 		font-size: 26px;
 	}
 	.galary__dots {
-		top: 440px;
-		left: -125px;
+		top: auto;
+		bottom: 422px;
+		left: -135px;
 	}
 	.galary__text {
 		font-size: 16px;
@@ -1424,5 +1430,11 @@
 		top: 25px;
 		left: -70px;
 		width: 125px;
+	}
+	.sprey__text {
+		font-size: 4.5vw;
+	}
+	.sprey__info {
+		font-size: 4.5vw;
 	}
 }

@@ -7,9 +7,9 @@ $(function () {
 		margin: 70,
 		dots: false,
 		stagePadding: 35,
-		// autoplay:true,
-		// autoplayTimeout: 4000,
-		// autoplayHoverPause: true,
+		autoplay:true,
+		autoplayTimeout: 4000,
+		autoplayHoverPause: true,
 		responsive:{
 			290: {
 				items: 1,
@@ -266,5 +266,54 @@ $(function () {
 	switchFotoCard(".card__1")
 	switchFotoCard(".card__2")
 	switchFotoCard(".card__3")
+
+	function animateElement (selector, animation) {
+		$(window).scroll(function() {
+			$(selector).each(function(){
+			var imagePos = $(this).offset().top;
+	
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+600) {
+					$(this).addClass(animation);
+				}
+			});
+		});
+	}
+
+	function parallax(selectorWrapper, selectorElement) {
+		var banner = $(selectorWrapper);
+		var imgs = $(selectorElement);
+		function showAllObjects (object) {
+			object.fadeIn(900);
+		}
+
+		function moving (object, speed) {
+			banner.on('mousemove', function(event) {
+				var X = Math.floor((event.pageX)/speed-20) + "px";
+				var Y = Math.floor((event.pageY)/speed) + "px";
+				object.css('transform', 'translate('+X+' , '+Y+')');
+			});
+		}
+
+		function moveAll (object) {
+			moving($(object[0]),100);
+			moving($(object[1]),90);
+			moving($(object[2]),110);
+			moving($(object[3]),100);
+			moving($(object[4]),90);
+			moving($(object[5]),110);
+		}
+
+		showAllObjects(imgs);
+		moveAll(imgs);
+	}
+
+	if($(window).width() >= 1080) {
+		animateElement(".card__1 .card__galary", "fade__in")
+		animateElement(".card__2 .card__galary", "fade__in")
+		animateElement(".card__3 .card__galary", "fade__in")
+		parallax(".site__header", ".parallax")
+		parallax(".footer__wrapper", ".parallax__2")
+	}
 })
 
