@@ -961,18 +961,15 @@ body {
 
 .reviews {
   width: 440px;
-}
-
-.owl-carousel .owl-stage-outer {
-  overflow: visible;
+  height: auto;
+  display: block;
 }
 
 .review {
   width: 440px;
-  height: 621px;
+  height: auto;
   padding: 19px 20px 30px;
   background: #307618;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   display: -webkit-flex;
   display: flex;
@@ -989,7 +986,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #FFFFFF;
-  height: 180px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .review__img-wrapper {
@@ -998,6 +996,7 @@ body {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .review__img {
