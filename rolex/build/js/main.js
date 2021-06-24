@@ -42,14 +42,6 @@ $(function () {
 	});
 
 
-	// $.raty.path = 'img/raty';
-
-	// $('.modal__raiting').raty({
-	// 	half: true,
-	// 	space: false,
-	// 	number: 5,
-	// });
-
 	AOS.init({
 		disable : 'mobile',
 		once: true,
@@ -77,7 +69,7 @@ $(function () {
 	});
 
 
-	// $(".copiright span").text(new Date().getFullYear())
+	$(".year").text(new Date().getFullYear())
 
 	function getRandomInt(max) {
 		return Math.floor(Math.random() * Math.floor(max));
@@ -108,6 +100,52 @@ $(function () {
 	}
 
 	quantity()
+
+	
+
+	function lazyloadVideo() {
+		var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+
+		if ("IntersectionObserver" in window) {
+			var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+				entries.forEach(function(video) {
+				if (video.isIntersecting) {
+					for (var source in video.target.children) {
+					var videoSource = video.target.children[source];
+					if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+						videoSource.src = videoSource.dataset.src;
+					}
+					}
+		
+					video.target.load();
+					video.target.classList.remove("lazy");
+					lazyVideoObserver.unobserve(video.target);
+				}
+				});
+			});
+		
+			lazyVideos.forEach(function(lazyVideo) {
+				lazyVideoObserver.observe(lazyVideo);
+			});
+		}
+	}
+
+	lazyloadVideo()
+
+	function showBtn() {
+		var $element = $('.card__section');
+		$(window).scroll(function() {
+			$(".invisible__order-btn").removeClass("active")
+			var scroll = $(window).scrollTop() + $(window).height();
+			var offset = $element.offset().top + $element.height();
+	
+			if (scroll > offset + 1400) {
+				$(".invisible__order-btn").addClass('active');
+			}
+		});
+	}
+
+	showBtn()
 	
 })
 
