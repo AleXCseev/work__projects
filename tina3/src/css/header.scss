@@ -42,7 +42,7 @@
 	font-family: Pacifico, sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 64px;
+	font-size: 54px;
 	line-height: 1.41;
 	color: #fff;
 	
@@ -59,9 +59,9 @@
 	box-shadow: -8px 6px 5px rgba(0, 0, 0, 0.25);
 	border-radius: 30px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	padding: 0 63px;
+	// padding: 0 63px;
 	transition: 0.3s ease;
 
 	span {
@@ -71,11 +71,12 @@
 		font-size: 18px;
 		line-height: 1;
 		color: #333333;
+		margin-right: 20px;
 	}
 }
 
 .header__order-btn:hover {
-	background: #fff;
+	background: #00ff40;
 }
 
 .header__right {
@@ -94,4 +95,24 @@
 .header__logo-2 {
 	margin-top: -200px;
 	margin-right: -150px;
+}
+
+.site__order-btn {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 100px;
+	right: 50px;
+	z-index: 100;
+	border-radius: 100%;
+	background-color: #C2924A;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s ease; 
+	transform: translateX(200px);
+}
+
+.site__order-btn.active {
+	transform: translateX(0px);
 }
