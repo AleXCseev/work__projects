@@ -1,7 +1,8 @@
 $(function () {
 
 	$( '.swipebox' ).swipebox({
-		loopAtEnd: true 
+		loopAtEnd: true,
+		removeBarsOnMobile : false,
 	});
 
 
@@ -135,12 +136,14 @@ $(function () {
 	function showBtn() {
 		var $element = $('.card__form');
 		$(window).scroll(function() {
-			$(".site__order-btn").removeClass("active")
+			// $(".site__order-btn").addClass('active');
 			var scroll = $(window).scrollTop() + $(window).height();
 			var offset = $element.offset().top + $element.height();
 	
 			if (scroll > offset + 700 || scroll < offset - $element.height() - 200 ) {
-				$(".site__order-btn").addClass('active');
+				$(".site__order-btn").show(100);
+			} else {
+				$(".site__order-btn").hide(100)
 			}
 		});
 	}
