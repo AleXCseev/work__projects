@@ -1,0 +1,158 @@
+.site__footer {
+	width: 100%;
+	height: auto;
+}
+
+.delivery__section {
+	width: 100%;
+	height: auto;
+	padding-top: 100px;
+}
+
+.delivery__wrapper {
+	width: 940px;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.delivery__title {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	margin-bottom: 20px;
+}
+
+.delivery__info {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.2;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 60px;
+}
+
+.delivery__stages {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.stage {
+	width: 160px;
+	height: 124px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 30px rgba(142, 103, 255, 0.5);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 16px 10px 5px;
+}
+
+.stage__img {
+	margin-bottom: 12px;
+}
+
+.stage__text {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 1.2;
+	text-align: center;
+	color: #111111;
+}
+
+.site__footer {
+	width: 100%;
+	height: auto;
+}
+
+.footer__wrapper {
+	width: 521px;
+	height: auto;
+	padding-top: 219px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+
+	.header__order-btn {
+		margin-bottom: 62px;
+	}
+}
+
+.footer__tina {
+	position: absolute;
+	bottom: -38px;
+    right: -1020px;
+	z-index: -1;
+}
+
+.footer__title {
+	font-family: SignPainter, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 110px;
+	line-height: 1;
+	text-align: center;
+	color: #6A38FF;
+	margin-bottom: 50px;
+}
+
+.footer__text {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 17px;
+	line-height: 1.2;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1D075D;
+	margin-bottom: 100px;
+
+	span {
+		color: #6F3EFF;
+		font-weight: bold;
+	}
+}
+
+.footer__price {
+	margin-bottom: 30px;
+}
+
+.footer__line {
+	width: 100%;
+	height: auto;
+	background-color: #BBB8FF;
+	position: relative;
+	z-index: 1;
+
+	.container {
+		padding: 12px 0;
+		font-family: Roboto, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 1.2;
+		text-align: center;
+		color: #000000;
+		opacity: 0.7;
+	}
+}
+
+.confidantion {
+	cursor: pointer;
+}
