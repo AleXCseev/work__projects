@@ -174,5 +174,26 @@ $(function () {
 
 	cardImage(".card") 
 
+	function showBtn() {
+		var $element = $('.card__form');
+
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop() + $(window).height();
+			var offset = $element.offset().top + $element.height();
+			var bodyOffset = $("body").offset().top + $("body").height();
+			if ((scroll > offset + 400 || scroll < offset - $element.height() - 200)) {
+				if($(window).width() < 480 &&  scroll > bodyOffset - 100) {
+					$(".site__order-btn").hide(100)
+				} else {
+					$(".site__order-btn").show(100);
+				}
+			} else {
+				$(".site__order-btn").hide(100)
+			}
+		});
+	}
+
+	showBtn()
+
 })
 

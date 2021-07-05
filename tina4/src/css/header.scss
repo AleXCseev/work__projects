@@ -176,3 +176,24 @@
 		color: #6F3EFF;
 	}
 }
+
+.site__order-btn {
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	background-color: #2144FF;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 50px;
+	right: 65px;
+	z-index: 100;
+	transition: 0.3s ease;
+}
+
+.site__order-btn:hover {
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+}
