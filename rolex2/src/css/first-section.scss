@@ -30,6 +30,19 @@
 	border-radius: 10px;
 	box-shadow: 0px 0px 30px rgba(211, 255, 199, 0.5);
 	margin-bottom: 50px;
+	animation: discont 3s infinite;
+}
+
+@keyframes discont {
+	0% {
+		box-shadow: 0px 0px 30px rgba(211, 255, 199, 0.5);
+	}
+	50% {
+		box-shadow: 0px 0px 40px rgba(211, 255, 199, 0.8);
+	}
+	100% {
+		box-shadow: 0px 0px 30px rgba(211, 255, 199, 0.5);
+	}
 }
 
 .information__discont-text {
@@ -87,9 +100,9 @@
 	margin-bottom: 20px;
 }
 
-// .information__text-4 {
-// 	margin-bottom: 60px;
-// }
+.information__text-4 {
+	margin-bottom: 60px;
+}
 
 .slider__wrapper {
 	width: 100%;
@@ -385,7 +398,33 @@
 	align-items: center;
 	margin-bottom: 20px;
 	transition: 0.3s ease;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
 }
+
+.card-main__btn:before {
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 100%;
+	top: 0;
+	left: -120px;
+	transform: skew(-30deg);
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+	animation: btn 3s infinite;
+}
+
+@keyframes btn {
+	0% {
+		transform: translateX(0px) skew(-30deg);
+	}
+	100% {
+		transform: translateX(500px) skew(-30deg);
+	}
+}
+
+
 
 .card-main__btn:hover {
 	background: #cacc52;
