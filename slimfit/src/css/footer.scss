@@ -1,0 +1,57 @@
+.site__footer {
+	width: 100%;
+	height: auto;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.footer__order-btn {
+	width: 400px;
+	height: 100px;
+	background-color: #FF0000;
+	cursor: pointer;
+	font-family: Halant, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 1;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-bottom: 30px;
+	transition: 0.3s ease;
+}
+
+.footer__order-btn:hover {
+	background: #d80202;
+}
+
+.copyright {
+	font-family: Halant, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.6;
+	text-align: center;
+	color: #000000;
+}
+
+.footer__links {
+	margin-bottom: 48px;
+	a {
+		font-family: Halant, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 1.6;
+		text-align: center;
+		color: #000000;
+		cursor: pointer;
+	}
+}

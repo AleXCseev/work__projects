@@ -1,2 +1,16 @@
 /////////////////////////////////////////////////////////////////////
 @media (max-width: 1900px) {}
+
+
+@media (max-width: 768px) {
+    .review {
+        margin: 0;
+    }
+    .review-photo {
+        margin-left: 0;
+    }
+
+    .review-body {
+        width: calc(100% - 50px - 10px);
+    }
+}
