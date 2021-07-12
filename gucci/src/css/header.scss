@@ -24,7 +24,7 @@
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 	position: fixed;
 	right: 50px;
-	bottom: 50px;
+	bottom: 25px;
 	z-index: 1000;
 	transition: 0.3s ease;
 	cursor: pointer;
@@ -181,6 +181,7 @@
 	position: absolute;
 	top: 0;
 	left: 12%;
+	animation: scale 3s infinite;
 }
 
 .circle__lightblue {
@@ -191,6 +192,8 @@
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	animation: scale 3s infinite;
+	animation-delay: 1s;
 }
 
 .circle__yellow {
@@ -201,6 +204,20 @@
     position: absolute;
     bottom: 22%;
 	right: 0;
+	animation: scale 3s infinite;
+	animation-delay: 2s;
+}
+
+@keyframes scale {
+	0% {
+		transform: scale()
+	}
+	50% {
+		transform: scale(1.1)
+	}
+	100% {
+		transform: scale()
+	}
 }
 
 .circle__wrapper-header {
@@ -210,6 +227,32 @@
 	transform: rotate(30deg);
 	top: -97px;
     left: -28px;
+}
+
+.circle__wrapper-header2 {
+	width: 585px;
+    height: 490px;
+    position: absolute;
+	top: 236px;
+    right: 328px;
+	z-index: -1;
+	transform: rotate(140deg);
+	.circle__blue {
+		width: 44%;
+    	height: 54%;
+		left: 0;
+	}
+	.circle__lightblue {
+		width: 42%;
+		height: 50%;
+		left: 8%;
+		bottom: -14%;
+	}
+	.circle__yellow {
+		width: 42%;
+		height: 50%;
+		bottom: 0;
+	}
 }
 
 .header__content {
