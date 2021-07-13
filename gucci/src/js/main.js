@@ -6,37 +6,9 @@ $(function () {
 		items: 1,
 		margin: 20,
 		dots: true,
-		// stagePadding: 35,
-		autoplay:true,
-		autoplayTimeout: 4000,
-		autoplayHoverPause: true,
-		// responsive:{
-		// 	290: {
-		// 		items: 1,
-		// 		stagePadding: 0,
-		// 		margin: 40,
-		// 		center: true,
-		// 		dots: true,
-		// 	},
-		// 	600: {
-		// 		items: 1,
-		// 		stagePadding: 35,
-		// 		margin: 40,
-		// 		center: true,
-		// 		dots: true,
-		// 	},
-		// 	800: {
-		// 		margin: 15,
-		// 		stagePadding: 10,
-		// 	},
-		// 	1081: {
-		// 		margin: 40,
-		// 		stagePadding: 35,
-		// 	},
-		// 	1440: {
-		// 		margin: 70,
-		// 	}
-		// }
+		// autoplay:true,
+		// autoplayTimeout: 4000,
+		// autoplayHoverPause: true,
 	});
 
 	$(".review__slider").owlCarousel({
@@ -46,67 +18,22 @@ $(function () {
 		margin: 50,
 		dots: true,
 		dotsEach: true,
-		// stagePadding: 35,
 		// autoplay:true,
 		// autoplayTimeout: 4000,
 		// autoplayHoverPause: true,
-		// responsive:{
-		// 	290: {
-		// 		items: 1,
-		// 		stagePadding: 0,
-		// 		margin: 40,
-		// 		center: true,
-		// 		dots: true,
-		// 	},
-		// 	600: {
-		// 		items: 1,
-		// 		stagePadding: 35,
-		// 		margin: 40,
-		// 		center: true,
-		// 		dots: true,
-		// 	},
-		// 	800: {
-		// 		margin: 15,
-		// 		stagePadding: 10,
-		// 	},
-		// 	1081: {
-		// 		margin: 40,
-		// 		stagePadding: 35,
-		// 	},
-		// 	1440: {
-		// 		margin: 70,
-		// 	}
-		// }
-	});
-
-	function lazyloadVideo() {
-		var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
-
-		if ("IntersectionObserver" in window) {
-			var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
-				entries.forEach(function(video) {
-				if (video.isIntersecting) {
-					for (var source in video.target.children) {
-					var videoSource = video.target.children[source];
-					if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
-						videoSource.src = videoSource.dataset.src;
-					}
-					}
-		
-					video.target.load();
-					video.target.classList.remove("lazy");
-					lazyVideoObserver.unobserve(video.target);
-				}
-				});
-			});
-		
-			lazyVideos.forEach(function(lazyVideo) {
-				lazyVideoObserver.observe(lazyVideo);
-			});
+		responsive:{
+			0: {
+				items: 1,
+				margin: 50,
+			},
+			1070: {
+				items: 2,
+			},
+			1680: {
+				items: 3,
+			}
 		}
-	}
-
-	lazyloadVideo()
+	});
 
 	function addVideoOnPage(selector) {
 		$(selector).click(function() {
@@ -164,6 +91,10 @@ $(function () {
 		}
 
 		$(selector + " .color__btn").click(function() {
+			if($(this).hasClass("active")) {
+				return false;
+			}
+
 			$(selector + " .color__btn").removeClass("active")
 			if($(this).hasClass("blue")) {
 				switchBtn("blue")
@@ -173,7 +104,6 @@ $(function () {
 			}
 			if($(this).hasClass("black")) {
 				switchBtn("black")
-
 			}
 			$(this).addClass("active")
 		})
@@ -182,6 +112,22 @@ $(function () {
 	cardImage(".card__1")
 	cardImage(".card__2")
 	cardImage(".card__3")
+
+	function showBtn() {
+		var $element = $('.card__section');
+
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop() + $(window).height();
+			var offset = $element.offset().top + $element.height();
+			if ((scroll > offset + 200 || scroll < offset - $element.height() - 0)) {
+				$(".header__order-scroll").show(100);
+			} else {
+				$(".header__order-scroll").hide(100)
+			}
+		});
+	}
+
+	showBtn()
 
 })
 

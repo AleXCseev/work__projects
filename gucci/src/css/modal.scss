@@ -141,3 +141,27 @@
 		font-size: 14px;
 	}
 }
+
+@media (max-width: 480px) {
+	.privacy-policy__title {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		font-size: 16px;
+		line-height: 1.4;
+	}
+	.privacy-policy__text {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 414px) {
+	.privacy-policy__title {
+		font-size: 10px;
+		padding: 5px 0;
+	}
+	.privacy-policy__text {
+		font-size: 10px;
+	}
+}
