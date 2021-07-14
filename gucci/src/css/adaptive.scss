@@ -515,10 +515,6 @@
 		top: auto;
 		bottom: 20px;
 	}
-	// .play__img-wrapper {
-	// 	margin: 0;
-	// 	margin-bottom: 10px;
-	// }
 	.site__main {
 		width: 100%;
 		height: auto;
@@ -1205,30 +1201,53 @@
 		bottom: 25px;
 	}
 	.galary__section {
-		height: 185vw;
+		height: 190vw;
 	}
 	.galary__wrapper {
-		height: 185vw;
+		height: 190vw;
 	}
 	.card .play__img-wrapper {
 		width: 50px;
 		height: 50px;
 		margin-right: 12px;
 		background-position: 20px center;
+		flex-shrink: 0;
 	}
 	.card .size__video-wrapper .play__video-modal {
 		margin-right: 20px;
 	}
 	.color__btn {
 		margin: 0 5px;
+		flex-shrink: 0;
 	}
 	.play__video-modal span {
 		font-size: 16px;
 		line-height: 1.4;
 	}
+	.old__price {
+		font-size: 5.5vw;
+		margin-right: 15px;
+	}
+	.new__price {
+		font-size: 9.5vw;
+		line-height: 1;
+		color: #D80041;
+	}
 	.card__right {
 		width: calc(100% + 40px);
 		margin-left: -20px;
+	}
+	.card__section-wrapper {
+		padding-top: 80px;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+	.card__sale-wrapper {
+		margin-bottom: 30px;
+	}
+	.review__section {
+		padding-top: 30px;
 	}
 	.autor__name {
 		font-size: 3.5vw;
@@ -1307,11 +1326,11 @@
 		bottom: 100px;
 	}
 	.footer__wrapper-delivery2 {
-		width: 210px;
-		height: 280px;
+		width: 220px;
+		height: 290px;
 		top: auto;
-		bottom: 271px;
-		margin-left: -90px;
+		bottom: 245px;
+		margin-left: -100px;
 		z-index: -1;
 	}
 	.footer__price {
@@ -1322,19 +1341,18 @@
 			font-size: 9vw;
 		}
 	}
+	.review__section {
+		.owl-nav {
+			padding-right: 40px;
+		}
+		.owl-dots {
+			padding-right: 40px;
+		}
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
 @media (max-width: 414px) {
-	.old__price {
-		font-size: 6vw;
-		margin-right: 15px;
-	}
-	.new__price {
-		font-size: 10vw;
-		line-height: 1;
-		color: #D80041;
-	}
 	.header__girl {
 		width: 450px;
 		margin-left: 20px;
@@ -1347,7 +1365,7 @@
 		transform: translateX(-50%) rotate(150deg);
 	}
 	.site__header {
-		height: 755px;
+		height: 740px;
 	}
 	.header__smile-2 {
 		bottom: 585px;
@@ -1376,18 +1394,6 @@
 	.galary__wrapper {
 		height: 190vw;
 	}
-	.card .play__img-wrapper {
-		flex-shrink: 0;
-	}
-	.color__btn {
-		flex-shrink: 0;
-	}
-	.card__section-wrapper {
-		padding-top: 80px;
-	}
-	.card {
-		margin-bottom: 30px;
-	}
 	.card__sale-wrapper {
 		margin-bottom: 30px;
 	}
@@ -1398,6 +1404,7 @@
 		font-size: 30px;
 		margin-bottom: 30px;
 	}
+	
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -1453,11 +1460,11 @@
 		bottom: 100px;
 	}
 	.footer__wrapper-delivery2 {
-		width: 180px;
-		height: 230px;
+		width: 205px;
+		height: 260px;
 		top: auto;
-		bottom: 271px;
-		margin-left: -60px;
+		bottom: 215px;
+		margin-left: -70px;
 		z-index: -1;
 	}
 	.footer__wrapper .header__order-wrapper {
@@ -1507,6 +1514,15 @@
 
 /////////////////////////////////////////////////////////////////////
 @media (max-width: 320px) {
+	.site__header {
+		height: 670px;
+	}
+	.circle__wrapper-header2 {
+		width: 220px;
+		height: 185px;
+		margin-left: -81px;
+		bottom: 465px;
+	}
 	.galary__section {
 		height: 205vw;
 	}
@@ -1530,15 +1546,7 @@
 	.card {
 		border-radius: 30px;
 	}
-	.review__section {
-		.owl-nav {
-			width: 100%;
-			padding-right: 40px;
-		}
-		.owl-dots {
-			padding-right: 40px;
-		}
-	}
+	
 	.review__slide {
 		padding: 20px;
 	}

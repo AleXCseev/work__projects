@@ -230,6 +230,8 @@ body {
   top: 457px;
   left: 66px;
   z-index: 1;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .header__smile-2 {
@@ -237,6 +239,8 @@ body {
   top: 275px;
   right: 65px;
   z-index: 1;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 .header__like {
@@ -244,6 +248,8 @@ body {
   top: 623px;
   left: 819px;
   z-index: 1;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 .header__gradient {
@@ -577,6 +583,45 @@ body {
 
 .play__video-modal:hover span {
   color: #D80041;
+}
+
+.tossing {
+  -webkit-animation-name: tossing;
+  animation-name: tossing;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes tossing {
+  0% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes tossing {
+  0% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
 }
 
 .site__main {
@@ -1362,8 +1407,8 @@ body {
 }
 
 .review__photo {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1466,6 +1511,8 @@ body {
   left: -150px;
   top: -90px;
   width: 150px;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 .delivery__section-title {
@@ -1589,6 +1636,8 @@ body {
   width: 100px;
   top: -20px;
   right: -500px;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 .footer__girl-left {
@@ -3055,30 +3104,53 @@ body {
     bottom: 25px;
   }
   .galary__section {
-    height: 185vw;
+    height: 190vw;
   }
   .galary__wrapper {
-    height: 185vw;
+    height: 190vw;
   }
   .card .play__img-wrapper {
     width: 50px;
     height: 50px;
     margin-right: 12px;
     background-position: 20px center;
+    flex-shrink: 0;
   }
   .card .size__video-wrapper .play__video-modal {
     margin-right: 20px;
   }
   .color__btn {
     margin: 0 5px;
+    flex-shrink: 0;
   }
   .play__video-modal span {
     font-size: 16px;
     line-height: 1.4;
   }
+  .old__price {
+    font-size: 5.5vw;
+    margin-right: 15px;
+  }
+  .new__price {
+    font-size: 9.5vw;
+    line-height: 1;
+    color: #D80041;
+  }
   .card__right {
     width: calc(100% + 40px);
     margin-left: -20px;
+  }
+  .card__section-wrapper {
+    padding-top: 80px;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
+  .card__sale-wrapper {
+    margin-bottom: 30px;
+  }
+  .review__section {
+    padding-top: 30px;
   }
   .autor__name {
     font-size: 3.5vw;
@@ -3159,11 +3231,11 @@ body {
     bottom: 100px;
   }
   .footer__wrapper-delivery2 {
-    width: 210px;
-    height: 280px;
+    width: 220px;
+    height: 290px;
     top: auto;
-    bottom: 271px;
-    margin-left: -90px;
+    bottom: 245px;
+    margin-left: -100px;
     z-index: -1;
   }
   .footer__price .old__price {
@@ -3172,18 +3244,15 @@ body {
   .footer__price .new__price {
     font-size: 9vw;
   }
+  .review__section .owl-nav {
+    padding-right: 40px;
+  }
+  .review__section .owl-dots {
+    padding-right: 40px;
+  }
 }
 
 @media (max-width: 414px) {
-  .old__price {
-    font-size: 6vw;
-    margin-right: 15px;
-  }
-  .new__price {
-    font-size: 10vw;
-    line-height: 1;
-    color: #D80041;
-  }
   .header__girl {
     width: 450px;
     margin-left: 20px;
@@ -3197,7 +3266,7 @@ body {
     transform: translateX(-50%) rotate(150deg);
   }
   .site__header {
-    height: 755px;
+    height: 740px;
   }
   .header__smile-2 {
     bottom: 585px;
@@ -3225,18 +3294,6 @@ body {
   }
   .galary__wrapper {
     height: 190vw;
-  }
-  .card .play__img-wrapper {
-    flex-shrink: 0;
-  }
-  .color__btn {
-    flex-shrink: 0;
-  }
-  .card__section-wrapper {
-    padding-top: 80px;
-  }
-  .card {
-    margin-bottom: 30px;
   }
   .card__sale-wrapper {
     margin-bottom: 30px;
@@ -3302,11 +3359,11 @@ body {
     bottom: 100px;
   }
   .footer__wrapper-delivery2 {
-    width: 180px;
-    height: 230px;
+    width: 205px;
+    height: 260px;
     top: auto;
-    bottom: 271px;
-    margin-left: -60px;
+    bottom: 215px;
+    margin-left: -70px;
     z-index: -1;
   }
   .footer__wrapper .header__order-wrapper {
@@ -3355,6 +3412,15 @@ body {
 }
 
 @media (max-width: 320px) {
+  .site__header {
+    height: 670px;
+  }
+  .circle__wrapper-header2 {
+    width: 220px;
+    height: 185px;
+    margin-left: -81px;
+    bottom: 465px;
+  }
   .galary__section {
     height: 205vw;
   }
@@ -3377,13 +3443,6 @@ body {
   }
   .card {
     border-radius: 30px;
-  }
-  .review__section .owl-nav {
-    width: 100%;
-    padding-right: 40px;
-  }
-  .review__section .owl-dots {
-    padding-right: 40px;
   }
   .review__slide {
     padding: 20px;

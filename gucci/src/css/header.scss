@@ -106,6 +106,7 @@
 	top: 457px;
 	left: 66px;
 	z-index: 1;
+	animation-delay: 1s;
 }
 
 .header__smile-2 {
@@ -113,6 +114,7 @@
 	top: 275px;
 	right: 65px;
 	z-index: 1;
+	animation-delay: 2s;
 }
 
 .header__like {
@@ -120,6 +122,7 @@
 	top: 623px;
 	left: 819px;
 	z-index: 1;
+	animation-delay: 3s;
 }
 
 .header__gradient {
@@ -426,5 +429,23 @@
 	span {
 		color: #D80041;
 	}
+}
+
+.tossing{
+	animation-name: tossing;
+	animation-duration: 4s;	
+	animation-iteration-count: infinite;
+}
+
+@keyframes tossing {
+	0% {
+		transform: rotate(-20deg);	
+	}
+	50% {
+		transform: rotate(20deg);
+	}
+	100% {
+		transform: rotate(-20deg);	
+	}						
 }
 

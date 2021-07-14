@@ -119,8 +119,13 @@ $(function () {
 		$(window).scroll(function() {
 			var scroll = $(window).scrollTop() + $(window).height();
 			var offset = $element.offset().top + $element.height();
+			var bodyOffset = $("body").offset().top + $("body").height();
 			if ((scroll > offset + 200 || scroll < offset - $element.height() - 0)) {
-				$(".header__order-scroll").show(100);
+				if($(window).width() < 480 &&  scroll > bodyOffset - 100) {
+					$(".header__order-scroll").hide(100)
+				} else {
+					$(".header__order-scroll").show(100);
+				}
 			} else {
 				$(".header__order-scroll").hide(100)
 			}
