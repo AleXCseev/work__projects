@@ -368,6 +368,9 @@
 	.card__star-raiting {
 		top: -35px;
 	}
+	.card__sale-text {
+		font-size: 22px;
+	}
 	.footer__wrapper .header__order-wrapper {
 		width: 100%;
 		flex-direction: row;
@@ -454,6 +457,9 @@
 		left: -10px;
 		bottom: -90px;
 		width: 100px;
+	}
+	.footer__text {
+		margin-bottom: 40px;
 	}
 }
 
@@ -1065,7 +1071,7 @@
 		position: static;
 	}
 	.card__star-raiting {
-		top: 81px;
+		top: 72px;
 		right: 20px;
 	}
 	.card__form {
@@ -1445,6 +1451,10 @@
 	}
 	.card__table tr td:first-of-type {
 		min-width: 125px;
+	}
+	.card__star-raiting {
+		top: 60px;
+		right: 20px;
 	}
 	.footer__wrapper {
 		width: 100%;
