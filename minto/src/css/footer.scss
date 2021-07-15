@@ -1,0 +1,40 @@
+.site__footer {
+	width: 100%;
+	height: auto;
+}
+
+.footer__wrapper {
+	width: 100%;
+	height: auto;
+	padding: 10px 0;
+}
+
+.footer__text {
+	color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 1.6;
+	margin-bottom: 10px;
+}
+
+.footer__adress {
+	color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.footer__telephone {
+	display: flex;
+	color: #000;
+	color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.6;
+	align-items: center;
+}
+
+.footer__img {
+	margin-right: 5px;
+	width: 48px;
+	margin-left: -5px;
+}

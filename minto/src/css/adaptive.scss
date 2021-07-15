@@ -1,3 +1,76 @@
 /////////////////////////////////////////////////////////////////////
-@media (max-width: 1680px) {
+@media (max-width: 1000px) {
+	.container {
+		width: 700px;
+	}
+	.header__content {
+		width: 380px;
+	}
+	.mintop__img {
+		top: 65px;
+		width: 390px;
+	}
+	.header__title {
+		font-size: 32px;
+	}
+	.header__text {
+		font-size: 15px;
+	}
+	.header__list-item {
+		font-size: 13px;
+	}
+	.header__girl {
+		left: 30px;
+		width: 266px;
+	}
+	.header__light-1 {
+		top: -23px;
+		left: -50px;
+	}
+	.header__light-3 {
+		top: 9px;
+		left: 311px;
+	}
+	.header__light-4 {
+		top: 172px;
+		left: 240px;
+	}
+	.header__light-6 {
+		top: 334px;
+		left: 233px;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 700px) {
+	.container {
+		width: calc(100% - 40px);
+	}
+	.header__content {
+		width: 100%;
+		padding-top: 180px;
+	}
+	.mintop__img {
+		position: static;
+		right: auto;
+		top: auto;
+		width: 390px;
+	}
+	.header__phone {
+		top: 0px;
+		right: auto;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.header__flags {
+		width: 147px;
+		height: 52px;
+		display: flex;
+		position: absolute;
+		bottom: auto;
+		top: 100px;
+		right: auto;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 }
