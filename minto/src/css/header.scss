@@ -186,35 +186,43 @@
 }
 
 .header__menu {
-	width: 100%;
+	width: 100vw;
 	height: 65px;
 	position: fixed;
+	top: 0;
+	left: 0;
 	background-size: cover;
     background-attachment: scroll;
     background-origin: content-box;
     background-image: url(../img/menu-bg.jpg);
     background-position: center top;
     background-repeat: repeat;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;
 	z-index: 1000;
+	.container {
+		height: 100%;
+	}
 }
 
 .header__form {
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .header__input-wrapper {
-	width: auto;
+	width: 297px;
 	height: auto;
 	margin-right: 50px;
+	min-width: 200px;
+	
 }
 
 .header__input {
-	width: 297px;
+	width: 100%;
 	height: 45px;
 	background-color: rgb(255, 235, 63);
     border-radius: 5px;
@@ -234,4 +242,5 @@
     line-height: 1.6;
 	border-radius: 5px;
 	border: 1px solid #000;
+	min-width: 100px;
 }

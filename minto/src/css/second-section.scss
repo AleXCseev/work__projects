@@ -69,7 +69,7 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: flex-end;
 	position: relative;
 	padding: 50px 0;
@@ -86,6 +86,10 @@
 	padding-left: 10px;
 	position: relative;
 	margin-left: 80px;
+}
+
+.video__text-wrapper:last-of-type {
+	margin-top: 200px;
 }
 
 .video__text-img {
@@ -477,6 +481,7 @@
     text-align: center;
     line-height: 1.6;
 	margin-bottom: 50px;
+	width: 100%;
 }
 
 .card__form {

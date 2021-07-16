@@ -1,62 +1,6 @@
 $(function () {
-
-// 	$(".galary__slider").owlCarousel({
-// 		loop: true,
-// 		nav : true,
-// 		items: 1,
-// 		margin: 20,
-// 		dots: true,
-// 		// autoplay:true,
-// 		// autoplayTimeout: 4000,
-// 		// autoplayHoverPause: true,
-// 	});
-
-// 	$(".review__slider").owlCarousel({
-// 		loop: true,
-// 		nav : true,
-// 		items: 3,
-// 		margin: 50,
-// 		dots: true,
-// 		dotsEach: true,
-// 		// autoplay:true,
-// 		// autoplayTimeout: 4000,
-// 		// autoplayHoverPause: true,
-// 		responsive:{
-// 			0: {
-// 				items: 1,
-// 				margin: 50,
-// 			},
-// 			1070: {
-// 				items: 2,
-// 			},
-// 			1680: {
-// 				items: 3,
-// 			}
-// 		}
-// 	});
-
-// 	// AOS.init({
-// 	// 	disable : 'mobile',
-// 	// 	once: true,
-// 	// 	// offset : -200,
-// 	// });
-
-
-// 	// $(window).resize(function() {
-// 	// 	AOS.refresh();
-// 	// })
-
-// 	$('[data-fancybox]').fancybox({
-// 		loop: true,
-// 		infobar: false,
-// 		animationEffect: false,
-// 	});
-
 	$('[href*="#"]').on('click', function (e) {
 		var fixedOffset = -65;
-		// var cardHeight = $("#card").outerHeight(false)
-		// var windowHeight = $(window).height()
-		// + (cardHeight - windowHeight)
 
 		$('html, body')
 			.stop()
