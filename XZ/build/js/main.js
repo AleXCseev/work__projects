@@ -1,5 +1,40 @@
 $(function () {
 
+	if($(window).width() <= 480) {
+		$(".section6__cards").addClass("owl-carousel").owlCarousel({
+			loop: true,
+			nav : false,
+			items: 2,
+			margin: 15,
+			dots: true,
+			stagePadding: 15,
+			dotsEach: true,
+		});
+	}
+
+	if($(window).width() <= 1366) {
+		$(".section7__cards").addClass("owl-carousel").owlCarousel({
+			loop: true,
+			nav : false,
+			items: 2,
+			margin: 32,
+			dots: true,
+			stagePadding: 20,
+			dotsEach: true,
+			responsive: {
+				0: {
+					items: 1,
+					stagePadding: 15,
+				},
+				800: {
+					items: 2,
+					stagePadding: 20,
+				},
+			}
+		});
+	}
+
+
 // 	$(".galary__slider").owlCarousel({
 // 		loop: true,
 // 		nav : true,
@@ -35,16 +70,16 @@ $(function () {
 // 		}
 // 	});
 
-// 	// AOS.init({
-// 	// 	disable : 'mobile',
-// 	// 	once: true,
-// 	// 	// offset : -200,
-// 	// });
+	AOS.init({
+		disable : 'mobile',
+		once: true,
+		// offset : -200,
+	});
 
 
-// 	// $(window).resize(function() {
-// 	// 	AOS.refresh();
-// 	// })
+	$(window).resize(function() {
+		AOS.refresh();
+	})
 
 // 	$('[data-fancybox]').fancybox({
 // 		loop: true,
