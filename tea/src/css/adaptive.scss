@@ -6,7 +6,7 @@
 }
 
 /////////////////////////////////////////////////////////////////////
-@media (max-width: 1366px) {
+@media (max-width: 1367px) {
 	.container {
 		width: 1000px;
 	}
@@ -603,7 +603,7 @@
 		font-size: 8vw;
 	}
 	.section2__title {
-		font-size: 8.5vw;
+		font-size: 6vw;
 		margin-bottom: 25px;
 	}
 	.section2__text {
@@ -744,8 +744,23 @@
 	.card .header__sale {
 		top: -60vw;
 	}
+	.section__2 .header__order-btn {
+		font-size: 26px;
+	}
 	.section4__list-item {
 		font-size: 4vw;
+	}
+	.section6__card {
+		padding: 77px 16px 25px;
+	}
+	.section6__text {
+		font-size: 15px;
+	}
+	.section7__text-wrapper {
+		padding: 20px 30px 24px;
+	}
+	.section7__text {
+		font-size: 15px;
 	}
 	.footer__title {
 		font-size: 8vw;
@@ -855,6 +870,9 @@
 	.header__order-btn {
 		height: 60px;
 		font-size: 32px;
+	}
+	.section__2 .header__order-btn {
+		font-size: 22px;
 	}
 	.section2__img-tea {
 		bottom: 25px;
