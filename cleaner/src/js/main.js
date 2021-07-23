@@ -1,16 +1,34 @@
 $(function () {
 
-	// if($(window).width() <= 480) {
-	// 	$(".section6__cards").addClass("owl-carousel").owlCarousel({
-	// 		loop: true,
-	// 		nav : false,
-	// 		items: 2,
-	// 		margin: 15,
-	// 		dots: true,
-	// 		stagePadding: 15,
-	// 		dotsEach: true,
-	// 	});
-	// }
+	$(".galary__slider").owlCarousel({
+		loop: true,
+		nav : false,
+		items: 1,
+		margin: 15,
+		dots: true,
+		dotsEach: true,
+	});
+
+	$(".review__slider").owlCarousel({
+		loop: true,
+		nav : false,
+		items: 3,
+		margin: 30,
+		dots: true,
+		dotsEach: true,
+	});
+
+	if($(window).width() <= 480) {
+		$(".characteristic__block").addClass("owl-carousel").owlCarousel({
+			loop: true,
+			nav : false,
+			items: 2,
+			margin: 20,
+			stagePadding: 15,
+			dots: true,
+			dotsEach: true,
+		});
+	}
 
 	// if($(window).width() <= 1367) {
 	// 	$(".section7__cards").addClass("owl-carousel").owlCarousel({
@@ -81,11 +99,13 @@ $(function () {
 	// 	AOS.refresh();
 	// })
 
-// 	$('[data-fancybox]').fancybox({
-// 		loop: true,
-// 		infobar: false,
-// 		animationEffect: false,
-// 	});
+	$('[data-fancybox]').fancybox({
+		loop: true,
+		infobar: false,
+		animationEffect: false,
+		backFocus : false,
+        hash   : false,
+	});
 
 	$('[href*="#"]').on('click', function (e) {
 		var fixedOffset = 0;
