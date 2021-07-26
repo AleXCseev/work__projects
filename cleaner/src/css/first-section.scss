@@ -139,10 +139,12 @@
 }
 
 .specific__list {
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
 	align-items: center;
 	list-style: none;
+	width: 100%;
+	height: auto;
 }
 
 .specific__list-item {
@@ -159,8 +161,10 @@
 	text-transform: lowercase;
 	color: #000000;
 	position: relative;
-	display: inline-block;
+	display: inline;
 	padding-left: 25px;
+	max-width: 100%;
+
 }
 
 .specific__list-item:before {
@@ -252,6 +256,7 @@
 	margin-right: 80px;
 	margin-top: 20px;
 	cursor: pointer;
+	box-shadow: 0px 5px 50px rgba(37, 65, 10, 0.6);
 
 	img {
 		height: 100%;
