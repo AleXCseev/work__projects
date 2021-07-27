@@ -363,6 +363,7 @@
 	}
 	.specific__list-item {
 		text-align: left;
+		width: 100% !important;
 	}
 	.video__section {
 		width: 100%;
@@ -759,7 +760,7 @@
 		width: 76vw;
 	}
 	.header__text {
-		font-size: 3vw;
+		font-size: 4vw;
 		margin-bottom: 400px;
 		text-align: center;
 	}
@@ -817,7 +818,7 @@
 	.video {
 		width: 90%;
 		height: 52vw;
-		top: 47vw;
+		top: 38vw;
 	}
 	.video:before {
 		width: 90px;
@@ -878,7 +879,7 @@
 	.card .header__order-btn {
 		height: 50px;
 		width: 100%;
-		font-size: 36px;
+		font-size: 22px;
 	}
 	.card__section:before {
 		height: 59%;
@@ -1078,7 +1079,7 @@
 	.video {
 		width: 90%;
 		height: 52vw;
-		top: 66vw;
+		top: 54vw;
 	}
 	.card {
 		width: 100%;
@@ -1368,7 +1369,7 @@
 	.video {
 		width: 90%;
 		height: 52vw;
-		top: 68vw;
+		top: 56vw;
 	}
 	.card__wrapper .header__cleaner-img {
 		width: 117vw;

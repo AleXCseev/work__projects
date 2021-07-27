@@ -70,6 +70,7 @@
 	background: 
 		linear-gradient(105.29deg, rgba(103, 160, 48, 0.2) 0%, rgba(204, 219, 134, 0.2) 100%),
 		url(../img/loupe.png) center no-repeat;
+	backdrop-filter: blur(4px);
 	opacity: 0;
 	visibility: hidden;
 	transition: 0.3s ease;

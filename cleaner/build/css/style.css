@@ -359,6 +359,7 @@ body {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+  margin-top: 5px;
 }
 
 .timer__text {
@@ -459,7 +460,7 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 15px;
   line-height: 1;
   color: #FFFFFF;
   -webkit-transition: 0.3s ease;
@@ -541,6 +542,10 @@ body {
   align-items: center;
   position: relative;
   z-index: 1;
+}
+
+.characteristic__wrapper .header__order-btn {
+  font-size: 36px;
 }
 
 .circle__2-img {
@@ -736,7 +741,22 @@ body {
 
 .specific__list-item:last-child {
   margin-bottom: 0;
-  width: 84%;
+}
+
+.specific__list-item1 {
+  width: 94%;
+}
+
+.specific__list-item3 {
+  width: 93%;
+}
+
+.specific__list-item6 {
+  width: 71%;
+}
+
+.specific__list-item8 {
+  width: 79%;
 }
 
 .video__section {
@@ -760,6 +780,10 @@ body {
   justify-content: space-between;
   padding-top: 35px;
   position: relative;
+}
+
+.video__wrapper .header__order-btn {
+  font-size: 36px;
 }
 
 .video__bg-img {
@@ -1052,7 +1076,7 @@ body {
 .card .header__order-btn {
   height: 40px;
   width: 200px;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .card .header__order-btn::before {
@@ -1140,6 +1164,8 @@ body {
   top: 0;
   left: 0;
   background: linear-gradient(105.29deg, rgba(103, 160, 48, 0.2) 0%, rgba(204, 219, 134, 0.2) 100%), url(../img/loupe.png) center no-repeat;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.3s ease;
@@ -1957,6 +1983,7 @@ body {
   }
   .specific__list-item {
     text-align: left;
+    width: 100% !important;
   }
   .video__section {
     width: 100%;
@@ -2383,7 +2410,7 @@ body {
     width: 76vw;
   }
   .header__text {
-    font-size: 3vw;
+    font-size: 4vw;
     margin-bottom: 400px;
     text-align: center;
   }
@@ -2440,7 +2467,7 @@ body {
   .video {
     width: 90%;
     height: 52vw;
-    top: 47vw;
+    top: 38vw;
   }
   .video:before {
     width: 90px;
@@ -2519,7 +2546,7 @@ body {
   .card .header__order-btn {
     height: 50px;
     width: 100%;
-    font-size: 36px;
+    font-size: 22px;
   }
   .card__section:before {
     height: 59%;
@@ -2734,7 +2761,7 @@ body {
   .video {
     width: 90%;
     height: 52vw;
-    top: 66vw;
+    top: 54vw;
   }
   .card {
     width: 100%;
@@ -3049,7 +3076,7 @@ body {
   .video {
     width: 90%;
     height: 52vw;
-    top: 68vw;
+    top: 56vw;
   }
   .card__wrapper .header__cleaner-img {
     width: 117vw;

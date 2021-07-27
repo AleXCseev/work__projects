@@ -72,8 +72,8 @@ $(function () {
 		loop: true,
 		infobar: false,
 		animationEffect: false,
-		backFocus : false,
-        hash   : false,
+		backFocus: false,
+        hash: false,
 	});
 
 	$('[href*="#"]').on('click', function (e) {
@@ -121,9 +121,13 @@ $(function () {
 		$(window).scroll(function() {
 			var scroll = $(window).scrollTop() + $(window).height();
 			var offset = $element.offset().top + $element.height();
-			// var bodyOffset = $("body").offset().top + $("body").height();
+			var bodyOffset = $("body").offset().top + $("body").height();
 			if ((scroll > offset + 800 || scroll < offset - $element.height() - 200)) {
-				$(".sale__link").show(100)
+				if($(window).width() < 480 &&  scroll > bodyOffset - 400) {
+					$(".sale__link").hide(100)
+				} else {
+					$(".sale__link").show(100)
+				}
 			} else {
 				$(".sale__link").hide(100)
 			}
