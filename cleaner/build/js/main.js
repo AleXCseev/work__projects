@@ -55,10 +55,8 @@ $(function () {
 
 	initGalary()
 
-	var owl = 0
-
-	function initOwlCarousel() {
-		owl = $(".characteristic__block").addClass("owl-carousel").owlCarousel({
+	if($(window).width() <= 480) {
+		$(".characteristic__block").addClass("owl-carousel").owlCarousel({
 			loop: true,
 			nav : false,
 			items: 2,
@@ -67,24 +65,8 @@ $(function () {
 			dots: true,
 			dotsEach: true,
 		});
-		return owl
-	}
-
-	if($(window).width() <= 480) {
-		owl = initOwlCarousel()
 	}
 	
-
-	$(window).resize(function() {
-		if($(window).width() <= 480) {
-			owl = initOwlCarousel()
-		}
-		if($(window).width() > 480) {
-			if(owl !== 0) {
-				owl.trigger("destroy.owl.carousel")
-			}
-		} 
-	})
 
 	$('[data-fancybox]').fancybox({
 		loop: true,
