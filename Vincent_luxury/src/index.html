@@ -5,7 +5,8 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="stylesheet" href="./libs/owl.carousel.min.css">
+	<link rel="stylesheet" href="./libs/slick.css">
+	<!-- <link rel="stylesheet" href="./libs/slick-theme.css"> -->
 	<link rel="stylesheet" href="./libs/animations.css">
 	<link rel="stylesheet" href="./libs/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="./css/style.css" />
@@ -22,23 +23,23 @@
 					<div class="header__nav-wrapper">
 						<img src="./img/logo.jpg" alt="" class="header__logo">
 						<div class="nav">
-							<a href="#" class="nav__link">
+							<a href="#galary" class="nav__link">
 								Memperkenalkan
 							</a>
-							<a href="#" class="nav__link">
+							<a href="#card" class="nav__link">
 								Produk
 							</a>
-							<a href="#" class="nav__link">
+							<a href="#advantages" class="nav__link">
 								Kebijakan
 							</a>
-							<a href="#" class="nav__link">
+							<a href="#review" class="nav__link">
 								Evaluasi
 							</a>
-							<a href="#" class="nav__link">
+							<a href="#footer" class="nav__link">
 								Kontak
 							</a>
 						</div>
-						<a href="#" class="header__order-btn">
+						<a href="#card" class="header__order-btn">
 							<span>Pesan sekarang</span>
 							<div class="btn__overflow"></div>
 						</a>
@@ -58,7 +59,7 @@
 							Parfum replika dari merk aromaterapi <br> ternama di dunia
 						</p>
 
-						<div class="promo__block">
+						<div class="promo__block pulse">
 							<span class="promo">PROMO</span>
 							<span class="promo__type">TIPE LAMA</span>
 							<p class="promo__text">
@@ -76,24 +77,38 @@
 							</p>
 							<div class="timer__wrapper">
 								<div class="timer__block">
-									<span class="timer__text day">00</span>
+									<span class="timer__text days">00</span>
 								</div>
 								<div class="timer__block">
-									<span class="timer__text hour">00</span>
+									<span class="timer__text hours">00</span>
 								</div>
 								<div class="timer__block">
-									<span class="timer__text minut">00</span>
+									<span class="timer__text minutes">00</span>
 								</div>
 								<div class="timer__block">
-									<span class="timer__text second">00</span>
+									<span class="timer__text seconds">00</span>
 								</div>
 							</div>
 						</div>	
 
-						<a href="#" class="header__order-btn">
-							<span>Pesan sekarang</span>
-							<div class="btn__overflow"></div>
-						</a>
+						<div class="header__btn-wrapper">
+							<img src="./img/arrow.png" alt="" class="btn__arrow">
+							<a href="#" class="header__order-btn">
+								<span>Pesan sekarang</span>
+								<div class="btn__overflow"></div>
+							</a>
+						</div>
+					</div>
+					<div class="header__right">
+						<div class="images__block">
+							<div class="sale">
+								<span class="sale__percent">100%</span>
+								<span class="sale__original">ORIGINAL</span>
+							</div>
+							<img src="./img/leaf-1.png" alt="" class="header__leaf-1 pulse">
+							<img src="./img/leaf-2.png" alt="" class="header__leaf-2 pulse">
+							<img src="./img/header__img.png" alt="" class="header__img">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -101,7 +116,362 @@
 
 		<!-- MAIN -->
 		<main class="site__main">
-		
+			<div class="galary__section" id="galary">
+				<div class="galary__section-block">
+					<div class="galary__wrapper">
+						<div class="galary__left">
+							<div class="galary__slider">
+								<div class="galary__slide">
+									<a href="./img/galary/1.jpg" data-fancybox="gallery">
+										<img src="./img/galary/1.jpg" alt="" class="galary__img">
+									</a>
+								</div>
+								<div class="galary__slide">
+									<a href="./img/galary/2.png" data-fancybox="gallery">
+										<img src="./img/galary/2.png" alt="" class="galary__img">
+									</a>
+								</div>
+								<div class="galary__slide">
+									<a href="./img/galary/3.jpg" data-fancybox="gallery">
+										<img src="./img/galary/3.jpg" alt="" class="galary__img">
+									</a>
+								</div>
+								<div class="galary__slide">
+									<a href="./img/galary/4.jpg" data-fancybox="gallery">
+										<img src="./img/galary/4.jpg" alt="" class="galary__img">
+									</a>
+								</div>
+								<div class="galary__slide">
+									<a href="./img/galary/5.jpg" data-fancybox="gallery">
+										<img src="./img/galary/5.jpg" alt="" class="galary__img">
+									</a>
+								</div>
+								<div class="galary__slide">
+									<a href="./img/galary/6.jpg" data-fancybox="gallery">
+										<img src="./img/galary/6.jpg" alt="" class="galary__img">
+									</a>
+								</div>
+								<div class="galary__slide">
+									<a href="./img/galary/7.jpg" data-fancybox="gallery">
+										<img src="./img/galary/7.jpg" alt="" class="galary__img">
+									</a>
+								</div>
+								<div class="galary__slide">
+									<a href="./img/galary/8.jpg" data-fancybox="gallery">
+										<img src="./img/galary/8.jpg" alt="" class="galary__img">
+									</a>
+								</div>
+								<div class="galary__slide">
+									<a href="./img/galary/9.jpg" data-fancybox="gallery">
+										<img src="./img/galary/9.jpg" alt="" class="galary__img">
+									</a>
+								</div>
+								<div class="galary__slide">
+									<a href="./img/galary/10.jpg" data-fancybox="gallery">
+										<img src="./img/galary/10.jpg" alt="" class="galary__img">
+									</a>
+								</div>
+								<div class="galary__slide">
+									<a href="./img/logo.jpg" data-fancybox="gallery">
+										<img src="./img/logo.jpg" alt="" class="galary__img">
+									</a>
+								</div>
+							</div>
+							<div class="galary__slider-nav">
+								<div class="galary__nav-slide">
+									<img src="./img/galary/1.jpg" alt="" class="galary__img">
+								</div>
+								<div class="galary__nav-slide">
+									<img src="./img/galary/2.png" alt="" class="galary__img">
+								</div>
+								<div class="galary__nav-slide">
+									<img src="./img/galary/3.jpg" alt="" class="galary__img">
+								</div>
+								<div class="galary__nav-slide">
+									<img src="./img/galary/4.jpg" alt="" class="galary__img">
+								</div>
+								<div class="galary__nav-slide">
+									<img src="./img/galary/5.jpg" alt="" class="galary__img">
+								</div>
+								<div class="galary__nav-slide">
+									<img src="./img/galary/6.jpg" alt="" class="galary__img">
+								</div>
+								<div class="galary__nav-slide">
+									<img src="./img/galary/7.jpg" alt="" class="galary__img">
+								</div>
+								<div class="galary__nav-slide">
+									<img src="./img/galary/8.jpg" alt="" class="galary__img">
+								</div>
+								<div class="galary__nav-slide">
+									<img src="./img/galary/9.jpg" alt="" class="galary__img">
+								</div>
+								<div class="galary__nav-slide">
+									<img src="./img/galary/10.jpg" alt="" class="galary__img">
+								</div>
+								<div class="galary__nav-slide">
+									<img src="./img/galary/11.jpg" alt="" class="galary__img">
+								</div>
+							</div>
+						</div>
+						<div class="galary__right">
+							<h2 class="galary__title">
+								TENTANG KAMI
+							</h2>
+							<p class="galary__text">
+								<b>Vincent Luxury</b> mengkhususkan diri dalam menyediakan
+								produk parfum bermerek mewah dari lebih dari 200 merek terkenal di dunia
+							</p>
+							<p class="galary__info">
+								Hari ini kami memiliki program likuidasi untuk wewangian pria dan wanita yang tersedia hanya dengan  550.000RP
+							</p>
+							<div class="header__btn-wrapper">
+								<img src="./img/arrow.png" alt="" class="btn__arrow">
+								<a href="#" class="header__order-btn">
+									<span>Lihat detailnya</span>
+									<div class="btn__overflow"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="advantages__section" id="advantages">
+				<div class="advantages__wrapper">
+					<h2 class="advanatges__title">
+						KONSEP BISNIS
+					</h2>
+					<h3 class="advantage__subtitle">
+						KELANGSUNGAN HIDUP DAN PERKEMBANGAN
+					</h3>
+					<p class="advantage__text">
+						KAMI SELALU INGIN MEMBERIKAN KEPUASAN MUTLAK KEPADA PELANGGAN. <br>
+						OLEH KARENA ITU, VINCENT LUXURY TERUS BERUSAHA DAN MENINGKATKAN UNTUK <br>
+						MEMBERIKAN NILAI TERBAIK BAGI PELANGGAN.
+					</p>
+					<p class="advantage__text">
+						PRODUK DARI VINCENT LUXURY 100% ORIGINAL, SEGEL, ADA BILL
+					</p>
+
+					<div class="advantages__block">
+						<div class="advantage">
+							<div class="advanatge__logo-wrapper">
+								<img src="./img/advantage-1.png" alt="" class="advantage__logo">
+							</div>
+							<h4 class="advantage__block-title">
+								BEBAS BIAYA KIRIM
+							</h4>
+							<div class="advantage__text-block">
+								<p class="advantage__block-text">
+									Berlaku untuk pesanan dua produk atau lebih
+								</p>
+							</div>
+						</div>
+						<div class="advantage">
+							<div class="advanatge__logo-wrapper">
+								<img src="./img/advantage-2.png" alt="" class="advantage__logo">
+							</div>
+							<h4 class="advantage__block-title">
+								KUALITAS TERJAMIN
+							</h4>
+							<div class="advantage__text-block">
+								<p class="advantage__block-text">
+									+Kualitas produk selalu 100% dijamin - komitmen kualitas
+								</p>
+								<p class="advantage__block-text">
+									+Uang kembali 300% jika ketahanan aroma tidak hingga 6 - 12 jam
+								</p>
+							</div>
+						</div>
+						<div class="advantage">
+							<div class="advanatge__logo-wrapper">
+								<img src="./img/advantage-1.png" alt="" class="advantage__logo">
+							</div>
+							<h4 class="advantage__block-title">
+								PELAYANAN 24/7
+							</h4>
+							<div class="advantage__text-block">
+								<p class="advantage__block-text">
+									Customer Service 24/7 <br>
+									0333 65 8584
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card__section">
+				<div class="card__section-wrapper">
+					<h2 class="card__section-title">
+						SPESIFIKASI PRODUK PROMO
+					</h2>
+					<h3 class="card__section-subtitle">
+						<img src="./img/star-red.png" alt="" class="card__subtitle-img"> UNTUK PRIA
+					</h3>
+
+					<div class="card card__1">
+						<div class="card__left">
+							<div class="card__slider">
+								<div class="card__slide">
+									<a href="./img/card-1/1.png" data-fancybox="card-1">
+										<img src="./img/card-1/1.png" alt="" class="card__img">
+									</a>
+								</div>
+								<div class="card__slide">
+									<a href="./img/card-1/2.jpg" data-fancybox="card-1">
+										<img src="./img/card-1/2.jpg" alt="" class="card__img">
+									</a>
+								</div>
+								<div class="card__slide">
+									<a href="./img/card-1/3.jpg" data-fancybox="card-1">
+										<img src="./img/card-1/3.jpg" alt="" class="card__img">
+									</a>
+								</div>
+								<div class="card__slide">
+									<a href="./img/card-1/4.jpg" data-fancybox="card-1">
+										<img src="./img/card-1/4.jpg" alt="" class="card__img">
+									</a>
+								</div>
+								<div class="card__slide">
+									<a href="./img/card-1/5.jpg" data-fancybox="card-1">
+										<img src="./img/card-1/5.jpg" alt="" class="card__img">
+									</a>
+								</div>
+								<div class="card__slide">
+									<a href="./img/card-1/6.png" data-fancybox="card-1">
+										<img src="./img/card-1/6.png" alt="" class="card__img">
+									</a>
+								</div>
+								<div class="card__slide">
+									<a href="./img/card-1/7.jpg" data-fancybox="card-1">
+										<img src="./img/card-1/7.jpg" alt="" class="card__img">
+									</a>
+								</div>
+								<div class="card__slide">
+									<a href="./img/card-1/8.jpg" data-fancybox="card-1">
+										<img src="./img/card-1/8.jpg" alt="" class="card__img">
+									</a>
+								</div>
+								<div class="card__slide">
+									<a href="./img/card-1/9.png" data-fancybox="card-1">
+										<img src="./img/card-1/9.png" alt="" class="card__img">
+									</a>
+								</div>
+							</div>
+							<div class="card__slider-nav">
+								<div class="card__nav-slide">
+									<img src="./img/card-1/1.png" alt="" class="card__img">
+								</div>
+								<div class="card__nav-slide">
+									<img src="./img/card-1/2.jpg" alt="" class="card__img">
+								</div>
+								<div class="card__nav-slide">
+									<img src="./img/card-1/3.jpg" alt="" class="card__img">
+								</div>
+								<div class="card__nav-slide">
+									<img src="./img/card-1/4.jpg" alt="" class="card__img">
+								</div>
+								<div class="card__nav-slide">
+									<img src="./img/card-1/5.jpg" alt="" class="card__img">
+								</div>
+								<div class="card__nav-slide">
+									<img src="./img/card-1/6.png" alt="" class="card__img">
+								</div>
+								<div class="card__nav-slide">
+									<img src="./img/card-1/7.jpg" alt="" class="card__img">
+								</div>
+								<div class="card__nav-slide">
+									<img src="./img/card-1/8.jpg" alt="" class="card__img">
+								</div>
+								<div class="card__nav-slide">
+									<img src="./img/card-1/9.png" alt="" class="card__img">
+								</div>
+							</div>
+						</div>
+						<div class="card__right">
+							<h2 class="card__title">
+								KODE 01 - SAUVAGE EDP - MEN
+							</h2>
+							<div class="card__price">
+								<div class="price">
+									<span class="new__price">
+										Harga promo: <span class="card__red">550.000 RP</span>
+									</span>
+									<span class="old__price">
+										Harga asli: <span class="card__red">1.800.000 RP</span>
+									</span>
+								</div>
+							</div>
+							<div class="card__raiting">
+								<div class="raiting">
+									<img src="./img/star.png" alt="" class="card__star">
+									<img src="./img/star.png" alt="" class="card__star">
+									<img src="./img/star.png" alt="" class="card__star">
+									<img src="./img/star.png" alt="" class="card__star">
+									<img src="./img/star.png" alt="" style="opacity: 0.5" class="card__star">
+								</div>
+								<span class="card__voites">8952 votes</span>
+							</div>
+							<ul class="card__list">
+								<li class="card__list-item">
+									Aroma: <b>Aromatic Fougere - wangi herbal</b>
+								</li>
+								<li class="card__list-item">
+									Style: <b>Hangat, murah hati, alami</b>
+								</li>
+								<li class="card__list-item">
+									Ketahanan aroma: <b>6 - 8 jam</b>
+								</li>
+								<li class="card__list-item">
+									Gender: <b>Man</b>
+								</li>
+								<li class="card__list-item">
+									Volume: <b>100 ml</b>
+								</li>
+								<li class="card__list-item">
+									Status: <span>tanggal expired Mei 2023</span>
+								</li>
+								<li class="card__list-item">
+									Jumlah produk promo: <b>218 box segel</b>
+								</li>
+							</ul>
+							<div class="card__btns">
+								<a data-fancybox data-src="#info__modal" class="card__modal" data-modal=".card-1" data-video="r5eC0Rx-hkA">
+									Lihat detailnya
+								</a>
+								<a href="#card" class="header__order-btn">
+									<span>BELI SEKARANG</span>
+									<div class="btn__overflow"></div>
+								</a>
+							</div>
+							<div class="modal__info-hidden">
+								<p class="info__modal-text">
+									Parfum Dior Sauvage menghadirkan kejantanan, kepribadian, kuat, percaya diri bagi pria & terutama menarik lawan jenis dari aroma bunga.
+								</p>
+								<ul class="info__modal-list">
+									<li class="modal__list-item">
+										Asal: Perancis
+									</li>
+									<li class="modal__list-item">
+										Volume: 100 ml
+									</li>
+									<li class="modal__list-item">
+										Top notes: Pepper, Orange Bergamot
+									</li>
+									<li class="modal__list-item">
+										Middle notes: Lavender, japanese pepper, pink pepper.
+									</li>
+									<li class="modal__list-item">
+										Base notes: Kayu cedar, Ambroxan
+									</li>
+									<li class="modal__list-item">
+										Kekuatan Aroma: 1 lengan
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 
 		<!-- FOOTER -->
@@ -110,8 +480,20 @@
 		</footer>
 
 	</div>
+
+	<div class="info__modal" id="info__modal">
+		<div class="info__modal-wrapper">
+			<div class="video" data-video="r5eC0Rx-hkA">
+				<img src="//img.youtube.com/vi/r5eC0Rx-hkA/maxresdefault.jpg">
+			</div>
+			<button type="button" class="info__modal-btn">
+				Menutup
+			</button>
+		</div>
+	</div>
+
 	<script src="./libs/jquery.min.js"></script>
-	<script src="./libs/owl.carousel.min.js"></script>
+	<script src="./libs/slick.min.js"></script>
 	<script src="./libs/lazysizes.min.js"></script>
 	<script src="./libs/jquery.fancybox.min.js"></script>
 	<script src="./js/main.js"></script>

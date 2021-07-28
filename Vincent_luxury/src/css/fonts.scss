@@ -34,7 +34,7 @@
 }
 
 @font-face {
-    font-family: "Baloo Bhania";
+    font-family: "Baloo Bhaina";
     font-weight: normal;
     src: url("../fonts/BalooBhaina-Regular.woff2") format("woff2"),
 		url("../fonts/BalooBhaina-Regular.eot");
@@ -44,6 +44,13 @@
     font-family: "Anima Madurai";
     font-weight: normal;
     src: url("../fonts/ArimaMadurai-Light.woff2") format("woff2"),
-		url("../fonts/ArimaMadurai-Light.woff2");
+		url("../fonts/ArimaMadurai-Light.eot");
+}
+
+@font-face {
+    font-family: "Paytone One";
+    font-weight: normal;
+    src: url("../fonts/PaytoneOne-Regular.woff2") format("woff2"),
+		url("../fonts/PaytoneOne-Regular.eot");
 }
 
