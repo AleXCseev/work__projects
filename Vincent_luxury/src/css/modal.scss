@@ -121,7 +121,7 @@
 // }
 
 .info__modal {
-	display: none;
+	// display: inline-block;
 	width: 540px;
 	height: auto;
 	border-radius: 20px;
@@ -191,9 +191,8 @@
 .modal__list-item:before {
 	content: "";
 	position: absolute;
-	top: 50%;
+	top: 6px;
 	left: 0;
-	transform: translateY(-50%);
 	width: 12px;
 	height: 12px;
 	background-color: rgba(7, 154, 156, 1.0);
@@ -219,3 +218,117 @@
 .modal__info-hidden {
 	display: none;
 }
+
+.video {
+	order: 1;
+}
+
+.info__modal-text {
+	order: 2;
+}
+
+.info__modal-list {
+	order: 3;
+}
+
+.info__modal-btn {
+	order: 4;
+}
+
+.order__modal {
+	// display: inline-block;
+	width: 540px;
+	height: auto;
+	border-radius: 20px;
+	background-color: #fff;
+}
+
+.order__modal-wrapper {
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(7, 154, 156);
+	border-radius: 25px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.order__modal-title {
+	color: #fff;
+    font-size: 29px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.order__modal-text {
+	color: #fff;
+    font-size: 13px;
+    line-height: 1.6;
+	text-align: center;
+}
+
+.order__modal-price {
+	color: rgb(255, 246, 1);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6
+}
+
+.order__form {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.order__input-wrapper {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+
+.order__input {
+	width: 100%;
+	padding: 0 5px;
+	height: 32px;
+	border: 1px solid rgb(238, 238, 238);
+	resize: none;
+	margin: 0;
+	vertical-align:top;
+}
+
+.order__form-text {
+	color: #fff;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.order__input-wrapper label {
+	display: flex;
+	align-items: center;
+	padding: 5px;
+}
+
+.order__checkbox {
+	width: 13px;
+	height: 13px;
+	border-radius: 3px;
+	appearance: checkbox;
+	margin-right: 5px;
+}
+
+.order__form .header__order-btn {
+	width: 163px;
+	height: 50px;
+	margin: auto;
+	span {
+		font-size: 24px;
+	}
+}
+
+

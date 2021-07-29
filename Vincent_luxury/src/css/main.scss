@@ -24,7 +24,7 @@ select::-ms-expand {
 	display: none;
 }
 
-input::placeholder {
+input::placeholder, textarea::placeholder {
 	color: inherit;
 	opacity: 1;
 }
@@ -39,6 +39,7 @@ option {
 	outline: none;
 	margin: 0;
 	padding: 0;  
+	opacity: 1;
 }
 
 img {
