@@ -120,7 +120,7 @@
 // 	}
 // }
 
-.info__modal {
+.modal {
 	// display: inline-block;
 	width: 540px;
 	height: auto;
@@ -329,6 +329,17 @@
 	span {
 		font-size: 24px;
 	}
+}
+
+.privacy-policy__headline {
+	font-size: 26px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.privacy-policy__text {
+	font-size: 18px;
+	margin-bottom: 10px;
 }
 
 

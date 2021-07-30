@@ -14,7 +14,15 @@ $(function () {
 		slidesToScroll: 1,
 		asNavFor: '.galary__slider',
 		centerMode: true,
-		focusOnSelect: true
+		focusOnSelect: true,
+		responsive: [
+			{
+			  breakpoint: 415,
+			  settings: {
+				slidesToShow: 3,
+			  }
+			},
+		]
 	});
 
 	function initCardSlider(selector) {
@@ -65,6 +73,10 @@ $(function () {
 
 	$('[href*="#"]').on('click', function (e) {
 		var fixedOffset = -97;
+
+		if($(window).width() <= 480) {
+			var fixedOffset = -70;
+		}
 
 		$('html, body')
 			.stop()
@@ -142,16 +154,16 @@ $(function () {
 
 	function cardModal(selector) {
 		$(selector + " .card__modal").click(function() {
+
 			$(".video").attr("data-video", $(this).attr("data-video"))
 
 			$(".video").empty()
 			$(".video iframe").remove()
-			$(".info__modal .info__modal-text").remove()
-			$(".info__modal .info__modal-list").remove()
+			$(".modal .info__modal-text").remove()
+			$(".modal .info__modal-list").remove()
 
 			var content = $(selector + " .modal__info-hidden").html()
 			
-
 			var $img = "<img src='//img.youtube.com/vi/" + $(this).attr("data-video") + "/mqdefault.jpg'>"
 			$(".video").append($img)
 			$(".info__modal-wrapper").append(content);
@@ -161,12 +173,7 @@ $(function () {
 
 		$(selector + " .header__order-btn").click(function() {
 			var el = $(this).attr("data-kode")
-
-			console.log(el)
-
 			$(".order__checkbox[id="+ el +"]").prop("checked", true);
-
-			console.log($(".order__checkbox[id="+ el +"]"))
 		})
 	}
 
