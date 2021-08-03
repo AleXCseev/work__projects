@@ -179,9 +179,6 @@ $(function () {
 		})
 	}
 
-
-
-
 	cardModal(".card__1")
 	cardModal(".card__2")
 	cardModal(".card__3")

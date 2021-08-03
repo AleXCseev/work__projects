@@ -1,0 +1,410 @@
+.site__header {
+	width: 100%;
+	height: 910px;
+	padding-top: 97px;
+	background-image: url(../img/header-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.header__nav {
+	width: 100%;
+	height: 97px;
+	background-color: rgb(1, 148, 150);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+
+	.container {
+		height: 100%;
+	}
+}
+
+.header__nav-wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.header__logo {
+	width: auto;
+	height: 100%;
+}
+
+.nav {
+	width: 960px;
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+.nav__link {
+	font-size: 20px;
+	line-height: 1.6;
+	color: #fff;
+}
+
+.header__order-btn {
+	width: 160px;
+	height: 40px;
+	border-radius: 20px;
+	background: linear-gradient(180deg, rgba(250, 210, 230, 1.0), rgba(232, 48, 140, 1.0));
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	cursor: pointer;
+	z-index: 1;
+
+	span {
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+		animation: text 4s infinite;
+	}
+}
+
+.btn__overflow {
+	width: 100%;
+	height: 100%;
+	position: absolute; 
+	top: 0;
+	right: -94%;
+	background: linear-gradient(180deg, rgba(250, 210, 230, 1.0), rgba(232, 48, 140, 1.0));
+	animation: border 4s infinite;
+	z-index: 1;
+}
+
+.btn__overflow:before {
+	content: "";
+	top: 50%;
+	left: 0;
+	width: 3px;
+	height: 20px;
+	background: #fff;
+	position: absolute;
+	transform: translateY(-50%);
+}
+
+@keyframes text {
+	0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translateX(100px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes border {
+	0% {
+		transform: translateX(0%);
+	}
+	50% {
+		transform: translateX(-44%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+.header__wrapper {
+	width: 100%;
+	display: flex;
+}
+
+.header__left {
+	width: 600px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+.header__title {
+	font-family: "Bungee Shade", cursive;
+    color: #000;
+    font-size: 54px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+	margin-top: 20px;
+}
+
+.header__subtitle {
+	font-family: "Anima Madurai", cursive;
+    color: rgb(132, 132, 132);
+    font-size: 32px;
+    line-height: 1.6;
+	margin-top: -10px;
+	position: relative;
+}
+
+.header__subtitle:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 1px;
+	width: 350px;
+	background-color: rgb(180, 180, 180);
+}
+
+.header__text {
+	color: rgb(132, 132, 132);
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.6;
+	margin-bottom: 30px;
+}
+
+.promo__block {
+	width: 540px;
+	height: 330px;
+	border-bottom: 3px solid #000;
+	border-left: 3px solid #000;
+	border-right: 3px solid #000;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.promo__block:before {
+	content: "";
+	width: 180px;
+	height: 3px;
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.promo__block:after {
+	content: "";
+	width: 180px;
+	height: 3px;
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.promo {
+	position: absolute;
+	top: -38px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: "Baloo Bhaina", cursive;
+    color: rgb(6, 154, 156);
+    font-size: 57px;
+    font-weight: bold;
+    line-height: 1.6;
+	z-index: 1;
+}
+
+.promo__type {
+	color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+	margin: 20px 0;
+}
+
+.promo__text {
+    color: rgb(6, 154, 156);
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.promo__price {
+	font-family: "Baloo Bhaina", cursive;
+    color: rgb(248, 127, 188);
+    font-size: 94px;
+    line-height: 1.6;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+.header__tag {
+	width: 350px;
+	height: 40px;
+	background-color: rgb(132, 132, 132);
+	border-radius: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+	margin-bottom: 10px;
+}
+
+.header__timer {
+	width: 320px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.header__timer-title {
+	color: #000;
+    font-size: 19px;
+    line-height: 1.6;
+	text-align: center;
+}
+
+.timer__wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.timer__block {
+	width: 72px;
+    height: 57px;
+	border: 1px solid #000;
+    border-radius: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.timer__text {
+	color: #000;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header__btn-wrapper {
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: -36px;
+}
+
+.btn__arrow {
+	animation: arrow 5s infinite;
+}
+
+@keyframes arrow {
+	0% {
+		transform: translateX(0px);
+	}
+	3% {
+		transform: translateX(-20px);
+	}
+	6% {
+		transform: translateX(0px);
+	}
+	9% {
+		transform: translateX(-20px);
+	}
+	12% {
+		transform: translateX(0px);
+	}
+	15% {
+		transform: translateX(-20px);
+	}
+	18% {
+		transform: translateX(0px);
+	}
+}
+
+.header__left .header__order-btn {
+	width: 264px;
+	height: 49px;
+
+	span {
+		font-size: 24px;
+	}
+
+}
+
+.header__right {
+	position: absolute;
+	top: 50px;
+    right: -240px;
+}
+
+.images__block {
+	width: 798px;
+	height: 710px;
+	position: relative;
+}
+
+.sale {
+	width: 127px;
+	height: 127px;
+	background-image: url(../img/circle.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 4%;
+	left: 0;
+}
+
+.sale__percent {
+	color: #000;
+	font-size: 29px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1;
+}
+
+.sale__original {
+	color: rgb(161, 59, 59);
+    font-size: 17px;
+    text-align: center;
+    line-height: 1;
+}
+
+.header__leaf-1 {
+    position: absolute;
+    top: 12%;
+    left: 15%;
+    width: 180px;
+}
+
+.header__leaf-2 {
+	position: absolute;
+	top: 24%;
+    right: 28%;
+    width: 180px;
+}
+
+.header__img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+

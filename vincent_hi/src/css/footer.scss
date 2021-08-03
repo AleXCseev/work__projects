@@ -1,0 +1,27 @@
+.site__footer {
+	width: 100%;
+	height: auto;
+	background-color: #019496;
+}
+
+.footer__wrapper {
+	width: 100%;
+	height: auto;
+}
+
+.footer__info {
+	list-style: none;
+	padding: 10px 0;
+
+	li {
+		font-size: 18px;
+		color: #fff;
+		line-height: 1.6;
+	}
+
+	.footer__link {
+		color: inherit;
+	}
+}
+
+
