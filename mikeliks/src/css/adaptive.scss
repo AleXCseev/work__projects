@@ -1,0 +1,135 @@
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 1300px) {
+	.header__nav {
+		padding: 0 20px;
+		overflow: auto;
+	}
+	.header__nav-wrapper {
+		height: 100%;
+	}
+	.header__nav-link {
+		margin-right: 20px;
+		flex-shrink: 0;
+	}
+
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 1000px) {
+	.container {
+		width: calc(100% - 40px);
+		justify-content: center;
+	}
+	.right__container {
+		display: none;
+	}
+	.header__line {
+		position: relative;
+		justify-content: center;
+		padding: 0px 20px;
+	}
+	.header__right {
+		display: none;
+	}
+	.header__btn span {
+		display: none;
+	}
+	.header__btn-center {
+		display: none;
+	}
+	.header__btn:last-child {
+		display: none;
+	}
+	.header__icon {
+		margin: 0px;
+	}
+	.header__btn {
+		padding: 0;
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		transform: translateY(-50%);
+	}
+	
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 700px) {
+	.left__container {
+		width: 100%;
+	}
+	.mikeliks__img {
+		width: 45%;
+	}
+	.certificate__img {
+		width: 40%;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 600px) {
+	.sale {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+		.order__link {
+			order: 4;
+		}
+	}
+	.sale__img {
+		position: static;
+		transform: none;
+		margin-bottom: 20px;
+		order: 3;
+	}
+	.sale__title {
+		order: 1;
+		text-align: center;
+		width: 206px;
+	}
+	.sale__text {
+		order: 2;
+		text-align: center;
+	}
+	.sale__2 {
+		margin: 0;
+		margin-bottom: 20px;
+	}
+	body {
+		background-color: #fff;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 414px) {
+	.imgs__wrapper {
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		margin-bottom: 20px;
+	}
+	.mikeliks__img {
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	.certificate__img {
+		width: 90%;
+	}
+	.site__footer {
+		margin-top: 20px;
+	}
+	.card__info {
+		text-align: center;
+	}
+	.review {
+		margin: 0;
+	}
+	.review-photo {
+		margin: 0;
+		margin-right: 10px;
+	}
+	.review-body {
+		width: calc(100% - 50px - 10px);
+	}
+}
