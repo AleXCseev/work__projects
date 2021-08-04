@@ -1,0 +1,275 @@
+.site__main {
+	width: 100%;
+	height: auto;
+}
+
+.advanatge__section {
+	width: 100%;
+	height: auto;
+}
+
+.advantage__wrapper {
+	width: 100%;
+	height: auto;
+	padding: 96px 0 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.advantage__title {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 19px;
+	color: #922790;
+}
+
+.advantage__subtitle {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.25;
+	text-align: center;
+	text-transform: uppercase;
+	color: #971F67;
+	margin-bottom: 15px;
+}
+
+.advantage__text {
+	max-width: 750px;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.3;
+	text-align: center;
+	color: #222222;
+	margin-bottom: 20px;
+}
+
+.advantage__info {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.3;
+	text-align: center;
+	color: #971F67;
+	margin-bottom: 95px;
+}
+
+.advantages {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.advantage__card {
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+	border-radius: 30px;
+	width: 360px;
+	padding: 50px 30px 45px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.advantage__img-wrapper {
+	width: 140px;
+	height: 140px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.advantage__card-title {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.25;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.advantage__card-text {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.3;
+	text-align: center;
+}
+
+.advantage__card-1 {
+	background: #FFE8FA;
+
+	.advantage__img-wrapper {
+		background: #FED8ED;
+	}
+	.advantage__card-title {
+		color: #C2408B;
+	}
+	.advantage__card-text {
+		color: #AD648A;
+	}
+}
+
+.advantage__card-2 {
+	background: #E2F4F4;
+	
+	.advantage__img-wrapper {
+		background: #D0EAEB;
+	}
+	.advantage__card-title {
+		color: #1FA5A7;
+	}
+	.advantage__card-text {
+		color: #4A8484;
+	}
+}
+
+.advantage__card-3 {
+	background: #FEF3F1;
+	
+	.advantage__img-wrapper {
+		background: #FFE0DB;
+	}
+	.advantage__card-title {
+		color: #FB3A28;
+	}
+	.advantage__card-text {
+		color: #835A59;
+	}
+}
+
+.information__section {
+	width: 100%;
+	height: auto;
+	padding-bottom: 140px;
+}
+
+.information__block {
+	width: 100%;
+	height: auto;
+	background: linear-gradient(263.32deg, #6C65E8 0%, #A47DFF 100%);
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+	border-radius: 30px;
+	padding: 20px 50px 20px 30px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 44px;
+}
+
+.information__img {
+	max-width: 510px;
+}
+
+.information {
+	max-width: 500px;
+	padding: 20px 0 30px;
+}
+
+.information__title {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #FFD600;
+	margin-bottom: 36px;
+}
+
+.information__text {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.3;
+	color: #FFFFFF;
+	margin-bottom: 15px;
+}
+
+.information__important-text {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.25;
+	color: #FFD600;
+	margin-bottom: 44px;
+}
+
+.information__block .promo__btn {
+	position: static;
+	transform: none;
+}
+
+.delivery__block {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.stage {
+	max-width: 360px;
+	display: flex;
+}
+
+.stage__img-wrapper {
+	width: 72px;
+	height: 72px;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+}
+
+.stage__title {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.25;
+	color: #C2408B;
+	margin-bottom: 5px;
+}
+
+.stage__text {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.3;
+	color: #333333;
+}
+
+.stage__1 {
+	.stage__img-wrapper {
+		background: #FFE8FA;
+	}
+}
+
+.stage__2 {
+	.stage__img-wrapper {
+		background: #E2F4F4;
+	}
+}
+
+.stage__3 {
+	.stage__img-wrapper {
+		background: #FEF3F1;
+	}
+}
