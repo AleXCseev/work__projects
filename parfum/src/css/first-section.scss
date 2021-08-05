@@ -165,12 +165,15 @@
 	border-radius: 30px;
 	padding: 20px 50px 20px 30px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	margin-bottom: 44px;
 }
 
 .information__img {
 	max-width: 510px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
 }
 
 .information {

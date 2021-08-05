@@ -1,0 +1,99 @@
+.site__footer {
+	width: 100%;
+	height: auto;
+}
+
+.footer__block {
+	width: 100%;
+	height: auto;
+	background: #140035;
+	position: relative;
+}
+
+.footer__boot-img {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.footer__top-img {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.footer__wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: flex-end;
+	padding: 50px 0 103px;
+	position: relative;
+}
+
+.footer__parfum-back1 {
+	position: absolute;
+	top: 160px;
+	right: -300px;
+}
+
+.footer__parfum-back2 {
+	position: absolute;
+	top: 505px;
+	left: -300px;
+}
+
+.footer__dots-img {
+	position: absolute;
+	top: 121px;
+	left: -25px;
+	width: 578px;
+	height: 578px;
+}
+
+.footer__parfum-img {
+	position: absolute;
+	top: 140px;
+	left: -120px;
+	width: 741px;
+}
+
+.footer__original-img {
+	margin-bottom: 33px;
+}
+
+.footer__line {
+	width: 100%;
+	height: auto;
+	background: #1B0145;
+}
+
+.footer__info {
+	width: 100%;
+	display: flex;
+	padding: 18px 0 4px;
+	// justify-content: space-around;
+	flex-wrap: wrap;
+
+	li {
+		width: 33%;
+		margin-bottom: 14px;
+		font-family: Roboto, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 1;
+		color: #AEAEAE;
+	}
+}
+
+.footer__link {
+	color: inherit;
+	cursor: pointer;
+}
+
+.footer__link:hover {
+	text-decoration: underline;
+}
+
+

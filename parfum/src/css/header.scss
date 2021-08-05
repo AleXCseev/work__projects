@@ -12,7 +12,7 @@
 	height: 70px;
 	position: fixed;
 	top: 0;
-	left: 0;
+	right: 0;
 	z-index: 100;
 	transition: 0.3s ease;
 
@@ -30,6 +30,7 @@
 	.order__btn {
 		opacity: 1;
 		visibility: visible;
+		height: 40px;
 	}
 }
 
@@ -78,6 +79,10 @@
 	background: #943bee;
 }
 
+.burger__btn {
+	display: none;
+}
+
 .header__wrapper {
 	width: 100%;
 	height: auto;
@@ -94,6 +99,14 @@
 	position: absolute;
 	top: 20px;
 	right: 0;
+}
+
+.header__dots {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-top: 30px;
+	right: -140px;
 }
 
 .header__parfum {
@@ -136,6 +149,11 @@
 	text-transform: uppercase;
 	color: #FFD600;
 	margin-bottom: 30px;
+	min-height: 59px;
+}
+
+.text-js {
+	opacity: 0;
 }
 
 .header__subtitle {

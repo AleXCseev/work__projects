@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<link rel="stylesheet" href="./libs/jquery.fancybox.min.css">
-	<link rel="stylesheet" href="./libs/slick.css">
+	<link rel="stylesheet" href="./libs/owl.carousel.min.css">
+	<link rel="stylesheet" href="./libs/jquery.raty.css">
+	<link rel="stylesheet" href="./libs/aos.css">
 	<link rel="stylesheet" href="./libs/animations.css">
 	<link rel="stylesheet" href="./css/style.css" />
 	<title>Parfum</title>
@@ -20,43 +22,46 @@
 			<div class="header__nav">
 				<div class="container">
 					<div class="nav__links">
-						<a href="#card" class="nav__link">
+						<a href="#information" class="nav__link">
 							Memperkenalkan
 						</a>
 						<a href="#card" class="nav__link">
 							Produk
 						</a>
-						<a href="#card" class="nav__link">
+						<a href="#advantage" class="nav__link">
 							Kebijakan
 						</a>
-						<a href="#card" class="nav__link">
+						<a href="#review" class="nav__link">
 							Evaluasi 
 						</a>
-						<a href="#card" class="nav__link">
+						<a href="#footer" class="nav__link">
 							Kontak
 						</a>
 					</div>
 					<a href="#card" class="order__btn">
 						заказать по скидке
 					</a>
+					<div class="burger__btn">
+						<div class="burger__line"></div>
+					</div>
 				</div>
 			</div>
 			<div class="container">
 				<div class="header__wrapper">
-					<div class="header__original">
-						<img src="./img/original.png" alt="" class="original__img">
-						<img src="./img/guaranted.png" alt="" class="guaranted__img">
-					</div>
 					<img src="./img/parfum-back1.png" alt="" class="header__parfum-back1 tossing">
 					<img src="./img/parfum-back2.png" alt="" class="header__parfum-back2 tossing">
-					<img src="./img/header-parfum.png" alt="" class="header__parfum">
 					<div class="header__content">
 						<h1 class="header__title">
-							Vincent luxury PARFUM
+							<span class="text-js">Vincent luxury PARFUM</span>
 						</h1>
 						<h2 class="header__subtitle">
 							Parfum replika dari merk aromaterapi ternama di dunia
 						</h2>
+						<div class="header__original">
+							<img src="./img/original.png" alt="" class="original__img">
+							<img src="./img/guaranted.png" alt="" class="guaranted__img">
+						</div>
+						<img src="./img/header-parfum.png" alt="" class="header__parfum">
 						<div class="header__date">
 							акция действует до <span class="date" data-date="0">05.08.21</span>
 						</div>
@@ -82,7 +87,7 @@
 
 		<!-- MAIN -->
 		<main class="site__main">
-			<div class="advantage__section">
+			<div class="advantage__section" id="advantage">
 				<div class="container">
 					<div class="advantage__wrapper">
 						<h2 class="advantage__title">
@@ -98,7 +103,7 @@
 							PRODUK DARI VINCENT LUXURY 100% ORIGINAL, SEGEL, ADA BILL
 						</p>
 						<div class="advantages">
-							<div class="advantage__card advantage__card-1">
+							<div class="advantage__card advantage__card-1" data-aos="zoom-in">
 								<div class="advantage__img-wrapper">
 									<img src="./img/advantage-1.png" alt="" class="advantage__img">
 								</div>
@@ -109,7 +114,7 @@
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit neque est sem risus.
 								</p>
 							</div>
-							<div class="advantage__card advantage__card-2">
+							<div class="advantage__card advantage__card-2" data-aos="zoom-in" data-aos-delay="200">
 								<div class="advantage__img-wrapper">
 									<img src="./img/advantage-2.png" alt="" class="advantage__img">
 								</div>
@@ -120,7 +125,7 @@
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit neque est sem risus.
 								</p>
 							</div>
-							<div class="advantage__card advantage__card-3">
+							<div class="advantage__card advantage__card-3" data-aos="zoom-in" data-aos-delay="400">
 								<div class="advantage__img-wrapper">
 									<img src="./img/advantage-3.png" alt="" class="advantage__img">
 								</div>
@@ -135,10 +140,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="information__section">
+			<div class="information__section" id="information">
 				<div class="container">
 					<div class="information__block">
-						<img src="./img/info.png" alt="" class="information__img">
 						<div class="information">
 							<h3 class="information__title">
 								TENTANG KAMI
@@ -147,6 +151,7 @@
 								Vincent Luxury mengkhususkan diri dalam menyediakan
 								produk parfum bermerek mewah dari lebih dari 200 merek terkenal di dunia
 							</p>
+							<img src="./img/info.png" alt="" class="information__img">
 							<p class="information__important-text">
 								Hari ini kami memiliki program likuidasi untuk
 								wewangian pria dan wanita yang tersedia hanya dengan 550.000RP
@@ -210,7 +215,7 @@
 							UNTUK PRIA
 						</h3>
 
-						<div class="card card__1">
+						<div class="card card__1" id="card" data-aos="zoom-in">
 							<div class="card__left">
 								<img src="./img/card-1/1.png" alt="" class="card__img">
 							</div>
@@ -298,7 +303,7 @@
 							</div>
 						</div>
 
-						<div class="card card__2">
+						<div class="card card__2" data-aos="zoom-in">
 							<div class="card__left">
 								<img src="./img/card-2/1.png" alt="" class="card__img">
 							</div>
@@ -386,7 +391,7 @@
 							</div>
 						</div>
 
-						<div class="card card__3">
+						<div class="card card__3" data-aos="zoom-in">
 							<div class="card__left">
 								<img src="./img/card-3/1.png" alt="" class="card__img">
 							</div>
@@ -474,7 +479,7 @@
 							</div>
 						</div>
 
-						<div class="card card__4">
+						<div class="card card__4" data-aos="zoom-in">
 							<div class="card__left">
 								<img src="./img/card-4/1.jpg" alt="" class="card__img">
 							</div>
@@ -562,7 +567,7 @@
 							</div>
 						</div>
 
-						<div class="card card__5">
+						<div class="card card__5" data-aos="zoom-in">
 							<div class="card__left">
 								<img src="./img/card-5/1.png" alt="" class="card__img">
 							</div>
@@ -655,7 +660,7 @@
 							UNTUK WANITA
 						</h3>
 
-						<div class="card card__6">
+						<div class="card card__6" data-aos="zoom-in">
 							<div class="card__left">
 								<img src="./img/card-6/1.png" alt="" class="card__img">
 							</div>
@@ -740,9 +745,9 @@
 							</div>
 						</div>
 
-						<div class="card card__7">
+						<div class="card card__7" data-aos="zoom-in">
 							<div class="card__left">
-								<img src="./img/card-7/2.png" alt="" class="card__img">
+								<img src="./img/card-7/1.jpeg" alt="" class="card__img">
 							</div>
 							<div class="card__right">
 								<h3 class="card__title">
@@ -828,7 +833,7 @@
 							</div>
 						</div>
 
-						<div class="card card__8">
+						<div class="card card__8" data-aos="zoom-in">
 							<div class="card__left">
 								<img src="./img/card-8/1.jpg" alt="" class="card__img">
 							</div>
@@ -911,7 +916,7 @@
 							</div>
 						</div>
 
-						<div class="card card__9">
+						<div class="card card__9" data-aos="zoom-in">
 							<div class="card__left">
 								<img src="./img/card-9/3.png" alt="" class="card__img">
 							</div>
@@ -999,7 +1004,7 @@
 							</div>
 						</div>
 
-						<div class="card card__10">
+						<div class="card card__10" data-aos="zoom-in">
 							<div class="card__left">
 								<img src="./img/card-10/2.png" alt="" class="card__img">
 							</div>
@@ -1087,7 +1092,7 @@
 							</div>
 						</div>
 
-						<div class="card card__11">
+						<div class="card card__11" data-aos="zoom-in">
 							<div class="card__left">
 								<img src="./img/card-11/4.png" alt="" class="card__img">
 							</div>
@@ -1182,11 +1187,134 @@
 					</div>
 				</div>
 			</div>
+			<div class="review__section" id="review">
+				<div class="container">
+					<div class="review__wrapper">
+						<h2 class="review__section-title">
+							отзывы наших покупателей
+						</h2>
+
+						<div class="review__slider">
+							<div class="review">
+								<div class="review__header">
+									<h3 class="review__name">
+										Александер
+									</h3>
+									<div class="raiting">
+										<img src="./img/star.png" alt="" class="star">
+										<img src="./img/star.png" alt="" class="star">
+										<img src="./img/star.png" alt="" class="star">
+										<img src="./img/star.png" alt="" class="star">
+										<img src="./img/star.png" alt="" class="star">
+									</div>
+								</div>
+								<div class="review__img-wrapper">
+									<img src="./img/review/1.jpg" alt="" class="review__img">
+								</div>
+								<p class="review__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate in ultricies amet, in lectus pellentesque felis arcu, nibh. Imperdiet gravida accumsan et a risus.
+								</p>
+							</div>
+							<div class="review">
+								<div class="review__header">
+									<h3 class="review__name">
+										Александер
+									</h3>
+									<div class="raiting">
+										<img src="./img/star.png" alt="" class="star">
+										<img src="./img/star.png" alt="" class="star">
+										<img src="./img/star.png" alt="" class="star">
+										<img src="./img/star.png" alt="" class="star">
+										<img src="./img/star.png" alt="" class="star">
+									</div>
+								</div>
+								<div class="review__img-wrapper">
+									<img src="./img/review/2.jpg" alt="" class="review__img">
+								</div>
+								<p class="review__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate in ultricies amet, in lectus pellentesque felis arcu, nibh. Imperdiet gravida accumsan et a risus.
+								</p>
+							</div>
+							<div class="review">
+								<div class="review__header">
+									<h3 class="review__name">
+										Александер
+									</h3>
+									<div class="raiting">
+										<img src="./img/star.png" alt="" class="star">
+										<img src="./img/star.png" alt="" class="star">
+										<img src="./img/star.png" alt="" class="star">
+										<img src="./img/star.png" alt="" class="star">
+										<img src="./img/star.png" alt="" class="star">
+									</div>
+								</div>
+								<div class="review__img-wrapper">
+									<img src="./img/review/3.jpg" alt="" class="review__img">
+								</div>
+								<p class="review__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate in ultricies amet, in lectus pellentesque felis arcu, nibh. Imperdiet gravida accumsan et a risus.
+								</p>
+							</div>
+						</div>
+						<div class="add__review-block">
+							<a class="add__review">Оставить отзыв</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 
 		<!-- FOOTER -->
-		<footer class="site__footer" id="footer">
-			
+		<footer class="site__footer">
+			<div class="footer__block">
+				<img src="./img/footer-boot.png" alt="" class="footer__boot-img">
+				<img src="./img/footer-top.png" alt="" class="footer__top-img">
+				<div class="container">
+					<div class="footer__wrapper">
+						<img src="./img/parfum-back1.png" alt="" class="footer__parfum-back1 tossing">
+						<img src="./img/parfum-back2.png" alt="" class="footer__parfum-back2 tossing">
+						<img src="./img/header-parfum.png" alt="" class="footer__parfum-img">
+						<div class="header__content">
+							<img src="./img/original.png" alt="" class="footer__original-img">
+							<h1 class="header__title">
+								<span class="text-js">Vincent luxury PARFUM</span>
+							</h1>
+							<h2 class="header__subtitle">
+								Parfum replika dari merk aromaterapi ternama di dunia
+							</h2>
+							<div class="header__date">
+								акция действует до <span class="date" data-date="0">05.08.21</span>
+							</div>
+							<div class="promo pulse">
+								<h2 class="promo__title">PROMO</h2>
+								<h3 class="promo__subtitle">TIPE LAMA</h3>
+								<p class="promo__text">
+									TANGGAL KADALUARSA
+									1-3 TAHUN
+								</p>
+								<span class="promo__price">
+									550.000RP
+								</span>
+								<a href="#card" class="promo__btn">
+									заказать по скидке
+								</a>
+							</div>
+							<p class="header__info">Количество товара ограничено</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__line" id="footer">
+				<div class="container">
+					<ul class="footer__info">
+						<li>LLC "MONSTR-MEDIA" INN 7701071884</li>
+						<li>PSRN 1157746018870</li>
+						<li>Tel.: +62251 4488877</li>
+						<li>mail halo@matahari.com</li>
+						<li><a data-fancybox data-src="#modal" href="javascript:;" class="footer__link">Rahasia pribadi</a></li>
+					</ul>
+				</div>
+			</div>
 		</footer>
 
 	</div>
@@ -1219,9 +1347,36 @@
 		</div>
 	</div>
 
+	<div class="modal__review">
+		<div class="modal__review-wrapper">
+			<form class="active">
+				<div class="modal__autor">
+					<input type="text" class="name__input" placeholder="Имя" required>
+					<div class="modal__star-raiting">
+						Оценка: <div class="modal__raiting"></div>
+					</div>
+				</div>
+				<textarea cols="30" rows="10" class="modal__area" placeholder="Напишите ваш отзыв"></textarea>
+				<div class="modal__send">
+					<button type="submit" class="send">Отправить</button>
+				</div>
+			</form>
+			<div class="send__window">
+				<div class="send__img">
+					<img src="./img/mailing.png" alt="" class="modal__send-img">
+				</div>
+				<div class="send__massage">Спасибо за ваш отзыв,
+					он появится на сайте после проверки модератором</div>
+			</div>
+			<a class="modal__close"><img src="./img/close.png" alt="закрыть"></a>
+		</div>
+	</div>
+
 	<script src="./libs/jquery.min.js"></script>
 	<script src="./libs/jquery.fancybox.min.js"></script>
-	<script src="./libs/slick.min.js"></script>
+	<script src="./libs/owl.carousel.min.js"></script>
+	<script src="./libs/aos.js"></script>
+	<script src="./libs/jquery.raty.js"></script>
 	<script src="./libs/lazysizes.min.js"></script>
 	<script src="./js/main.js"></script>
 </body>
