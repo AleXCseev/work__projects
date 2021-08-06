@@ -46,6 +46,96 @@
 	.card__submit {
 		width: 175px;
 	}
+	.review__section-title {
+		margin-bottom: 70px;
+	}
+	.review__slider {
+		width: 780px;
+		height: auto;
+		display: inline-block;
+		margin: auto;
+	}
+	.review {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+	}
+	.owl-nav {
+		width: 320px;
+		margin: auto;
+		display: flex;
+		margin-top: 10px;
+		justify-content: space-between;
+
+		button {
+			width: 30px;
+			height: 17px;
+			background-image: url(../img/arrow.png) !important;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+
+			span {
+				display: none;
+			}
+		}
+		.owl-next {
+			transform: rotate(180deg);
+		}
+	}
+
+	.owl-dots {
+		display: flex;
+		width: 200px;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		margin-top: -14px;
+
+		.owl-dot {
+			width: 12px;
+			height: 12px;
+			border-radius: 100%;
+			background-color: #922790 !important;
+			margin-right: 12px;
+
+			span {
+				display: none;
+			}
+		}
+		.owl-dot.active {
+			background: #FFFFFF !important;
+			border: 3px solid #922790;
+		}
+		.owl-dot:last-of-type {
+			margin-right: 0;
+		}
+	}
+	.add__review-block {
+		justify-content: center;
+		padding-right: 0px;
+	}
+	.footer__parfum-img {
+		top: 160px;
+		left: -80px;
+		width: 580px;
+	}
+	.footer__boot-img {
+		width: 100%;
+	}
+	.footer__top-img {
+		width: 60%;
+	}
+	.footer__parfum-back1 {
+		top: 160px;
+		width: 200px;
+		right: -140px;
+	}
+	.footer__parfum-back2 {
+		top: 551px;
+		left: -150px;
+		width: 200px;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -132,6 +222,20 @@
 	.card__submit {
 		width: 190px;
 	}
+	.footer__parfum-back1 {
+		display: none;
+	}
+	.footer__parfum-back2 {
+		display: none;
+	}
+	.footer__parfum-img {
+		top: 190px;
+		left: -70px;
+		width: 460px;
+	}
+	.footer__wrapper {
+		padding: 50px 0 50px;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -216,7 +320,6 @@
 			flex-direction: column;
 			align-items: flex-start;
 			height: auto;
-			transition: 0.3s ease;
 			opacity: 1;
 			visibility: visible;
 			margin-top: 40px;
@@ -290,6 +393,38 @@
 	.information__section {
 		padding-bottom: 70px;
 	}
+	.review__slider {
+		width: 390px;
+	}
+	.footer__top-img {
+		width: 100%;
+	}
+	.footer__parfum-img {
+		width: 460px;
+		position: static;
+		order: 4;
+	}
+	.footer__wrapper {
+		padding: 53px 0 73px;
+		.header__title {
+			order: 1;
+		}
+		.header__subtitle {
+			order: 2;
+		}
+		.footer__original-img {
+			order: 3;
+		}
+		.header__date {
+			order: 5;
+		}
+		.promo {
+			order: 6;
+		} 
+		.header__info {
+			order: 7;
+		}
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -335,6 +470,20 @@
 		justify-content: center;
 		margin: auto;
 		margin-bottom: 16px;
+	}
+	.review .raiting {
+		display: inline-flex;
+		margin: 0;
+	}
+	.review__wrapper {
+		padding-top: 30px;
+	}
+	.review__section-title {
+		font-size: 30px;
+		margin-bottom: 40px;
+	}
+	.add__review-block {
+		margin-bottom: 47px;
 	}
 }
 
@@ -405,6 +554,16 @@
 	.card__title {
 		font-size: 30px;
 	}
+	.footer__info {
+		justify-content: center;
+	}
+	.footer__info li {
+		width: 50%;
+	}
+	.footer__info li:first-child {
+		width: 100%;
+		// text-align: center;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -468,6 +627,35 @@
 	.card__left {
 		height: 85vw;
 	}
+	.modal {
+		width: calc(100% - 30px);
+		height: auto;
+		border-radius: 20px;
+		background: #FEF3F1;
+	}
+	.info__modal-wrapper {
+		padding: 0px 0;
+	}
+	.fancybox-content {
+		padding: 50px 20px;
+	}
+	.review__slider {
+		width: 100vw;
+		margin-left: -15px;
+	}
+	.review {
+		width: calc(100vw - 60px);
+	}
+	.review__img-wrapper {
+		width: 100%;
+		height: 95vw;
+	}
+	.footer__parfum-img {
+		width: 100vw;
+	}
+	.footer__original-img {
+		margin-bottom: 0px;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -486,6 +674,24 @@
 	.information__important-text {
 		font-size: 22px;
 		margin-bottom: 24px;
+	}
+	.card__title {
+		font-size: 7.5vw;
+	}
+	.old__price {
+		font-size: 5vw;
+	}
+	.new__price {
+		font-size: 7vw;
+	}
+	.card__info {
+		font-size: 5vw;
+	}
+	.owl-nav {
+		width: 80%;
+	}
+	.footer__info li {
+		font-size: 12px;
 	}
 }
 
@@ -529,6 +735,32 @@
 	}
 	.information__important-text {
 		font-size: 18px;
+	}
+	.card__title {
+		font-size: 7vw;
+	}
+	.card__left {
+		height: 78vw;
+	}
+	.review__slider {
+		width: 100vw;
+		margin-left: -15px;
+	}
+	.review {
+		width: calc(100vw - 30px);
+	}
+	.review__name {
+		font-size: 18px;
+	}
+	.privacy-policy__headline {
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+	.privacy-policy__text {
+		font-size: 16px;
+	}
+	.privacy-policy__text:last-of-type {
+		margin-bottom: 0;
 	}
 }
 

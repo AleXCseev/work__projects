@@ -22,6 +22,39 @@ $(function () {
 	// 	// }
 	// });
 
+	if($(window).width() <= 1280) {
+		$(".review__slider").addClass("owl-carousel").owlCarousel({
+			loop: true,
+			nav : true,
+			items: 2,
+			margin: 30,
+			dots: true,
+			dotsEach: true,
+			stagePadding: 15,
+			responsive:{
+				0: {
+					items: 1,
+					stagePadding: 15,
+				}, 
+				321: {
+					items: 1,
+					stagePadding: 30,
+					margin: 50,
+				},
+				415: {
+					stagePadding: 15,
+					margin: 30,
+					items: 1,
+				},
+				800: {
+					items: 2,
+					stagePadding: 15,
+					margin: 30,
+				},
+			}
+		});
+	}
+
 	AOS.init({
 		disable : 'mobile',
 		once: true,

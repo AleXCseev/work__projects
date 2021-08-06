@@ -42,6 +42,7 @@
 	line-height: 1;
 	color: #FFFFFF;
 	margin-right: 50px;
+	transition: 0.3s ease;
 }
 
 .nav__link:hover {
@@ -131,7 +132,7 @@
 }
 
 .header__content {
-	width: 570px;
+	width: 580px;
 	height: auto;
 	display: flex;
 	flex-direction: column;
@@ -224,7 +225,7 @@
 	font-family: Roboto, sans-serif;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 30px;
+	font-size: 28px;
 	line-height: 1.2;
 	text-align: center;
 	text-transform: uppercase;
