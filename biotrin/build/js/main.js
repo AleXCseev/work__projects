@@ -3,11 +3,18 @@ $(function () {
 	function scroll() {
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = -85;
+			var cardHeight = 0;
+			var windowHeight = 0;
 			
+			if($(window).width() <= 480) {
+				fixedOffset = 0;
+				cardHeight = $("#card").outerHeight(false)
+				windowHeight = $(window).height()
+			}
 	
 			$('html, body')
 				.stop()
-				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset }, 1000);
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
 			e.preventDefault();
 		});
 	}
@@ -18,7 +25,11 @@ $(function () {
 
 	$(window).scroll(function() {
 		if($(window).scrollTop() >= height) {
-			$(".right__fixed").addClass("fixed")
+			if($(".right__fixed").hasClass("fixed")) {
+				return false
+			} else {
+				$(".right__fixed").addClass("fixed")
+			}
 		} else {
 			$(".right__fixed").removeClass("fixed")
 		}
@@ -42,6 +53,7 @@ $(function () {
 	handleReviewScroll();
 	window.addEventListener('scroll', handleReviewScroll);
 
+	var $path = $('body').data("path");
 
 	$(".form-reviews button").click(function (event) {
 		var commentName = $(this).closest(".form-reviews").find('input').val();
@@ -97,15 +109,6 @@ $(function () {
 				reviewRatingCount.eq(0).html(countReviewLike + 1);
 			}
 		}
-
-		// scroll
-
-		// if ($(e.target).is("a.js-scroll") || $(e.target).closest(".js-scroll").length > 0) {
-		//     var item = $(e.target).closest(".js-scroll").attr('href'),
-		//         item_offset = $(item).offset().top;
-
-		//     $('html, body').animate({scrollTop: item_offset}, 800);
-		// }
 	});
 
 	start_timer();
@@ -125,45 +128,10 @@ $(function () {
 	}
 
 
-	var time = 900;
-	var intr;
-
-	function start_timer() {
-		intr = setInterval(tick, 1000);
-	}
-
-	function tick() {
-		if (localStorage.vietnam43) {
-			if (localStorage.vietnam43 <= 0) {
-				time = 5;
-			} else {
-				time = localStorage.vietnam43;
-			}
-
-		} else {
-			time = 900;
-		}
-		time = time - 1;
-		localStorage.vietnam43 = time;
-
-		var mins = Math.floor(time / 60);
-		var secs = time - mins * 60;
-		if (mins == 0 && secs == 0) {
-			clearInterval(intr);
-		}
-
-		$(".countdown .minute").html(pad(mins));
-		$(".countdown .second").html(pad(secs));
-
-		localStorage.vietnam43 = time;
-	}
-
-
 	function getDocumentScrollTop() {
 		return $(document.scrollingElement || document.documentElement).scrollTop();
 	}
 
-	var $path = $('body').data("path");
 
 	function handleReviewScroll() {
 		const offset = $(window).height() / 3;
@@ -210,6 +178,7 @@ $(function () {
 
 	quantity()
 
+	$(".year").text(new Date().getFullYear())
 
 })
 

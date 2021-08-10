@@ -97,7 +97,7 @@
 	padding: 15px;
 	background: #F1F3F5;
 	border-radius: 20px;
-	margin-bottom: 35px;
+	margin-bottom: 20px;
 }
 
 .comment__img {
@@ -105,6 +105,7 @@
 	height: 80px;
 	border-radius: 100%;
 	margin-right: 15px;
+	flex-shrink: 0;
 }
 
 .comment__text {
@@ -145,6 +146,8 @@
 	padding: 8px 88px;
 	display: flex;
 	justify-content: space-between;
+	position: relative;
+	z-index: 1;
 }
 
 .card__ingredients {
@@ -240,7 +243,7 @@
 	margin-bottom: 5px;
 }
 
-.list__item::before {
+.list__item:before {
 	content: "";
 	position: absolute;
 	top: 2px;
@@ -273,6 +276,10 @@
 	text-align: center;
 	color: #DE0000;
 	margin-bottom: 35px;
+}
+
+.order__link-img {
+	margin-bottom: -5px;
 }
 
 .order__block {
@@ -408,6 +415,7 @@
 	width: 75px;
 	height: auto;
 	margin-right: 10px;
+	flex-shrink: 0;
 }
 
 .news__text-wrapper {
@@ -450,6 +458,7 @@
 	line-height: 1.2;
 	text-align: center;
 	color: #000000;
+	width: 100%;
 }
 
 .card__right-img {
@@ -532,6 +541,8 @@
 	flex-direction: column;
 	align-items: center;
 	align-self: center;
+	position: relative;
+	z-index: 1;
 }
 
 .card__right-quantity {
@@ -588,10 +599,10 @@
 	color: #FFFFFF;
 	cursor: pointer;
 	transition: 0.3s ease;
-	z-index: 1;
+	z-index: 2;
 }
 
-.card__btn::before {
+.card__btn:before {
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -609,7 +620,7 @@
 	background-color: rgba(27, 142, 58, 0.2);
 	// color: #1B8E3A;
 
-	&::before {
+	&:before {
 		border: 9px solid #1B8E3A;
 	}
 }

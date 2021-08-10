@@ -1,3 +1,8 @@
+.site__header {
+	width: 100%;
+	height: auto;
+}
+
 .header__line {
 	width: 100%;
 	height: auto;
@@ -37,6 +42,10 @@
 .header__line-right {
 	display: flex;
 	align-items: center;
+}
+
+.line__right-mobile {
+	display: none;
 }
 
 .search__input-wrapper {
@@ -134,6 +143,9 @@
 	line-height: 1.4;
 	color: #333333;
 	padding-right: 15px;
+	a {
+		color: inherit;
+	}
 }
 
 .header__tag-line {
