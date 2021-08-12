@@ -1,27 +1,5 @@
 $(function () {
 
-	// $(".review__slider").owlCarousel({
-	// 	loop: true,
-	// 	nav : true,
-	// 	items: 3,
-	// 	margin: 30,
-	// 	dots: true,
-	// 	dotsEach: true,
-	// 	// stagePadding: 10,
-	// 	// responsive:{
-	// 	// 	0: {
-	// 	// 		items: 1,
-	// 	// 		margin: 50,
-	// 	// 	},
-	// 	// 	1070: {
-	// 	// 		items: 2,
-	// 	// 	},
-	// 	// 	1679: {
-	// 	// 		items: 3,
-	// 	// 	}
-	// 	// }
-	// });
-
 	if($(window).width() <= 1280) {
 		$(".review__slider").addClass("owl-carousel").owlCarousel({
 			loop: true,
@@ -46,7 +24,7 @@ $(function () {
 					margin: 30,
 					items: 1,
 				},
-				800: {
+				701: {
 					items: 2,
 					stagePadding: 15,
 					margin: 30,
@@ -78,16 +56,16 @@ $(function () {
 		var newString = "";
 		// thhis.text("|");
 		setTimeout(function(){
-			thhis.css("opacity",1);
+			thhis.css("opacity", 1);
 			thhis.prev().removeAttr("style");
 			thhis.text("");
 			for(var i = 0; i < amntOfChars; i++){
-			(function(i,char){
+			(function(i, char){
 				setTimeout(function() {        
 				newString += char;
 				thhis.text(newString);
-				},i*typingSpeed);
-			})(i+1,text[i]);
+				}, i*typingSpeed);
+			})(i + 1, text[i]);
 			}
 		}, 1000);
 	}
@@ -200,7 +178,7 @@ $(function () {
 		var fixedOffset = -70;
 
 		// if($(window).width() <= 480) {
-		// 	var fixedOffset = -70;
+		// 	var fixedOffset = -100;
 		// }
 
 		$('html, body')
@@ -290,7 +268,6 @@ $(function () {
 				close()
 			}
 		})
-
 
 		$(".modal__review form").submit(function (e) {
 			e.preventDefault()
