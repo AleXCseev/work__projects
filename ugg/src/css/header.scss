@@ -95,6 +95,38 @@
     left: 7px;
 }
 
+.sale__leaf-3 {
+	position: absolute;
+    width: 220px;
+    top: -30px;
+    right: -160px;
+    transform: rotate(82deg);
+}
+
+.sale__leaf-4 {
+	position: absolute;
+    width: 143px;
+    top: 80px;
+    right: -75px;
+    transform: rotate(125deg);
+}
+
+.sale__leaf-5 {
+	position: absolute;
+    width: 234px;
+    bottom: -107px;
+    left: -92px;
+    transform: rotate(202deg);
+}
+
+.sale__leaf-6 {
+	position: absolute;
+    width: 144px;
+    bottom: -113px;
+    left: 65px;
+    transform: rotate(183deg);
+}
+
 .sale__text {
 	text-align: center;
 	font-family: "Open Sans", sans-serif;
@@ -139,7 +171,6 @@
 	position: relative;
 	z-index: 1;
 }
-
 
 .header__title {
 	font-family: Spectral, serif;
@@ -222,6 +253,11 @@
 	color: #FFFFFF;
 	cursor: pointer;
 	margin-bottom: 20px;
+	transition: 0.3s ease;
+}
+
+.header__order-btn:hover {
+	background: #4F4F4F;
 }
 
 .header__order-time {
