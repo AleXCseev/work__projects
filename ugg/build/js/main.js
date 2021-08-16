@@ -1,28 +1,13 @@
 $(function () {
 
-	// $(".review__slider").owlCarousel({
-	// 	loop: true,
-	// 	nav : true,
-	// 	items: 3,
-	// 	margin: 50,
-	// 	dots: true,
-	// 	dotsEach: true,
-	// 	// autoplay:true,
-	// 	// autoplayTimeout: 4000,
-	// 	// autoplayHoverPause: true,
-	// 	responsive:{
-	// 		0: {
-	// 			items: 1,
-	// 			margin: 50,
-	// 		},
-	// 		1070: {
-	// 			items: 2,
-	// 		},
-	// 		1679: {
-	// 			items: 3,
-	// 		}
-	// 	}
-	// });
+	$(".review__slider").owlCarousel({
+		loop: true,
+		nav : true,
+		items: 1,
+		margin: 100,
+		dots: true,
+		dotsEach: true,
+	});
 
 	$('[data-fancybox]').fancybox({
 		loop: true,
@@ -202,6 +187,133 @@ $(function () {
 
 	carousel(".galary", ".move__mark");
 
+	function switchFotoCard(selector) {
+		$(selector + " .card__foto").click( function () {
+			$(selector + " .card__foto").removeClass("active")
+			$(this).addClass("active")
+			var getSrc = $(this).children().attr("href");
+			var getBigFotoSrc = $(selector + " .card__main-foto img").attr("src");
+			if( getSrc !== getBigFotoSrc) {
+				$(selector + " .card__main-foto img").hide().attr("src", getSrc).fadeIn(1000);
+				// $(selector + " .card__main-foto img").parent().attr("href", getSrc);
+			}
+			return false
+		})
+	}
+
+	switchFotoCard(".card__1")
+	switchFotoCard(".card__2")
+	switchFotoCard(".card__3")
+
+	function switchBtns(selector) {
+		$(selector + " .card__size-btn").click(function () {
+			$(selector + " .card__size-btn").removeClass("active")
+			$(this).addClass("active");
+		})
+	}
+
+	switchBtns(".card__1");
+	switchBtns(".card__2");
+	switchBtns(".card__3");
+
+	function modal() {
+		$(".add__review").click(function () {
+			$(".modal__review").addClass("active")
+		})
+
+		function close() {
+			$(".modal__review").removeClass("active")
+		}
+
+		function readURL(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				reader.onload = function (e) {
+					$('.file img').attr('src', e.target.result).css("display", "block");
+				};
+				reader.readAsDataURL(input.files[0]);
+			}
+		}
+
+		$(".modal__review .input__file").on("change", function () {
+			readURL(this);
+		});
+
+		$(".modal__review").click( function(e) {
+			var target = e.target;
+			if(target.classList.contains("modal__close")) {
+				close()
+			}
+			if(target.classList.contains("modal__review")) {
+				close()
+			}
+		})
+
+		$(".modal__review form").submit(function (e) {
+			e.preventDefault()
+			$(this).removeClass("active");
+			$(".send__window").addClass("active");
+			$(".modal__review .name__input").val("")
+			$(".modal__review .modal__area").val("")
+			$(".modal__review .file img").attr("src", "").css("display", "none")
+			delayClose()
+		})
+		function delayClose() {
+			setTimeout(function () {
+				$(".modal__review form").addClass("active");
+				$(".send__window").removeClass("active");
+				close();
+			}, 5000);
+		}
+	}
+
+	modal()
+
+
+	var scenesParallax = [];
+
+	mQ("(max-width: 1023px)", function () {
+	   if (!scenesParallax.length) return
+	   scenesParallax.forEach(function (scene) {
+		  scene.disable();
+		  scene.element.removeAttribute('style');
+	   })
+	}, function () {
+	   if (scenesParallax.length === 0) {
+		  $('.parallax').each(function (i) {
+			 scenesParallax[i] = new Parallax($(this).children('div').attr('data-depth', randomNum(10, 20)).end().get(0), {
+				frictionX: 0.002,
+				frictionY: 0.002,
+				invertX: Math.random() >= 0.5,
+				invertY: Math.random() >= 0.5
+			 });
+		  })
+	   } else {
+		  scenesParallax.forEach(function (scene) {
+			 scene.enable();
+		  })
+	   }
+	});
+ 
+	function randomNum(min, max) {
+	   var numLow = min, numHigh = max,
+		  adjustedHigh = (parseFloat(numHigh) - parseFloat(numLow)) + 1;
+	   return Math.floor(Math.random() * adjustedHigh) + parseFloat(numLow);
+	}
+ 
+	function mQ(mqStr, match, mismatch) {
+	   var mq = matchMedia(mqStr);
+	   mq.addListener(widthChange);
+	   widthChange(mq);
+	   function widthChange(mq) {
+		  if (mq.matches) {
+			 match();
+		  } else {
+			 mismatch();
+		  }
+	   }
+	}
+ 
 
 })
 

@@ -1,6 +1,6 @@
 .site__main {
 	width: 100%;
-	height: auto;
+	height: auto
 } 
 
 .advantage__section {
@@ -22,26 +22,35 @@
 
 .advantage__leaf-1 {
 	position: absolute;
-	width: 97px;
-	transform: rotate(-45deg);
 	left: -200px;
 	top: 250px;
+
+	img {
+		width: 97px;
+		transform: rotate(-45deg);
+	}
 }
 
 .advantage__leaf-2 {
 	position: absolute;
-    width: 215px;
-    transform: rotate(-135deg);
     left: 624px;
     top: 293px;
+
+	img {
+		width: 215px;
+		transform: rotate(-135deg);
+	}
 }
 
 .advantage__leaf-3 {
 	position: absolute;
-    width: 127px;
-    transform: rotate(-38deg);
     left: 702px;
     top: 244px;
+
+	img {
+		width: 127px;
+		transform: rotate(-38deg);
+	}
 }
 
 .advantage__leaf-4 {
@@ -50,22 +59,33 @@
     transform: rotate(145deg);
     right: -195px;
     top: 480px;
+
+	img {
+		width: 204px;
+		transform: rotate(145deg);
+	}
 }
 
 .advantage__leaf-5 {
 	position: absolute;
-    width: 130px;
-    transform: rotate(140deg);
     right: -255px;
     top: 480px;
+
+	img {
+		width: 130px;
+		transform: rotate(140deg);
+	}
 }
 
 .advantage__leaf-6 {
 	position: absolute;
-    width: 190px;
-    transform: rotate(282deg);
     right: -404px;
     top: 90px;
+
+	img {
+		width: 190px;
+		transform: rotate(282deg);
+	}
 }
 
 .advantage__circle-1 {
@@ -238,16 +258,17 @@
 	}
 
 	.advantage__btn-block {
-		padding: 32px 20px;
+		opacity: 1;
+		visibility: visible;
 	}
 	
-	.advantage__btn-title {
-		display: block;
-	}
+	// .advantage__btn-title {
+	// 	display: block;
+	// }
 
-	.advantage__btn-text {
-		display: block;
-	}
+	// .advantage__btn-text {
+	// 	display: block;
+	// }
 }
 
 .advantage__btn:before {
@@ -270,10 +291,13 @@
 	position: absolute;
 	top: 30px;
 	right: 30px;
+	padding: 32px 20px;
 	background-color: #4F4F4F;
 	border-radius: 20px;
 	z-index: -1;
 	transition: 0.3s linear;
+	opacity: 0;
+	visibility: hidden;
 }
 
 .advantage__btn-title {
@@ -284,7 +308,7 @@
 	line-height: 1.6;
 	color: #FFFFFF;
 	margin-bottom: 10px;
-	display: none;
+	// display: none;
 }
 
 .advantage__btn-text {
@@ -294,7 +318,7 @@
 	font-size: 18px;
 	line-height: 1.67;
 	color: #FFFFFF;
-	display: none;
+	// display: none;
 }
 
 .video__section {
@@ -314,10 +338,13 @@
 
 .video__leaf-1 {
 	position: absolute;
-    width: 97px;
-    transform: rotate(-45deg);
     right: -320px;
     bottom: -15px;
+
+	img {
+		width: 97px;
+		transform: rotate(-45deg);
+	}
 }
 
 .video__girl-1 {
