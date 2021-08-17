@@ -24,6 +24,7 @@
 	display: flex;
 	justify-content: space-between;
 	position: relative;
+	z-index: 1;
 }
 
 .card__leaf {
@@ -34,6 +35,7 @@
 	.card__leaf-1 {
 		left: -440px;
 		bottom: 175px;
+		z-index: -1;
 		
 		img {
 			width: 204px;
@@ -43,6 +45,7 @@
 	.card__leaf-2 {
 		left: -320px;
 		bottom: 230px;
+		z-index: -1;
 
 		img {
 			width: 125px;
@@ -52,6 +55,7 @@
 	.card__leaf-3 {
 		left: -230px;
 		top: -85px;
+		z-index: -1;
 		
 		img {
 			width: 85px;
@@ -61,6 +65,7 @@
 	.card__leaf-4 {
 		right: -180px;
 		top: -115px;
+		z-index: -1;
 
 		img {
 			width: 110px;
@@ -70,6 +75,7 @@
 	.card__leaf-5 {
 		right: -285px;
 		bottom: 280px;
+		z-index: -1;
 
 		img {
 			width: 120px;
@@ -84,22 +90,26 @@
 		height: 150px;
 		left: -233px;
 		top: 50px;
+		z-index: -1;
 	}
 	.card__circle-2 {
 		width: 50px;
 		height: 50px;
 		left: -320px;
     	top: 230px;
+		z-index: -1;
 	}
 	.card__circle-3 {
 		width: 200px;
 		height: 200px;
 		right: -460px;
 		top: 30px;
+		z-index: -1;
 	}
 	.card__leaf-1 {
 		bottom: 0;
 		left: -240px;
+		z-index: -1;
 
 		img {
 			width: 105px;
@@ -109,6 +119,7 @@
 	.card__leaf-2 {
 		bottom: 50px;
 		right: -240px;
+		z-index: -1;
 
 		img {
 			width: 162px;
@@ -123,16 +134,19 @@
 		height: 200px;
 		bottom: -10px;
 		left: -470px;
+		z-index: -1;
 	}
 	.card__circle-2 {
 		width: 50px;
 		height: 50px;
 		top: 250px;
 		right: -230px;
+		z-index: -1;
 	}
 	.card__leaf-1 {
 		left: -210px;
 		top: 255px;
+		z-index: -1;
 
 		img {
 			width: 100px;
@@ -145,6 +159,7 @@
 	.card__leaf-1 {
 		top: 115px;
 		left: -280px;
+		z-index: -1;
 
 		img {
 			width: 160px;
@@ -154,6 +169,7 @@
 	.card__leaf-2 {
 		top: -30px;
 		right: -250px;
+		z-index: -1;
 
 		img {
 			width: 180px;
@@ -163,6 +179,7 @@
 	.card__leaf-3 {
 		top: -70px;
 		right: -227px;
+		z-index: -1;
 
 		img {
 			width: 93px;

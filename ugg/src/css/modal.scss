@@ -235,19 +235,13 @@
 @media (max-width: 880px) {
 	.modal__review-wrapper {
 		width: 668px;
-		height: 398px;
+		height: auto;
 	}
 	.modal__area {
-		margin-bottom: 75px;
+		margin-bottom: 20px;
 	}
 	.modal__autor {
 		justify-content: flex-start;
-	}
-	.modal__star-raiting {
-		position: absolute;
-		left: 50px;
-		width: 200px;
-		bottom: 115px;
 	}
 }
 
@@ -260,8 +254,11 @@
 	.modal__review form {
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-end;
+		justify-content: space-between;
 		align-items: flex-start;
+	}
+	.file {
+		margin-bottom: 15px;
 	}
 	.send {
 		margin-top: 20px;
@@ -282,17 +279,6 @@
 	.modal__area {
 		height: 168px;
 		margin: 0;
-	}
-	.modal__star-raiting {
-		order: 3;
-		position: relative;
-		left: auto;
-		width: 100%;
-		height: 50px;
-		bottom: auto;
-		margin-bottom: 20px;
-    	margin-top: 20px;
-		justify-content: flex-start;
 	}
 }
 

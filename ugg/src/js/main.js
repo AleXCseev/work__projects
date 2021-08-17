@@ -44,18 +44,6 @@ $(function () {
 	}
 
 	addVideoOnPage(".video");
-	
-
-	// AOS.init({
-	// 	disable : 'mobile',
-	// 	once: true,
-	// 	// offset : -200,
-	// });
-
-
-	// $(window).resize(function() {
-	// 	AOS.refresh();
-	// })
 
 	$('[href*="#"]').on('click', function (e) {
 		var fixedOffset = 0;
@@ -68,37 +56,6 @@ $(function () {
 		e.preventDefault();
 	});
 	
-	// function cardImage(selector) {
-	// 	function switchBtn(color) {
-	// 		$(selector + " .galary__photo").each(function() {
-	// 			var galary = $(this).attr("data-" + color);
-	// 			$(this).hide().attr("src", galary).fadeIn(300)
-	// 			$(this).parent().attr("href", galary)
-	// 		})
-	// 	}
-
-	// 	$(selector + " .color__btn").click(function() {
-	// 		if($(this).hasClass("active")) {
-	// 			return false;
-	// 		}
-
-	// 		$(selector + " .color__btn").removeClass("active")
-	// 		if($(this).hasClass("blue")) {
-	// 			switchBtn("blue")
-	// 		}
-	// 		if($(this).hasClass("red")) {
-	// 			switchBtn("red")
-	// 		}
-	// 		if($(this).hasClass("black")) {
-	// 			switchBtn("black")
-	// 		}
-	// 		$(this).addClass("active")
-	// 	})
-	// }
-
-	// cardImage(".card__1")
-	// cardImage(".card__2")
-	// cardImage(".card__3")
 
 	Date.prototype.daysInMonth = function () {
 		return 32 - new Date(this.getFullYear(), this.getMonth(), 32).getDate();
@@ -156,13 +113,15 @@ $(function () {
 
 		$(selector).swiperight(function() {
 			if (acarousel.isAnim()) return false; 
-			acarousel.move(1);
+			var move = acarousel.move(1);
+			changeActive(move);
 			return false;
 		})
 
 		$(selector).swipeleft(function() {
 			if (acarousel.isAnim()) return false; 
-			acarousel.move(-1);
+			var move = acarousel.move(-1);
+			changeActive(move);
 			return false;
 		})
 
@@ -313,7 +272,5 @@ $(function () {
 		  }
 	   }
 	}
- 
-
 })
 
