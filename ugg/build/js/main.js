@@ -272,5 +272,16 @@ $(function () {
 		  }
 	   }
 	}
+
+	if($(window).width() <= 800) {
+		$(".advantage__btn-wrapper").click( function() {
+			if($(this).hasClass("active")) {
+				$(this).removeClass("active")
+				return false
+			}
+			$(".advantage__btn-wrapper").removeClass("active");
+			$(this).addClass("active");
+		})
+	}
 })
 

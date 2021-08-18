@@ -5,7 +5,8 @@
 		height: 800px;
 	}
 	.advantage__section {
-		margin-top: -160px;
+		margin-top: -175px;
+		background-size: 1920px;
 	}
 	.header__circle-3 {
 		right: -470px;
@@ -34,7 +35,7 @@
 		padding-top: 50px;
 	}
 	.header__title {
-		font-size: 40px;
+		font-size: 29px;
 	}
 	.header__circle-2 {
 		width: 150px;
@@ -90,6 +91,9 @@
 	.advantage__wrapper {
 		padding-top: 130px;
 	}
+	.advantage__section-title {
+		font-size: 32px;
+	}
 	.advantage__leaf-2 {
 		left: 400px;
 		top: 293px;
@@ -104,6 +108,9 @@
 	.video {
 		width: 500px;
 		height: 350px;
+	}
+	.video__title {
+		font-size: 30px;
 	}
 	.video__girl-1 {
 		left: -200px;
@@ -189,6 +196,9 @@
 	.card__foto {
 		width: 115px;
 	}
+	.review__block {
+		margin-right: 100px;
+	}
 	.footer__boot {
 		width: 700px;
 	}
@@ -217,7 +227,7 @@
 		padding-top: 30px;
 	}
 	.header__title {
-		font-size: 34px;
+		font-size: 25px;
 	}
 	.old__price {
 		font-size: 20px;
@@ -526,13 +536,14 @@
 	.review__block {
 		width: 373px;
 		padding-top: 40px;
+		margin-right: 0px;
 	}
 	.delivery__block {
 		width: 340px;
 		height: auto;
 	}
 	.delivery__block-title {
-		font-size: 38px;
+		font-size: 30px;
 	}
 	.delivery__title {
 		font-size: 22px;
@@ -598,7 +609,7 @@
 		width: 90px;
 	}
 	.header__title {
-		font-size: 30px;
+		font-size: 21px;
 		margin-bottom: 20px;
 	}
 	.header__content {
@@ -615,6 +626,32 @@
 	.site__header {
 		height: 500px;
 	}
+	.advantage__btn-wrapper:hover {
+		.advantage__btn {
+			background-color: #4F4F4F;
+		}
+	
+		.advantage__plus {
+			transform: none;
+		}
+	
+		.advantage__btn-block {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+	.advantage__btn-wrapper.active {
+		.advantage__btn {
+			background-color: #870009;
+		}
+		.advantage__plus {
+			transform: rotate(45deg);
+		}
+		.advantage__btn-block {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
 	.card__foto {
 		width: 145px;
 	}
@@ -626,11 +663,11 @@
 		padding-top: 40px;
 	}
 	.review__block-title {
-		font-size: 34px;
+		font-size: 30px;
 		margin-bottom: 36px;
 	}
 	.delivery__block-title {
-		font-size: 34px;
+		font-size: 30px;
 		margin-bottom: 30px;
 	}
 	.delivery__block {
@@ -697,7 +734,7 @@
 		right: -80px;
 	}
 	.header__title {
-		font-size: 40px;
+		font-size: 28px;
 		margin-bottom: 10px;
 		text-align: center;
 	}
@@ -845,7 +882,8 @@
 		margin-bottom: 50px;
 	}
 	.review__block-title {
-		font-size: 40px;
+		font-size: 30px;
+		text-align: center;
 	}
 	.footer__leaf-4 {
 		top: 40px;
@@ -859,7 +897,8 @@
 		margin-bottom: 50px;
 	}
 	.delivery__block-title {
-		font-size: 40px;
+		font-size: 30px;
+		text-align: center;
 	}
 	.delivery__stage {
 		display: flex;
@@ -874,6 +913,7 @@
 	}
 	.delivery__logo-wrapper {
 		margin-right: 0px;
+		margin-bottom: 10px;
 	}
 	.footer__boot {
 		position: static;
@@ -1086,7 +1126,7 @@
 /////////////////////////////////////////////////////////////////////
 @media (max-width: 414px) {
 	.header__title {
-		font-size: 9vw;
+		font-size: 6.5vw;
 	}
 	.header__circle-4 {
 		right: 0px;
@@ -1103,8 +1143,9 @@
 		padding-top: 120px;
 	}
 	.advantage__section-title {
-		font-size: 8vw;
+		font-size: 7vw;
 		margin-bottom: 30px;
+		text-align: center;
 	}
 	.advantage__section-img1 {
 		top: 150px;
@@ -1159,7 +1200,7 @@
 		font-size: 4vw;
 	}
 	.video__title {
-		font-size: 6.5vw;
+		font-size: 6vw;
 		padding-right: 128px;
 	}
 	.video__girl-1 {
@@ -1201,6 +1242,14 @@
 	}
 	.sprey__text {
 		font-size: 4.5vw;
+	}
+	.card__size-btn {
+		width: 40px;
+		height: 40px;
+		font-size: 3.8vw;
+	}
+	.card__size-text {
+		font-size: 3vw;
 	}
 	.site__footer:before {
 		width: 600px;
@@ -1278,18 +1327,13 @@
 		right: 4px;
 		top: 190px;
 	}
-	.card__size-btn {
-		width: 40px;
-		height: 40px;
-		font-size: 3.8vw;
-	}
-	.card__size-text {
-		font-size: 3vw;
-	}
 	.card__foto {
 		width: 48%;
 		height: 26vw;
 		margin-bottom: 10px;
+	}
+	.card__size-btn {
+		margin-right: 5px;
 	}
 }
 
@@ -1399,7 +1443,7 @@
 		margin-bottom: 30px;
 	}
 	.video__title {
-		font-size: 6vw;
+		font-size: 5vw;
 	}
 	.video__girl-1 {
 		left: auto;
@@ -1440,6 +1484,13 @@
 		width: 48%;
 		height: 24vw;
 		margin-bottom: 10px;
+	}
+	.card__title {
+		font-size: 7vw;
+	}
+	.card__size-btn {
+		width: 35px;
+		height: 35px;
 	}
 	.card__price .old__price {
 		font-size: 4vw;

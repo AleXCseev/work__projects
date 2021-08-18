@@ -27,6 +27,7 @@ gulp.task("styles", () => {
 			.pipe(
 				autoprefixer({
 					cascade: false,
+					browsers: ['last 25 versions'],
 				}),
 			)
 			.pipe(gulp.dest("./build/css"))
@@ -57,11 +58,11 @@ gulp.task("del", () => {
 gulp.task("img-compress", () => {
 	return gulp
 		.src("./src/img/**")
-		// .pipe(
-		// 	imagemin({
-		// 		progressive: true,
-		// 	}),
-		// )
+		.pipe(
+			imagemin({
+				progressive: true,
+			}),
+		)
 		.pipe(gulp.dest("./build/img/"))
 		.pipe(browserSync.stream());
 });

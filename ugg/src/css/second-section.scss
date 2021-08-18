@@ -288,7 +288,7 @@
 	font-family: Spectral, serif;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 35px;
+	font-size: 32px;
 	line-height: 1.67;
 	color: #B9720C;
 }
@@ -325,6 +325,7 @@
 .card__size-btns {
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 30px;
 }
 
