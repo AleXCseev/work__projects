@@ -3,6 +3,7 @@
 	height: 800px;
 	position: relative;
 	background: #3E3F43;
+	z-index: 1;
 }
 
 .site__header:before {
@@ -46,7 +47,7 @@
 	font-family: "Bebas Neue", sans-serif;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 72px;
+	font-size: 62px;
 	line-height: 1.18;
 	color: #FFFFFF;
 	margin-bottom: 30px;
@@ -55,9 +56,24 @@
 .header__boot {
     position: absolute;
     bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-left: 190px;
+	left: 30%;
+	width: 839px;
+	animation: boot 5s infinite;
+}
+
+@keyframes boot {
+	10% {
+		transform: translateX(-20px);
+	}
+	20% {
+		transform: translateX(20px);
+	}
+	30% {
+		transform: translateX(-20px);
+	}
+	40% {
+		transform: translateX(0px);
+	}
 }
 
 .header__price {
@@ -95,4 +111,77 @@
 	position: absolute;
 	top: 50%;
 	left: 0;
+}
+
+.new__price {
+	font-family: "Bebas Neue", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 72px;
+	line-height: 1;
+	color: #FFC700;
+
+	span {
+		font-size: 36px;
+	}
+}
+
+.header__order-btn {
+	width: 300px;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #FFC700;
+	cursor: pointer;
+	transition: 0.3s ease;
+	font-family: "Bebas Neue", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 1;
+	color: #161616;
+	margin-bottom: 20px;
+}
+
+.header__order-btn:hover {
+	background: #FF3737;
+	color: #fff;
+}
+
+.header__order-time {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #FFFFFF;
+
+	span {
+		font-weight: 600;
+	}
+}
+
+.header__right-title {
+	font-family: "Bebas Neue", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 250px;
+	line-height: 0.85;
+	background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.5) 100%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #000000;
+	position: absolute;
+	top: 50px;
+	left: 51%;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	/* IE10+ CSS styles go here */
+	.header__right-title {
+		background: transparent;
+		background-clip: normal;
+		-webkit-text-fill-color: normal;
+	}
 }

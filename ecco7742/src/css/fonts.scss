@@ -1,14 +1,18 @@
 @font-face {
     font-family: "Open Sans";
     font-weight: normal;
-    src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
-		url("../fonts/OpenSans-Regular.eot");
+	src: url("../fonts/OpenSans-Regular.woff") format("woff")
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: bold;
+	src: url("../fonts/OpenSans-Bold.woff") format("woff")
 }
 
 @font-face {
     font-family: "Bebas Neue";
     font-weight: bold;
-    src: url("../fonts/BebasNeueBold.woff2") format("woff2"),
-		url("../fonts/BebasNeueBold.eot");
+	src: url("../fonts/BebasNeueBold.woff") format("woff")
 }
 
