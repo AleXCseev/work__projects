@@ -11,6 +11,20 @@ $(function () {
 		// autoplay: true,
 		// autoplayHoverPause: true,
 		// autoplayTimeout: 3000,
+		responsive : {
+			0 : {
+				items: 1,
+				margin: 50,
+				center: false,
+				nav: false,
+			},
+			480 : {
+				items: 5,
+				margin: 0,
+				center: true,
+				nav: true,
+			}
+		}
 	});
 
 	$(".review__slider").owlCarousel({

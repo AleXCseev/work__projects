@@ -33,6 +33,10 @@
 	overflow: hidden;
 }
 
+.advantage__logo {
+	display: none;
+}
+
 .advantage__graffiti {
 	position: absolute;
 	bottom: 0;
@@ -113,6 +117,7 @@
 	background-position: center;
 	background-size: cover;
 	position: relative;
+	overflow: hidden;
 }
 
 .video__graffiti {
@@ -190,7 +195,6 @@
 	position: absolute;
 	bottom: -40px;
     right: -810px;
-	animation: boot 5s infinite;
 }
 
 .galary__section {

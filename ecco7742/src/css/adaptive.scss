@@ -1,4 +1,33 @@
 /////////////////////////////////////////////////////////////////////
+@media (max-width: 1680px) {
+	.advantage__section {
+		height: 530px;
+	}
+	.advantage__block-title {
+		font-size: 54px;
+		margin-bottom: 30px;
+	}
+	.advantage__block {
+		width: 490px;
+		margin-top: 50px;
+    	margin-left: 50px;
+	}
+	.advantage {
+		width: 230px;
+		margin-bottom: 30px;
+	}
+	.advantage__title {
+		font-size: 34px;
+	}
+	.advantage__text {
+		font-size: 16px;
+	}
+	.advantage__right {
+		z-index: 1;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
 @media (max-width: 1480px) {
 	.container {
 		width: 1000px;
@@ -10,6 +39,87 @@
 	}
 	.header__right-title {
 		font-size: 230px;
+	}
+	.advantage__block-title {
+		font-size: 48px;
+		margin-bottom: 20px;
+	}
+	.advantage__number {
+		height: 26px;
+	}
+	.advantage__number-text {
+		font-size: 50px;
+	}
+	.advantage__title {
+		font-size: 30px;
+		margin-bottom: 5px;
+	}
+	.advantage {
+		width: 200px;
+		margin-bottom: 30px;
+	}
+	.advantage__block {
+		width: 450px;
+		margin-top: 40px;
+		margin-left: 40px;
+	}
+	.advantage__section {
+		height: 470px;
+	}
+	.advantage__graffiti {
+		position: absolute;
+		bottom: 0;
+		left: -280px;
+		width: 65vw;
+	}
+	.video__graffiti {
+		right: -248px;
+		width: 85vw;
+	}
+	.video__boot {
+		position: absolute;
+		bottom: -25px;
+		right: -46vw;
+		width: 46vw;
+	}
+	.card {
+		width: 1000px;
+	}
+	.card__foto {
+		width: 100px;
+		height: 78px;
+	}
+	.card__foto:before {
+		height: 8px;
+	}
+	.card__left-footer {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.card__logo {
+		margin-bottom: 20px;
+	}
+	.site__footer:before {
+		z-index: 1;
+	}
+	.footer__wrapper {
+		position: relative;
+		z-index: 1;
+	}
+	.footer__column {
+		width: 450px;
+	}
+	.review__block {
+		width: 100%;
+	}
+	.delivery {
+		width: 100%;
+	}
+	.delivery .advantage__block-title {
+		font-size: 42px;
+	}
+	.review__block-title {
+		font-size: 42px;
 	}
 }
 
@@ -41,6 +151,135 @@
 	}
 	.header__graffiti {
 		width: 960px;
+	}
+	.advantage__section {
+		height: auto;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.advantage__left {
+		width: 100%;
+		height: 92vh;
+	}
+	.advantage__right {
+		width: 100%;
+		height: auto;
+		padding: 50px 0 0 50px;
+		background-color: #DAD9D7;
+		background-size: 755px;
+	}
+	.advantage__right:before {
+		content: "";
+		height: 100%;
+		width: 200px;
+		position: absolute;
+		top: 0;
+		right: 555px;
+		background: linear-gradient(90deg, #DAD9D7 0%, rgba(218, 217, 215, 0) 100%);
+	}
+	.advantage__block {
+		width: 540px;
+		margin: 0;
+	}
+	.advantage__block-title {
+		font-size: 52px;
+		margin-bottom: 30px;
+	}
+	.advantage {
+		width: 250px;
+		margin-bottom: 50px;
+	}
+	.advantage__number {
+		height: 34px;
+	}
+	.advantage__number-text {
+		font-size: 60px;
+	}
+	.advantage__title {
+		font-size: 36px;
+		margin-bottom: 10px;
+	}
+	.advantage__text {
+		font-size: 18px;
+	}
+	.advantage__graffiti {
+		width: 100vw;
+	}
+	.video__content {
+		width: 100%;
+		position: relative;
+	}
+	.video {
+		width: 100%;
+		height: 50vw;
+	}
+	.video__text {
+		padding-right: 0px;
+		margin-bottom: 32px;
+	}
+	.video__boot {
+		display: block;
+		position: static;
+		bottom: auto;
+		right: auto;
+		margin: auto;
+		width: 80vw;
+	}
+	.video__graffiti {
+		right: -230px;
+		width: 120vw;
+	}
+	.card {
+		width: 100%;
+		flex-direction: column;
+		background: #000000;
+		position: relative;
+
+		.price {
+			justify-content: center;
+		}
+	}
+	.card__left {
+		width: 100%;
+		padding-top: 30px;
+	}
+	.card__right {
+		width: 100%;
+		background-color: #3E3F43;
+		background-image: url(../img/card-bg-mobile.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 90px;
+		padding-top: 30px;
+	}
+	.card__foto {
+		width: 20%;
+		height: 12vw;
+	}
+	.card__right-bg {
+		display: none;
+	}
+	.card__sale {
+		position: absolute;
+		bottom: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+		color: #fff;
+		z-index: 2;
+	}
+	.card__table {
+		width: 330px;
+	}
+	.card__logo {
+		display: none;
+	}
+	.sprey .card__right {
+		padding-bottom: 30px;
 	}
 }
 
@@ -82,6 +321,14 @@
 	.price {
 		justify-content: center;
 	}
+	.advantage__left {
+		width: 100%;
+		height: 52vh;
+		margin-top: -1px;
+	}
+	.advantage__graffiti {
+		width: 128vw;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -106,12 +353,158 @@
 	.header__boot {
 		width: 90vw;
 	}
+	.advantage__left {
+		width: 100%;
+		height: 70vh;
+	}
+	.advantage__right {
+		width: 100%;
+		height: auto;
+		padding: 30px 17px 0;
+		background-color: #DAD9D7;
+		background-image: url(../img/advantage-girl.jpg);
+		background-position: right bottom;
+		background-size: auto 500px;
+	}
+	.advantage__block {
+		width: 100%;
+		margin: 0;
+	}
+	.advantages {
+		margin-bottom: 450px;
+	}
+	.advantage {
+		width: 48%;
+		margin-bottom: 50px;
+	}
+	.advantage__right:before {
+		height: 30px;
+		width: 100%;
+		top: auto;
+		right: 0px;
+		bottom: 470px;
+		background: linear-gradient(180deg, #DAD9D7 0%, rgba(218, 217, 215, 0) 100%);
+	}
+	.advantage__graffiti {
+		width: 128vw;
+		transform: rotate(180deg);
+		bottom: auto;
+		left: auto;
+		top: 0;
+		right: -25vw;
+	}
+	.advantage__logo {
+		display: block;
+		position: absolute;
+		bottom: 310px;
+		left: 17px;
+	}
+	.video__wrapper {
+		padding: 17px 0 30px;
+	}
+	.video {
+		width: 100%;
+		height: 60vw;
+		margin-bottom: 20px;
+	}
+	.video__title {
+		margin-bottom: 0px;
+	}
+	.video__graffiti {
+		right: -23vw;
+		width: 120vw;
+	}
+	.video__boot {
+		width: 95vw;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
 @media (max-width: 480px) {
 	.header__graffiti {
 		width: 115vw;
+	}
+	.video__graffiti {
+		right: -30vw;
+		width: 140vw;
+	}
+	.galary__section {
+		width: 100%;
+		height: 150vw;
+	}
+	.galary__slider {
+		width: 100%;
+		height: auto;
+		position: static;
+		top: auto;
+		left: auto;
+		transform: none;
+	}
+	.galary__slide {
+		min-width: 100%;
+		height: 150vw;
+	}
+	.galary__slide:before {
+		display: none;
+	}
+	.owl-dots {
+		width: 100%;
+		margin-top: 20px;
+		padding: 0 17px;
+		justify-content: flex-start;
+	}
+	.card__section {
+		background: #C4C4C4;
+		padding: 70px 0 0;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+	.card__galary {
+		margin-bottom: 0px;
+	}
+	.card__other-foto {
+		width: 100%;
+		padding: 0 37px 0 87px;
+		flex-wrap: wrap;
+		margin-bottom: -20px;
+		position: relative;
+	}
+	.card__other-foto:before {
+		content: "";
+		width: 147px;
+		height: 40px;
+		background-image: url(../img/header-logo.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		top: 54px;
+		left: -36px;
+		transform: rotate(-90deg);
+	}
+	.card__foto {
+		width: 47%;
+		height: 24vw;
+		margin-bottom: 20px;
+	}
+	.card__right {
+		padding: 30px 17px 90px;
+		align-items: flex-start;
+	}
+	.card .price {
+		justify-content: flex-start;
+	}
+	.card__table {
+		width: 100%;
+	}
+	.card__sale {
+		width: auto;
+		position: absolute;
+		bottom: 30px;
+		left: 17px;
+		transform: none;
+		color: #fff;
 	}
 }
 
@@ -145,6 +538,80 @@
 		height: 75vw;
 		top: 105px;
 	}
+	.advantage__left {
+		width: 100%;
+		height: 42vh;
+	}
+	.advantages {
+		margin-bottom: 110vw;
+	}
+	.advantage {
+		width: 47%;
+		margin-bottom: 20px;
+	}
+	.advantage__graffiti {
+		width: 130vw;
+	}
+	.advantage__block-title {
+		font-size: 9vw;
+		margin-bottom: 30px;
+	}
+	.advantage__title {
+		font-size: 7vw;
+		margin-bottom: 0px;
+	}
+	.advantage__text {
+		font-size: 4.5vw;
+	}
+	.advantage__right {
+		background-size: auto 112vw;
+	}
+	.advantage__right:before {
+		height: 50px;
+		bottom: 102vw;
+	}
+	.advantage__logo {
+		bottom: 70vw;
+		left: 17px;
+	}
+	.video__title {
+		font-size: 30px;
+	}
+	.video__text {
+		font-size: 4.5vw;
+	}
+	.video__boot {
+		width: 89vw;
+	}
+	.card__title {
+		font-size: 14vw;
+	}
+	.card__table {
+		font-size: 4.5vw;
+	}
+	.card__sale {
+		font-size: 4.2vw;
+	}
+	.card__right {
+		padding-bottom: 21vw;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 375px) {
+	.advantage__logo {
+		width: 40px;
+	}
+	.card__foto {
+		margin-bottom: 12px;
+	}
+	.card__size-btns {
+		width: 100%;
+	}
+	.card__form {
+		width: 100%;
+		height: auto;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -157,5 +624,23 @@
 	}
 	.header__order-time {
 		font-size: 14px;
+	}
+	.advantage__logo {
+		width: 36px;
+	}
+	.video__text {
+		margin-bottom: 20px;
+	}
+	.card__foto {
+		height: 22vw;
+	}
+	.card__title {
+		font-size: 13vw;
+	}
+	.card__other-foto:before {
+		width: 125px;
+		height: 33px;
+		top: 46px;
+		left: -22px;
 	}
 }

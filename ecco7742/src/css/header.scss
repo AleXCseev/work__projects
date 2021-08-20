@@ -58,22 +58,6 @@
     bottom: 50px;
 	left: 30%;
 	width: 839px;
-	animation: boot 5s infinite;
-}
-
-@keyframes boot {
-	10% {
-		transform: translateX(-20px);
-	}
-	20% {
-		transform: translateX(20px);
-	}
-	30% {
-		transform: translateX(-20px);
-	}
-	40% {
-		transform: translateX(0px);
-	}
 }
 
 .header__price {
