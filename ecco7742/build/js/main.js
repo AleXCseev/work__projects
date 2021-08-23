@@ -8,9 +8,9 @@ $(function () {
 		margin: 0,
 		dots: true,
 		dotsEach: true,
-		// autoplay: true,
-		// autoplayHoverPause: true,
-		// autoplayTimeout: 3000,
+		autoplay: true,
+		autoplayHoverPause: true,
+		autoplayTimeout: 3000,
 		responsive : {
 			0 : {
 				items: 1,
@@ -35,6 +35,32 @@ $(function () {
 		dots: true,
 		dotsEach: true,
 	});
+
+	function cardSlider (selector) {
+		var owl = $(selector + " .card__main-foto").owlCarousel({
+			items: 1,
+			margin: 100,
+			dots: false,
+			nav: false,
+			loop: true,
+			mouseDrag: false,
+			touchDrag: false,
+			animateOut: 'fadeOut',
+		});
+
+		$(selector + " .card__foto").each(function() {
+			$(this).click(function() {
+				$(selector + " .card__foto").removeClass("active")
+				var position = $(this).data("slide") - 1
+				owl.trigger("to.owl.carousel", [position, 300])
+				$(this).addClass("active")
+			})
+		})
+	}
+
+	cardSlider(".card__1")
+	cardSlider(".card__2")
+	cardSlider(".card__3")
 
 	function addDots(selector) {
 		var i = 1; 
@@ -143,24 +169,6 @@ $(function () {
 	$(".header__order-time span").text(getDate(2));
 
 
-	function switchFotoCard(selector) {
-		$(selector + " .card__foto").click( function () {
-			$(selector + " .card__foto").removeClass("active")
-			$(this).addClass("active")
-			var getSrc = $(this).children().attr("href");
-			var getBigFotoSrc = $(selector + " .card__main-foto img").attr("src");
-			if( getSrc !== getBigFotoSrc) {
-				$(selector + " .card__main-foto img").hide().attr("src", getSrc).fadeIn(1000);
-				// $(selector + " .card__main-foto img").parent().attr("href", getSrc);
-			}
-			return false
-		})
-	}
-
-	switchFotoCard(".card__1")
-	switchFotoCard(".card__2")
-	switchFotoCard(".card__3")
-
 	function switchBtns(selector) {
 		$(selector + " .card__size-btn").click(function () {
 			$(selector + " .card__size-btn").removeClass("active")
@@ -171,89 +179,5 @@ $(function () {
 	switchBtns(".card__1");
 	switchBtns(".card__2");
 	switchBtns(".card__3");
-
-
-// 	var scenesParallax = [];
-
-// 	mQ("(max-width: 1023px)", function () {
-// 	   if (!scenesParallax.length) return
-// 	   scenesParallax.forEach(function (scene) {
-// 		  scene.disable();
-// 		  scene.element.removeAttribute('style');
-// 	   })
-// 	}, function () {
-// 	   if (scenesParallax.length === 0) {
-// 		  $('.parallax').each(function (i) {
-// 			 scenesParallax[i] = new Parallax($(this).children('div').attr('data-depth', randomNum(10, 20)).end().get(0), {
-// 				frictionX: 0.002,
-// 				frictionY: 0.002,
-// 				invertX: Math.random() >= 0.5,
-// 				invertY: Math.random() >= 0.5
-// 			 });
-// 		  })
-// 	   } else {
-// 		  scenesParallax.forEach(function (scene) {
-// 			 scene.enable();
-// 		  })
-// 	   }
-// 	});
- 
-// 	function randomNum(min, max) {
-// 	   var numLow = min, numHigh = max,
-// 		  adjustedHigh = (parseFloat(numHigh) - parseFloat(numLow)) + 1;
-// 	   return Math.floor(Math.random() * adjustedHigh) + parseFloat(numLow);
-// 	}
- 
-// 	function mQ(mqStr, match, mismatch) {
-// 	   var mq = matchMedia(mqStr);
-// 	   mq.addListener(widthChange);
-// 	   widthChange(mq);
-// 	   function widthChange(mq) {
-// 		  if (mq.matches) {
-// 			 match();
-// 		  } else {
-// 			 mismatch();
-// 		  }
-// 	   }
-// 	}
-
-// 	if($(window).width() <= 800) {
-// 		$(".advantage__btn-wrapper").click( function() {
-// 			if($(this).hasClass("active")) {
-// 				$(this).removeClass("active")
-// 				return false
-// 			}
-// 			$(".advantage__btn-wrapper").removeClass("active");
-// 			$(this).addClass("active");
-// 		})
-// 	}
-
-// function autoType(elementClass, typingSpeed){
-// 	var thhis = $(elementClass);
-// 	thhis.css({
-// 	  "position": "relative",
-// 	  "display": "inline-block"
-// 	});
-// 	thhis = thhis.find(".text-js");
-// 	var text = thhis.text().trim().split('');
-// 	var amntOfChars = text.length;
-// 	var newString = "";
-// 	// thhis.text("|");
-// 	setTimeout(function(){
-// 		thhis.css("opacity", 1);
-// 		thhis.prev().removeAttr("style");
-// 		thhis.text("");
-// 		for(var i = 0; i < amntOfChars; i++){
-// 			(function(i, char){
-// 				setTimeout(function() {        
-// 					newString += char;
-// 					thhis.text(newString);
-// 					}, i*typingSpeed);
-// 				})(i + 1, text[i]);
-// 			}
-// 		}, 1000);
-// 	}
-
-// 	autoType(".header__right-title", 200);
 })
 
