@@ -1,0 +1,644 @@
+.card__section {
+	width: 100%;
+	height: auto;
+	background-image: url(../img/card-section-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 122px;
+}
+
+.card {
+	width: 100%;
+	height: auto;
+	background: rgba(37, 38, 41, 0.75);
+	border: 1px solid #34373D;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+	backdrop-filter: blur(10px);
+	display: flex;
+	margin-bottom: 75px;
+	position: relative;
+	z-index: 1;
+}
+
+.card__2 {
+	margin-bottom: 0;
+}
+
+.card__left {
+	width: 50%;
+	height: 100%;
+	padding: 18px 28px;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.card__sale {
+	font-family: "Merriweather", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 72px;
+	line-height: 1;
+	color: #FFFFFF;
+	position: absolute;
+	top: 68px;
+    right: 80px;
+}
+
+.card__left-info {
+	width: 524px;
+	text-align: center;
+	font-family: "Proxima Nova", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1;
+	color: #FFFFFF;
+	transform: rotate(-90deg) translateY(-50%);
+	position: absolute;
+	top: 50%;
+	left: -215px;
+}
+
+.card__slider {
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/card-bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.card__slide {
+	width: 100%;
+	height: 524px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card__slide-img {
+	width: auto !important;
+	margin-top: -20px;
+}
+
+.owl-nav {
+	width: 480px;
+	height: 45px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	position: absolute;
+	bottom: 45px;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 2;
+
+	button {
+		width: 90px;
+		height: 15px;
+		background-image: url(../img/arrow.png) !important;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		span {
+			display: none;
+		}
+	}
+
+	.owl-next {
+		transform: rotate(180deg);
+	}
+}
+
+.owl-dots {
+	width: auto;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	position: absolute;
+	bottom: 45px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+
+	.owl-dot {
+		margin-right: 15px;
+		position: relative;
+
+		span {
+			font-family: "Merriweather", sans-serif;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 1;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			color: #FFFFFF;
+		}
+	}
+	.owl-dot:last-of-type {
+		margin-right: 0px;
+	}
+
+	.owl-dot.active {
+		span {
+			font-weight: 300;
+			font-size: 36px;
+		}
+	}
+}
+
+.card__right {
+	width: 50%;
+	padding-top: 50px;
+	padding-bottom: 57px;
+}
+
+.card__title {
+	font-family: "Merriweather", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 1.4;
+	color: #FFFFFF;
+	margin-bottom: 15px;
+}
+
+.card__table {
+	width: 100%;
+	font-family: "Proxima Nova", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.4;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+
+	tr {
+		position: relative;
+	}
+	tr:before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background: linear-gradient(90deg, rgba(255, 213, 149, 0.2) 0%, rgba(255, 213, 149, 0) 100%);
+	}
+	tr td:first-child {
+		font-weight: 600;
+		width: 250px;
+	}
+}
+
+.card__price {
+	width: 100%;
+	margin-bottom: 20px;
+
+	.price {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.old__price {
+		margin-right: 145px;
+		line-height: 1;
+	}
+	.new__price {
+		line-height: 1;
+	}
+}
+
+.card__btns {
+	width: 100%;
+	display: flex;
+	margin-bottom: 40px;
+}
+
+.card__btn {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 30px;
+	position: relative;
+	font-family: "Proxima Nova", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 1;
+	text-align: center;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	transition: 0.3s ease;
+	cursor: pointer;
+}
+
+.card__btn:hover {
+	color: #000;
+	background-color: #fff;
+}
+
+.card__btn::before {
+	content: "";
+	position: absolute;
+	bottom: -9px;
+	left: 50%;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	transform: rotate(45deg) translateX(-50%);
+	opacity: 0;
+	visibility: hidden;
+	margin-left: -2px;
+	transition: 0.3s ease;
+}
+
+.card__btn:last-of-type {
+	margin-right: 0;
+}
+
+.card__size {
+	position: absolute;
+	bottom: -23px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: "Proxima Nova", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 1;
+	color: #FFFFFF;
+	width: 80px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s ease;
+}
+
+.card__btn.active {
+	color: #000;
+	background-color: #fff;
+	&:before {
+		opacity: 1;
+		visibility: visible;
+	}
+	.card__size {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.card__form {
+	width: auto;
+	display: inline-flex;
+	position: relative;
+
+	.header__order-btn {
+		width: 200px;
+		height: 40px;
+		background: #FFAB2E;
+		color: #fff;
+		border: 1px solid #FFAB2E;
+		font-size: 22px;
+	}
+	.header__order-btn:hover {
+		background: transparent;
+	}
+
+	.header__order-time {
+		position: absolute;
+		bottom: -12px;
+		right: 12px;
+		font-size: 12px;
+	}
+}
+
+.card__input-wrapper {
+	width: auto;
+	height: auto;
+	margin-right: 15px;
+}
+ 
+.card__input {
+	width: 200px;
+	height: 40px;
+	padding: 0 20px;	 
+	font-family: "Proxima Nova", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1;
+	color: #FFFFFF;
+	opacity: 1;
+	border: 1px solid #FFFFFF;
+}
+
+.card__input::placeholder {
+	color: #fff
+}
+
+.card__main-sale {
+	width: 100%;
+	height: 100px;
+	background: rgba(37, 38, 41, 0.75);
+	border: 1px solid #34373D;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+	backdrop-filter: blur(10px);
+	font-family: Merriweather;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 1.4;
+	text-align: center;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 75px;
+	position: relative;
+	z-index: auto;
+}
+
+.card__logo {
+	display: block;
+	position: absolute;
+	left: -345px;
+    top: 50%;
+	transform: translateY(-50%);
+	margin-top: 30px;
+}
+
+.sprey__section {
+	width: 100%;
+	height: auto;
+}
+
+.sprey {
+	width: 100%;
+	margin-top: 133px;
+	margin-bottom: 100px;
+	padding: 50px;
+	background: #252629;
+	border: 1px solid #34373D;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+
+	.card__sale {
+		top: auto;
+		right: auto;
+		bottom: 35px;
+		left: 440px;
+	}
+}
+
+.sprey:before {
+	content: "";
+	width: 230px;
+	height: 125%;
+	position: absolute;
+	top: 50%;
+	left: -50px;
+	transform: translateY(-50%);
+	border: 5px solid #FFD595;
+	border-right: none;
+}
+
+.sprey__content {
+	width: 800px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.sprey__title {
+	font-family: "Merriweather", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 45px;
+	line-height: 1.2;
+	text-align: right;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 5px;
+}
+
+.sprey__price {
+	width: 100%;
+	height: auto;
+	display: flex;
+	margin-bottom: 20px;
+	.price {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.old__price {
+		line-height: 1;
+	}
+	.new__price {
+		margin-right: 30px;
+		line-height: 1;
+		margin-top: 0;
+	}
+}
+
+.sprey__text {
+	font-family: "Proxima Nova", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.2;
+	text-align: right;
+	color: #FFFFFF;
+	margin-bottom: 44px;
+}
+
+.sprey__img {
+	position: absolute;
+	top: 50%;
+	left: 108px;
+	transform: translateY(-50%);
+}
+
+.delivery__section {
+	width: 100%;
+	height: auto;
+	background: #36373C;
+	padding: 50px 0;
+	margin-bottom: 38px;
+}
+
+.delivery__wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.delivery__title {
+	font-family: "Merriweather", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 45px;
+	line-height: 1.4;
+	text-align: right;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.delivery__text {
+	font-family: "Proxima Nova", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.2;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 45px;
+}
+
+.delivery__stages {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.stage {
+	width: 250px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.line {
+		width: 100px;
+		margin-bottom: 15px;
+	}
+}
+
+.stage__title {
+	font-family: "Merriweather", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 28px;
+	line-height: 1.2;
+	text-align: right;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.stage__text {
+	font-family: "Proxima Nova", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.2;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.review__section {
+	width: 100%;
+	height: auto;
+}
+
+.review__wrapper {
+	width: 100%;
+	height: auto;
+	padding-top: 37px;
+	padding-bottom: 17px;
+}
+
+.review__section-title {
+	font-family: "Merriweather", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 45px;
+	line-height: 1.2;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 40px;
+}
+
+.review__slider {
+	width: 100%;
+	height: auto;
+
+	.owl-nav {
+		position: sticky;
+		transform: none;
+		left: auto;
+		bottom: auto;
+		margin: 0 auto; 
+		width: 1140px;
+		height: auto;
+		margin-top: 40px;
+	}
+}
+
+.review__slide {
+	width: 470px;
+	height: auto;
+	min-height: 270px;
+	padding: 30px 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #252629;
+	border: 1px solid #34373D;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.review__name {
+	font-family: "Merriweather", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.2;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.review__star-raiting {
+	display: flex;
+	margin-bottom: 25px;
+}
+
+.review__text {
+	font-family: "Proxima Nova", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.2;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.add__review {
+	width: 200px;
+	height: 40px;
+	font-size: 15px;
+	margin: auto;
+}

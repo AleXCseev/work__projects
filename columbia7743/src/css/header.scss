@@ -1,0 +1,192 @@
+.site__header {
+	width: 100%;
+	height: 890px;
+	background-image: url(../img/header-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.header__wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.header__content {
+	width: 620px;
+	padding-top: 50px;
+}
+
+.header__logo {
+	width: 130px;
+	margin-bottom: 126px;
+}
+
+.header__sale {
+	font-family: "Proxima Nova", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #FFD595;
+	margin-bottom: 10px;
+}
+
+.header__title {
+	font-family: "Merriweather", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 54px;
+	line-height: 1.4;
+	color: #FFFFFF;
+	margin-bottom: 34px;
+}
+
+.header__price-block {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__price {
+	width: 300px;
+	padding-top: 35px;
+	border-top: 1px solid #fff;
+	flex-shrink: 0;
+}
+
+.price {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.old__price {
+	font-family: "Merriweather", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 1.4;
+	color: rgba(255, 255, 255, 0.6);
+	position: relative;
+}
+
+.old__price:before {
+	content: "";
+	width: 100%;
+	height: 1px;
+	background-color: #FFD595;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.new__price {
+	font-family: "Merriweather", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 48px;
+	line-height: 1.6;
+	color: #FFAB2E;
+	margin-top: -15px;
+}
+
+.header__block {
+	margin-top: -10px;
+	padding-left: 13px;
+}
+
+.header__info {
+	font-family: "Proxima Nova", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 1.4;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.header__order-btn {
+	width: 300px;
+	height: 65px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Proxima Nova", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 1;
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: 0.3s ease;
+	background: rgba(196, 196, 196, 0.01);
+	border: 1px solid #FFFFFF;
+	backdrop-filter: blur(5px);
+	margin-bottom: 10px;
+}
+
+.header__order-btn:hover {
+	border: 1px solid #FFAB2E;
+	color: #FFAB2E;
+}
+
+.header__order-time {
+	font-family: "Proxima Nova", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.2;
+	color: #FFFFFF;	
+	text-align: center;
+
+	span {
+		font-weight: normal;
+		color: #FFAB2E;
+	}
+}
+
+.header__right {
+	position: absolute;
+	top: 143px;
+	right: -70px;
+	background: linear-gradient(270deg, rgba(133, 80, 0, 0.29) 0%, rgba(153, 92, 0, 0) 100%);
+	width: 547px;
+	height: 600px;
+}
+
+.header__img-wrapper {
+	position: absolute;
+	overflow: hidden;
+	box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.header__img-wrapper1 {
+	width: 375px;
+	height: 525px;
+	top: 50%;
+	left: -188px;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+
+.header__img-wrapper2 {
+	width: 323px;
+	height: 483px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header__img {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	pointer-events: auto;
+}
