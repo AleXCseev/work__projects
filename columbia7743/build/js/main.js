@@ -1,31 +1,15 @@
 $(function () {
 
-// 	$(".galary__slider").owlCarousel({
-// 		loop: true,
-// 		nav : true,
-// 		items: 5,
-// 		center: true,
-// 		margin: 0,
-// 		dots: true,
-// 		dotsEach: true,
-// 		autoplay: true,
-// 		autoplayHoverPause: true,
-// 		autoplayTimeout: 3000,
-// 		responsive : {
-// 			0 : {
-// 				items: 1,
-// 				margin: 50,
-// 				center: false,
-// 				nav: false,
-// 			},
-// 			480 : {
-// 				items: 5,
-// 				margin: 0,
-// 				center: true,
-// 				nav: true,
-// 			}
-// 		}
-// 	});
+	if($(window).width() <= 700) {
+		$(".galary__block").addClass("owl-carousel").owlCarousel({
+			loop: true,
+			nav : true,
+			items: 1,
+			margin: 50,
+			dots: false,
+		});
+	}
+
 
 	$.raty.path = 'img/raty';
 
@@ -41,6 +25,16 @@ $(function () {
 		items: 3,
 		margin: 15,
 		dots: false,
+		responsive:{
+			0:{
+				items: 1,
+				autoHeight: true,
+			},
+			800: {
+				items: 3,
+				autoHeight: false,
+			}
+		}
 	});
 
 	function cardSlider (selector) {
