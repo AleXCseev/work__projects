@@ -95,6 +95,9 @@
 	.card__form .header__order-time {
 		right: 2px;
 	}
+	.card__main-sale {
+		font-size: 32px;
+	}
 	.sprey__img {
 		left: 20px;
 	}
@@ -106,6 +109,7 @@
 	}
 	.review__slide {
 		width: 380px;
+		min-height: 285px;
 	}
 	.footer__sale {
 		top: 30px;
@@ -550,6 +554,9 @@
 		order: 2;
 		align-self: flex-start;
 	}
+	.footer__wrapper .header__title {
+		margin-bottom: 66px;
+	}
 	.footer__img-2 {
 		top: auto;
 		left: auto;
@@ -557,6 +564,7 @@
 		position: static;
 		order: 3;
 		align-self: center;
+		margin-bottom: 40px;
 	}
 	.footer__wrapper .header__price {
 		border-top: 1px solid #fff;
@@ -777,11 +785,38 @@
 	.card__price .new__price {
 		margin: 0;
 	}
-	.card__table tr td:first-child {
+	.card__table div {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.card__table span:first-child {
 		width: auto;
 	}
-	.card__table tr td:last-child {
+	.card__table span:last-of-type {
 		text-align: right;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 600px) {
+	.footer__left-block {
+		width: 22vw;
+		height: 48vw;
+	}
+	.footer__img-1 {
+		top: -2vw;
+		left: 2vw;
+		width: 53vw;
+	}
+	.footer__sale {
+		top: 11vw;
+		left: 54vw;
+		font-size: 12vw;
+
+		span {
+			font-size: 3vw;
+		}
 	}
 }
 
@@ -906,7 +941,7 @@
 	.card__btn {
 		margin: 0;
 	}
-	.card__table tr td:first-child {
+	.card__table span:first-child {
 		width: 200px;
 	}
 	.card__price .new__price {
@@ -981,6 +1016,26 @@
 	.review__slide {
 		padding: 30px 13px 37px;
 	}
+	.footer__left-block {
+		width: 22vw;
+		height: 52vw;
+	}
+	.footer__sale {
+		top: 11vw;
+		left: 58vw;
+		font-size: 12vw;
+	}
+	.footer__img-1 {
+		top: 0vw;
+		left: 4vw;
+		width: 54vw;
+	}
+	.footer__img-2 {
+		width: 80vw;
+	}
+	.footer__wrapper .header__sale {
+		align-self: flex-start;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -1034,7 +1089,7 @@
 		font-size: 8vw;
 	}
 	.card__section {
-		padding-bottom: 80px;
+	    padding-bottom: 30px;
 	}
 	.card__title {
 		font-size: 7.5vw;
@@ -1101,6 +1156,18 @@
 	}
 	.review__section-title {
 		font-size: 8vw;
+	}
+	.site__footer {
+		background-position: right;
+	}
+	.footer__wrapper .header__info {
+		text-align: left;
+	}
+	.galary__block {
+		.owl-nav button {
+			width: 90px;
+			height: 15px;
+		}
 	}
 }
 
@@ -1210,5 +1277,11 @@
 		.header__order-btn {
 			width: 100%;
 		} 
+	}
+	.footer__wrapper .header__info {
+		text-align: center;
+	}
+	.footer__wrapper .header__sale {
+		text-align: center;
 	}
 }

@@ -482,6 +482,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 15px;
+  width: 100%;
 }
 
 .advantage__text {
@@ -593,6 +594,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .info__sale {
@@ -976,11 +978,15 @@ body {
   margin-bottom: 20px;
 }
 
-.card__table tr {
+.card__table span {
+  display: inline-block;
+}
+
+.card__table div {
   position: relative;
 }
 
-.card__table tr:before {
+.card__table div:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -992,7 +998,7 @@ body {
   background: linear-gradient(90deg, rgba(255, 213, 149, 0.2) 0%, rgba(255, 213, 149, 0) 100%);
 }
 
-.card__table tr td:first-child {
+.card__table span:first-child {
   font-weight: 600;
   width: 250px;
 }
@@ -1522,8 +1528,7 @@ body {
 }
 
 .review__slider .owl-nav {
-  position: -webkit-sticky;
-  position: sticky;
+  position: static;
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -1576,6 +1581,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 25px;
+}
+
+.review__star-raiting .star {
+  width: 15px;
+  height: 15px;
 }
 
 .review__text {
@@ -1730,7 +1740,7 @@ body {
   width: 750px;
   height: 348px;
   padding: 50px;
-  background: #FEF3F1;
+  background: #F7F7FF;
   -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
   -webkit-border-radius: 6px;
@@ -2491,6 +2501,9 @@ body {
   .card__form .header__order-time {
     right: 2px;
   }
+  .card__main-sale {
+    font-size: 32px;
+  }
   .sprey__img {
     left: 20px;
   }
@@ -2502,6 +2515,7 @@ body {
   }
   .review__slide {
     width: 380px;
+    min-height: 285px;
   }
   .footer__sale {
     top: 30px;
@@ -3055,6 +3069,9 @@ body {
     -ms-flex-item-align: start;
     align-self: flex-start;
   }
+  .footer__wrapper .header__title {
+    margin-bottom: 66px;
+  }
   .footer__img-2 {
     top: auto;
     left: auto;
@@ -3067,6 +3084,7 @@ body {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
+    margin-bottom: 40px;
   }
   .footer__wrapper .header__price {
     border-top: 1px solid #fff;
@@ -3323,11 +3341,45 @@ body {
   .card__price .new__price {
     margin: 0;
   }
-  .card__table tr td:first-child {
+  .card__table div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .card__table span:first-child {
     width: auto;
   }
-  .card__table tr td:last-child {
+  .card__table span:last-of-type {
     text-align: right;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__left-block {
+    width: 22vw;
+    height: 48vw;
+  }
+  .footer__img-1 {
+    top: -2vw;
+    left: 2vw;
+    width: 53vw;
+  }
+  .footer__sale {
+    top: 11vw;
+    left: 54vw;
+    font-size: 12vw;
+  }
+  .footer__sale span {
+    font-size: 3vw;
   }
 }
 
@@ -3467,7 +3519,7 @@ body {
   .card__btn {
     margin: 0;
   }
-  .card__table tr td:first-child {
+  .card__table span:first-child {
     width: 200px;
   }
   .card__price .new__price {
@@ -3552,6 +3604,28 @@ body {
   .review__slide {
     padding: 30px 13px 37px;
   }
+  .footer__left-block {
+    width: 22vw;
+    height: 52vw;
+  }
+  .footer__sale {
+    top: 11vw;
+    left: 58vw;
+    font-size: 12vw;
+  }
+  .footer__img-1 {
+    top: 0vw;
+    left: 4vw;
+    width: 54vw;
+  }
+  .footer__img-2 {
+    width: 80vw;
+  }
+  .footer__wrapper .header__sale {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
 }
 
 @media (max-width: 414px) {
@@ -3604,7 +3678,7 @@ body {
     font-size: 8vw;
   }
   .card__section {
-    padding-bottom: 80px;
+    padding-bottom: 30px;
   }
   .card__title {
     font-size: 7.5vw;
@@ -3667,6 +3741,16 @@ body {
   }
   .review__section-title {
     font-size: 8vw;
+  }
+  .site__footer {
+    background-position: right;
+  }
+  .footer__wrapper .header__info {
+    text-align: left;
+  }
+  .galary__block .owl-nav button {
+    width: 90px;
+    height: 15px;
   }
 }
 
@@ -3770,5 +3854,11 @@ body {
   }
   .delivery__wrapper .header__order-btn {
     width: 100%;
+  }
+  .footer__wrapper .header__info {
+    text-align: center;
+  }
+  .footer__wrapper .header__sale {
+    text-align: center;
   }
 }

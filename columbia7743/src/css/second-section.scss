@@ -182,10 +182,14 @@
 	color: #FFFFFF;
 	margin-bottom: 20px;
 
-	tr {
+	span {
+		display: inline-block;
+	}
+
+	div {
 		position: relative;
 	}
-	tr:before {
+	div:before {
 		content: "";
 		position: absolute;
 		bottom: 0;
@@ -194,7 +198,7 @@
 		height: 1px;
 		background: linear-gradient(90deg, rgba(255, 213, 149, 0.2) 0%, rgba(255, 213, 149, 0) 100%);
 	}
-	tr td:first-child {
+	span:first-child {
 		font-weight: 600;
 		width: 250px;
 	}
@@ -586,7 +590,7 @@
 	height: auto;
 
 	.owl-nav {
-		position: sticky;
+		position: static;
 		transform: none;
 		left: auto;
 		bottom: auto;
@@ -624,6 +628,11 @@
 .review__star-raiting {
 	display: flex;
 	margin-bottom: 25px;
+
+	.star {
+		width: 15px;
+		height: 15px;
+	}
 }
 
 .review__text {
