@@ -1,0 +1,553 @@
+.galary__section {
+	width: 100%;
+	height: auto;
+}
+
+.galary__wrapper {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.galary__tangerine-1 {
+	position: absolute;
+	top: 75px;
+    left: -260px;
+
+	img {
+		width: 160px;
+		filter: blur(1px);
+		transform: rotate(-35deg);
+	}
+}
+
+.galary__tangerine-2 {
+	position: absolute;
+	top: 530px;
+    left: -180px;
+
+	img {
+		width: 90px;
+		filter: blur(1px);
+		transform: rotate(-90deg);
+	}
+}
+
+.galary__leaf-1 {
+	position: absolute;
+	top: 210px;
+    left: -320px;
+
+	img {
+		width: 300px;
+		transform: rotate(0deg);
+	}
+}
+
+.galary__leaf-2 {
+	position: absolute;
+	top: 265px;
+    left: -80px;
+
+	img {
+		width: 90px;
+		transform: rotate(-20deg);
+	}
+}
+
+.galary__leaf-3 {
+	position: absolute;
+	top: 670px;
+    left: -190px;
+
+	img {
+		filter: blur(2px);
+		width: 180px;
+		transform: rotate(-20deg);
+	}
+}
+
+.galary__tangerine-3 {
+	position: absolute;
+	top: 870px;
+    left: -300px;
+
+	img {
+		width: 160px;
+		transform: rotate(0deg);
+	}
+}
+
+.galary__tangerine-4 {
+	position: absolute;
+	top: 898px;
+    left: -240px;
+
+	img {
+		width: 160px;
+		transform: rotate(90deg);
+	}
+}
+
+.galary__leaf-4 {
+	position: absolute;
+	bottom: 370px;
+    left: -245px;
+
+	img {
+		width: 280px;
+		transform: rotate(6deg);
+	}
+}
+
+.galary__dots {
+	position: absolute;
+	top: 100px;
+	right: -470px;
+	width: 500px;
+}
+
+.galary__tangerine-5 {
+	position: absolute;
+	top: 35px;
+    right: -310px;
+
+	img {
+		filter: blur(1px);
+		width: 80px;
+		transform: rotate(-30deg);
+	}
+}
+
+.galary__tangerine-6 {
+	position: absolute;
+	top: 230px;
+    right: -350px;
+
+	img {
+		width: 260px;
+		transform: rotate(5deg);
+	}
+}
+
+.galary__tangerine-7 {
+	position: absolute;
+	top: 680px;
+    right: -170px;
+
+	img {
+		width: 115px;
+		transform: rotate(-35deg);
+	}
+}
+
+.galary__leaf-5 {
+	position: absolute;
+	top: 760px;
+    right: -445px;
+
+	img {
+		width: 290px;
+		transform: rotate(6deg);
+	}
+}
+
+.galary__tangerine-8 {
+	position: absolute;
+	top: 990px;
+    right: -130px;
+
+	img {
+		width: 125px;
+		transform: rotate(80deg);
+	}
+}
+
+.galary__leaf-6 {
+	position: absolute;
+    bottom: 280px;
+    right: -220px;
+
+	img {
+		filter: blur(2px);
+		width: 200px;
+		transform: rotate(-20deg);
+	}
+}
+
+.galary__leaf-7 {
+	position: absolute;
+	bottom: 200px;
+    right: -310px;
+
+	img {
+		width: 80px;
+		transform: rotate(-20deg);
+	}
+}
+
+.galary__tangerine-9 {
+	position: absolute;
+	bottom: 114px;
+    right: -262px;
+
+	img {
+		width: 160px;
+		transform: rotate(45deg);
+	}
+}
+
+.galary__leaf-8 {
+	position: absolute;
+	bottom: 23px;
+    right: -105px;
+
+	img {
+		width: 130px;
+		transform: rotate(10deg);
+	}
+}
+
+.galary__tangerine {
+	position: absolute;
+    bottom: 0;
+    left: -425px;
+}
+
+.galary__block {
+	width: 1050px;
+	height: auto;
+	padding-top: 100px;
+	padding-bottom: 375px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.galary__block-wrapper {
+	width: 500px;
+	height: auto;
+}
+
+.galary__title {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	color: #353535;
+	margin: 20px auto 50px;
+	text-align: center;
+}
+
+.bonus__section {
+	width: 100%;
+	height: auto;
+	background-image: url(../img/bonus-bg.png);
+	background-position: center 310px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: -310px;
+	position: relative;
+}
+
+.bonus__section:before {
+	content: "";
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(90deg, #FF3F45 0%, #FF8F00 100%);
+}
+
+.bonus__wrapper {
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 1;
+	padding-bottom: 50px;
+}
+
+.bonus__title {
+	font-family: "Fredoka One", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 1.46;
+	color: #FF5432;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.bonus__content {
+	width: 1050px;
+	height: auto;
+	margin: auto;
+	
+}
+
+.bonus__block {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.bonus__img {
+	width: 500px;
+}
+
+.bonus__subtitle {
+	width: 800px;
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 1.67;
+	text-align: center;
+	color: #FFFFFF;
+	margin: auto;
+	margin-bottom: 50px; 
+}
+
+.bonus__block-text {
+	width: 500px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.bonus__text {
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 1.67;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.bonus__order {
+	font-family: "Fredoka One", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	line-height: 1.43;
+	color: #FFE814;
+	margin-bottom: 20px;
+}
+
+.bonus__info {
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.67;
+	color: #FFFFFF;
+}
+
+.card__section {
+	width: 100%;
+	height: auto;
+}
+
+.card__wrapper {
+	width: 800px;
+	height: auto;
+	margin: auto;
+	position: relative;
+	padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card__dots-1 {
+	position: absolute;
+	top: 30px;
+    left: -670px;
+    width: 500px;
+}
+
+.card__dots-2 {
+	position: absolute;
+	bottom: 10px;
+    right: -670px;
+    width: 500px;
+}
+
+.card__title {
+	font-family: "Fredoka One", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 1.46;
+	text-align: center;
+	color: #FF5432;
+	margin-bottom: 30px;
+}
+
+.card__timer-wrapper {
+	width: 366px;
+	height: auto;
+	margin-bottom: 62px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.timer__title {
+	width: 100%;
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 1.2;
+	color: #353535;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.timer__number-wrapper {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #FF5432;
+	position: relative;
+}
+
+.timer__number {
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 1;
+	color: #FFFFFF;
+}
+
+.timer__text {
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1;
+	color: #353535;
+}
+
+.timer__separator {
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 100px;
+	color: #353535;
+}
+
+.card__price {
+	width: 100%;
+	height: auto;
+	margin-bottom: 30px;
+
+	.price {
+		align-items: center;
+	}
+
+	.old__price {
+		font-family: Montserrat, sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 1.2;
+		color: #353535;
+		margin-bottom: 10px;
+	}
+	.new__price {
+		font-family: "Fredoka One", sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		line-height: 1.2;
+		text-align: center;
+		color: #FF5432;
+
+		span {
+			font-size: 48px;
+		}
+	}
+}
+
+.card__form {
+	width: 500px;
+	margin-bottom: 30px;
+}
+
+.card__input-wrapper {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.card__input-wrapper:last-of-type{
+	margin-bottom: 30px;
+}
+
+.card__input {
+	width: 100%;
+	height: 50px;
+	border: 1px solid #353535;
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1;
+	color: #353535;
+	padding: 0 20px;
+}
+
+.card__input:focus {
+	border: 1px solid #FF5432;
+	color: #FF5432;
+}
+
+.card__remainder {
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #353535;
+	text-align: center;
+	margin-bottom: 30px;
+
+	span {
+		color: #FF5432;
+	}
+}
+
+.card__info {
+	width: 592px;
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 1.2;
+	text-align: center;
+	color: #FF5432;
+	margin-bottom: 30px;
+}
+
+.card__info:last-of-type {
+	margin-bottom: 0;
+}
+
