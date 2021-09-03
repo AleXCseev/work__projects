@@ -1,0 +1,84 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	box-sizing: border-box;
+	text-decoration: none;
+	appearance: none;
+	-webkit-tap-highlight-color: transparent;
+	list-style: none;
+}
+
+select{
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+select::-ms-value {
+	background: none;
+	color: #000;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+input::placeholder, textarea::placeholder {
+	color: inherit;
+	opacity: 1;
+}
+
+input,
+button,
+textarea,
+select, 
+a, 
+option {
+	font: inherit;
+	outline: none;
+	margin: 0;
+	padding: 0;  
+	opacity: 1;
+	overflow: visible;
+}
+
+img {
+	user-select: none;
+	pointer-events: none;
+}
+
+*:focus-visible {
+	outline: none;
+}
+
+p {
+	width: 100%;
+}
+
+
+body {
+	width: 100%;
+	height: auto;
+	font-size: 15px;
+	font-family: Roboto, sans-serif;
+	font-weight: normal;
+	background: #FFFFFF;
+}
+
+.site__wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.container {
+	width: 1330px;
+	height: auto;
+	position: relative;
+}
+
+
