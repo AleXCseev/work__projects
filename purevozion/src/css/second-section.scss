@@ -1,10 +1,12 @@
 .review__section {
 	width: 100%;
+	max-width: 1140px;
+	margin: auto;
+	margin-bottom: 30px;
 }
 
 .reviews-wrapper {
 	width: 100%;
-	padding-right: 10px;
 }
 
 .reviews-headline {
@@ -19,7 +21,6 @@
 }
 
 .reviews {
-    padding-bottom: 40px;
     font-family: Arial, serif;
     /*max-width: 790px;*/
     width: 100%;
@@ -37,6 +38,7 @@
 
 .review-inner img {
     margin-top: 7px;
+	width: 350px;
 }
 
 .form-comment--name input {
@@ -339,3 +341,20 @@
     margin-top: 8px;
 }
 
+.copyright, .footer__links {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.1;
+	text-align: center;
+	color: #000000;
+
+	a {
+		cursor: pointer;
+	}
+}
+
+.footer__links {
+	margin-bottom: 58px;
+}

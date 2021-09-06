@@ -1,25 +1,25 @@
 $(function () {
 
-	// function scroll() {
-	// 	$('[href*="#"]').on('click', function (e) {
-	// 		var fixedOffset = -85;
-	// 		var cardHeight = 0;
-	// 		var windowHeight = 0;
+	function scroll() {
+		$('[href*="#"]').on('click', function (e) {
+			var fixedOffset = -160;
+			var cardHeight = 0;
+			// var windowHeight = 0;
 			
-	// 		if($(window).width() <= 480) {
-	// 			fixedOffset = 0;
-	// 			cardHeight = $("#card").outerHeight(false)
-	// 			windowHeight = $(window).height()
-	// 		}
+			if($(window).width() <= 480) {
+			// 	fixedOffset = 0;
+				cardHeight = $("#card").outerHeight(false)
+			// 	windowHeight = $(window).height()
+			}
 	
-	// 		$('html, body')
-	// 			.stop()
-	// 			.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-	// 		e.preventDefault();
-	// 	});
-	// }
+			$('html, body')
+				.stop()
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + cardHeight}, 1000);
+			e.preventDefault();
+		});
+	}
 
-	// scroll()
+	scroll()
 
 	var height = $(".sidebar__card").offset().top - 55;
 
@@ -111,7 +111,6 @@ $(function () {
 		}
 	});
 
-	start_timer();
 
 	function endDifDate(countDays) {
 		if (countDays || countDays === 0) {
@@ -156,18 +155,18 @@ $(function () {
 		var currentNumber;
 
 		if(localStorage.getItem("quantity")) {
-			$(".card__right-quantity span").text(localStorage.getItem("quantity"));
+			$(".card__block-quantity span").text(localStorage.getItem("quantity"));
 		} else {
 			currentNumber = 25
 			localStorage.setItem("quantity", currentNumber)
-			$(".card__right-quantity span").text(currentNumber);
+			$(".card__block-quantity span").text(currentNumber);
 		}
 
 		setInterval(function () {
 			currentNumber = localStorage.getItem("quantity");
-			if (currentNumber >= 3) {
-				currentNumber = currentNumber - getRandomInt(3);
-				$(".card__right-quantity span").text(currentNumber);
+			if (currentNumber >= 2) {
+				currentNumber = currentNumber - getRandomInt(2);
+				$(".card__block-quantity span").text(currentNumber);
 				localStorage.setItem("quantity", currentNumber)
 			} else {
 				currentNumber = 25;
@@ -178,7 +177,42 @@ $(function () {
 
 	quantity()
 
-	$(".year").text(new Date().getFullYear())
+	// $(".year").text(new Date().getFullYear())
+
+	var time = 900;
+	var intr;
+
+	function start_timer() {
+		intr = setInterval(tick, 1000);
+	}
+
+	function tick() {
+		if (localStorage.vietnam43) {
+			if (localStorage.vietnam43 <= 0) {
+				time = 60;
+			} else {
+				time = localStorage.vietnam43;
+			}
+
+		} else {
+			time = 900;
+		}
+		time = time - 1;
+		localStorage.vietnam43 = time;
+
+		var mins = Math.floor(time / 60);
+		var secs = time - mins * 60;
+		if (mins == 0 && secs == 0) {
+			clearInterval(intr);
+		}
+
+		$(".timer .minute").html(pad(mins));
+		$(".timer .second").html(pad(secs));
+
+		localStorage.vietnam43 = time;
+	}
+
+	start_timer();
 
 })
 
