@@ -3,18 +3,18 @@ $(function () {
 	function scroll() {
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = -160;
-			var cardHeight = 0;
-			// var windowHeight = 0;
 			
 			if($(window).width() <= 480) {
-			// 	fixedOffset = 0;
-				cardHeight = $("#card").outerHeight(false)
-			// 	windowHeight = $(window).height()
+				fixedOffset = -130;
+			}
+
+			if($(window).width() <= 320) {
+				fixedOffset = -110;
 			}
 	
 			$('html, body')
 				.stop()
-				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + cardHeight}, 1000);
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
 			e.preventDefault();
 		});
 	}
@@ -213,6 +213,29 @@ $(function () {
 	}
 
 	start_timer();
+
+	function showBtn() {
+		var $element = $('.card__block');
+
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop() + $(window).height();
+			var offset = $element.offset().top + $element.height();
+			var bodyOffset = $("body").offset().top + $("body").height();
+			if ((scroll > offset + 400 || scroll < offset - $element.height() - 200)) {
+				if($(window).width() < 480 &&  scroll > bodyOffset - 100) {
+					$(".site__order-btn").hide(100)
+				} else {
+					$(".site__order-btn").show(100);
+				}
+			} else {
+				$(".site__order-btn").hide(100)
+			}
+		});
+	}
+
+	if($(window).width() <= 1000) {
+		showBtn()
+	}
 
 })
 

@@ -99,7 +99,16 @@
 		font-size: 20px;
 		margin-bottom: 20px;
 	}
+	.privacy-policy__wrapper h3 {
+		font-size: 16px;
+	}
 	.privacy-policy__text {
 		font-size: 14px;
+	}
+}
+
+@media (max-width: 320px) {
+	.privacy-policy__wrapper {
+		padding: 50px 20px;
 	}
 }

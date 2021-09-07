@@ -75,7 +75,8 @@ body {
 }
 
 .container {
-	width: 1330px;
+	width: 100%;
+	max-width: 1330px;
 	height: auto;
 	position: relative;
 }
