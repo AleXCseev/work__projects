@@ -1,0 +1,56 @@
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 800px) {
+	.site__wrapper {
+		padding: 0;
+	}
+	.delivery__banner span {
+		font-size: 32px;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 480px) {
+	.site__order-btn {
+		right: 10px;
+		bottom: 40px;
+	}
+	.images__title {
+		font-size: 6vw;
+	}
+	.stock__images-block {
+		width: 100%;
+		margin-bottom: 60px;
+	}
+	.stock__plus {
+		font-size: 16vw;
+	}
+	.grains__text {
+		font-size: 4vw;
+	}
+	.stock__trees-wrapper {
+		margin-right: 4vw;
+	}
+	.stock__tree {
+		width: 18vw;
+		display: inline-block;
+	}
+	.delivery__banner {
+		width: 80%;
+
+		span {
+			font-size: 4.5vw;
+		}
+	}
+	.slide {
+		width: 100%;
+		height: 102vw;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 414px) {
+	.owl-nav {
+		width: 98%;
+	}
+}
+
