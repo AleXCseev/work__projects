@@ -1,3 +1,261 @@
 /////////////////////////////////////////////////////////////////////
-@media (max-width: 1440px) {
+@media (max-width: 1920px) {
+	.header__bg-left {
+		width: 22vw;
+	}
+	.header__bg-right {
+		width: 58vw;
+	}
 }
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 1440px) {
+	.header__bg-right {
+		width: 58vw;
+		margin-right: -80px;
+	}
+	.header__bg-left {
+		width: 22vw;
+		margin-left: -100px;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 1280px) {
+	.container {
+		width: 1000px;
+	}
+	.header__wrapper {
+		padding-top: 130px;
+		padding-bottom: 90px;
+	}
+	.header__video {
+		right: 150px;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 1080px) {
+	.container {
+		width: 800px;
+	}
+	.header__video {
+		position: relative;
+		bottom: auto;
+		right: auto;
+		cursor: pointer;
+		margin-top: 50px;
+	}
+	.header__img {
+		img {
+			width: 50%;
+		}
+	}
+	.header__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.header__title {
+		text-align: center;
+	}
+	.header__title span {
+		width: 850px;
+		text-align: center;
+		font-size: 72px;
+		top: -50px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.header__bg-left {
+		width: 26vw;
+		top: 134px;
+		margin-left: -8vw;
+	}
+	.header__bg-right {
+		width: 70vw;
+		margin-right: -30px;
+	}
+	.header__apple-1 {
+		bottom: 75px;
+		left: -159px;
+	}
+	.header__apple-2 {
+		bottom: 226px;
+		left: -127px;
+	}
+	.header__apple-3 {
+		top: 280px;
+		left: -134px;
+	}
+	.header__apple-4 {
+		display: none;
+	}
+	.header__apple-5 {
+		display: none;
+	}
+	.header__leaf-1 {
+		top: 138px;
+		left: -112px;
+	}
+	.header__leaf-2 {
+		top: 480px;
+		left: -115px;
+	}
+	.header__leaf-3 {
+		top: 565px;
+		left: -150px;
+	}
+	.header__apple-right1 {
+		top: 205px;
+		right: -210px;
+	}
+	.header__apple-right2 {
+		top: 216px;
+		right: -416px;
+	}
+	.header__apple-right3 {
+		top: -62px;
+		right: 274px;
+	}
+	.header__apple-right4 {
+		top: 400px;
+		bottom: auto;
+		right: -370px;
+	}
+	.header__apple-right5 {
+		display: none;
+	}
+	.header__apple-right6 {
+		display: none;
+	}
+	.header__apple-right7 {
+		top: -90px;
+		right: -98px;
+	}
+	.header__leaf-right1 {
+		top: 21px;
+		right: -285px;
+	}
+	.header__leaf-right2 {
+		display: none;
+	}
+	.header__leaf-right3 {
+		top: 327px;
+		right: 41px;
+	}
+	.header__leaf-right4 {
+		display: none;
+	}
+	.header__price {
+		.price {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.old__price,
+		.new__price {
+			text-align: center;
+		}
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 800px) {
+	.container {
+		width: 700px;
+	}
+	.header__wrapper {
+		padding-top: 74px;
+		padding-bottom: 90px;
+	}
+	.header__title {
+		font-size: 48px;
+		margin-bottom: 11px;
+	}
+	.header__title span {
+		width: 130%;
+		font-size: 60px;
+	}
+	.header__subtitle {
+		margin-bottom: 141px;
+	}
+	.header__bg-right {
+		width: 106vw;
+		margin-right: -6vw;
+	}
+	.header__bg-left {
+		width: 42vw;
+		top: 390px;
+		margin-left: -13vw;
+	}
+	.header__img {
+		display: none;
+	}
+	.header__mobile-bg {
+		position: absolute;
+		display: block;
+		top: -44vw;
+		right: -69vw;
+		width: 132vw;
+	}
+	.header__mobile-bg2 {
+		position: absolute;
+		display: block;
+		top: 44vw;
+		left: -79vw;
+		width: 108vw;
+	}
+	.header__video-leaf {
+		position: absolute;
+		bottom: -110px;
+		left: auto;
+		right: -130px;
+		z-index: -1;
+		transform: rotate(-113deg);
+	}
+	.header__leaf-1 {
+		display: block;
+		top: 33vw;
+		left: -9vw;
+		right: auto;
+		bottom: auto;
+
+		img {
+			width: 18vw;
+			transform: rotate(-10deg);
+		}
+	}
+	.header__leaf-right3 {
+		display: block;
+		top: 22vw;
+		left: -3vw;
+		right: auto;
+		bottom: auto;
+
+		img {
+			width: 13vw;
+		}
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 700px) {
+	.container {
+		width: calc(100% - 30px);
+	}
+	.header__bg-left {
+		width: 42vw;
+		top: 53vw;
+		margin-left: -13vw;
+	}
+	.header__title {
+		font-size: 32px;
+		margin-bottom: 11px;
+	}
+	.header__title span {
+		width: 170%;
+		font-size: 40px;
+	}
+}
+

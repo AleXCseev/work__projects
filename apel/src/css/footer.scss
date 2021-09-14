@@ -1,0 +1,123 @@
+.site__footer {
+	width: 100%;
+	height: auto;
+	background-image: url(../img/footer-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.site__footer:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(180deg, #85C692 0%, rgba(133, 198, 146, 0.77) 61.98%, rgba(121, 158, 129, 0) 100%);
+}
+
+.footer__wrapper {
+	width: 100%;
+	height: auto;
+	padding-top: 98px;
+	padding-bottom: 76px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer__title {
+	font-family: Geometria, sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 56px;
+	line-height: 0.93;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+	position: relative;
+
+	span {
+		width: 1200px;
+		position: absolute;
+		top: -68px;
+		left: 50%;
+		transform: translateX(-50%);
+		color: rgba(255, 255, 255, 0.1);
+		font-size: 98px;
+    	line-height: 0.90;
+	}
+}
+
+.footer__subtitle {
+	font-family: Geometria, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.2;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.footer__price {
+	margin-bottom: 47px;
+	.price {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.old__price,
+	.new__price {
+		text-align: center;
+		color: #fff;
+	}
+}
+
+.footer__plus {
+	margin: 37px 0 22px;
+	width: 26px;
+	height: 26px;
+	position: relative;
+
+	&:before {
+		content: "";
+		width: 100%;
+		height: 4px;
+		background: #F36598;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+
+	&:after {
+		content: "";
+		width: 4px;
+		height: 100%;
+		background: #F36598;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.footer__discont {
+	width: 310px;
+	height: auto;
+	padding: 12px 18px;
+	background: rgba(54, 91, 60, 0.6);
+	border: 1px solid rgba(57, 158, 73, 0.5);
+	font-family: Formular, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.2;
+	text-align: center;
+	color: #FFFFFF;
+}
