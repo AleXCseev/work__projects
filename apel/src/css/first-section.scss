@@ -30,6 +30,8 @@
 .info__wrapper {
 	width: 1210px;
 	margin: auto;
+	position: relative;
+    z-index: 1;
 }
 
 .info__title {

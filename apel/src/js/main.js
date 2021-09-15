@@ -1,14 +1,15 @@
 $(function () {
 
-	// if($(window).width() <= 700) {
-	// 	$(".galary__block").addClass("owl-carousel").owlCarousel({
-	// 		loop: true,
-	// 		nav : true,
-	// 		items: 1,
-	// 		margin: 50,
-	// 		dots: false,
-	// 	});
-	// }
+	if($(window).width() <= 700) {
+		$(".advantages").addClass("owl-carousel").owlCarousel({
+			loop: true,
+			nav : false,
+			items: 1,
+			margin: 50,
+			dots: true,
+			stagePadding: 20,
+		});
+	}
 
 
 	$(".review__slider").owlCarousel({
@@ -18,16 +19,20 @@ $(function () {
 		margin: 30,
 		dots: false,
 		stagePadding: 20,
-		// responsive:{
-		// 	0:{
-		// 		items: 1,
-		// 		autoHeight: true,
-		// 	},
-		// 	800: {
-		// 		items: 3,
-		// 		autoHeight: false,
-		// 	}
-		// }
+		responsive:{
+			0:{
+				items: 1,
+				autoHeight: true,
+			},
+			800: {
+				items: 2,
+				autoHeight: false,
+			},
+			1000: {
+				items: 3,
+				autoHeight: false,
+			}
+		}
 	});
 
 
