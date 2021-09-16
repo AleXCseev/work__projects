@@ -16,6 +16,12 @@
   src: url("../fonts/Geometria-ExtraBold.woff") format("woff");
 }
 
+@font-face {
+  font-family: Geometria;
+  font-weight: 500;
+  src: url("../fonts/Geometria-Regular.woff") format("woff");
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -336,7 +342,7 @@ body {
   font-size: 82px;
   line-height: 1.1;
   position: absolute;
-  width: 968px;
+  width: 1100px;
   top: -50px;
   left: -380px;
 }
@@ -943,6 +949,7 @@ body {
   text-transform: uppercase;
   color: #357B40;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .card__small-title {
@@ -1073,6 +1080,14 @@ body {
   color: #FFFFFF;
   cursor: pointer;
   margin-bottom: 13px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.card__submit:hover {
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.4);
 }
 
 .card__discont {
@@ -1260,6 +1275,11 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 15px;
+}
+
+.star__raiting img {
+  width: 15px !important;
+  height: auto !important;
 }
 
 .review__text {
@@ -2250,6 +2270,14 @@ body {
     width: 117%;
     font-size: 48px;
   }
+  .footer__title {
+    font-size: 36px;
+  }
+  .footer__title span {
+    width: 150%;
+    top: -46px;
+    font-size: 50px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2417,6 +2445,28 @@ body {
   .review__slide {
     width: 360px;
   }
+  .site__footer {
+    margin-top: -1px;
+  }
+  .footer__title {
+    font-size: 7vw;
+  }
+  .footer__title span {
+    width: 170%;
+    top: -9vw;
+    font-size: 11vw;
+  }
+  .footer__wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .footer__subtitle {
+    font-size: 6vw;
+  }
+  .footer__discont {
+    width: 100%;
+    max-width: 310px;
+  }
 }
 
 @media (max-width: 414px) {
@@ -2536,6 +2586,38 @@ body {
     max-width: 310px;
     font-size: 3.5vw;
   }
+  .owl-nav {
+    width: -webkit-calc(100vw - 30px);
+    width: calc(100vw - 30px);
+    margin: 0;
+    margin-left: 0px;
+    padding: 0 30px;
+  }
+  .review__section {
+    margin-top: -175px;
+  }
+  .review__slide {
+    width: -webkit-calc(100vw - 54px);
+    width: calc(100vw - 54px);
+  }
+  .review__title {
+    font-size: 8vw;
+    margin-bottom: 9vw;
+  }
+  .review__title span {
+    width: 120%;
+    font-size: 11vw;
+  }
+  .review__video-2 {
+    width: 100%;
+    max-width: 280px;
+    height: 78vw;
+  }
+  .review__video {
+    width: 100%;
+    max-width: 252px;
+    height: 78vw;
+  }
 }
 
 @media (max-width: 360px) {
@@ -2552,5 +2634,15 @@ body {
   }
   .card__input {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer__wrapper {
+    padding-top: 54px;
+  }
+  .review__title span {
+    width: 145%;
+    font-size: 11vw;
   }
 }

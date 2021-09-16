@@ -675,6 +675,14 @@
 		width: 117%;
 		font-size: 48px;
 	}
+	.footer__title {
+		font-size: 36px;
+	}
+	.footer__title span {
+		width: 150%;
+		top: -46px;
+		font-size: 50px;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -842,6 +850,28 @@
 	.review__slide {
 		width: 360px;
 	}
+	.site__footer {
+		margin-top: -1px;
+	}
+	.footer__title {
+		font-size: 7vw;
+	}
+	.footer__title span {
+		width: 170%;
+		top: -9vw;
+		font-size: 11vw;
+	}
+	.footer__wrapper {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.footer__subtitle {
+		font-size: 6vw;
+	}
+	.footer__discont {
+		width: 100%;
+		max-width: 310px;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -958,6 +988,36 @@
 		max-width: 310px;
 		font-size: 3.5vw;
 	}
+	.owl-nav {
+		width: calc(100vw - 30px);
+		margin: 0;
+		margin-left: 0px;
+		padding: 0 30px;
+	}
+	.review__section {
+		margin-top: -175px;
+	}
+	.review__slide {
+		width: calc(100vw - 54px);
+	}
+	.review__title {
+		font-size: 8vw;
+		margin-bottom: 9vw;
+	}
+	.review__title span {
+		width: 120%;
+		font-size: 11vw;
+	}
+	.review__video-2 {
+		width: 100%;
+		max-width: 280px;
+		height: 78vw;
+	}
+	.review__video {
+		width: 100%;
+		max-width: 252px;
+		height: 78vw;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -975,6 +1035,17 @@
 	}
 	.card__input {
 		font-size: 16px;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 320px) {
+	.footer__wrapper {
+		padding-top: 54px;
+	}
+	.review__title span {
+		width: 145%;
+		font-size: 11vw;
 	}
 }
 

@@ -23,14 +23,17 @@ $(function () {
 			0:{
 				items: 1,
 				autoHeight: true,
+				stagePadding: 13,
 			},
-			800: {
+			799: {
 				items: 2,
 				autoHeight: false,
+				stagePadding: 20,
 			},
 			1000: {
 				items: 3,
 				autoHeight: false,
+				stagePadding: 20,
 			}
 		}
 	});
