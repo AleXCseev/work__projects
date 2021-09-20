@@ -299,7 +299,13 @@
     top: 10px;
     left: -515px;
     z-index: 11;
+
+	&.floating {
+		animation-delay: 5s;
+	}
 }
+
+
 
 .galary__section {
 	width: 100%;

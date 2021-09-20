@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<link rel="stylesheet" href="./libs/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="./libs/owl.carousel.min.css">
-	<link rel="stylesheet" href="./libs/aos.css">
+	<!-- <link rel="stylesheet" href="./libs/aos.css"> -->
 	<link rel="stylesheet" href="./libs/animations.css">
 	<link rel="stylesheet" href="./css/style.css" />
 	<title>ECCO Soft 8</title>
@@ -21,47 +21,35 @@
 			<div class="container">
 				<div class="header__wrapper">
 					<div class="header__content">
-
-						<div class="header__imgs">
-							<div class="header__img-wrapper header__img-1">
-								<a href="./img/header-1.jpg" data-fancybox="header">
-									<img src="./img/header-1.jpg" alt="">
-								</a>
-							</div>
-							<div class="header__img-wrapper header__img-2">
-								<a href="./img/header-2.jpg" data-fancybox="header">
-									<img src="./img/header-2.jpg" alt="">
-								</a>
-							</div>
-							<div class="header__img-wrapper header__img-3">
-								<a href="./img/header-3.jpg" data-fancybox="header">
-									<img src="./img/header-3.jpg" alt="">
-								</a>
-							</div>
-							<div class="header__img-wrapper header__img-4">
-								<a href="./img/header-4.jpg" data-fancybox="header">
-									<img src="./img/header-4.jpg" alt="">
-								</a>
-							</div>
-							<div class="header__img-wrapper header__img-5">
-								<a href="./img/header-5.jpg" data-fancybox="header">
-									<img src="./img/header-5.jpg" alt="">
-								</a>
-							</div>
-							<img src="./img/boot-red-1.png" alt="" class="header__boot">
-						</div>
-
-						<div class="header__logo-wrapper">
+						<div class="header__logo-wrapper" data-aos="fade-down">
 							<img src="./img/header-logo.png" alt="" class="header__logo">
 							<img src="./img/soft-8.png" alt="" class="decorate__text">
 						</div>
-						<h1 class="header__title">
+						<h1 class="header__title" data-aos="fade-down" data-aos-delay="200">
 							ФИНАЛЬНАЯ РАСПРОДАЖА НИЖЕ СЕБЕСТОИМОСТИ!
 						</h1>
-						<p class="header__text">
+						<p class="header__text" data-aos="fade-down" data-aos-delay="400">
 							Встречай осень в брендовой обуви. Придай чувство стиля этому сезону, бренд ECCO позаботился о низких ценах!
 						</p>
-						<div class="header__price">
+						<div class="header__imgs">
+							<div class="header__img-wrapper header__img-1">
+								<img src="./img/header-1.jpg" alt="">
+							</div>
+							<div class="header__img-wrapper header__img-2">
+								<img src="./img/header-2.jpg" alt="">
+							</div>
+							<div class="header__img-wrapper header__img-3">
+								<img src="./img/header-3.jpg" alt="">
+							</div>
+							<div class="header__img-wrapper header__img-4">
+								<img src="./img/header-4.jpg" alt="">
+							</div>
+							<div class="header__img-wrapper header__img-5">
+								<img src="./img/header-5.jpg" alt="">
+							</div>
+							<img src="./img/boot-red-1.png" alt="" class="header__boot floating">
+						</div>
+						<div class="header__price" data-aos="fade-down" data-aos-delay="600">
 							<div class="price">
 								<span class="old__price">
 									3599 грн
@@ -71,8 +59,8 @@
 								</span>
 							</div>
 						</div>
-						<a href="#card" class="header__order-btn">ПОДРОБНЕЕ</a>
-						<p class="discont__date">Акция действует до <span>12.09.21</span></p>
+						<a href="#card" class="header__order-btn" data-aos="fade-down" data-aos-delay="800">ПОДРОБНЕЕ</a>
+						<p class="discont__date" data-aos="fade-down" data-aos-delay="800">Акция действует до <span>12.09.21</span></p>
 					</div>
 				</div>
 			</div>
@@ -176,8 +164,8 @@
 										<img src="./img/advantage-img.jpg" alt="">
 										<img src="./img/soft-8.png" alt="" class="advantage__text-img">
 									</div>
-									<img src="./img/boot-black-1.png" alt="" class="advantage__boot-1">
-									<img src="./img/boot-red-2.png" alt="" class="advantage__boot-2">
+									<img src="./img/boot-black-1.png" alt="" class="advantage__boot-1 floating">
+									<img src="./img/boot-red-2.png" alt="" class="advantage__boot-2 floating">
 								</div>
 							</div>
 						</div>
@@ -304,11 +292,50 @@
 											</span>
 										</div>
 									</div>
-									<p class="card__discont">
-										при покупке кроссовок скидка на шлепки <span> 400 грн</span>
-									</p>
 								</div>
-								<div class="card__center"></div>
+								<div class="card__center">
+									<h3 class="card__title">
+										ECCO
+										<img src="./img/soft-8.png" alt="">
+									</h3>
+									<div class="card__slider owl-carousel">
+										<div class="card__slide">
+											<img 
+												data-black="./img/card-1/black1.png"
+												data-red="./img/card-1/red1.png"
+												src="./img/card-1/black1.png" 
+												alt="" class="card__img">
+										</div>
+										<div class="card__slide">
+											<img 
+												data-black="./img/card-1/black2.png"
+												data-red="./img/card-1/red2.png"
+												src="./img/card-1/black2.png" 
+												alt="" class="card__img">
+										</div>
+										<div class="card__slide">
+											<img 
+												data-black="./img/card-1/black3.png"
+												data-red="./img/card-1/red3.png"
+												src="./img/card-1/black3.png" 
+												alt="" class="card__img">
+										</div>
+										<div class="card__slide">
+											<img 
+												data-black="./img/card-1/black4.png"
+												data-red="./img/card-1/red4.png"
+												src="./img/card-1/black4.png" 
+												alt="" class="card__img">
+										</div>
+										<div class="card__slide">
+											<img 
+												data-black="./img/card-1/black5.png"
+												data-red="./img/card-1/red5.png"
+												src="./img/card-1/black5.png" 
+												alt="" class="card__img">
+										</div>
+									</div>
+								</div>
 								<div class="card__right card__block">
 									<form class="card__form">
 										<div class="card__size-btns">
@@ -347,8 +374,8 @@
 											<span class="color__text">
 												Цвет:
 											</span>
-											<button type="button" class="color black active"></button>
-											<button type="button" class="color red"></button>
+											<button type="button" class="color black active" data-id=""></button>
+											<button type="button" class="color red" data-id=""></button>
 										</div>
 
 										<div class="card__input-wrapper">
@@ -362,7 +389,343 @@
 									</form>
 								</div>
 							</div>
-							<div class="card card__1" id="card"></div>
+							<div class="card card__2">
+								<div class="card__left card__block">
+									<table class="card__table">
+										<tr>
+											<td align="left">
+												Сезон:
+											</td>
+											<td align="right">
+												Осень
+											</td>
+										</tr>
+										<tr>
+											<td align="left">
+												Вид товара:
+											</td>
+											<td align="right">
+												Кроссовки
+											</td>
+										</tr>
+										<tr>
+											<td align="left">
+												Каблук:
+											</td>
+											<td align="right">
+												Ниже 30 мм
+											</td>
+										</tr>
+										<tr>
+											<td align="left">
+												Верх:
+											</td>
+											<td align="right">
+												Натуральная телячья кожа
+											</td>
+										</tr>
+										<tr>
+											<td align="left">
+												Подошва:
+											</td>
+											<td align="right">
+												Термополиуретан
+											</td>
+										</tr>
+										<tr>
+											<td align="left">
+												Стиль:
+											</td>
+											<td align="right">
+												Ежедневный (casual)
+											</td>
+										</tr>
+									</table>
+									<div class="card__price">
+										<div class="price">
+											<span class="old__price">
+												3599 грн
+											</span>
+											<span class="new__price">
+												1450 грн*
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="card__center">
+									<h3 class="card__title">
+										ECCO
+										<img src="./img/soft-ladies.png" alt="">
+									</h3>
+									<div class="card__slider owl-carousel">
+										<div class="card__slide">
+											<img 
+												src="./img/card-2/1.png" 
+												alt="" class="card__img">
+										</div>
+										<div class="card__slide">
+											<img 
+												src="./img/card-2/2.png" 
+												alt="" class="card__img">
+										</div>
+										<div class="card__slide">
+											<img 
+												src="./img/card-2/3.png" 
+												alt="" class="card__img">
+										</div>
+									</div>
+								</div>
+								<div class="card__right card__block">
+									<form class="card__form">
+										<div class="card__size-btns">
+											<button type="button" class="card__size-btn active">
+												36
+												<span class="card__size">
+													23,5
+												</span>
+											</button>
+											<button type="button" class="card__size-btn">
+												37
+												<span class="card__size">
+													23,5
+												</span>
+											</button>
+											<button type="button" class="card__size-btn">
+												38
+												<span class="card__size">
+													23,5
+												</span>
+											</button>
+											<button type="button" class="card__size-btn">
+												39
+												<span class="card__size">
+													23,5
+												</span>
+											</button>
+											<button type="button" class="card__size-btn">
+												40
+												<span class="card__size">
+													23,5
+												</span>
+											</button>
+										</div>
+										<div class="card__colors">
+											<span class="color__text">
+												Цвет:
+											</span>
+											<button type="button" class="color beige active" data-id=""></button>
+										</div>
+
+										<div class="card__input-wrapper">
+											<input type="text" class="card__input" placeholder="Имя" required>
+										</div>
+										<div class="card__input-wrapper">
+											<input type="tel" class="card__input" placeholder="Номер телефона" required>
+										</div>
+										<button type="submit" class="header__order-btn">ЗАКАЗАТЬ</button>
+										<p class="discont__date">*Акция действует до <span>12.09.21</span></p>
+									</form>
+								</div>
+							</div>
+							<div class="card card__3">
+								<div class="card__left card__block">
+									<table class="card__table">
+										<tr>
+											<td align="left">
+												Сезон:
+											</td>
+											<td align="right">
+												Осень
+											</td>
+										</tr>
+										<tr>
+											<td align="left">
+												Вид товара:
+											</td>
+											<td align="right">
+												Кроссовки
+											</td>
+										</tr>
+										<tr>
+											<td align="left">
+												Каблук:
+											</td>
+											<td align="right">
+												Ниже 30 мм
+											</td>
+										</tr>
+										<tr>
+											<td align="left">
+												Верх:
+											</td>
+											<td align="right">
+												Натуральная телячья кожа
+											</td>
+										</tr>
+										<tr>
+											<td align="left">
+												Подошва:
+											</td>
+											<td align="right">
+												Термополиуретан
+											</td>
+										</tr>
+										<tr>
+											<td align="left">
+												Стиль:
+											</td>
+											<td align="right">
+												Ежедневный (casual)
+											</td>
+										</tr>
+									</table>
+									<div class="card__price">
+										<div class="price">
+											<span class="old__price">
+												3599 грн
+											</span>
+											<span class="new__price">
+												1450 грн*
+											</span>
+										</div>
+									</div>
+									<p class="card__discont">
+										при покупке кроссовок скидка на шлепки <span> 400 грн</span>
+									</p>
+								</div>
+								<div class="card__center">
+									<h3 class="card__title">
+										ECCO
+										<img src="./img/flat-sandal-2.png" alt="">
+									</h3>
+									<div class="card__slider owl-carousel">
+										<div class="card__slide">
+											<img 
+												data-black="./img/card-3/black1.png"
+												data-white="./img/card-3/white1.png"
+												src="./img/card-3/black1.png" 
+												alt="" class="card__img">
+										</div>
+										<div class="card__slide">
+											<img 
+												data-black="./img/card-3/black2.png"
+												data-white="./img/card-3/white2.png"
+												src="./img/card-3/black2.png" 
+												alt="" class="card__img">
+										</div>
+										<div class="card__slide">
+											<img 
+												data-black="./img/card-3/black3.png"
+												data-white="./img/card-3/white3.png"
+												src="./img/card-3/black3.png" 
+												alt="" class="card__img">
+										</div>
+										<div class="card__slide">
+											<img 
+												data-black="./img/card-3/black4.png"
+												data-white="./img/card-3/white4.png"
+												src="./img/card-3/black4.png" 
+												alt="" class="card__img">
+										</div>
+										<div class="card__slide">
+											<img 
+												data-black="./img/card-3/black5.png"
+												data-white="./img/card-3/white5.png"
+												src="./img/card-3/black5.png" 
+												alt="" class="card__img">
+										</div>
+									</div>
+								</div>
+								<div class="card__right card__block">
+									<form class="card__form">
+										<div class="card__size-btns">
+											<button type="button" class="card__size-btn active">
+												36
+												<span class="card__size">
+													23,5
+												</span>
+											</button>
+											<button type="button" class="card__size-btn">
+												37
+												<span class="card__size">
+													23,5
+												</span>
+											</button>
+											<button type="button" class="card__size-btn">
+												38
+												<span class="card__size">
+													23,5
+												</span>
+											</button>
+											<button type="button" class="card__size-btn">
+												39
+												<span class="card__size">
+													23,5
+												</span>
+											</button>
+											<button type="button" class="card__size-btn">
+												40
+												<span class="card__size">
+													23,5
+												</span>
+											</button>
+										</div>
+										<div class="card__colors">
+											<span class="color__text">
+												Цвет:
+											</span>
+											<button type="button" class="color black active" data-id=""></button>
+											<button type="button" class="color white" data-id=""></button>
+										</div>
+
+										<div class="card__input-wrapper">
+											<input type="text" class="card__input" placeholder="Имя" required>
+										</div>
+										<div class="card__input-wrapper">
+											<input type="tel" class="card__input" placeholder="Номер телефона" required>
+										</div>
+										<button type="submit" class="header__order-btn">ЗАКАЗАТЬ</button>
+										<p class="discont__date">*Акция действует до <span>12.09.21</span></p>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sprey__section">
+					<div class="container">
+						<div class="sprey__wrapper">
+							<div class="sprey__card">
+								<h3 class="sprey__title">
+									АКВАБРОНЬ - ЗАЩИТНЫЙ СПРЕЙ
+								</h3>
+								<img src="./img/sprey-img.png" alt="" class="sprey__bg-img">
+								<img src="./img/sprey.png" alt="" class="sprey__img">
+								<div class="sprey__block">
+									<div class="sprey__price">
+										<div class="price">
+											<span class="new__price">
+												1450 грн
+											</span>
+											<span class="old__price">
+												3599 грн
+											</span>
+										</div>
+									</div>
+									<p class="sprey__text">
+										Защитный спрей, который помогает сохранить обувь и аксессуары чистыми, сухими и без пятен. Подходит для обуви из гладкой кожи, замши, нубука и ткани, прошел тестовые испытания на коже и синтетических материалах.
+									</p>
+									<form class="sprey__form">
+										<div class="sprey__input-wrapper">
+											<input type="text" class="card__input" placeholder="Имя" required>
+										</div>
+										<div class="sprey__input-wrapper">
+											<input type="tel" class="card__input" placeholder="Номер телефона" required>
+										</div>
+										<button type="submit" class="header__order-btn">ЗАКАЗАТЬ</button>
+									</form>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -371,7 +734,87 @@
 
 		<!-- FOOTER -->
 		<footer class="site__footer">
-			
+			<div class="container">
+				<div class="delivery__section">
+					<h3 class="delivery__section-title">
+						ОПЛАТА И ДОСТАВКА
+					</h3>
+					<div class="delivery__stages">
+						<div class="delivery__stage">
+							<img src="./img/del-1.png" alt="" class="delivery__logo">
+							<h4 class="delivery__title">
+								Заявка
+							</h4>
+							<div class="delivery__divider"></div>
+							<p class="delivery__text">
+								Вы оставляете заявку на сайте
+							</p>
+						</div>
+						<div class="delivery__stage">
+							<img src="./img/del-2.png" alt="" class="delivery__logo">
+							<h4 class="delivery__title">
+								Оформление
+							</h4>
+							<div class="delivery__divider"></div>
+							<p class="delivery__text">
+								Мы связываемся с вами для подтверждения заказа
+							</p>
+						</div>
+						<div class="delivery__stage">
+							<img src="./img/del-3.png" alt="" class="delivery__logo">
+							<h4 class="delivery__title">
+								Отправка
+							</h4>
+							<div class="delivery__divider"></div>
+							<p class="delivery__text">
+								Отправляем ваш заказ в кратчайшие сроки
+							</p>
+						</div>
+						<div class="delivery__stage">
+							<img src="./img/del-4.png" alt="" class="delivery__logo">
+							<h4 class="delivery__title">
+								Получение
+							</h4>
+							<div class="delivery__divider"></div>
+							<p class="delivery__text">
+								Вы получаете товар на почте и оплачиваете
+							</p>
+						</div>
+					</div>
+					<div class="delivery__block-right">
+						<img src="./img/delivery-leaf.png" alt="" class="delivery__leaf-1">
+						<img src="./img/delivery-leaf.png" alt="" class="delivery__leaf-2">
+						<img src="./img/delivery-leaf.png" alt="" class="delivery__leaf-3">
+						<img src="./img/del-boot-2.png" alt="" class="delivery__boot-2 floating">
+						<img src="./img/del-boot-1.png" alt="" class="delivery__boot-1 floating">
+					</div>
+				</div>
+				<div class="footer__section">
+					<div class="footer__content">
+						<div class="header__logo-wrapper" data-aos="fade-down">
+							<img src="./img/header-logo.png" alt="" class="header__logo">
+							<img src="./img/soft-8.png" alt="" class="decorate__text">
+						</div>
+						<h1 class="header__title" data-aos="fade-down">
+							ФИНАЛЬНАЯ РАСПРОДАЖА НИЖЕ СЕБЕСТОИМОСТИ!
+						</h1>
+						<img src="./img/boot-red-2.png" alt="" class="footer__boot-1">
+						<img src="./img/boot-black-1.png" alt="" class="footer__boot-2">
+						<div class="header__price" data-aos="fade-down">
+							<div class="price">
+								<span class="old__price">
+									3599 грн
+								</span>
+								<span class="new__price">
+									1450 грн
+								</span>
+							</div>
+						</div>
+						<a href="#card" class="header__order-btn">ЗАКАЗАТЬ</a>
+						<p class="discont__date">Акция действует до <span>12.09.21</span></p>
+					</div>
+				</div>
+			</div>
 		</footer>
 
 	</div>
@@ -380,7 +823,7 @@
 	<script src="./libs/jquery.min.js"></script>
 	<script src="./libs/owl.carousel.min.js"></script>
 	<script src="./libs/jquery.fancybox.min.js"></script>
-	<script src="./libs/aos.js"></script>
+	<!-- <script src="./libs/aos.js"></script> -->
 	<script src="./js/main.js"></script>
 </body>
 
