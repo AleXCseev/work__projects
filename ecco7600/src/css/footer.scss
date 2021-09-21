@@ -12,7 +12,7 @@
 		width: 100%;
 		height: 100%;
 		position: absolute;
-		top: 0;
+		top: -1px;
 		left: 0;
 		background: linear-gradient(180deg, #896445 0%, rgba(137, 100, 69, 0) 100%);
 	}
@@ -198,7 +198,7 @@
 	}
 
 	.new__price {
-		color: #D10239;
+		color: #9c052d;
 	}
 
 	.header__order-btn {
@@ -239,7 +239,7 @@
 		color: #FFFFFF;
 
 		span {
-			color: #D40038;
+			color: #9c052d;
 		}
 	}
 }

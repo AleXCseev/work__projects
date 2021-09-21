@@ -27,17 +27,26 @@
 .card__table {
 	width: 100%;
 	height: auto;
-	font-family: Nunito, sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 1.8;
-	color: #000000;
 	margin-bottom: 10px;
 
-	tr td:last-of-type {
-		font-weight: bold;
+	div {
+		display: flex;
+		justify-content: space-between;
+		font-family: Nunito, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		line-height: 1.8;
+		color: #000000;
+		margin-bottom: 7px;
 	}
+
+
+}
+
+.card__table-bold {
+	font-weight: bold;
+	text-align: right;
 }
 
 .card__price {
@@ -318,61 +327,65 @@
 	}
 }
 
-.owl-nav {
-	width: 380px;
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-	margin-top: 15px;
-
-	button {
-		width: 24px;
-		height: 24px;
-		background-image: url(../img/arrow.png) !important;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-
-		span {
-			display: none;
+.card {
+	.owl-nav {
+		width: 380px;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 15px;
+	
+		button {
+			width: 24px;
+			height: 24px;
+			background-image: url(../img/arrow.png) !important;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			position: relative;
+			z-index: 1;
+	
+			span {
+				display: none;
+			}
+		}
+	
+		.owl-next {
+			background-image: url(../img/arrow-right.png) !important;
 		}
 	}
-
-	.owl-next {
-		background-image: url(../img/arrow-right.png) !important;
-	}
-}
-
-.owl-dots {
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	margin-top: -44px;
-
-	button {
-		margin-right: 20px;
-		margin-bottom: 5px;
-		span {
-			font-family: "Playfair Display", sans-serif;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 24px;
-			line-height: 1;
-			text-align: center;
-			color: #000000;
-			
+	
+	.owl-dots {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		margin-top: -44px;
+	
+		button {
+			margin-right: 20px;
+			margin-bottom: 5px;
+			span {
+				font-family: "Playfair Display", sans-serif;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 1;
+				text-align: center;
+				color: #000000;
+				
+			}
+	
+			&:last-of-type {
+				margin-right: 0;
+			}
 		}
-
-		&:last-of-type {
-			margin-right: 0;
-		}
-	}
-
-	button.active {
-		margin-bottom: 0;
-		span {
-			font-size: 48px;
-			line-height: 1;
+	
+		button.active {
+			margin-bottom: 0;
+			span {
+				font-size: 48px;
+				line-height: 1;
+			}
 		}
 	}
 }

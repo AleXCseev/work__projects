@@ -1,14 +1,42 @@
 $(function () {
 
-	// if($(window).width() <= 700) {
-	// 	$(".galary__block").addClass("owl-carousel").owlCarousel({
-	// 		loop: true,
-	// 		nav : true,
-	// 		items: 1,
-	// 		margin: 50,
-	// 		dots: false,
-	// 	});
-	// }
+	if($(window).width() <= 480) {
+		$(".advantages").addClass("owl-carousel").owlCarousel({
+			loop: true,
+			nav : false,
+			items: 2,
+			margin: 50,
+			dots: true,
+			dotsEach: true,
+			autoHeight: false,
+		});
+	}
+
+	if($(window).width() <= 700) {
+		$(".galary__block").addClass("owl-carousel").owlCarousel({
+			loop: true,
+			nav : false,
+			items: 1,
+			margin: 58,
+			dots: true,
+			autoWidth:true,
+			dotsEach: true,
+			autoHeight: false,
+		});
+	}
+
+	if($(window).width() <= 600) {
+		$(".delivery__stages").addClass("owl-carousel").owlCarousel({
+			loop: true,
+			nav : false,
+			items: 1,
+			margin: 30,
+			dots: true,
+			autoWidth:true,
+			dotsEach: true,
+			autoHeight: false,
+		});
+	}
 
 
 	// function cardSlider (selector) {
