@@ -1,0 +1,232 @@
+.site__main {
+	width: 100%;
+	height: auto;
+}
+
+.info__section {
+	width: 100%;
+	height: auto;
+}
+
+.info__wrapper {
+	width: 100%;
+	height: auto;
+	padding-top: 62px;
+}
+
+.info__block {
+	width: 100%;
+	background: #B41561;
+	margin-bottom: 80px;
+	display: flex;
+	justify-content: space-between;
+	padding: 32px 30px;
+}
+
+.info__block-left {
+	width: 470px;
+	height: auto;
+	position: relative;
+	z-index: 1;
+
+	&:before {
+		content: "";
+		width: calc(100% - 5px);
+		height: calc(100% - 5px);
+		position: absolute;
+		top: 8px;
+		left: 8px;
+		opacity: 0.7;
+		border: 2px solid #FFFFFF;
+		z-index: -1;
+	}
+}
+
+
+.info__block-img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.info__block-right {
+	width: 585px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.header__order-btn {
+		background: #FDFF8D;
+		color: #000;
+
+		&:hover {
+			background: #d4d658;
+		}
+	}
+
+	.header__order-info {
+		color: #FFFFFF;
+		opacity: 0.7;
+	}
+}
+
+.info__block-title {
+	font-family: "Abril Fatface", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 64px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 21px;
+}
+
+.info__block-text {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.4;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 40px;
+
+	span {
+		font-weight: bold;
+	}
+}
+
+.info__discont {
+	width: 100%;
+	height: auto;
+	margin-bottom: 58px;
+	padding: 20px 22px;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 54.17%, rgba(255, 255, 255, 0) 100%);
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 27px;
+	text-align: center;
+	color: #FFFFFF;
+
+	span {
+		color: #FDFF8D;
+	}
+}
+
+.info__title {
+	width: 100%;
+	height: auto;
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.4;
+	text-transform: uppercase;
+	color: #B41561;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 41px;
+
+	span {
+		font-family: "Abril Fatface", sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 60px;
+		line-height: 1.4;
+		text-transform: uppercase;
+		color: #1D2537;
+		margin-right: 10px;
+	}
+}
+
+.info__text {
+	width: 810px;
+	height: auto;
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1D2537;
+	opacity: 0.8;
+	margin: auto;
+	margin-bottom: 16px;
+}
+
+.info__text-2 {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1D2537;
+	margin-bottom: 80px;
+}
+ 
+
+.info__stages {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+
+.info__stage {
+	width: 360px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+} 
+
+.stage__img-wrapper {
+	width: 130px;
+	height: 130px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #B41561;
+	border: 10px solid #fff;
+	margin-bottom: 30px;
+}
+
+.stage__title {
+	width: 100%;
+	padding: 16px 0;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 52.6%, rgba(255, 255, 255, 0) 100%);
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1D2537;
+}
+
+.stage__text {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.2;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1D2537;
+	padding: 20px 10px;
+	background: #BBBBAB;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+	border-radius: 0px 0px 10px 10px;
+}

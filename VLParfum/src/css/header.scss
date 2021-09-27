@@ -1,0 +1,473 @@
+.site__header {
+	width: 100%;
+	height: auto;
+} 
+
+.header__nav {
+	width: 100%;
+	height: 80px;
+	background: #BBBBAB;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+
+.header__nav-wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	display: block;
+	width: auto;
+	height: 100%;
+}
+
+.header__nav-right {
+	width: auto;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.header__nav-block {
+	width: auto;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.header__nav-link {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1;
+	color: #1D2537;
+	margin-right: 30px;
+	text-decoration: none;
+
+	&:last-child {
+		margin-right: 40px;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.header__nav-order {
+	width: 240px;
+	height: 50px;
+	background: #FFFFFF;
+	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1D2537;
+	transition: 0.3s ease;
+
+	&:hover {
+		color: #fff;
+		background: #B41561;
+		box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+	}
+}
+
+.header__wrapper {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.header__leaf-1 {
+	display: block;
+	position: absolute;
+	top: 26px;
+    right: -530px;
+    width: 740px;
+}
+
+.header__leaf-2 {
+	display: block;
+	position: absolute;
+	top: 50px;
+    right: 282px;
+    width: 360px;
+    opacity: 0.3;
+}
+
+.header__leaf-3 {
+	display: block;
+	position: absolute;
+	bottom: 76px;
+    right: 260px;
+    width: 305px;
+    opacity: 0.3;
+}
+
+.header__leaf-4 {
+	display: block;
+	position: absolute;
+	top: 0px;
+    left: -610px;
+    width: 875px;
+}
+
+.header__pattern-1 {
+	position: absolute;
+    top: -100px;
+    right: -650px;
+    display: block;
+}
+
+.header__pattern-2 {
+    position: absolute;
+    top: -200px;
+    right: -50px;
+    display: block;
+}
+
+.header__content {
+	padding-top: 110px;
+	width: 580px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 80px;
+	position: relative;
+}
+
+.header__title {
+	font-family: "Abril Fatface", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 68px;
+	line-height: 1.4;
+	text-transform: uppercase;
+	color: #1D2537;
+	margin-bottom: 30px;
+}
+
+.header__right {
+	width: 924px;
+	height: 811px;
+	position: absolute;
+    right: -930px;
+    top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding-left: 186px;
+	padding-bottom: 98px;
+}
+
+.right__img-1 {
+	position: absolute;
+	top: 240px;
+    right: 260px;
+}
+
+.right__img-2 {
+	position: absolute;
+	top: 92px;
+    left: 215px;
+
+	img {
+		width: 80px;
+		transform: rotate(250deg);
+	}
+}
+
+.right__img-3 {
+	position: absolute;
+	top: 375px;
+    left: 232px;
+
+	img {
+		width: 60px;
+		transform: rotate(185deg);
+	}
+}
+
+.header__right-img {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.header__discont {
+	width: 303px;
+	height: 120px;
+	position: relative;
+	background-image: url(../img/sale.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 30px;
+}
+
+.header__discont-percent {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 1.4;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-right: 15px;
+}
+
+.header__discont-text {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	letter-spacing: 2px;
+	width: 100px;
+	text-align: center;
+	font-size: 20px;
+	line-height: 1;
+	color: #fff;
+	text-transform: uppercase;
+
+	span {
+		display: block;
+		font-size: 10px;
+		line-height: 1;
+		letter-spacing: 1px;
+	}
+}
+
+.header__subtitle {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1D2537;
+	margin-bottom: 7px;
+}
+
+.header__info {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1D2537;
+	opacity: 0.7;
+	margin-bottom: 60px;
+}
+
+.header__promoblock {
+	width: 460px;
+	height: 147px;
+	border: 2px solid rgba(255, 255, 255, 0.8);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 30px;
+
+	&:before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		background: #FFFFFF;
+		opacity: 0.2;
+		position: absolute;
+		top: 10px;
+		left: 9px;
+		z-index: -1;
+	}
+}
+
+.promoblock__title {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 54px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1D2537;
+	margin-top: -40px;
+}
+
+.promoblock__info {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.4;
+	text-align: center;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: #1D2537;
+	opacity: 0.8;
+	margin-bottom: 10px;
+}
+
+.header__price {
+	width: 100%;
+	height: auto;
+
+	.price {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.old__price {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.4;
+	text-transform: uppercase;
+	color: #1D2537;
+
+	span {
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 1.4;
+		text-transform: uppercase;
+		color: #1D2537;
+		position: relative;
+
+		&:before {
+			content: "";
+			width: 100%;
+			height: 2px;
+			background-color: #B41561;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+		}
+	}
+}
+
+.new__price {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+	color: #B41561;
+}
+
+.header__timer {
+	width: 370px;
+	height: auto;
+	margin-bottom: 40px;
+}
+
+.header__timer-text {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1D2537;
+	opacity: 0.7;
+	margin-bottom: 16px;
+}
+
+.header__timer-wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__timer-block {
+	width: 70px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(180deg, rgba(187, 187, 171, 0.3) 0%, rgba(218, 218, 206, 0.3) 100%);
+	border-radius: 5px;
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1D2537;
+}
+
+.header__order-btn {
+	background: #B41561;
+	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+	border-radius: 50px;
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s ease;
+	cursor: pointer;
+	width: 260px;
+	height: 54px;
+
+	&:hover {
+		background: rgba(180, 21, 97, 0.7);
+	}
+}
+
+.header__order-info {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: lowercase;
+	color: #1D2537;
+	opacity: 0.7;
+	margin-top: 12px;
+}
