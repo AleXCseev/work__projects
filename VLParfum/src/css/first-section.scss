@@ -6,6 +6,29 @@
 .info__section {
 	width: 100%;
 	height: auto;
+	position: relative;
+}
+
+.info__img-1 {
+	display: block;
+	position: absolute;
+	top: -150px;
+	left: 0;
+	width: 100vw;
+}
+
+.info__img-2 {
+	display: block;
+	position: absolute;
+	top: 600px;
+    left: -250px;
+}
+
+.info__img-3 {
+	display: block;
+	position: absolute;
+	top: -380px;
+    right: -150px;
 }
 
 .info__wrapper {
@@ -229,4 +252,295 @@
 	background: #BBBBAB;
 	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 	border-radius: 0px 0px 10px 10px;
+}
+
+.card__section {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.card__img-1 {
+	position: absolute;
+	top: -200px;
+    right: -160px;
+}
+
+.card__img-2 {
+	position: absolute;
+	top: 1300px;
+    left: -160px;
+}
+
+.card__img-3 {
+	position: absolute;
+    top: 2490px;
+    left: 0px;
+    width: 100vw;
+}
+
+.card__img-4 {
+	position: absolute;
+    top: 4300px;
+    right: -160px;
+}
+
+.card__img-5 {
+	position: absolute;
+    top: 5000px;
+    left: 0px;
+    width: 100vw;
+}
+
+.card__wrapper {
+	width: 100%;
+	height: auto;
+	padding-bottom: 137px;
+}
+
+.card__section-title {
+	font-family: "Abril Fatface", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 60px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1D2537;
+	margin-bottom: 6px;
+}
+
+.card__section-subtitle {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: uppercase;
+	color: #B41561;
+}
+
+.card {
+	margin-top: 100px;
+	width: 100%;
+	height: auto;
+	background: linear-gradient(180deg, #FFFFFF 0%, #DADACE 100%);
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	z-index: 1;
+}
+
+.card__left {
+	display: block;
+	width: 450px;
+	height: 450px;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	background: #C4C4C4;
+	position: relative;
+}
+
+.card__left:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 9px;
+	left: 9px;
+	z-index: -1;
+	border: 2px solid rgba(89, 89, 72, 0.7);
+}
+
+.card__img {
+	width: 100%;
+	max-width: 450px;
+	height: 100%;
+	max-height: 450px;
+}
+
+.card__right {
+	width: 595px;
+	height: auto;
+	padding-top: 20px;
+}
+
+.card__title {
+	font-family: "Abril Fatface", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 42px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1D2537;
+	margin-bottom: 32px;
+}
+
+.card__table {
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.card__table-item {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 2;
+	color: #1D2537;
+
+	span {
+		font-weight: bold;
+	}
+}
+
+.red {
+	color: #B41561;
+}
+
+.card__table-block {
+	width: 230px;
+	height: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.card__table-info {
+	width: 100%;
+	height: auto;
+	padding: 8px 10px;
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.4;
+	text-transform: uppercase;
+	color: #1D2537;
+	background: linear-gradient(270deg, #DADACE 0%, #FFFFFF 100%);
+	margin-bottom: 10px;
+}
+
+.card__table-votes {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.card__star-raiting {
+	display: flex;
+	margin-right: 16px;
+}
+
+.card__voites {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.4;
+	text-transform: uppercase;
+	color: #1D2537;
+
+	span {
+		font-weight: bold;
+	}
+}
+
+.card__price {
+	width: 100%;
+	padding-right: 30px;
+	margin-bottom: 18px;
+
+	.price {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+
+	.old__price, .new__price {
+		font-family: "Open Sans", sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 1.2;
+		text-transform: uppercase;
+		color: #1D2537;
+	}
+
+	.old__price {
+		span {
+			color: #1D2537;
+			margin-left: 5px;
+		}
+	}
+
+	.new__price {
+		span {
+			font-weight: bold;
+			font-size: 36px;
+			line-height: 1.4;
+			text-transform: uppercase;
+			color: #B41561;
+			margin-left: 5px;
+		}
+	}
+}
+
+.card__btns {
+	width: 100%;
+	padding-right: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card__details {
+	background: #700739;
+	box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.4);
+	border-radius: 50px 0px 0px 50px;
+	width: 280px;
+	height: 66px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 1;
+	color: #FFFFFF;
+	text-decoration: none;
+	transition: 0.3s ease;
+
+	&:hover {
+		background: #B41561;
+	}
+}
+
+.card__order {
+	background: #B41561;
+	box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.4);
+	border-radius: 0px 50px 50px 0px;
+	width: 280px;
+	height: 66px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 1;
+	color: #FFFFFF;
+	text-decoration: none;
+	transition: 0.3s ease;
+
+	&:hover {
+		background: #700739;
+	}
 }

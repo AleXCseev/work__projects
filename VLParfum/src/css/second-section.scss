@@ -1,0 +1,170 @@
+.review__section {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.review__img-1 {
+	position: absolute;
+    top: -235px;
+    left: -225px;
+}
+
+.review__wrapper {
+	width: 100%;
+	height: auto;
+	padding-bottom: 100px;
+}
+
+.review__section-title {
+	font-family: "Abril Fatface", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1D2537;
+	margin-bottom: 100px;
+} 
+
+.review__slider {
+	width: 100%;
+	height: auto;
+}
+
+.review__slide {
+	// width: 530px;
+	height: auto;
+	display: flex;
+}
+
+.review__photo-wrapper {
+	width: 60px;
+	height: 60px;
+	position: relative;
+	overflow: hidden;
+	flex-shrink: 0;
+	margin-right: 16px;
+}
+
+.review__photo {
+	display: block;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.review__message {
+	width: auto;
+	height: auto;
+}
+
+.review__message-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 13px;
+}
+
+.review__name {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.4;
+	text-align: center;
+	color: #1D2537;
+	margin-right: 11px;
+}
+
+.review__date {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #1D2537;
+}
+
+.review__text {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #1D2537;
+	opacity: 0.8;
+	margin-bottom: 16px;
+}
+
+.review__img {
+	display: block;
+	width: auto !important;
+	height: 140px;
+}
+
+.owl-nav {
+	width: 118px;
+	height: 50px;
+	margin: auto;
+	background: linear-gradient(90deg, #DADACE 0%, #FFFFFF 49.48%, #DADACE 100%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+
+	button {
+		width: 17px;
+		height: 30px;
+		background-image: url(../img/arrow.png) !important;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		span {
+			display: none;
+		}
+	}
+
+	.owl-next {
+		transform: rotate(180deg);
+	}
+}
+
+.review__slides {
+	margin: auto;
+	width: 80px;
+	display: flex;
+	justify-content: center;
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1;
+	text-align: center;
+	color: #1D2537;
+	margin-top: -32px;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 100px;
+}
+
+.review__imgs-wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+
+	a {
+		display: block;
+		width: calc(50% - 15px);
+	}
+}
+
+.review__imgs {
+	display: block;
+	width: 100%;
+}
