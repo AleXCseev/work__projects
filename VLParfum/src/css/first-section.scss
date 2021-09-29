@@ -164,7 +164,7 @@
 		line-height: 1.4;
 		text-transform: uppercase;
 		color: #1D2537;
-		margin-right: 10px;
+		// margin-right: 10px;
 	}
 }
 
@@ -319,6 +319,11 @@
 	text-align: center;
 	text-transform: uppercase;
 	color: #B41561;
+}
+
+.card__section-subtitle:last-of-type {
+	margin-top: 50px;
+	margin-bottom: -30px;
 }
 
 .card {

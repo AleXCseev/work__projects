@@ -7,6 +7,41 @@
 .footer__order-section {
 	width: 100%;
 	height: auto;
+	position: relative;
+}
+
+.footer__img-1 {
+	position: absolute;
+	top: 100px;
+    left: -205px;
+}
+
+.footer__img-2 {
+	position: absolute;
+    top: 785px;
+    left: 500px;
+    width: 457px;
+}
+
+.footer__img-3 {
+	position: absolute;
+    top: 210px;
+    left: 755px;
+    width: 457px;
+}
+
+.footer__img-4 {
+	position: absolute;
+    bottom: -110px;
+    transform: rotate(180deg);
+    right: 80px;
+}
+
+.footer__img-5 {
+	position: absolute;
+    bottom: -110px;
+    transform: rotate(180deg);
+	right: -410px;
 }
 
 .footer__order-wrapper {
@@ -24,7 +59,7 @@
 	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
 	padding: 20px;
-	margin-right: 180px;
+	margin-right: 60px;
 	flex-shrink: 0;
 
 	.order__modal-title {
@@ -69,9 +104,13 @@
 }
 
 .footer__order-right {
+	position: relative;
+	z-index: 1;
 
 	.header__promoblock {
 		height: 142px;
+		margin: auto;
+		
 	}
 	.promoblock__info {
 		margin-bottom: 18px;
@@ -79,8 +118,9 @@
 }
 
 .footer__img-wrapper {
-	width: 645px;
-	position: relative;
+	width: 765px;
+    position: relative;
+    padding-left: 130px;
 
 	.right__img-1 {
 		position: absolute;
@@ -94,7 +134,7 @@
 	.right__img-2 {
 		position: absolute;
 		top: 46px;
-		left: 128px;
+		left: 265px;
 
 		img {
 			width: 70px;
@@ -103,7 +143,7 @@
 	.right__img-3 {
 		position: absolute;
     	top: 275px;
-    	left: 150px;
+    	left: 280px;
 
 		img {
 			width: 50px;
@@ -113,4 +153,152 @@
 
 .footer__right-img {
 	width: 100%;
+}
+
+.footer__info-title {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1D2537;
+	width: 434px;
+	margin: auto;
+	margin-top: -70px;
+	margin-bottom: 53px;
+}
+
+.footer__advantages {
+	width: 472px;
+	height: auto;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: linear-gradient(180deg, #BBBBAB 0%, rgba(255, 255, 255, 0) 100%);
+	padding: 30px 12px;
+	margin: auto;
+
+	&:before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: -10px;
+		left: -10px;
+		border: 1px solid #BBBBAB;
+		z-index: -1;
+	}
+}
+
+.advantages__title {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: uppercase;
+	color: #700739;
+	position: absolute;
+	left: 0;
+	top: -30px;
+}
+
+.advantage__text {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1D2537;
+	width: 142px;
+}
+
+.footer__information-section {
+	width: 100%;
+	height: auto;
+	background-color: #1D2537;
+	position: relative;
+	z-index: 1;
+}
+
+.footer__information-wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 20px 0 24px;
+}
+
+.footer__logo-1 {
+	display: block;
+	flex-shrink: 0;
+}
+
+.footer__logo-2 {
+	display: block;
+	width: auto;
+	height: auto;
+	flex-shrink: 0;
+	margin-top: 10px;
+}
+
+.footer__information-block {
+	width: 60%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-top: 10px;
+}
+
+.footer__information-title {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 1.1;
+	color: #FFFFFF;
+	margin-bottom: 30px;
+}
+
+.footer__information-item {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.2;
+	color: rgba(255, 255, 255, 0.7);
+	margin-bottom: 15px;
+	width: 390px;
+}
+
+.footer__information-logo {
+	margin-right: 10px;
+}
+
+.footer__link {
+	color: inherit;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.footer__line {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.2;
+	color: #1D2537;
+	padding: 12px 0 9px;
+	text-align: center;
 }
