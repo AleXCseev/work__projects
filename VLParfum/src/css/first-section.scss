@@ -480,8 +480,10 @@
 
 	.old__price {
 		span {
+			display: inline-block;
 			color: #1D2537;
-			margin-left: 5px;
+			margin-left: 3px;
+			word-wrap: normal;
 		}
 	}
 
@@ -492,7 +494,7 @@
 			line-height: 1.4;
 			text-transform: uppercase;
 			color: #B41561;
-			margin-left: 5px;
+			margin-left: 3px;
 		}
 	}
 }

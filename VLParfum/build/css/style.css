@@ -644,7 +644,7 @@ body {
 
 .old__price span {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.4;
   text-transform: uppercase;
   color: #1D2537;
@@ -1358,8 +1358,10 @@ body {
 }
 
 .card__price .old__price span {
+  display: inline-block;
   color: #1D2537;
-  margin-left: 5px;
+  margin-left: 3px;
+  word-wrap: normal;
 }
 
 .card__price .new__price span {
@@ -1368,7 +1370,7 @@ body {
   line-height: 1.4;
   text-transform: uppercase;
   color: #B41561;
-  margin-left: 5px;
+  margin-left: 3px;
 }
 
 .card__btns {
@@ -2240,7 +2242,9 @@ body {
 }
 
 .order__form-left {
-  width: 360px;
+  width: -webkit-calc(50% - 10px);
+  width: calc(50% - 10px);
+  max-width: 360px;
   height: auto;
 }
 
@@ -2341,7 +2345,9 @@ label {
 }
 
 .order__form-right {
-  width: 360px;
+  width: -webkit-calc(50% - 10px);
+  width: calc(50% - 10px);
+  max-width: 360px;
   height: auto;
 }
 
@@ -2866,6 +2872,30 @@ label {
   .footer__information-title {
     text-align: center;
   }
+  .order__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .order__form-left {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .order__form-right {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 540px) {
@@ -3207,6 +3237,11 @@ label {
   .card__price .new__price span {
     font-size: 8vw;
   }
+  .card__price .old__price {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
   .card__section-title {
     font-size: 9vw;
   }
@@ -3257,6 +3292,21 @@ label {
     font-size: 8vw;
     margin-bottom: 4vw;
   }
+  .order__price .new__price span {
+    font-size: 9vw;
+  }
+  .order__price .old__price, .order__price .new__price {
+    font-size: 3.5vw;
+  }
+  .order__modal-wrapper {
+    padding: 40px 20px 20px;
+  }
+  .info__modal-wrapper {
+    padding: 40px 20px 20px;
+  }
+  .modal__wrapper {
+    padding: 40px 20px 20px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -3299,5 +3349,11 @@ label {
   }
   .order__checkbox-text {
     font-size: 12px;
+  }
+  .info__modal-wrapper {
+    padding: 40px 20px 20px;
+  }
+  .modal__wrapper {
+    padding: 40px 20px 20px;
   }
 }

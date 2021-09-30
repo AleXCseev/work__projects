@@ -368,6 +368,20 @@
 	.footer__information-title {
 		text-align: center;
 	}
+	.order__form {
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	.order__form-left {
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
+	.order__form-right {
+		width: 100%;
+		max-width: 100%;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -677,6 +691,11 @@
 	.card__price .new__price span {
 		font-size: 8vw;
 	}
+	.card__price .old__price {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
 	.card__section-title {
 		font-size: 9vw;
 	}
@@ -727,6 +746,21 @@
 		font-size: 8vw;
 		margin-bottom: 4vw;
 	}
+	.order__price .new__price span {
+		font-size: 9vw;
+	}
+	.order__price .old__price, .order__price .new__price {
+		font-size: 3.5vw;
+	}
+	.order__modal-wrapper {
+		padding: 40px 20px 20px;
+	}
+	.info__modal-wrapper {
+		padding: 40px 20px 20px;
+	}
+	.modal__wrapper {
+		padding: 40px 20px 20px;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -767,6 +801,12 @@
 	}
 	.order__checkbox-text {
 		font-size: 12px;
+	}
+	.info__modal-wrapper {
+		padding: 40px 20px 20px;
+	}
+	.modal__wrapper {
+		padding: 40px 20px 20px;
 	}
 }
 

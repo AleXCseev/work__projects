@@ -7,24 +7,21 @@ var landing = {
 	}, 
 
 	initLibraris: function() {
-		// AOS.init({
-		// 	disable : 'mobile',
-		// 	once: true,
-		// 	// offset : -200,
-		// });
-
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
 
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = -100;
-			// var cardHeight = $("#card").outerHeight(false)
-			// var windowHeight = $(window).height()
+			var cardHeight = 0
+			var windowHeight = 0
+
+			if($(window).width() <= 800) {
+				fixedOffset = 20;
+				cardHeight = $("#card").outerHeight(false)
+				windowHeight = $(window).height()
+			}
 
 			$('html, body')
 				.stop()
-				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
 			e.preventDefault();
 		});
 
@@ -195,7 +192,7 @@ var landing = {
 	
 				var content = $(selector + " .modal__info-hidden").html()
 				
-				var $img = "<img src='//img.youtube.com/vi/" + $(this).attr("data-video") + "/mqdefault.jpg'>"
+				var $img = "<img src='//img.youtube.com/vi/" + $(this).attr("data-video") + "/hqdefault.jpg'>"
 				$(".video").append($img)
 				$(".info__modal-wrapper").append(content);
 	

@@ -58,13 +58,13 @@ gulp.task("del", () => {
 gulp.task("img-compress", () => {
 	return gulp
 		.src("./src/img/**")
-		// .pipe(
-		// 	imagemin({
-		// 		progressive: true,
-		// 	}),
-		// )
+		.pipe(
+			imagemin({
+				progressive: true,
+			})
+		)
 		.pipe(gulp.dest("./build/img/"))
-		.pipe(browserSync.stream());
+		.pipe(browserSync.stream())
 });
 
 gulp.task("watch", () => {

@@ -181,7 +181,8 @@
 }
 
 .order__form-left {
-	width: 360px;
+	width: calc(50% - 10px);
+	max-width: 360px;
 	height: auto;
 }
 
@@ -266,7 +267,8 @@ label {
 }
 
 .order__form-right {
-	width: 360px;
+	width: calc(50% - 10px);
+	max-width: 360px;
 	height: auto;
 }
 
