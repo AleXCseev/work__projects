@@ -1,7 +1,7 @@
 .site__header {
 	width: 100%;
 	position: relative;
-	height: 800px;
+	height: 790px;
 }
 
 .header__bg-wrapper {
@@ -18,6 +18,7 @@
 		width: 100%;
 		height: 80%;
 		position: absolute;
+		z-index: 1;
 		top: 0;
 		left: 0;
 		background: linear-gradient(180deg, #242630 0%, rgba(36, 38, 48, 0) 100%);
@@ -39,6 +40,7 @@
 	height: 100%;
 	padding-top: 100px;
 	position: relative;
+	z-index: 1;
 }
 
 .header__logo-1 {
@@ -173,6 +175,13 @@
 		background: #242630;
 		z-index: -1;
 	}
+}
+
+.header__logo-2 {
+	position: absolute;
+	bottom: 0;
+	left: -350px;
+	display: block;
 }
 
 .header__timer-title {
