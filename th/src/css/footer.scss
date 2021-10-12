@@ -1,0 +1,47 @@
+.site__footer {
+	width: 100%;
+	height: 800px;
+	background-image: url(../img/footer-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(180deg, #242630 0%, rgba(36, 38, 48, 0) 100%);
+	}
+
+	.header__wrapper {
+		padding-top: 115px;
+	}
+
+	.header__logo-1 {
+		position: static;
+		align-self: center;
+		margin: auto;
+		margin-bottom: 32px;
+	}
+
+	.header__title {
+		width: 651px;
+	}
+
+	.header__timer {
+		padding: 30px 144px;
+	}
+}
+
+
+.footer__boots {
+	position: absolute;
+    bottom: 128px;
+    left: 500px;
+    z-index: 2;
+    width: 795px;
+}

@@ -85,6 +85,10 @@
 	color: #FFFFFF;
 	margin-bottom: 5px;
 
+	br {
+		display: none;
+	}
+
 	span {
 		font-weight: 500;
 	}
@@ -275,7 +279,7 @@
 	display: block;
     position: absolute;
     bottom: -15px;
-    right: -310px;
+    right: -625px;
     z-index: 1;
     width: 986px;
 }
@@ -312,6 +316,12 @@
 	position: relative;
 	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.6);
 
+	&:hover {
+		.video__play {
+			transform: translate(-50%, -50%) scale(1.2);
+		}
+	}
+
 	iframe {
 		width: 100%;
 		height: 100%;
@@ -325,6 +335,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	transition: 0.3s ease;
 }
 
 .video__text-block {

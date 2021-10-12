@@ -32,6 +32,17 @@ var landing = {
 			})
 		}
 
+		$('.card__select').select2({
+			selectOnClose: true,
+			placeholder: 'Размер',
+			allowClear: true
+		});
+
+		// $('.card__select').on('select2:select', function (e) {
+		// 	var data = e.params.data;
+		// 	console.log(data.id);
+		// });
+
 		initCardSlider(".card__1")
 		initCardSlider(".card__2")
 
@@ -39,8 +50,18 @@ var landing = {
 			loop: true,
 			nav : true,
 			dots: false,
-			items: 3,
 			margin: 35,
+			responsive: {
+				0: {
+					items:1,
+				},
+				481: {
+					items:2,
+				},
+				1001: {
+					items:3,
+				}
+			}
 		});
 
 		$('[data-fancybox]').fancybox({

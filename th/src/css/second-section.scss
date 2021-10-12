@@ -9,7 +9,8 @@
 	width: 100%;
 	height: auto;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
+	position: relative;
 }
 
 .card__1 {
@@ -24,11 +25,14 @@
 .card__left {
 	width: 50%;
 	height: auto;
-	position: relative;
+	position: absolute;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-end;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
 
 	&:before {
 		content: "";
@@ -100,7 +104,7 @@
 .card__right {
 	width: 50%;
 	height: auto;
-	position: relative;
+	position: static;
 	display: flex;
 	justify-content: center;
 }
@@ -248,8 +252,45 @@
 	text-align: center;
 }
 
+.select2 {
+	width: 100%;
+	height: 58px;
+	background: #FFFFFF;
+	border: 1px solid #BEBEBE;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1;
+	color: #000000;
+	text-align: center;
+	border: none;
+}
+
+.select2-container--default .select2-selection--single {
+    border: none;
+    border-radius: 0;
+	height: 100%;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: inherit;
+    line-height: 1;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.select2-search__field {
+	display: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: inherit;
+}
+
 .card__select {
 	cursor: pointer;
+	padding: auto;
 }
 
 .card__select-triangle {
