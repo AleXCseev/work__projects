@@ -204,6 +204,10 @@
 	&:last-of-type {
 		margin-bottom: 10px;
 	}
+
+	span {
+		flex-shrink: 0;
+	}
 }
 
 .card__divider {
@@ -216,6 +220,7 @@
 
 .card__info-opacity {
 	color: rgba(255, 255, 255, 0.8);
+	flex-shrink: 0;
 }
 
 .card__form {

@@ -21,6 +21,17 @@ var landing = {
 			e.preventDefault();
 		});
 
+		AOS.init({
+			disable : 'mobile',
+			once: true,
+			duration: 600,
+			// offset : -200,
+		});
+	
+		$(window).resize(function() {
+			AOS.refresh();
+		})
+
 		function initCardSlider(selector) {
 			$(selector + " .card__slider").owlCarousel({
 				loop: true,
@@ -54,12 +65,15 @@ var landing = {
 			responsive: {
 				0: {
 					items:1,
+					autoHeight: true,
 				},
 				481: {
 					items:2,
+					autoHeight: false,
 				},
 				1001: {
 					items:3,
+					autoHeight: false,
 				}
 			}
 		});
@@ -139,51 +153,51 @@ var landing = {
 		$(".review__slide-4 .review__date").text(getDate(-7));
 	},
 
-	parallax: function() {
-		var scenesParallax = [];
+	// parallax: function() {
+	// 	var scenesParallax = [];
 
-		mQ("(max-width: 1023px)", function () {
-		   if (!scenesParallax.length) return
-		   scenesParallax.forEach(function (scene) {
-			  scene.disable();
-			  scene.element.removeAttribute('style');
-		   })
-		}, function () {
-		   if (scenesParallax.length === 0) {
-			  $('.parallax').each(function (i) {
-				 scenesParallax[i] = new Parallax($(this).children('div').attr('data-depth', randomNum(10, 20)).end().get(0), {
-					frictionX: 0.0008,
-					frictionY: 0.0008,
-					invertX: Math.random() >= 0.5,
-					invertY: Math.random() >= 0.5
-				 });
-			  })
-		   } else {
-			  scenesParallax.forEach(function (scene) {
-				 scene.enable();
-			  })
-		   }
-		});
+	// 	mQ("(max-width: 1023px)", function () {
+	// 	   if (!scenesParallax.length) return
+	// 	   scenesParallax.forEach(function (scene) {
+	// 		  scene.disable();
+	// 		  scene.element.removeAttribute('style');
+	// 	   })
+	// 	}, function () {
+	// 	   if (scenesParallax.length === 0) {
+	// 		  $('.parallax').each(function (i) {
+	// 			 scenesParallax[i] = new Parallax($(this).children('div').attr('data-depth', randomNum(10, 20)).end().get(0), {
+	// 				frictionX: 0.0008,
+	// 				frictionY: 0.0008,
+	// 				invertX: Math.random() >= 0.5,
+	// 				invertY: Math.random() >= 0.5
+	// 			 });
+	// 		  })
+	// 	   } else {
+	// 		  scenesParallax.forEach(function (scene) {
+	// 			 scene.enable();
+	// 		  })
+	// 	   }
+	// 	});
 	 
-		function randomNum(min, max) {
-		   var numLow = min, numHigh = max,
-			  adjustedHigh = (parseFloat(numHigh) - parseFloat(numLow)) + 1;
-		   return Math.floor(Math.random() * adjustedHigh) + parseFloat(numLow);
-		}
+	// 	function randomNum(min, max) {
+	// 	   var numLow = min, numHigh = max,
+	// 		  adjustedHigh = (parseFloat(numHigh) - parseFloat(numLow)) + 1;
+	// 	   return Math.floor(Math.random() * adjustedHigh) + parseFloat(numLow);
+	// 	}
 	 
-		function mQ(mqStr, match, mismatch) {
-		   var mq = matchMedia(mqStr);
-		   mq.addListener(widthChange);
-		   widthChange(mq);
-		   function widthChange(mq) {
-			  if (mq.matches) {
-				 match();
-			  } else {
-				 mismatch();
-			  }
-		   }
-		}
-	},
+	// 	function mQ(mqStr, match, mismatch) {
+	// 	   var mq = matchMedia(mqStr);
+	// 	   mq.addListener(widthChange);
+	// 	   widthChange(mq);
+	// 	   function widthChange(mq) {
+	// 		  if (mq.matches) {
+	// 			 match();
+	// 		  } else {
+	// 			 mismatch();
+	// 		  }
+	// 	   }
+	// 	}
+	// },
 
 	initVideo: function() {
 		function addVideoOnPage(selector) {

@@ -14,7 +14,7 @@
 
 
 /////////////////////////////////////////////////////////////////////
-@media (max-width: 1660px) {
+@media (max-width: 1680px) {
 	.header__bg-wrapper {
 		width: 90vw;
 	}
@@ -642,14 +642,14 @@
 		width: 68px;
 	}
 	.header__bg-wrapper {
-		height: calc(100% - 30vw);
+		height: calc(100% - 26vw);
 		background-image: url(../img/header-mobile-bg.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
 	}
 	.header__subtitle {
-		width: 56vw;
+		width: 58vw;
 		font-size: 4vw;
 	}
 	.header__title {
@@ -819,6 +819,9 @@
 	}
 	.card__discount {
 		font-size: 3.5vw;
+	}
+	.card__info {
+		font-size: 4vw;
 	}
 	.sprey__title {
 		font-size: 6vw;
