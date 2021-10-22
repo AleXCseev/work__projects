@@ -62,6 +62,10 @@ input::placeholder {
 	color: inherit;
 }
 
+input:-ms-input-placeholder {
+    color: #fff !important;
+}
+
 input,
 button,
 textarea,

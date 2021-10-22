@@ -241,16 +241,21 @@
 }
 
 .galary__title {
-	width: 45%;
+	display: inline-block;
+	width: auto;
+	padding: 0;
 	margin-bottom: 0;
+	margin-right: 22vw;
+	text-align: right;
 
 	.info__dots {
-		right: -590px;
+		right: -1060px;
 	}
 }
 
 .galary {
-	width: 1730px;
+	width: calc(100% - 40px);
+	max-width: 1730px;
 	height: auto;
 	margin: auto;
 	display: flex;
@@ -263,7 +268,7 @@
 	height: auto;
 	border: 20px solid #212731;
 	position: relative;
-	flex-shrink: 0;
+	flex-shrink: 1;
 	transition: 0.3s ease;
 
 	img {

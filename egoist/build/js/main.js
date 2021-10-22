@@ -55,6 +55,28 @@ var landingFunctions = {
 		switchBtns(".card__2");
 		switchBtns(".card__3");
 
+		if ($(window).width() <= 1000) {
+			$(".galary").addClass("owl-carousel").owlCarousel({
+				loop: true,
+				nav : false,
+				dots: true,
+				dotsEach: true,
+				items: 3,
+				margin: 30,
+				responsive: {
+					0: {
+						items:1,
+					},
+					481: {
+						items:2,
+					},
+					701: {
+						items:3,
+					}
+				}
+			})
+		}
+
 		// AOS.init({
 		// 	disable : 'mobile',
 		// 	once: true,
