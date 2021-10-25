@@ -84,6 +84,9 @@
 		width: 300px;
 		text-align: center;
 	}
+	.card__fotos {
+		height: 83px;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -256,6 +259,9 @@
 		justify-content: center;
 		margin: auto;
 		margin-top: 20px;
+	}
+	.card__fotos {
+		height: auto;
 	}
 	.card__foto {
 		width: 23%;
@@ -669,7 +675,7 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		margin-bottom: 0;
+		margin-bottom: -20px;
 	}
 	.card__left {
 		padding: 90px 0px 20px;
@@ -735,6 +741,4 @@
 		font-size: 44px;
 	}
 }
-
-
 

@@ -77,62 +77,16 @@ var landingFunctions = {
 			})
 		}
 
-		// AOS.init({
-		// 	disable : 'mobile',
-		// 	once: true,
-		// 	duration: 600,
-		// 	// offset : -200,
-		// });
+		AOS.init({
+			disable : 'mobile',
+			once: true,
+			duration: 600,
+			// offset : -200,
+		});
 	
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
-
-		// function initCardSlider(selector) {
-		// 	$(selector + " .card__slider").owlCarousel({
-		// 		loop: true,
-		// 		nav : true,
-		// 		dots: false,
-		// 		items: 4,
-		// 		margin: 6,
-		// 		stagePadding: 3,
-		// 	})
-		// }
-
-		// $('.card__select').select2({
-		// 	selectOnClose: true,
-		// 	placeholder: 'Размер',
-		// 	allowClear: true
-		// });
-
-		// $('.card__select').on('select2:select', function (e) {
-		// 	var data = e.params.data;
-		// 	console.log(data.id);
-		// });
-
-		// initCardSlider(".card__1")
-		// initCardSlider(".card__2")
-
-		// $(".review__slider").owlCarousel({
-		// 	loop: true,
-		// 	nav : true,
-		// 	dots: false,
-		// 	margin: 35,
-		// 	responsive: {
-		// 		0: {
-		// 			items:1,
-		// 			autoHeight: true,
-		// 		},
-		// 		481: {
-		// 			items:2,
-		// 			autoHeight: false,
-		// 		},
-		// 		1001: {
-		// 			items:3,
-		// 			autoHeight: false,
-		// 		}
-		// 	}
-		// });
+		$(window).resize(function() {
+			AOS.refresh();
+		})
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
