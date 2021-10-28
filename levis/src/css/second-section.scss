@@ -1,0 +1,137 @@
+.card {
+	display: flex;
+	align-items: center;
+}
+
+.card__left {
+	width: 640px;
+	height: auto;
+	background: #E4F7FF;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 50px;
+}
+
+.card__logo {
+	margin-bottom: 24px;
+}
+
+.card__header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 27px;
+}
+
+.card__title {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+	color: #4F0B90;
+	margin-right: 18px;
+}
+
+.card__raiting {
+	display: flex;
+}
+
+.card__star {
+	margin-right: 3px;
+	width: 18px;
+	height: 18px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.card__galary {
+	margin-bottom: 20px;
+	position: relative;
+
+	img {
+		pointer-events: auto;
+	}
+
+	.owl-nav {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		pointer-events: none;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		padding: 0 20px;
+
+		button {
+			width: 20px;
+			height: 20px;
+			pointer-events: auto;
+			background-image: url(../img/card-arrow.png) !important;
+			background-repeat: no-repeat !important;
+			background-position: center !important;
+			transition: 0.3s ease;
+
+			span {
+				display: none;
+			}
+
+			&:hover {
+				background-image: url(../img/card-arrow-hover.png) !important;
+			}
+		}
+
+		.owl-next {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.card__fotos {
+	width: 100%;
+	padding: 0 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card__foto {
+	display: block;
+	width: 15%;
+	height: auto;
+	pointer-events: auto;
+	border: 1px solid #8AC7E1;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.3s ease;
+
+	&:hover {
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	}
+}
+
+.card__right {
+	width: 500px;
+	height: auto;
+	background: #5B0943;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+	border-radius: 0px 20px 20px 0px;
+	padding: 25px 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.order__btn {
+		z-index: 1;
+	}
+
+	.header__discount-date {
+		margin-bottom: 15px;
+	}
+}
