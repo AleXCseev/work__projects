@@ -1,7 +1,7 @@
 var landingFunctions = {
 	init: function() {
 		this.initLibraris()
-		// this.time()
+		this.modals()
 	}, 
 
 	initLibraris: function() {
@@ -25,9 +25,6 @@ var landingFunctions = {
 				dots: false,
 				nav: true,
 				loop: true,
-				// mouseDrag: false,
-				// touchDrag: false,
-				// animateOut: 'fadeOut',
 			});
 	
 			$(selector + " .card__foto").each(function() {
@@ -41,19 +38,8 @@ var landingFunctions = {
 		}
 	
 		cardSlider(".card__1")
-		// cardSlider(".card__2")
-		// cardSlider(".card__3")
+		cardSlider(".card__2")
 
-		// function switchBtns(selector) {
-		// 	$(selector + " .card__size-btn").click(function () {
-		// 		$(selector + " .card__size-btn").removeClass("active")
-		// 		$(this).addClass("active");
-		// 	})
-		// }
-	
-		// switchBtns(".card__1");
-		// switchBtns(".card__2");
-		// switchBtns(".card__3");
 
 		$(".galary__slider").owlCarousel({
 			loop: true,
@@ -61,9 +47,25 @@ var landingFunctions = {
 			dots: true,
 			dotsEach: true,
 			items: 1,
-			// margin: 0,
 		})
 
+		$(".review__slider").owlCarousel({
+			loop: true,
+			nav : true,
+			dots: false,
+			items: 1,
+			margin: 50,
+			autoHeight: true,
+		})
+
+		$.raty.path = 'img/raty';
+
+		$('.modal__raiting').raty({
+			half: true,
+			space: false,
+			number: 5,
+		});
+	
 		// AOS.init({
 		// 	disable : 'mobile',
 		// 	once: true,
@@ -82,48 +84,86 @@ var landingFunctions = {
 			backFocus: false,
 			hash: false,
 		});
+
+		$(".year").text(new Date().getFullYear())
 	},
 
-	time: function() {
 
-		Date.prototype.daysInMonth = function () {
-			return 32 - new Date(this.getFullYear(), this.getMonth(), 32).getDate();
-		};
-		
-		if (!String.prototype.padStart) {
-			String.prototype.padStart = function padStart(targetLength, padString) {
-				targetLength = targetLength >> 0; //truncate if number or convert non-number to 0;
-				padString = String((typeof padString !== 'undefined' ? padString : ' '));
-				if (this.length > targetLength) {
-					return String(this);
-				}
-				else {
-					targetLength = targetLength - this.length;
-					if (targetLength > padString.length) {
-						padString += padString.repeat(targetLength / padString.length); //append to original to ensure we are longer than needed
-					}
-					return padString.slice(0, targetLength) + String(this);
-				}
-			};
-		}
-
-		// $(".year").text(new Date().getFullYear())
-
-		function getDate(plusDays) {
-			var today = new Date();
-			var dd = String(today.getDate() + plusDays).padStart(2, '0');
-			var mm = String(today.getMonth() + 1).padStart(2, '0');
-			var yyyy = String(today.getFullYear());
-			// yyyy = yyyy.substr(yyyy.length - 2);
-			var currentDaysInMonth = new Date().daysInMonth()
-			if (+dd > currentDaysInMonth) {
-				dd = String(dd - currentDaysInMonth).padStart(2, '0');
-				mm++
+	modals: function() {
+		function modal() {
+			$(".add__review").click(function () {
+				$(".modal").addClass("active")
+			})
+	
+			function close() {
+				$(".modal").removeClass("active")
 			}
-			return dd + "." + mm + "." + yyyy
+	
+			$(".modal").click( function(e) {
+				var target = e.target;
+				if(target.classList.contains("modal__close")) {
+					close()
+				}
+				if(target.classList.contains("modal")) {
+					close()
+				}
+			})
+	
+			function readURL(input) {
+				if (input.files && input.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function (e) {
+						$('.file img').attr('src', e.target.result).css("display", "block");
+					};
+					reader.readAsDataURL(input.files[0]);
+				}
+			}
+	
+			$(".modal .input__file").on("change", function () {
+				readURL(this);
+			});
+	
+			$(".modal form").submit(function (e) {
+				e.preventDefault()
+				$(this).removeClass("active");
+				$(".send__window").addClass("active");
+				$(".modal .name__input").val("")
+				$(".modal .modal__area").val("")
+				$(".modal .file img").attr("src", "").css("display", "none")
+				delayClose()
+			})
+			function delayClose() {
+				setTimeout(function () {
+					$(".modal form").addClass("active");
+					$(".send__window").removeClass("active");
+					close();
+				}, 5000);
+			}
 		}
 	
-		$(".discount__info .date span").text(getDate(2));
+		modal()
+	
+		function privacy() {
+			$(".confidantion").click(function () {
+				$(".privacy-policy-popup").addClass("active")
+			})
+	
+			function close() {
+				$(".privacy-policy-popup").removeClass("active")
+			}
+	
+			$(".privacy-policy-popup").click( function(e) {
+				var target = e.target;
+				if(target.classList.contains("privacy__close")) {
+					close()
+				}
+				if(target.classList.contains("privacy-policy-popup")) {
+					close()
+				}
+			})
+		}
+	
+		privacy()
 	},
 	
 }
