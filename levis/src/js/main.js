@@ -2,6 +2,7 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.modals()
+		this.time()
 	}, 
 
 	initLibraris: function() {
@@ -56,26 +57,36 @@ var landingFunctions = {
 			items: 1,
 			margin: 50,
 			autoHeight: true,
+			responsive:{
+				0:{
+					dots: true,
+					// dotsEach: true,
+				},
+				701:{
+					dots: false,
+					dotsEach: false,
+				},
+			}
 		})
 
 		$.raty.path = 'img/raty';
 
 		$('.modal__raiting').raty({
-			half: true,
+			half: false,
 			space: false,
 			number: 5,
 		});
 	
-		// AOS.init({
-		// 	disable : 'mobile',
-		// 	once: true,
-		// 	duration: 600,
-		// 	// offset : -200,
-		// });
+		AOS.init({
+			disable : 'mobile',
+			once: true,
+			duration: 600,
+			// offset : -200,
+		});
 	
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
+		$(window).resize(function() {
+			AOS.refresh();
+		})
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
@@ -164,6 +175,54 @@ var landingFunctions = {
 		}
 	
 		privacy()
+	},
+
+	time: function() {
+
+		Date.prototype.daysInMonth = function () {
+			return 32 - new Date(this.getFullYear(), this.getMonth(), 32).getDate();
+		};
+		
+		if (!String.prototype.padStart) {
+			String.prototype.padStart = function padStart(targetLength, padString) {
+				targetLength = targetLength >> 0; //truncate if number or convert non-number to 0;
+				padString = String((typeof padString !== 'undefined' ? padString : ' '));
+				if (this.length > targetLength) {
+					return String(this);
+				}
+				else {
+					targetLength = targetLength - this.length;
+					if (targetLength > padString.length) {
+						padString += padString.repeat(targetLength / padString.length); //append to original to ensure we are longer than needed
+					}
+					return padString.slice(0, targetLength) + String(this);
+				}
+			};
+		}
+
+		function getDate(plusDays) {
+			var today = new Date();
+			var dd = String(today.getDate() + plusDays).padStart(2, '0');
+			var mm = String(today.getMonth() + 1).padStart(2, '0');
+			if (+dd < 0) {
+				mm = String(today.getMonth()).padStart(2, '0');
+			}
+			
+			var yyyy = String(today.getFullYear());
+			// yyyy = yyyy.substr(yyyy.length - 2);
+			var currentDaysInMonth = new Date().daysInMonth()
+			if (+dd > currentDaysInMonth) {
+				dd = String(dd - currentDaysInMonth).padStart(2, '0');
+				mm++
+			}
+			if (+dd < 0) {
+				dd = String(currentDaysInMonth + +dd).padStart(2, '0');
+			}
+			return dd + "." + mm + "." + yyyy
+		}
+	
+		$(".date__1").text(getDate(-4));
+		$(".date__2").text(getDate(2));
 	},
 	
 }

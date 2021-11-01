@@ -51,7 +51,7 @@ select{
 
 select::-ms-value {
 	background: none;
-	color: #000;
+	color: #fff;
 }
 
 select::-ms-expand {
@@ -78,6 +78,7 @@ option {
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
+	color: inherit;
 }
 
 img {
