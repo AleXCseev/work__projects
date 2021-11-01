@@ -26,7 +26,7 @@
 	padding: 50px 30px 46px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 	align-self: stretch;
 	margin-right: 30px;
@@ -228,16 +228,16 @@
 }
 
 .galary__text {
-	width: 460px;
+	width: 500px;
 	font-weight: normal;
 	font-size: 24px;
 	line-height: 1.3;
 	color: #333333;
-	margin-bottom: 41px;
+	margin-bottom: 30px;
 }
 
 .galary__items {
-	width: 345px;
+	width: 360px;
 	height: auto;
 	margin-left: 150px;
 }
@@ -245,7 +245,7 @@
 .galary__item {
 	padding-left: 40px;
 	position: relative;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .galary__img-wrapper {
@@ -271,7 +271,7 @@
 
 .galary__item-text {
 	font-weight: normal;
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 1.3;
 	color: #333333;
 }
