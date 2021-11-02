@@ -2866,7 +2866,7 @@ body {
     font-size: 4.5vw;
   }
   .discount__info {
-    width: 70%;
+    width: 80%;
     font-size: 4.2vw;
   }
   .site__header {
@@ -2969,6 +2969,7 @@ body {
   }
   .card__foto {
     width: 31%;
+    max-height: 95px;
     margin-bottom: 10px;
   }
   .card__title {
@@ -3051,5 +3052,20 @@ body {
   }
   .info__text {
     font-size: 4.5vw;
+  }
+  .card__foto {
+    max-height: 81px;
+  }
+}
+
+@media (max-width: 375px) {
+  .card__foto {
+    max-height: 72px;
+  }
+}
+
+@media (max-width: 320px) {
+  .discount__info {
+    width: 85%;
   }
 }
