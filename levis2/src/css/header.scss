@@ -1,0 +1,220 @@
+.site__header {
+	width: 100%;
+	height: 850px;
+	background-image: url(../img/header-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.header__wrapper {
+	width: 100%;
+	height: auto;
+}
+
+.header__content {
+	width: 593px;
+	height: auto;
+	padding-top: 40px;
+	position: relative;
+	z-index: 1;
+
+	&:before {
+		content: "";
+		width: 582px;
+		height: 925px;
+		background: linear-gradient(180deg, rgba(162, 171, 255, 0.8) 68.15%, rgba(243, 64, 193, 0.8) 103.96%, rgba(248, 32, 239, 0.8) 103.96%);
+		mix-blend-mode: multiply;
+		filter: blur(300px);
+		transform: rotate(18.35deg);
+		position: absolute;
+		top: -190px;
+		right: -1090px;
+	}
+
+	&:after {
+		content: "";
+		width: 480px;
+		height: 760px;
+		background: linear-gradient(180deg, rgba(162, 171, 255, 0.5) 68.15%, rgba(243, 64, 193, 0.5) 103.96%, rgba(248, 32, 239, 0.5) 103.96%);
+		mix-blend-mode: multiply;
+		filter: blur(300px);
+		transform: rotate(18.35deg);
+		position: absolute;
+		top: 0;
+		right: -370px;
+	}
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	/* IE10+ CSS styles go here */
+	.header__content {
+		&:before {
+			display: none;
+		}
+
+		&:after {
+			display: none;
+		}
+	}
+}
+
+.header__img {
+	display: block;
+	height: 850px;
+	width: auto;
+	position: absolute;
+	top: 0;
+	right: -1000px;
+	z-index: -1;
+}
+
+.header__boot {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: -331px;
+}
+
+.header__logo {
+	display: block;
+	margin-bottom: 60px;
+}
+
+.header__subtitle {
+	font-family: "Mazzard M", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 1;
+	color: #07477D;
+}
+
+.header__title {
+	font-family: "Mazzard M", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 86px;
+	line-height: 1.05;
+	color: #07477D;
+	margin-bottom: 5px;
+}
+
+.header__text {
+	font-family: "Mazzard M", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 1.17;
+	color: #0D5088;
+	margin-bottom: 35px;
+}
+
+.header__price {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.price {
+	display: flex;
+	align-items: baseline;
+}
+
+.new__price {
+	font-family: "Mazzard M", sans-serif;
+	font-style: normal;
+	font-weight: 350;
+	font-size: 48px;
+	line-height: 1;
+	color: #0D5088;
+	margin-right: 15px;
+}
+
+.old__price {
+	font-family: "SF Pro Display", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 21px;
+	color: rgba(13, 80, 136, 0.7);
+	position: relative;
+
+	&:before {
+		content: "";
+		width: 100%;
+		height: 1px;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		background: #0D5088;
+		transform: translateY(-50%);
+	}
+}
+
+.header__btns {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.order__btn {
+	width: 250px;
+	height: 72px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #0D5088;
+	border: 1px solid #0D5088;
+	font-family: "SF Pro Display", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1;
+	color: #FFFFFF;
+	margin-right: 25px;
+	transition: 0.3s ease;
+
+	&:hover {
+		color: #0D5088;
+		border: 1px solid #0D5088;
+		background: rgba(255, 255, 255, 0.5);
+	}
+}
+
+.video__btn {
+	width: 250px;
+	height: 72px;
+	background: rgba(255, 255, 255, 0.15);
+	border: 1px solid #0D5088;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "SF Pro Display", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1;
+	color: #0D5088;
+	transition: 0.3s ease;
+
+	&:hover {
+		background: rgba(255, 255, 255, 0.5);
+	}
+}
+
+.video__play {
+	margin-right: 15px;
+}
+
+.discount__time {
+	font-family: "SF Pro Display", sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 1.3;
+	text-transform: lowercase;
+	color: #0D5088;
+
+	span {
+		font-weight: normal;
+	}
+}
