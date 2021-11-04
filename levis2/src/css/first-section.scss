@@ -229,6 +229,7 @@
 	margin-left: -875px;
 	bottom: 0;
 	z-index: 1;
+	filter: grayscale(100%);
 }
 
 .galary__item-2 {
@@ -259,6 +260,7 @@
 	margin-left: 875px;
 	bottom: 0;
 	z-index: 1;
+	filter: grayscale(100%);
 }
 
 .card__section {
@@ -269,10 +271,88 @@
 .card {
 	width: 100%;
 	display: flex;
+	position: relative;
+	z-index: 1;
+}
+
+.card__circle {
+	mix-blend-mode: multiply;
+	filter: blur(50px);
+	border-radius: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
+.card1__circle-1 {
+	width: 569px;
+	height: 573px;
+	background: radial-gradient(circle, rgba(243,64,193,0.3) 0%, rgba(243,64,193,0) 70%);
+	top: -316px;
+    left: -569px;
+}
+
+.card1__circle-2 {
+	width: 569px;
+	height: 573px;
+	background: radial-gradient(circle, rgba(243,64,193,0.3) 0%, rgba(243,64,193,0) 70%);
+	top: 118px;
+    left: -405px;
+}
+
+.card1__circle-3 {
+	width: 569px;
+	height: 573px;
+	background: radial-gradient(circle, rgba(243,64,193,0.3) 0%, rgba(243,64,193,0) 70%);
+	top: 50px;
+    left: 60px;
+}
+
+.card1__circle-4 {
+	width: 423px;
+	height: 426px;
+	background: radial-gradient(circle, rgba(243,64,193,0.2) 0%, rgba(243,64,193,0) 70%);
+	top: -150px;
+    right: -400px;
+}
+
+.card2__circle-1 {
+	width: 569px;
+	height: 573px;
+	background: radial-gradient(circle, rgba(243,64,193,0.3) 0%, rgba(243,64,193,0) 70%);
+	top: 60px;
+    left: -400px;
+}
+
+.card2__circle-2 {
+	width: 423px;
+	height: 426px;
+	background: radial-gradient(circle, rgba(243,64,193,0.3) 0%, rgba(243,64,193,0) 70%);
+	top: 280px;
+    left: -500px;
+}
+
+.card2__circle-3 {
+	width: 569px;
+	height: 573px;
+	background: radial-gradient(circle, rgba(243,64,193,0.3) 0%, rgba(243,64,193,0) 70%);
+	top: 50px;
+    left: 60px;
+}
+
+.card2__circle-4 {
+	width: 569px;
+	height: 573px;
+	background: radial-gradient(circle, rgba(243,64,193,0.3) 0%, rgba(243,64,193,0) 70%);
+	top: 200px;
+    right: -585px;
 }
 
 .card__1 {
 	margin-bottom: 115px;
+}
+
+.card__2 {
+	margin-bottom: 50px;
 }
 
 .card__left {
@@ -294,10 +374,10 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-bottom: 5px;
 	}
 
 	img {
-		margin-bottom: 5px;
 		pointer-events: auto;
 		display: block;
 		transition: 0.3s ease;
@@ -323,6 +403,228 @@
 }
 
 .card__right {
-	
+	width: 505px;
+	position: relative;
 }
+
+.card__title {
+	font-family: "Mazzard M", sans-serif;
+	font-style: normal;
+	font-weight: 350;
+	font-size: 48px;
+	line-height: 1;
+	color: #01325B;
+	margin-bottom: 15px;
+}
+
+.card__discount {
+	display: inline-block;
+	width: 140px;
+	height: auto;
+	position: absolute;
+	right: 0;
+	top: 73px;
+	text-align: right;
+	font-family: "SF Pro Display", sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: right;
+	color: rgba(13, 80, 136, 0.63);
+
+	span {
+		font-weight: normal;
+	}
+}
+
+.card__price {
+	margin-bottom: 15px;
+
+	.new__price {
+		color: #3E709A;
+	}
+
+	.old__price {
+		color: rgba(1, 50, 91, 0.8);
+
+		&:before {
+			background: #01325B;
+		}
+	}
+}
+
+.card__form {
+	width: 100%;
+	height: auto;
+}
+
+.card__size {
+	display: flex;
+	align-items: center;
+	font-family: "SF Pro Display";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.2;
+	text-align: center;
+	color: #01325B;
+	margin-bottom: 22px;
+}
+
+.card__size-text {
+	margin-right: 30px;
+}
+
+.card__size-btn {
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid rgba(1, 50, 91, 0.3);
+	margin-right: 15px;
+	background: none;
+	font-weight: 200;
+	color: rgba(1, 50, 91, 0.5);
+	cursor: pointer;
+	transition: 0.3s ease;
+
+	&:hover {
+		border: 1px solid rgba(1, 50, 91, 0.5);
+		color: rgba(1, 50, 91, 0.7);
+	}
+
+	&.active {
+		font-weight: 300;
+		border: 1px solid rgba(1, 50, 91, 0.5);
+		color: #01325B;
+	}
+}
+
+.card__inputs {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-bottom: 5px;
+}
+
+.card__input-wrapper {
+	width: 48%;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+.card__input {
+	width: 100%;
+	height: 50px;
+	border: 1px solid rgba(13, 80, 136, 0.3);
+	background: transparent;
+	padding: 0 22px;
+	font-family: "SF Pro Display", sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 1;
+	color: #01325B;
+}
+
+.card__color {
+	display: flex;
+	height: 50px;
+	align-items: center;
+	margin-bottom: 15px;	
+}
+
+.color {
+	width: 34px;
+	height: 34px;
+	border-radius: 100%;
+	border: 1px solid rgba(1, 50, 91, 0.3);
+	position: relative;
+
+	&:before {
+		content: "";
+		width: 28px;
+		height: 28px;
+		border-radius: 100%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: #FFA16C;
+	}
+}
+
+.card__2 .color {
+	&:before {
+		background: #000;
+	}
+}
+
+.card__submit {
+	height: 50px;
+	width: 70%;
+	background: #3E709A;
+	border: 1px solid #3E709A;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "SF Pro Display", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1;
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: 0.3s ease;
+
+	&:hover {
+		color: #3E709A;
+		background: transparent;
+	}
+}
+
+.card__info {
+	width: 100%;
+	height: auto;
+	padding-top: 15px;
+	border-top: 1px solid rgba(1, 50, 91, 0.2);
+}
+
+.card__info-title {
+	display: inline-block;
+	font-family: "SF Pro Display", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #01325B;
+	margin-bottom: 18px;
+}
+
+.card__info-text {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	font-family: "SF Pro Display", sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #01325B;
+	margin-bottom: 4px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.card__info-right {
+	font-weight: 300;
+}
+
  
