@@ -52,6 +52,14 @@ var landingFunctions = {
 			autoWidth: true,
 			onInitialized: addSliderClass,
 			onTranslate: addSliderClass,
+			responsive:{
+				0:{
+					margin: 52,
+				},
+				1000:{
+					margin: 10,
+				}
+			}
 		})
 
 		function addSliderClass(event) {
@@ -69,11 +77,29 @@ var landingFunctions = {
 			owl.trigger('next.owl.carousel');
 		})
 
-		// $(".review__photo-slider").on('translate.owl.carousel', function(e){
-		// 	idx = e.item.index;
-		// 	$('.owl-item.big').removeClass('big');
-		// 	$('.owl-item').eq(idx).addClass('big');
-		// });
+		if($(window).width() <= 1000) {
+			$(".galary").addClass("owl-carousel").owlCarousel({
+				loop: true,
+				nav : false,
+				dots: true,
+				dotsEach: true,
+				items: 3,
+				margin: 10,
+				// autoHeight: true,
+			})
+		}
+
+		if($(window).width() <= 700) {
+			$(".card__fotos").addClass("owl-carousel").owlCarousel({
+				loop: true,
+				nav : false,
+				dots: true,
+				dotsEach: true,
+				items: 4,
+				margin: 10,
+				// autoHeight: true,
+			})
+		}
 
 	
 		// AOS.init({

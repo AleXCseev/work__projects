@@ -226,38 +226,38 @@
 }
 
 .galary__item-1 {
-	margin-left: -875px;
+	margin-left: -46%;
 	bottom: 0;
 	z-index: 1;
 	filter: grayscale(100%);
 }
 
 .galary__item-2 {
-	margin-left: -575px;
+	margin-left: -31%;
 	top: 0;
 	z-index: 2;
 }
 
 .galary__item-3 {
-	margin-left: -340px;
+	margin-left: -18%;
 	bottom: 0;
 	z-index: 3;
 }
 
 .galary__item-4 {
-	margin-left: 340px;
+	margin-left: 18%;
 	bottom: 0;
 	z-index: 3;
 }
 
 .galary__item-5 {
-	margin-left: 575px;
+	margin-left: 31%;
 	top: 0;
 	z-index: 2;
 }
 
 .galary__item-6 {
-	margin-left: 875px;
+	margin-left: 46%;
 	bottom: 0;
 	z-index: 1;
 	filter: grayscale(100%);
@@ -474,6 +474,13 @@
 
 .card__size-text {
 	margin-right: 30px;
+	font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #01325B;
 }
 
 .card__size-btn {
