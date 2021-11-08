@@ -160,7 +160,7 @@
 
 .galary__block {
 	width: 350px;
-	padding: 88px 11px;
+	padding: 100px 11px;
 	margin: auto;
 	background-image: url(../img/card-bg.jpg);
 	background-repeat: no-repeat;
@@ -281,6 +281,7 @@
 	border-radius: 100%;
 	position: absolute;
 	z-index: -1;
+	pointer-events: none;
 }
 
 .card1__circle-1 {
@@ -360,6 +361,7 @@
 	height: auto;
 	display: flex;
 	position: relative;
+	z-index: 1;
 }
 
 .card__fotos {
@@ -375,12 +377,16 @@
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 5px;
+		pointer-events: auto;
 	}
 
 	img {
 		pointer-events: auto;
 		display: block;
 		transition: 0.3s ease;
+		max-height: 110px;
+		width: 100%;
+		object-fit: cover;
 	}
 
 	a:hover {
@@ -415,6 +421,10 @@
 	line-height: 1;
 	color: #01325B;
 	margin-bottom: 15px;
+
+	br  {
+		display: none;
+	}
 }
 
 .card__discount {

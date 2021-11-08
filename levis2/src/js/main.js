@@ -93,11 +93,10 @@ var landingFunctions = {
 			$(".card__fotos").addClass("owl-carousel").owlCarousel({
 				loop: true,
 				nav : false,
-				dots: true,
-				dotsEach: true,
+				dots: false,
+				dotsEach: false,
 				items: 4,
 				margin: 10,
-				// autoHeight: true,
 			})
 		}
 
