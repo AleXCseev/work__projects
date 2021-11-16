@@ -2,15 +2,16 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.video()
-		// this.modals()
 		this.time()
 		this.card()
 	}, 
 
 	initLibraris: function() {
 
+		objectFitImages()
+
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = 50;
+			var fixedOffset = 10;
 			var cardHeight = $(".card").outerHeight(false)
 			var windowHeight = $(window).height()
 	
@@ -21,41 +22,63 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
-		// function switchBtns(selector) {
-		// 	$(selector + " .card__size-btn").click(function () {
-		// 		$(selector + " .card__size-btn").removeClass("active")
-		// 		$(this).addClass("active");
-		// 	})
-		// }
-	
-		// switchBtns(".card__1");
-		// switchBtns(".card__2");
-
-	
-
-
 		$(".main__slider").owlCarousel({
 			loop: true,
 			nav : true,
 			dots: false,
+			dotsEach: false,
 			items: 6,
 			margin: 30,
-			// mouseDrag: false,
-			// touchDrag: false,
-			// autoHeight: true,
+			responsive:{
+				700: {
+					items: 6,
+					nav:true,
+					dots: false,
+					dotsEach: false,
+				},
+				0: {
+					items: 3,
+					nav: false,
+					dots: true,
+					dotsEach: true,
+				}
+			}
 		})
 
+		if($(window).width() <= 1000) {
+			$(".reviews").addClass("owl-carousel").owlCarousel({
+				loop: true,
+				nav : false,
+				dots: true,
+				dotsEach: true,
+				items: 2,
+				margin: 30,
+				stagePadding: 15,
+				autoHeight: false,
+				responsive:{
+					701: {
+						items: 2,
+						autoHeight: false,
+					
+					},
+					0: {
+						items: 1,
+						autoHeight: true,
+					}
+				}
+			})
+		}
+
+		AOS.init({
+			disable : 'mobile',
+			once: true,
+			duration: 1000,
+			// offset : -200,
+		});
 	
-		// AOS.init({
-		// 	disable : 'mobile',
-		// 	once: true,
-		// 	duration: 600,
-		// 	// offset : -200,
-		// });
-	
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
+		$(window).resize(function() {
+			AOS.refresh();
+		})
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
@@ -64,86 +87,6 @@ var landingFunctions = {
 			backFocus: false,
 			hash: false,
 		});
-
-		// $(".year").text(new Date().getFullYear())
-	},
-
-
-	modals: function() {
-		function modal() {
-			$(".add__review").click(function () {
-				$(".modal").addClass("active")
-			})
-	
-			function close() {
-				$(".modal").removeClass("active")
-			}
-	
-			$(".modal").click( function(e) {
-				var target = e.target;
-				if(target.classList.contains("modal__close")) {
-					close()
-				}
-				if(target.classList.contains("modal")) {
-					close()
-				}
-			})
-	
-			function readURL(input) {
-				if (input.files && input.files[0]) {
-					var reader = new FileReader();
-					reader.onload = function (e) {
-						$('.file img').attr('src', e.target.result).css("display", "block");
-					};
-					reader.readAsDataURL(input.files[0]);
-				}
-			}
-	
-			$(".modal .input__file").on("change", function () {
-				readURL(this);
-			});
-	
-			$(".modal form").submit(function (e) {
-				e.preventDefault()
-				$(this).removeClass("active");
-				$(".send__window").addClass("active");
-				$(".modal .name__input").val("")
-				$(".modal .modal__area").val("")
-				$(".modal .file img").attr("src", "").css("display", "none")
-				delayClose()
-			})
-			function delayClose() {
-				setTimeout(function () {
-					$(".modal form").addClass("active");
-					$(".send__window").removeClass("active");
-					close();
-				}, 5000);
-			}
-		}
-	
-		modal()
-	
-		function privacy() {
-			$(".confidantion").click(function () {
-				$(".privacy-policy-popup").addClass("active")
-			})
-	
-			function close() {
-				$(".privacy-policy-popup").removeClass("active")
-			}
-	
-			$(".privacy-policy-popup").click( function(e) {
-				var target = e.target;
-				if(target.classList.contains("privacy__close")) {
-					close()
-				}
-				if(target.classList.contains("privacy-policy-popup")) {
-					close()
-				}
-			})
-		}
-	
-		privacy()
 	},
 
 	video: function() {
@@ -204,13 +147,21 @@ var landingFunctions = {
 			var h = String(23 - d.getHours()).padStart(2, "0");
 			var m = String(59 - d.getMinutes()).padStart(2, "0");
 			var s = String(60 - d.getSeconds()).padStart(2, "0");
-			$(hoursSelector).text(h)
-			$(minutesSelector).text(m)
-			$(secondsSelector).text(s)
+
+			if ($(window).width() > 480) {
+				$(hoursSelector).html("<span>" + h + "</span> часов")
+				$(minutesSelector).html("<span>" + m + "</span> минут")
+				$(secondsSelector).html("<span>" + s + "</span> секунд")
+			} else {
+				$(hoursSelector).html("<span>" + h + "</span> час.")
+				$(minutesSelector).html("<span>" + m + "</span> мин.")
+				$(secondsSelector).html("<span>" + s + "</span> сек.")
+			}
+			
 		}
 
 		setInterval(function () {
-			runMultiple(".hours span", ".minutes span", ".seconds span")
+			runMultiple(".hours", ".minutes", ".seconds")
 		}, 1000);
 
 		function getDate(plusDays) {
@@ -248,22 +199,43 @@ var landingFunctions = {
 		})
 
 		function cardTab () {
+			if($(window).width() < 1000) {
+				$(".card .list").removeClass("active");
+				$(".card .card__btn").removeClass("active");
+			}
 			$(".card__btn").click(function() {
-				$(this).closest(".card__btns").find(".card__btn").removeClass("active")
-				$(this).closest(".card__btns").find(".list").removeClass("active")
-				if($(this).hasClass("characteristic__btn")) {
-					$(this).closest(".card__btns").find(".characteristic__list").addClass("active")
-					$(this).addClass("active")
-				}
-				if($(this).hasClass("advantage__btn")) {
-					$(this).closest(".card__btns").find(".advantage__list").addClass("active")
-					$(this).addClass("active")
-				}
-				if($(this).hasClass("complectation__btn")) {
-					$(this).closest(".card__btns").find(".complectation__list").addClass("active")
-					$(this).addClass("active")
-				}
+				if($(window).width() >= 1000) {
+					$(this).closest(".card__btns").find(".list").removeClass("active")
+					$(this).closest(".card__btns").find(".card__btn").removeClass("active")
+
+					if($(this).hasClass("characteristic__btn")) {
+						$(this).closest(".card__btns").find(".characteristic__list").addClass("active")
+						$(this).addClass("active")
+					}
+					if($(this).hasClass("advantage__btn")) {
+						$(this).closest(".card__btns").find(".advantage__list").addClass("active")
+						$(this).addClass("active")
+					}
+					if($(this).hasClass("complectation__btn")) {
+						$(this).closest(".card__btns").find(".complectation__list").addClass("active")
+						$(this).addClass("active")
+					}
+				} else {
+					if($(this).hasClass("characteristic__btn")) {
+						$(this).closest(".card__btns").find(".characteristic__list").toggleClass("active")
+						$(this).toggleClass("active")
+					}
+					if($(this).hasClass("advantage__btn")) {
+						$(this).closest(".card__btns").find(".advantage__list").toggleClass("active")
+						$(this).toggleClass("active")
+					}
+					if($(this).hasClass("complectation__btn")) {
+						$(this).closest(".card__btns").find(".complectation__list").toggleClass("active")
+						$(this).toggleClass("active")
+					}
+				}	
 			})
+			
 		}
 
 		cardTab()

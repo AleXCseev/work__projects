@@ -3,7 +3,7 @@
 	height: auto;
 	background-image: url(../img/main-bg.png);
 	background-position: center;
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
@@ -251,6 +251,10 @@
 	line-height: 1.5;
 	text-align: center;
 	color: #303030;
+
+	br {
+		display: none;
+	}
 }
 
 .timer__wrapper {
@@ -259,7 +263,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: baseline;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .time {
@@ -291,7 +295,7 @@
 
 	.order__btn {
 		max-width: 100%;
-		height: 50px;
+		height: 60px;
 		cursor: pointer;
 	}
 }
