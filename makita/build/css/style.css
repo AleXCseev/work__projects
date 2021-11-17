@@ -993,6 +993,7 @@ body {
 }
 
 .card__btn-disabled {
+  display: none;
   opacity: 0;
   visibility: hidden;
 }
@@ -1823,6 +1824,14 @@ body {
 
   .header__img {
     width: 110%;
+  }
+
+  .slide__text {
+    font-size: 13px;
+  }
+
+  .timer__wrapper {
+    max-height: 64px;
   }
 
   .timer__text {
