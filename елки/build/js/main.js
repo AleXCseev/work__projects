@@ -1,9 +1,9 @@
 var landingFunctions = {
 	init: function() {
-		// this.initLibraris()
+		this.initLibraris()
 		// this.video()
 		// this.time()
-		// this.card()
+		this.card()
 	}, 
 
 	initLibraris: function() {
@@ -11,7 +11,7 @@ var landingFunctions = {
 		objectFitImages()
 
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = 10;
+			var fixedOffset = 50;
 			var cardHeight = $(".card").outerHeight(false)
 			var windowHeight = $(window).height()
 	
@@ -19,66 +19,76 @@ var landingFunctions = {
 			$('html, body')
 				.stop()
 				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
 			e.preventDefault();
 		});
 
-		$(".main__slider").owlCarousel({
+		$(".card__slider").owlCarousel({
 			loop: true,
-			nav : true,
+			nav : false,
 			dots: false,
 			dotsEach: false,
-			items: 6,
-			margin: 30,
-			responsive:{
-				700: {
-					items: 6,
-					nav:true,
-					dots: false,
-					dotsEach: false,
-				},
-				0: {
-					items: 3,
-					nav: false,
-					dots: true,
-					dotsEach: true,
-				}
-			}
-		})
-
-		if($(window).width() <= 1000) {
-			$(".reviews").addClass("owl-carousel").owlCarousel({
-				loop: true,
-				nav : false,
-				dots: true,
-				dotsEach: true,
-				items: 2,
-				margin: 30,
-				stagePadding: 15,
-				autoHeight: false,
-				responsive:{
-					701: {
-						items: 2,
-						autoHeight: false,
-					
-					},
-					0: {
-						items: 1,
-						autoHeight: true,
-					}
-				}
-			})
-		}
-
-		AOS.init({
-			disable : 'mobile',
-			once: true,
-			duration: 1000,
-			// offset : -200,
+			items: 1,
+			margin: 20,
 		});
+
+		// $(".main__slider").owlCarousel({
+		// 	loop: true,
+		// 	nav : true,
+		// 	dots: false,
+		// 	dotsEach: false,
+		// 	items: 6,
+		// 	margin: 30,
+		// 	responsive:{
+		// 		700: {
+		// 			items: 6,
+		// 			nav:true,
+		// 			dots: false,
+		// 			dotsEach: false,
+		// 		},
+		// 		0: {
+		// 			items: 3,
+		// 			nav: false,
+		// 			dots: true,
+		// 			dotsEach: true,
+		// 		}
+		// 	}
+		// })
+
+		// if($(window).width() <= 1000) {
+		// 	$(".reviews").addClass("owl-carousel").owlCarousel({
+		// 		loop: true,
+		// 		nav : false,
+		// 		dots: true,
+		// 		dotsEach: true,
+		// 		items: 2,
+		// 		margin: 30,
+		// 		stagePadding: 15,
+		// 		autoHeight: false,
+		// 		responsive:{
+		// 			701: {
+		// 				items: 2,
+		// 				autoHeight: false,
+					
+		// 			},
+		// 			0: {
+		// 				items: 1,
+		// 				autoHeight: true,
+		// 			}
+		// 		}
+		// 	})
+		// }
+
+		// AOS.init({
+		// 	disable : 'mobile',
+		// 	once: true,
+		// 	duration: 1000,
+		// 	// offset : -200,
+		// });
 	
-		$(window).resize(function() {
-			AOS.refresh();
-		})
+		// $(window).resize(function() {
+		// 	AOS.refresh();
+		// })
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
@@ -189,56 +199,74 @@ var landingFunctions = {
 	},
 
 	card: function() {
-		$(".card__slider").owlCarousel({
-			loop: true,
-			nav : true,
-			dots: false,
-			items: 1,
-			margin: 30,
-			// autoHeight: true,
-		})
+		$(".card__btn").click(function() {
+			var $card = "." + $(this).data("card");
 
-		function cardTab () {
-			if($(window).width() < 1000) {
-				$(".card .list").removeClass("active");
-				$(".card .card__btn").removeClass("active");
+			var $cardTitle = $($card + " .card__title").text();
+			var $cardInfo = $($card).find(".card__info").text();
+
+			$(".modal__card .modal__select").css("display", "block");
+			$(".modal__card .modal__select-premium").css("display", "none");
+
+			$(".modal__card .modal__select option:first").prop('selected',true);
+			$(".modal__card .modal__title").text($cardTitle);
+			$(".modal__card .modal__text").text($cardInfo);
+
+			if($(this).data("status") == "premium") {
+				$(".modal__card .modal__select").css("display", "none");
+				$(".modal__card .modal__select-premium").css("display", "block");
 			}
-			$(".card__btn").click(function() {
-				if($(window).width() >= 1000) {
-					$(this).closest(".card__btns").find(".list").removeClass("active")
-					$(this).closest(".card__btns").find(".card__btn").removeClass("active")
 
-					if($(this).hasClass("characteristic__btn")) {
-						$(this).closest(".card__btns").find(".characteristic__list").addClass("active")
-						$(this).addClass("active")
-					}
-					if($(this).hasClass("advantage__btn")) {
-						$(this).closest(".card__btns").find(".advantage__list").addClass("active")
-						$(this).addClass("active")
-					}
-					if($(this).hasClass("complectation__btn")) {
-						$(this).closest(".card__btns").find(".complectation__list").addClass("active")
-						$(this).addClass("active")
-					}
-				} else {
-					if($(this).hasClass("characteristic__btn")) {
-						$(this).closest(".card__btns").find(".characteristic__list").toggleClass("active")
-						$(this).toggleClass("active")
-					}
-					if($(this).hasClass("advantage__btn")) {
-						$(this).closest(".card__btns").find(".advantage__list").toggleClass("active")
-						$(this).toggleClass("active")
-					}
-					if($(this).hasClass("complectation__btn")) {
-						$(this).closest(".card__btns").find(".complectation__list").toggleClass("active")
-						$(this).toggleClass("active")
-					}
-				}	
+			if($(this).data("status") == "wreath") {
+				$(".modal__card .modal__select").css("display", "none");
+				$(".modal__card .modal__select-premium").css("display", "none");
+			}
+		})
+		
+		function switchColor(selector) {
+			$(selector).click(function () {
+				$(selector).removeClass("active");
+				$(this).addClass("active");
 			})
-			
 		}
+	
+		switchColor(".card__5 .color")
+		switchColor(".card__6 .color")
+		switchColor(".card__7 .color")
+		switchColor(".card__8 .color")
 
-		cardTab()
+
+		function galary(selector) {
+			var galaryFototsSelector = selector + " .card__slide img";
+	
+			function toggleDataSrcAtribute(string) {
+				$(galaryFototsSelector).each(function () {
+					if($(this).attr("src") === $(this).attr("data-" + string)) {
+						return
+					}
+					var galary = $(this).attr("data-" + string);
+					$(this)
+						.hide()
+						.attr("src",  galary)
+						.fadeIn(1000);
+					$(this).parent().attr("href", galary)
+				})
+			}
+	
+			$(selector + " .color").click(function () {
+				if ($(this).hasClass("green")) {
+					toggleDataSrcAtribute("green");
+				} 
+				if ($(this).hasClass("blue")) {
+					toggleDataSrcAtribute("blue");
+				}
+			})
+		}
+	
+		galary(".card__5")
+		galary(".card__6")
+		galary(".card__7")
+		galary(".card__8")
 	},
 }
 

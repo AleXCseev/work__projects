@@ -1,0 +1,86 @@
+.modal {
+    display: none;
+    max-width: 600px !important;
+    margin: auto;
+    background-color: #fff;
+}
+
+.modal__img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.fancybox-content {
+	padding: 0;
+}
+
+.modal__wrapper {
+	padding: 0 20px 40px;
+}
+
+.modal__title {
+	text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 28px;
+	line-height: 1.4;
+	margin-bottom: 20px;
+}
+
+.modal__text {
+	font-size: 16px;
+    text-align: center;
+	margin-bottom: 20px;
+	line-height: 1.4;
+}
+
+.modal__input-wrapper {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.modal__input {
+    height: 60px;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1;
+    width: 100%;
+	color: #000000;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+}
+
+.form__btn {
+	width: 100%;
+	height: auto;
+	font-size: 16px;
+	border-radius: 5px;
+	background-color: darkred;
+	border: 1px solid darkred;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 20px;
+	cursor: pointer;
+	transition: 0.3s ease;
+
+	&:hover {
+		background-color: transparent;
+		color: darkred;
+	}
+
+}
+
+.modal__select {
+	height: 60px;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1;
+    width: 100%;
+	color: #000000;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+	cursor: pointer;
+}
+

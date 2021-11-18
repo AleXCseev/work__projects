@@ -1,0 +1,118 @@
+.galary__section {
+	width: 100%;
+	height: auto;
+}
+
+.galary__wrapper {
+	width: 100%;
+	height: auto;
+}
+
+.galary__title {
+	color: #000;
+    font-size: 43px;
+    line-height: 1;
+    text-align: left;
+	font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.galary {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.galary__item {
+	width: 220px;
+	height: auto;
+	margin-bottom: 20px;
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+		pointer-events: auto;
+	}
+}
+
+.sertificate__galary {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+
+	.galary__item {
+		width: 220px;
+		border: 1px solid #000;
+		margin-bottom: 35px;
+	}
+}
+
+.review__section {
+	width: 100%;
+	height: auto;
+}
+
+.review__wrapper {
+	width: 100%;
+	height: auto;
+	padding: 50px 0 100px;
+}
+
+.reviews {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.review {
+	background: #f5f5f5;
+	width: 32%;
+	padding: 20px;
+}
+
+.review__header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.review__img {
+	margin-right: 10px;
+}
+
+.social__logo {
+	margin-bottom: 5px;
+}
+
+.review__name {
+	font-size: 16px;
+    line-height: 1.4;
+	margin-bottom: 5px;
+	color: #212529;
+}
+
+.review__city {
+	font-size: 16px;
+    line-height: 1.4;
+	color: #212529;
+}
+
+.review__text {
+	font-size: 16px;
+	line-height: 1.4;
+	color: #212529;
+}
+
+.review__photo {
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+}
+
+

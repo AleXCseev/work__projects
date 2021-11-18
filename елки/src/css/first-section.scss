@@ -1,0 +1,268 @@
+.site__main {
+	width: 100%;
+	height: auto;
+}
+
+.advantage__section {
+	width: 100%;
+	height: auto;
+}
+
+.advantage__wrapper {
+	width: 100%;
+	height: auto;
+	padding: 100px 0 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.advantage__section-title {
+	font-size: 42px;
+    line-height: 1.4;
+	text-align: center;
+	margin-bottom: 100px;
+	font-weight: bold;
+	color: #292929;
+}
+
+.advantage__block {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.advantage {
+	width: 360px;
+	height: auto;
+	margin-bottom: 30px;
+}
+
+.advantage__header {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.advantage__img {
+	width: 35px;
+	height: auto;
+	margin-right: 10px;
+}
+
+.advantage__title {
+	font-size: 18px;
+    line-height: 1.4;
+	color: #292929;
+    font-weight: bold;
+}
+
+.advantage__text {
+	font-size: 16px;
+    line-height: 1.55;
+	font-weight: normal;
+    color: #292929;
+}
+
+.card__section {
+	width: 100%;
+	height: auto;
+}
+
+.card__wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 0 50px;
+}
+
+.line__img {
+	display: block;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.card__section-title {
+	color: #000;
+    font-family: inherit;
+    font-size: 43px;
+	font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.card__section-subtitle {
+	font-family: inherit;
+    font-size: 26px;
+	line-height: 1;
+    color: #1c1c1c;
+    margin-bottom: 20px;
+    font-weight: bold;
+	text-align: center;
+}
+
+.line__img-2 {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.card__section-text {
+	max-width: 750px;
+    margin: 0 auto;
+    font-size: 17px;
+	line-height: 1.4;
+    color: #1c1c1c;
+    font-weight: 500;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.card__block {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.card {
+	width: 280px;
+	height: auto;
+	padding: 20px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card__slider {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+
+	.owl-nav {
+		width: 80%;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 10px;
+
+		button span {
+			font-size: 20px;
+		}
+	}
+}
+
+.card__slide {
+	width: 100%;
+	height: 350px;
+	position: relative;
+	overflow: hidden;
+
+	img {
+		pointer-events: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: auto;
+	}
+}
+
+.card__title {
+	text-align: center;
+    margin-bottom: 5px;
+    color: #000000;
+    font-family: inherit;
+    font-size: 19px;
+    font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.card__btn {
+	display: inline-block;
+	font-size: 18px;
+    font-weight: bold;
+	border: 1px solid darkred;
+	color: #fff;
+	background-color: darkred;
+	padding: 15px 30px;
+	border-radius: 40px;
+	transition: 0.3s ease;
+
+	&:hover {
+		background-color: transparent;
+		color: darkred;
+	}
+}
+
+.card__hidden {
+	display: none;
+}
+
+.color__wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+} 
+
+.color__text {
+	font-size: 14px;
+	line-height: 1.4;
+	font-weight: bold;
+}
+
+.color {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	margin-right: 10px;
+	cursor: pointer;
+	transition: 0.3s ease;
+
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&.active {
+		border: 2px solid yellow;
+	}
+}
+
+.green {
+	background-color: #345327;
+	border: 2px solid #345327;
+}
+
+.blue {
+	background-color: #035071;
+	border: 2px solid #035071;
+}
+
+.card__img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.card__text {
+	font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+	margin-bottom: 20px;
+}
+
+.card__wreath {
+	width: 380px;
+}
