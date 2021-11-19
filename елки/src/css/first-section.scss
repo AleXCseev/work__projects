@@ -147,15 +147,50 @@
 	margin-bottom: 20px;
 
 	.owl-nav {
-		width: 80%;
+		width: 100%;
 		margin: auto;
 		display: flex;
 		justify-content: space-between;
-		margin-top: 10px;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		padding: 0px 10px;
+		pointer-events: none;
 
-		button span {
-			font-size: 20px;
-		}
+		button {
+			width: 30px;
+			height: 30px;
+			border: 1px solid #005024 !important;
+			border-radius: 100%;
+			// display: flex;
+			// justify-content: center;
+			// align-items: center;
+			transition: 0.3s ease;
+			pointer-events: auto;
+			position: relative;
+
+			span {
+				font-family: inherit;
+				font-weight: normal;
+				font-size: 30px;
+				line-height: 1;
+				// padding-bottom: 5px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				margin-top: -2px;
+			}
+
+			&:hover {
+				background-color: #005024 !important;
+				
+				span {
+					color: #fff;
+				}
+			}
+		}	
 	}
 }
 
@@ -164,6 +199,7 @@
 	height: 350px;
 	position: relative;
 	overflow: hidden;
+	z-index: 1;
 
 	img {
 		pointer-events: auto;
@@ -265,4 +301,8 @@
 
 .card__wreath {
 	width: 380px;
+
+	.card__img {
+		width: 380px;
+	}
 }
