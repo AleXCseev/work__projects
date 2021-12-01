@@ -1,0 +1,281 @@
+.site__header {
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 2;
+
+	&:before {
+		width: 89%;
+		height: 100%;
+		z-index: -1;
+		content: "";
+		background: linear-gradient(180deg, #18359B 0%, #101276 100%);
+		position: absolute;
+		top: 0;
+		left: -390px;
+	}
+}
+
+.header__wrapper {
+	width: 100%;
+	height: auto;
+	padding-left: 70px;
+	padding-top: 80px;
+	padding-bottom: 200px;
+	
+
+	
+}
+
+.header__img-left {
+	width: 378px;
+	height: auto;
+	position: absolute;
+	top: 50px;
+	left: -390px;
+}
+
+.header__content {
+	width: 555px;
+}
+
+.header__title {
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 1.25;
+	color: #FFD43E;
+	margin-bottom: 30px;
+}
+
+.header__list {
+	padding-left: 41px;
+	margin-bottom: 46px;
+}
+
+.header__list-item {
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 1;
+	color: #FFFFFF;
+	position: relative;
+	margin-bottom: 22px;
+
+	&:before {
+		content: "";
+		width: 26px;
+		height: 26px;
+		background-image: url(../img/list-ok.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		position: absolute;
+		top: 50%;
+		left: -41px;
+		transform: translateY(-50%);
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.header__price-block {
+	width: 360px;
+	height: auto;
+}
+
+.header__price {
+	margin-bottom: 14px;
+}
+
+.price {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.old__price {
+	margin-right: 32px;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 1;
+	color: #EBEBEB;
+	position: relative;
+
+	&:before {
+		content: "";
+		background: #FF0000;
+		transform: translate(-50%, -50%) rotate(-3deg);
+		width: 120%;
+		height: 2px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+	}
+}
+
+.new__price {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 1;
+	color: #FFD43E;
+}
+
+.header__order-btn {
+	width: 100%;
+	height: 60px;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+	color: #171367;
+	overflow: hidden;
+
+	span {
+		position: relative;
+		z-index: 2;
+		transform: translateX(-20px);
+		transition: 0.6s ease;
+	}
+
+	&:before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		background: #FED023;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translateX(320px);
+		transition: 0.6s ease;
+	}
+
+	&:after {
+		content: "";
+		width: 24px;
+		height: 24px;
+		background-image: url(../img/arrow.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		position: absolute;
+		top: 50%;
+		right: 28px;
+		transform: translateY(-50%);
+		transition: 0.6s ease;
+	}
+
+	&:hover {
+		span {
+			transform: translateX(0px);
+		}
+		&:before {
+			transform: translateX(0px);
+		}
+		&:after {
+			transform: translateY(-50%) translateX(100px);
+		}
+	}
+}
+
+.header__discount {
+	text-align: center;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1;
+	text-align: center;
+	color: #FFFFFF;
+	margin-top: 8px;
+
+	span {
+		font-weight: 500;
+		color: #FFD43E;
+	}
+}
+
+.header__img-right {
+	width: 800px;
+	height: 800px;
+	position: absolute;
+	top: 50px;
+	right: -160px;
+}
+
+.header__right-wrapper {
+	width: 50%;
+	height: 50%;
+	position: absolute;
+	object-fit: cover;
+
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.header__right-1 {
+	bottom: 20%;
+	left: 0;
+
+	&:before {
+		content: "";
+		width: 100px;
+		height: 40px;
+		background: #2C9DFB;
+		position: absolute;
+		bottom: -20px;
+		left: -20px;
+		z-index: -1;
+	}
+}
+
+.header__right-2 {
+	top: 0;
+	left: 40%;
+
+	&:before {
+		content: "";
+		width: 40px;
+		height: 40px;
+		background: #2C9DFB;
+		position: absolute;
+		top: -20px;
+		left: -20px;
+		z-index: -1;
+	}
+}
+
+.header__right-3 {
+	bottom: 0;
+	right: 0;
+
+	&:before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		border: 2px solid #2C9DFB;
+		position: absolute;
+		bottom: -20px;
+		right: -20px;
+		z-index: -1;
+	}
+}
+
+.header__pattern {
+	width: 598px;
+	height: 523px;
+	background-image: url(../img/header-pattern.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: -50px;
+	right: -22vw;
+}
