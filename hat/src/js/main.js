@@ -3,6 +3,7 @@ var landingFunctions = {
 		this.initLibraris()
 		this.card()
 		this.time()
+		this.modals()
 	}, 
 
 	initLibraris: function() {
@@ -20,15 +21,22 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
-		// $(".card__slider").owlCarousel({
-		// 	loop: true,
-		// 	nav : true,
-		// 	dots: false,
-		// 	dotsEach: false,
-		// 	items: 1,
-		// 	margin: 20,
-			
-		// });
+		$(".review__slider").owlCarousel({
+			loop: true,
+			nav : true,
+			dots: false,
+			dotsEach: false,
+			items: 1,
+			margin: 20,
+		});
+
+		$.raty.path = 'img/raty';
+
+		$('.modal__raiting').raty({
+			half: false,
+			space: false,
+			number: 5,
+		});
 
 		// AOS.init({
 		// 	disable : 'mobile',
@@ -51,76 +59,30 @@ var landingFunctions = {
 	},
 
 	card: function() {
-		// $(".card__btn").click(function() {
-		// 	var $card = "." + $(this).data("card");
 
-		// 	var $cardTitle = $($card + " .card__title").text();
-		// 	var $cardInfo = $($card).find(".card__info").text();
-
-		// 	$(".modal__card .modal__select").css("display", "block");
-		// 	$(".modal__card .modal__select-premium").css("display", "none");
-
-		// 	$(".modal__card .modal__select option:first").prop('selected',true);
-		// 	$(".modal__card .modal__title").text($cardTitle);
-		// 	$(".modal__card .modal__text").text($cardInfo);
-
-		// 	if($(this).data("status") == "premium") {
-		// 		$(".modal__card .modal__select").css("display", "none");
-		// 		$(".modal__card .modal__select-premium").css("display", "block");
-		// 	}
-
-		// 	if($(this).data("status") == "wreath") {
-		// 		$(".modal__card .modal__select").css("display", "none");
-		// 		$(".modal__card .modal__select-premium").css("display", "none");
-		// 	}
-		// })
-		
-		// function switchColor(selector) {
-		// 	$(selector).click(function () {
-		// 		$(selector).removeClass("active");
-		// 		$(this).addClass("active");
-		// 	})
-		// }
+		function galary(selector) {
+			function toggleActiveSlider(string) {
+				$(selector + " .card__slider-block").each(function() {
+					$(this).removeClass("active")
+					if($(this).hasClass("color-" + string)) {
+						$(this).addClass("active")
+					} 
+				})
+			}
 	
-		// switchColor(".card__5 .color")
-		// switchColor(".card__6 .color")
-		// switchColor(".card__7 .color")
-		// switchColor(".card__8 .color")
-
-
-		// function galary(selector) {
-		// 	var galaryFototsSelector = selector + " .card__slide img";
+			$(selector + " .card__color-btn").click(function () {
+				$(selector + " .card__color-btn").removeClass("active")
+				toggleActiveSlider($(this).data("color"));
+				$(this).addClass("active")
+			})
+		}
 	
-		// 	function toggleDataSrcAtribute(string) {
-		// 		$(galaryFototsSelector).each(function () {
-		// 			if($(this).attr("src") === $(this).attr("data-" + string)) {
-		// 				return
-		// 			}
-		// 			var galary = $(this).attr("data-" + string);
-		// 			$(this)
-		// 				.hide()
-		// 				.attr("src",  galary)
-		// 				.fadeIn(1000);
-		// 			$(this).parent().attr("href", galary)
-		// 		})
-		// 	}
-	
-		// 	$(selector + " .color").click(function () {
-		// 		if ($(this).hasClass("green")) {
-		// 			toggleDataSrcAtribute("green");
-		// 		} 
-		// 		if ($(this).hasClass("blue")) {
-		// 			toggleDataSrcAtribute("blue");
-		// 		}
-		// 	})
-		// }
-	
-		// galary(".card__5")
-		// galary(".card__6")
-		// galary(".card__7")
-		// galary(".card__8")
+		galary(".card__1")
+		galary(".card__2")
+		galary(".card__3")
 
 		function cardSlider (selector) {
+			
 			var owl = $(selector + " .card__slider").addClass("owl-carousel").owlCarousel({
 				items: 1,
 				margin: 100,
@@ -132,17 +94,118 @@ var landingFunctions = {
 				animateOut: 'fadeOut',
 			});
 	
-			// $(selector + " .card__foto").each(function() {
-			// 	$(this).click(function() {
-			// 		$(selector + " .card__foto").removeClass("active")
-			// 		var position = $(this).data("slide") - 1
-			// 		owl.trigger("to.owl.carousel", [position, 300])
-			// 		$(this).addClass("active")
-			// 	})
-			// })
+			$(selector + " .card__foto").each(function() {
+				$(this).click(function() {
+					$(selector + " .card__foto").removeClass("active")
+					var position = $(this).data("slide") - 1
+					owl.trigger("to.owl.carousel", [position, 300])
+					$(this).addClass("active")
+				})
+			})
+
+			$(selector + " .owl-next").click(function() {
+				var total = $(selector + " .card__slider-block.active .card__foto").last().data("slide")
+
+				if($(selector + " .card__slider-block.active .card__foto.active").data("slide") === total) {
+					$(selector + " .card__slider-block.active .card__foto.active").removeClass("active")
+					$(selector + " .card__slider-block.active .card__foto").first().addClass("active")
+				} else {
+					$(selector + " .card__slider-block.active .card__foto.active").removeClass("active").next().addClass("active")
+				}
+			})
+
+			$(selector + " .owl-prev").click(function() {
+				var total = $(selector + " .card__slider-block.active .card__foto").first().data("slide")
+
+				if($(selector + " .card__slider-block.active .card__foto.active").data("slide") === total) {
+					$(selector + " .card__slider-block.active .card__foto.active").removeClass("active")
+					$(selector + " .card__slider-block.active .card__foto").last().addClass("active")
+				} else {
+					$(selector + " .card__slider-block.active .card__foto.active").removeClass("active").prev().addClass("active")
+				}
+			})
 		}
 	
 		cardSlider(".card__1")
+		cardSlider(".card__2")
+		cardSlider(".card__3")
+	},
+
+	modals: function() {
+		function modal() {
+			$(".add__review").click(function () {
+				$(".modal").addClass("active")
+			})
+	
+			function close() {
+				$(".modal").removeClass("active")
+			}
+	
+			$(".modal").click( function(e) {
+				var target = e.target;
+				if(target.classList.contains("modal__close")) {
+					close()
+				}
+				if(target.classList.contains("modal")) {
+					close()
+				}
+			})
+	
+			function readURL(input) {
+				if (input.files && input.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function (e) {
+						$('.file img').attr('src', e.target.result).css("display", "block");
+					};
+					reader.readAsDataURL(input.files[0]);
+				}
+			}
+	
+			$(".modal .input__file").on("change", function () {
+				readURL(this);
+			});
+	
+			$(".modal form").submit(function (e) {
+				e.preventDefault()
+				$(this).removeClass("active");
+				$(".send__window").addClass("active");
+				$(".modal .name__input").val("")
+				$(".modal .modal__area").val("")
+				$(".modal .file img").attr("src", "").css("display", "none")
+				delayClose()
+			})
+			function delayClose() {
+				setTimeout(function () {
+					$(".modal form").addClass("active");
+					$(".send__window").removeClass("active");
+					close();
+				}, 5000);
+			}
+		}
+	
+		modal()
+	
+		// function privacy() {
+		// 	$(".confidantion").click(function () {
+		// 		$(".privacy-policy-popup").addClass("active")
+		// 	})
+	
+		// 	function close() {
+		// 		$(".privacy-policy-popup").removeClass("active")
+		// 	}
+	
+		// 	$(".privacy-policy-popup").click( function(e) {
+		// 		var target = e.target;
+		// 		if(target.classList.contains("privacy__close")) {
+		// 			close()
+		// 		}
+		// 		if(target.classList.contains("privacy-policy-popup")) {
+		// 			close()
+		// 		}
+		// 	})
+		// }
+	
+		// privacy()
 	},
 
 	time: function() {
