@@ -1,0 +1,113 @@
+.site__footer {
+	width: 100%;
+	height: auto;
+	background: #0F146F;
+}
+
+.footer__wrapper {
+	width: 100%;
+	height: auto;
+	padding-bottom: 50px;
+}
+
+.footer__content {
+	width: 611px;
+	background: #34A1FE;
+	padding: 29px 50px 47px;
+	margin-top: -100px;
+
+	.header__title {
+		color: #0F146F;
+	}
+
+	.header__list-item:before {
+		background-image: url(../img/list-ok-dark.png);
+	}
+}
+
+.footer__img-right {
+	width: 909px;
+	height: 734px;
+	position: absolute;
+	bottom: 0px;
+	right: -280px;
+}
+
+.footer__right-wrapper {
+	position: absolute;
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+
+.footer__right-1 {
+	width: 42%;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.footer__right-2 {
+	width: 68%;
+	height: auto;
+	top: 0;
+	right: 0;
+	z-index: 1;
+
+	&:before {
+		content: "";
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		top: -20px;
+		left: -20px;
+		background: #2C9DFB;
+		z-index: -1;
+	}
+
+	&:after {
+		content: "";
+		width: 100px;
+		height: 40px;
+		position: absolute;
+		bottom: -20px;
+		right: -20px;
+		background: #2C9DFB;
+		z-index: -1;
+	}
+}
+
+.footer__line {
+	width: 100%;
+	height: auto;
+	background: #0C0F54;
+}
+
+.footer__line-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	color: #999999;
+	span {
+		margin: 17px 0;
+	}
+}
+
+.confidantion {
+	background: transparent;
+	margin: 17px 0;
+	cursor: pointer;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
