@@ -987,9 +987,6 @@ body {
   height: 30px;
   margin-right: 10px;
   cursor: pointer;
-  -webkit-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
-  transition: 0.3s ease;
 }
 .card__color-btn.active {
   background-image: url(../img/ok-black.png);
