@@ -73,7 +73,7 @@ select {
 
 select::-ms-value {
   background: none;
-  color: #000;
+  color: #fff;
 }
 
 select::-ms-expand {
@@ -106,7 +106,7 @@ input::placeholder {
 }
 
 input:-ms-input-placeholder {
-  color: #000 !important;
+  color: #fff !important;
 }
 
 input,
@@ -2867,6 +2867,15 @@ body {
 
   .card__slider .owl-stage-outer {
     border: 10px solid #fff;
+  }
+
+  .info__order-btn span {
+    display: inline-block;
+    width: auto;
+    margin-left: 20px;
+  }
+  .info__order-btn:hover span {
+    margin-left: 0;
   }
 }
 @media (max-width: 375px) {

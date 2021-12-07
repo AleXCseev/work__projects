@@ -659,6 +659,20 @@
 	.card__slider .owl-stage-outer {
 		border: 10px solid #fff;
 	}
+	.info__order-btn {
+		// border: 1px solid black;
+		span {
+			display: inline-block;
+			width: auto;
+			margin-left: 20px;
+		}
+
+		&:hover {
+			span {
+				margin-left: 0;
+			}
+		}
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
