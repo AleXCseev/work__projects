@@ -1,6 +1,20 @@
 .site__header {
 	width: 100%;
 	height: auto;
+	position: relative;
+
+	&:before {
+		content: "";
+		width: 100%;
+		height: 1116px;
+		background-image: url(../img/header-bg.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 }
 
 .header__wrapper {
@@ -11,6 +25,44 @@
 	align-items: center;
 	padding-top: 38px;
 	padding-bottom: 45px;
+	position: relative;
+	z-index: 1;
+}
+
+.header__img {
+	position: absolute;
+	display: block;
+	width: auto;
+}
+
+.header__img-1 {
+	width: 466px;
+	top: 45px;
+	left: -380px;
+}
+
+.header__img-2 {
+	width: 583px;
+	top: -1px;
+	right: -325px;
+}
+
+.header__img-3 {
+	width: 220px;
+	top: 29px;
+	left: 0;
+}
+
+.header__img-4 {
+	width: 180px;
+	top: 0;
+	left: -10px;
+}
+
+.header__img-5 {
+	width: 280px;
+	right: 0;
+	top: 238px;
 }
 
 .header__title {
@@ -29,6 +81,17 @@
 	line-height: 1.3;
 	text-align: center;
 	color: #361911;
+
+	span {
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 1.3;
+		color: #B31011;
+	}
+}
+
+.header__main-img {
+	margin-bottom: -20px;
 }
 
 .header__order-btn {
@@ -74,6 +137,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	z-index: 1;
 
 	img {
 		margin-right: 36px;
