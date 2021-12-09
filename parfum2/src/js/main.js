@@ -70,28 +70,29 @@ var landingFunctions = {
 		}
 		openInfo()
 
-		function cardHover() {
-			$(".card").hover(function(e) {
-				if($(e.target).hasClass("card")) {
-					$(this).find(".header__order-btn").fadeIn(300);
-					$(this).find(".card__info-btn").fadeIn(300);
-				}
-			}, function() {
-				$(this).find(".header__order-btn").hide();
-				$(this).find(".card__info-btn").hide();
-				$(this).find(".card__info").addClass("visually-hidden")
-			})
-		}
-
-		cardHover()
-
 		function cardBack() {
 			$(".header__order-btn").click( function() {
-				$(this).closest(".card").addClass("no-hover");
-				var content = $(this).closest(".card").find(".card__content").html();
-				$(this).closest(".card").find(".card__back").fadeIn(300);
-				$(this).closest(".card").find(".card__back-wrapper").html(content);
+				var card = $(this).closest(".card")
+				card.find(".card__info").addClass("visually-hidden")
+				card.addClass("no-hover");
+				var content = card.find(".card__content").html();
+				$(".card__back").fadeOut(300);
+				card.find(".card__back").fadeToggle(400);
+				card.find(".card__back-wrapper").html(content);
+				card.addClass("active")
+				
 
+			})
+
+			$(".card__close").click( function() {
+				var card = $(this).closest(".card")
+				card.removeClass("no-hover");
+				card.find(".card__back").fadeToggle(400);
+				card.find(".card__back-wrapper").html();
+				card.removeClass("active");
+				card.find(".header__order-btn").fadeIn(300);
+				card.find(".card__info-btn").fadeIn(300);
+				card.find(".card__info-btn").removeClass("active")
 			})
 		}
 
