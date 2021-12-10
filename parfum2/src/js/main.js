@@ -2,14 +2,14 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.card()
-		// this.time()
+		this.time()
 		this.modals()
 	}, 
 
 	initLibraris: function() {
 
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = -50;
+			var fixedOffset = -20;
 			// var cardHeight = $(".card").outerHeight(false)
 			// var windowHeight = $(window).height()
 	
@@ -28,6 +28,7 @@ var landingFunctions = {
 			dotsEach: false,
 			items: 1,
 			margin: 20,
+			autoHeight: true,
 		});
 
 		$.raty.path = 'img/raty';
@@ -38,16 +39,16 @@ var landingFunctions = {
 			number: 5,
 		});
 
-		// AOS.init({
-		// 	disable : 'mobile',
-		// 	once: true,
-		// 	duration: 1000,
-		// 	// offset : -200,
-		// });
+		AOS.init({
+			disable : 'mobile',
+			once: true,
+			duration: 1000,
+			// offset : -200,
+		});
 	
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
+		$(window).resize(function() {
+			AOS.refresh();
+		})
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
@@ -56,8 +57,6 @@ var landingFunctions = {
 			backFocus: false,
 			hash: false,
 		});
-
-		// $(".year").text(new Date().getFullYear())
 	},
 
 	card: function() {
@@ -71,22 +70,24 @@ var landingFunctions = {
 		openInfo()
 
 		function cardBack() {
+
 			$(".header__order-btn").click( function() {
 				var card = $(this).closest(".card")
 				card.find(".card__info").addClass("visually-hidden")
-				card.addClass("no-hover");
+				$(".card").addClass("no-hover");
 				var content = card.find(".card__content").html();
 				$(".card__back").fadeOut(300);
 				card.find(".card__back").fadeToggle(400);
 				card.find(".card__back-wrapper").html(content);
+				$(".card").removeClass("active");
 				card.addClass("active")
-				
+				$(".card__info").addClass("visually-hidden");
 
 			})
 
 			$(".card__close").click( function() {
 				var card = $(this).closest(".card")
-				card.removeClass("no-hover");
+				$(".card").removeClass("no-hover");
 				card.find(".card__back").fadeToggle(400);
 				card.find(".card__back-wrapper").html();
 				card.removeClass("active");
@@ -207,7 +208,7 @@ var landingFunctions = {
 			}
 			
 			var yyyy = String(today.getFullYear());
-			// yyyy = yyyy.substr(yyyy.length - 2);
+			yyyy = yyyy.substr(yyyy.length - 2);
 			var currentDaysInMonth = new Date().daysInMonth()
 			if (+dd > currentDaysInMonth) {
 				dd = String(dd - currentDaysInMonth).padStart(2, '0');
@@ -218,7 +219,7 @@ var landingFunctions = {
 			}
 			return dd + "." + mm + "." + yyyy
 		}
-	
+
 		$(".header__discount span").text(getDate(2));
 	},
 }

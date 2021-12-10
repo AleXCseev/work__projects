@@ -31,7 +31,7 @@
 	width: 100%;
 	height: auto;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 	margin-bottom: 83px;
 
@@ -43,6 +43,7 @@
 
 .card {
 	width: 25%;
+	// max-width: 25%;
 	height: auto;
 	position: relative;
 	background: #FFFFFF;
@@ -52,6 +53,7 @@
 	align-items: center;
 	padding: 21px 20px 15px;
 	transition: 1s ease;
+	flex-shrink: 0;
 	
 
 	.header__order-btn {
@@ -80,6 +82,15 @@
 	&.no-hover {
 		transform: none;
 		box-shadow: none;
+
+		// .header__order-btn {
+		// 	display: none;
+		// 	opacity: 1;
+		// }
+
+		// .card__info-btn {
+		// 	display: none;
+		// }
 	}
 
 	&.active {
@@ -95,6 +106,7 @@
 		.header__order-btn,
 		.card__info-btn {
 			display: none;
+			// opacity: 0;
 		}
 	}
 
@@ -102,6 +114,7 @@
 }
 
 .card__content {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -126,7 +139,8 @@
 .card__img-wrapper {
 	margin-bottom: 20px;
 	width: 100%;
-	height: 300px;
+	max-width: 100%;
+	height: 260px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -134,9 +148,9 @@
 
 .card__img {
 	width: auto;
-	max-width: 100%;
+	max-width: 243px;
 	height: auto;
-	max-height: 100%;
+	max-height: 260px;
 }
 
 .card__name {
@@ -146,9 +160,11 @@
 	text-align: center;
 	color: #361911;
 	margin-bottom: 6px;
+	width: auto;
 }
 
 .card__brand {
+	width: auto;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 1.2;
