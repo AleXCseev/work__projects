@@ -287,6 +287,29 @@
 		width: 250px;
 		right: -100px;
 	}
+	.card {
+		&:hover {
+			transform: none;
+			box-shadow: none;
+		}
+
+		.header__order-btn {
+			display: block;
+			width: 100%;
+			max-width: 100%;
+		} 
+		.card__info-btn {
+			display: block;
+		}
+
+		&.active {
+			.header__order-btn,
+			.card__info-btn {
+				display: block;
+				opacity: 0;
+			}
+		}
+	}
 	
 }
 
