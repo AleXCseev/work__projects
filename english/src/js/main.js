@@ -1,7 +1,6 @@
 var landingFunctions = {
 	init: function() {
 		this.initLibraris()
-		// this.card()
 		this.time()
 		this.modals()
 	}, 
@@ -28,7 +27,15 @@ var landingFunctions = {
 			dotsEach: false,
 			items: 2,
 			margin: 100,
-			autoHeight: true,
+			// autoHeight: true,
+			responsive:{
+				0:{
+					items:1,
+				},
+				1000:{
+					items:2,
+				}
+			}
 		});
 
 		$.raty.path = 'img/raty';
@@ -39,16 +46,28 @@ var landingFunctions = {
 			number: 5,
 		});
 
-		// AOS.init({
-		// 	disable : 'mobile',
-		// 	once: true,
-		// 	duration: 1000,
-		// 	// offset : -200,
-		// });
+		if($(window).width() <= 480) {
+			$(".galary").addClass("owl-carousel").owlCarousel({
+				loop: true,
+				nav : true,
+				dots: false,
+				dotsEach: false,
+				items: 1,
+				margin: 30,
+				// autoHeight: true,
+			});
+		}
+
+		AOS.init({
+			disable : 'mobile',
+			once: true,
+			duration: 1000,
+			// offset : -200,
+		});
 	
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
+		$(window).resize(function() {
+			AOS.refresh();
+		})
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
@@ -57,47 +76,6 @@ var landingFunctions = {
 			backFocus: false,
 			hash: false,
 		});
-	},
-
-	card: function() {
-
-		function openInfo() {
-			$(".card__info-btn").click( function() {
-				$(this).toggleClass("active")
-				$(this).closest(".card").find(".card__info").toggleClass("visually-hidden")
-			})
-		}
-		openInfo()
-
-		function cardBack() {
-
-			$(".header__order-btn").click( function() {
-				var card = $(this).closest(".card")
-				card.find(".card__info").addClass("visually-hidden")
-				$(".card").addClass("no-hover");
-				var content = card.find(".card__content").html();
-				$(".card__back").fadeOut(300);
-				card.find(".card__back").fadeToggle(400);
-				card.find(".card__back-wrapper").html(content);
-				$(".card").removeClass("active");
-				card.addClass("active")
-				$(".card__info").addClass("visually-hidden");
-
-			})
-
-			$(".card__close").click( function() {
-				var card = $(this).closest(".card")
-				$(".card").removeClass("no-hover");
-				card.find(".card__back").fadeToggle(400);
-				card.find(".card__back-wrapper").html();
-				card.removeClass("active");
-				card.find(".header__order-btn").fadeIn(300);
-				card.find(".card__info-btn").fadeIn(300);
-				card.find(".card__info-btn").removeClass("active")
-			})
-		}
-
-		cardBack()
 	},
 
 	modals: function() {
