@@ -1,0 +1,156 @@
+.site__header {
+	width: 100%;
+	height: auto;
+	position: relative;
+
+	&:before {
+		content: "";
+		width: 100%;
+		height: 79px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 72.4%);
+		z-index: 2;
+	}
+}
+
+.header__wrapper {
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.header__content {
+	width: 550px;
+	height: auto;
+	padding-top: 150px;
+	padding-bottom: 164px;
+}
+
+.header__title {
+	font-weight: bold;
+	font-size: 60px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.header__subtitle {
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 1.2;
+	color: #FFFFFF;
+	margin-bottom: 50px;
+}
+
+.header__text {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.94;
+	color: #FFFFFF;
+	margin-bottom: 50px;
+}
+
+.header__price {
+	margin-bottom: 40px;
+}
+
+.price {
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+}
+
+.old__price {
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 1;
+	color: #FFFFFF;
+	margin-right: 43px;
+	position: relative;
+	
+	&:before {
+		content: "";
+		width: 100%;
+		height: 2px;
+		background-color: #FFB800;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+}
+
+.new__price {
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 1.2;
+	color: #FFB800;
+}
+
+.header__discount {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.2;
+	color: #FFFFFF;
+	margin-bottom: 40px;
+
+	span {
+		color: #FF4555;
+	}
+}
+
+.header__order-btn {
+	width: 100%;
+	max-width: 290px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid #FFB800;
+	box-shadow: 0px 3px 4px rgba(255, 184, 0, 0.5);
+	border-radius: 20px;
+	margin-bottom: 20px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1;
+	color: #FFB800;
+	transition: 0.3s ease;
+
+	&:hover {
+		background-color: #FFB800;
+		color: #fff;
+	}
+}
+
+.header__quantity {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.94;
+	color: #FFFFFF;
+
+	span {
+		font-weight: bold;
+		color: #FF4555;
+	}
+}
+
+.header__img-bg {
+	width: auto;
+	height: auto;
+	position: absolute;
+	bottom: 0;
+	right: -390px;
+	z-index: -1;
+}
+
+.header__phone {
+	position: absolute;
+	width: 922px;
+	bottom: 25px;
+	right: -250px;
+	z-index: -1;
+}
