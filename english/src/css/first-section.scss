@@ -30,6 +30,7 @@
 	text-transform: uppercase;
 	color: #1748AB;
 	flex-shrink: 0;
+	padding-right: 50px;
 }
 
 .advantage__info-text {
@@ -352,6 +353,7 @@
 		width: 100%;
 		height: auto;
 		transition: 0.3s ease;
+		pointer-events: auto;
 	}
 
 	&:hover {
