@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="libs/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="libs/animations.css">
 	<link rel="stylesheet" href="libs/slick.css">
-	<!-- <link rel="stylesheet" href="libs/slick-theme.css"> -->
 	<link rel="stylesheet" href="libs/aos.css">
 	<link rel="stylesheet" href="libs/jquery.raty.css">
 	<link rel="stylesheet" href="css/style.css" />
@@ -23,30 +22,30 @@
 			<div class="container">
 				<div class="header__wrapper">
 					<div class="header__content">
-						<h1 class="header__title">
+						<h1 class="header__title" data-aos="fade-up">
 							Galaxy S21 Ultra
 						</h1>
-						<h2 class="header__subtitle">
+						<h2 class="header__subtitle" data-aos="fade-up" data-aos-delay="100">
 							Лучший флагман на рынке
 						</h2>
 						<div class="header__img-wrapper">
 							<img src="img/header-bg.jpg" alt="" class="header__img-bg">
-							<img src="img/header-phone.png" alt="" class="header__phone">
+							<img src="img/header-phone.png" alt="" class="header__phone" data-aos="fade-left">
 						</div>
-						<p class="header__text">
+						<p class="header__text" data-aos="fade-up" data-aos-delay="200">
 							Невероятно мощный, яркий и надежный смартфон, что позволит создавать профессиональные снимки.
 						</p>
-						<div class="header__price">
+						<div class="header__price" data-aos="fade-up" data-aos-delay="300">
 							<div class="price">
 								<span class="old__price">109970 грн</span>
 								<span class="new__price">329900 грн</span>
 							</div>
 						</div>
-						<p class="header__discount">
+						<p class="header__discount" data-aos="fade-up" data-aos-delay="400">
 							Распродажа оптового склада - <span>Скидка - 70%</span>
 						</p>
-						<a href="#card" class="header__order-btn">Заказать</a>
-						<p class="header__quantity">
+						<a href="#card" class="header__order-btn" data-aos="fade-up" data-aos-delay="500">Заказать</a>
+						<p class="header__quantity" data-aos="fade-up" data-aos-delay="600">
 							На складе осталось всего <span>9</span> <br>
 							телефонов по фиксированной цене
 						</p>
@@ -67,27 +66,27 @@
 							Компания S Electronics представляет S21 Ultra , флагман, который получил инновационную систему камер профессионального уровня и самый яркий и интеллектуальный дисплей.
 						</p>
 						<div class="advantages">
-							<div class="advantage">
+							<div class="advantage" data-aos="fade-up">
 								<img src="img/advantage-logo-1.png" alt="" class="advantage__logo">
 								<p class="advantage__text">
 									Поддержка пера S Pen
 								</p>
 							</div>
-							<div class="advantage">
+							<div class="advantage" data-aos="fade-up" data-aos-delay="100">
 								<img src="img/advantage-logo-2.png" alt="" class="advantage__logo">
 								<p class="advantage__text">
 									Камера с <br>
 									оптическим зумом
 								</p>
 							</div>
-							<div class="advantage">
+							<div class="advantage" data-aos="fade-up" data-aos-delay="200">
 								<img src="img/advantage-logo-3.png" alt="" class="advantage__logo">
 								<p class="advantage__text">
 									Заднее стекло с <br>
 									матовым покрытием
 								</p>
 							</div>
-							<div class="advantage">
+							<div class="advantage" data-aos="fade-up" data-aos-delay="300">
 								<img src="img/advantage-logo-4.png" alt="" class="advantage__logo">
 								<p class="advantage__text">
 									Два стильных <br>
@@ -102,7 +101,7 @@
 				<div class="container">
 					<div class="info__wrapper">
 						<div class="info__content">
-							<img src="img/info-img.png" alt="" class="info__img">
+							<img src="img/info-img.png" alt="" class="info__img" data-aos="fade-left">
 							<h3 class="info__title">
 								Почему у нас самая низкая цена на
 								<span>S21 Ultra</span> в Украине?
@@ -129,7 +128,7 @@
 						<h3 class="characteristic__title">
 							Технические характеристики <span class="red">S21 Ultra</span>
 						</h3>
-						<div class="characteristic__card characteristic__card-1">
+						<div class="characteristic__card characteristic__card-1" data-aos="fade-up">
 							<div class="characteristic__card-left">
 								<img src="img/charact-1.png" alt="" class="characteristic__img">
 								<div class="characteristic__block characteristic__block-1">
@@ -197,7 +196,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="characteristic__card characteristic__card-2">
+						<div class="characteristic__card characteristic__card-2" data-aos="fade-up">
 							<div class="characteristic__card-left">
 								<img src="img/charact-2.jpg" alt="" class="characteristic__img">
 							</div>
@@ -237,7 +236,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="characteristic__card characteristic__card-3">
+						<div class="characteristic__card characteristic__card-3" data-aos="fade-up">
 							<div class="characteristic__card-left">
 								<img src="img/charact-3.jpg" alt="" class="characteristic__img">
 							</div>
@@ -274,7 +273,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="characteristic__card characteristic__card-4">
+						<div class="characteristic__card characteristic__card-4" data-aos="fade-up">
 							<div class="characteristic__card-left">
 								<img src="img/charact-4.jpg" alt="" class="characteristic__img">
 								<div class="characteristic__battary">
@@ -323,7 +322,7 @@
 					<h3 class="card__section-title">
 						Выбери свой <span class="red">S21 Ultra</span>
 					</h3>
-					<div class="card card__1">
+					<div class="card card__1" id="card">
 						<div class="card__left">
 							<div class="slider__nav">
 								<div class="slide__nav">
@@ -449,30 +448,130 @@
 						</h3>
 						<div class="video__block">
 							<ul class="video__list">
-								<li class="video__list-item">
+								<li class="video__list-item" data-aos="fade-up">
 									Уникальный дизайн модуля камер.
 								</li>
-								<li class="video__list-item">
+								<li class="video__list-item" data-aos="fade-up" data-aos-delay="100">
 									Стократное увеличение в одно касание.
 								</li>
-								<li class="video__list-item">
+								<li class="video__list-item" data-aos="fade-up" data-aos-delay="200">
 									Самый быстрый процессор в Galaxy.
 								</li>
-								<li class="video__list-item">
+								<li class="video__list-item" data-aos="fade-up" data-aos-delay="300">
 									Сверхплавный и красочный экран.
 								</li>
-								<li class="video__list-item">
+								<li class="video__list-item" data-aos="fade-up" data-aos-delay="400">
 									Плавность и стабильность — все, что требуется для приятного пользование. 
 								</li>
-								<li class="video__list-item">
+								<li class="video__list-item" data-aos="fade-up" data-aos-delay="500">
 									Водонепроницаемый и надежный.
 								</li>
 							</ul>
 							<div class="video" data-video="Lj9Rdl9ntTE">
-							
+								<img src="//img.youtube.com/vi/Lj9Rdl9ntTE/maxresdefault.jpg">
 							</div>
 						</div>
 						
+					</div>
+				</div>
+			</section>
+			<section class="delivery__section">
+				<div class="container">
+					<div class="delivery__wrapper">
+						<img src="img/main-bg-4.png" alt="" class="delivery__main-bg">
+						<div class="delivery__content">
+							<h3 class="delivery__title">
+								Доставка и оплата
+							</h3>
+							<ul class="delivery__list">
+								<li class="delivery__list-item" data-aos="fade-up">
+									<img src="img/delivery-logo-1.png" alt="">
+									<span class="delivery__text">
+										Срок доставки от 1 до 3 дней.
+									</span>
+								</li>
+								<li class="delivery__list-item" data-aos="fade-up" data-aos-delay="100">
+									<img src="img/delivery-logo-2.png" alt="">
+									<span class="delivery__text">
+										Оплата производиться после получения товара в руки. Вы ничем не рискуете!
+									</span>
+								</li>
+							</ul>
+							<img src="img/deliver-img.png" alt="" class="delivery__img" data-aos="fade-left">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="review__section">
+				<div class="container">
+					<div class="review__wrapper">
+						<h3 class="review__title">
+							Отзывы покупателей
+						</h3>
+						<div class="review__slider">
+							<div class="review__slide">
+								<h4 class="review__slide-title">
+									Отличный телефон!
+								</h4>
+								<div class="review__img-wrapper">
+									<img src="img/review-img-1.jpg" alt="" class="review__img">
+									<img src="img/review-img-2.jpg" alt="" class="review__img">
+									<img src="img/review-img-3.jpg" alt="" class="review__img">
+								</div>
+								<p class="review__text">
+									Что я могу сказать, телефон суперский, не нарадуюсь! Лучший андроид телефон на рынке. Красивейший экран - по яркости, четкости, цветопередаче всякие ксяоми, хуавеи и уж тем более iphone и рядом не стояли. Это просто произведение инженерной мысли и дизайнерских решений. Покупкой доволен очень сильно. Мне его хватит на очень и очень долго!
+								</p>
+								<p class="review__name">
+									Евгений, <span class="date" data-date="-2">26.08.2021</span>
+								</p>
+							</div>
+							<div class="review__slide">
+								<h4 class="review__slide-title">
+									Телефону нет равных!
+								</h4>
+								<div class="review__img-wrapper">
+									<img src="img/review-img-4.jpg" alt="" class="review__img">
+									<img src="img/review-img-5.jpg" alt="" class="review__img">
+								</div>
+								<p class="review__text">
+									Как всегда этому телефону нет равных очень доволен ним. Лучше купить один раз флагман и наслаждаться его работой чем десяток всяких дешёвых моделей. Лучший смартфон, каким я только пользовался. Порадовало матовое стекло. Камера просто невероятная. Очень порадовало наличие 10ти кратного оптического зума.
+								</p>
+								<p class="review__name">
+									Дмитрий, <span class="date" data-date="-3">26.08.2021</span>
+								</p>
+							</div>
+							<div class="review__slide">
+								<h4 class="review__slide-title">
+									Отличный телефон!
+								</h4>
+								<div class="review__img-wrapper">
+									<img src="img/review-img-1.jpg" alt="" class="review__img">
+									<img src="img/review-img-2.jpg" alt="" class="review__img">
+									<img src="img/review-img-3.jpg" alt="" class="review__img">
+								</div>
+								<p class="review__text">
+									Что я могу сказать, телефон суперский, не нарадуюсь! Лучший андроид телефон на рынке. Красивейший экран - по яркости, четкости, цветопередаче всякие ксяоми, хуавеи и уж тем более iphone и рядом не стояли. Это просто произведение инженерной мысли и дизайнерских решений. Покупкой доволен очень сильно. Мне его хватит на очень и очень долго!
+								</p>
+								<p class="review__name">
+									Евгений, <span class="date" data-date="-2">26.08.2021</span>
+								</p>
+							</div>
+							<div class="review__slide">
+								<h4 class="review__slide-title">
+									Телефону нет равных!
+								</h4>
+								<div class="review__img-wrapper">
+									<img src="img/review-img-4.jpg" alt="" class="review__img">
+									<img src="img/review-img-5.jpg" alt="" class="review__img">
+								</div>
+								<p class="review__text">
+									Как всегда этому телефону нет равных очень доволен ним. Лучше купить один раз флагман и наслаждаться его работой чем десяток всяких дешёвых моделей. Лучший смартфон, каким я только пользовался. Порадовало матовое стекло. Камера просто невероятная. Очень порадовало наличие 10ти кратного оптического зума.
+								</p>
+								<p class="review__name">
+									Дмитрий, <span class="date" data-date="-3">26.08.2021</span>
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -480,8 +579,82 @@
 
 		<!-- FOOTER -->
 		<footer class="site__footer">
-			
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="header__content">
+						<div class="header__img-wrapper">
+							<img src="img/footer-bg.png" alt="" class="footer__bg">
+							<img src="img/footer-phone.png" alt="" class="footer__phone">
+						</div>
+						<h1 class="header__title" data-aos="fade-up">
+							Galaxy S21 Ultra
+						</h1>
+						<h2 class="header__subtitle" data-aos="fade-up" data-aos-delay="100">
+							Лучший флагман на рынке
+						</h2>
+						
+						<p class="header__text" data-aos="fade-up" data-aos-delay="200">
+							Невероятно мощный, яркий и надежный смартфон, что позволит создавать профессиональные снимки.
+						</p>
+						<div class="header__price" data-aos="fade-up" data-aos-delay="300">
+							<div class="price">
+								<span class="old__price">109970 грн</span>
+								<span class="new__price">329900 грн</span>
+							</div>
+						</div>
+						<p class="header__discount" data-aos="fade-up" data-aos-delay="400">
+							Распродажа оптового склада - <span>Скидка - 70%</span>
+						</p>
+						<a href="#card" class="header__order-btn" data-aos="fade-up" data-aos-delay="500">Заказать</a>
+						<p class="header__quantity" data-aos="fade-up" data-aos-delay="600">
+							На складе осталось всего <span>9</span> <br>
+							телефонов по фиксированной цене
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer__line">
+				<div class="container">
+					<div class="footer__line-wrapper">
+						<div class="wrapper" style="margin-top: 10px;">
+							<p>Скидка действует с <span class="date__1"></span> по <span class="date__2"></span> на весь товар интернет-магазина на всей территории Украины, кроме зон, не контролируемых властями</p>
+						 </div>
+						 <div class="wrapper">
+							<ul class="footer-info">
+							   <li>LLC "MONSTR-MEDIA" ИНН 7701071884</li>
+							   <li>ЕГРПОУ 39149245</li>
+							   <li>Tel.: +380630236658</li>
+							   <li>mail halo@matahari.com</li>
+							   <li><a data-fancybox data-src="#modal-privacy" href="javascript:;">Политика конфиденциальности</a></li>
+							   <li><a data-fancybox data-src="#modal-delivery" href="javascript:;">Оплата и доставка</a></li>
+							   <li><a data-fancybox data-src="#modal-refusal" href="javascript:;">Отказ от ответственности</a></li>
+							</ul>
+						 </div>
+					</div>
+				</div>
+			</div>
 		</footer>
+	</div>
+
+	<div class="footer__modal" id="modal-privacy">
+		<h6>Политика конфиденциальности</h6>
+		<p>Наш интернет-магазин уважительно относится к правам клиента. Соблюдается строгая конфиденциальность при оформлении заказа. Сведения надежно хранятся и защищены от передачи данных.</p>
+		<p>Согласие на обработку данных клиента исключительно с целью предоставления услуг – размещение заказа на сайте.</p>
+		<p>К персональным данным относится личная информация о клиенте: домашний адрес; имя фамилия отчество; сведения о рождении; имущественное, семейное положение; личные контакты (телефон, электронная почта) и другие сведения, перечисленные в Законе "О персональных данных".</p>
+		<p>Клиент вправе отказаться от обработки персональных данных. Нами в данном случае гарантируется удаление с сайта всех персональных данных в трехдневный срок в рабочее время. Подобный отказ клиент может оформить простым электронным письмом по адресу, указанному на странице нашего сайта.</p>
+	</div>
+	
+	<div class="footer__modal" id="modal-delivery">
+		<h6>Доставка и оплата</h6>
+		<p>По Украине доставка производится с помощью компании «Новая Почта» в течение 2-х дней с момента заказа. Стоимость и детали такой доставки разнятся в зависимости от региона вашего проживания и размера посылки.</p>
+		<p>Продавец не берет на себя никаких обязательств по возмещению любого ущерба Клиента, связанного с несвоевременной доставкой заказа, а также освобождается от любых возможных штрафных санкций.</p>
+		<p>Клиент, получивший товар, должен проверить его на предмет качества и количества.</p>
+	</div>
+	
+	<div class="footer__modal" id="modal-refusal">
+		<h6>Отказ от ответственности</h6>
+		<p>Интернет-магазин оставляет за собой право в любое время без уведомления Клиента вносить изменения в товары, материалы и услуги, предоставляемые на сайте.</p>
+		<p>Интернет-магазин не несет ответственности за какие-либо убытки (включая моральный ущерб, ущерб от потери прибыли (упущенная выгода), данных или от прерывания деловой активности), возникший вследствие использования или невозможности использования данного сайта.</p>
 	</div>
 
 	<script src="libs/jquery.min.js"></script>

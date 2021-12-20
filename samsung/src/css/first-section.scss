@@ -186,6 +186,7 @@
 
 .characteristic__card-1 {
 	.characteristic__card-left {
+		flex-shrink: 0;
 		flex-direction: column;
 		justify-content: flex-end;
 	}
@@ -240,7 +241,7 @@
 }
 
 .characteristic__block-1 {
-	top: 16%;
+	top: 15%;
 	right: 16%;
 
 	&:before {

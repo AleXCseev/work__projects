@@ -1,7 +1,7 @@
 var landingFunctions = {
 	init: function() {
 		this.initLibraris()
-		// this.time()
+		this.time()
 		this.card()
 		this.video()
 	}, 
@@ -32,6 +32,18 @@ var landingFunctions = {
 			vertical: false,
 			verticalSwiping: false,
 			fade: true,
+			responsive: [
+				{
+				  breakpoint: 700,
+				  settings: {
+					arrows: false,
+					slidesToShow: 3,
+  					centerMode: true,
+					slidesToScroll: 1,
+					fade: false,
+				  }
+				},
+			],
 		});
 
 		$('.slider__nav').slick({
@@ -46,16 +58,33 @@ var landingFunctions = {
 			verticalSwiping: true,
 		});
 
-		// AOS.init({
-		// 	disable : 'mobile',
-		// 	once: true,
-		// 	duration: 1000,
-		// 	// offset : -200,
-		// });
+		$('.review__slider').slick({
+			infinite: true,
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			dots: true,
+			arrows: true,
+			responsive: [
+				{
+				  breakpoint: 1000,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				  }
+				},
+			],
+		});
+
+		AOS.init({
+			disable : 'mobile',
+			once: true,
+			duration: 1000,
+			// offset : -200,
+		});
 	
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
+		$(window).resize(function() {
+			AOS.refresh();
+		})
 
 		function getRandomInt(max) {
 			return Math.floor(Math.random() * Math.floor(max));
@@ -117,6 +146,8 @@ var landingFunctions = {
 			$(selector + " .card__color-btn").click(function () {
 				$(selector + " .card__color-btn").removeClass("active")
 				toggleActiveSlider($(this).data("color"));
+				var title = $(this).closest(".card").find(".card__title span")
+				title.text(title.data($(this).data("color").trim()));
 				$(this).addClass("active");
 			})
 		}
@@ -155,7 +186,7 @@ var landingFunctions = {
 			}
 			
 			var yyyy = String(today.getFullYear());
-			yyyy = yyyy.substr(yyyy.length - 2);
+			// yyyy = yyyy.substr(yyyy.length - 2);
 			var currentDaysInMonth = new Date().daysInMonth()
 			if (+dd > currentDaysInMonth) {
 				dd = String(dd - currentDaysInMonth).padStart(2, '0');
@@ -167,9 +198,15 @@ var landingFunctions = {
 			return dd + "." + mm + "." + yyyy
 		}
 
-		$(".header__discount span").text(getDate(2));
+		$(".review__name .date").each(function() {
+			var date = $(this).data("date");
+			$(this).text(getDate(date));
+		})
 
-		$(".year").text(new Date().getFullYear())
+		$(".date__1").text(getDate(-5));
+		$(".date__2").text(getDate(2));
+
+		// $(".year").text(new Date().getFullYear())
 	},
 
 	video: function() {
