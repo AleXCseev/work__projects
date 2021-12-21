@@ -377,6 +377,7 @@
 		right: -110px;
 		width: 1200px;
 	}
+	
 	.footer__phone {
 		position: static;
 	}
@@ -627,8 +628,14 @@
 	.review__title {
 		padding: 0 20px;
 	}
+	.review__slider {
+		width: calc(100% + 40px);
+		margin-left: -20px;
+	}
 	.review__slide {
+		width: calc(100% - 40px);
 		margin: auto;
+		margin: 0 20px;
 	}
 	.review__wrapper {
 		padding-bottom: 60px;

@@ -342,10 +342,10 @@ body {
   font-size: 20px;
   line-height: 1;
   color: #FFB800;
-  -webkit-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
-  transition: 0.3s ease;
-  background-color: #000;
+  background-color: #000000;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .header__order-btn:hover {
   background-color: #FFB800;
@@ -736,6 +736,11 @@ body {
 
 .characteristic__card-1 .characteristic__img {
   margin-bottom: -27px;
+}
+
+.characteristic__img {
+  width: 100%;
+  height: auto;
 }
 
 .characteristic__card-right {
@@ -2291,8 +2296,17 @@ body {
     padding: 0 20px;
   }
 
+  .review__slider {
+    width: -webkit-calc(100% + 40px);
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+
   .review__slide {
+    width: -webkit-calc(100% - 40px);
+    width: calc(100% - 40px);
     margin: auto;
+    margin: 0 20px;
   }
 
   .review__wrapper {
