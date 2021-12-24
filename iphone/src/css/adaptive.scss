@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////////////
 @media (max-width: 1920px) {
 	.site__header {
-		background-size: 1920px auto;
+		background-size: auto 100%;
 	}
 	.info__wrapper {
 		position: relative;
@@ -10,7 +10,7 @@
 		left: -359px;
 	}
 	.info__circle {
-		right: -554px;
+		right: -440px;
 	}
 	.info__section-2 {
 		background-size: 1920px auto;
@@ -19,3 +19,258 @@
 		background-size: 1920px auto;
 	}
 }
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 1480px) {
+	.header__content {
+		width: 583px;
+		padding-top: 140px;
+		padding-bottom: 200px;
+	}
+	.header__wrapper {
+		width: 100%;
+		height: 1300px;
+	}
+	.header__phone {
+		position: absolute;
+		top: 120px;
+		right: -715px;
+		width: 700px;
+	}
+	.info__phone {
+		left: -150px;
+		width: 700px;
+	}
+	.info__section {
+		margin-top: 0;
+	}
+	.info__content {
+		width: 584px;
+		padding-bottom: 100px;
+		padding-top: 60px;
+	}
+	.info__circle {
+		right: -456px;
+		top: -272px;
+	}
+	.info__title {
+		font-size: 34px;
+		margin-bottom: 25px;
+	}
+	.info__text {
+		margin-bottom: 40px;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 1200px) {
+	.container {
+		width: 1000px;
+	}
+	.header__content {
+		width: 500px;
+		padding-top: 80px;
+		padding-bottom: 120px;
+	}
+	.header__phone {
+		position: absolute;
+		top: 80px;
+		right: -600px;
+		width: 600px;
+	}
+	.header__title {
+		font-size: 56px;
+		margin-bottom: 50px;
+	}
+	.header__subtitle {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+	.new__price {
+		font-size: 50px;
+	}
+	.old__price {
+		font-size: 28px;
+		margin-right: 50px;
+	}
+	.header__wrapper {
+		width: 100%;
+		height: auto;
+		padding-bottom: 160px;
+	}
+	.info__content {
+		width: 460px;
+		padding-bottom: 80px;
+		padding-top: 35px;
+	}
+	.info__phone {
+		left: -150px;
+		width: 660px;
+		bottom: 0px;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 1000px) {
+	.container {
+		width: 700px;
+	}
+	.header__content {
+		width: 100%;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.header__phone {
+		position: static;
+		top: auto;
+		right: auto;
+		width: 100%;
+		max-width: 600px;
+		margin-bottom: 40px;
+	}
+	.header__title {
+		font-size: 50px;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.header__subtitle {
+		font-size: 27px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.header__discount {
+		font-size: 20px;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.header__price {
+		margin-bottom: 40px;
+	}
+	.header__info {
+		font-size: 18px;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.header__list {
+		flex-wrap: wrap;
+	}
+	.header__list-item {
+		width: 48%;
+		height: 130px;
+		margin-bottom: 30px;
+	}
+	.info__wrapper {
+		position: static;
+	}
+	.info__content {
+		width: 100%;
+		padding-bottom: 565px;
+		padding-top: 35px;
+	}
+	.info__phone {
+		left: 0px;
+		width: 500px;
+		bottom: 0px;
+	}
+	.info__circle {
+		right: -140px;
+		top: auto;
+		bottom: -95px;
+		transform: rotate(208deg);
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 700px) {
+	.container {
+		width: calc(100% - 40px);
+	}
+	.header__list-item {
+		width: 100%;
+		height: 130px;
+		margin-bottom: 30px;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 480px) {
+	.header__title {
+		font-size: 12vw;
+		margin-bottom: 9vw;
+		text-align: center;
+	}
+	.site__header {
+		background-image: url(../img/header-mobile-bg.png);
+		background-size: cover;
+	}
+	.header__wrapper {
+		padding-bottom: 110px;
+	}
+	.header__subtitle {
+		font-size: 7vw;
+		margin-bottom: 5vw;
+		text-align: center;
+	}
+	.header__phone {
+		width: 125%;
+		margin-left: 10px;
+		margin-bottom: 30px;
+	}
+	.header__discount {
+		font-size: 4.8vw;
+		text-align: center;
+		margin-bottom: 9vw;
+	}
+	.header__price {
+		margin-bottom: 9vw;
+	}
+	.old__price {
+		font-size: 4.5vw;
+		margin-right: 7vw;
+	}
+	.new__price {
+		font-size: 9vw;
+	}
+	.header__info {
+		font-size: 4.2vw;
+		margin-bottom: 9vw;
+		text-align: center;
+	}
+	.header__list-item {
+		width: 276px;
+		height: 130px;
+		margin-bottom: 30px;
+	}
+	.header__list {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.info__phone {
+		left: 0px;
+		width: 97vw;
+		bottom: 0px;
+	}
+	.info__content {
+		width: 100%;
+		padding-bottom: 110vw;
+		padding-top: 35px;
+	}
+	.info__circle {
+		right: -50vw;
+		top: auto;
+		bottom: 40vw;
+		transform: rotate(230deg);
+	}
+	.info__title {
+		font-size: 9vw;
+		margin-bottom: 9vw;
+	}
+	.info__text {
+		margin-bottom: 12vw;
+	}
+}
+
