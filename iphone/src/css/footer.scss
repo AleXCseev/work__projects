@@ -58,6 +58,10 @@
 		}
 	}
 
+	input:-ms-input-placeholder {
+		color: #fff !important;
+	}
+
 	.header__order-btn {
 		width: 100%;
 		margin-top: 15px;
