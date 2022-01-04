@@ -1,0 +1,183 @@
+.card__section {
+    width: 100%;
+    height: auto;
+}
+
+.card__wrapper {
+    width: 100%;
+    height: auto;
+    padding: 77px 0 100px;
+    position: relative;
+}
+
+.card__circle-1 {
+    bottom: 260px;
+    left: -95px;
+    z-index: -1;
+}
+
+.card__circle-2 {
+    bottom: -22px;
+    right: -170px;
+    z-index: -1;
+    animation-delay: 5s;
+}
+
+.card__section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+
+    .info__title {
+        width: auto;
+        flex-shrink: 0;
+        margin-bottom: 0;
+    }
+}
+
+.card__info-price {
+    text-align: right;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+}
+
+.card__photo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.card__photo-block {
+    width: 32%;
+    height: auto;
+    padding: 30px 75px;
+    background: #EFF3F6;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    border: 3px solid #EFF3F6;
+
+    &.active {
+        border: 3px solid #A6996E;
+    }
+}
+
+.card__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.card__color-btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.card__color-btn {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url(../img/ok.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 25px;
+        height: 17px;
+        opacity: 0;
+        transition: 0.3s ease;
+    }
+}
+
+.gold {
+    background-color: #A6996E;
+}
+
+.white {
+    background-color: #fff;
+
+    &:before {
+        background-image: url(../img/ok-black.png);
+    }
+}
+
+.black {
+    background-color: #000;
+}
+
+.card__btn-wrapper {
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.3s ease;
+    flex-shrink: 0;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    span {
+        font-style: italic;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.4;
+        color: #A6996E;
+        margin-left: 20px;
+        display: none;
+    }
+}
+
+.card__btn-wrapper.active {
+    span {
+        display: inline-block;
+    }
+    .card__color-btn {
+        &:before {
+            opacity: 1;
+        }
+    }
+}
+
+.card__input-wrapper {
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+}
+
+.card__input {
+    width: 345px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #9BB2C7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 0 20px;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #9BB2C7;
+}
+
+.card__submit {
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+}
