@@ -15,6 +15,11 @@
     z-index: -1;
 }
 
+.delivery__circle-2 {
+    z-index: -1;
+    display: none;
+}
+
 .delivery__block {
     display: flex;
     justify-content: space-between;

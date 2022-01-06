@@ -21,18 +21,20 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
-		// $(".review__slider").owlCarousel({
-		// 	loop: true,
-		// 	nav : true,
-		// 	dots: false,
-		// 	dotsEach: false,
-		// 	items: 1,
-		// 	margin: 50,
-		// 	autoplay:true,
-		// 	autoplayTimeout:5000,
-		// 	autoplayHoverPause:true
-		// 	// autoHeight: true,
-		// });
+		if($(window).width() <= 1000) {
+			$(".review__slider").addClass("owl-carousel").owlCarousel({
+				loop: true,
+				nav : false,
+				dots: true,
+				dotsEach: true,
+				items: 1,
+				margin: 50,
+				// autoplay:true,
+				// autoplayTimeout:5000,
+				// autoplayHoverPause:true
+				autoHeight: true,
+			});
+		}
 
 		// $.raty.path = $("body").data("path") + '/img/raty';
 
@@ -73,6 +75,37 @@ var landingFunctions = {
 
 			$(this).parent().addClass("active")
 		})
+
+		$(".open__charcteristic").click(function() {
+			$(".hidden").fadeIn(300)
+			$(this).hide()
+		})
+
+		function cardSlider (selector) {
+			var owl = $(selector + " .card__photo-wrapper").addClass("owl-carousel").owlCarousel({
+				items: 1,
+				margin: 100,
+				dots: false,
+				nav: false,
+				loop: true,
+				mouseDrag: false,
+				touchDrag: false,
+				animateOut: 'fadeOut',
+			});
+	
+			$(selector + " .card__color-btn").each(function() {
+				$(this).click(function() {
+					$(selector + " .card__color-btn").parent().removeClass("active")
+					var position = $(this).data("slide") - 1
+					owl.trigger("to.owl.carousel", [position, 300])
+					$(this).parent().addClass("active")
+				})
+			})
+		}
+		
+		if($(window).width() <= 700) {
+			cardSlider(".card__1")
+		}
 	},
 
 	time: function() {
