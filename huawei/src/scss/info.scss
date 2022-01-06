@@ -20,7 +20,7 @@
     border-radius: 100%;
     background: linear-gradient(107.56deg, rgba(255, 255, 255, 0.5) 0%, rgba(155, 178, 199, 0.5) 100%);
     // z-index: -1;
-    animation: circle 10s infinite;
+    animation: circle 6s infinite;
 
     &:before {
         content: "";
@@ -40,7 +40,7 @@
         transform: scale(1) rotate(0deg);
     }
     50% {
-        transform: scale(0.8) rotate(180deg);
+        transform: scale(0.6) rotate(180deg);
     }
     100% {
         transform: scale(1) rotate(360deg);

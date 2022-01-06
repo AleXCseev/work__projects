@@ -78,6 +78,15 @@
     .card__submit {
         width: 193px;
     }
+    .line {
+        &:before {
+            left: calc(50% - 660px);
+        }
+        &:after {
+            right: calc(50% - 660px);
+        }
+    }
+
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -531,6 +540,9 @@
     }
     .info__text {
         font-size: 4.2vw;
+    }
+    .info__img {
+        z-index: auto;
     }
     .info__img-1 {
         position: relative;
