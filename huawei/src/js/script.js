@@ -156,7 +156,7 @@ var landingFunctions = {
 		// 	$(this).text(getDate(date));
 		// })
 
-		$(".date__1").text(getDate(-4));
+		$(".date__1").text(getDate(-5));
     	$(".date__2").text(getDate(2));
 		$(".header__info span").text(getDate(2));
 

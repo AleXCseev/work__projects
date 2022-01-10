@@ -80,10 +80,10 @@
     }
     .line {
         &:before {
-            left: calc(50% - 660px);
+            left: calc(50% - 700px);
         }
         &:after {
-            right: calc(50% - 660px);
+            right: calc(50% - 700px);
         }
     }
 
@@ -555,9 +555,9 @@
         z-index: 1;
     }
     .info__circle-2 {
-        right: -75px;
-        top: 150vw;
-        z-index: auto;
+        right: -85px;
+        top: 147vw;
+        z-index: 1;
     }
     .info__circle-3 {
         left: 10px;
@@ -568,6 +568,10 @@
     .info__price .price {
         justify-content: space-around;
     }
+	.info__img-1 {
+		margin-top: 0px;
+	;
+	}
     .info__img-3 {
         margin-top: -20px;
     }
