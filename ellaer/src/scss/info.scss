@@ -14,6 +14,7 @@
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 60px 0 128px;
+	position: relative;
 }
 
 .why {
@@ -30,6 +31,57 @@
 	text-align: center;
 	color: #5A5A5A;
 	margin-bottom: 45px;
+}
+
+.why__girl-wrapper {
+	width: 378px;
+	height: 578px;
+	position: absolute;
+	top: 18px;
+	left: 0;
+
+	img {
+		height: 100%;
+		width: auto;
+		margin: auto;
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 85px;
+    	width: 208px;
+		height: 37px;
+		background: linear-gradient(180deg, rgba(255, 254, 254, 0) 0%, #FFFEFE 100%);
+	} 
+}
+
+.why__girl-text {
+	font-weight: bold;
+	font-size: 100px;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0.05em;
+	position: absolute;
+	top: 50%;
+	right: -234px;
+	width: auto;
+	transform: translateY(-50%) rotate(90deg);
+	background: linear-gradient(0deg, #ffeaea80 50%, #FFD9D9 100%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	z-index: -1;
+	color: #FFD9D9;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	/* IE10+ CSS styles go here */
+	.why__girl-text {
+		background: transparent;
+		background-clip: normal;
+		-webkit-text-fill-color: normal;
+	}
 }
 
 .why__list-item {
@@ -90,5 +142,76 @@
 	margin-bottom: 50px;
 }
 
+.day__girl-wrapper {
+	width: 421px;
+	height: 632px;
+	position: absolute;
+	bottom: 26px;
+    right: 140px;
+	display: flex;
+	justify-content: center;
+}
 
+.day__girl-1 {
+	position: absolute;
+	right: -293px;
+	top: -5px;
+	width: 271px;
+	height: auto;
+}
+
+.day__girl-2 {
+	position: absolute;
+	width: 197px;
+	height: auto;
+	bottom: 82px;
+	right: -166px;
+}
+
+.info__circle-1 {
+	left: -181px;
+	bottom: 308px;
+}
+
+.info__circle-2 {
+	left: 50%;
+	top: 542px;
+	animation-delay: 1s;
+}
+
+.info__circle-3 {
+	right: -188px;
+	top: 358px;
+	animation-delay: 2s;
+}
+
+.info__circle-4 {
+	right: -381px;
+	bottom: 370px;
+	animation-delay: 3s;
+}
+
+.info__circle-5 {
+	width: 135px;
+	height: 135px;
+	left: -264px;
+	top: 470px;
+	animation-delay: 4s;
+}
+
+.info__circle-6 {
+	width: 149px;
+	height: 149px;
+	left: -80px;
+	bottom: -25px;
+	animation-delay: 5s;
+}
+
+.info__circle-7 {
+	width: 153px;
+	height: 153px;
+	right: -300px;
+	bottom: -25px;
+	animation-delay: 6s;
+}
 

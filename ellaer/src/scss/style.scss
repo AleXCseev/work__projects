@@ -2,9 +2,9 @@
 @import "main";
 @import "header";
 @import "info";
-@import "video";
-@import "characteristic";
+@import "galary";
 @import "card";
+@import "table";
 @import "review";
 @import "delivery";
 @import "footer";
@@ -12,7 +12,9 @@
 
 
 /////////////////////////////////////////////////////////////////////
-@media (max-width: 1400px) {
-   
+@media (max-width: 1920px) {
+	.info {
+		background-size: 1920px 697px;
+	}
 }
 

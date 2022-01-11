@@ -15,16 +15,37 @@
         @@include("_header.html")
         <main class="main">
             @@include("_info.html")
-            @@include("_video.html")
-            @@include("_characteristic.html")
+			@@include("_galary.html")
             @@include("_card.html")
+			@@include("_table.html")
+			@@include("_delivery.html")
             @@include("_review.html")
-            @@include("_delivery.html")
         </main>  
-        @@include("_footer.html")  
+        @@include("_footer.html") 
+		<div class="footer__line">
+			<div class="container">
+				<div class="footer__line-wrapper">
+					<p class="footer__info">Скидка действует с <span class="date__1"></span> по <span class="date__2"></span> на весь товар интернет-магазина на всей территории Украины, кроме зон, не контролируемых властями</p>
+					<p class="footer__info">LLC "MONSTR-MEDIA" ИНН 7701071884 
+						<span class="divider divider__1">|</span> ЕГРПОУ 39149245 
+						<span class="divider divider__2">|</span> Tel.: +380630236658
+						<span class="divider divider__3">|</span> mail halo@matahari.com
+					</p>
+					<p class="footer__info">
+						<a data-fancybox data-src="#modal-privacy" href="javascript:;">Политика конфиденциальности</a>
+						<span class="divider divider__4">|</span>
+						<a data-fancybox data-src="#modal-delivery" href="javascript:;">Оплата и доставка</a>
+						<span class="divider divider__5">|</span>
+						<a data-fancybox data-src="#modal-refusal" href="javascript:;">Отказ от ответственности</a>
+					</p>
+				</div>
+			</div>
+		</div> 
     </div>
     @@include("_modal.html")  
     <script src="libs/jquery.min.js"></script>
+	<script src="libs/jquery.events.touch.min.js"></script>
+	<script src="libs/carousel.js"></script>
     <script src="libs/jquery.fancybox.min.js"></script>
     <script src="libs/owl.carousel.min.js"></script>
     <script src="libs/aos.js"></script>

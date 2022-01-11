@@ -1,9 +1,10 @@
 var landingFunctions = {
 	init: function() {
-		// this.initLibraris()
-		// this.card()
-		// this.time()
+		this.initLibraris()
+		this.card()
+		this.time()
 		// this.video()
+		this.galary()
 	}, 
 
 	initLibraris: function() {
@@ -21,20 +22,18 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
-		if($(window).width() <= 1000) {
-			$(".review__slider").addClass("owl-carousel").owlCarousel({
+			$(".review__slider").owlCarousel({
 				loop: true,
 				nav : false,
 				dots: true,
 				dotsEach: true,
-				items: 1,
-				margin: 50,
+				items: 3,
+				margin: 33,
 				// autoplay:true,
 				// autoplayTimeout:5000,
 				// autoplayHoverPause:true
-				autoHeight: true,
+				autoHeight: false,
 			});
-		}
 
 		// $.raty.path = $("body").data("path") + '/img/raty';
 
@@ -44,16 +43,16 @@ var landingFunctions = {
 		// 	number: 5,
 		// });
 
-		AOS.init({
-			disable : 'mobile',
-			once: true,
-			duration: 1000,
-			// offset : -200,
-		});
+		// AOS.init({
+		// 	disable : 'mobile',
+		// 	once: true,
+		// 	duration: 1000,
+		// 	// offset : -200,
+		// });
 	
-		$(window).resize(function() {
-			AOS.refresh();
-		})
+		// $(window).resize(function() {
+		// 	AOS.refresh();
+		// })
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
@@ -64,25 +63,75 @@ var landingFunctions = {
 		});
 	},
 
+	galary: function() {
+		function carousel(selector, btnSelector) {
+			var acarousel = $(selector).acarousel();
+	
+			function changeActive(move) {
+				var index = acarousel.getPos(move).index;
+				$(btnSelector + " .move").removeClass("active").eq(index).addClass("active");
+			}
+			changeActive();
+	
+			$(btnSelector + " .move").click(function (e) {
+				e.preventDefault();
+				if (acarousel.isAnim()) return false;
+				var index = $(".move").index(this);
+				var move = acarousel.moveByIndex(index);
+				changeActive(move);
+				return false;
+			});
+	
+	
+			$(selector).swipeleft(function(e) {
+				if (acarousel.isAnim()) return false;
+				var move = acarousel.move(-1);
+				changeActive(move);
+				return false;
+			})
+	
+			$(selector).swiperight(function(e) {
+				if (acarousel.isAnim()) return false;
+				var move = acarousel.move(1);
+				changeActive(move);
+				return false;
+			})
+	
+			var interval = setInterval(function () {
+				if($(window).width() > 700) {
+					if (acarousel.isAnim()) return false;
+					var move = acarousel.move(-1);
+					changeActive(move);
+					return false;
+				}
+			}, 5000)
+	
+			$(selector).mouseenter(function() {
+				clearInterval(interval)
+			})
+	
+			$(selector).mouseleave(function() {
+				interval = setInterval(function () {
+					if($(window).width() > 700) {
+						if (acarousel.isAnim()) return false;
+						var move = acarousel.move(-1);
+						changeActive(move);
+						return false;
+					}
+				}, 5000)
+			})
+	
+			$(window).resize(function () {
+				acarousel.init();
+			});
+		}
+	
+		carousel(".galary", ".move__mark");
+	},
+
 	card: function() {
-		$(".card__color-btn").click(function() {
-			var color = $(this).data("color");
-
-			$(".card__photo-block").removeClass("active");
-			$(".card__btn-wrapper").removeClass("active");
-
-			$(".card__photo-block[data-color='" + color + "']").addClass("active");
-
-			$(this).parent().addClass("active")
-		})
-
-		$(".open__charcteristic").click(function() {
-			$(".hidden").fadeIn(300)
-			$(this).hide()
-		})
-
 		function cardSlider (selector) {
-			var owl = $(selector + " .card__photo-wrapper").addClass("owl-carousel").owlCarousel({
+			var owl = $(".card__slider").owlCarousel({
 				items: 1,
 				margin: 100,
 				dots: false,
@@ -93,19 +142,38 @@ var landingFunctions = {
 				animateOut: 'fadeOut',
 			});
 	
-			$(selector + " .card__color-btn").each(function() {
+			$(selector + " .card__color").each(function() {
 				$(this).click(function() {
-					$(selector + " .card__color-btn").parent().removeClass("active")
+					$(selector + " .card__color").removeClass("not")
+					$(selector + " .card__color").removeClass("active")
+
+					var color = $(this).data("color");
+					$(".card__info-color").text(color)
+
+					var availTrue = $(".card__availability").data("avail-true");
+					var availFalse = $(".card__availability").data("avail-false");
+					
+					$(".card__availability").text(availTrue)
+
 					var position = $(this).data("slide") - 1
 					owl.trigger("to.owl.carousel", [position, 300])
-					$(this).parent().addClass("active")
+					$(this).addClass("active")
+
+					if($(this).data("avail") == false) {
+						$(this).addClass("not")
+						$(".card__availability").text(availFalse)
+					}
 				})
 			})
 		}
+	
+		cardSlider(".card__1")
+
+		$(".card__size").click( function() {
+			$(".card__size").removeClass("active");
+			$(this).addClass("active");
+		})
 		
-		if($(window).width() <= 700) {
-			cardSlider(".card__1")
-		}
 	},
 
 	time: function() {
@@ -158,7 +226,7 @@ var landingFunctions = {
 
 		$(".date__1").text(getDate(-5));
     	$(".date__2").text(getDate(2));
-		$(".header__info span").text(getDate(2));
+		// $(".header__info span").text(getDate(2));
 
 		// $(".year").text(new Date().getFullYear())
 	},

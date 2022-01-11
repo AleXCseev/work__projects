@@ -149,7 +149,7 @@
 
 .header__girl {
 	position: absolute;
-	bottom: -15px;
+	bottom: -25px;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 1;
@@ -232,20 +232,24 @@
 .header__circle-2 {
 	bottom: 170px;
 	left: -157px;
+	animation-delay: 2s;
 }
 
 .header__circle-3 {
 	bottom: -47px;
 	right: -320px;
+	animation-delay: 4s;
 }
 
 .header__circle-4 {
 	top: 272px;
 	left: -429px;
+	animation-delay: 5s;
 }
 
 .header__circle-5 {
 	bottom: -78px;
 	left: -96px;
+	animation-delay: 7s;
 }
 
