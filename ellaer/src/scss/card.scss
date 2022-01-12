@@ -70,6 +70,10 @@
 .card__slider {
 	height: 100%;
 	width: 542px;
+
+	img {
+		pointer-events: auto;
+	}
 }
 
 .card__right {
