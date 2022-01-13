@@ -425,9 +425,9 @@ body {
   border-radius: 100%;
   background: #FFB5B5;
   box-shadow: 0px 4px 20px rgba(60, 60, 60, 0.25);
-  -webkit-animation: scale 8s infinite;
-     -moz-animation: scale 8s infinite;
-          animation: scale 8s infinite;
+  -webkit-animation: scale 5s infinite;
+     -moz-animation: scale 5s infinite;
+          animation: scale 5s infinite;
 }
 .circle:before {
   content: "";
@@ -448,8 +448,8 @@ body {
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
   }
   100% {
     -webkit-transform: scale(1);
@@ -463,8 +463,8 @@ body {
          transform: scale(1);
   }
   50% {
-    -moz-transform: scale(0.7);
-         transform: scale(0.7);
+    -moz-transform: scale(0.6);
+         transform: scale(0.6);
   }
   100% {
     -moz-transform: scale(1);
@@ -480,10 +480,10 @@ body {
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(0.7);
-       -moz-transform: scale(0.7);
-         -o-transform: scale(0.7);
-            transform: scale(0.7);
+    -webkit-transform: scale(0.6);
+       -moz-transform: scale(0.6);
+         -o-transform: scale(0.6);
+            transform: scale(0.6);
   }
   100% {
     -webkit-transform: scale(1);
@@ -744,7 +744,7 @@ body {
   font-size: 30px;
   line-height: 1.2;
   color: #FF9900;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .day__info {
@@ -752,14 +752,14 @@ body {
   font-size: 28px;
   line-height: 1.2;
   color: #5A5A5A;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .day__girl-wrapper {
   width: 421px;
   height: 632px;
   position: absolute;
-  bottom: 26px;
+  bottom: 34px;
   right: 140px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1698,7 +1698,7 @@ td:first-child {
   margin-top: -50px;
 }
 .footer .header__content {
-  padding: 185px 0 40px;
+  padding: 260px 0 40px;
 }
 .footer .header__discount {
   margin-bottom: 30px;
@@ -1795,7 +1795,7 @@ td:first-child {
   }
 
   .header__content {
-    width: 680px;
+    width: 640px;
   }
 
   .header__title {
@@ -1803,17 +1803,22 @@ td:first-child {
   }
 
   .header__discount {
-    font-size: 40px;
+    font-size: 35px;
+  }
+
+  .header__main-circle {
+    bottom: 30px;
+    right: -731px;
   }
 
   .header__girl {
     position: absolute;
     bottom: -16px;
-    -webkit-transform: translateX(-50%) rotate(3deg);
-       -moz-transform: translateX(-50%) rotate(3deg);
-        -ms-transform: translateX(-50%) rotate(3deg);
-         -o-transform: translateX(-50%) rotate(3deg);
-            transform: translateX(-50%) rotate(3deg);
+    -webkit-transform: translateX(-50%) rotate(1deg);
+       -moz-transform: translateX(-50%) rotate(1deg);
+        -ms-transform: translateX(-50%) rotate(1deg);
+         -o-transform: translateX(-50%) rotate(1deg);
+            transform: translateX(-50%) rotate(1deg);
     z-index: 1;
   }
 
@@ -1824,7 +1829,12 @@ td:first-child {
   .day__girl-wrapper {
     width: 387px;
     height: 580px;
-    bottom: 37px;
+    bottom: 45px;
+    -webkit-transform: rotate(3deg);
+       -moz-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+         -o-transform: rotate(3deg);
+            transform: rotate(3deg);
   }
 
   .card {
@@ -1861,8 +1871,8 @@ td:first-child {
   .header__main-circle {
     width: 650px;
     height: 650px;
-    bottom: 60px;
-    right: -460px;
+    bottom: 54px;
+    right: -545px;
   }
 
   .header__girl {
@@ -2005,7 +2015,7 @@ td:first-child {
   }
 
   .info__wrapper {
-    padding: 33px 0 60px;
+    padding: 33px 0 80px;
     z-index: 1;
   }
   .info__wrapper .circle {
@@ -2086,6 +2096,11 @@ td:first-child {
     width: 414px;
     margin-top: 20px;
     display: block;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
   }
 
   .day__title {
@@ -2498,12 +2513,12 @@ td:first-child {
 
   .day__discount {
     font-size: 6vw;
-    margin-bottom: 5vw;
+    margin-bottom: 9vw;
   }
 
   .day__info {
     font-size: 5.5vw;
-    margin-bottom: 9vw;
+    margin-bottom: 5vw;
   }
 
   .info__wrapper {
@@ -2720,6 +2735,11 @@ td:first-child {
     font-size: 4vw;
   }
 
+  .review {
+    position: relative;
+    z-index: 2;
+  }
+
   .review__photo-wrapper {
     margin-bottom: 7vw;
   }
@@ -2736,13 +2756,13 @@ td:first-child {
 
   .footer {
     background-image: url(../img/footer-mobile-bg.png);
-    margin-top: 0px;
+    margin-top: -140px;
   }
   .footer .header__circle-1 {
     display: block;
     width: 62px;
     height: 62px;
-    top: 30px;
+    top: 180px;
     left: -18px;
   }
   .footer .header__circle-2 {
@@ -2762,7 +2782,7 @@ td:first-child {
   }
 
   .footer .header__content {
-    padding: 100px 0 73px;
+    padding: 240px 0 73px;
   }
 
   .footer .header__brand {
