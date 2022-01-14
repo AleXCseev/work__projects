@@ -2805,6 +2805,22 @@ td:first-child {
     padding: 50px 0 20px;
   }
 }
+@media (max-width: 414px) {
+  .info__circle-3 {
+    right: 0px;
+    top: 716px;
+  }
+
+  .info__circle-4 {
+    left: -60px;
+    top: 900px;
+  }
+
+  .info__circle-2 {
+    left: 40px;
+    top: 458px;
+  }
+}
 @media (max-width: 320px) {
   .card__text {
     font-size: 16px;
