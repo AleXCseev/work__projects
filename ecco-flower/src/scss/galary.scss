@@ -1,6 +1,317 @@
 .galary__section {
 	width: 100%;
 	height: auto;
-	position: relative;
 }
 
+.galary__wrapper {
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding-bottom: 150px;
+}
+
+.galary__leaf-1 {
+	top: 58px;
+	left: -287px;
+
+	img {
+		animation-delay: 4s;
+		animation-duration: 25s;
+	}
+}
+
+.galary__leaf-2 {
+	top: 149px;
+	left: -70px;
+}
+
+.galary__leaf-3 {
+	top: 82px;
+	right: -140px;
+
+	img {
+		animation-name: rotate-reverse;
+		animation-delay: 2s;
+		animation-duration: 30s;
+	}
+}
+
+.galary__leaf-4 {
+	bottom: 94px;
+	left: -350px;
+
+	img {
+		animation-delay: 6s;
+		animation-duration: 25s;
+	}
+}
+
+.galary__leaf-5 {
+	bottom: 77px;
+	left: -150px;
+
+	img {
+		animation-name: rotate-reverse;
+		animation-delay: 15s;
+		animation-duration: 35s;
+	}
+}
+
+.galary__leaf-6 {
+	bottom: 228px;
+	left: 50px;
+	z-index: 1;
+
+	img {
+		animation-delay: 7s;
+		animation-duration: 25s;
+	}
+}
+
+.galary__leaf-7 {
+	bottom: 7px;
+	left: 215px;
+
+	img {
+		animation-name: rotate-reverse;
+		animation-delay: 5s;
+		animation-duration: 30s;
+	}
+}
+
+.galary__leaf-8 {
+	bottom: -5px;
+	right: 202px;
+
+	img {
+		animation-delay: 10s;
+	}
+}
+
+.galary__leaf-9 {
+	bottom: 140px;
+	right: 0;
+
+	img {
+		animation-delay: 5s;
+		animation-duration: 25s;
+	}
+}
+
+.galary__leaf-10 {
+	bottom: 0;
+	right: -166px;
+
+	img {
+		animation-name: rotate-reverse;
+		animation-delay: 10s;
+		animation-duration: 30s;
+	}
+}
+
+.galary__leaf-11 {
+	bottom: 62px;
+	right: -380px;
+
+	img {
+		animation-duration: 35s;
+	}
+}
+
+.galary__leaf-12 {
+	bottom: 230px;
+	right: -280px;
+
+	img {
+		animation-name: rotate-reverse;
+		animation-delay: 5s;
+		animation-duration: 25s;
+	}
+}
+
+.galary__leaf-13 {
+	bottom: 327px;
+	right: -90px;
+	z-index: 1;
+
+	img {
+		animation-delay: 15s;
+		animation-duration: 30s;
+	}
+}
+
+
+.galary__title {
+	font-weight: 600;
+	font-size: 45px;
+	line-height: 1.56;
+	text-transform: uppercase;
+	color: #FF8495;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.galary__text {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.94;
+	text-align: center;
+	color: #3D3450;
+	margin-bottom: 40px;
+}
+
+.galary {
+	width: 1906px;
+	height: 750px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 50px;
+}
+
+.galary__slide {
+	position: absolute;
+	min-width: 468px;
+	min-height: 650px;
+	padding: 5px;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+	border: 1px solid #BD9EFF;
+	border-radius: 20px;
+	// transition: opacity 0.3s ease;
+
+	&:hover {
+		opacity: 1 !important;
+		.galary__slide-wrapper {
+
+			&:before {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+.galary__slide-wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	border-radius: 20px;
+
+	img {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		pointer-events: auto;
+	}
+
+	&:before {
+		content: "";
+		opacity: 0;
+		visibility: hidden;
+		transition: 0.3s ease;
+		pointer-events: none;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url(../img/linse.png), linear-gradient(0deg, rgba(218, 202, 253, 0.5), rgba(218, 202, 253, 0.5));
+		background-repeat: no-repeat;
+		background-position: center;
+		z-index: 1;
+	}
+}
+
+.galary__slide-1 {
+	left: 0;
+	top: 100px;
+	z-index: 6;
+	opacity: 1;
+}
+
+.galary__slide-2 {
+	left: 342px;
+	top: 0px;
+	z-index: 3;
+	opacity: 0.6;
+}
+
+.galary__slide-3 {
+	left: 553px;
+	top: 100px;
+	z-index: 5;
+	opacity: 1;
+}
+
+.galary__slide-4 {
+	left: 895px;
+	top: 0px;
+	z-index: 2;
+	opacity: 0.6;
+}
+
+.galary__slide-5 {
+	left: 1106px;
+	top: 100px;
+	z-index: 4;
+	opacity: 1;
+}
+
+.galary__slide-6 {
+	left: 1448px;
+	top: 0px;
+	z-index: 1;
+	opacity: 0.6;
+}
+
+.move__mark {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.move__next,
+.move__back {
+	width: 48px;
+	height: 48px;
+	background-image: url(../img/arrow.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	transition: 0.3s ease;
+
+	&:hover {
+		background-image: url(../img/arrow-hover.png);
+	}
+}
+
+.move__next {
+	transform: rotate(180deg);
+	margin-left: 30px;
+	
+}
+
+.move__back {
+	margin-right: 30px;
+}
+
+.move {
+	width: 10px;
+	height: 10px;
+	background: #C4C4C4;
+	transition: 0.3s ease;
+	margin-right: 5px;
+	border-radius: 100%;
+
+	&.active {
+		background: #AA83FF;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
