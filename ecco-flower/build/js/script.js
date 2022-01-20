@@ -6,46 +6,31 @@ var landingFunctions = {
 		this.galary()
 		this.paralax()
 		this.video()
+		this.modal()
 	}, 
 
 	initLibraris: function() {
 
-		// $('[href*="#"]').on('click', function (e) {
-		// 	var fixedOffset = 20;
-		// 	var cardHeight = $(".card").outerHeight(false)
-		// 	var windowHeight = $(window).height()
+		$('[href*="#"]').on('click', function (e) {
+			var fixedOffset = 20;
+			var cardHeight = $(".card").outerHeight(false)
+			var windowHeight = $(window).height()
 	
 
-		// 	$('html, body')
-		// 		.stop()
-		// 		.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-		// 		// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
-		// 	e.preventDefault();
-		// });
+			$('html, body')
+				.stop()
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+			e.preventDefault();
+		});
 
-		// $(".review__slider").owlCarousel({
-		// 	loop: true,
-		// 	nav : false,
-		// 	dots: true,
-		// 	dotsEach: true,
-		// 	items: 3,
-		// 	margin: 33,
-		// 	autoHeight: false,
-		// 	responsive:{
-		// 		0:{
-		// 			items:1,
-		// 			autoHeight: true,
-		// 		},
-		// 		481:{
-		// 			items:2,
-		// 			autoHeight: false,
-		// 		},
-		// 		1000: {
-		// 			items:3,
-		// 			autoHeight: false,
-		// 		}
-		// 	}
-		// });
+		$(".review__slider").owlCarousel({
+			loop: true,
+			nav : true,
+			dots: false,
+			items: 1,
+			margin: 50,
+		});
 
 		// AOS.init({
 		// 	disable : 'mobile',
@@ -330,6 +315,61 @@ var landingFunctions = {
 	
 		addVideoOnPage(".video");	
 	},
+
+	modal: function() {
+		function modal() {
+			$(".add__review").click(function () {
+				$(".modal").addClass("active")
+			})
+	
+			function close() {
+				$(".modal").removeClass("active")
+			}
+	
+			$(".modal").click( function(e) {
+				var target = e.target;
+				if(target.classList.contains("modal__close")) {
+					close()
+				}
+				if(target.classList.contains("modal")) {
+					close()
+				}
+			})
+	
+			function readURL(input) {
+				if (input.files && input.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function (e) {
+						$('.file img').attr('src', e.target.result).css("display", "block");
+					};
+					reader.readAsDataURL(input.files[0]);
+				}
+			}
+	
+			$(".modal .input__file").on("change", function () {
+				readURL(this);
+			});
+	
+			$(".modal form").submit(function (e) {
+				e.preventDefault()
+				$(this).removeClass("active");
+				$(".send__window").addClass("active");
+				$(".modal .name__input").val("")
+				$(".modal .modal__area").val("")
+				$(".modal .file img").attr("src", "").css("display", "none")
+				delayClose()
+			})
+			function delayClose() {
+				setTimeout(function () {
+					$(".modal form").addClass("active");
+					$(".send__window").removeClass("active");
+					close();
+				}, 5000);
+			}
+		}
+	
+		modal()
+	}
 }
 
 $(document).ready(function() {

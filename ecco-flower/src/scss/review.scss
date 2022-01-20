@@ -3,3 +3,173 @@
     height: auto;
 }
 
+.review__wrapper {
+	width: 100%;
+	max-width: 995px;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.review__leaf-1 {
+	top: -30px;
+	left: -65px;
+
+	img {
+		animation-duration: 25s;
+	}
+}
+
+.review__leaf-2 {
+	top: -10px;
+	left: -327px;
+
+	img {
+		animation-name: rotate-reverse;
+		animation-duration: 30s;
+	}
+}
+
+.review__leaf-3 {
+	top: 100px;
+	left: -519px;
+
+	img {
+		animation-duration: 40s;
+	}
+}
+
+.review__leaf-4 {
+	bottom: -50px;
+	left: -290px;
+
+	img {
+		animation-name: rotate-reverse;
+		animation-duration: 35s;
+	}
+}
+
+.review__leaf-5 {
+	bottom: -68px;
+	left: -400px;
+
+	img {
+		animation-duration: 30s;
+	}
+}
+
+.review__leaf-6 {
+	bottom: -68px;
+	left: 50px;
+
+	img {
+		animation-duration: 45s;
+	}
+}
+
+.review__leaf-7 {
+	bottom: -180px;
+	left: -130px;
+
+	img {
+		animation-name: rotate-reverse;
+		animation-duration: 25s;
+	}
+}
+
+.review__leaf-8 {
+	bottom: -168px;
+	left: 170px;
+
+	img {
+		animation-duration: 40s;
+	}
+}
+
+.review__leaf-9 {
+	top: -51px;
+	right: -38px;
+
+	img {
+		animation-name: rotate-reverse;
+		animation-duration: 35s;
+	}
+}
+
+.review__leaf-10 {
+	top: 0;
+	right: -240px;
+
+	img {
+		animation-duration: 25s;
+	}
+}
+
+.review__leaf-11 {
+	top: 150px;
+	right: -370px;
+
+	img {
+		animation-name: rotate-reverse;
+		animation-duration: 30s;
+	}
+}
+
+
+.review__slider {
+	width: 584px;
+	position: relative;
+	z-index: 10;
+
+	.owl-nav {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 995px;
+		margin: 0;
+		pointer-events: none;
+
+		button {
+			pointer-events: auto;
+			
+		}
+	}
+}
+
+.review__slide {
+	width: 100%;
+	height: auto;
+}
+
+.review__name {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	text-align: center;
+	color: #3D3450;
+	margin-bottom: 20px;
+}
+
+.review__text {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.94;
+	text-align: center;
+	color: #3D3450;
+}
+
+.add__review {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.2;
+	text-align: center;
+	text-decoration-line: underline;
+	color: #BD9EFF;
+	margin-top: 30px;
+	background-color: transparent;
+	cursor: pointer;
+}

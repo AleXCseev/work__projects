@@ -117,6 +117,140 @@
 	}
 }
 
+.card__leaf-11 {
+	bottom: 294px;
+	left: -360px;
+
+	img {
+		animation-name: rotate-reverse;
+		animation-delay: 5s;
+		animation-duration: 25s;
+	}
+}
+
+.card__leaf-12 {
+	bottom: 250px;
+	left: -135px;
+
+	img {
+		animation-delay: 10s;
+		animation-duration: 30s;
+	}
+}
+
+.card__leaf-13 {
+	top: 85px;
+	right: -265px;
+
+	img {
+		animation-name: rotate-reverse;
+		animation-delay: 2s;
+		animation-duration: 20s;
+	}
+}
+
+.card__leaf-14 {
+	top: 210px;
+	right: -67px;
+
+	img {
+		animation-delay: 10s;
+		animation-duration: 30s;
+	}
+}
+
+.card__leaf-15 {
+	top: 321px;
+	right: -274px;
+
+	img {
+		animation-name: rotate-reverse;
+		animation-delay: 5s;
+		animation-duration: 35s;
+	}
+}
+
+.card__leaf-16 {
+	top: 546px;
+	right: -104px;
+
+	img {
+		animation-delay: 8s;
+		animation-duration: 25s;
+	}
+}
+
+.card__leaf-17 {
+	top: 673px;
+	right: -324px;
+
+	img {
+		animation-delay: 10s;
+		animation-duration: 25s;
+	}
+}
+
+.card__leaf-18 {
+	top: 762px;
+	right: -82px;
+
+	img {
+		animation-name: rotate-reverse;
+	}
+}
+
+.card__leaf-19 {
+	bottom: 722px;
+	right: -227px;
+
+	img {
+		animation-delay: 5s;
+		animation-duration: 30s;
+	}
+}
+
+.card__leaf-20 {
+	bottom: 583px;
+	right: -298px;
+
+	img {
+		animation-name: rotate-reverse;
+		animation-delay: 10s;
+		animation-duration: 25s;
+	}
+}
+
+.card__leaf-21 {
+	bottom: 468px;
+	right: -161px;
+
+	img {
+		animation-delay: 2s;
+		animation-duration: 35s;
+	}
+}
+
+.card__leaf-22 {
+	bottom: 317px;
+	right: -337px;
+
+	img {
+		animation-name: rotate-reverse;
+		animation-delay: 5s;
+		animation-duration: 25s;
+	}
+}
+
+.card__leaf-23 {
+	bottom: 145px;
+	right: -159px;
+
+	img {
+		animation-delay: 10s;
+		animation-duration: 25s;
+	}
+}
+
 
 .card {
 	width: 100%;
@@ -398,6 +532,7 @@
 	font-size: 20px;
 	line-height: 1;
 	color: #7B7B7B;
+	background-color: transparent;
 
 	&:focus {
 		border: 3px solid #9666FF;

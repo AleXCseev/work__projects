@@ -161,7 +161,8 @@
 }
 
 .galary {
-	width: 1906px;
+	width: 100vw;
+	max-width: 1906px;
 	height: 750px;
 	position: relative;
 	left: 50%;
@@ -234,35 +235,35 @@
 }
 
 .galary__slide-2 {
-	left: 342px;
+	left: 17%;
 	top: 0px;
 	z-index: 3;
 	opacity: 0.6;
 }
 
 .galary__slide-3 {
-	left: 553px;
+	left: 29%;
 	top: 100px;
 	z-index: 5;
 	opacity: 1;
 }
 
 .galary__slide-4 {
-	left: 895px;
+	left: 46%;
 	top: 0px;
 	z-index: 2;
 	opacity: 0.6;
 }
 
 .galary__slide-5 {
-	left: 1106px;
+	left: 58%;
 	top: 100px;
 	z-index: 4;
 	opacity: 1;
 }
 
 .galary__slide-6 {
-	left: 1448px;
+	left: 75%;
 	top: 0px;
 	z-index: 1;
 	opacity: 0.6;
@@ -306,6 +307,7 @@
 	transition: 0.3s ease;
 	margin-right: 5px;
 	border-radius: 100%;
+	cursor: pointer;
 
 	&.active {
 		background: #AA83FF;
