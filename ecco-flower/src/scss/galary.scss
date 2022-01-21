@@ -292,12 +292,12 @@
 
 .move__next {
 	transform: rotate(180deg);
-	margin-left: 30px;
+	margin-left: 20px;
 	
 }
 
 .move__back {
-	margin-right: 30px;
+	margin-right: 22px;
 }
 
 .move {
@@ -313,7 +313,7 @@
 		background: #AA83FF;
 	}
 
-	&:last-child {
+	&:last-of-type {
 		margin-right: 0;
 	}
 }

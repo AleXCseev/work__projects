@@ -9,6 +9,10 @@
 	position: relative;
 	z-index: 1;
 
+	.header__title {
+		font-size: 54px;
+	}
+
 	.header__content {
 		padding: 150px 0 117px;
 	}

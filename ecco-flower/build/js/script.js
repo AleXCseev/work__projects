@@ -152,15 +152,6 @@ var landingFunctions = {
 	
 		switchBtns(".card__1");
 
-		// function switchColor(selector) {
-		// 	$(selector).click(function () {
-		// 		$(selector).removeClass("active");
-		// 		$(this).addClass("active");
-		// 	})
-		// }
-	
-		// switchColor(".card__1 .color")
-
 		function galary(selector) {
 			var galaryFototsSelector = selector + " .card__slide img";
 	
@@ -253,8 +244,8 @@ var landingFunctions = {
 			if (scenesParallax.length === 0) {
 				$('.parallax').each(function (i) {
 					scenesParallax[i] = new Parallax($(this).children('div').attr('data-depth', randomNum(10, 20)).end().get(0), {
-						frictionX: 0.001,
-						frictionY: 0.001,
+						frictionX: 0.002,
+						frictionY: 0.002,
 						invertX: Math.random() >= 0.5,
 						invertY: Math.random() >= 0.5
 					});

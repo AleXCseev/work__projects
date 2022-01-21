@@ -55,17 +55,17 @@
 .header__girle {
 	position: absolute;
 	bottom: -42%;
-    right: 0;
-    width: 79%;
+    right: 6%;
+    width: 76%;
     z-index: 10;
 }
 
 .header__flowers {
 	position: absolute;
-	top: 17%;
+	top: 20%;
     left: -4%;
     z-index: 1;
-    width: 98%;
+    width: 90%;
 }
 
 .boot__red {
@@ -81,7 +81,7 @@
     bottom: -8%;
     left: 5%;
     z-index: 2;
-    width: 50%;
+    width: 46%;
 }
 
 .circle {
@@ -89,7 +89,7 @@
 	top: 50%;
 	left: 50%;
 	border-radius: 100%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%) scale(1);
 	animation: scale 8s infinite;
 } 
 
