@@ -62,7 +62,7 @@
 }
 
 /////////////////////////////////////////////////////////////////////
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
 	.container {
 		width: 1000px;
 	}
@@ -112,6 +112,37 @@
 			font-size: 42px;
 		}
 	}
+	.header__girle {
+		bottom: -42%;
+		right: 12%;
+		width: 71%;
+	}
+	.boot__black {
+		bottom: -8%;
+		left: 5%;
+		width: 42%;
+	}
+	.boot__red {
+		bottom: 18%;
+		left: 0;
+		width: 32%;
+	}
+	.card__slide img {
+		width: auto !important;
+		height: 100%;
+		max-width: 540px !important;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////
+@media (max-width: 1080px) {
+	.header__girle {
+		display: none;
+	}
+	.video__block {
+		right: -610px;
+		width: 550px;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -144,6 +175,8 @@
 	.header__girle {
 		bottom: -42%;
 		right: -10%;
+		width: 76%;
+		display: block;
 	}
 	.boot__black {
 		bottom: -6%;
@@ -224,6 +257,11 @@
 			width: 100%;
 		}
 	} 
+	.card__slide img {
+		width: auto !important;
+		height: 100%;
+		max-width: 100% !important;
+	}
 	.card__price {
 		.price {
 			justify-content: flex-start;

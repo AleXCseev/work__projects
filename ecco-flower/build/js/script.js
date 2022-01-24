@@ -10,6 +10,7 @@ var landingFunctions = {
 	}, 
 
 	initLibraris: function() {
+		objectFitImages()
 
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 20;
