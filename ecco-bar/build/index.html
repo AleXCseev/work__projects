@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
     <link rel="stylesheet" href="libs/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/jquery.raty.css">
 	<link rel="stylesheet" href="libs/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Ecco</title>
@@ -18,21 +19,23 @@
 	   <div class="header__wrapper">
 		   <img src="img/logo.png" alt="" class="header__logo">
 		   <h1 class="header__title">
-				Финальная рапродажа!
+				СЕЗОННАЯ РАСПРОДАЖА!
 		   </h1>
 		   <p class="header__text">
-				Разыгрываем скидки до 70% на кожаную обувь
+				Модные хиты от Ecco с умопомрачительными скидками
 		   </p>
-		   <img src="img/girl-1.png" alt="" class="header__girl-1">
-		   <img src="img/girl-2.png" alt="" class="header__girl-2">
-		   <div class="header__elipse">
-			   <img src="img/elipse.png" alt="" class="header__elipse-bg">
-			   <img src="img/header-boot-1.png" alt="" class="header__boot header__boot-1 boot__active">
-			   <img src="img/header-boot-2.png" alt="" class="header__boot header__boot-2 boot__left">
-			   <img src="img/header-boot-3.png" alt="" class="header__boot header__boot-3 boot__right">
+		   <div class="header__elipse-block">
+				<img src="img/girl-1.png" alt="" class="header__girl-1">
+				<img src="img/girl-2.png" alt="" class="header__girl-2">
+				<div class="header__elipse">
+					<img src="img/elipse.png" alt="" class="header__elipse-bg">
+					<img src="img/header-boot-1.png" alt="" class="header__boot header__boot-1 boot__active">
+					<img src="img/header-boot-2.png" alt="" class="header__boot header__boot-2 boot__left">
+					<img src="img/header-boot-3.png" alt="" class="header__boot header__boot-3 boot__right">
+				</div>
 		   </div>
-		   <a href="#bar" class="header__order-btn"><span>выиграть скидку</span></a>
-		   <p class="header__info">Скидка является персональной</p>
+		   <a href="#bar" class="header__order-btn"><span>ВЫИГРАТЬ СВОЮ СКИДКУ</span></a>
+		   <p class="header__info">Испытайте свою удачу!</p>
 	   </div>
    </div>
 </header>
@@ -44,22 +47,19 @@
 				<div class="advantage__block advantage__block-1">
 					<img src="img/advantage-1.png" alt="" class="advantage__img">
 					<p class="advantage__text">
-						Натуральная
-						кожа
+						НАТУРАЛЬНАЯ КОЖА
 					</p>
 				</div>
 				<div class="advantage__block-center advantage__block-2">
 					<img src="img/advantage-2.png" alt="" class="advantage__img">
 					<p class="advantage__text">
-						Натуральная
-						кожа
+						ПРЕВОСХОДНОЕ КАЧЕСТВО
 					</p>
 				</div>
 				<div class="advantage__block advantage__block-3">
 					<img src="img/advantage-3.png" alt="" class="advantage__img">
 					<p class="advantage__text">
-						Натуральная
-						кожа
+						БЫСТРЫЙ СЕРВИС
 					</p>
 				</div>
 			</div>
@@ -109,7 +109,8 @@
 							data-red="img/galary/2/1.jpg"
 							data-black="img/galary/3/1.jpg"
 							data-beige="img/galary/4/1.jpg"
-							alt="" />
+							alt="" 
+						/>
 					</a>
 					<a href="img/galary/1/2.jpg" data-fancybox="gallery">
 						<img 
@@ -118,7 +119,8 @@
 							data-red="img/galary/2/2.jpg"
 							data-black="img/galary/3/2.jpg"
 							data-beige="img/galary/4/2.jpg"
-							alt="" />
+							alt="" 
+						/>
 					</a>
 				</div>
 				<div class="galary__column">
@@ -129,7 +131,8 @@
 							data-red="img/galary/2/3.jpg"
 							data-black="img/galary/3/3.jpg"
 							data-beige="img/galary/4/3.jpg"
-							alt="" />
+							alt="" 
+						/>
 					</a>
 					<a href="img/galary/1/4.jpg" data-fancybox="gallery">
 						<img 
@@ -138,7 +141,8 @@
 							data-red="img/galary/2/4.jpg"
 							data-black="img/galary/3/4.jpg"
 							data-beige="img/galary/4/4.jpg"
-							alt="" />
+							alt="" 
+						/>
 					</a>
 				</div>
 			</div>
@@ -150,10 +154,10 @@
 	<div class="container">
 		<div class="bar__wrapper" id="bar">
 			<h3 class="header__title">
-				Финальная рапродажа!
+				Невероятная распродажа!
 		   </h3>
 		   <p class="header__text">
-				Разыгрываем скидки до 70% на кожаную обувь
+				Кожаная обувь со скидкой до 70 %
 		   </p>
 		   <div class="discount__wrapper">
 			   <div class="discount__line">
@@ -472,13 +476,12 @@
 							40%
 						</div>
 			   		</div>
-
 			   </div>
 		   </div>
-		   <button class="header__order-btn start"><span>выиграть скидку</span></button>
+		   <button class="header__order-btn start"><span>ИСПЫТАТЬ УДАЧУ!</span></button>
 		   <p class="header__info">
-			   Участвовать в розыграше <br>
-				возможно только один раз
+				У вас только одна попытка! <br>
+				Действуйте!
 			</p>
 		</div>
 	</div>
@@ -489,61 +492,481 @@
 			<section class="card__section">
     <div class="container">
 		<div class="card__wrapper">
-			<h3 class="header__title">
+			<h3 class="header__title" id="card">
 				Поздравляем !
 			</h3>
 			<p class="header__text">
 				Ваша персональная скидка составила 70%
 			</p>
-			<div class="card" id="card">
+			<div class="card card__1">
+				<div class="card__left">
+					<img src="img/logo.png" alt="" class="card__logo">
+					<a data-fancybox href="https://youtu.be/QPpzTWZc8mw">
+						<img src="img/youtube.png" alt="" class="youtube__logo">
+					</a>
+					<img src="img/header-boot-1.png" alt="" class="card__boot">
+					<p class="card__discount">70%</p>
+					<div class="card__fotos">
+						<div class="card__foto-wrapper">
+							<a href="img/card-1/1.jpg" data-fancybox="card-1">
+								<img src="img/card-1/1.jpg" alt="" />
+							</a>
+						</div>
+						<div class="card__foto-wrapper">
+							<a href="img/card-1/2.jpg" data-fancybox="card-1">
+								<img src="img/card-1/2.jpg" alt="" />
+							</a>
+						</div>
+						<div class="card__foto-wrapper">
+							<a href="img/card-1/3.jpg" data-fancybox="card-1">
+								<img src="img/card-1/3.jpg" alt="" />
+							</a>
+						</div>
+						<div class="card__foto-wrapper">
+							<a href="img/card-1/4.jpg" data-fancybox="card-1">
+								<img src="img/card-1/4.jpg" alt="" />
+							</a>
+						</div>
+						<div class="card__foto-wrapper">
+							<a href="img/card-1/5.jpg" data-fancybox="card-1">
+								<img src="img/card-1/5.jpg" alt="" />
+							</a>
+						</div>
+						<div class="card__foto-wrapper">
+							<a href="img/card-1/6.jpg" data-fancybox="card-1">
+								<img src="img/card-1/6.jpg" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="card__right">
+					<div class="card__header">
+						<h3 class="card__title">Soft 7</h3>
+						<div class="card__raiting">
+							<img src="img/star.png" alt="">
+							<img src="img/star.png" alt="">
+							<img src="img/star.png" alt="">
+							<img src="img/star.png" alt="">
+							<img src="img/star.png" alt="">
+						</div>
+					</div>
+					<div class="card__price">
+						<div class="price">
+							<span class="old__price">4663 грн</span>
+							<span class="new__price">1399 грн</span>
+						</div>
+					</div>
+					<div class="card__info-wrapper">
+						<p class="card__info">Сезон: Весна 2022</p>
+						<p class="card__info">Пол: Женский</p>
+						<p class="card__info">Вид товара: Кеды</p>
+						<p class="card__info">Верх: Натуральная телячья кожа</p>
+						<p class="card__info">Материал подошвы: Термополиуретан</p>
+						<p class="card__info">Страна: Словакия</p>
+					</div>
+					<form class="card__form">
+						<div class="card__input-wrapper">
+							<input type="text" placeholder="Имя" required class="card__input">
+						</div>
+						<div class="card__input-wrapper">
+							<input type="tel" placeholder="Телефон" required class="card__input">
+						</div>
+						<div class="card__input-wrapper">
+							<select name="size" class="card__select" size="1">
+								<option value="" hidden="">Размер</option>
+								<option value="40">26.5</option>
+								<option value="41">27.5</option>
+								<option value="42">28</option>
+								<option value="43">28.5</option>
+								<option value="44">29</option>
+								<option value="45">29.5</option>
+							</select>
+						</div>
+						<button type="submit" class="header__order-btn"><span>купить</span></button>
+					</form>
+				</div>
+			</div>
+			<div class="card card__2">
+				<div class="card__left">
+					<img src="img/logo.png" alt="" class="card__logo">
+					<a data-fancybox href="https://youtu.be/Vo5-E4goNL8">
+						<img src="img/youtube.png" alt="" class="youtube__logo">
+					</a>
+					<img 
+						src="img/header-boot-3.png"
+						data-red="img/header-boot-3.png"
+						data-black="img/header-boot-4.png"
+						alt=""
+						class="card__boot"
+					>
+					<p class="card__discount">70%</p>
+					<div class="card__fotos">
+						<div class="card__foto-wrapper">
+							<a href="img/card-2/1.jpg" data-fancybox="card-2">
+								<img 
+									src="img/card-2/1.jpg"
+									data-red="img/card-2/1.jpg" 
+									data-black="img/card-2/7.jpg"
+									alt="" />
+							</a>
+						</div>
+						<div class="card__foto-wrapper">
+							<a href="img/card-2/2.jpg" data-fancybox="card-2">
+								<img 
+									src="img/card-2/2.jpg"
+									data-red="img/card-2/2.jpg" 
+									data-black="img/card-2/8.jpg"
+									alt="" />
+							</a>
+						</div>
+						<div class="card__foto-wrapper">
+							<a href="img/card-2/3.jpg" data-fancybox="card-2">
+								<img 
+									src="img/card-2/3.jpg"
+									data-red="img/card-2/3.jpg" 
+									data-black="img/card-2/9.jpg"
+									alt="" />
+							</a>
+						</div>
+						<div class="card__foto-wrapper">
+							<a href="img/card-2/4.jpg" data-fancybox="card-2">
+								<img 
+									src="img/card-2/4.jpg"
+									data-red="img/card-2/4.jpg" 
+									data-black="img/card-2/10.jpg" 
+									alt="" />
+							</a>
+						</div>
+						<div class="card__foto-wrapper">
+							<a href="img/card-2/5.jpg" data-fancybox="card-2">
+								<img 
+									src="img/card-2/5.jpg"
+									data-red="img/card-2/5.jpg" 
+									data-black="img/card-2/11.jpg"
+									alt="" />
+							</a>
+						</div>
+						<div class="card__foto-wrapper">
+							<a href="img/card-2/6.jpg" data-fancybox="card-2">
+								<img 
+									src="img/card-2/6.jpg"
+									data-red="img/card-2/6.jpg" 
+									data-black="img/card-2/12.jpg"
+									alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="card__right">
+					<div class="card__header">
+						<h3 class="card__title" data-red="Soft 8 Bordo" data-black="Soft 8 Black">Soft 8 Bordo</h3>
+						<div class="card__raiting">
+							<img src="img/star.png" alt="">
+							<img src="img/star.png" alt="">
+							<img src="img/star.png" alt="">
+							<img src="img/star.png" alt="">
+							<img src="img/star.png" alt="">
+						</div>
+					</div>
+					<div class="card__price">
+						<div class="price"> 
+							<span class="old__price">4663 грн</span>
+							<span class="new__price">1399 грн</span>
+						</div>
+					</div>
+					<div class="card__info-wrapper">
+						<p class="card__info">Сезон: Весна 2022</p>
+						<p class="card__info">Пол: Женский</p>
+						<p class="card__info">Вид товара: Кеды</p>
+						<p class="card__info">Верх: Натуральная телячья кожа</p>
+						<p class="card__info">Материал подошвы: Термополиуретан</p>
+						<p class="card__info">Страна: Словакия</p>
+					</div>
+					<form class="card__form">
+						<div class="card__input-wrapper">
+							<input type="text" placeholder="Имя" required class="card__input">
+						</div>
+						<div class="card__input-wrapper">
+							<input type="tel" placeholder="Телефон" required class="card__input">
+						</div>
+						<div class="card__input-wrapper card__input-color">
+							<select name="size" class="card__select" size="1">
+								<option value="" hidden="">Размер</option>
+								<option value="40">26.5</option>
+								<option value="41">27.5</option>
+								<option value="42">28</option>
+								<option value="43">28.5</option>
+								<option value="44">29</option>
+								<option value="45">29.5</option>
+							</select>
+							<div class="color__block">
+								<span class="color__text">Цвет:</span>
+								<button type="button" class="color__btn red active" data-color="red" data-id=""></button>
+								<button type="button" class="color__btn black" data-color="black" data-id=""></button>
+							</div>
+						</div>
+						<button type="submit" class="header__order-btn"><span>купить</span></button>
+					</form>
+				</div>
+			</div>
+			<div class="card card__3">
+				<div class="card__left">
+					<img src="img/logo.png" alt="" class="card__logo">
+					<a data-fancybox href="https://youtu.be/46tmrruYiK8">
+						<img src="img/youtube.png" alt="" class="youtube__logo">
+					</a>
+					<img src="img/header-boot-2.png" alt="" class="card__boot">
+					<p class="card__discount">70%</p>
+					<div class="card__fotos">
+						<div class="card__foto-wrapper">
+							<a href="img/card-3/1.jpg" data-fancybox="card-3">
+								<img src="img/card-3/1.jpg" alt="" />
+							</a>
+						</div>
+						<div class="card__foto-wrapper">
+							<a href="img/card-3/2.jpg" data-fancybox="card-3">
+								<img src="img/card-3/2.jpg" alt="" />
+							</a>
+						</div>
+						<div class="card__foto-wrapper">
+							<a href="img/card-3/3.jpg" data-fancybox="card-3">
+								<img src="img/card-3/3.jpg" alt="" />
+							</a>
+						</div>
+						<div class="card__foto-wrapper">
+							<a href="img/card-3/4.jpg" data-fancybox="card-3">
+								<img src="img/card-3/4.jpg" alt="" />
+							</a>
+						</div>
+						<div class="card__foto-wrapper">
+							<a href="img/card-3/5.jpg" data-fancybox="card-3">
+								<img src="img/card-3/5.jpg" alt="" />
+							</a>
+						</div>
+						<div class="card__foto-wrapper">
+							<a href="img/card-3/6.jpg" data-fancybox="card-3">
+								<img src="img/card-3/6.jpg" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="card__right">
+					<div class="card__header">
+						<h3 class="card__title">DAMARA SANDAL</h3>
+						<div class="card__raiting">
+							<img src="img/star.png" alt="">
+							<img src="img/star.png" alt="">
+							<img src="img/star.png" alt="">
+							<img src="img/star.png" alt="">
+							<img src="img/star.png" alt="">
+						</div>
+					</div>
+					<div class="card__price">
+						<div class="price">
+							<span class="old__price">4663 грн</span>
+							<span class="new__price">1399 грн</span>
+						</div>
+					</div>
+					<div class="card__info-wrapper">
+						<p class="card__info">Сезон: Весна 2022</p>
+						<p class="card__info">Пол: Женский</p>
+						<p class="card__info">Вид товара: Сандалии</p>
+						<p class="card__info">Верх: Натуральная телячья кожа</p>
+						<p class="card__info">Материал подошвы: Термополиуретан</p>
+						<p class="card__info">Страна: Словакия</p>
+					</div>
+					<form class="card__form">
+						<div class="card__input-wrapper">
+							<input type="text" placeholder="Имя" required class="card__input">
+						</div>
+						<div class="card__input-wrapper">
+							<input type="tel" placeholder="Телефон" required class="card__input">
+						</div>
+						<div class="card__input-wrapper">
+							<select name="size" class="card__select" size="1">
+								<option value="" hidden="">Размер</option>
+								<option value="40">26.5</option>
+								<option value="41">27.5</option>
+								<option value="42">28</option>
+								<option value="43">28.5</option>
+								<option value="44">29</option>
+								<option value="45">29.5</option>
+							</select>
+						</div>
+						<button type="submit" class="header__order-btn"><span>купить</span></button>
+					</form>
+				</div>
+			</div>
 
+			<div class="delivery__block">
+				<div class="delivery__logo-wrapper">
+					<img src="img/post-logo.png" alt="" class="delivery__logo">
+				</div>
+				<p class="delivery__text">
+					Доставим «Новой почтой» <br>
+					за 2-3 дня <br>
+					Примерьте перед оплатой
+				</p>
 			</div>
 		</div>
 	</div>
 </section>
 
-			<section class="delivery__section">
-
-</section>
-
 			<section class="review__section">
-  
+	<div class="container">
+		<div class="review__wrapper">
+			<h3 class="review__section-title">
+				Отзывы наших покупателей
+			</h3>
+			<div class="review__block">
+				<div class="review__slider owl-carousel">
+					<div class="review__slide">
+						<div class="review__left">
+							<p class="review__text">
+								Позабавил элемент игры, круто придумано со скидкой) Выиграла 20%, приятно) Так или иначе планировала покупку, а тут еще и розыгрыш!
+							</p>
+							<p class="review__name">Лина</p>
+						</div>
+						<div class="review__right">
+							<div class="review__raiting">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="review__slide">
+						<div class="review__left">
+							<p class="review__text">
+								Все получила, подошло идеально. Удача мне улыбнулась – максимальную скидку выиграла! Пойду лотерейку заодно куплю)) В новых кедах пойду, конечно))
+							</p>
+							<p class="review__name">Ира</p>
+						</div>
+						<div class="review__right">
+							<div class="review__raiting">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="review__slide">
+						<div class="review__left">
+							<p class="review__text">
+								В прошлом году брала черные сандалии, в этом прикупила белые. И кедики. Качество очень достойное, носятся великолепно. 
+							</p>
+							<p class="review__name">Мария</p>
+						</div>
+						<div class="review__right">
+							<div class="review__raiting">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="review__slide">
+						<div class="review__left">
+							<p class="review__text">
+								Люблю обувь от Экко, никогда не подводит. Получила через два дня, все великолепно, рекомендую!
+							</p>
+							<p class="review__name">Ольга</p>
+						</div>
+						<div class="review__right">
+							<div class="review__raiting">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="add__review">Оставить отзыв</button>
+			</div>
+			<a href="#card" class="header__order-btn"><span>оформить заказ</span></a>
+		</div>
+	</div>
 </section>
 
 			<footer class="footer">
-
+	<div class="container">
+		<div class="footer__line-wrapper">
+			<p class="footer__info">Скидка действует с <span class="date__1"></span> по <span class="date__2"></span> на весь товар интернет-магазина на всей территории Украины, кроме зон, не контролируемых властями</p>
+			<p class="footer__info">LLC "MONSTR-MEDIA" ИНН 7701071884 
+				<span class="divider divider__1">|</span> ЕГРПОУ&nbsp;39149245 <br>
+				<span class="divider divider__2">|</span> Tel.:&nbsp;+380630236658
+				<span class="divider divider__3">|</span> mail&nbsp;halo@matahari.com
+			</p>
+			<p class="footer__info">
+				<a data-fancybox data-src="#modal-privacy" href="javascript:;">Политика&nbsp;конфиденциальности</a> <br>
+				<span class="divider divider__4">|</span>
+				<a data-fancybox data-src="#modal-delivery" href="javascript:;">Оплата&nbsp;и&nbsp;доставка</a>
+				<span class="divider divider__5">|</span>
+				<a data-fancybox data-src="#modal-refusal" href="javascript:;">Отказ&nbsp;от&nbsp;ответственности</a>
+			</p>
+		</div>
+	</div>
 </footer>
  
 		</div>
-		
-		<!-- <div class="footer__line">
-			<div class="container">
-				<div class="footer__line-wrapper">
-					<p class="footer__info">Скидка действует с <span class="date__1"></span> по <span class="date__2"></span> на весь товар интернет-магазина на всей территории Украины, кроме зон, не контролируемых властями</p>
-					<p class="footer__info">LLC "MONSTR-MEDIA" ИНН 7701071884 
-						<span class="divider divider__1">|</span> ЕГРПОУ&nbsp;39149245 <br>
-						<span class="divider divider__2">|</span> Tel.:&nbsp;+380630236658
-						<span class="divider divider__3">|</span> mail&nbsp;halo@matahari.com
-					</p>
-					<p class="footer__info">
-						<a data-fancybox data-src="#modal-privacy" href="javascript:;">Политика&nbsp;конфиденциальности</a> <br>
-						<span class="divider divider__4">|</span>
-						<a data-fancybox data-src="#modal-delivery" href="javascript:;">Оплата&nbsp;и&nbsp;доставка</a>
-						<span class="divider divider__5">|</span>
-						<a data-fancybox data-src="#modal-refusal" href="javascript:;">Отказ&nbsp;от&nbsp;ответственности</a>
-					</p>
+    </div>
+    <div class="footer__modal" id="modal-privacy">
+    <h6>Политика конфиденциальности</h6>
+    <p>Наш интернет-магазин уважительно относится к правам клиента. Соблюдается строгая конфиденциальность при оформлении заказа. Сведения надежно хранятся и защищены от передачи данных.</p>
+    <p>Согласие на обработку данных клиента исключительно с целью предоставления услуг – размещение заказа на сайте.</p>
+    <p>К персональным данным относится личная информация о клиенте: домашний адрес; имя фамилия отчество; сведения о рождении; имущественное, семейное положение; личные контакты (телефон, электронная почта) и другие сведения, перечисленные в Законе "О персональных данных".</p>
+    <p>Клиент вправе отказаться от обработки персональных данных. Нами в данном случае гарантируется удаление с сайта всех персональных данных в трехдневный срок в рабочее время. Подобный отказ клиент может оформить простым электронным письмом по адресу, указанному на странице нашего сайта.</p>
+</div>
+
+<div class="footer__modal" id="modal-delivery">
+    <h6>Доставка и оплата</h6>
+    <p>По Украине доставка производится с помощью компании «Новая Почта» в течение 2-х дней с момента заказа. Стоимость и детали такой доставки разнятся в зависимости от региона вашего проживания и размера посылки.</p>
+    <p>Продавец не берет на себя никаких обязательств по возмещению любого ущерба Клиента, связанного с несвоевременной доставкой заказа, а также освобождается от любых возможных штрафных санкций.</p>
+    <p>Клиент, получивший товар, должен проверить его на предмет качества и количества.</p>
+</div>
+
+<div class="footer__modal" id="modal-refusal">
+    <h6>Отказ от ответственности</h6>
+    <p>Интернет-магазин оставляет за собой право в любое время без уведомления Клиента вносить изменения в товары, материалы и услуги, предоставляемые на сайте.</p>
+    <p>Интернет-магазин не несет ответственности за какие-либо убытки (включая моральный ущерб, ущерб от потери прибыли (упущенная выгода), данных или от прерывания деловой активности), возникший вследствие использования или невозможности использования данного сайта.</p>
+</div>
+
+<div class="modal">
+	<div class="modal__wrapper">
+		<form class="active">
+			<div class="modal__autor">
+				<input type="text" class="name__input" placeholder="Имя" required>
+				<div class="modal__star-raiting">
+					Оценка: <div class="modal__raiting"></div>
 				</div>
 			</div>
-		</div>  -->
-    </div>
-    
+			<textarea cols="30" rows="10" class="modal__area" placeholder="Напишите ваш отзыв"></textarea>
+			<div class="modal__send">
+				<button type="submit" class="send">Отправить</button>
+			</div>
+		</form>
+		<div class="send__window">
+			<div class="send__img">
+				<img src="img/mailing.png" alt="" class="modal__send-img">
+			</div>
+			<div class="send__massage">Спасибо за ваш отзыв,
+				он появится на сайте после проверки модератором</div>
+		</div>
+		<a class="modal__close"><img src="img/close.png" alt="закрыть"></a>
+	</div>
+</div>
+  
     <script src="libs/jquery.min.js"></script>
-	<script src="libs/jquery.events.touch.min.js"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
 	<script src="libs/aos.js"></script>
-	<script src="libs/ofi.min.js"></script>
-	<script src="libs/carousel.js"></script>
     <script src="libs/jquery.fancybox.min.js"></script>
+	<script src="libs/jquery.raty.js"></script>
     <script src="libs/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
 </body>

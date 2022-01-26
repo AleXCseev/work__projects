@@ -1,0 +1,26 @@
+.footer {
+	width: 100%;
+	height: auto;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.footer__line-wrapper {
+	padding: 20px 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.footer__info {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.79;
+	text-align: center;
+	color:#E7E7E7;
+
+	br {
+		display: none;
+	}
+}
+

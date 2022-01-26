@@ -82,7 +82,7 @@
 
 .name__input {
 	background: rgba(255, 255, 255, 0.5);
-	width: 100%;
+	width: 250px;
 	height: 50px;
 	border: 1px solid #888888;
 	box-sizing: border-box;
@@ -94,7 +94,7 @@
 	color: #444444;
 	padding: 0 20px;
 	background-color: #fff;
-	margin-right: 0px;
+	margin-right: 50px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -350,10 +350,10 @@
 @media (max-width: 880px) {
 	.modal__wrapper {
 		width: 668px;
-		height: auto;
+		height: 398px;
 	}
 	.modal__area {
-		margin-bottom: 25px;
+		margin-bottom: 75px;
 	}
 	.modal__autor {
 		justify-content: flex-start;
@@ -375,7 +375,7 @@
 @media (max-width: 700px) {
 	.modal__wrapper {
 		width: 290px;
-		height: auto;
+		height: 508px;
 		padding: 60px 20px;
 	}
 	.modal form {
@@ -403,7 +403,6 @@
 	}
 	.name__input {
 		order: 2;
-		margin-bottom: 20px;
 	}
 	.modal__area {
 		height: 168px;
