@@ -103,15 +103,39 @@ var landingFunctions = {
 	
 		galary(".galary__wrapper")
 
-		if($(window).width() <= 1000) {
+		if($(window).width() <= 700) {
 			$(".galary").addClass("owl-carousel").owlCarousel({
 				loop: true,
 				nav : false,
 				dots: false,
 				items: 1,
 				margin: 50,
+				responsive : {
+					0 : {
+						nav: true,
+					},
+					481 : {
+						nav: false,
+					},
+					
+				}
 			});
 		}
+		if($(window).width() <= 480) {
+			var owl = $(".galary__nav").addClass("owl-carousel").owlCarousel({
+				loop: true,
+				nav : true,
+				dots: false,
+				items: 1,
+				margin: 50,
+			});
+			owl.on('change.owl.carousel', function(event) {
+				setInterval(function() {
+					$(".galary__nav .owl-item.active .galary__nav-item").click();
+				}, 0)
+			})
+		}
+		
 	},
 
 	bar: function() {
@@ -137,7 +161,7 @@ var landingFunctions = {
 						scrollTop: $("#card").offset().top
 					}, 1200)
 					
-				}, 12000)
+				}, 11000)
 			}
 			
 		})
@@ -156,9 +180,8 @@ var landingFunctions = {
 					$(this).parent().fadeIn(1000);
 
 					$(galaryMainFotosSelector)
-						.hide()
 						.attr("src",  $(galaryMainFotosSelector).attr("data-" + string))
-						.fadeIn(1000);
+						.fadeIn(500);
 				})
 			}
 	
@@ -227,8 +250,6 @@ var landingFunctions = {
 
 		$(".date__1").text(getDate(-5));
     	$(".date__2").text(getDate(2));
-
-		// $(".header__discount span").text(getDate(2));
 
 		// $(".year").text(new Date().getFullYear())
 	},

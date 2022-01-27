@@ -211,7 +211,7 @@
 	}
 
 	option {
-		color: #17DCE0;
+		color: #111;
 		// background: #17DCE0;
 	}
 }
@@ -314,6 +314,10 @@
 	font-size: 20px;
 	line-height: 1.3;
 	color: #FFFFFF;
+}
+
+.color__block-mobile {
+	display: none;
 }
 
 
