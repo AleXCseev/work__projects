@@ -44,6 +44,9 @@
 	height: 400px;
 	margin-bottom: 72px;
 	position: relative;
+	z-index: 1;
+	-webkit-perspective: 900000px;
+	perspective: 900000px;
 
 	&:before {
 		content: "";
@@ -71,7 +74,12 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transition: 2s ease-in-out;
+	-webkit-transition: -webkit-transform 2s ease;
+	transition: transform 2s ease;
+	// transform: translate(-58%, -50%) rotate(0.01deg);
+	
+	z-index: 2;
+	// opacity: 1;
 	// animation: header 18s infinite;
 }
 
@@ -90,18 +98,18 @@
 }
 
 .boot__active {
-	transform: translate(-58%, -50%);
-	z-index: 3;
+	transform: translate(-58%, -50%) rotate(0.01deg) scale(1);
+	// z-index: 5;
 }
 
 .boot__left {
-	transform: translate(-108%, -69%) scale(0.6);
-	z-index: 2;
+	transform: translate(-108%, -69%) rotate(0.01deg) scale(0.6);
+	// z-index: 4;
 }
 
 .boot__right {
-	transform: translate(-1%, -36%) scale(0.6);
-	z-index: 1;
+	transform: translate(-1%, -36%) rotate(0.01deg) scale(0.6);
+	// z-index: 3;
 }
 
 .header__order-btn {

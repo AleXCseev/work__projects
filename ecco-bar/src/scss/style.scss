@@ -485,6 +485,7 @@
 	.header__elipse {
 		width: 134vw;
 		height: 67vw;
+		margin-bottom: 85px;
 	}
 	.header__girl-1 {
 		top: -18vw;
@@ -496,14 +497,31 @@
 		right: 26vw;
 		width: 32vw;
 	}
+	.header__boot {
+
+		// -webkit-transition: -webkit-transform 2s ease, opacity 2s ease;
+		transition: transform 2s ease, width 2s linear;
+	}
 	.boot__active {
-		transform: translate(-52%, -50%) scale(0.45);
+		transform: translate(-52%, -50%) rotate(0.01deg);
+		width: 50%;
+		height: auto;
+		// z-index: 5;
+		// opacity: 0.9;
 	}
 	.boot__left {
-		transform: translate(-63%, -71%) scale(0.3);
+		transform: translate(-63%, -71%) rotate(0.01deg);
+		width: 36%;
+		height: auto;
+		// z-index: 4;
+		// opacity: 0.9;
 	}
 	.boot__right {
-		transform: translate(-40%, -28%) scale(0.3);
+		transform: translate(-40%, -28%) rotate(0.01deg);
+		width: 40%;
+		height: auto;
+		// z-index: 3;
+		// opacity: 0.9;
 	}
 	.advantage__wrapper {
 		width: 69vw;
@@ -720,11 +738,9 @@
 	.card {
 		margin-bottom: 70px;
 	}
-	.card__2 {
-		.card__discount {
-			font-size: 18vw;
-			bottom: 58vw;
-		}
+	.card__2 .card__discount {
+		font-size: 18vw;
+		bottom: 55vw;
 	}
 	.card__3 {
 		margin-bottom: 50px;
@@ -778,13 +794,13 @@
 /////////////////////////////////////////////////////////////////////
 @media (max-width: 320px) {
 	.boot__active {
-		transform: translate(-52%, -50%) scale(0.35);
+		transform: translate(-52%, -50%) rotate(0.01deg) scale(0.35);
 	}
 	.boot__left {
-		transform: translate(-61%, -69%) scale(0.25);
+		transform: translate(-61%, -69%) rotate(0.01deg) scale(0.25);
 	}
 	.boot__right {
-		transform: translate(-43%, -33%) scale(0.25);
+		transform: translate(-43%, -33%) rotate(0.01deg) scale(0.25);
 	}
 	.header__elipse:after {
 		bottom: -1px;

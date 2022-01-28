@@ -78,7 +78,7 @@ var landingFunctions = {
 			})
 		}
 
-		setInterval(headerAnimate , 4000)
+		// setInterval(headerAnimate , 4000)
 	},
 
 	galary: function() {
