@@ -1,0 +1,174 @@
+.info {
+	width: 100%;
+	height: auto;
+	position: relative;
+	background: linear-gradient(180deg, #F9F9F9 0%, #FFAEB5 36.98%, #FF808A 72.92%, #E94B65 100%);
+
+	&:before {
+		content: "";
+		width: 100%;
+		height: 24px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(180deg, rgba(255, 254, 254, 0) 0%, rgba(255, 254, 254, 0.28) 41.15%, rgba(255, 254, 254, 0.62) 76.04%, #FFFEFE 100%);
+		z-index: 2;
+	}
+}
+
+.info__wrapper {
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding: 139px 0 125px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 1;
+
+	.header__order-btn {
+		background: #9B1532;
+
+		&:hover {
+			background: #E22A38;
+		}
+	}
+}
+
+.info__bg-1 {
+	position: absolute;
+	top: 0;
+	left: -450px;
+	z-index: -1;
+}
+
+.info__bg-2 {
+	position: absolute;
+	top: 0;
+	right: -450px;
+	z-index: -1;
+}
+
+.info__bg-3 {
+	position: absolute;
+	bottom: 0;
+	left: -640px;
+	z-index: -1;
+}
+
+.info__bg-4 {
+	position: absolute;
+	bottom: 0;
+	right: -480px;
+	z-index: -1;
+}
+
+.info__heart-1 {
+	top: 300px;
+	left: -80px;
+
+	img {
+		width: 60%;
+	}
+}
+
+.info__heart-2 {
+	top: 276px;
+	left: 120px;
+
+	img {
+		width: 50%;
+		animation-delay: 10s;
+	}
+}
+
+.info__heart-3 {
+	bottom: 74px;
+	left: 100px;
+
+	img {
+		width: 50%;
+		animation-delay: 5s;
+	}
+}
+
+.info__heart-4 {
+	bottom: 209px;
+	left: 200px;
+
+	img {
+		width: 40%;
+		animation-delay: 15s;
+	}
+}
+
+.info__heart-5 {
+	bottom: 52px;
+	left: 350px;
+
+	img {
+		width: 40%;
+		// animation-delay: 10s;
+	}
+}
+
+.info__heart-6 {
+	bottom: 22px;
+	right: 300px;
+
+	img {
+		width: 70%;
+		animation-delay: 5s;
+	}
+}
+
+.info__heart-7 {
+	bottom: 130px;
+	right: 140px;
+
+	img {
+		width: 40%;
+		animation-delay: 10s;
+	}
+}
+
+.info__heart-8 {
+	bottom: 208px;
+	right: 50px;
+
+	img {
+		width: 100%;
+		animation-delay: 15s;
+	}
+}
+
+.info__heart-9 {
+	bottom: 294px;
+	right: -200px;
+
+	img {
+		width: 40%;
+		// animation-delay: 15s;
+	}
+}
+
+.info__title {
+	font-family: Merriweather;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 1.56;
+	text-align: center;
+	color: #9B1532;
+	margin-bottom: 40px;
+}
+
+.info__text {
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 1.5;
+	text-align: center;
+	color: #FEFFFA;
+	margin-bottom: 40px;
+}
+

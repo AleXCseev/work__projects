@@ -498,30 +498,19 @@
 		width: 32vw;
 	}
 	.header__boot {
-
 		// -webkit-transition: -webkit-transform 2s ease, opacity 2s ease;
-		transition: transform 2s ease, width 2s linear;
+		transition: transform 2s ease;
 	}
 	.boot__active {
-		transform: translate(-52%, -50%) rotate(0.01deg);
-		width: 50%;
-		height: auto;
-		// z-index: 5;
-		// opacity: 0.9;
-	}
+		transform: translate(-52%, -50%) translateZ(0) rotate(0.01deg) scale(0.45);
+	  }
+	
 	.boot__left {
-		transform: translate(-63%, -71%) rotate(0.01deg);
-		width: 36%;
-		height: auto;
-		// z-index: 4;
-		// opacity: 0.9;
+		transform: translate(-63%, -71%) translateZ(0) rotate(0.01deg) scale(0.3);
 	}
+	
 	.boot__right {
-		transform: translate(-40%, -28%) rotate(0.01deg);
-		width: 40%;
-		height: auto;
-		// z-index: 3;
-		// opacity: 0.9;
+		transform: translate(-40%, -28%) translateZ(0) rotate(0.01deg) scale(0.35);
 	}
 	.advantage__wrapper {
 		width: 69vw;
@@ -795,12 +784,15 @@
 @media (max-width: 320px) {
 	.boot__active {
 		transform: translate(-52%, -50%) rotate(0.01deg) scale(0.35);
+		width: auto;
 	}
 	.boot__left {
 		transform: translate(-61%, -69%) rotate(0.01deg) scale(0.25);
+		width: auto;
 	}
 	.boot__right {
 		transform: translate(-43%, -33%) rotate(0.01deg) scale(0.25);
+		width: auto;
 	}
 	.header__elipse:after {
 		bottom: -1px;

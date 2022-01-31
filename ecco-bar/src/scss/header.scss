@@ -99,17 +99,17 @@
 
 .boot__active {
 	transform: translate(-58%, -50%) rotate(0.01deg) scale(1);
-	// z-index: 5;
+	z-index: 5;
 }
 
 .boot__left {
 	transform: translate(-108%, -69%) rotate(0.01deg) scale(0.6);
-	// z-index: 4;
+	z-index: 4;
 }
 
 .boot__right {
 	transform: translate(-1%, -36%) rotate(0.01deg) scale(0.6);
-	// z-index: 3;
+	z-index: 3;
 }
 
 .header__order-btn {
