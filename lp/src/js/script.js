@@ -1,6 +1,6 @@
 var landingFunctions = {
 	init: function() {
-		// this.initLibraris()
+		this.initLibraris()
 		this.card()
 		this.time()
 		// this.galary()
@@ -10,7 +10,7 @@ var landingFunctions = {
 	}, 
 
 	initLibraris: function() {
-		objectFitImages()
+		// objectFitImages()
 
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 20;
@@ -28,7 +28,7 @@ var landingFunctions = {
 		$(".review__slider").owlCarousel({
 			loop: true,
 			nav : true,
-			dots: false,
+			dots: true,
 			items: 1,
 			margin: 50,
 		});
@@ -237,8 +237,8 @@ var landingFunctions = {
 			return dd + "." + mm + "." + yyyy
 		}
 
-		// $(".date__1").text(getDate(-5));
-    	// $(".date__2").text(getDate(2));
+		$(".date__1").text(getDate(-5));
+    	$(".date__2").text(getDate(2));
 
 		$(".header__discount span").text(getDate(2));
 

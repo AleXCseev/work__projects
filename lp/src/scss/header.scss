@@ -20,7 +20,7 @@
 	background-image: url(../img/header-right.png);
 	background-repeat: no-repeat;
 	background-position: right bottom;
-	background-size: cover;
+	background-size: contain;
 	z-index: -1;
 }
 
@@ -213,7 +213,7 @@
 	height: auto;
 	display: flex;
 	flex-direction: column;
-	padding: 180px 0 30px;
+	padding: 160px 0 30px;
 }
 
 .header__title {
