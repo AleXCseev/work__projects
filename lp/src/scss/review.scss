@@ -190,6 +190,8 @@
 	justify-content: center;
 	pointer-events: none;
 	margin-top: -17px;
+	position: relative;
+	z-index: 2;
 
 	button {
 		width: 10px;

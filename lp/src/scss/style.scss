@@ -622,7 +622,7 @@
 /////////////////////////////////////////////////////////////////////
 @media (max-width: 480px) {
 	.header__title {
-		font-size: 8vw;
+		font-size: 7.5vw;
 
 		br {
 			display: none;
@@ -909,8 +909,10 @@
 	}
 	.review__slider-wrapper {
 		width: 100vw;
+		height: auto;
 		margin-left: -20px;
 		padding: 20px 0;
+		overflow: visible;
 	}
 	.review__slider {
 		margin-bottom: 18vw;
@@ -927,17 +929,22 @@
 		height: 67vw;
 		margin-right: 0;
 	}
+	.review__slider.owl-carousel .owl-stage-outer {
+		overflow: hidden;
+		padding: 20px 0 40px;
+	}
 	.review__name {
 		font-size: 5vw;
 	}
 	.review__text {
 		font-size: 4.5vw;
 	}
-	.owl-nav {
-		display: none;
-	}
+	// .owl-nav {
+	// 	display: none;
+	// }
 	.owl-dots {
-		margin-top: 40px;
+		margin-top: 0px;
+		width: 100%;
 	}
 	.delivery__logo {
 		margin-right: 10px;

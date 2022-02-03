@@ -27,6 +27,21 @@ var landingFunctions = {
 			dots: true,
 			items: 1,
 			margin: 50,
+			autoHeight: false,
+			responsive:{
+				0: {
+					items: 1,
+					autoHeight: true,
+					nav: false,
+					
+				},
+				481: {
+					items: 1,
+					autoHeight: false,
+					nav: true,
+					
+				},
+			}
 		});
 
 		// AOS.init({
@@ -96,6 +111,7 @@ var landingFunctions = {
 						.hide()
 						.attr("src",  $(this).attr("data-" + string))
 						.fadeIn(1000)
+					$(this).parent().attr("href", $(this).attr("data-" + string))
 				})
 			}
 	

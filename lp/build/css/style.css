@@ -1681,6 +1681,8 @@ body {
           justify-content: center;
   pointer-events: none;
   margin-top: -17px;
+  position: relative;
+  z-index: 2;
 }
 .owl-dots button {
   width: 10px;
@@ -2855,7 +2857,7 @@ body {
 }
 @media (max-width: 480px) {
   .header__title {
-    font-size: 8vw;
+    font-size: 7.5vw;
   }
   .header__title br {
     display: none;
@@ -3198,8 +3200,10 @@ body {
 
   .review__slider-wrapper {
     width: 100vw;
+    height: auto;
     margin-left: -20px;
     padding: 20px 0;
+    overflow: visible;
   }
 
   .review__slider {
@@ -3221,6 +3225,11 @@ body {
     margin-right: 0;
   }
 
+  .review__slider.owl-carousel .owl-stage-outer {
+    overflow: hidden;
+    padding: 20px 0 40px;
+  }
+
   .review__name {
     font-size: 5vw;
   }
@@ -3229,12 +3238,9 @@ body {
     font-size: 4.5vw;
   }
 
-  .owl-nav {
-    display: none;
-  }
-
   .owl-dots {
-    margin-top: 40px;
+    margin-top: 0px;
+    width: 100%;
   }
 
   .delivery__logo {
