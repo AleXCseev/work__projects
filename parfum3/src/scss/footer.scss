@@ -1,0 +1,130 @@
+.footer {
+	width: 100%;
+	height: auto;
+}
+
+
+.footer__wrapper {
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding-bottom: 72px;
+	z-index: 1;
+
+	.header__content {
+		padding: 153px 0 0;
+	}
+
+	.header__logo {
+		top: 72px;
+	}
+
+	.header__price {
+		margin: 31px 0 65px;
+	}
+
+	.header__discount {
+		margin-bottom: 124px;
+	}
+
+	.advantage__brand {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+} 
+
+.footer__right {
+	position: absolute;
+	bottom: 0;
+	right: -670px;
+	z-index: -1;
+
+	.header__circle-small {
+		position: absolute;
+		z-index: 1;
+		bottom: -159px;
+    	left: -645px;
+		width: 756px;
+		height: 756px;
+	}
+
+	.header__flower {
+		position: absolute;
+		top: 149px;
+		right: 85px;
+		width: 416px;
+	}
+}
+
+.footer__line {
+	width: 100%;
+	height: auto;
+	background-color: #E2BED1;
+	position: relative;
+	z-index: 2;
+}
+
+.sale-text {
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+}
+  
+.sale-text span {
+	font-weight: bold;
+	color: #fff;
+}
+
+.footer-info{
+	margin: 15px auto;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.4;
+	list-style-type: none;
+	color: #fff;
+	text-align: center;
+}
+
+.footer .wrapper p {
+	text-align: center;
+}
+
+.footer-info a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-info a:hover{
+	text-decoration: underline;
+}
+
+.footer__modal{
+	display: none;
+	max-width: 600px !important;
+	margin: auto;
+	background-color: #fff;
+}
+
+.footer__modal p{
+	margin-bottom: 10px;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #111;
+}
+
+.footer__modal h2{
+	margin-bottom: 20px;
+	line-height: 1.4;
+	color: #111;
+}
+
+.footer__modal h6{
+	font-size: 20px;
+	margin-bottom: 10px;
+	line-height: 1.4;
+	color: #111;
+}
+
+.sale-text {
+	margin-top: 10px;
+}

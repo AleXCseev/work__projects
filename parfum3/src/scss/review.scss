@@ -3,3 +3,226 @@
     height: auto;
 }
 
+.review__wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+}
+
+.review__bg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: -50px;
+	margin-left: -50px;
+	z-index: 1;
+}
+
+.review__title {
+	font-family: Poiret One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 30px;
+}
+
+.review__slider-wrapper {
+	width: 803px;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+
+.review__slider {
+	width: 523px;
+	height: auto;
+	display: flex;
+	justify-content: center;
+
+	
+	
+	.owl-item.center {
+		width: 523px !important;
+		.review__slide {
+			width: 523px !important;
+			height: auto;
+		}
+
+		.review__text {
+			display: block;
+		}
+
+		.review__img-wrapper {
+			width: 200px;
+			height: 200px;
+		}
+
+		.review__header {
+			&:before {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	.owl-item {
+		width: 140px !important;
+	}
+}
+
+.owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+
+.owl-stage {
+	display: flex;
+	justify-content: center;
+}
+
+.review__slide {
+	width: 140px !important;
+	height: 426px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.review__img-wrapper {
+	width: 140px;
+	height: 140px;
+	border-radius: 100%;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 20px;
+	transition: 0.3s ease;
+}
+
+.review__img {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 100%;
+	height: auto;
+	transform: translateX(-50%);
+}
+
+.review__header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 38px;
+	position: relative;
+
+	&:before {
+		content: "";
+		width: 220px;
+		height: 81px;
+		background-image: url(../img/text-circle-3.png) !important;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: 0.3s ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.review__raiting {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 9px;
+
+	img {
+		width: 15px;
+		height: 15px;
+	}
+}
+
+.review__name {
+	font-family: Poiret One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 1.2;
+	text-align: center;
+	color: #000000;
+}
+
+.review__text {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.2;
+	text-align: center;
+	color: #000000;
+	display: none;
+}
+
+.review__nav-btn {
+	position: absolute;
+	bottom: 82px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 862px;
+	display: flex;
+	justify-content: space-between;
+	pointer-events: none;
+	z-index: 2;
+}
+
+.review__btn {
+	width: 102px;
+	height: 69px;
+	background-color: transparent;
+	background-image: url(../img/array.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	pointer-events: auto;
+	cursor: pointer;
+}
+
+.review__btn-prev {
+	transform: rotate(180deg);
+}
+
+.owl-dots {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+
+	button {
+		width: 10px;
+		height: 10px;
+		border-radius: 100%;
+		margin-right: 5px;
+		background: #EED5E2 !important;
+
+		span {
+			display: none;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&.active {
+			background: #95466F !important;
+		}
+	}
+}
+
+

@@ -6,8 +6,10 @@ var landingFunctions = {
 	}, 
 
 	initLibraris: function() {
+		// objectFitImages()
+
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = 20;
+			var fixedOffset = -20;
 			// var cardHeight = $(".card").outerHeight(false)
 			// var windowHeight = $(window).height()
 	
@@ -19,39 +21,57 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
-		// $(".review__slider").owlCarousel({
-		// 	loop: true,
-		// 	nav : true,
-		// 	dots: true,
-		// 	items: 1,
-		// 	margin: 50,
-		// 	autoHeight: false,
-		// 	responsive:{
-		// 		0: {
-		// 			items: 1,
-		// 			autoHeight: true,
-		// 			nav: false,
+		var owl = $(".review__slider").owlCarousel({
+			loop: true,
+			nav : false,
+			dots: true,
+			items: 1,
+			margin: 0,
+			center: true,
+			// autoHeight: false,
+			autoWidth: true,
+			// responsive:{
+			// 	0: {
+			// 		items: 1,
+			// 		autoHeight: true,
+			// 		nav: false,
 					
-		// 		},
-		// 		481: {
-		// 			items: 1,
-		// 			autoHeight: false,
-		// 			nav: true,
+			// 	},
+			// 	481: {
+			// 		items: 1,
+			// 		autoHeight: false,
+			// 		nav: true,
 					
-		// 		},
-		// 	}
-		// });
+			// 	},
+			// }
+		});
 
-		// AOS.init({
-		// 	disable : 'mobile',
-		// 	once: true,
-		// 	duration: 1000,
-		// 	// offset : -200,
-		// });
+		$('.review__btn-prev').click(function() {
+			owl.trigger('prev.owl.carousel');
+		})
+
+		$('.review__btn-next').click(function() {
+			owl.trigger('next.owl.carousel');
+		})
+
+		$(".advantages").addClass("owl-carousel").owlCarousel({
+			loop: true,
+			nav : false,
+			dots: true,
+			items: 1,
+			margin: 100,
+		})
+
+		AOS.init({
+			disable : 'mobile',
+			once: true,
+			duration: 1000,
+			offset : 200,
+		});
 	
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
+		$(window).resize(function() {
+			AOS.refresh();
+		})
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
@@ -524,8 +544,8 @@ var landingFunctions = {
 			return dd + "." + mm + "." + yyyy
 		}
 
-		// $(".date__1").text(getDate(-5));
-    	// $(".date__2").text(getDate(2));
+		$(".date__1").text(getDate(-5));
+    	$(".date__2").text(getDate(2));
 
 		$(".header__discount span").text(getDate(2));
 
