@@ -31,6 +31,14 @@
 		margin-top: 0;
 		margin-bottom: 0;
 	}
+
+	.header__nav {
+		display: none;
+	}
+
+	.header__text:before {
+		width: 200px;
+	}
 } 
 
 .footer__right {

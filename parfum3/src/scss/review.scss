@@ -46,10 +46,12 @@
 .review__slider {
 	width: 523px;
 	height: auto;
-	display: flex;
-	justify-content: center;
+	// display: flex;
+	// justify-content: center;
 
-	
+	.owl-item {
+		flex-shrink: 0;
+	}
 	
 	.owl-item.center {
 		width: 523px !important;
@@ -223,6 +225,10 @@
 			background: #95466F !important;
 		}
 	}
+}
+
+.review__bg-mobile {
+	display: none;
 }
 
 

@@ -85,7 +85,7 @@
 	font-family: "Poiret One", sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 64px;
+	font-size: 60px;
 	line-height: 1.2;
 	color: #000000;
 	margin-bottom: 30px;
@@ -96,7 +96,7 @@
 	font-family: "Poiret One", sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 36px;
+	font-size: 32px;
 	line-height: 1.2;
 	color: #000000;
 }
@@ -111,7 +111,7 @@
 
 	&:before {
 		content: "";
-		width: 300px;
+		width: 128px;
 		height: 74px;
 		background-image: url(../img/text-circle.png);
 		background-position: center;
@@ -149,7 +149,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: Poiret One;
+	font-family: "Poiret One", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 20px;
