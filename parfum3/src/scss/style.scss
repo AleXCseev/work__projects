@@ -656,9 +656,10 @@
 	.review__bg-mobile {
 		display: block;
 		position: absolute;
-		top: 17px;
+		top: 50%;
 		left: -15px;
 		width: 100vw;
+		transform: translateY(-50%);
 	}
 	.footer__wrapper .header__logo {
 		top: 80px;

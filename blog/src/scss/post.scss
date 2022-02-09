@@ -1,0 +1,170 @@
+.post__section {
+	width: 100%;
+	height: auto;
+}
+
+.post__wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 40px;
+}
+
+article {
+	width: 68%;
+	padding: 0 40px 0 0;
+
+	img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+
+	h1 {
+		margin-bottom: 15px;
+	}
+
+	p {
+		font-size: 17px;
+		line-height: 1.6;
+		color: #222;
+		margin-bottom: 20px;
+
+		a {
+			text-decoration: underline;
+			color: #4477aa;
+			font-weight: bold;
+			transition: 0.3s ease;
+
+			&:hover {
+				color: #111133
+			}
+		}
+	}
+	.nav__link-text {
+		width: 100%;
+		font-size: 14px;
+		line-height: 1.6;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #fff;
+		margin-bottom: 0;
+	}
+}
+
+.post__main-img {
+	width: 100%;
+	max-width: 628px;
+}
+
+// .post__block-title {
+// 	font-family: "Roboto Slab", sans-serif;
+// 	font-size: 40px;
+// 	font-weight: bold;
+// 	line-height: 1.6;
+// 	margin-bottom: 15px;
+
+// 	&:hover {
+// 		color: inherit;
+// 	}
+// }
+
+.tizer__block {
+	width: 100%;
+	height: auto;
+	margin-bottom: 40px;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+// .post__block-text {
+// 	font-size: 17px;
+// 	line-height: 1.6;
+// 	color: #222;
+// 	margin-bottom: 20px;
+// }
+
+.bold {
+	font-weight: bold;
+}
+
+// .post__text-link {
+// 	text-decoration: underline;
+// 	color: #4477aa;
+// 	font-weight: bold;
+// 	transition: 0.3s ease;
+
+// 	&:hover {
+// 		color: #111133
+// 	}
+// }
+
+
+
+.post__footer-links {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+
+	a {
+		display: block;
+		width: 100%;
+	}
+}
+
+.nav__link {
+	width: 100%;
+	height: auto;
+	background-color: #111133;
+	padding: 5px 10px;
+	margin-bottom: 5px;
+	transition: 0.3s ease;
+	color: #fff;
+	
+
+	&:hover {
+		background-color: #4477aa;
+	}
+}
+
+
+
+
+
+
+.post__sidebar {
+	width: 32%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.sidebar__title {
+	font-weight: bold;
+	font-size: 28px;
+	color: #222;
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+.sidebar__random-link {
+	color: #4477aa;
+	font-size: 16px;
+	line-height: 1.6;
+	margin-bottom: 10px;
+	transition: 0.3s ease;
+
+	&:hover {
+		color: #222;
+	}
+}
+
+

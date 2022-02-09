@@ -2832,9 +2832,14 @@ body {
   .review__bg-mobile {
     display: block;
     position: absolute;
-    top: 17px;
+    top: 50%;
     left: -15px;
     width: 100vw;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 
   .footer__wrapper .header__logo {
