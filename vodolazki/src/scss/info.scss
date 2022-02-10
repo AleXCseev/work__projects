@@ -1,0 +1,135 @@
+.info__section {
+	width: 100%;
+	height: auto;
+	background-image: url(../img/header-bg.png);
+	background-repeat: repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.info__wrapper {
+	width: 100%;
+	height: auto;
+}
+
+.info__header {
+	width: 478px;
+	height: auto;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 40px;
+
+	&:before {
+		content: "";
+		width: 301px;
+		height: 100%;
+		background: rgba(125, 105, 96, 0.6);
+		position: absolute;
+		top: 0;
+		left: -170px;
+		z-index: -1;
+	}
+}
+
+.info__section-title {
+	font-family: "Orchidea Pro", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 72px;
+	line-height: 1;
+	margin-bottom: 22px;
+	color: #271A14;
+
+	span {
+		color: #F3EFEC;
+	}
+
+}
+
+.info__section-text {
+	width: auto;
+	font-family: Orchidea Pro;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 1;
+	text-align: right;
+	color: #271A14;
+	position: relative;
+
+	span {
+		font-weight: 300;
+		font-size: 64px;
+		line-height: 1;
+		text-align: right;
+		color: #F3EFEC;
+		padding-right: 25px;
+	}
+
+	&:before {
+		content: "";
+		width: 140px;
+		height: 2px;
+		background: #7D6960;
+		position: absolute;
+		bottom: 36px;
+		left: 65px;
+	}
+}
+
+.delivery {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.delivery__block {
+	width: 55%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-shrink: 0;
+}
+
+.delivery__stage {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 38px;
+}
+
+.delivery__img {
+	margin-right: 15px;
+}
+
+.delivery__title {
+	font-family: "Orchidea Pro", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1;
+	color: #271A14;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+
+.delivery__text {
+	font-family: Poppins, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #271A14;
+}
+
+.delivery__stage-2,
+.delivery__stage-4 {
+	align-self: flex-end;
+}
+
+
+.delivery__block-2 {
+	margin-left: -200px;
+}
+

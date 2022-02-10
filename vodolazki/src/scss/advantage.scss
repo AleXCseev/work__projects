@@ -1,0 +1,57 @@
+.advantage__section {
+	width: 100%;
+	height: auto;
+	background-image: url(../img/info-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat;
+}
+
+.advantage__wrapper {
+	width: 100%;
+	height: auto;
+	padding: 43px 0 41px;
+}
+
+.advantage__section-title {
+	font-family: "Orchidea Pro", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 72px;
+	line-height: 1;
+	color: #F2EDEA;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.advantages {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.advantage {
+	width: 31%;
+	height: auto;
+}
+
+.advantage__title {
+	font-family: "Orchidea Pro", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1;
+	text-align: center;
+	color: #F2EDEA;
+	margin-bottom: 1px;
+}
+
+.advantage__text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.4;
+	text-align: center;
+	color: #F2EDEA;
+}
