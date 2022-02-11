@@ -1,6 +1,262 @@
 .footer {
 	width: 100%;
 	height: auto;
+	background-image: url(../img/header-bg.png);
+	background-position: center;
+	background-repeat: repeat;
+	background-size: contain;
+
 }
+
+.footer__wrapper {
+	width: 100%;
+	height: auto;
+	padding: 48px 0 155px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 1;
+
+	.header__order-btn {
+		position: relative;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		top: auto;
+		align-self: center;
+		transform: none;
+		margin-right: 50px;
+	}
+	
+	.header__logo {
+		align-self: flex-start;
+		margin-bottom: 67px;
+		margin-top: 15px;
+	}
+}
+
+.footer__title-block {
+	width: 677px;
+	height: auto;
+	align-self: flex-end;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 190px;
+	position: relative;
+
+	&:before {
+		content: "";
+		width: 16px;
+		height: 192px;
+		position: absolute;
+		top: -10px;
+		right: -67px;
+		background-image: url(../img/footer-arrow.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+}
+
+.footer__title-italic {
+	font-family: "Orchidea Pro", sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 120px;
+	line-height: 1;
+	color: #271A14;
+	margin-bottom: -25px;
+	text-align: right;
+} 
+
+.footer__title {
+	font-family: "Orchidea Pro", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 120px;
+	line-height: 1;
+	color: #271A14;
+	margin-bottom: 62px;
+}
+
+.footer__info {
+	font-family: "Orchidea Pro", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 1;
+	color: #271A14;
+}
+
+.footer__img-wrapper {
+	width: 1363px;
+	height: 923px;
+	// border: 1px solid black;
+	position: absolute;
+	top: 48px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+}
+
+.footer__img {
+	position: absolute;
+}
+
+.footer__img-1 {
+    left: 12.5%;
+    bottom: 69%;
+}
+
+.footer__img-2 {
+    left: 3.3%;
+    bottom: 32%;
+}
+
+.footer__img-3 {
+	bottom: 0;
+	left: 0;
+}
+
+.footer__img-4 {
+    top: 0;
+    left: 23%;
+}
+
+.footer__img-5 {
+    top: 63%;
+    left: 23%;
+}
+
+.footer__img-6 {
+    bottom: 0%;
+    right: 19%;
+}
+
+.footer__img-7 {
+    bottom: 38%;
+    right: 0%;
+}
+
+.footer__img-8 {
+    bottom: 19%;
+    right: 5.1%;
+}
+
+.footer__img-9 {
+    bottom: 8%;
+    right: 10.5%;
+}
+
+.footer__line {
+	width: 100%;
+	height: auto;
+	background-image: url(../img/info-bg.jpg);
+	background-repeat: repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.footer__line-wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 32px 0;
+}
+
+.footer__discount {
+	font-family: "Orchidea Pro", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 1;
+	color: #F2EDEA;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.footer__line-info {
+	font-family: "Orchidea Pro", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 1;
+	color: #F2EDEA;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.footer__form {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	margin-bottom: 20px;
+}
+
+.footer__input-wrapper {
+	width: 380px;
+	height: 62px;
+}
+
+.footer__input {
+	width: 100%;
+	height: 100%;
+	border: 1px solid #F2EDEA;
+	box-sizing: border-box;
+	border-radius: 50px;
+	font-family: "Orchidea Pro", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 1;
+	color: #F2EDEA;
+	padding: 0 25px;
+	background-color: transparent;
+}
+
+.footer__submit {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	max-width: 100%;
+}
+
+.footer__line-text {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	color: #F2EDEA;
+}
+
+.sale-text {
+	text-align: center;
+	color: #F2EDEA;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	line-height: 1.4;
+}
+
+.footer-info {
+	text-align: center;
+	color: #F2EDEA;
+	line-height: 1.4;
+
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+
+
+
 
 

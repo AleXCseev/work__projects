@@ -1,0 +1,139 @@
+.size__section {
+	width: 100%;
+	height: auto;
+	background-image: url(../img/info-bg.jpg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: repeat;
+}
+
+.size__wrapper {
+	width: 100%;
+	height: auto;
+	padding: 68px 0 52px;
+}
+
+.size__section-title {
+	font-family: "Orchidea Pro", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 72px;
+	line-height: 1;
+	color: #F2EDEA;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.size__section-text {
+	font-family: "Orchidea Pro", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 1;
+	color: #F2EDEA;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.discount__block {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-bottom: 60px;
+}
+
+.discount__imgs {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.discount__info {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../img/discount-bg.jpg);
+	background-repeat: repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.discount__text {
+	font-family: "Orchidea Pro", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 144px;
+	line-height: 1;
+	color: #F2EDEA;
+	text-align: center;
+}
+ 
+
+.card__table {
+	width: 100%;
+	max-width: 1143px;
+	height: auto;	
+	border: 1px solid #271A14;
+	border-collapse: collapse; 
+	margin: auto;
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+	// vertical-align: middle;
+}
+
+tr {
+	height: 40px;
+	
+}
+
+th {
+	font-family: Poppins, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1;
+	color: #271A14;
+	border: 1px solid #271A14;
+	border-collapse: collapse; 
+	vertical-align: middle;
+	background: rgba(242, 237, 234, 0.5);
+}
+
+td {
+	font-family: Poppins, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1;
+	text-align: center;
+	color: #271A14;
+	border: 1px solid #271A14;
+	border-collapse: collapse; 
+	vertical-align: middle;
+	background: rgba(242, 237, 234, 0.27);
+}
+
+.first__column {
+	width: 30%;
+	background: rgba(242, 237, 234, 0.5);
+}
+
+.first__colimn-title {
+	background: rgba(242, 237, 234, 0.8);
+}
+
+.size__info {
+	font-family: Poppins, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #F2EDEA;
+	text-align: center;
+}
+
+

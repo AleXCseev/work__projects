@@ -80,7 +80,7 @@ var landingFunctions = {
 			$(this).addClass("active");
 
 		}, function(){
-			$(this).find(".card__info").fadeOut(300);
+			$(this).find(".card__info").hide();
 			$(this).removeClass("active");
 		})
 
