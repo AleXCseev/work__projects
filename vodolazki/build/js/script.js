@@ -13,7 +13,6 @@ var landingFunctions = {
 			// var cardHeight = $(".card").outerHeight(false)
 			// var windowHeight = $(window).height()
 	
-
 			$('html, body')
 				.stop()
 				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
@@ -28,42 +27,28 @@ var landingFunctions = {
 			dotsEach: true,
 			items: 2,
 			margin: 231,
-			// responsive:{
-			// 	0: {
-			// 		items: 1,
-			// 		center: false,
-			// 		autoWidth: false,
-			// 	},
-			// 	701: {
-			// 		items: 1,
-			// 		center: true,
-			// 		autoWidth: true,
-			// 	},
-			// }
+			responsive:{
+				0: {
+					items: 1,
+					margin: 50,
+				},
+				1001: {
+					items: 2,
+					margin: 231,
+				},
+			}
 		});
 
-		
-
-		// if($(window).width() <= 700) {
-		// 	$(".advantages").addClass("owl-carousel").owlCarousel({
-		// 		loop: true,
-		// 		nav : false,
-		// 		dots: true,
-		// 		items: 1,
-		// 		margin: 100,
-		// 	})
-		// }
-
-		// AOS.init({
-		// 	disable : 'mobile',
-		// 	once: true,
-		// 	duration: 1000,
-		// 	offset : 200,
-		// });
+		AOS.init({
+			disable : 'mobile',
+			once: true,
+			duration: 1000,
+			offset : 200,
+		});
 	
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
+		$(window).resize(function() {
+			AOS.refresh();
+		})
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
@@ -75,14 +60,19 @@ var landingFunctions = {
 	},
 
 	card: function() {
-		$(".card__main").hover(function() {
-			$(this).find(".card__info").fadeIn(300);
-			$(this).addClass("active");
+		if($(window).width() > 1000) {
+			$(".card__main").hover(function() {
+				$(this).find(".card__info").fadeIn(300);
+				$(this).addClass("active");
+	
+			}, function(){
+				$(this).find(".card__info").hide();
+				$(this).removeClass("active");
+			})
+		} else {
+			$(".card__main .card__info").fadeIn(300).addClass("active");
 
-		}, function(){
-			$(this).find(".card__info").hide();
-			$(this).removeClass("active");
-		})
+		}
 
 		$(".open__card-form").click(function() {
 			$(this).closest(".card").find(".card__form-block").addClass("active")

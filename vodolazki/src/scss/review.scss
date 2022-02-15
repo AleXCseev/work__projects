@@ -27,6 +27,17 @@
 	right: 117px;
 	top: 172px;
 	z-index: -1;
+	width: 493px;
+	height: 355px;
+
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: auto;
+	}
 }
 
 .review__section-title {
@@ -51,10 +62,12 @@
 	height: auto;
 	display: flex;
 	padding-left: 209px;
+	// padding-bottom: 1px;
 }
 
 .owl-carousel .owl-stage-outer {
    padding-top: 20px;
+   padding-bottom: 1px;
 }
 
 .review__slide {
@@ -80,6 +93,16 @@
 		background-position: center;
 		background-size: contain;
 		background-repeat: no-repeat;
+	}
+
+	&:after {
+		content: "";
+		width: 50%;
+		height: 1px;
+		background-color: #000;
+		position: absolute;
+		bottom: -1px;
+		right: 0;	
 	}
 }
 
@@ -121,7 +144,16 @@
 		position: relative;
 
 		span {
-			display: none;
+			display: block;
+			width: 11px !important;
+			height: 11px !important;
+			position: absolute;
+			top: -2px;
+			left: -2px;
+			border: 1px solid #271A14;
+			border-radius: 100%;
+			opacity: 0;
+			visibility: hidden;
 		}
 
 		&:last-child {
@@ -131,15 +163,9 @@
 		&.active {
 			background: #271A14 !important;
 
-			&::before {
-				content: "";
-				width: 11px !important;
-				height: 11px !important;
-				position: absolute;
-				top: -3px;
-				left: -3px;
-				border: 1px solid #271A14;
-				border-radius: 100%;
+			span {
+				opacity: 1;
+				visibility: visible;
 			}
 		}
 	}

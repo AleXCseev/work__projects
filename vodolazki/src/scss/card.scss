@@ -242,6 +242,10 @@
 		margin-top: 20px;
 		margin-bottom: 15px;
 	}
+
+	input:-ms-input-placeholder {
+		color: #271A14 !important;
+	}
 }
 
 .card__input-wrapper {
@@ -282,5 +286,13 @@
 	cursor: pointer;
 }
 
-
+.card__not {
+	font-family: "Orchidea Pro", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 1;
+	text-align: right;
+	color: #7D6960;
+}
 
