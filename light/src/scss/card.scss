@@ -1,0 +1,120 @@
+.card__section {
+	width: 100%;
+	height: auto;
+}
+
+.card__wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 37px;
+}
+
+.card__section-text {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.87;
+	color: #FFFFFF;
+	padding: 0 20px 0 50px;
+	margin-bottom: 50px;
+}
+
+.card__section-img {
+	margin-bottom: 50px;
+}
+
+.card {
+	width: 400px;
+	height: auto;
+	background: #FFFFFF;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 25px;
+}
+
+.card__logo {
+	margin-bottom: 20px;
+}
+
+.card__title {
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 1.2;
+	text-align: center;
+	color: #2A2C3E;
+	margin-bottom: 15px;
+}
+
+.card__img {
+	width: 360px;
+	margin-bottom: 15px;
+}
+
+.card__specificate {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: #2A2C3E;
+	margin-bottom: 10px;
+}
+
+.card__table {
+	margin-bottom: 20px;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.87;
+	color: #2A2C3E;
+}
+
+td {
+	vertical-align: bottom;
+}
+
+.first__column {
+	width: 163px;
+	font-weight: 500;
+	vertical-align: top;
+	padding-right: 10px;
+}
+
+.card__form {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+
+	.header__order-btn {
+		margin-bottom: 0;
+	}
+}
+
+.card__input-wrapper {
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+.card__input {
+	width: 100%;
+	height: 50px;
+	background: #EAEAEA;
+	border-radius: 30px;
+	padding: 0 30px;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1;
+	color: #C4C4C4;
+}
+
+.card__discount-info {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #2A2C3E;
+	text-align: center;
+}
