@@ -1,23 +1,26 @@
 var landingFunctions = {
 	init: function() {
 		this.initLibraris()
-		// this.card()
+		this.tab()
 		this.time()
 		this.video()
 	}, 
 
 	initLibraris: function() {
-		// objectFitImages()
-
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = -20;
-			// var cardHeight = $(".card").outerHeight(false)
-			// var windowHeight = $(window).height()
-	
+
+			var fixedOffset = 20;
+			var cardHeight = $(".card").outerHeight(false)
+			var windowHeight = $(window).height()
+
+			if($(this).hasClass("review__video-btn")) {
+				cardHeight = $(".info__video").outerHeight(false)
+			}
+			
 			$('html, body')
 				.stop()
-				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
 			e.preventDefault();
 		});
 
@@ -50,16 +53,32 @@ var landingFunctions = {
 			})
 		})
 
-		// AOS.init({
-		// 	disable : 'mobile',
-		// 	once: true,
-		// 	duration: 1000,
-		// 	offset : 200,
-		// });
-	
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
+		$(".review__slider").owlCarousel({
+			loop: true,
+			nav : false,
+			dots: true,
+			dotsEach: true,
+			items: 1,
+			margin: 20,
+			autoHeight: true,
+		});
+
+		function animate(animateSelector, animationClass) {
+			$(window).scroll(function() {
+				$(animateSelector).each(function(){
+				var imagePos = $(this).offset().top;
+		
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow + 800) {
+						$(this).addClass(animationClass);
+					}
+				});
+			});
+		}
+
+		animate('.animated__fadeIn', "fadeIn")
+		animate('.animated__slideRight', "slideRight")
+		animate('.animated__slideLeft', "slideLeft")
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
@@ -70,27 +89,9 @@ var landingFunctions = {
 		});
 	},
 
-	card: function() {
-		if($(window).width() > 1000) {
-			$(".card__main").hover(function() {
-				$(this).find(".card__info").fadeIn(300);
-				$(this).addClass("active");
-	
-			}, function(){
-				$(this).find(".card__info").hide();
-				$(this).removeClass("active");
-			})
-		} else {
-			$(".card__main .card__info").fadeIn(300).addClass("active");
-
-		}
-
-		$(".open__card-form").click(function() {
-			$(this).closest(".card").find(".card__form-block").addClass("active")
-		})
-
-		$(".card__form-close").click(function() {
-			$(this).closest(".card").find(".card__form-block").removeClass("active")
+	tab: function() {
+		$(".info__tab").click(function() {
+			$(this).toggleClass("active");
 		})
 	},
 

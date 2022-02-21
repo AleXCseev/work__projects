@@ -1,0 +1,92 @@
+.footer {
+	width: 100%;
+	height: auto;
+	position: relative;
+	background-image: url(../img/footer-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	margin-top: -138px;
+	z-index: auto;
+
+	&:before {
+		content: "";
+		width: 100%;
+		height: 239px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #1C2022;
+	}
+
+	&:after {
+		content: "";
+		width: 100%;
+		height: 364px;
+		position: absolute;
+		top: 239px;
+		left: 0;
+		background: linear-gradient(180deg, #1C2022 0%, rgba(28, 32, 34, 0) 100%);
+	}
+}
+
+.footer__wrapper {
+	width: 100%;
+	height: auto;
+	padding-top: 138px;
+	padding-bottom: 50px;
+	position: relative;
+	z-index: 5;
+
+	.header__logo {
+		top: 138px;
+	}
+
+	.header__dots-1 {
+		top: 338px;
+		left: -30px;
+	}
+
+	.header__lines {
+		top: auto;
+		bottom: 85px;
+		right: -80px;
+	}
+
+	.card__form {
+		width: 350px;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+
+	.card__discount-info {
+		color: #FFFFFF;
+	}
+}
+
+.footer__line {
+	width: 100%;
+	height: auto;
+	background: #1C2022;	
+	margin-top: -1px;
+	position: relative;
+	z-index: 1;
+}
+
+.footer__line-wrapper {
+	width: 100%;
+	height: auto;
+	padding: 20px 0;
+}
+
+.footer-info {
+	text-align: center;
+	color: #fff;
+	line-height: 1.4;
+
+	a {
+		text-decoration: underline;
+	}
+}
+
+

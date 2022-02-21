@@ -7,7 +7,6 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
     <link rel="stylesheet" href="libs/owl.carousel.min.css">
-	<link rel="stylesheet" href="libs/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Electric Shock</title>
 </head>
@@ -18,7 +17,7 @@
 		<div class="header__wrapper">
 			<img src="img/dots.png" alt="" class="header__dots-1">
 			<img src="img/lines.png" alt="" class="header__lines">
-			<img src="img/logo.png" alt="" class="header__logo">
+			<img src="img/logo.png" alt="" class="header__logo pulse">
 			<h1 class="header__title">
 				Z1101 <br>
 				Electric Shock
@@ -26,15 +25,15 @@
 			<h2 class="header__subtitle">
 				SENTER PERTAHANAN DIRI STUN
 			</h2>
-			<img src="img/header-prod.png" alt="" class="header__prod">
+			<img src="img/header-prod.png" alt="" class="header__prod fadeIn">
 			<div class="header__info-items">
-				<div class="header__info-item header__info-item-active">
+				<div class="header__info-item header__info-item-active animated slideRight">
 					<p class="header__info-text">Senter pertahanan diri</p>
 				</div>
-				<div class="header__info-item">
+				<div class="header__info-item animated slideRight">
 					<p class="header__info-text">Senter super terang</p>
 				</div>
-				<div class="header__info-item">
+				<div class="header__info-item animated slideRight">
 					<p class="header__info-text">Benar-benar legal</p>
 				</div>
 			</div>
@@ -48,7 +47,7 @@
 					</span>
 				</div>
 			</div>
-			<a href="#card" class="header__order-btn">PESAN</a>
+			<a href="#card" class="header__order-btn pulse">PESAN</a>
 		</div>
 		<div class="header__info-wrapper">
 			<img src="img/dots.png" alt="" class="header__info-dots">
@@ -57,7 +56,7 @@
 					<img src="img/triangle.png" alt="" class="review__triangle">
 				</div>
 				<span class="review__btn-text">
-					REVIEW VIDEO
+					TINJAUAN VIDEO
 				</span>
 			</a>
 			<div class="header__info-nav">
@@ -109,7 +108,9 @@
 					<p class="info__slide-text">Senter Z1101 memberi pengguna pengalaman serba baru dengan sinar luar biasa hingga 200 m. Anda juga bisa menyilaukan orang jahat saat cahaya senter bersinar di wajahnya!</p>
 				</div>
 			</div>
-			<img src="img/info-slider-light.png" alt="" class="info__slider-light">
+			<div class="info__light-wrapper">
+				<img src="img/info-slider-light.png" alt="" class="info__slider-light">
+			</div>
 			<div class="info__video" id="review-video" data-video="PQ9FPNW8X74">
 				<img class="info__video-bg" src="http://img.youtube.com/vi/PQ9FPNW8X74/mqdefault.jpg" alt="">
 				<div class="info__video-btn">
@@ -117,7 +118,7 @@
 						<img src="img/triangle.png" alt="" class="review__triangle">
 					</div>
 					<span class="review__btn-text">
-						REVIEW VIDEO
+						TINJAUAN VIDEO
 					</span>
 				</div>
 			</div>
@@ -126,28 +127,24 @@
 </header>
 
         <main class="main">
-			<section class="review__section">
-	<div class="container">
-		<div class="review__section-wrapper">
-			
-		</div>
-	</div>
-</section>
-
             <section class="card__section">
 	<div class="container">
 		<div class="card__wrapper">
+			<img src="img/card-lines.png" alt="" class="card__line-1">
+			<img src="img/card-dots.png" alt="" class="card__dots-1">
+			<img src="img/card-lines.png" alt="" class="card__line-2">
+			<img src="img/card-dots.png" alt="" class="card__dots-2">
 			<p class="card__section-text">
 				Tidak melihat dari segi kekuatan pengeluaran setrum, terpercaya mampu menembus pakaian musim dingin yang tebal dan menenangkan penyerang hingga 10 menit, senter kejut litsrik benar-benar aman untuk kesehatan dan kehidupan aktivitas manusia.
 			</p>
-			<img src="img/card-img.png" alt="" class="card__section-img">
+			<img src="img/card-img.png" alt="" class="card__section-img animated animated__fadeIn">
 			<div class="card" id="card">
-				<img src="img/logo.png" alt="" class="card__logo">
+				<img src="img/logo.png" alt="" class="card__logo pulse">
 				<h3 class="card__title">
 					Z1101 <br>
 					Electric Shock
 				</h3>
-				<img src="img/light.png" alt="" class="card__img">
+				<img src="img/light.png" alt="" class="card__img animated animated__fadeIn">
 				<p class="card__specificate">Spesifikasi:</p>
 				<table class="card__table">
 					<tbody>
@@ -200,93 +197,274 @@
 					<div class="card__input-wrapper">
 						<input type="tel" placeholder="Telepon" required class="card__input">
 					</div>
-					<button type="submit" class="header__order-btn">PESAN</button>
+					<button type="submit" class="header__order-btn pulse">PESAN</button>
 				</form>
 				<p class="card__discount-info">
-					Акция действует до: <span>31.11.2022</span>г.
+					Promosi ini berlaku hingga: <span>31.11.2022</span>
 				</p>
 			</div>
 		</div>
 	</div>
 </section>
 
-			<section class="info__section">
-	
+			<section class="review__section">
+	<div class="container">
+		<div class="review__section-wrapper">
+			<h3 class="review__section-title">
+				ULASAN PELANGGAN
+			</h3>
+			<div class="review__slider owl-carousel">
+				<div class="review__slide">
+					<div class="review__img-wrapper">
+						<img src="img/review/1.jpg" alt="" class="review__photo">
+					</div>
+					<h3 class="review__name">Agung, Bandung</h3>
+					<p class="review__text">
+						Saya bekerja sebagai penjaga malam, kalau-kalau saya memesan senter ini. Jika Anda ingin memeriksa senter, apakah berfungsi atau tidak, dalam hal apa pun, jangan periksa sendiri - muatannya sangat kuat. Saat baterai internal terisi penuh, Anda dapat membutakan seseorang selama beberapa detik. Adapun aksi shocker, saya sendiri harus menggunakannya ketika, pada shift saya jam 2 pagi, dua hooligan masuk ke fasilitas kami, satu orang mati rasa selama sekitar satu jam, dan penyerang lainnya mengalami kejang dalam waktu 5 menit. Untuk pertahanan diri, senter ini sangat berguna!
+					</p>
+					<img src="img/review/rev-1.jpg" alt="" class="review__img">
+				</div>
+				<div class="review__slide">
+					<div class="review__img-wrapper">
+						<img src="img/review/2.jpg" alt="" class="review__photo">
+					</div>
+					<h3 class="review__name">Budi , Kudus</h3>
+					<p class="review__text">
+						Rekan-rekan saya dan saya sering pergi memancing di malam hari, dan secara alami cahaya di malam hari di tepi kolam tidak cukup. Dengan senter setrum, mudah untuk menerangi hampir seluruh kolam kecil kami, itu pasti mencapai seratus meter. Dan yang utama adalah kecerahan LED internal luar biasa.
+					</p>
+				</div>
+				<div class="review__slide">
+					<div class="review__img-wrapper">
+						<img src="img/review/3.png" alt="" class="review__photo">
+					</div>
+					<h3 class="review__name">Dipa, Jakarta</h3>
+					<p class="review__text">
+						Menurut saya kapasitas kerusakan muatan sekitar 5 cm Tapi, tentu saja, jika Anda memukul dengan jijik yang praktis habis, maka dalam hal ini keefektifannya berkurang dengan lapisan pakaian yang tebal.    
+					</p>
+					<img src="img/review/rev-2.jpg" alt="" class="review__img">
+				</div>
+				<div class="review__slide">
+					<div class="review__img-wrapper">
+						<img src="img/review/4.jpg" alt="" class="review__photo">
+					</div>
+					<h3 class="review__name">Winda Prameswari</h3>
+					<p class="review__text">
+						Beri saya orang yang saya cintai kejutan untuk Hari Valentine, perhatian seperti itu mengejutkan saya sama sekali! Sejauh ini, saya belum pernah menggunakannya untuk tujuan yang dimaksudkan, terima kasih Tuhan, tetapi hal yang sangat berharga sebagai senter. Sekarang saya tidak takut pulang ke rumah pada malam hari setelah bekerja. Bagaimanapun, saya tahu bahwa lentera yang terang juga mengandung muatan yang kuat.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
-			<section class="size__section">
+			<section class="info__section">
+	<div class="container">
+		<div class="info__wrapper">
+			<img src="img/card-dots.png" alt="" class="info__dots">
+			<h3 class="review__section-title">
+				Q & A
+			</h3>
+			<div class="info__tab-block">
+				<div class="info__tab">
+					<h3 class="info__tab-title">Garansi?</h3>
+					<img src="img/arrow.png" alt="" class="info__tab-arrow">
+					<p class="info__tab-text">Jika produk yang Anda terima rusak atau kualitasnya tidak terjamin, Anda hanya perlu menghubungi bagian penjualan kami. Dan kami akan menukar barang baru untuk Anda. Anda dapat mengembalikan produk dalam waktu 14 hari sesuai dengan Undang-Undang Perlindungan Konsumen, kami akan mengembalikan 100% dari jumlah tersebut. Kami selalu mengutamakan kepentingan dan kualitas konsumen di atas segalanya!</p>
+				</div>
+				<div class="info__tab">
+					<h3 class="info__tab-title">Bentuk pengiriman</h3>
+					<img src="img/arrow.png" alt="" class="info__tab-arrow">
+					<p class="info__tab-text">Anda membayar setelah Anda menerima barang. Pengiriman dalam 5 - 7 hari kerja working</p>
+				</div>
+				<div class="info__tab">
+					<h3 class="info__tab-title">Paket produk termasuk</h3>
+					<img src="img/arrow.png" alt="" class="info__tab-arrow">
+					<ul class="info__tab-list">
+						<li class="info__tab-text">
+							• Self-Powered Z 1100 Self-Powered Flashlight
+						</li>
+						<li class="info__tab-text">
+							• Departemen muatan listrik
+						</li>
+						<li class="info__tab-text">
+							• Panduan Pengguna
+						</li>
+						<li class="info__tab-text">
+							• Kotak kardus
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
+			<section class="advantage__section">
+	<div class="container">
+		<div class="advantage__wrapper">
+			<img src="img/card-lines.png" alt="" class="advantage__line">
+			<h3 class="review__section-title">
+				PENGIRIMAN <br>
+				DAN PEMBAYARAN
+			</h3>
+			<div class="advantages">
+				<div class="advantage animated animated__slideRight">
+					<div class="advantage__logo-wrapper">
+						<img src="img/advantage-1.png" alt="" class="advantage__logo">
+					</div>
+					<h4 class="advantage__title">
+						Aplikasi permintaan
+					</h4>
+					<p class="advantage__text">
+						Tinggalkan permintaan di situs ini
+					</p>
+				</div>
+				<div class="advantage animated animated__slideLeft">
+					<div class="advantage__logo-wrapper">
+						<img src="img/advantage-2.png" alt="" class="advantage__logo">
+					</div>
+					<h4 class="advantage__title">
+						Pengisisan
+					</h4>
+					<p class="advantage__text">
+						Kami akan menghubungi Anda untuk mengklarifikasi pesanan
+					</p>
+				</div>
+				<div class="advantage animated animated__slideRight">
+					<div class="advantage__logo-wrapper">
+						<img src="img/advantage-3.png" alt="" class="advantage__logo">
+					</div>
+					<h4 class="advantage__title">
+						Pengiriman
+					</h4>
+					<p class="advantage__text">
+						Kami mengirim pesanan Anda dalam waktu dekat
+					</p>
+				</div>
+				<div class="advantage animated animated__slideLeft">
+					<div class="advantage__logo-wrapper">
+						<img src="img/advantage-4.png" alt="" class="advantage__logo">
+					</div>
+					<h4 class="advantage__title">
+						Penerimaan
+					</h4>
+					<p class="advantage__text">
+						Anda menerima barang di kantor pos dan membayarnya di tempat
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
         </main>  
         <section class="footer">
-	
+	<div class="container">
+		<div class="footer__wrapper">
+			<img src="img/card-dots.png" alt="" class="header__dots-1">
+			<img src="img/card-lines.png" alt="" class="header__lines">
+			<img src="img/logo.png" alt="" class="header__logo pulse">
+			<h1 class="header__title">
+				Z1101 <br>
+				Electric Shock
+			</h1>
+			<h2 class="header__subtitle">
+				SENTER PERTAHANAN DIRI STUN
+			</h2>
+			<img src="img/header-prod.png" alt="" class="header__prod animated animated__fadeIn">
+			<div class="header__price">
+				<div class="price">
+					<span class="old__price">
+						IDR 260000
+					</span>
+					<span class="new__price">
+						IDR 130000
+					</span>
+				</div>
+			</div>
+			<form class="card__form">
+				<div class="card__input-wrapper">
+					<input type="text" placeholder="Nama" required class="card__input">
+				</div>
+				<div class="card__input-wrapper">
+					<input type="tel" placeholder="Telepon" required class="card__input">
+				</div>
+				<button type="submit" class="header__order-btn">PESAN</button>
+			</form>
+			<p class="card__discount-info">
+				Promosi ini berlaku hingga: <span>31.11.2022</span>
+			</p>
+		</div>
+	</div>
 </section>
 
-<!-- <footer class="footer__line">
+<footer class="footer__line">
 	<div class="container">
 		<div class="footer__line-wrapper">
-			<p class="footer__discount">
-				Заказать со скидкой 50%
-			</p>
-			<p class="footer__line-info">
-				Оставьте вашу контактную информацию.
-			</p>
-			<form class="footer__form">
-				<div class="footer__input-wrapper">
-					<input type="text" required placeholder="Ваше Имя" class="footer__input">
-				</div>
-				<div class="footer__input-wrapper">
-					<input type="tel" required placeholder="Ваш номер телефона" class="footer__input">
-				</div>
-				<div class="footer__input-wrapper">
-					<button type="submit" class="card__btn footer__submit">Заказать</button>
-				</div>
-			</form>
-			<p class="footer__line-text">Наш менеджер свяжется с вами в течение 5 минут.</p>
-			<p class="sale-text">Скидка действует с <span class="date__1"></span> по <span class="date__2"></span> на весь товар интернет-магазина по всей территории Казахстана.</p>
 			<ul class="footer-info">
-			   <li>ТОО "КОМПАНИЯ HOSTER. KZ" ОКПО 41041494</li>
-			   <li>БИН 070440006808</li>
-			   <li>РНН 302000274137</li>
-			   <li>Тел: +87212305522</li>
-			   <li>e-mail: billing@hoster.kz</li>
-			   <li><a data-fancybox data-src="#modal-privacy" href="javascript:;">Политика конфиденциальности</a></li>
-			   <li><a data-fancybox data-src="#modal-delivery" href="javascript:;">Оплата и доставка</a></li>
-			   <li><a data-fancybox data-src="#modal-refusal" href="javascript:;">Отказ от ответственности</a></li>
+			   <li>LLC "MONSTR-MEDIA"</li>
+			   <li>INN 7701071884</li>
+			   <li>PSRN 1157746018870</li>
+			   <li>Tel.: +62251 4488877</li>
+			   <li>mail halo@matahari.com</li>
+			   <li><a data-fancybox data-src="#modal-privacy" href="javascript:;">Kebijakan pribadi</a></li>
+			   <li><a data-fancybox data-src="#modal-delivery" href="javascript:;">Syarat</a></li>
 			</ul>
 		</div>
 	</div>
-</footer>  -->
+</footer> 
  
     </div>
     <div class="footer__modal" id="modal-privacy">
-    <h6>Политика конфиденциальности</h6>
-    <p>Наш интернет-магазин уважительно относится к правам клиента. Соблюдается строгая конфиденциальность при оформлении заказа. Сведения надежно хранятся и защищены от передачи данных.</p>
-    <p>Согласие на обработку данных клиента исключительно с целью предоставления услуг – размещение заказа на сайте.</p>
-    <p>К персональным данным относится личная информация о клиенте: домашний адрес; имя фамилия отчество; сведения о рождении; имущественное, семейное положение; личные контакты (телефон, электронная почта) и другие сведения, перечисленные в Законе "О персональных данных".</p>
-    <p>Клиент вправе отказаться от обработки персональных данных. Нами в данном случае гарантируется удаление с сайта всех персональных данных в трехдневный срок в рабочее время. Подобный отказ клиент может оформить простым электронным письмом по адресу, указанному на странице нашего сайта.</p>
+    <h2>Kebijakan pribadi</h2>
+    <p>Toko online kami menghormati hak-hak klien. Kerahasiaan yang ketat diamati ketika menempatkan pesanan. Informasi disimpan dengan aman dan dilindungi dari transmisi.</p>
+    <p>Persetujuan untuk pemrosesan data pelanggan semata-mata untuk tujuan memberikan layanan adalah melakukan pemesanan di situs web.</p>
+    <p>Data pribadi mencakup informasi pribadi tentang klien: alamat rumah; nama lengkap; informasi kelahiran; properti, status perkawinan; kontak pribadi (telepon, email) dan informasi lain yang tercantum dalam Undang-Undang "Tentang Data Pribadi".</p>
+    <p>Klien memiliki hak untuk menolak memproses data pribadi. Dalam hal ini, kami menjamin bahwa semua data pribadi akan dihapus dari situs dalam waktu tiga hari selama jam kerja. Klien dapat mengeluarkan penolakan seperti itu dengan email sederhana ke alamat yang ditunjukkan pada halaman situs web kami.</p>
 </div>
 
 <div class="footer__modal" id="modal-delivery">
-    <h6>Доставка и оплата</h6>
-    <p>По Украине доставка производится с помощью компании «Новая Почта» в течение 2-х дней с момента заказа. Стоимость и детали такой доставки разнятся в зависимости от региона вашего проживания и размера посылки.</p>
-    <p>Продавец не берет на себя никаких обязательств по возмещению любого ущерба Клиента, связанного с несвоевременной доставкой заказа, а также освобождается от любых возможных штрафных санкций.</p>
-    <p>Клиент, получивший товар, должен проверить его на предмет качества и количества.</p>
+    <h2>Syarat dan Ketentuan</h2>
+    <p>Halaman ini menjelaskan Syarat & Ketentuan MTP. Syarat dan ketentuan berikut ("Syarat dan Ketentuan") mengatur
+        penggunaan Anda atas situs web ini. Dengan mengakses, melihat atau menggunakan materi dan fungsionalitas pada
+        Layanan, Anda menyatakan bahwa Anda memahami dan menerima Syarat dan Ketentuan ini.
+    </p>
+	<h6>SELAMAT DATANG</h6>
+    <p>Semua materi yang terkandung dalam Layanan ini dilindungi oleh hukum. Seluruh hak cipta. Dilarang menghapus atau
+        mengubah pemberitahuan hak cipta pada materi apa pun. Setiap penggunaan komersial dari konten ini dilarang tanpa
+        persetujuan tertulis sebelumnya dari MTP.
+    </p>
+    <p>MTP berhak untuk mengubah, memperbarui atau terus mengembangkan Platform dan Layanannya serta memperbarui
+        teknologinya dari waktu ke waktu.
+    </p>
+	<p>Dengan menyerahkan data pribadi Anda kepada MTP, Anda setuju bahwa informasi pribadi Anda dibagikan dengan
+    	broker dan / atau afiliasi yang dikelola pihak ketiga.
+    </p>
+	<h6>JANGAN TANAMAN YANG DIREKOMENDASIKAN BERAS</h6>
+	<p>Layanan ini dirancang untuk memberikan informasi umum tentang pialang dan produk serta layanan mereka. Informasi
+        tentang Layanan tidak dimaksudkan sebagai tawaran untuk menjual atau meminta produk atau layanan tertentu.
+    </p>
+	<h6>PRIORITAS JAMINAN DAN KEWAJIBAN</h6>
+	<p>Penggunaan Layanan ini adalah risiko Anda sendiri. MTP tidak bertanggung jawab atas konsekuensi dari
+        mengandalkan informasi apa pun yang terkandung di dalam atau yang dikirimkan ke Layanan dan risiko cedera akibat
+        hal tersebut di atas sepenuhnya menjadi tanggung jawab Anda. Materi ini disediakan "sebagaimana adanya" tanpa
+        upaya untuk melaporkan dengan cara apa pun, tersurat maupun tersirat. MTP tidak akan bertanggung jawab atas
+        kerusakan langsung, khusus, tidak langsung, insidental, konsekuensial, atau hukuman, termasuk namun tidak
+        terbatas pada, kehilangan penjualan atau hilangnya keuntungan, yang mungkin diakibatkan oleh penggunaan, akses,
+        atau tidak dapat digunakannya dokumen-dokumen ini.
+    </p>
+	<h6>PENGGUNAAN INTERNET</h6>
+	<p>Penggunaan internet menjadi risiko Anda sendiri dan tunduk pada semua hukum dan peraturan provinsi, nasional,
+        dan internasional yang berlaku. MTP tidak akan bertanggung jawab atas kerugian yang disebabkan oleh sesuatu yang
+        tidak dapat dikontrol langsung, termasuk namun tidak terbatas pada kegagalan peralatan elektronik atau mekanis
+        atau jalur komunikasi, listrik, masalah telepon atau koneksi lainnya, virus komputer, sekolah DhéD. rambut
+        putih. kesalahan operator, cuaca terukir menyumbang
+    </p>
 </div>
 
-<div class="footer__modal" id="modal-refusal">
-    <h6>Отказ от ответственности</h6>
-    <p>Интернет-магазин оставляет за собой право в любое время без уведомления Клиента вносить изменения в товары, материалы и услуги, предоставляемые на сайте.</p>
-    <p>Интернет-магазин не несет ответственности за какие-либо убытки (включая моральный ущерб, ущерб от потери прибыли (упущенная выгода), данных или от прерывания деловой активности), возникший вследствие использования или невозможности использования данного сайта.</p>
-</div>
   
     <script src="libs/jquery.min.js"></script>
     <script src="libs/jquery.fancybox.min.js"></script>
     <script src="libs/owl.carousel.min.js"></script>
-	<!-- <script src="libs/ofi.min.js"></script> -->
-	<script src="libs/aos.js"></script>
-	<script src="libs/parfums.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

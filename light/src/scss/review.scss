@@ -6,6 +6,72 @@
 .review__section-wrapper {
 	width: 100%;
 	height: auto;
+	padding: 50px 0;
+}
+
+.review__section-title {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 1.2;
+	color: #00FFF0;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.review__slider {
+	width: 100%;
+	height: auto;
+}
+
+.review__slide {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.review__img-wrapper {
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.review__photo {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.review__name {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.review__text {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.87;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.review__img {
+	width: 100%;
+	height: auto;
+	border-radius: 20px;
 }
 
 
