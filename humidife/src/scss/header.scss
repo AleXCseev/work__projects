@@ -1,0 +1,275 @@
+.header {
+	width: 100%;
+	height: auto;
+	background-image: url(../img/header-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.header__wrapper {
+	width: 100%;
+	height: auto;
+}
+
+.header__content {
+	width: 672px;
+	height: auto;
+	position: relative;
+	padding: 30px 0 227px;
+}
+
+.header__right {
+	width: 600px;
+	height: 700px;
+	background: rgba(39, 72, 119, 0.8);
+	position: absolute;
+	top: 0px;
+	right: -600px;
+}
+
+.header__discount {
+	width: 180px;
+	height: 180px;
+	border-radius: 100%;
+	background: #EE8B76;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 65px;
+	line-height: 1.2;
+	color: #FFFFFF;
+	position: absolute;
+	left: -249px;
+	bottom: 50px;
+
+	&:before {
+		content: "";
+		border: 1px solid;
+		// border-color: rgba(238, 139, 118, 0.4);
+		width: 218px;
+		height: 218px;
+		border-radius: 100%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		animation: discount 4s infinite;
+	}
+
+	&:after {
+		content: "";
+		border: 1px solid;
+		// border-color: rgba(238, 139, 118, 0.1);
+		width: 258px;
+		height: 258px;
+		border-radius: 100%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		animation: discount 4s infinite;
+		animation-delay: 2s;
+	}
+}
+
+@keyframes discount {
+	0% {
+		border-color: rgba(238, 139, 118, 0.5);
+	}
+	50% {
+		border-color: rgba(238, 139, 118, 0.1);
+	}
+	100% {
+		border-color: rgba(238, 139, 118, 0.5);
+	}
+}
+
+.header__prod-1 {
+	position: absolute;
+	top: 0;
+	left: 148px;
+}
+
+.header__prod-2 {
+	position: absolute;
+	top: 210px;
+	left: -112px;
+}
+
+.header__right-rebbit {
+	position: absolute;
+	bottom: -150px;
+	right: -106px;
+}
+
+.header__rebbit {
+	position: absolute;
+	bottom: 86px;
+	left: -317px;
+}
+
+.site__title {
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 1.2;
+	color: #54719B;
+	margin-bottom: 117px;
+}
+
+.header__title {
+	font-weight: normal;
+	font-size: 64px;
+	line-height: 1.2;
+	color: #54719B;
+	margin-bottom: 20px;
+
+	span {
+		font-weight: bold;
+	}
+}
+
+.header__text {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.2;
+	color: #48515F;
+	margin-bottom: 60px;
+}
+
+.header__price {
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+	margin-bottom: 28px;
+}
+
+.header__price-text {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #48515F;
+	margin-right: 13px;
+}
+
+.old__price {
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 1.2;
+	color: #48515F;
+	position: relative;
+	margin-right: 16px;
+
+	&:before {
+		content: "";
+		width: 105%;
+		height: 2px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: #C4C4C4;
+	}
+}
+
+.new__price {
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 1.2;
+	color: #EE8B76;
+}
+
+.header__order-wrapper {
+	width: 250px;
+	height: auto;
+}
+
+.header__order-btn {
+	width: 250px;
+	height: 55px;
+	background: #EE8B76;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.3s ease;
+	padding: 0 10px;
+
+	span {
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 1;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+
+	img {
+		width: 20px;
+		height: auto;
+	}
+
+	&:hover {
+		background: #d18782;
+
+		img {
+			animation: arrow 1s infinite;
+		}
+	}
+}
+
+@keyframes arrow {
+	0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translateX(-10px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+.header__remainder {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.2;
+	text-align: center;
+	color: #48515F;
+	margin-top: 15px;
+	margin-bottom: 5px;
+
+	span {
+		font-weight: bold;
+	}
+}
+
+.header__remainder-line {
+	position: relative;
+	width: 100%;
+	height: 15px;
+	background: #D9E2ED;
+	border: 1px solid #B4C6DF;
+	border-radius: 16px;
+}
+
+.remainder__line-filling {
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	width: 65px;
+	height: 15px;
+	background: #657FA5;
+	border-radius: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	span {
+		font-weight: normal;
+		font-size: 8px;
+		line-height: 1;
+		text-align: center;
+		color: #FFFFFF;
+	}
+}
