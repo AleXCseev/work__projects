@@ -1,7 +1,7 @@
 .header {
 	width: 100%;
 	height: auto;
-	background-image: url(../img/header-bg.png);
+	background-image: url(../img/header-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -272,4 +272,8 @@
 		text-align: center;
 		color: #FFFFFF;
 	}
+}
+
+.header__right-rebbitmobile {
+	display: none;
 }

@@ -68,6 +68,13 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+
+	&:hover {
+		.advantage__number {
+			background: #54719B;
+			color: #FFFFFF;
+		}
+	} 
 }
 
 .advantage__number {
@@ -83,13 +90,7 @@
 	line-height: 1;
 	color: #657FA5;
 	margin-bottom: 10px;
-}
-
-.advantage__1 {
-	.advantage__number {
-		background: #54719B;
-		color: #FFFFFF;
-	}
+	transition: 0.3s ease;
 }
 
 .advantage__title {
@@ -133,7 +134,7 @@
 	border-radius: 100%;
 	background: #54719B;
 	position: absolute;
-	bottom: 90px;
+	bottom: 50px;
 	left: 50%;
 	transform: translateX(-50%);
 

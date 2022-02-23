@@ -18,7 +18,7 @@ var landingFunctions = {
 				.stop()
 				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
 				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
-			e.preventDefault();
+			e.preventDefault(); 
 		});
 		
 		$.raty.path = $("body").data("path") + '/img/raty';
@@ -66,6 +66,18 @@ var landingFunctions = {
 			items: 2,
 			margin: 50,
 			autoHeight: false,
+			responsive:{
+				0:{
+					items: 1,
+					dots: true,
+					autoHeight: true,
+				},
+				1026:{
+					items: 2,
+					dots: false,
+					autoHeight: false,
+				},
+			}
 		});
 
 		// function animate(animateSelector, animationClass) {
