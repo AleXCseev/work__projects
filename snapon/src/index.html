@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="libs/owl.carousel.min.css">
 	<!-- <link rel="stylesheet" href="libs/aos.css"> -->
     <link rel="stylesheet" href="libs/animations.css">
+    <link rel="stylesheet" href="libs/twentytwenty.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Ecco</title>
+    <title>Snapon Smile</title>
 </head>
 <body>
     <div class="site__wrapper">
@@ -18,8 +19,16 @@
             @@include("_video.html")
 			@@include("_info.html")
             @@include("_comparison.html")
-			@@include("_galary.html")
 			@@include("_bar.html")
+            <div class="header__line">
+                <div class="container">
+                    <p class="header__date">
+                        Penawaran ini berlaku hingga <span>21.02.2022</span> 
+                    </p>
+                </div>
+            </div>
+            @@include("_doctor.html")
+            @@include("_galary.html")
 			@@include("_card.html")
 			@@include("_review.html")
 		</main>
@@ -28,8 +37,10 @@
     <!-- @@include("_modal.html")   -->
     <script src="libs/jquery.min.js"></script>
 	<!-- <script src="libs/aos.js"></script> -->
+    <script src="libs/jquery.event.move.js"></script>
     <script src="libs/jquery.fancybox.min.js"></script>
     <script src="libs/owl.carousel.min.js"></script>
+    <script src="libs/jquery.twentytwenty.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

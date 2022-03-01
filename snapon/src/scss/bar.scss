@@ -36,6 +36,7 @@
 	height: auto;
 	display: flex;
 	justify-content: flex-start;
+	// transform: translateX(-413.5%);
 	
 
 	&.active {
@@ -49,7 +50,7 @@
 		transform: translateX(0);
 	}
 	100% {
-		transform: translateX(-360%);
+		transform: translateX(-413.5%);
 	}
 }
 
@@ -89,9 +90,7 @@
 }
 
 .discount__block-2 {
-	background: url(../img/discount-1.png);
-}
-
-.discount__active {
 	background: url(../img/discount-2.png);
 }
+
+

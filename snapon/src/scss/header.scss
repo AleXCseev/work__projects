@@ -186,6 +186,7 @@
     background: #1885EA;
     margin-bottom: 100px;
     position: relative;
+    z-index: 5;
 
     &:before {
         content: "";
@@ -240,9 +241,6 @@
     right: -175px;
     z-index: 1;
 }
-
-
-
 
 .header__advantage-block {
     width: 100%;

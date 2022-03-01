@@ -1,0 +1,240 @@
+.doctor__section {
+    width: 100%;
+    height: auto;
+}
+
+.doctor__wrapper {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.doctor__circle-1 {
+    left: -802px;
+    top: 29px;
+    z-index: -1;
+}
+
+.doctor__circle-2 {
+    right: -335px;
+    top: -50px;
+    z-index: -1;
+}
+
+.doctor__quote {
+    position: absolute;
+    bottom: -38px;
+    left: 450px;
+}
+
+.doctor__title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+    color: #00235D;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 950px;
+}
+
+.doctor__block {
+    background: #ECFCFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin-bottom: 88px;
+    padding: 30px 30px 45px 430px;
+    position: relative;
+}
+
+.doctor__img-wrapper {
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: auto;
+    }
+}
+
+.doctor__text {
+    font-size: 18px;
+    line-height: 1.67;
+    color: #00235D;
+    margin-bottom: 20px;
+}
+
+.doctor__name {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: right;
+    color: #00235D;
+    margin-bottom: 10px;
+}
+
+.doctor__info {
+    font-size: 18px;
+    line-height: 1.67;
+    text-align: right;
+    color: #00235D;
+}
+
+.doctor__columns {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 100px;
+}
+
+.doctor__column {
+    width: 48.7%;
+    height: auto;
+}
+
+.doctor__column-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #00235D;
+    margin-bottom: 10px;
+}
+
+.doctor__column-text {
+    font-size: 18px;
+    line-height: 1.67;
+    color: #00235D;
+}
+
+.doctor__title-1 {
+    margin-bottom: 88px;
+}
+
+.doctor__info-stages {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 752px;
+        height: 5px;
+        background: linear-gradient(90deg, #1885EA 10%, #18B9EA 100%);
+        position: absolute;
+        top: 75px;
+        right: 270px;
+    }
+}
+
+.doctor__prod {
+    position: absolute;
+    left: -135px;
+    top: -60px;
+}
+
+.doctor__info-stage {
+    width: 270px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.doctor__stage-wrapper {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    border-radius: 10px;
+    border: 5px solid #1885EA;
+    position: relative;
+    margin-bottom: 20px;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: auto;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.doctor__stage-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #00235D;
+    margin-bottom: 10px;
+}
+
+.doctor__stage-text {
+    font-size: 18px;
+    line-height: 1.67;
+    color: #00235D;
+}
+
+.doctor__circle-3 {
+    top: -566px;
+    left: -340px;
+    z-index: -1;
+}
+
+.doctor__circle-4 {
+    top: -261px;
+    right: -733px;
+    z-index: -1;
+}
+
+.doctor__smile-1 {
+    position: absolute;
+    top: -293px;
+    left: -66px;
+    transform: rotate(25.62deg);
+    animation: rotate 6s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(25.62deg);
+    }
+    50% {
+        transform: rotate(-25.62deg);
+    }
+    100% {
+        transform: rotate(25.62deg);
+    }
+}
+
+.doctor__smile-2 {
+    position: absolute;
+    right: -103px;
+    top: -301px;
+}
+
+.header__line-text {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+}

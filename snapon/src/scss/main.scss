@@ -138,6 +138,12 @@ body {
 .main {
 	width: 100%;
 	height: auto;
+
+	.header__line {
+		.header__date {
+			text-align: center;
+		}
+	}
 }
 
 
