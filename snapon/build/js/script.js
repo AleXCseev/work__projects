@@ -27,13 +27,14 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
-		// $(".review__slider").owlCarousel({
-		// 	loop: true,
-		// 	nav : true,
-		// 	dots: false,
-		// 	items: 1,
-		// 	margin: 50,
-		// });
+		$(".review__slider").owlCarousel({
+			loop: true,
+			nav : false,
+			dots: true,
+			dotsEach: true,
+			items: 3,
+			margin: 20,
+		});
 
 		// AOS.init({
 		// 	disable : 'mobile',
@@ -59,26 +60,33 @@ var landingFunctions = {
 		if(localStorage.getItem("lotery")) {
 			$(".discount__active").removeClass("discount__block-1")
 			$(".discount__active").addClass("discount__block-2")
-			$(".main__second-block").show()
+			$("a.header__order-btn").attr("href", "#form")
+			$(".footer__wrapper").show()
 		}
 		
-		$(".start").click(function() {
+		$(".start").click(function(e) {
+			e.preventDefault()
 			if(!localStorage.getItem("lotery")) {
 				localStorage.setItem("lotery", true);
 				$(".discount__line").addClass("active");
+				$("a.header__order-btn").attr("href", "#form")
 
 				setTimeout(function() {
 					$(".discount__active").removeClass("discount__block-1")
 					$(".discount__active").addClass("discount__block-2")
 				}, 10000)
 
-				// setTimeout(function() {
-				// 	$(".main__second-block").show()
-				// 	$([document.documentElement, document.body]).animate({
-				// 		scrollTop: $("#card").offset().top
-				// 	}, 1200)
+				setTimeout(function() {
+					$(".footer__wrapper").show()
+					$([document.documentElement, document.body]).animate({
+						scrollTop: $(".footer__wrapper").offset().top
+					}, 1200)
 					
-				// }, 11000)
+				}, 11000)
+			} else {
+				$([document.documentElement, document.body]).animate({
+					scrollTop: $(".footer__wrapper").offset().top
+				}, 1200)
 			}
 			
 		})
@@ -173,7 +181,8 @@ var landingFunctions = {
     	$(".date__2").text(getDate(2));
 
 		$(".header__date span").text(getDate(2))
-
+		$(".footer__discount .date").text(getDate(2))
+		
 		// $(".year").text(new Date().getFullYear())
 	},
 

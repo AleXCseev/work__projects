@@ -215,6 +215,18 @@
     }
 }
 
+.header__advantage-circle-1 {
+    display: none;
+}
+
+.header__advantage-circle-2 {
+    display: none;
+}
+
+.header__line-mobile {
+    display: none;
+}
+
 .header__date {
     font-weight: bold;
     font-size: 24px;
@@ -233,6 +245,7 @@
     bottom: 0;
     right: 290px;
     z-index: 1;
+    width: 434px;
 }
 
 .header__girl {
