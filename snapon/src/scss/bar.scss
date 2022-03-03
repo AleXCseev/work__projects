@@ -86,11 +86,22 @@
 }
 
 .discount__block-1 {
-	background: url(../img/discount-1.png);
+	background-image: url(../img/discount-1.png);
 }
 
 .discount__block-2 {
-	background: url(../img/discount-2.png);
+	background-image: url(../img/discount-2.png);
+}
+
+.start {
+	div {
+		color: #91EEFF;
+		background: linear-gradient(180deg, #00235D 0%, #205DC4 100%);
+	}
+	
+	&:before {
+		background: #91EEFF;
+	}
 }
 
 

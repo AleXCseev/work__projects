@@ -27,6 +27,48 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
+		if( $(window).width() <= 1000) {
+			$(".galary__info-block").addClass("owl-carousel").owlCarousel({
+				loop: true,
+				nav : false,
+				dots: true,
+				dotsEach: true,
+				items: 2,
+				margin: 20,
+				autoHeight: false,
+				responsive:{
+					0:{
+						items:1,
+						autoHeight: true,
+					},
+					480:{
+						items:2,
+						autoHeight: false,
+					}
+				}
+			});
+
+			$(".galary__gif").addClass("owl-carousel").owlCarousel({
+				loop: true,
+				nav : false,
+				dots: true,
+				dotsEach: true,
+				items: 2,
+				margin: 20,
+				autoHeight: false,
+				responsive:{
+					0:{
+						items:1,
+						autoHeight: true,
+					},
+					480:{
+						items:2,
+						autoHeight: false,
+					}
+				}
+			});
+		}
+
 		$(".review__slider").owlCarousel({
 			loop: true,
 			nav : false,
@@ -34,6 +76,20 @@ var landingFunctions = {
 			dotsEach: true,
 			items: 3,
 			margin: 20,
+			responsive:{
+				0:{
+					items:1,
+					autoHeight: true,
+				},
+				480:{
+					items:2,
+					autoHeight: true,
+				},
+				1000:{
+					items:3,
+					autoHeight: false,
+				}
+			}
 		});
 
 		// AOS.init({
@@ -61,7 +117,7 @@ var landingFunctions = {
 			$(".discount__active").removeClass("discount__block-1")
 			$(".discount__active").addClass("discount__block-2")
 			$("a.header__order-btn").attr("href", "#form")
-			$(".footer__wrapper").show()
+			$(".footer__wrapper").fadeIn(300)
 		}
 		
 		$(".start").click(function(e) {
@@ -77,7 +133,7 @@ var landingFunctions = {
 				}, 10000)
 
 				setTimeout(function() {
-					$(".footer__wrapper").show()
+					$(".footer__wrapper").fadeIn(300)
 					$([document.documentElement, document.body]).animate({
 						scrollTop: $(".footer__wrapper").offset().top
 					}, 1200)

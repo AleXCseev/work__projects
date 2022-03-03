@@ -99,6 +99,7 @@
 }
 
 .header__info-item {
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -120,7 +121,8 @@
 }
 
 .header__info-text {
-    font-weight: 500;
+    width: 100%;
+    display: block;
     font-size: 18px;
     line-height: 1.67;
     color: #1885EA;

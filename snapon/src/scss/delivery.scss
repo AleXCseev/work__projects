@@ -7,7 +7,7 @@
     width: 100%;
     height: auto;
     position: relative;
-    // padding-bottom: 100px;
+    padding-bottom: 10px;
 }
 
 .delivery__smile-1 {
@@ -21,4 +21,12 @@
     top: -180px;
     right: -190px;
     animation-delay: 1.5s;
+}
+
+.delivery__circle-1 {
+    display: none;
+}
+
+.delivery__circle-2 {
+    display: none;
 }
