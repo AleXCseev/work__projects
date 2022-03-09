@@ -1,0 +1,133 @@
+@media all and (max-width: 1100px) {
+    .column__container, .footer__inner {
+        width: 100%;
+    }
+
+    .menu_top-menu {
+        display: block;
+    }
+
+    .menu__link_top-menu {
+        display: inline-block;
+    }
+
+    .menu__hot-wrapper, .menu_menu-footer {
+        display: none;
+    }
+
+    .footer {
+        min-height: auto;
+    }
+
+    .nnm {
+        display: none !important;
+    }
+
+    header .soc_bl {
+        display: inline-block;
+        vertical-align: middle;
+        width: 28%;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .soc_bl {
+        display: none;
+    }
+
+    header .logo .menu {
+        width: 30px;
+        padding: 10px 0px;
+        margin-left: 15px;
+    }
+
+    header .logo {
+        width: 100%;
+    }
+
+    header .logo_img {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+
+
+}
+@media all and (max-width: 1000px) {
+    aside {
+        display: none;
+    }
+}
+@media all and (max-width: 600px) {
+
+    .column_300.column_border_left {
+        display: none !important;
+    }
+
+    .column__wrapper_pad-t_20 {
+        padding-top: 0;
+    }
+
+    .top-menu__ads {
+        text-align: center;
+    }
+
+    .logo_top-menu {
+        margin: 23px;
+    }
+    .block_9-middle {
+        width: 300px;
+    }
+    .block_9-middle .prod {
+        max-width: 133px;
+
+    }
+    .form {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .form .btn {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .btn {
+        display: table;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 20px 80px 20px;
+        text-align: center;
+        background-color: #ed550a;
+        font-size: 24px;
+    }
+    .block_9-middle .new_price div {
+        color: #10334c;
+        font-size: 39px;
+    }
+}
+
+
+
+@media all and (max-width: 750px) {
+    .menu__link_top-menu {
+        display: none !important;
+    }
+}
+
+@media all and (min-width: 750px) {
+    .mbl {
+        display: none !important;
+    }
+}
+
+.mbl {
+    display: inline-block;
+}
