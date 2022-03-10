@@ -2,9 +2,9 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.time()
-		// this.comparison()
-		// this.bar()
+		this.bar()
 		this.video()
+		this.modal()
 	}, 
 
 	initLibraris: function() {
@@ -69,28 +69,31 @@ var landingFunctions = {
 		// 	});
 		// }
 
-		// $(".review__slider").owlCarousel({
-		// 	loop: true,
-		// 	nav : false,
-		// 	dots: true,
-		// 	dotsEach: true,
-		// 	items: 3,
-		// 	margin: 20,
-		// 	responsive:{
-		// 		0:{
-		// 			items:1,
-		// 			autoHeight: true,
-		// 		},
-		// 		480:{
-		// 			items:2,
-		// 			autoHeight: true,
-		// 		},
-		// 		1000:{
-		// 			items:3,
-		// 			autoHeight: false,
-		// 		}
-		// 	}
-		// });
+		var owl = $(".review__slider").owlCarousel({
+			loop: true,
+			nav : false,
+			dots: false,
+			dotsEach: true,
+			items: 1,
+			margin: 100,
+		});
+
+		$('.next__btn').click(function() {
+			owl.trigger('next.owl.carousel');
+		})
+
+		$('.prev__btn').click(function() {
+			owl.trigger('prev.owl.carousel');
+		})
+
+		$(".card__slider").owlCarousel({
+			loop: true,
+			nav : true,
+			dots: true,
+			dotsEach: true,
+			items: 1,
+			margin: 50,
+		});
 
 		// AOS.init({
 		// 	disable : 'mobile',
@@ -114,80 +117,37 @@ var landingFunctions = {
 
 	bar: function() {
 		if(localStorage.getItem("lotery")) {
-			$(".discount__active").removeClass("discount__block-1")
-			$(".discount__active").addClass("discount__block-2")
-			$("a.header__order-btn").attr("href", "#form")
-			$(".footer__wrapper").fadeIn(300)
+			$(".discount__block").addClass("discount__opacity")
+			$(".discount__active").removeClass("discount__opacity")
+			$("a.header__order-btn").attr("href", "#card")
+			$("#card").show()
 		}
 		
-		$(".start").click(function(e) {
-			e.preventDefault()
+		$(".start").click(function() {
 			if(!localStorage.getItem("lotery")) {
 				localStorage.setItem("lotery", true);
 				$(".discount__line").addClass("active");
-				$("a.header__order-btn").attr("href", "#form")
+				$("a.header__order-btn").attr("href", "#card")
 
 				setTimeout(function() {
-					$(".discount__active").removeClass("discount__block-1")
-					$(".discount__active").addClass("discount__block-2")
+					$(".discount__block").addClass("discount__opacity")
+					$(".discount__active").removeClass("discount__opacity")
 				}, 10000)
 
 				setTimeout(function() {
-					$(".footer__wrapper").fadeIn(300)
+					$("#card").show()
 					$([document.documentElement, document.body]).animate({
-						scrollTop: $(".footer__wrapper").offset().top
+						scrollTop: $("#card").offset().top
 					}, 1200)
 					
 				}, 11000)
 			} else {
 				$([document.documentElement, document.body]).animate({
-					scrollTop: $(".footer__wrapper").offset().top
+					scrollTop: $("#card").offset().top
 				}, 1200)
 			}
 			
 		})
-	},
-
-	comparison: function() {
-		function imageComparison(selector) {
-			var comparison = $(selector)
-				.prepend("<div class='comparison__img-before'></div>")
-				.append("<button class='comparison__slider'></button>");
-			var images = comparison
-				.find("img")
-				.addClass("comparison__img")
-				.css("max-width", comparison.width());
-			var before = comparison
-				.find(".comparison__img-before")
-				.append(images.eq(0));
-
-			comparison
-				.find(".comparison__slider")
-				.on("dragstart", function() {return false})
-				.on("mousedown", function(e) {
-					var slider = $(this); 
-					console.log(e.offsetX)
-
-					var doc = $(document).on("mousemove" , function (e) {
-						var width = comparison.width();
-						var offset = e.offsetX - comparison.position().left;
-						
-
-						console.log(e.offsetX)
-
-						if (offset < 0) offset = 0;
-						if (offset > width) offset = width;
-
-						slider.css("left", offset + "px");
-						before.css("width", offset + "px");
-					})
-
-					doc.on("mouseup", function() {
-						doc.off("mousemove")
-					})
-				})
-		}
-		imageComparison(".comparison__block")
 	},
 
 	time: function() {
@@ -237,7 +197,7 @@ var landingFunctions = {
     	// $(".date__2").text(getDate(2));
 
 		$(".header__date span").text(getDate(2))
-		// $(".footer__discount .date").text(getDate(2))
+		$(".card__date .date").text(getDate(2))
 		
 		// $(".year").text(new Date().getFullYear())
 	},
@@ -270,6 +230,61 @@ var landingFunctions = {
 		}
 	
 		addVideoOnPage(".video");
+	},
+
+	modal: function() {
+		function modal() {
+			$(".add__review").click(function () {
+				$(".modal").addClass("active")
+			})
+	
+			function close() {
+				$(".modal").removeClass("active")
+			}
+	
+			$(".modal").click( function(e) {
+				var target = e.target;
+				if(target.classList.contains("modal__close")) {
+					close()
+				}
+				if(target.classList.contains("modal")) {
+					close()
+				}
+			})
+	
+			function readURL(input) {
+				if (input.files && input.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function (e) {
+						$('.file img').attr('src', e.target.result).css("display", "block");
+					};
+					reader.readAsDataURL(input.files[0]);
+				}
+			}
+	
+			$(".modal .input__file").on("change", function () {
+				readURL(this);
+			});
+	
+			$(".modal form").submit(function (e) {
+				e.preventDefault()
+				$(this).removeClass("active");
+				$(".send__window").addClass("active");
+				$(".modal .name__input").val("")
+				$(".modal .modal__area").val("")
+				$(".modal .file img").attr("src", "").css("display", "none")
+				delayClose()
+			})
+			function delayClose() {
+				setTimeout(function () {
+					$(".modal form").addClass("active");
+					$(".send__window").removeClass("active");
+					close();
+				}, 5000);
+			}
+		}
+	
+		modal()
 	}
 }
 

@@ -1,0 +1,105 @@
+.delivery__section {
+    width: 100%;
+    height: auto;
+}
+
+.delivery__section-wrapper {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 90px;
+
+    &:before {
+        content: "";
+        width: 50vw;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -33vw;
+        z-index: -1;
+        background: linear-gradient(90deg, #044D98 0%, #4AA0D9 100%);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 0px 20px 20px 0px;
+    }
+}
+
+.delivery__content {
+    width: 457px;
+    height: auto;
+    margin-left: auto;
+    padding-top: 78px;
+    position: relative;
+}
+
+.delivery__list {
+    padding-bottom: 24px;
+}
+
+.delivery__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    color: #00235D;
+    margin-bottom: 39px;
+}
+
+.delivery__list-item {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.delivery__icon-wrapper {
+    width: 53px;
+    height: 52px;
+    background: #FF5C00;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.delivery__text {
+    font-size: 20px;
+    line-height: 1.3;
+    color: #031C46;
+}
+
+.delivery__img-wrapper {
+    width: 633px;
+    height: 433px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: -683px;
+    overflow: hidden;
+    transform: translateY(-50%);
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: auto;
+    }
+}
+
+.delivery__info {
+    width: 65%;
+    height: auto;
+    margin-left: auto;
+    padding-right: 150px;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #222222;
+}

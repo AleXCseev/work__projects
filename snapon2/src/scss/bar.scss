@@ -9,24 +9,34 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: 57px;
+	padding-bottom: 96px;
 }
 
 .discount__wrapper {
-	width: 1850px;
+	width: 1859px;
 	position: relative;
 	overflow: hidden;
-	padding: 0 0 70px;
+	padding: 0 20px 100px;
 }
 
 .bar__title {
 	font-weight: bold;
 	font-size: 40px;
-	line-height: 1.5;
+	line-height: 1.25;
 	text-align: center;
 	text-transform: uppercase;
 	color: #00235D;
-	margin-bottom: 50px;
+	margin-bottom: 13px;
+}
+
+.bar__text {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.3;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FF5C00;
+	margin-bottom: 93px;
 }
 
 .discount__line {
@@ -36,7 +46,7 @@
 	height: auto;
 	display: flex;
 	justify-content: flex-start;
-	// transform: translateX(-413.5%);
+	// transform: translateX(-616.5%);
 	
 
 	&.active {
@@ -50,20 +60,20 @@
 		transform: translateX(0);
 	}
 	100% {
-		transform: translateX(-413.5%);
+		transform: translateX(-616.5%);
 	}
 }
 
 .discount__block {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	border-radius: 10px;
-	margin-right: 20px;
-	width: 150px;
-	height: 150px;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+	border-radius: 40px;
+	margin-right: 50px;
+	width: 217px;
+	height: 217px;
 	flex-shrink: 0;
 	transition: 0.3s ease;
+	padding: 10px;
+	background: linear-gradient(135deg, #17DCE0 50%, #044D98 100%);
 
 	div {
 		display: flex;
@@ -73,35 +83,22 @@
 		height: 100%;
 		position: relative;
 		font-weight: bold;
-		font-size: 48px;
-		line-height: 1.2;
+		font-size: 72px;
+		line-height: 1;
 		text-align: center;
 		text-transform: uppercase;
-		color: #FFFFFF;
+		color: #0B85B4;
+		background: #CEF6F5;
+		border-radius: 30px;
 	}
 }
 
 .discount__opacity {
-	opacity: 1;
-}
-
-.discount__block-1 {
-	background-image: url(../img/discount-1.png);
+	opacity: 0.5;
 }
 
 .discount__block-2 {
-	background-image: url(../img/discount-2.png);
-}
-
-.start {
 	div {
-		color: #91EEFF;
-		background: linear-gradient(180deg, #00235D 0%, #205DC4 100%);
-	}
-	
-	&:before {
-		background: #91EEFF;
+		background: #FFE766;
 	}
 }
-
-
