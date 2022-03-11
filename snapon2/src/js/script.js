@@ -9,11 +9,6 @@ var landingFunctions = {
 
 	initLibraris: function() {
 
-		// $('#comparison__block').twentytwenty({
-		// 	default_offset_pct: 0.5,
-		// 	no_overlay: true,
-		// });
-
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 0;
 			// var cardHeight = $("#bar").outerHeight(false)
@@ -27,47 +22,6 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
-		// if( $(window).width() <= 1000) {
-		// 	$(".galary__info-block").addClass("owl-carousel").owlCarousel({
-		// 		loop: true,
-		// 		nav : false,
-		// 		dots: true,
-		// 		dotsEach: true,
-		// 		items: 2,
-		// 		margin: 20,
-		// 		autoHeight: false,
-		// 		responsive:{
-		// 			0:{
-		// 				items:1,
-		// 				autoHeight: true,
-		// 			},
-		// 			480:{
-		// 				items:2,
-		// 				autoHeight: false,
-		// 			}
-		// 		}
-		// 	});
-
-		// 	$(".galary__gif").addClass("owl-carousel").owlCarousel({
-		// 		loop: true,
-		// 		nav : false,
-		// 		dots: true,
-		// 		dotsEach: true,
-		// 		items: 2,
-		// 		margin: 20,
-		// 		autoHeight: false,
-		// 		responsive:{
-		// 			0:{
-		// 				items:1,
-		// 				autoHeight: true,
-		// 			},
-		// 			480:{
-		// 				items:2,
-		// 				autoHeight: false,
-		// 			}
-		// 		}
-		// 	});
-		// }
 
 		var owl = $(".review__slider").owlCarousel({
 			loop: true,
