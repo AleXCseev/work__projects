@@ -239,6 +239,8 @@
 .card__submit {
     cursor: pointer;
     margin-top: 20px;
+    background-color: #ff5c00;
+    text-align: center;
 }
 
 .card__date {
@@ -280,5 +282,9 @@
     line-height: 1;
     text-align: center;
     color: #555555;
+
+    a {
+        text-decoration: underline;
+    }
 }
 
