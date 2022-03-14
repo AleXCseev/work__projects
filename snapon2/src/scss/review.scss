@@ -57,7 +57,7 @@
 }
 
 .review__block {
-    width: auto;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -82,10 +82,16 @@
 }
 
 .review__text {
+    // display: inline-block;
+    // flex-shrink: 0;
+    width: 100% !important;
+    height: auto;
     font-size: 20px;
     line-height: 1.5;
     color: #031C46;
     margin-bottom: 22px;
+    position: relative;
+    z-index: 2;
 }
 
 .review__slide-small {
@@ -126,6 +132,7 @@
     position: relative;
     overflow: hidden;
     margin-right: 20px;
+    flex-shrink: 0;
 
     img {
         position: absolute;

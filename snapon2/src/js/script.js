@@ -30,6 +30,15 @@ var landingFunctions = {
 			dotsEach: true,
 			items: 1,
 			margin: 100,
+			autoHeight: false,
+			responsive:{
+				0:{
+					autoHeight: true,
+				},
+				1000: {
+					autoHeight: false,
+				}
+			}
 		});
 
 		$('.next__btn').click(function() {
@@ -49,16 +58,16 @@ var landingFunctions = {
 			margin: 50,
 		});
 
-		// AOS.init({
-		// 	disable : 'mobile',
-		// 	once: true,
-		// 	duration: 1000,
-		// 	// offset : -200,
-		// });
+		AOS.init({
+			disable : 'mobile',
+			once: true,
+			duration: 1000,
+			// offset : -200,
+		});
 	
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
+		$(window).resize(function() {
+			AOS.refresh();
+		})
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
