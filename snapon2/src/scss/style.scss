@@ -364,12 +364,12 @@
         top: auto;
         left: auto;
         transform: none;
+        margin-bottom: 16px;
+        overflow: hidden;
+        border-radius: 20px;
     }
     .delivery__list {
         padding-bottom: 20px;
-    }
-    .delivery__img-wrapper {
-        margin-bottom: 16px;
     }
     .delivery__info {
         width: 100%;

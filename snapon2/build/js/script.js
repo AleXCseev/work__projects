@@ -59,7 +59,7 @@ var landingFunctions = {
 		});
 
 		AOS.init({
-			disable: "mobile",
+			disable: "tablet",
 			once: true,
 			duration: 1000,
 			// offset : -200,

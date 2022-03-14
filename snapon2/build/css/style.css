@@ -1316,7 +1316,9 @@ body {
        -o-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
+  min-width: 100%;
   height: auto;
+  border-radius: 20px;
 }
 
 .review__section {
@@ -1736,6 +1738,7 @@ body {
           transform: translate(-50%, -50%);
   width: 100%;
   height: auto;
+  border-radius: 20px;
 }
 
 .delivery__info {
@@ -3338,14 +3341,13 @@ body {
         -ms-transform: none;
          -o-transform: none;
             transform: none;
+    margin-bottom: 16px;
+    overflow: hidden;
+    border-radius: 20px;
   }
 
   .delivery__list {
     padding-bottom: 20px;
-  }
-
-  .delivery__img-wrapper {
-    margin-bottom: 16px;
   }
 
   .delivery__info {
