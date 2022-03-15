@@ -1,0 +1,114 @@
+.advantage__section {
+    width: 100%;
+    height: auto;
+    background-image: url(../img/advantage-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.advantage__wrapper {
+    width: 100%;
+    height: auto;
+    padding: 44px 0 17px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1;
+}
+
+.advantage__coal {
+    position: absolute;
+    bottom: 6px;
+    right: -465px;
+    z-index: -1;
+}
+
+.advantage__section-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.2;
+    text-align: center;
+    color: #00692A;
+    margin-bottom: 35px;
+}
+
+.advantage__block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.advantage__block-img {
+    width: 470px;
+    height: auto;
+}
+
+.advantage__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.advantage__row-1 {
+    width: 1100px;
+    height: auto;
+    top: 74px;
+
+    .advantage {
+        width: 300px;
+        height: 120px;
+    }
+}
+
+.advantage {
+    background: rgba(0, 105, 42, 0.1);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantage__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    color: #3C3C3C;
+    margin-bottom: 10px;
+}
+
+.advantage__text {
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #3C3C3C;
+}
+
+.advantage__row-2 {
+    width: 1230px;
+    bottom: 85px;
+
+    .advantage {
+        width: 340px;
+        height: 120px;
+    }
+}
+
+.advantage__section-text {
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #3C3C3C;
+    margin-bottom: 18px;
+}

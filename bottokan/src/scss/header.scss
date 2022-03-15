@@ -1,0 +1,344 @@
+.header__section {
+    width: 100%;
+    height: auto;
+    // background-color: #F3F3F3;
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 1920px auto;
+    background-position: center;
+}
+
+.header__wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.header__content {
+    width: 876px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    padding: 15px 0 53px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header__title-wrapper {
+    width: 739px;
+    height: 183px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    text-align: center;
+    color: #00692A;
+}
+
+.header__subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    color: #3C3C3C;
+}
+
+.header__square {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+}
+
+.header__square-1 {
+    top: 0;
+    left: 0;
+    border-top: 1px solid #00692A;
+    border-left: 1px solid #00692A;
+}
+
+.header__square-2 {
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #00692A;
+    border-left: 1px solid #00692A;
+}
+
+.header__square-3 {
+    top: 0;
+    right: 0;
+    border-top: 1px solid #00692A;
+    border-right: 1px solid #00692A;
+}
+
+.header__square-4 {
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid #00692A;
+    border-right: 1px solid #00692A;
+}
+
+.header__list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.header__list-item {
+    width: 32%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header__icon-wrapper {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background: rgba(76, 216, 132, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 5px;
+}
+
+.header__list-text {
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #3C3C3C;
+}
+
+.header__girl {
+    width: 449px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: -400px;
+}
+
+.header__prod {
+    width: 709px;
+    height: auto;
+    position: absolute;
+    bottom: -12px;
+    right: -148px;
+}
+
+.header__coal {
+    position: absolute;
+    bottom: 52px;
+    right: 154px;
+}
+
+.header__card {
+    width: 330px;
+    height: auto;
+    background: rgba(0, 105, 42, 0.1);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 15px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    margin-left: 68px;
+}
+
+.header__timer-wrapper {
+    width: 258px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.header__timer-block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+
+.timer__text {
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    color: #00692A;
+}
+
+.timer__text-1 {
+    padding-left: 5px;
+}
+
+.timer__text-2 {
+    padding-left: 3px;
+}
+
+.timer__text-3 {
+    padding-left: 5px;
+}
+
+.header__price-text {
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #3C3C3C;
+}
+
+.header__price {
+    margin-bottom: 5px;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.old__price {
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    color: #3C3C3C;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 102%;
+        height: 2px;
+        background: #00692A;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.new__price {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    color: #DC0000;
+}
+
+// .header__card-form {
+//     margin-bottom: 18px;
+// }
+
+.card__input-wrapper {
+    width: 250px;
+    height: 46px;
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card__input {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #3C3C3C;
+}
+
+.input__info {
+    font-size: 8px;
+    line-height: 1;
+    text-align: center;
+    color: #3C3C3C;
+}
+
+.card__submit {
+    margin-top: 15px;
+}
+
+.header__order-btn {
+    width: 250px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-image: url(../img/button-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 56px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+    margin-bottom: 18px;
+
+    &:hover {
+        color: #DC0000;
+    }
+
+    &:before {
+        content: "";
+        width: 264px;
+        height: 67px;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: radial-gradient(50.09% 49.69% at 49.53% 39.66%, #000000 0%, #505050 52%, rgba(255, 255, 255, 0) 100%);
+        opacity: 0.4;
+        z-index: -1;
+        pointer-events: none;
+    }
+}
+
+.header__discount {
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    color: #3C3C3C;
+
+    span {
+        color: #DC0000;
+    }
+
+    .date {
+        font-weight: 700;
+        color: #DC0000;
+    }
+}
+
+.header__quantity {
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    color: #3C3C3C;
+
+    span {
+        font-weight: 700;
+        color: #DC0000;
+    }
+}
+
