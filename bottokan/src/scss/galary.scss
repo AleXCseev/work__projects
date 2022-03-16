@@ -1,0 +1,40 @@
+.galary__section {
+    width: 100%;
+    height: auto;
+    background-image: url(../img/galary-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.galary__section-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 50px 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.galary__title {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 1.2;
+    text-align: center;
+    color: #00692A;
+    margin-bottom: 25px;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.galary__block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}

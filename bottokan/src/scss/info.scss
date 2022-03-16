@@ -1,0 +1,93 @@
+.info__section {
+    width: 100%;
+    height: auto;
+}
+
+.info__section-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 50px 0 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1;
+}
+
+.info__line {
+    position: absolute;
+    top: 0;
+    left: -550px;
+    height: 100%;
+    width: auto;
+    z-index: -1;
+}
+
+.info__tree-1 {
+    position: absolute;
+    top: 0;
+    left: -600px;
+    z-index: -1;
+}
+
+.info__girl {
+    position: absolute;
+    bottom: 0;
+    left: -335px;
+    z-index: -1;
+}
+
+.info__tree-2 {
+    position: absolute;
+    top: 60px;
+    right: -480px;
+    z-index: -1;
+}
+
+.info__prod {
+    position: absolute;
+    bottom: 10px;
+    right: -235px;
+    z-index: -1;
+}
+
+.info__coal {
+    position: absolute;
+    bottom: -37px;
+    right: -410px;
+    z-index: -1;
+    width: 473px;
+}
+
+.info__title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.2;
+    text-align: center;
+    color: #00692A;
+    margin-bottom: 30px;
+}
+
+.info__text {
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #3C3C3C;
+    margin-bottom: 5px;
+
+    span {
+        font-weight: 500;
+    }
+}
+
+.info__list {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 32px;
+}

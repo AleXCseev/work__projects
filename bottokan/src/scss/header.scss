@@ -4,7 +4,8 @@
     // background-color: #F3F3F3;
     background-image: url(../img/header-bg.jpg);
     background-repeat: no-repeat;
-    background-size: 1920px auto;
+    // background-size: 1920px auto;
+    background-size: cover;
     background-position: center;
 }
 
@@ -134,13 +135,13 @@
     width: 709px;
     height: auto;
     position: absolute;
-    bottom: -12px;
+    bottom: -25px;
     right: -148px;
 }
 
 .header__coal {
     position: absolute;
-    bottom: 52px;
+    bottom: 39px;
     right: 154px;
 }
 
