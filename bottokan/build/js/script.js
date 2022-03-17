@@ -54,6 +54,24 @@ var landingFunctions = {
 			dotsEach: true,
 			items: 3,
 			margin: 28,
+			autoHeight: false,
+			responsive:{
+				0:{
+					items: 1,
+					autoHeight: true,
+					dots: true,
+				},
+				700:{
+					items: 2,
+					autoHeight: true,
+					dots: false,
+				},
+				1000: {
+					items: 3,
+					autoHeight: false,
+					dots: false,
+				}
+			}
 		});
 
 		// AOS.init({
