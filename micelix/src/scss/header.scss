@@ -1,0 +1,211 @@
+.header {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    color: #fff;
+}
+
+.header__wrapper {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-height: 120px;
+    padding: 16px 0;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo__image-primary {
+    width: 208px;
+}
+
+.logo__image-partner {
+    width: 52px;
+    margin-left: 25px;
+}
+
+.header__search {
+    position: relative;
+    width: 344px;
+    margin-left: auto;
+}
+
+.header__search form {
+    margin: 0;
+}
+
+.header__search .search__field {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 0 15px;
+    border-radius: 5px;
+    background-color: #2D2D2D;
+    color: #555555;
+    line-height: 38px;
+    font-size: 14px;
+    -webkit-transition: 320ms;
+    -o-transition: 320ms;
+    transition: 320ms;
+}
+
+.header__search .search__field::-webkit-input-placeholder {
+    opacity: 1;
+    color: #555555;
+}
+
+.header__search .search__field::-moz-placeholder {
+    opacity: 1;
+    color: #555555;
+}
+
+.header__search .search__field:-ms-input-placeholder {
+    opacity: 1;
+    color: #555555;
+}
+
+.header__search .search__field::-ms-input-placeholder {
+    opacity: 1;
+    color: #555555;
+}
+
+.header__search .search__field::placeholder {
+    opacity: 1;
+    color: #555555;
+}
+
+.header__search .search__field:focus {
+    background-color: #525252;
+    color: #afafaf;
+}
+
+.header__search .search__field:focus::-webkit-input-placeholder {
+    color: #afafaf;
+}
+
+.header__search .search__field:focus::-moz-placeholder {
+    color: #afafaf;
+}
+
+.header__search .search__field:focus:-ms-input-placeholder {
+    color: #afafaf;
+}
+
+.header__search .search__field:focus::-ms-input-placeholder {
+    color: #afafaf;
+}
+
+.header__search .search__field:focus::placeholder {
+    color: #afafaf;
+}
+
+.header__search .search__button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 38px;
+    height: 38px;
+    border: 0;
+    background: transparent url(../img/search-icon.png) no-repeat center;
+    text-indent: 999px;
+    overflow: hidden;
+}
+
+.header__user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 10px;
+}
+
+.header__user .user__sign-in {
+    padding: 0 8px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    color: #EF9021;
+}
+
+.header__user .user__blue-btn {
+    height: 28px;
+    margin-left: 10px;
+    padding: 0 8px;
+    border-radius: 5px;
+    background-color: #3CA5DD;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.header__user .user__blue-btn:hover {
+    background-color: #1696d7;
+}
+
+.header__menu {
+    display: none;
+}
+
+.header__menu .menu__toggle-button {
+    display: block;
+    width: 30px;
+    height: 24px;
+    border: 0;
+    background: transparent url(../img/nav-icon.png) no-repeat center;
+}
+
+.header__nav {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.header__nav .nav__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__nav .nav__item {
+    margin: 4px;
+}
+
+.header__nav .nav__link {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-transition: 320ms;
+    -o-transition: 320ms;
+    transition: 320ms;
+}
+
+.header__nav .nav__link:hover {
+    color: #FFC700;
+}
