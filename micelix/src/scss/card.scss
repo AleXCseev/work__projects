@@ -1,0 +1,40 @@
+.card__section {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(123.55deg, #45FFDE -15.56%, #23FA00 167.12%);
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__prod {
+    height: 100%;
+    width: auto;
+}
+
+.card__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 56px 45px 56px 0;
+}
+
+.card__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.card__date {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.18;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 5px;
+}

@@ -108,6 +108,7 @@ body {
 	font-size: 15px;
 	font-family: 'HelveticaNeueCyr', sans-serif;
 	font-weight: 300;
+	color: #fff;
 	background: #FFFFFF;
 }
 
@@ -140,12 +141,18 @@ body {
 	width: 100%;
 	height: auto;
 
-	.header__line {
-		.header__date {
-			text-align: center;
-		}
+	.container {
+		// width: 100%;
+		// height: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin: auto;
 	}
 }
+
+
+
 
 
 
