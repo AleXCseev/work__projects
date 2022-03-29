@@ -28,6 +28,29 @@ var landingFunctions = {
 			number: 5,
 		});
 
+		function cardSlider (selector) {
+			var owl = $(selector + " .card__galary-slider").owlCarousel({
+				items: 1,
+				margin: 100,
+				dots: false,
+				nav: false,
+				loop: true,
+				mouseDrag: false,
+				touchDrag: false,
+				animateOut: 'fadeOut',
+			});
+	
+			$(selector + " .card__foto").each(function() {
+				$(this).click(function() {
+					$(selector + " .card__foto").removeClass("active")
+					var position = $(this).data("slide") - 1
+					owl.trigger("to.owl.carousel", [position, 300])
+					$(this).addClass("active")
+				})
+			})
+		}
+	
+		cardSlider(".card__2")
 
 		// AOS.init({
 		// 	disable : 'mobile',

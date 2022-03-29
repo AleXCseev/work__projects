@@ -1,0 +1,127 @@
+.info__section {
+    width: 100%;
+    height: auto;
+}
+
+.info__section-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+}
+
+.info__card {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(116.22deg, #228AC5 0%, #591791 100%);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    padding: 86px 0 98px 50px;
+    position: relative;
+}
+
+.info__img-left {
+    position: absolute;
+    left: -320px;
+    bottom: -20px;
+}
+
+.info__img-right {
+    position: absolute;
+    right: -374px;
+    top: -80px;
+}
+
+.info__card-block {
+    width: 440px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.info__card-title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1.15;
+    color: #FFD600;
+    margin-bottom: 59px;
+}
+
+.info__list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 49px;
+}
+
+.info__list-item {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.list__ok-wrapper {
+    width: 40px;
+    height: 40px;
+    background: #FFD600;
+    border-radius: 10px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.info__list-text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.92;
+    color: #FFFFFF;
+}
+
+.info__discount {
+    position: absolute;
+    right: -10px;
+    top: -20px;
+    transform: scale(0.85);
+}
+
+.info__price {
+    margin-bottom: 0;
+}
+
+.info__boy {
+    position: absolute;
+    bottom: -100px;
+    right: -115px;
+}
+
+.info__boot-1 {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    transform: rotate(-12deg);
+}
+
+.info__boot-2 {
+    position: absolute;
+    top: 101px;
+    right: 195px;
+    filter: blur(2px);
+}
+
+.info__logo {
+    position: absolute;
+    width: 215px;
+    height: auto;
+    bottom: 97px;
+    right: 487px;
+    filter: blur(2px);
+    transform: rotate(15deg);
+}
