@@ -70,25 +70,85 @@
     <div class="modal__review-wrapper">
         <form class="active">
             <div class="modal__autor">
-                <input type="text" class="name__input" placeholder="Имя" required>
+                <input type="text" class="name__input" placeholder="নাম" required>
                 <div class="modal__star-raiting">
-                    Рейтинг: <div class="modal__raiting"></div>
+                    রেটিং: <div class="modal__raiting"></div>
                 </div>
             </div>
-            <textarea cols="30" rows="10" class="modal__area" placeholder="Ваш отзыв..."></textarea>
+            <textarea cols="30" rows="10" class="modal__area" placeholder="আপনার মতামত..."></textarea>
             <div class="modal__send">
-                <button type="submit" class="send">Отправить</button>
+                <button type="submit" class="send">পাঠান</button>
             </div>
         </form>
         <div class="send__window">
             <div class="send__img">
                 <img src="./img/mailing.png" alt="" class="modal__send-img">
             </div>
-            <div class="send__massage">Спасибо за ваш отзыв,
-                он появится на сайте после проверки модератором</div>
+            <div class="send__massage">আপনার প্রতিক্রিয়ার জন্য ধন্যবাদ,
+                মডারেটর দ্বারা যাচাই করার পরে এটি সাইটে প্রদর্শিত হবে৷</div>
         </div>
-        <a class="modal__close"><img src="./img/close.png" alt="закрыть"></a>
+        <a class="modal__close"><img src="./img/close.png" alt=""></a>
     </div>
 </div>
+
+<div id="table-sizes-underwear" class="size-table-wrapper">
+    <h3>आकार तालिका</h3>
+    <table class="size-table">
+       <thead>
+          <tr>
+             <th></th>
+             <th>S</th>
+             <th>M</th>
+             <th>L</th>
+             <th>XL</th>
+          </tr>
+       </thead>
+       <tbody>
+          <!--    <tr>--><!--      <td>Рост</td>--><!--      <td>140-172</td>--><!--      <td>172-179</td>--><!--      <td>179-186</td>--><!--      <td>186-193</td>--><!--    </tr>-->
+          <tr>
+             <td>वक्ष का घेरा</td>
+             <td>82/85</td>
+             <td>90/93</td>
+             <td>94/97</td>
+             <td>98/102</td>
+          </tr>
+          <tr>
+             <td>कमर परिधि</td>
+             <td>66/69</td>
+             <td>70/74</td>
+             <td>74/76</td>
+             <td>80/84</td>
+          </tr>
+          <tr>
+             <td>हिप का घेराव</td>
+             <td>92/95</td>
+             <td>96/100</td>
+             <td>102/104</td>
+             <td>105/108</td>
+          </tr>
+       </tbody>
+    </table>
+ </div>
+
+ <div class="modal__result" style="display: none">
+     <div class="modal__block">
+        <div class="discount__wrapper discount__modal">
+            <div class="discount tossing">
+                <span>
+                    60%
+                </span>
+            </div>
+        </div>
+        <h3 class="modal__result-title">
+            ¡Enhorabuena!
+        </h3>
+        <p class="modal__result-text">
+            Ваша скидка составляет 60%!
+        </p>
+        <button type="button" class="header__order-btn modal__result-close">
+            Закрыть
+        </button>
+     </div>
+ </div>
 
 

@@ -2,21 +2,22 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.time()
-		// this.quantity()
+		this.modal()
+		this.bar()
 	}, 
 
 	initLibraris: function() {
 
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = 0;
-			var cardHeight = $("#card").outerHeight(false)
-			var windowHeight = $(window).height()
+			var fixedOffset = -20;
+			// var cardHeight = $("#card").outerHeight(false)
+			// var windowHeight = $(window).height()
 	
 
 			$('html, body')
 				.stop()
-				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
 			e.preventDefault();
 		});
 
@@ -51,6 +52,23 @@ var landingFunctions = {
 		}
 	
 		cardSlider(".card__2")
+
+		var owl = $(".review__slider").owlCarousel({
+			items: 3,
+			margin: 29,
+			dots: true,
+			dotsEach: true,
+			nav: false,
+			loop: true,
+		});
+
+		$('.next__btn').click(function() {
+			owl.trigger('next.owl.carousel');
+		})
+
+		$('.prev__btn').click(function() {
+			owl.trigger('prev.owl.carousel');
+		})
 
 		// AOS.init({
 		// 	disable : 'mobile',
@@ -123,80 +141,122 @@ var landingFunctions = {
 		
 		// $(".year").text(new Date().getFullYear())
 	},
-
-	quantity: function() {
-		// var currentNumber;
-
-		// function getRandomInt(max) {
-		// 	return Math.floor(Math.random() * Math.floor(max));
-		// }
-
-		// if(localStorage.getItem("quantity")) {
-		// 	$(".main__quantity span").text(localStorage.getItem("quantity"));
-		// } else {
-		// 	currentNumber = 25
-		// 	localStorage.setItem("quantity", currentNumber)
-		// 	$(".main__quantity span").text(currentNumber);
-		// }
-
-		// setInterval(function () {
-		// 	currentNumber = localStorage.getItem("quantity");
-		// 	if (currentNumber >= 3) {
-		// 		currentNumber = currentNumber - getRandomInt(3);
-		// 		$(".main__quantity span").text(currentNumber);
-		// 		localStorage.setItem("quantity", currentNumber)
-		// 	} else {
-		// 		currentNumber = 25;
-		// 		localStorage.setItem("quantity", currentNumber)
-		// 	}
-		// }, 100000)
-		let prodLeft = [2, 3, 4, 6, 7, 8, 9, 9, 11, 11, 12, 14, 14, 15, 15, 16, 16, 16, 17, 17, 18, 18];
-
-		function start_counting_timer(limitedSeconds) {
-			let timeLeft = limitedSeconds;
-			let secondsLeft,minutesLeft;
-			let timerElement = $('.timer');
-			let count = setInterval(function(){
-				if(timeLeft <= 0) {
-					clearTimeout(count);
-				} else {
-					timeLeft--;
-					let min = parseInt(timeLeft/60);
-					minutesLeft = min.toString();
-					if(minutesLeft.length === 1) {
-						minutesLeft = '0'+ minutesLeft;
-					}
-					let sec = timeLeft%60;
-					secondsLeft = sec.toString();
-					if(secondsLeft.length === 1) {
-						secondsLeft = '0'+ secondsLeft;
-					}
-					if(sec === 0) {
-						$('.quantity').text(prodLeft[min])
-					}
-					timerElement.text(minutesLeft+":"+secondsLeft)
+	modal: function() {
+		function modal() {
+			$(".add__review").click(function () {
+				$(".modal__review").addClass("active")
+			})
+	
+			function close() {
+				$(".modal__review").removeClass("active")
+			}
+	
+			$(".modal__review").click( function(e) {
+				var target = e.target;
+				if(target.classList.contains("modal__close")) {
+					close()
 				}
-			}, 1000);
+				if(target.classList.contains("modal")) {
+					close()
+				}
+			})
+	
+			function readURL(input) {
+				if (input.files && input.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function (e) {
+						$('.file img').attr('src', e.target.result).css("display", "block");
+					};
+					reader.readAsDataURL(input.files[0]);
+				}
+			}
+	
+			$(".modal__review .input__file").on("change", function () {
+				readURL(this);
+			});
+	
+			$(".modal__review form").submit(function (e) {
+				e.preventDefault()
+				$(this).removeClass("active");
+				$(".send__window").addClass("active");
+				$(".modal__review .name__input").val("")
+				$(".modal__review .modal__area").val("")
+				$(".modal__review .file img").attr("src", "").css("display", "none")
+				delayClose()
+			})
+			function delayClose() {
+				setTimeout(function () {
+					$(".modal__review form").addClass("active");
+					$(".send__window").removeClass("active");
+					close();
+				}, 5000);
+			}
+		}
+	
+		modal()
+	},
+	bar: function() {
+		var animate = true;
+		if (localStorage.getItem("lotery")) {
+			$(".galary__section").addClass("active")
+			$("a.header__order-btn").attr("href", "#card");
+			$(".bar__section-wrapper").hide();
+			$(".card__section").show();
+			$(".review__section").show();
+			animate = false;
 		}
 
-		let tstamp = window.localStorage.getItem('tstamp-l2xyg239');
-		let limitedSeconds = 1278;
-		let prodElement = $('.prod_left_val');
-	
-		if (tstamp !== null) {
-			let now = Math.round(new Date().getTime() / 1000);
-			let then = tstamp;
-			limitedSeconds = limitedSeconds - (now - then);
-			let prod = Math.floor(limitedSeconds/60);
-			if (prod < 0) prod = 0;
-			prodElement.text(prodLeft[prod])
-		} else {
-			tstamp = Math.round(new Date().getTime() / 1000);
-			window.localStorage.setItem('tstamp-l2xyg239', tstamp);
-			prodElement.text(19);
-		}
-	
-		start_counting_timer(limitedSeconds);
+		$(".modal__result").click(function(e) {
+			if(e.target.classList.contains("modal__result")) {
+				$(this).fadeOut(1000);
+			}
+			if(e.target.classList.contains("modal__result-close")) {
+				$(this).fadeOut(1000);
+			}
+		})
+
+		$(".bar__btn").click(function (e) {
+			e.preventDefault();
+			if (!localStorage.getItem("lotery")) {
+				localStorage.setItem("lotery", true);
+				$("a.header__order-btn").attr("href", "#card");
+				$(".bar__wrapper").addClass("active__animate");
+
+				setTimeout(function () {
+					$(".bar__wrapper").addClass("active");
+				}, 8000);
+
+				setTimeout(function () {
+					$(".modal__result").fadeIn(1000);
+				}, 10000);
+
+				setTimeout(function () {
+					$(".bar__section-wrapper").hide();
+					$(".galary__section").removeClass("active")
+					$(".card__section").fadeIn(300);
+					$(".review__section").fadeIn(300);
+				}, 11000);
+
+				setTimeout(function () {
+					animate = false;
+					$([document.documentElement, document.body]).animate(
+						{
+							scrollTop: $("#card").offset().top,
+						},
+						1200
+					);
+				}, 11000);
+			}
+
+			if (!animate) {
+				$([document.documentElement, document.body]).animate(
+					{
+						scrollTop: $("#card").offset().top,
+					},
+					1200
+				);
+			}
+		});
 	}
 }
 

@@ -306,3 +306,46 @@
     cursor: pointer;
     background-color: transparent;
 }
+
+.card__soks {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(116.22deg, #228AC5 0%, #591791 100%);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    padding: 50px 0px 79px 50px;
+    margin-bottom: 100px;
+}
+
+.card__soks-wrapper {
+    width: 470px;
+    height: auto;
+    position: relative;
+}
+
+.card__soks-logo {
+    width: 101px;
+    height: auto;
+    margin-bottom: 21px;
+}
+
+.card__soks-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.15;
+    color: #FFD600;
+}
+
+.soks__discount {
+    position: absolute;
+    top: 0px;
+    right: -174px;
+    transform: scale(0.85);
+}
+
+.card__soks-img {
+    position: absolute;
+    top: -10px;
+    right: -500px;
+    width: 330px;
+}
