@@ -60,6 +60,24 @@ var landingFunctions = {
 			dotsEach: true,
 			nav: false,
 			loop: true,
+			autoHeight: false,
+			responsive:{
+				0:{
+					items:1,
+					autoHeight: true,
+					nav: true,
+				},
+				700:{
+					items:2,
+					autoHeight: false,
+					nav: false,
+				},
+				1000:{
+					items:3,
+					autoHeight: false,
+					nav: false,
+				}
+			}
 		});
 
 		$('.next__btn').click(function() {
@@ -196,6 +214,7 @@ var landingFunctions = {
 		modal()
 	},
 	bar: function() {
+		$("a.header__order-btn").attr("href", "#card");
 		var animate = true;
 		if (localStorage.getItem("lotery")) {
 			$(".galary__section").addClass("active")
@@ -232,7 +251,7 @@ var landingFunctions = {
 
 				setTimeout(function () {
 					$(".bar__section-wrapper").hide();
-					$(".galary__section").removeClass("active")
+					$(".galary__section").addClass("active")
 					$(".card__section").fadeIn(300);
 					$(".review__section").fadeIn(300);
 				}, 11000);
