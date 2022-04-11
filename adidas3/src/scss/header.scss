@@ -285,6 +285,18 @@
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+
+    .active {
+        .header__advantage:after {
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+        .header__advantage-number,
+        .header__advantage-title,
+        .header__advantage-text {
+            color: #0791E7 !important;
+        }
+    }
 }
 
 .header__advantage {
@@ -354,4 +366,13 @@
     font-size: 18px;
     line-height: 1.3;
     color: #FFFFFF;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .header__sale {
+        opacity: 0.6;
+    }
+    .header__sale-1 {
+        color: #0791E7;
+    }
 }

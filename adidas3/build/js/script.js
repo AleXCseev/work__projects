@@ -4,7 +4,6 @@ var landingFunctions = {
 		this.time()
 		this.card()
 		this.modal()
-		// this.bar()
 	}, 
 
 	initLibraris: function() {
@@ -21,16 +20,6 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
-		// $.raty.path = $("body").data("path") + 'img/raty';
-
-		// $('.modal__raiting').raty({
-		// 	half: true,
-		// 	space: false,
-		// 	number: 5,
-		// });
-
-		
-
 		$(".review__slider").owlCarousel({
 			loop: true,
 			nav : true,
@@ -41,6 +30,26 @@ var landingFunctions = {
 			touchDrag: false,
 			// autoHeight: true,
 		})
+
+		if($(window).width() <= 540) {
+			$(".header__advantages").addClass("owl-carousel").owlCarousel({
+				loop: true,
+				nav : false,
+				dots: true,
+				items: 1,
+				margin: 30,
+			})
+		}
+
+		if($(window).width() <= 540) {
+			$(".advantages").addClass("owl-carousel").owlCarousel({
+				loop: true,
+				nav : false,
+				dots: true,
+				items: 1,
+				margin: 30,
+			})
+		}
 
 		var owl = $(".review__photo-slider").owlCarousel({
 			loop: true,
@@ -77,17 +86,6 @@ var landingFunctions = {
 		$(".review__slider .owl-next").click( function() {
 			owl.trigger('next.owl.carousel');
 		})
-
-		// AOS.init({
-		// 	disable : 'mobile',
-		// 	once: true,
-		// 	duration: 1000,
-		// 	// offset : -200,
-		// });
-	
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
@@ -141,13 +139,8 @@ var landingFunctions = {
 			return dd + "." + mm + "." + yyyy
 		}
 
-		// $(".date__1").text(getDate(-5));
-    	// $(".date__2").text(getDate(2));
 
 		$(".header__date span").text(getDate(2))
-		// $(".card__date .date").text(getDate(2))
-		
-		// $(".year").text(new Date().getFullYear())
 	},
 
 	card: function() {
@@ -158,6 +151,16 @@ var landingFunctions = {
 			dots: false,
 			nav: true,
 			loop: true,
+			responsive:{
+				0:{
+					nav: false,
+					dots: true,
+				},
+				1000:{
+					nav: true,
+					dots: false,
+				}
+			}
 		});
 
 		function switchBtns(selector) {
@@ -225,79 +228,6 @@ var landingFunctions = {
 	
 		modal()
 	},
-	bar: function() {
-		$("a.header__order-btn").attr("href", "#card");
-		var animate = true;
-		if (localStorage.getItem("lotery")) {
-			$(".galary__section").addClass("active")
-			$(".review__section").addClass("active")
-			$("a.header__order-btn").attr("href", "#card");
-			$(".bar__section-wrapper").hide();
-			$(".card__section").show();
-			$(".review__section").show();
-			animate = false;
-		}
-
-		$(".modal__result").click(function(e) {
-			if(e.target.classList.contains("modal__result")) {
-				$(this).fadeOut(1000);
-			}
-			if(e.target.classList.contains("modal__result-close")) {
-				$([document.documentElement, document.body]).animate(
-					{
-						scrollTop: $("#card").offset().top,
-					},
-					1200
-				);
-				
-				$(this).fadeOut(1000);
-			}
-		})
-
-		$(".bar__btn").click(function (e) {
-			e.preventDefault();
-			if (!localStorage.getItem("lotery")) {
-				localStorage.setItem("lotery", true);
-				$("a.header__order-btn").attr("href", "#card");
-				$(".bar__wrapper").addClass("active__animate");
-
-				setTimeout(function () {
-					$(".bar__wrapper").addClass("active");
-				}, 8000);
-
-				setTimeout(function () {
-					$(".modal__result").fadeIn(1000);
-				}, 10000);
-
-				setTimeout(function () {
-					$(".bar__section-wrapper").hide();
-					$(".galary__section").addClass("active")
-					$(".review__section").addClass("active")
-					$(".card__section").fadeIn(300);
-					$(".review__section").fadeIn(300);
-				}, 11000);
-
-				setTimeout(function () {
-					animate = false;
-					$([document.documentElement, document.body]).animate(
-						{
-							scrollTop: $("#card").offset().top,
-						},
-						1200
-					);
-				}, 11000);
-			}
-
-			if (!animate) {
-				$([document.documentElement, document.body]).animate(
-					{
-						scrollTop: $("#card").offset().top,
-					},
-					1200
-				);
-			}
-		});
-	}
 }
 
 $(document).ready(function() {

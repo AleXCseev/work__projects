@@ -109,7 +109,7 @@
 }
 
 .advantage__1 {
-    &.active, &:hover {
+    &:hover {
         .advantage__logo {
             background-image: url(../img/advantage-1-hover.png);
         }
@@ -123,7 +123,7 @@
 }
 
 .advantage__2 {
-    &.active, &:hover {
+    &:hover {
         .advantage__logo {
             background-image: url(../img/advantage-2-hover.png);
         }
@@ -137,7 +137,7 @@
 }
 
 .advantage__3 {
-    &.active, &:hover {
+    &:hover {
         .advantage__logo {
             background-image: url(../img/advantage-3-hover.png);
         }
@@ -150,7 +150,7 @@
 }
 
 .advantage__4 {
-    &.active, &:hover {
+    &:hover {
         .advantage__logo {
             background-image: url(../img/advantage-4-hover.png);
         }
