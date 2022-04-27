@@ -273,7 +273,24 @@
             <section class="card__section">
     <div class="container">
         <div class="card__section-wrapper">
-            <div class="card card__1">
+            <div class="card__decor">
+                <div class="parallax__img card__img-1 parallax">
+                    <div data-depth="1">
+                        <img src="img/dumbbells.png" alt="">
+                    </div>
+                </div>
+                <div class="parallax__img card__img-2">
+                    <div data-depth="2">
+                        <img src="img/circle.png" alt="">
+                    </div>
+                </div>
+                <div class="parallax__img card__img-3 parallax">
+                    <div data-depth="3">
+                        <img src="img/card-ball.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card card__1" id="card">
                 <div class="card__left">
                     <div class="card__galary">
                         <div class="card__other-foto">
@@ -331,17 +348,499 @@
                     </div>
                 </div>
                 <div class="card__right">
-
+                    <div class="card__right-block">
+                        <div class="card__header">
+                            <img src="img/card-logo.png" alt="" class="card__logo">
+                            <div class="card__raiting">
+                                <span>5.0</span>
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                            </div>
+                        </div>
+                        <h3 class="card__title">
+                            FERRARI STYLE
+                        </h3>
+                        <div class="card__price">
+                            <div class="price">
+                                <span class="old__price">2890 грн</span>
+                                <span class="new__price">1189 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="card__list">
+                        <li class="card__list-item">
+                            Вид товара: Мужской костюм
+                        </li>
+                        <li class="card__list-item">
+                            Материал: Полиестер, спандекс 
+                        </li>
+                        <li class="card__list-item">
+                            Цвет: Черный 
+                        </li>
+                        <li class="card__list-item">
+                            Страна бренда: США 
+                        </li>
+                        <li class="card__list-item">
+                            Производство: Камбоджа
+                        </li>
+                    </ul>
+                    <form class="card__form">
+                        <a data-fancybox="" data-src="#table-sizes-underwear" href="javascript:;" class="table__size">Таблица размеров</a>
+                        <div class="card__input-wrapper">
+                            <select class="card__select" size="1">
+                                <option value="" hidden="">Размер:</option>
+                                <option value="6">Размер: 6</option>
+                                <option value="7">Размер: 7</option>
+                                <option value="8">Размер: 8</option>
+                                <option value="9">Размер: 9</option>
+                                <option value="10">Размер: 10</option>
+                            </select>
+                        </div>
+                        <div class="card__input-wrapper">
+                            <input type="text" placeholder="Имя" required class="card__input">
+                        </div>
+                        <div class="card__input-wrapper">
+                            <input type="tel" placeholder="Телефон" required class="card__input">
+                        </div>
+                        <button type="submit" class="header__order-btn">купить</button>
+                        <p class="header__date">Акция продлится до <span>23.04.22</span></p>
+                    </form>
                 </div>
+            </div>
+            <div class="card__discount">
+                <p class="card__discount-text">
+                    При покупке двух костюмов - <br>
+                    дополнительная <span>скидка 200 грн</span>
+                </p>
+            </div>
+            <div class="card card__2">
+                <div class="card__left">
+                    <div class="card__galary">
+                        <div class="card__other-foto">
+                            <div class="card__foto active" data-slide="1">
+                                <img 
+                                    src="./img/card-2/lilac/1.jpg" 
+                                    data-black="./img/card-2/black/1.jpg"
+                                    data-lilac="./img/card-2/lilac/1.jpg"
+                                    alt=""
+                                >
+                            </div>
+                            <div class="card__foto" data-slide="2">
+                                <img 
+                                    src="./img/card-2/lilac/2.jpg" 
+                                    data-black="./img/card-2/black/2.jpg"
+                                    data-lilac="./img/card-2/lilac/2.jpg"
+                                    alt=""
+                                >
+                            </div>
+                            <div class="card__foto" data-slide="3">
+                                <img 
+                                    src="./img/card-2/lilac/3.jpg" 
+                                    data-black="./img/card-2/black/3.jpg"
+                                    data-lilac="./img/card-2/lilac/3.jpg"
+                                    alt=""
+                                >
+                            </div>
+                            <div class="card__foto" data-slide="4">
+                                <img 
+                                    src="./img/card-2/lilac/4.jpg" 
+                                    data-black="./img/card-2/black/4.jpg"
+                                    data-lilac="./img/card-2/lilac/4.jpg"
+                                    alt=""
+                                >
+                            </div>
+                            <div class="card__foto" data-slide="5">
+                                <img 
+                                    src="./img/card-2/lilac/5.jpg" 
+                                    data-black="./img/card-2/black/5.jpg"
+                                    data-lilac="./img/card-2/lilac/5.jpg"
+                                    alt=""
+                                >
+                            </div>
+                            <div class="card__foto" data-slide="6">
+                                <img 
+                                    src="./img/card-2/lilac/6.jpg" 
+                                    data-black="./img/card-2/black/6.jpg"
+                                    data-lilac="./img/card-2/lilac/6.jpg"
+                                    alt=""
+                                >
+                            </div>
+                        </div>
+                        <div class="card__main-foto owl-carousel">
+                            <div class="card__main-slide">
+                                <a href="./img/card-2/lilac/1.jpg" data-fancybox="card-2">
+                                    <img 
+                                        src="./img/card-2/lilac/1.jpg" 
+                                        data-black="./img/card-2/black/1.jpg"
+                                        data-lilac="./img/card-2/lilac/1.jpg"
+                                        alt=""
+                                    >
+                                </a>
+                            </div>
+                            <div class="card__main-slide">
+                                <a href="./img/card-2/lilac/2.jpg" data-fancybox="card-2">
+                                    <img 
+                                        src="./img/card-2/lilac/2.jpg" 
+                                        data-black="./img/card-2/black/2.jpg"
+                                        data-lilac="./img/card-2/lilac/2.jpg"
+                                        alt=""
+                                    >
+                                </a>
+                            </div>
+                            <div class="card__main-slide">
+                                <a href="./img/card-2/lilac/3.jpg" data-fancybox="card-2">
+                                    <img 
+                                        src="./img/card-2/lilac/3.jpg" 
+                                        data-black="./img/card-2/black/3.jpg"
+                                        data-lilac="./img/card-2/lilac/3.jpg"
+                                        alt=""
+                                    >
+                                </a>
+                            </div>
+                            <div class="card__main-slide">
+                                <a href="./img/card-2/lilac/4.jpg" data-fancybox="card-2">
+                                    <img 
+                                        src="./img/card-2/lilac/4.jpg" 
+                                        data-black="./img/card-2/black/4.jpg"
+                                        data-lilac="./img/card-2/lilac/4.jpg"
+                                        alt=""
+                                    >
+                                </a>
+                            </div>
+                            <div class="card__main-slide">
+                                <a href="./img/card-2/lilac/5.jpg" data-fancybox="card-2">
+                                    <img 
+                                        src="./img/card-2/lilac/5.jpg" 
+                                        data-black="./img/card-2/black/5.jpg"
+                                        data-lilac="./img/card-2/lilac/5.jpg"
+                                        alt=""
+                                    >
+                                </a>
+                            </div>
+                            <div class="card__main-slide">
+                                <a href="./img/card-2/lilac/6.jpg" data-fancybox="card-2">
+                                    <img 
+                                        src="./img/card-2/lilac/6.jpg" 
+                                        data-black="./img/card-2/black/6.jpg"
+                                        data-lilac="./img/card-2/lilac/6.jpg"
+                                        alt=""
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__right">
+                    <div class="card__right-block">
+                        <div class="card__header">
+                            <img src="img/card-logo.png" alt="" class="card__logo">
+                            <div class="card__raiting">
+                                <span>4.5</span>
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star-half.png" alt="">
+                            </div>
+                        </div>
+                        <h3 class="card__title">
+                            Puma Loungewear
+                        </h3>
+                        <div class="card__price">
+                            <div class="price">
+                                <span class="old__price">2890 грн</span>
+                                <span class="new__price">1189 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="card__list">
+                        <li class="card__list-item">
+                            Вид товара: Женский костюм 
+                        </li>
+                        <li class="card__list-item">
+                            Материал: Велюровая ткань 
+                        </li>
+                        <li class="card__list-item">
+                            Цвет: Чёрный, сиреневый 
+                        </li>
+                        <li class="card__list-item">
+                            Страна бренда: США 
+                        </li>
+                        <li class="card__list-item">
+                            Производство: Камбоджа
+                        </li>
+                    </ul>
+                    <form class="card__form">
+                        <a data-fancybox="" data-src="#table-sizes-underwear" href="javascript:;" class="table__size">Таблица размеров</a>
+                        <div class="card__input-wrapper">
+                            <select class="card__select" size="1">
+                                <option value="" hidden="">Размер:</option>
+                                <option value="6">Размер: 6</option>
+                                <option value="7">Размер: 7</option>
+                                <option value="8">Размер: 8</option>
+                                <option value="9">Размер: 9</option>
+                                <option value="10">Размер: 10</option>
+                            </select>
+                            <div class="card__color">
+                                <span>Цвет:</span>
+                                <button type="button" class="card__color-btn lilac active" data-color="lilac">
+                                    <img src="img/check-blue.png" alt="">
+                                </button>
+                                <button type="button" class="card__color-btn black" data-color="black">
+                                    <img src="img/check-yellow.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card__input-wrapper">
+                            <input type="text" placeholder="Имя" required class="card__input">
+                        </div>
+                        <div class="card__input-wrapper">
+                            <input type="tel" placeholder="Телефон" required class="card__input">
+                        </div>
+                        <button type="submit" class="header__order-btn">купить</button>
+                        <p class="header__date">Акция продлится до <span>23.04.22</span></p>
+                    </form>
+                </div>
+            </div>
+            <div class="card__delivery">
+                <div class="delivery__logo-wrapper">
+                    <img src="img/delivery-logo.png" alt="">
+                </div>
+                <p class="delivery__text">
+                    Доставка "Новой Почтой" <br>
+                    в течении 1 - 3х дней <br>
+                    Оплата после осмотра товара
+                </p>
             </div>
         </div>
     </div>
 </section> 
-            
-		</main>
-		
+            <section class="review__section">
+    <div class="container">
+        <div class="review__section-wrapper">
+            <img src="img/puma-logo-yellow.png" alt="" class="review__logo-bg">
+            <h3 class="review__title">
+                отзывы наших покупателей
+            </h3>
+            <div class="review__slider owl-carousel">
+                <div class="review__slide">
+                    <p class="review__text">
+                        Я взяла себе обе модельки, лишними не будут. Люблю спортивное и красивое, и это ооооочень удобно. Один велюровый для дома оставлю, он прям очень красивый! Спасибо!
+                    </p>
+                    <div class="review__footer">
+                        <span class="review__name">Екатерина</span>
+                        <div class="review__raiting">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star-half.png" alt="">
+                        </div>
+                    </div>
+                    <div class="review__quote">
+                        <img src="img/quote.png" alt="">
+                    </div>
+                </div>
+                <div class="review__slide">
+                    <p class="review__text">
+                        Я взяла себе обе модельки, лишними не будут. Люблю спортивное и красивое, и это ооооочень удобно. Один велюровый для дома оставлю, он прям очень красивый! Спасибо!
+                    </p>
+                    <div class="review__footer">
+                        <span class="review__name">Екатерина</span>
+                        <div class="review__raiting">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star-opacity.png" alt="">
+                        </div>
+                    </div>
+                    <div class="review__quote">
+                        <img src="img/quote.png" alt="">
+                    </div>
+                </div>
+                <div class="review__slide">
+                    <p class="review__text">
+                        Я взяла себе обе модельки, лишними не будут. Люблю спортивное и красивое, и это ооооочень удобно. Один велюровый для дома оставлю, он прям очень красивый! Спасибо!
+                    </p>
+                    <div class="review__footer">
+                        <span class="review__name">Екатерина</span>
+                        <div class="review__raiting">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                        </div>
+                    </div>
+                    <div class="review__quote">
+                        <img src="img/quote.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="add__review">
+                Оставить отзыв
+            </button>
+        </div>
     </div>
-    
+</section> 
+		</main>
+		<footer class="footer__section">
+    <div class="container">
+        <div class="footer__section-wrapper">
+            <div class="footer__content">
+                <img src="img/info-man.png" alt="" class="footer__left">
+                <img src="img/info-girl.png" alt="" class="footer__right">
+                <img src="img/logo-white.png" alt="" class="header__logo">
+                <h2 class="header__title">
+                    Удобство и комфорт для тебя
+                </h2>
+                <p class="header__text">
+                    В сезон цены будут выше, так что поспеши !
+                </p>
+                <div class="header__price">
+                    <div class="price">
+                        <span class="old__price">2890грн</span>
+                        <div class="price__center">
+                            <span>60%</span>
+                        </div>
+                        <span class="new__price">1179 грн</span>
+                    </div>
+                </div>
+                <a href="#card" class="header__order-btn">заказать</a>
+                <p class="header__date">Акция продлится до <span>23.04.22</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="footer__line">
+    <div class="container">
+        <div class="footer__line-wrapper">
+            <ul class="footer__info">
+                <li>LLC "MONSTR-MEDIA" ИНН 7701071884</li>
+                <li>ЕГРПОУ 39149245</li>
+                <li>Tel.: +380630236658</li>
+                <li>mail halo@matahari.com</li>
+                <li><a data-fancybox data-src="#modal-privacy" href="javascript:;">Политика конфиденциальности</a></li>
+                <li><a data-fancybox data-src="#modal-delivery" href="javascript:;">Оплата и доставка</a></li>
+                <li><a data-fancybox data-src="#modal-refusal" href="javascript:;">Отказ от ответственности</a></li>
+             </ul>
+        </div>
+    </div>
+</div> 
+    </div>
+    <div class="footer__modal" id="modal-privacy">
+    <h6>Политика конфиденциальности</h6>
+    <p>Наш интернет-магазин уважительно относится к правам клиента. Соблюдается строгая конфиденциальность при оформлении заказа. Сведения надежно хранятся и защищены от передачи данных.</p>
+    <p>Согласие на обработку данных клиента исключительно с целью предоставления услуг – размещение заказа на сайте.</p>
+    <p>К персональным данным относится личная информация о клиенте: домашний адрес; имя фамилия отчество; сведения о рождении; имущественное, семейное положение; личные контакты (телефон, электронная почта) и другие сведения, перечисленные в Законе "О персональных данных".</p>
+    <p>Клиент вправе отказаться от обработки персональных данных. Нами в данном случае гарантируется удаление с сайта всех персональных данных в трехдневный срок в рабочее время. Подобный отказ клиент может оформить простым электронным письмом по адресу, указанному на странице нашего сайта.</p>
+</div>
+
+<div class="footer__modal" id="modal-delivery">
+    <h6>Доставка и оплата</h6>
+    <p>По Украине доставка производится с помощью компании «Новая Почта» в течение 2-х дней с момента заказа. Стоимость и детали такой доставки разнятся в зависимости от региона вашего проживания и размера посылки.</p>
+    <p>Продавец не берет на себя никаких обязательств по возмещению любого ущерба Клиента, связанного с несвоевременной доставкой заказа, а также освобождается от любых возможных штрафных санкций.</p>
+    <p>Клиент, получивший товар, должен проверить его на предмет качества и количества.</p>
+</div>
+
+<div class="footer__modal" id="modal-refusal">
+    <h6>Отказ от ответственности</h6>
+    <p>Интернет-магазин оставляет за собой право в любое время без уведомления Клиента вносить изменения в товары, материалы и услуги, предоставляемые на сайте.</p>
+    <p>Интернет-магазин не несет ответственности за какие-либо убытки (включая моральный ущерб, ущерб от потери прибыли (упущенная выгода), данных или от прерывания деловой активности), возникший вследствие использования или невозможности использования данного сайта.</p>
+</div>
+
+<div class="modal__review">
+    <div class="modal__review-wrapper">
+        <form class="active">
+            <div class="modal__autor">
+                <input type="text" class="name__input" placeholder="Имя" required>
+                <div class="modal__star-raiting">
+                    Рейтинг: <div class="modal__raiting"></div>
+                </div>
+            </div>
+            <textarea cols="30" rows="10" class="modal__area" placeholder="Ваш отзыв..."></textarea>
+            <div class="modal__send">
+                <button type="submit" class="send">Отправить</button>
+            </div>
+        </form>
+        <div class="send__window">
+            <div class="send__img">
+                <img src="./img/mailing.png" alt="" class="modal__send-img">
+            </div>
+            <div class="send__massage">Спасибо за ваш отзыв,
+            он отобразится на сайте после проверки модератором</div>
+        </div>
+        <a class="modal__close"><img src="./img/close.png" alt=""></a>
+    </div>
+</div>
+
+<div id="table-sizes-underwear" class="size-table-wrapper">
+    <h3>आकार तालिका</h3>
+    <table class="size-table">
+       <thead>
+          <tr>
+             <th></th>
+             <th>S</th>
+             <th>M</th>
+             <th>L</th>
+             <th>XL</th>
+          </tr>
+       </thead>
+       <tbody>
+          <!--    <tr>--><!--      <td>Рост</td>--><!--      <td>140-172</td>--><!--      <td>172-179</td>--><!--      <td>179-186</td>--><!--      <td>186-193</td>--><!--    </tr>-->
+          <tr>
+             <td>वक्ष का घेरा</td>
+             <td>82/85</td>
+             <td>90/93</td>
+             <td>94/97</td>
+             <td>98/102</td>
+          </tr>
+          <tr>
+             <td>कमर परिधि</td>
+             <td>66/69</td>
+             <td>70/74</td>
+             <td>74/76</td>
+             <td>80/84</td>
+          </tr>
+          <tr>
+             <td>हिप का घेराव</td>
+             <td>92/95</td>
+             <td>96/100</td>
+             <td>102/104</td>
+             <td>105/108</td>
+          </tr>
+       </tbody>
+    </table>
+ </div>
+
+ <div class="modal__result" style="display: none">
+     <div class="modal__block">
+        <div class="discount__wrapper discount__modal">
+            <div class="discount tossing">
+                <span>
+                    60%
+                </span>
+            </div>
+        </div>
+        <h3 class="modal__result-title">
+            ¡Enhorabuena!
+        </h3>
+        <p class="modal__result-text">
+            Ваша скидка составляет 60%!
+        </p>
+        <button type="button" class="header__order-btn modal__result-close">
+            Закрыть
+        </button>
+     </div>
+ </div>
+
+
+  
     <script src="libs/jquery.min.js"></script>
     <script src="libs/carousel.js"></script>
     <script src="libs/jquery.events.touch.min.js"></script>

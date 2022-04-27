@@ -5,19 +5,20 @@ var landingFunctions = {
 		this.galary()
 		this.paralax()
 		this.card()
+		this.modal()
 	}, 
 
 	initLibraris: function() {
 
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = -20;
-			// var cardHeight = $("#card").outerHeight(false)
-			// var windowHeight = $(window).height()
+			var cardHeight = $("#card").outerHeight(false)
+			var windowHeight = $(window).height()
 
 			$('html, body')
 				.stop()
-				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
 			e.preventDefault();
 		});
 
@@ -31,40 +32,33 @@ var landingFunctions = {
 
 		
 
-		// var owl = $(".review__slider").owlCarousel({
-		// 	items: 3,
-		// 	margin: 29,
-		// 	dots: true,
-		// 	dotsEach: true,
-		// 	nav: false,
-		// 	loop: true,
-		// 	autoHeight: false,
-		// 	responsive:{
-		// 		0:{
-		// 			items:1,
-		// 			autoHeight: true,
-		// 			nav: true,
-		// 		},
-		// 		700:{
-		// 			items:2,
-		// 			autoHeight: false,
-		// 			nav: false,
-		// 		},
-		// 		1000:{
-		// 			items:3,
-		// 			autoHeight: false,
-		// 			nav: false,
-		// 		}
-		// 	}
-		// });
-
-		// $('.next__btn').click(function() {
-		// 	owl.trigger('next.owl.carousel');
-		// })
-
-		// $('.prev__btn').click(function() {
-		// 	owl.trigger('prev.owl.carousel');
-		// })
+		$(".review__slider").owlCarousel({
+			items: 2,
+			margin: 60,
+			dots: false,
+			dotsEach: true,
+			nav: true,
+			loop: true,
+			autoHeight: false,
+			stagePadding: 45,
+			// responsive:{
+			// 	0:{
+			// 		items:1,
+			// 		autoHeight: true,
+			// 		nav: true,
+			// 	},
+			// 	700:{
+			// 		items:2,
+			// 		autoHeight: false,
+			// 		nav: false,
+			// 	},
+			// 	1000:{
+			// 		items:3,
+			// 		autoHeight: false,
+			// 		nav: false,
+			// 	}
+			// }
+		});
 
 		// AOS.init({
 		// 	disable : 'mobile',
@@ -289,8 +283,8 @@ var landingFunctions = {
 			if (scenesParallax.length === 0) {
 				$('.parallax').each(function (i) {
 					scenesParallax[i] = new Parallax($(this).children('div').attr('data-depth', randomNum(10, 20)).end().get(0), {
-						frictionX: 0.001,
-						frictionY: 0.001,
+						frictionX: 0.0005,
+						frictionY: 0.0005,
 						invertX: Math.random() >= 0.5,
 						invertY: Math.random() >= 0.5
 					});
@@ -343,9 +337,52 @@ var landingFunctions = {
 					$(this).addClass("active")
 				})
 			})
+
+			owl.on("changed.owl.carousel", function(e) {
+				var index = e.relatedTarget.relative(e.item.index);
+
+				$(e.currentTarget).parent().find(".card__foto").removeClass("active");
+				$(e.currentTarget).parent().find(".card__foto").eq(index).addClass("active");
+			});
 		}
 	
 		cardSlider(".card__1")
+		cardSlider(".card__2")
+
+		// function sizeBtns(selector) {
+		// 	$(selector + " .card__color-btn").click(function() {
+		// 		$(selector + " .card__color-btn").removeClass("active")
+		// 		$(this).addClass("active")
+		// 	})
+		// }
+	
+		// sizeBtns(".card__2")
+
+		function cardImage(selector) {
+			function switchBtn(color) {
+				$(selector + " .card__foto img").each(function() {
+					var link = $(this).data(color); 
+					$(this).attr("src", link)
+				})
+	
+				$(selector + " .card__main-slide img").each(function() {
+					var link = $(this).data(color); 
+					$(this).attr("src", link)
+					$(this).parent().attr("href", link)
+				})
+			}
+	
+			$(selector + " .card__color-btn").click(function() {
+				$(selector + " .card__color-btn").removeClass("active")
+
+				switchBtn($(this).data("color"))
+
+				$(this).addClass("active")
+			})
+		}
+
+		cardImage(".card__2")
+
 	},
 }
 
