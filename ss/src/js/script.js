@@ -11,7 +11,7 @@ var landingFunctions = {
 	initLibraris: function() {
 
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = -20;
+			var fixedOffset = 0;
 			var cardHeight = $("#card").outerHeight(false)
 			var windowHeight = $(window).height()
 
@@ -41,35 +41,32 @@ var landingFunctions = {
 			loop: true,
 			autoHeight: false,
 			stagePadding: 45,
-			// responsive:{
-			// 	0:{
-			// 		items:1,
-			// 		autoHeight: true,
-			// 		nav: true,
-			// 	},
-			// 	700:{
-			// 		items:2,
-			// 		autoHeight: false,
-			// 		nav: false,
-			// 	},
-			// 	1000:{
-			// 		items:3,
-			// 		autoHeight: false,
-			// 		nav: false,
-			// 	}
-			// }
+			responsive:{
+				0:{
+					items:1,
+					autoHeight: true,
+					dots: true,
+					stagePadding: 0,
+				},
+				1000:{
+					items:2,
+					autoHeight: false,
+					dots: false,
+					stagePadding: 45,
+				}
+			}
 		});
 
-		// AOS.init({
-		// 	disable : 'mobile',
-		// 	once: true,
-		// 	duration: 1000,
-		// 	// offset : -200,
-		// });
+		AOS.init({
+			disable : 'mobile',
+			once: true,
+			duration: 1000,
+			// offset : -200,
+		});
 	
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
+		$(window).resize(function() {
+			AOS.refresh();
+		})
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
@@ -349,15 +346,6 @@ var landingFunctions = {
 		cardSlider(".card__1")
 		cardSlider(".card__2")
 
-		// function sizeBtns(selector) {
-		// 	$(selector + " .card__color-btn").click(function() {
-		// 		$(selector + " .card__color-btn").removeClass("active")
-		// 		$(this).addClass("active")
-		// 	})
-		// }
-	
-		// sizeBtns(".card__2")
-
 		function cardImage(selector) {
 			function switchBtn(color) {
 				$(selector + " .card__foto img").each(function() {
@@ -382,7 +370,19 @@ var landingFunctions = {
 		}
 
 		cardImage(".card__2")
-
+	
+		if ($(window).width() <= 1000) {
+			$(".card__right-block").each(function (index, item) {
+				var currentCard = $(item).closest(".card");
+				currentCard.prepend($(item))
+			})
+		} else {
+			$(".card .card__right-block").each(function (index, item) {
+				var currentCard = $(item).closest(".card");
+				var cardInfo = $(this).closest(".card").find(".card__right");
+				cardInfo.prepend($(item))
+			})
+		}
 	},
 }
 

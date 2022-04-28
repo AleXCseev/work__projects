@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="libs/animations.css">
     
     <link rel="stylesheet" href="css/style.css">
-    <title>Adidas</title>
+    <title>Puma</title>
 </head>
 <body data-path="./" id="scene">
     <div class="site__wrapper">
@@ -21,30 +21,32 @@
     <div class="container">
         <div class="header__section-wrapper">
             <div class="header__content">
-                <img src="img/header-dots-2.png" alt="" class="header__dots-left">
-                <img src="img/header-dots-1.png" alt="" class="header__dots-right">
-                <img src="img/header-left.png" alt="" class="header__left">
-                <img src="img/header-right.png" alt="" class="header__right">
-                <img src="img/logo-white.png" alt="" class="header__logo">
-                <h1 class="header__title">
+                <img src="img/logo-white.png" alt="" class="header__logo" data-aos="fade-down">
+                <h1 class="header__title" data-aos="fade-down" data-aos-delay="200">
                     Стильные костюмы <br>
-                    для тебя от PUMA !
+                    для тебя от PUMA!
                 </h1>
-                <p class="header__text">
+                <p class="header__text" data-aos="fade-down" data-aos-delay="400">
                     Выбери для себя шикарный <br>
-                    спортивный костюм по суперцене !
+                    спортивный костюм по суперцене!
                 </p>
-                <div class="header__price">
+                <div class="header__decor">
+                    <img src="img/header-dots-2.png" alt="" class="header__dots-left">
+                    <img src="img/header-dots-1.png" alt="" class="header__dots-right">
+                    <img src="img/header-left.png" alt="" class="header__left" data-aos="fade-right">
+                    <img src="img/header-right.png" alt="" class="header__right" data-aos="fade-left">
+                </div>
+                <div class="header__price" data-aos="fade-down" data-aos-delay="600">
                     <div class="price">
                         <span class="old__price">2890грн</span>
                         <div class="price__center">
-                            <span>60%</span>
+                            <span class="tossing">60%</span>
                         </div>
                         <span class="new__price">1179 грн</span>
                     </div>
                 </div>
-                <a href="#card" class="header__order-btn">заказать</a>
-                <p class="header__date">Акция продлится до <span>23.04.22</span></p>
+                <a href="#card" class="header__order-btn" data-aos="fade-down" data-aos-delay="600">заказать</a>
+                <p class="header__date" data-aos="fade-down" data-aos-delay="600">Акция продлится до <span>23.04.22</span></p>
             </div>
         </div>
     </div>
@@ -53,19 +55,17 @@
             <section class="info__section">
     <div class="container">
         <div class="info__section-wrapper">
-            <h2 class="info__title">
+            <h2 class="info__title" data-aos="fade-down">
                 ПОЧЕМУ ИМЕННО НАШИ КОСТЮМЫ?
             </h2>
-            <p class="info__text">
+            <p class="info__text" data-aos="fade-down" data-aos-delay="200">
                 Мы ценим качественные ткани, свою репутацию и нервы наших 
                 дорогих клиентов. Мы хотим, чтобы ты хвастался этими костюмами везде !
             </p>
             <div class="info__list-wrapper">
-                <img src="img/puma-logo.png" alt="" class="info__logo">
-                <img src="img/info-girl.png" alt="" class="info__girl">
-                <img src="img/info-man.png" alt="" class="info__man">
+                <img src="img/puma-logo.png" alt="" class="info__logo" data-aos="fade-left" data-aos-delay="400">
                 <ul class="info__list">
-                    <li class="info__list-item">
+                    <li class="info__list-item" data-aos="fade-right">
                         <div class="info__list-icon">
                             <img src="img/info-1.png" alt="">
                         </div>
@@ -79,7 +79,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="info__list-item">
+                    <li class="info__list-item" data-aos="fade-right" data-aos-delay="200">
                         <div class="info__list-icon">
                             <img src="img/info-2.png" alt="">
                         </div>
@@ -93,7 +93,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="info__list-item">
+                    <li class="info__list-item" data-aos="fade-right" data-aos-delay="400">
                         <div class="info__list-icon">
                             <img src="img/info-3.png" alt="">
                         </div>
@@ -108,6 +108,10 @@
                         </div>
                     </li>
                 </ul>
+                <div class="info__decor">
+                    <img src="img/info-girl.png" alt="" class="info__girl" data-aos="fade-left">
+                    <img src="img/info-man.png" alt="" class="info__man" data-aos="fade-left" data-aos-delay="200">
+                </div>
             </div>
         </div>
     </div>
@@ -133,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="galary__block galary__block-1">
+                <div class="galary__block galary__block-1" data-aos="fade-right">
                     <h3 class="galary__title">
                         PUMA FERRARI STYLE
                     </h3>
@@ -199,7 +203,7 @@
                     </div>
                     <a href="#card" class="header__order-btn galary__btn">заказать</a> 
                 </div>
-                <div class="galary__block galary__block-2">
+                <div class="galary__block galary__block-2" data-aos="fade-left">
                     <h3 class="galary__title">
                         Puma Loungewear
                     </h3>
@@ -692,26 +696,28 @@
     <div class="container">
         <div class="footer__section-wrapper">
             <div class="footer__content">
-                <img src="img/info-man.png" alt="" class="footer__left">
-                <img src="img/info-girl.png" alt="" class="footer__right">
-                <img src="img/logo-white.png" alt="" class="header__logo">
-                <h2 class="header__title">
+                <img src="img/logo-white.png" alt="" class="header__logo" data-aos="fade-down">
+                <h2 class="header__title" data-aos="fade-down" data-aos-delay="200">
                     Удобство и комфорт для тебя
                 </h2>
-                <p class="header__text">
+                <p class="header__text" data-aos="fade-down" data-aos-delay="400">
                     В сезон цены будут выше, так что поспеши !
                 </p>
-                <div class="header__price">
+                <div class="footer__decor">
+                    <img src="img/info-man.png" alt="" class="footer__left" data-aos="fade-right">
+                    <img src="img/info-girl.png" alt="" class="footer__right" data-aos="fade-left">
+                </div>
+                <div class="header__price" data-aos="fade-down" data-aos-delay="600">
                     <div class="price">
                         <span class="old__price">2890грн</span>
                         <div class="price__center">
-                            <span>60%</span>
+                            <span class="tossing">60%</span>
                         </div>
                         <span class="new__price">1179 грн</span>
                     </div>
                 </div>
-                <a href="#card" class="header__order-btn">заказать</a>
-                <p class="header__date">Акция продлится до <span>23.04.22</span></p>
+                <a href="#card" class="header__order-btn" data-aos="fade-down" data-aos-delay="800">заказать</a>
+                <p class="header__date" data-aos="fade-down" data-aos-delay="800">Акция продлится до <span>23.04.22</span></p>
             </div>
         </div>
     </div>
@@ -780,7 +786,7 @@
 </div>
 
 <div id="table-sizes-underwear" class="size-table-wrapper">
-    <h3>आकार तालिका</h3>
+    <h3>Таблица размеров</h3>
     <table class="size-table">
        <thead>
           <tr>
@@ -794,21 +800,21 @@
        <tbody>
           <!--    <tr>--><!--      <td>Рост</td>--><!--      <td>140-172</td>--><!--      <td>172-179</td>--><!--      <td>179-186</td>--><!--      <td>186-193</td>--><!--    </tr>-->
           <tr>
-             <td>वक्ष का घेरा</td>
+             <td>Обхват груди</td>
              <td>82/85</td>
              <td>90/93</td>
              <td>94/97</td>
              <td>98/102</td>
           </tr>
           <tr>
-             <td>कमर परिधि</td>
+             <td>Обхват талии</td>
              <td>66/69</td>
              <td>70/74</td>
              <td>74/76</td>
              <td>80/84</td>
           </tr>
           <tr>
-             <td>हिप का घेराव</td>
+             <td>Обхват бёдер</td>
              <td>92/95</td>
              <td>96/100</td>
              <td>102/104</td>

@@ -223,7 +223,7 @@
 @media (max-width: 880px) {
 	.modal__review-wrapper {
 		width: 668px;
-		height: 398px;
+		height: auto;
 	}
 	.modal__area {
 		margin-bottom: 75px;
@@ -242,7 +242,7 @@
 @media (max-width: 700px) {
 	.modal__review-wrapper {
 		width: 290px;
-		height: 508px;
+		height: auto;
 		padding: 60px 20px;
 	}
 	.modal__review form {
