@@ -895,7 +895,7 @@ body {
 }
 .galary__block-1 .move__mark {
   bottom: 50px;
-  left: 0;
+  left: 1px;
   border-radius: 10px 0px 0px 10px;
 }
 
@@ -922,7 +922,7 @@ body {
 }
 .galary__block-2 .move__mark {
   bottom: 50px;
-  right: 0;
+  right: 1px;
   border-radius: 0px 10px 10px 0px;
 }
 
@@ -1109,8 +1109,8 @@ body {
       -ms-transform: translate(-50%, -50%);
        -o-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: auto;
-  height: 101%;
+  width: 105%;
+  height: auto;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
@@ -1119,6 +1119,7 @@ body {
 .card__foto.active {
   border: 2px solid #FFD600;
   opacity: 1;
+  background: #FFD600;
 }
 .card__foto:hover img {
   -webkit-transform: translate(-50%, -50%) scale(1.1);
@@ -1269,6 +1270,8 @@ body {
   padding: 0 50px 28px;
 }
 .card__form .header__order-btn {
+  display: block;
+  text-align: center;
   margin-top: 20px;
   background: -webkit-gradient(linear, left top, right top, from(#DBFF00), to(#FFD600));
   background: -webkit-linear-gradient(left, #DBFF00 0%, #FFD600 100%);
@@ -1602,8 +1605,15 @@ body {
 .review__slider .owl-stage-outer {
   padding: 30px 0;
 }
+.review__slider .owl-stage {
+  position: relative;
+}
 .review__slider .owl-nav {
   padding: 0;
+  pointer-events: none;
+}
+.review__slider .owl-nav button {
+  pointer-events: auto;
 }
 
 .review__slide {
@@ -2060,6 +2070,7 @@ body {
 
 .modal__area {
   width: 100%;
+  min-width: 100%;
   max-width: 100%;
   height: 98px;
   max-height: 118px;
@@ -2655,7 +2666,7 @@ body {
 }
 
 .size-table tbody td:first-child {
-  width: 25.5%;
+  width: 20%;
   padding-left: 0;
   /*border-right: 1px solid #fff;*/
   text-align: left;
@@ -2666,7 +2677,7 @@ body {
 }
 
 .size-table tbody td {
-  width: 18.625%;
+  width: 15%;
   padding: 8px 8px 8px;
 }
 
@@ -2846,7 +2857,7 @@ body {
 
   .card__other-foto {
     width: 50px;
-    height: 550px;
+    height: 600px;
   }
 
   .card__foto {
@@ -2856,11 +2867,11 @@ body {
 
   .card__main-foto {
     width: 415px;
-    height: 550px;
+    height: 600px;
   }
 
   .card__main-slide {
-    height: 550px;
+    height: 600px;
   }
 
   .card {
@@ -3714,6 +3725,12 @@ body {
     padding: 30px 0 26px;
   }
 
+  .card__form .header__order-btn {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
   .delivery__logo-wrapper {
     margin-right: 0;
     margin-bottom: 10px;
@@ -3746,6 +3763,11 @@ body {
   .review__logo-bg {
     width: 100%;
     top: 30px;
+    -webkit-transform: scaleX(-1) translateX(50%);
+       -moz-transform: scaleX(-1) translateX(50%);
+        -ms-transform: scaleX(-1) translateX(50%);
+         -o-transform: scaleX(-1) translateX(50%);
+            transform: scaleX(-1) translateX(50%);
   }
 
   .footer__section {
@@ -3797,6 +3819,29 @@ body {
 
   .footer__decor {
     height: 78vw;
+  }
+
+  .card__other-foto {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding: 20px 20px 10px;
+  }
+
+  .card__foto {
+    width: 24.4vw;
+    height: 36.2vw;
+    margin-bottom: 10px;
+  }
+
+  .size-table tbody td {
+    width: 15%;
+    padding: 5px 5px 5px;
+    vertical-align: middle;
+  }
+
+  .size-table {
+    font-size: 14px;
   }
 }
 @media (max-width: 414px) {
@@ -3907,18 +3952,6 @@ body {
   .card__title {
     font-size: 8vw;
     margin-bottom: 8px;
-  }
-
-  .card__other-foto {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    gap: 10px 0;
-  }
-
-  .card__foto {
-    width: 24.4vw;
-    height: 36.2vw;
   }
 
   .owl-nav {

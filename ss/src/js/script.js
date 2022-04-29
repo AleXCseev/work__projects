@@ -61,7 +61,7 @@ var landingFunctions = {
 			disable : 'mobile',
 			once: true,
 			duration: 1000,
-			// offset : -200,
+			offset : -200,
 		});
 	
 		$(window).resize(function() {
@@ -260,6 +260,10 @@ var landingFunctions = {
 				acarousel.init();
 			});
 		}
+
+		$(".galary__slider img").on("dragstart", function(e) {
+			e.preventDefault();
+		});
 	
 		carousel(".galary__block-1 .galary__slider", ".galary__block-1 .move__mark");
 		carousel(".galary__block-2 .galary__slider", ".galary__block-2 .move__mark");
@@ -321,9 +325,9 @@ var landingFunctions = {
 				dots: false,
 				nav: true,
 				loop: true,
-				mouseDrag: false,
-				touchDrag: false,
-				animateOut: 'fadeOut',
+				// mouseDrag: false,
+				// touchDrag: false,
+				// animateOut: 'fadeOut',
 			});
 	
 			$(selector + " .card__foto").each(function() {

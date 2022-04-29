@@ -101,7 +101,7 @@
     }
     .card__other-foto {
         width: 50px;
-        height: 550px;
+        height: 600px;
     }
     .card__foto {
         width: 50px;
@@ -109,10 +109,10 @@
     }
     .card__main-foto {
         width: 415px;
-        height: 550px;
+        height: 600px;
     }
     .card__main-slide {
-        height: 550px;
+        height: 600px;
     }
     .card {
         align-items: center;
@@ -707,6 +707,11 @@
         align-items: center;
         padding: 30px 0 26px;
     }
+    .card__form .header__order-btn {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
     .delivery__logo-wrapper {
         margin-right: 0;
         margin-bottom: 10px;
@@ -733,6 +738,7 @@
     .review__logo-bg {
         width: 100%;
         top: 30px;
+        transform: scaleX(-1) translateX(50%);
     }
     .footer__section {
         background-image: url(../img/footer-bg-mobile.jpg);
@@ -768,6 +774,23 @@
     }
     .footer__decor {
         height: 78vw;
+    }
+    .card__other-foto {
+        flex-wrap: wrap;
+        padding: 20px 20px 10px;
+    }
+    .card__foto {
+        width: 24.4vw;;
+        height: 36.2vw;
+        margin-bottom: 10px;
+    }
+    .size-table tbody td {
+        width: 15%;
+        padding: 5px 5px 5px;
+        vertical-align: middle;
+    }
+    .size-table {
+        font-size: 14px;
     }
 }
 
@@ -854,14 +877,6 @@
     .card__title {
         font-size: 8vw;
         margin-bottom: 8px;
-    }
-    .card__other-foto {
-        flex-wrap: wrap;
-        gap: 10px 0;
-    }
-    .card__foto {
-        width: 24.4vw;;
-        height: 36.2vw;
     }
     .owl-nav {
         padding: 0 15px;

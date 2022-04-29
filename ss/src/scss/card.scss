@@ -111,14 +111,15 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: auto;
-        height: 101%;
+        width: 105%;
+        height: auto;
         transition: 0.3s ease;
     }
 
     &.active {
         border: 2px solid #FFD600;
         opacity: 1;
+        background: #FFD600;
     } 
 
     &:hover {
@@ -244,6 +245,8 @@
     padding: 0 50px 28px;
 
     .header__order-btn {
+        display: block;
+        text-align: center;
         margin-top: 20px;
         background: linear-gradient(90deg, #DBFF00 0%, #FFD600 100%);
     }
