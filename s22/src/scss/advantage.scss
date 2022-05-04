@@ -1,0 +1,85 @@
+.advantage__section {
+    width: 100%;
+    height: auto;
+    background-image: url(../img/advantage-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.advantage__section-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 50px 0 54px;
+}
+
+.advantage__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.advantages {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.advantage {
+    width: 280px;
+    height: auto;
+    backdrop-filter: blur(10px);
+    border-radius: 45px;
+    padding: 24px 35px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        color: #FFFFFF;
+
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+.advantage__1 {
+    background: linear-gradient(101.38deg, rgba(255, 155, 51, 0.5) 39.47%, rgba(255, 67, 26, 0.5) 74.81%);
+}
+
+.advantage__2 {
+    background: linear-gradient(46.71deg, rgba(255, 155, 51, 0.5) 21.98%, rgba(255, 67, 26, 0.5) 64.58%, rgba(255, 67, 26, 0.5) 104.69%);
+}
+
+.advantage__3 {
+    background: linear-gradient(118.85deg, rgba(255, 155, 51, 0.5) 46.45%, rgba(255, 67, 26, 0.5) 79.76%);
+}
+
+.advantage__4 {
+    background: linear-gradient(101.38deg, rgba(255, 155, 51, 0.5) -11.73%, rgba(255, 67, 26, 0.5) 107.29%);
+}
+
+.advantage__info {
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF;
+
+    span {
+        font-weight: 600;
+    }
+}
