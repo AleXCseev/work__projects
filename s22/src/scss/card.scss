@@ -1,0 +1,117 @@
+.card__section {
+    width: 100%;
+    height: auto;
+}
+
+.card__section-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.2;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.cards__block {
+    width: 100%;
+    height: auto;
+    padding: 0 42px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card {
+    width: 319px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.card__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 38px;
+}
+
+.card__name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.card__price {
+    width: 100%;
+    height: auto;
+    .price {
+        justify-content: center;
+    }
+    .new__price {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.2;
+        color: #FF2E00;
+    }
+}
+
+.card__price-text {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #FF2E00;
+}
+
+
+.card__quantity {
+    width: 140px;
+    height: 160px;
+    background-image: url(../img/card-poligon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 85px;
+    right: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px 10px 14px;
+}
+
+.card__quantity-text {
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF;  
+}
+
+.card__quantity-number {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.card__poligon-block {
+    width: 1605px;
+    height: 1605px;
+    left: auto;
+    right: -1400px;
+    top: -690px;
+}

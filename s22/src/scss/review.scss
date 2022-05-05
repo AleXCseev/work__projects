@@ -1,0 +1,153 @@
+.review__section {
+    width: 100%;
+    height: auto;
+
+    .container {
+        width: 1305px;
+    }
+}
+
+.review__section-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.review__img-right {
+    position: absolute;
+    bottom: -29px;
+    right: -552px;
+}
+
+.review__poligon-block {
+    width: 921px;
+    height: 921px;
+    top: auto;
+    bottom: 239px;
+    right: auto;
+    left: -964px;
+
+    .poligon__img-1 {
+        width: 100%;
+        opacity: 0.05;
+        transform: translate(-50%, -50%) rotate(-30deg);
+    }
+    
+    .poligon__img-2 {
+        width: 95%;
+        opacity: 0.1;
+        transform: translate(-50%, -50%) rotate(-29.63deg);
+    }
+    
+    .poligon__img-3 {
+        width: 90%;
+        opacity: 0.15;
+        transform: translate(-50%, -50%) rotate(-27.45deg);
+    }
+    
+    .poligon__img-4 {
+        width: 85%;
+        opacity: 0.25;
+        transform: translate(-50%, -50%) rotate(-22.37deg);
+    }
+    
+    .poligon__img-5 {
+        width: 80%;
+        opacity: 0.35;
+        transform: translate(-50%, -50%) rotate(-16.12deg);
+    }
+    
+    .poligon__img-6 {
+        width: 75%;
+        opacity: 0.5;
+        transform: translate(-50%, -50%) rotate(-8.99deg);
+    }
+
+
+    &.active {
+        .poligon__img-1,
+        .poligon__img-2,
+        .poligon__img-3,
+        .poligon__img-4,
+        .poligon__img-5,
+        .poligon__img-6,
+        .poligon__img-7,
+        .poligon__img-8,
+        .poligon__img-9,
+        .poligon__img-10,
+        .poligon__img-11,
+        .poligon__img-12 {
+            width: 45%;
+            opacity: 0.5;
+            transform: translate(-50%, -50%) rotate(34.1deg);
+        }
+    }
+}
+
+.review__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.2;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 91px;
+}
+
+.review__slider {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.review__slide {
+    width: 415px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 32px 53px;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.review__img-wrapper {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-top: -61px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.review__name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.review__text {
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.review__slide-1 {
+    background-image: url(../img/rev-bg-1.jpg);
+}
+
+.review__slide-2 {
+    background-image: url(../img/rev-bg-2.jpg);
+}
+
+.review__slide-3 {
+    background-image: url(../img/rev-bg-3.jpg);
+}
