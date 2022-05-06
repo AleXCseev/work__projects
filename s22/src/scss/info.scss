@@ -47,15 +47,24 @@
     color: #000000;
     position: relative;
 
+    // span {
+    //     font-size: 68px;
+    //     color: #FF431A;
+    //     position: relative;
+    // }
+
     &:before {
-        content: "";
-        width: 11px;
-        height: 11px;
-        border-radius: 100%;
-        background: #FF431A;
-        position: absolute;
-        top: 3px;
-        left: 0;
+        content: "\25CF";
+        color: #FF431A;
+        font-size: 20px;
+        margin-right: 5px;
+        // width: 11px;
+        // height: 11px;
+        // border-radius: 100%;
+        // background: #FF431A;
+        // position: absolute;
+        // top: 3px;
+        // left: 0;
     }
 }
 
@@ -63,21 +72,15 @@
     width: 100%;
     max-width: 721px;
     margin-bottom: 20px;
-    padding-left: 21px;
 }
 
 .info__list-item2 {
     width: 100%;
     max-width: 893px;
     margin-bottom: 20px;
-    padding-left: 21px;
 }
 
 .info__list-item3 {
     width: 100%;
     max-width: 908px;
-
-    &:before {
-        left: 30px;
-    }
 }

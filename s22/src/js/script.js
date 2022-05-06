@@ -3,10 +3,7 @@ var landingFunctions = {
 		this.initLibraris()
 		this.time()
 		this.quantity()
-		// this.galary()
-		// this.paralax()
-		// this.card()
-		// this.modal()
+		this.card()
 	}, 
 
 	initLibraris: function() {
@@ -353,54 +350,16 @@ var landingFunctions = {
 	},
 
 	card: function() {
-		function cardSlider (selector) {
-			var owl = $(selector + " .card__main-foto").owlCarousel({
-				items: 1,
-				margin: 100,
-				dots: false,
-				nav: true,
-				loop: true,
-				// mouseDrag: false,
-				// touchDrag: false,
-				// animateOut: 'fadeOut',
-			});
-	
-			$(selector + " .card__foto").each(function() {
-				$(this).click(function() {
-					$(selector + " .card__foto").removeClass("active")
-					var position = $(this).data("slide") - 1
-					owl.trigger("to.owl.carousel", [position, 300])
-					$(this).addClass("active")
-				})
-			})
-
-			owl.on("changed.owl.carousel", function(e) {
-				var index = e.relatedTarget.relative(e.item.index);
-
-				$(e.currentTarget).parent().find(".card__foto").removeClass("active");
-				$(e.currentTarget).parent().find(".card__foto").eq(index).addClass("active");
-			});
-		}
-	
-		cardSlider(".card__1")
-		cardSlider(".card__2")
-
 		function cardImage(selector) {
 			function switchBtn(color) {
-				$(selector + " .card__foto img").each(function() {
+				$(selector + " .modal__img").each(function() {
 					var link = $(this).data(color); 
-					$(this).attr("src", link)
-				})
-	
-				$(selector + " .card__main-slide img").each(function() {
-					var link = $(this).data(color); 
-					$(this).attr("src", link)
-					$(this).parent().attr("href", link)
+					$(this).hide().attr("src", link).fadeIn(500)
 				})
 			}
 	
-			$(selector + " .card__color-btn").click(function() {
-				$(selector + " .card__color-btn").removeClass("active")
+			$(selector + " .modal__btn").click(function() {
+				$(selector + " .modal__btn").removeClass("active")
 
 				switchBtn($(this).data("color"))
 
@@ -408,20 +367,20 @@ var landingFunctions = {
 			})
 		}
 
-		cardImage(".card__2")
+		cardImage(".modal__form-block")
 	
-		if ($(window).width() <= 1000) {
-			$(".card__right-block").each(function (index, item) {
-				var currentCard = $(item).closest(".card");
-				currentCard.prepend($(item))
-			})
-		} else {
-			$(".card .card__right-block").each(function (index, item) {
-				var currentCard = $(item).closest(".card");
-				var cardInfo = $(this).closest(".card").find(".card__right");
-				cardInfo.prepend($(item))
-			})
-		}
+		// if ($(window).width() <= 1000) {
+		// 	$(".card__right-block").each(function (index, item) {
+		// 		var currentCard = $(item).closest(".card");
+		// 		currentCard.prepend($(item))
+		// 	})
+		// } else {
+		// 	$(".card .card__right-block").each(function (index, item) {
+		// 		var currentCard = $(item).closest(".card");
+		// 		var cardInfo = $(this).closest(".card").find(".card__right");
+		// 		cardInfo.prepend($(item))
+		// 	})
+		// }
 	},
 }
 
