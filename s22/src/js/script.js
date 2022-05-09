@@ -9,7 +9,7 @@ var landingFunctions = {
 	initLibraris: function() {
 
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = 0;
+			var fixedOffset = -50;
 			var cardHeight = $("#card").outerHeight(false)
 			var windowHeight = $(window).height()
 
@@ -23,6 +23,18 @@ var landingFunctions = {
 		setInterval(function() {
 			$(".header__poligon-block").toggleClass("active");
 		}, 5000)
+
+		if($(window).width() <= 1000) {
+			$(".review__slider").addClass("owl-carousel").owlCarousel({
+				items: 1,
+				margin: 60,
+				dots: true,
+				dotsEach: true,
+				nav: false,
+				loop: true,
+				autoHeight: true,
+			})
+		}
 
 		// $(".review__slider").owlCarousel({
 		// 	items: 2,

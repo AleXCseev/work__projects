@@ -29,10 +29,11 @@
 	background-position: center;
 	background-size: cover;
 	display: none;
+}
 
-	.fancybox-button {
-		display: none;
-	}
+.fancybox-slide--html .fancybox-close-small {
+	right: 20px;
+	top: 10px;
 }
 
 .modal__form-wrapper {
