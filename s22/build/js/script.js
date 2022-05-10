@@ -150,6 +150,11 @@ var landingFunctions = {
 	},
 
 	quantity: function() {
+		
+		function getRandomInt(max) {
+			return Math.floor(Math.random() * Math.floor(max));
+		}
+	
 		var currentNumber;
 
 		if(localStorage.getItem("quantity")) {

@@ -25,13 +25,19 @@
     height: auto;
     position: relative;
     padding: 191px 0 50px;
+
+    .header__title {
+        position: relative;
+        z-index: 2;
+    }
 }
 
 .footer__img {
     position: absolute;
     top: 85px;
     left: 650px;
-    z-index: -1;
+    // z-index: -1;
+    z-index: 1;
 }
 
 .footer__poligon-block {
@@ -54,6 +60,7 @@
         padding: 24px 50px;
         margin-left: 387px;
     }
+   
     .header__timer-text {
         font-size: 20px;
         line-height: 1.2;
@@ -105,5 +112,32 @@
         span {
             font-weight: 600;
         }
+    }
+}
+
+.footer__line {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(101.38deg, rgba(255, 155, 51, 1) 39.47%, rgba(255, 67, 26, 1) 74.81%);
+    position: relative;
+    z-index: 1;
+    margin-top: -1px;
+}
+
+.footer__line-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.4;
+
+    a {
+        text-decoration: underline;
     }
 }

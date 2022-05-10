@@ -29,7 +29,10 @@
     }
 }
 
-@media (max-width: 1480px) {
+@media (max-width: 1540px) {
+    .header__section-wrapper {
+        padding: 80px 0 46px;
+    }
     .header__title {
         font-size: 80px;
     }
@@ -167,6 +170,20 @@
     }
 }
 
+@media (max-width: 1025px) {
+    .info__left {
+        opacity: 0.25;
+    }
+    .info__right {
+        opacity: 0.25;
+    }
+    .header__img {
+        bottom: -95px;
+        left: 315px;
+        width: 800px;
+    }
+}
+
 @media (max-width: 1000px) {
     .container {
         width: 700px !important;
@@ -187,6 +204,7 @@
         left: 50%;
         width: 800px;
         transform: translate(-50%, -50%);
+        z-index: 5;
     }
     .poligon__block-main, .footer__poligon-block {
         width: 1000px;
@@ -214,7 +232,7 @@
         width: 384px;
         height: auto;
         border-radius: 50px;
-        background-image: url(../img/modal-bg-mobile.jpg);
+        // background-image: url(../img/modal-bg-mobile.jpg);
     }
     .modal__form-wrapper {
         align-items: center;
@@ -267,6 +285,7 @@
     }
     .info__right {
         width: 400px;
+        opacity: 1;
     }
     .advantage__title {
         font-size: 36px;
@@ -409,6 +428,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        z-index: 5;
     }
     .footer__section-wrapper {
         display: flex;
@@ -497,6 +517,7 @@
         width: 131vw;
         height: 131vw;
     }
+    
     .header__decor {
         height: 106vw;
     }
@@ -565,6 +586,9 @@
     }
     .footer__img {
         width: 102%;
+    }
+    .footer__section-wrapper .header__title span {
+        color: #FFB465;
     }
     .footer__timer-block {
         width: 100%;
@@ -697,8 +721,8 @@
     .review__poligon-block {
         width: 222.5vw;
         height: 222.5vw;
-        bottom: 70vw;
-        left: -164vw;
+        bottom: 60vw;
+        left: -140vw;
     }
     .footer__delivery-title {
         font-size: 4.8vw;
@@ -713,10 +737,20 @@
     .footer__section:before {
         background-image: url(../img/header-bg-mobile.jpg);
     }
-    .footer__section-wrapper {
-        .header__title span {
-            color: #FFB465;
-        }
+}
+
+@media (max-width: 384px) {
+    .header__title {
+        font-size: 9.8vw;
+    }
+    .footer__delivery-item p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 360px) {
+    .footer__delivery-item p {
+        font-size: 15px;
     }
 }
 

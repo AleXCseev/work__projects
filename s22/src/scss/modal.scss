@@ -3,6 +3,8 @@
     max-width: 900px;
     display: none;
 	color: #333;
+	background-color: #fff !important;
+	padding: 50px 20px 20px !important;
 
     h2 {
         font-size: 30px;
@@ -24,11 +26,10 @@
 .modal__form-block {
 	width: 910px;
 	height: auto;
-	background-image: url(../img/modal-bg.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	background: rgb(251,200,42);
+	background: radial-gradient(circle, rgba(251,200,42,1) 0%, rgba(251,130,23,1) 100%);
 	display: none;
+	border-radius: 50px;
 }
 
 .fancybox-slide--html .fancybox-close-small {
