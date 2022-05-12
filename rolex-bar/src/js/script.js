@@ -20,31 +20,6 @@ var landingFunctions = {
 		});
 
 
-		// $(".review__slider").owlCarousel({
-		// 	items: 2,
-		// 	margin: 60,
-		// 	dots: false,
-		// 	dotsEach: true,
-		// 	nav: true,
-		// 	loop: true,
-		// 	autoHeight: false,
-		// 	stagePadding: 45,
-		// 	responsive:{
-		// 		0:{
-		// 			items:1,
-		// 			autoHeight: true,
-		// 			dots: true,
-		// 			stagePadding: 0,
-		// 		},
-		// 		1000:{
-		// 			items:2,
-		// 			autoHeight: false,
-		// 			dots: false,
-		// 			stagePadding: 45,
-		// 		}
-		// 	}
-		// });
-
 		// AOS.init({
 		// 	disable : 'mobile',
 		// 	once: true,
@@ -56,13 +31,13 @@ var landingFunctions = {
 		// 	AOS.refresh();
 		// })
 
-		$('[data-fancybox]').fancybox({
-			loop: true,
-			infobar: false,
-			animationEffect: false,
-			backFocus: false,
-			hash: false,
-		});
+		// $('[data-fancybox]').fancybox({
+		// 	loop: true,
+		// 	infobar: false,
+		// 	animationEffect: false,
+		// 	backFocus: false,
+		// 	hash: false,
+		// });
 	},
 
 	time: function() {
@@ -87,34 +62,33 @@ var landingFunctions = {
 			};
 		}
 
-		function getDate(plusDays) {
-			var today = new Date();
-			var dd = String(today.getDate() + plusDays).padStart(2, '0');
-			var mm = String(today.getMonth() + 1).padStart(2, '0');
-			if (+dd < 0) {
-				mm = String(today.getMonth()).padStart(2, '0');
-			}
+		// function getDate(plusDays) {
+		// 	var today = new Date();
+		// 	var dd = String(today.getDate() + plusDays).padStart(2, '0');
+		// 	var mm = String(today.getMonth() + 1).padStart(2, '0');
+		// 	if (+dd < 0) {
+		// 		mm = String(today.getMonth()).padStart(2, '0');
+		// 	}
 			
-			var yyyy = String(today.getFullYear());
-			yyyy = yyyy.substr(yyyy.length - 2);
-			var currentDaysInMonth = new Date().daysInMonth()
-			if (+dd > currentDaysInMonth) {
-				dd = String(dd - currentDaysInMonth).padStart(2, '0');
-				mm = String(+mm + 1).padStart(2, '0');
-			}
-			if (+dd < 0) {
-				dd = String(currentDaysInMonth + +dd).padStart(2, '0');
-			}
-			return dd + "." + mm + "." + yyyy
-		}
+		// 	var yyyy = String(today.getFullYear());
+		// 	yyyy = yyyy.substr(yyyy.length - 2);
+		// 	var currentDaysInMonth = new Date().daysInMonth()
+		// 	if (+dd > currentDaysInMonth) {
+		// 		dd = String(dd - currentDaysInMonth).padStart(2, '0');
+		// 		mm = String(+mm + 1).padStart(2, '0');
+		// 	}
+		// 	if (+dd < 0) {
+		// 		dd = String(currentDaysInMonth + +dd).padStart(2, '0');
+		// 	}
+		// 	return dd + "." + mm + "." + yyyy
+		// }
 
 		// $(".date__1").text(getDate(-5));
     	// $(".date__2").text(getDate(2));
+		// $(".header__date span").text(getDate(2));
+		// $(".card__date .date").text(getDate(2));
+		// $(".year").text(new Date().getFullYear());
 
-		// $(".header__date span").text(getDate(2))
-		// $(".card__date .date").text(getDate(2))
-		
-		// $(".year").text(new Date().getFullYear())
 		function timer () {
 			function runMultiple(hoursSelector, minutesSelector, secondsSelector, milisecondsSelector) {
 				var d = new Date();
