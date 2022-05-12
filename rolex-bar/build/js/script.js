@@ -136,7 +136,7 @@ var landingFunctions = {
 				var el = $(".bar__column__1 .bar__item-active").html()
 				$(".bar__item-center").empty().append(el)
 				$(".bar__item-center").addClass("scale");
-			}, 200)
+			}, 80)
 		}
 		
 		var interval = 0
@@ -150,7 +150,7 @@ var landingFunctions = {
 	
 					interval = setInterval(function() {
 						scrollBar(".bar__column")
-					}, 300)
+					}, 150)
 	
 					$(".start").hide()
 					$(".stop").fadeIn(200)
