@@ -1,0 +1,37 @@
+.footer__section {
+    width: 100%;
+    height: auto;
+
+    .card__form {
+        padding: 0 30px;
+    }
+    .header__info-wrapper {
+        padding: 71px 0 50px;
+    }
+}
+
+.footer__line {
+    width: 100%;
+    height: auto;
+    background: #4B260C;
+}
+
+.footer__line-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 12px 20px;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF;
+
+    a {
+        text-decoration: underline;
+    }
+}

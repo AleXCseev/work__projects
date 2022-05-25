@@ -1,0 +1,213 @@
+.site__header {
+    width: 100%;
+    height: auto;
+}
+
+.header__logo-wrapper {
+    width: 100%;
+    height: 90px;
+    background: #270D03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site__header__wrapper {
+    width: 100%;
+    height: auto;
+    padding: 25px 0 40px;
+}
+
+.header__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F6E4A4;
+    margin-bottom: 27px;
+}
+
+.img__wrapper {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.price__block {
+    width: 100%;
+    height: 67px;
+    background: #270D03;
+    position: relative;
+    padding: 0 50px;
+}
+
+.price {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.old__price {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 120%;
+        height: 2px;
+        background: #FF0000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-3deg);
+    }
+}
+
+.price__sale {
+    width: 172px;
+    height: 137px;
+    background-image: url(../img/sale.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    padding-top: 34px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.new__price {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFB727;
+}
+
+.header__info-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 61px 0;
+}
+
+.header__info-block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.header__info-item {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        margin-bottom: 9px;
+    }
+
+    p {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.3;
+        text-align: center;
+        color: #F6E4A4;
+    }
+}
+
+.header__order-btn {
+    width: 380px;
+    height: 60px;
+    background: linear-gradient(90deg, #FFAA00 0%, #FEF6B8 50.03%, #B14A00 100%);
+    box-shadow: 0px 0px 20px rgba(255, 171, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    text-transform: uppercase;
+    color: #422001;
+    cursor: pointer;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+
+    span {
+        position: relative;
+        z-index: 2;
+    }
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(270deg, #FFAA00 0%, #FEF6B8 50.03%, #B14A00 100%);
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s ease;
+    }
+
+    &:hover {
+        &:before {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.header__info-text {
+    font-size: 20px;
+    line-height: 1;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 10px;
+
+    span {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1;
+        color: #FFB727;
+        padding: 7px 8px 8px 9px;
+        background: #270D03;
+        border-radius: 10px;
+    }
+}
