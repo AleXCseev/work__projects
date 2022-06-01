@@ -1,11 +1,11 @@
-<div class="wrapper" style="margin-top: 10px;">
+﻿<div class="wrapper" style="margin-top: 10px;">
     <p>Знижка діє з <span class="date__1"></span> по <span class="date__2"></span> на весь товар інтренет-магазину на всій території України, крім зон, що не контролюються владою</p>
 </div>
 <div class="wrapper">
 <ul class="footer-info">
     <li>LLC "MONSTR-MEDIA" ИНН 7701071884</li>
     <li>ЕГРПОУ 39149245</li>
-    <li>Tel.: 0934158946</li>
+    <li>Tel.: +380951976859</li>
     <li>mail halo@matahari.com</li>
     <li><a data-fancybox data-src="#modal-privacy" href="javascript:;">Політика конфіденційності</a></li>
     <li><a data-fancybox data-src="#modal-delivery" href="javascript:;">Оплата і доставка</a></li>
