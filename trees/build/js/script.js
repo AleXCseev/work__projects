@@ -81,6 +81,7 @@ var landingFunctions = {
 			// console.log($(".current__slide" ,(e.currentTarget).closest(".slider-parent")));
 			var index = e.relatedTarget.relative(e.item.index);
 			$(".slider__number-current").html(String(index + 1).padStart(2, '0'));
+			$(".slider__number").html(String(index + 1).padStart(2, '0'));
 		});
 
 		AOS.init({

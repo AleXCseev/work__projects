@@ -246,6 +246,19 @@
         width: auto !important;
         height: auto !important;
     }
+
+    &:before {
+        content: "";
+        width: 718px;
+        height: 17px;
+        background-image: url(../img/shadow-2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        bottom: 45px;
+        right: 0;
+    }
 }
 
 .header__slide-left {
@@ -447,4 +460,13 @@
     text-align: center;
     color: #9C9C9C;
     flex-shrink: 0;
+}
+
+.slider__number {
+    position: absolute;
+    font-size: 230px;
+    line-height: 1.4;
+    color: #FFFFFF;
+    right: -20px;
+    bottom: 50px;
 }
