@@ -5,7 +5,7 @@ var landingFunctions = {
 		// this.galary()
 		// this.paralax()
 		// this.card()
-		// this.modal()
+		this.modal()
 	}, 
 
 	initLibraris: function() {
@@ -28,42 +28,50 @@ var landingFunctions = {
 		}
 
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = 0;
-			var cardHeight = $("#card").outerHeight(false)
+			var fixedOffset = -100;
+			// var cardHeight = $("#card").outerHeight(false)
 			var windowHeight = $(window).height()
 
 			$('html, body')
 				.stop()
-				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
 			e.preventDefault();
 		})
 
 
-		// $(".review__slider").owlCarousel({
-		// 	items: 2,
-		// 	margin: 60,
-		// 	dots: false,
-		// 	dotsEach: true,
-		// 	nav: true,
-		// 	loop: true,
-		// 	autoHeight: false,
-		// 	stagePadding: 45,
-		// 	responsive:{
-		// 		0:{
-		// 			items:1,
-		// 			autoHeight: true,
-		// 			dots: true,
-		// 			stagePadding: 0,
-		// 		},
-		// 		1000:{
-		// 			items:2,
-		// 			autoHeight: false,
-		// 			dots: false,
-		// 			stagePadding: 45,
-		// 		}
-		// 	}
-		// });
+		var owlReview = $(".review__slider").owlCarousel({
+			items: 3,
+			margin: 7,
+			dots: false,
+			dotsEach: true,
+			nav: false,
+			loop: true,
+			autoHeight: false,
+			stagePadding: 7,
+			// responsive:{
+			// 	0:{
+			// 		items:1,
+			// 		autoHeight: true,
+			// 		dots: true,
+			// 		stagePadding: 0,
+			// 	},
+			// 	1000:{
+			// 		items:2,
+			// 		autoHeight: false,
+			// 		dots: false,
+			// 		stagePadding: 45,
+			// 	}
+			// }
+		});
+
+		$('.next__btn').click(function() {
+			owlReview.trigger('next.owl.carousel');
+		})
+
+		$('.prev__btn').click(function() {
+			owlReview.trigger('prev.owl.carousel');
+		})
 
 		var owl = $(".header__slider").owlCarousel({
 			items: 1,
@@ -182,6 +190,7 @@ var landingFunctions = {
 			function readURL(input) {
 				if (input.files && input.files[0]) {
 					var reader = new FileReader();
+					console.log(reader)
 					reader.onload = function (e) {
 						$('.file img').attr('src', e.target.result).css("display", "block");
 					};
