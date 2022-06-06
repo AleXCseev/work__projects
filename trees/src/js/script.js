@@ -75,7 +75,7 @@ var landingFunctions = {
 
 		var owl = $(".header__slider").owlCarousel({
 			items: 1,
-			margin: 60,
+			margin: 1000,
 			dots: false,
 			dotsEach: true,
 			nav: true,
@@ -88,20 +88,50 @@ var landingFunctions = {
 		owl.on("changed.owl.carousel", function(e) {
 			// console.log($(".current__slide" ,(e.currentTarget).closest(".slider-parent")));
 			var index = e.relatedTarget.relative(e.item.index);
-			$(".slider__number-current").html(String(index + 1).padStart(2, '0'));
-			$(".slider__number").html(String(index + 1).padStart(2, '0'));
+			$(this).closest(".header__slider-block").find(".slider__number-current").html(String(index + 1).padStart(2, '0'));
+			$(this).closest(".header__slider-block").find(".slider__number").html(String(index + 1).padStart(2, '0'));
 		});
 
-		AOS.init({
-			disable : 'mobile',
-			once: true,
-			duration: 1000,
-			offset : -200,
-		});
+		function modalSlider (selector) {
+			var owl = $(selector + " .modal__slider").owlCarousel({
+				items: 1,
+				margin: 1000,
+				dots: false,
+				nav: false,
+				loop: true,
+				mouseDrag: false,
+				touchDrag: false,
+				animateOut: 'fadeOut',
+			});
 	
-		$(window).resize(function() {
-			AOS.refresh();
-		})
+			$(selector + " .modal__btn").each(function() {
+				$(this).click(function() {
+					// $(selector + " .card__foto").removeClass("active")
+					var position = $(this).data("slide") - 1
+					owl.trigger("to.owl.carousel", [position, 300])
+					// $(this).addClass("active")
+				})
+			})
+
+			$(".card .header__order-btn").click( function() {
+				var index = $(this).data("id");
+
+				$(".modal__btn[data-slide='" + index +"']").click()
+			})
+		}
+	
+		modalSlider(".modal__form")
+
+		// AOS.init({
+		// 	disable : 'mobile',
+		// 	once: true,
+		// 	duration: 1000,
+		// 	offset : -200,
+		// });
+	
+		// $(window).resize(function() {
+		// 	AOS.refresh();
+		// })
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
