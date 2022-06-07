@@ -49,20 +49,29 @@ var landingFunctions = {
 			loop: true,
 			autoHeight: false,
 			stagePadding: 7,
-			// responsive:{
-			// 	0:{
-			// 		items:1,
-			// 		autoHeight: true,
-			// 		dots: true,
-			// 		stagePadding: 0,
-			// 	},
-			// 	1000:{
-			// 		items:2,
-			// 		autoHeight: false,
-			// 		dots: false,
-			// 		stagePadding: 45,
-			// 	}
-			// }
+			responsive:{
+				0: {
+					items:1,
+					// autoHeight: true,
+					dots: true,
+					stagePadding: 0,
+					margin: 40,
+				},
+				700:{
+					items:2,
+					// autoHeight: false,
+					dots: true,
+					stagePadding: 7,
+					margin: 7,
+				},
+				1000:{
+					items: 3,
+					// autoHeight: false,
+					dots: false,
+					stagePadding: 7,
+					margin: 7,
+				}
+			}
 		});
 
 		$('.next__btn').click(function() {
@@ -121,6 +130,31 @@ var landingFunctions = {
 		}
 	
 		modalSlider(".modal__form")
+		modalSlider(".card__mobile")
+
+		if($(window).width() <= 700) {
+			$(".secret__block").addClass("owl-carousel").owlCarousel({
+				items: 1,
+				margin: 7,
+				dots: true,
+				dotsEach: true,
+				nav: false,
+				loop: true,
+				autoHeight: true,
+				stagePadding: 0,
+			});
+
+			$(".advantage2__block").addClass("owl-carousel").owlCarousel({
+				items: 1,
+				margin: 0,
+				dots: true,
+				dotsEach: true,
+				nav: false,
+				loop: true,
+				autoHeight: true,
+				stagePadding: 0,
+			});
+		}
 
 		// AOS.init({
 		// 	disable : 'mobile',
