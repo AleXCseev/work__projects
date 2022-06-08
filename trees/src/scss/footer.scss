@@ -17,11 +17,14 @@
         position: relative;
         z-index: 5;
     }
+
+    .header__price {
+        position: relative;
+        z-index: 5;
+    }
     
     .price {
         justify-content: flex-end;
-        position: relative;
-        z-index: 5;
     }
     
     .header__info-date {
@@ -34,8 +37,6 @@
         position: relative;
         z-index: 5;
     }
-
-
 
     &:before {
         content: "";
@@ -229,6 +230,7 @@
             img {
                 bottom: -300px;
                 margin-left: 10px;
+                width: 53%;
             }
         }
     }
@@ -279,9 +281,6 @@
     margin-bottom: 50px;
 }
 
-
-
-
 .footer__line {
     width: 100%;
     height: auto;
@@ -310,3 +309,4 @@
         text-decoration: underline;
     }
 }
+
