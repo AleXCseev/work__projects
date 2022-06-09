@@ -50,18 +50,7 @@
         z-index: -1;
     }
 
-    &:after {
-        content: "";
-        width: 988px;
-        height: 988px;
-        border-radius: 100%;
-        background: #F1D6AC;
-        position: absolute;
-        bottom: -407px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
-    }
+    
 
     .header__slider-block:before {
         display: none;
@@ -87,6 +76,16 @@
     .header__slide {
         width: 1461px;
         height: 963px;
+
+        &:after {
+            width: 988px;
+            height: 988px;
+            top: auto;
+            bottom: -407px;
+            left: 58%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
     }
 
     .header__slide-main {
@@ -285,6 +284,8 @@
     width: 100%;
     height: auto;
     background: #7EA497;
+    position: relative;
+    z-index: 8;
 }
 
 .footer__line-wrapper {
