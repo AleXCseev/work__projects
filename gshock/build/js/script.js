@@ -20,14 +20,6 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
-		$.raty.path = $("body").data("path") + 'img/raty';
-
-		$('.modal__raiting').raty({
-			half: true,
-			space: false,
-			number: 5,
-		});
-
 		$(".card__slider").owlCarousel({
 			items: 1,
 			margin: 20,
@@ -42,6 +34,7 @@ var landingFunctions = {
 			dots: true,
 			nav: false,
 			loop: true,
+			autoHeight: true,
 		});
 
 		// AOS.init({
