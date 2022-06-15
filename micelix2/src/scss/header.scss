@@ -1,0 +1,138 @@
+.header__section {
+    width: 100%;
+    height: auto;
+}
+
+.header__section-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 9px 0 31px;
+}
+
+.header__block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+.header__logo {
+    width: auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 1;
+    color: #0069B1;
+
+    span {
+        font-weight: normal;
+        color: #00ADC6;
+    }
+}
+
+.header__input {
+    width: 337px;
+    height: 37px;
+    border: 1px solid #102E46;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    color: #444444;
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 37px;
+        height: 100%;
+        background-color: #C7E2EB;
+        border-radius: 9px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url(../img/gobbler.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+}
+
+.header__btns {
+
+}
+
+.header__btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    padding: 7px 15px;
+    border: 2px solid #102E46;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.header__btn-left {
+    color: #FFFFFF;
+    background: #102E46;
+    
+    &:hover {
+        background: transparent;
+        color: #102E46;
+    }
+}
+
+.header__btn-right {
+    margin-left: 20px;
+    color: #102E46;
+
+    &:hover {
+        background: #102E46;
+        color: #FFFFFF;
+    }
+}
+
+.header__links {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 121px;
+    background: #14709B;
+    border-radius: 10px;
+}
+
+.header__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: #FFFFFF;
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #FFFFFF;
+        border-radius: 6px;
+        transition: 0.3s ease;
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &:hover {
+        &:before {
+            width: 110%;
+        }
+    }
+}
