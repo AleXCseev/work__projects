@@ -4,6 +4,7 @@ var landingFunctions = {
 		this.time()
 		this.modal()
 		this.bar()
+		this.quantity()
 	}, 
 
 	initLibraris: function() {
@@ -101,6 +102,7 @@ var landingFunctions = {
 		
 		// $(".year").text(new Date().getFullYear())
 	},
+
 	modal: function() {
 		function modal() {
 			$(".add__review").click(function () {
@@ -155,16 +157,17 @@ var landingFunctions = {
 	
 		modal()
 	},
+
 	bar: function() {
-		$("a.header__order-btn").attr("href", "#card");
+		$("a").attr("href", "#bar");
 		var animate = true;
 		if (localStorage.getItem("lotery")) {
 			$(".galary__section").addClass("active")
-			$(".review__section").addClass("active")
-			$("a.header__order-btn").attr("href", "#card");
+			// $(".review__section").addClass("active")
+			$("a").attr("href", "#card");
 			$(".bar__section-wrapper").hide();
-			$(".card__section").show();
-			$(".review__section").show();
+			$(".card").show();
+			// $(".review__section").show();
 			animate = false;
 		}
 
@@ -181,7 +184,7 @@ var landingFunctions = {
 			e.preventDefault();
 			if (!localStorage.getItem("lotery")) {
 				localStorage.setItem("lotery", true);
-				$("a.header__order-btn").attr("href", "#card");
+				$("a").attr("href", "#card");
 				$(".bar__wrapper").addClass("active__animate");
 
 				setTimeout(function () {
@@ -194,10 +197,10 @@ var landingFunctions = {
 
 				setTimeout(function () {
 					$(".bar__section-wrapper").hide();
-					$(".galary__section").addClass("active")
-					$(".review__section").addClass("active")
-					$(".card__section").fadeIn(300);
-					$(".review__section").fadeIn(300);
+					// $(".galary__section").addClass("active")
+					// $(".review__section").addClass("active")
+					$(".card").fadeIn(300);
+					// $(".review__section").fadeIn(300);
 				}, 11000);
 
 				setTimeout(function () {
@@ -220,6 +223,34 @@ var landingFunctions = {
 				);
 			}
 		});
+	},
+
+	quantity: function() {
+		var currentNumber;
+
+		function getRandomInt(max) {
+			return Math.floor(Math.random() * Math.floor(max));
+		}
+
+		if(localStorage.getItem("quantity")) {
+			$(".quantity").text(localStorage.getItem("quantity"));
+		} else {
+			currentNumber = 25
+			localStorage.setItem("quantity", currentNumber)
+			$(".quantity").text(currentNumber);
+		}
+
+		setInterval(function () {
+			currentNumber = localStorage.getItem("quantity");
+			if (currentNumber >= 3) {
+				currentNumber = currentNumber - getRandomInt(3);
+				$(".quantity").text(currentNumber);
+				localStorage.setItem("quantity", currentNumber)
+			} else {
+				currentNumber = 25;
+				localStorage.setItem("quantity", currentNumber)
+			}
+		}, 100000)
 	}
 }
 

@@ -3,7 +3,7 @@
     max-width: 900px;
     display: none;
 
-    h2 {
+    h2, h6 {
         font-size: 30px;
         line-height: 1.4;
         margin-bottom: 20px;
@@ -611,4 +611,12 @@
 	top: -65px;
 	left: 50%;
 	transform: translateX(-50%);
+	width: 130px;
+	height: 130px;
+	border-radius: 100%;
+	background: #ADFF00;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 36px;
 }
