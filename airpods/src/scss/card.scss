@@ -1,0 +1,178 @@
+.card__section {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 15px 20px -15px #000;
+    background-color: rgb(235, 243, 254);
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 5px;
+    border-radius: 19px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__title {
+    color: rgb(17, 10, 92);
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -0.5px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.card__info-block {
+    width: 100%;
+    height: auto;
+    background-color: rgb(17, 10, 92);
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 0;
+
+    img {
+        width: 162px;
+        height: auto;
+        flex-shrink: 0;
+    }
+}
+
+.card__price {
+    height: 162px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 15px;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 3px;
+        height: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 5px;
+    }
+}
+
+.card__discount-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 0px;
+}
+
+.card__info {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #fff;
+    padding-right: 15px;
+}
+
+.card__discount {
+    color: rgb(238, 233, 102);
+    font-size: 29px;
+    font-weight: bold;
+    line-height: 1.6;
+    animation-name: shake;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.price {
+    width: 100%;
+    height: auto;
+}
+
+.card__price-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    // margin-bottom: 10px;
+}
+
+.card__price-text {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #fff;
+    padding-right: 10px;
+}
+
+.old__price {
+    text-decoration: line-through;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.new__price {
+    color: rgb(232, 58, 48);
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1.6;
+    animation-name: pulse;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.card__info-text {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.card__form {
+    width: 370px;
+    height: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__input-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card__input {
+    width: 100%;
+    height: 50px;
+    border-style: solid;
+    border-color: rgb(17, 10, 92);
+    border-width: 3px;
+    border-radius: 9px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.6;
+    padding: 0 10px;
+    background-color: transparent;
+}
+
+.card__order-btn {
+    background-color: rgb(17, 10, 92);
+    font-size: 20px;
+    padding: 10px 8px;
+    margin-top: 10px;
+}
