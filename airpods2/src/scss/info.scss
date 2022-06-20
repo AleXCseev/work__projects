@@ -1,0 +1,251 @@
+.info__section {
+    width: 100%;
+    height: auto;
+}
+
+.info__section-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.4;
+    text-align: center;
+    color: #7446FF;
+    margin-bottom: 10px;
+}
+
+.info__line {
+    width: 250px;
+    height: 15px;
+    background: linear-gradient(90deg, #7446FF 0%, #A473FF 100%);
+    margin-left: -15px;
+    margin-bottom: 30px;
+    opacity: 0.4;
+    align-self: flex-start;
+    border-radius: 0 15px 15px 0;
+    position: relative;
+    // animation: line 10s infinite;
+
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background: #A473FF;
+        animation: dots 5s infinite;
+    }
+
+    &:before {
+        top: 0;
+        right: -25px;
+        animation-delay: 0.4s;
+    }
+
+    &:after {
+        top: 0;
+        right: -50px;
+        // animation-delay: 0.2s;
+    }
+}
+
+@keyframes line {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-260px);
+    }
+    40% {
+        transform: translate(-260px);
+    }
+    60% {
+        transform: translate(0);
+    }
+}
+
+@keyframes dots {
+    0% {
+        transform: translate(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translate(-50px);
+        opacity: 0;
+    }
+    60% {
+        transform: translate(0);
+        opacity: 1;
+    }
+
+}
+
+.info__text {
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.info__img-wrapper {
+    width: calc(100% + 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &:before, &:after {
+        content: "";
+        background-image: url(../img/elipse.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        z-index: -1;
+    }
+
+    img {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.info__img-wrapper1 {
+    &:before {
+        width: 512px;
+        height: 337px;
+        opacity: 0.22;
+        left: -150px;
+        top: -50px;
+        transform: rotate(20deg);
+    }
+
+    &:after {
+        width: 328px;
+        height: 230px;
+        opacity: 0.15;
+        transform: rotate(-30deg);
+        bottom: -50px;
+        right: -100px;
+    }
+
+    img {
+        align-self: flex-end;
+    }
+}
+
+.info__img-wrapper2 {
+    &:before {
+        width: 450px;
+        height: 280px;
+        bottom: -20px;
+        right: -160px;
+        opacity: 0.15;
+    }
+
+    &:after {
+        display: none;
+    }
+}
+
+.info__img-wrapper3 {
+    &:before {
+        width: 574px;
+        height: 346px;
+        transform: rotate(10deg);
+        top: -20px;
+        right: -140px;
+        opacity: 0.2;
+    }
+
+    &:after {
+        width: 450px;
+        height: 320px;
+        transform: rotate(-80deg);
+        left: -180px;
+        top: 30px;
+        opacity: 0.15;
+    }
+}
+
+.info__img-text {
+    position: absolute;
+    bottom: 52px;
+    left: 5px;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 1.4;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    // z-index: 1;
+}
+
+.info__img-wrapper4 {
+    &:before {
+        width: 480px;
+        height: 320px;
+        transform: rotate(20deg);
+        top: -40px;
+        left: -150px;
+        opacity: 0.3;
+    }
+    
+}
+.info__icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.info__stage {
+    width: 140px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.info__icon-wrapper {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    margin-bottom: 6px;
+    background: rgba(164, 115, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__icon-center {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background: #A473FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__stage-text {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    color: #000000;
+}
+
+.info__order-btn {
+    margin-top: 15px;
+}
