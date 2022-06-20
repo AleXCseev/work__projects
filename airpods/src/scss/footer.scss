@@ -1,0 +1,28 @@
+.footer__line {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    padding-bottom: 100px;
+}
+
+.footer__line-wrapper {
+    padding: 20px 5px;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.fancybox-content {
+    padding: 40px 20px;
+}

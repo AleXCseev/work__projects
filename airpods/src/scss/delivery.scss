@@ -1,0 +1,83 @@
+.delivery__section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delivery__block {
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.delivery__title {
+    width: auto;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+    text-shadow: rgb(0 0 0) 1px 2px 3px;
+    padding: 5px 30px;
+    background-image: url(../img/del-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.delivery__stages {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delivery__stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+
+    img {
+        margin-bottom: 14px;
+    }
+}
+
+.delivery__stage-1 {
+    img {
+        width: 179px;
+    }
+}
+
+.delivery__stage-2 {
+    img {
+        width: 190px;
+        margin-bottom: 0;
+    }
+}
+
+.delivery__text {
+    color: rgb(255, 212, 0);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.delivery__title-2 {
+    width: auto;
+    padding: 5px 20px;
+    margin-bottom: -4px;
+    position: relative;
+    z-index: 1;
+}
