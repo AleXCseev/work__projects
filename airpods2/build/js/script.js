@@ -35,6 +35,38 @@ var landingFunctions = {
 			autoHeight: true,
 		});
 
+		$(window).scroll(function() {
+			if($(window).scrollTop() >= 1100) {
+				$(".fixed__block").addClass("fixed")
+			} else {
+				$(".fixed__block").removeClass("fixed")
+			}
+		});
+
+		function showBtn() {
+			var $element = $('.card');
+			$(window).scroll(function() {
+				// $(".site__order-btn").addClass('active');
+				var scroll = $(window).scrollTop() + $(window).height();
+				var offset = $element.offset().top + $element.height();
+
+				if($(window).scrollTop() >= 1100) {
+					if (scroll > offset + 500 || scroll < offset - $element.height() - 200 ) {
+						$(".fixed__block").addClass("fixed")
+					} else {
+						$(".fixed__block").removeClass("fixed")
+					}
+
+				} else {
+					$(".fixed__block").removeClass("fixed")
+				}
+
+				
+			});
+		}
+	
+		showBtn()
+
 		// AOS.init({
 		// 	disable : 'mobile',
 		// 	once: true,
