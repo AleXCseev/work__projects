@@ -7,6 +7,15 @@
     width: 100%;
     height: auto;
     padding-bottom: 253px;
+    position: relative;
+}
+
+.galary__decor {
+    position: absolute;
+    width: 376px;
+    height: auto;
+    left: -455px;
+    top: 10px;
 }
 
 .galary__content {

@@ -2,7 +2,7 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.time()
-		// this.modal()
+		this.modal()
 	}, 
 
 	initLibraris: function() {
@@ -44,7 +44,7 @@ var landingFunctions = {
 		}
 	
 		switchBtns(".card__1");
-		// switchBtns(".card__2");
+		switchBtns(".card__2");
 		// switchBtns(".card__3");
 
 		var owl = $(".galary__main-slider").owlCarousel({
@@ -105,6 +105,16 @@ var landingFunctions = {
 			owl3.trigger("prev.owl.carousel");
 		});
 		
+		$(".review__slider").owlCarousel({
+			loop: true,
+			nav: true,
+			dots: false,
+			dotsEach: true,
+			items: 2,
+			margin: 72,
+			// mouseDrag: false,
+			// touchDrag: false,
+		});
 
 		// AOS.init({
 		// 	disable : 'mobile',
@@ -172,8 +182,8 @@ var landingFunctions = {
 			return dd + "." + mm + "." + yyyy
 		}
 
-		// $(".date__1").text(getDate(-5));
-    	// $(".date__2").text(getDate(2));
+		$(".date__1").text(getDate(-5));
+    	$(".date__2").text(getDate(2));
 
 		$(".date").text(getDate(2))
 		// $(".card__date .date").text(getDate(2))
