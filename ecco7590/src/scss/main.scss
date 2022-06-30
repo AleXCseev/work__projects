@@ -50,7 +50,7 @@ select{
 
 select::-ms-value {
 	background: none;
-	color: #fff;
+	color: #000;
 }
 
 select::-ms-expand {
@@ -63,7 +63,7 @@ input::placeholder {
 }
 
 input:-ms-input-placeholder {
-    color: #fff !important;
+    color: #000 !important;
 }
 
 textarea {

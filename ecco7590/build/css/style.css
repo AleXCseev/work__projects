@@ -87,7 +87,7 @@ select {
 
 select::-ms-value {
   background: none;
-  color: #fff;
+  color: #000;
 }
 
 select::-ms-expand {
@@ -120,7 +120,7 @@ input::placeholder {
 }
 
 input:-ms-input-placeholder {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 textarea {
@@ -3133,6 +3133,57 @@ body {
 
   .advantage__text {
     font-size: 16px;
+  }
+
+  .card__img-item img {
+    width: 255px;
+  }
+
+  .card__title {
+    font-size: 26px;
+  }
+
+  .card__price .new__price {
+    font-size: 26px;
+  }
+
+  .card__price .old__price {
+    font-size: 16px;
+    margin-bottom: -10px;
+  }
+
+  .card__price .price {
+    width: 160px;
+  }
+
+  .card__text {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .card__info {
+    font-size: 14px;
+  }
+
+  .card__bold {
+    font-size: 16px;
+  }
+
+  .card__size-text {
+    font-size: 16px;
+  }
+
+  .card__btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .card__size {
+    margin-bottom: 50px;
+  }
+
+  .card__header {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 1025px) {
