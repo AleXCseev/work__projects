@@ -97,6 +97,7 @@
     color: #000000;
     margin-bottom: 10px;
     transition: 0.3s ease;
+    text-transform: uppercase;
 }
 
 .advantage__text {
@@ -157,6 +158,14 @@
             opacity: 1;
         }
     }
+}
+
+.advantage__decor-item1 {
+    height: 58%;
+}
+
+.advantage__decor-item2 {
+    height: 38.5%;
 }
 
 .advantage__img-decor {
