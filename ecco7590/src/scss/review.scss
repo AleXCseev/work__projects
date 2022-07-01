@@ -98,6 +98,12 @@
     border-radius: 10px;
     width: 200px !important;
     height: auto;
+
+    img {
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+    }
 }
 
 .add__review {

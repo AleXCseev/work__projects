@@ -143,10 +143,11 @@
 }
 
 .next__btn {
+    transform: rotate(180deg);
 }
 
 .prev__btn {
-    transform: rotate(180deg);
+    // transform: rotate(180deg);
 }
 
 .galary__small {
