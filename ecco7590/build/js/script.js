@@ -42,12 +42,15 @@ var landingFunctions = {
 			dotsEach: true,
 			items: 2,
 			margin: 72,
+			autoHeight: false,
 			responsive:{
 				0:{
 					items:1,
+					autoHeight: true,
 				},
 				1025:{
 					items:2,
+					autoHeight: false,
 				}
 			}
 		});

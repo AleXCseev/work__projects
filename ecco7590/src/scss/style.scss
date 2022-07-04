@@ -485,6 +485,9 @@
         left: -230px;
         top: 10px;
     }
+    .review__slide-wrapper {
+        min-height: 200px;
+    }
     .review__slide {
         width: 100%;
     }
@@ -870,6 +873,9 @@
     .card__decor {
         display: none;
     }
+    .card__size-btn {
+        top: 185%;
+    }
     .galary__title {
         font-size: 7.5vw;
     }
@@ -951,11 +957,12 @@
     .review__slide-wrapper {
         display: flex;
         flex-direction: column-reverse;
+        min-height: auto;
     }
     .review__name {
         padding-left: 210px;
         font-size: 20px;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
     }
     .review__text {
         margin-bottom: 0;
