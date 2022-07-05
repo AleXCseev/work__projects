@@ -1,11 +1,27 @@
 .review__section {
     width: 100%;
     height: auto;
+    background: #FFEBC3;
+    position: relative;
+    z-index: 1;
 }
 
 .review__section-wrapper {
     width: 100%;
     height: auto;
+    position: relative;
+}
+
+.review__decor-1 {
+    position: absolute;
+    top: -85px;
+    right: -250px;
+}
+
+.review__decor-2 {
+    position: absolute;
+    left: -392px;
+    top: 201px;
 }
 
 .review__section-block {
@@ -13,6 +29,11 @@
     height: auto;
     padding-top: 100px;
     overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 50px;
 }
 
 .review__block {
@@ -97,4 +118,56 @@
 
 .owl-carousel .owl-stage-outer {
     overflow: visible;
+}
+
+.owl-nav {
+    width: 110px;
+    height: auto;
+    position: absolute;
+    top: -60px;
+    right: -545px;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        width: 40px;
+        height: 33px;
+        background-image: url(../img/arrow.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+        background-position: center !important;
+        transition: 0.3s ease;
+        cursor: pointer;
+        opacity: 0.7;
+
+        span {
+            display: none;
+        }
+
+        &:hover {
+            opacity: 1;
+        } 
+    }
+
+    .owl-next {
+        transform: rotate(180deg);
+    }
+}
+
+.add__review {
+    align-self: flex-end;
+    margin-right: 100px;
+    margin-top: -30px;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 1;
+    text-align: right;
+    color: #333333;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }

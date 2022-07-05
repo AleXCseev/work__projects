@@ -27,6 +27,34 @@ var landingFunctions = {
 			dotsEach: true,
 			items: 1,
 			margin: 100,
+			responsive:{
+				0:{
+					dots: true,
+				},
+				1024:{
+					dots: false,
+				}
+			}
+		});
+
+		if($(window).width() <= 700) {
+			$(".galary").addClass("owl-carousel").owlCarousel({
+				loop: true,
+				nav: true,
+				dots: true,
+				dotsEach: true,
+				items: 1,
+				margin: 50,
+			});
+		}
+
+		
+		$.raty.path = $("body").data("path") + '/img/raty';
+
+		$('.modal__raiting').raty({
+			half: true,
+			space: false,
+			number: 5,
 		});
 	
 		// AOS.init({
