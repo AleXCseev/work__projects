@@ -526,6 +526,10 @@
         height: 51px;
         font-size: 18px;
     }
+    .review__block {
+        width: 100%;
+        margin: auto;
+    }
 }
 
 @media (max-width: 540px) {
@@ -661,6 +665,48 @@
         width: 12.3vw;
         height: 12.3vw;
         font-size: 4vw;
+    }
+    .review__block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px 20px 48px;
+    }
+    .review__quote {
+        position: relative;
+        top: -8vw;
+        width: 28.5vw;
+        align-self: flex-end;
+    }
+    .review__section-title {
+        font-size: 6.6vw;
+        text-align: left;
+        margin-top: -60px;
+        margin-bottom: 12px;
+    }
+    .review__text-block {
+        margin-bottom: 7px;
+        width: 100%;
+        height: auto;
+    }
+    .review__text {
+        font-size: 4vw;
+    }
+    .review__slide {
+        width: 100%;
+        height: auto;
+    }
+    .review__decor-1 {
+        top: 24px;
+        right: auto;
+        left: -17px;
+        width: 186px;
+    }
+    .review__decor-2 {
+        left: 50%;
+        top: 50%;
+        width: 100vw;
+        transform: translate(-50%, -50%);
     }
 }
 
