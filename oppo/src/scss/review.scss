@@ -1,0 +1,125 @@
+.review__section {
+    width: 100%;
+    height: auto;
+}
+
+.review__section-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.review__decor {
+    position: absolute;
+    transform: rotate(174.27deg);
+    top: -30px;
+    left: -550px;
+    width: 50%;
+    z-index: -1;
+}
+
+.review__section-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.3;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+.review__slider {
+    width: 100%;
+    height: auto;
+}
+
+.review__slide {
+    width: 584px;
+    height: auto;
+    padding: 35px 0 0 25px;
+    position: relative;
+}
+
+.review__img {
+    width: 200px !important;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.review__wrapper {
+    background: #F4EDFF;
+    border-radius: 10px;
+    padding: 35px 32px 39px 200px;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 37px;
+        height: 31px;
+        background-image: url(../img/quote.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        top: -16px;
+        left: 200px;
+    }
+}
+
+.review__text-block {
+    width: auto;
+    height: 161px;
+    margin-bottom: 13px;
+}
+
+.review__text {
+    font-size: 18px;
+    line-height: 1.3;
+    color: #333333;
+}
+
+.review__name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #A473FF;
+}
+
+.owl-nav {
+    width: 100px;
+    height: auto;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        border: 1px solid #3BFFFF !important;
+        background-image: url(../img/review-arrow.png) !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: 20px auto !important;
+        transition: 0.3s ease;
+
+        span {
+            display: none;
+        }
+
+        &:hover {
+            background-image: url(../img/review-arrow-hover.png) !important;
+            background-color: #3BFFFF !important;
+        }
+    }
+
+    .owl-next {
+        transform: rotate(180deg);
+    }
+}
