@@ -151,9 +151,6 @@
 }
 
 .card__3 {
-    .card__img {
-        width: 309px;
-    }
     .color:before {
         background: #59A3EE;
     }
@@ -164,3 +161,6 @@
     cursor: pointer;
 }
 
+.btn__mobile {
+    display: none;
+}

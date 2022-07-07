@@ -27,15 +27,65 @@ var landingFunctions = {
 			dotsEach: true,
 			items: 2,
 			margin: 72,
-			// responsive:{
-			// 	0:{
-			// 		dots: true,
-			// 	},
-			// 	1024:{
-			// 		dots: false,
-			// 	}
-			// }
+			autoHeight: false,
+			responsive:{
+				0:{
+					items: 1,
+					autoHeight: true,
+				},
+				1024:{
+					items: 2,
+					autoHeight: false,
+				}
+			}
 		});
+
+		function showBtn() {
+			var $element = $('.card');
+			$(window).scroll(function() {
+				var scroll = $(window).scrollTop() + $(window).height();
+				var offset = $element.offset().top + $element.height();
+
+				if (scroll + 100 >= $(document).outerHeight(true)) {
+					$(".fixed__block").removeClass("fixed")
+				} else if (scroll > offset + 500 || scroll < offset - $element.height() - 200 ) {
+					if(scroll > 1300) {
+						$(".fixed__block").addClass("fixed")
+					} else {
+						$(".fixed__block").removeClass("fixed")
+					}
+				} else {
+					$(".fixed__block").removeClass("fixed")
+				}
+			});
+		}
+	
+		showBtn()
+
+		var owl = $(".modal__slider").owlCarousel({
+			items: 1,
+			margin: 100,
+			dots: false,
+			nav: false,
+			loop: true,
+			mouseDrag: false,
+			touchDrag: false,
+			// animateOut: 'fadeOut',
+		});
+
+		$(".modal__color").each(function() {
+			$(this).click(function() {
+				$(".modal__color").removeClass("active");
+				var position = $(this).data("slide") - 1;
+				owl.trigger("to.owl.carousel", [position, 300]);
+				$(this).addClass("active");
+
+				var price = $(this).data("price");
+				$(".modal__price .new__price").text(price)
+			})
+		})
+		
+	
 
 		// if($(window).width() <= 700) {
 		// 	$(".galary").addClass("owl-carousel").owlCarousel({
