@@ -607,6 +607,13 @@
             margin-bottom: 0;
         }
     }
+    .modal {
+        width: calc(100% - 30px);
+        
+    }
+    .close {
+        right: 20px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -719,7 +726,7 @@
         font-size: 8vw;
     }
     .charact__text {
-        font-size: 5.8vw;
+        font-size: 4.8vw;
     }
     .characteristic__block {
         padding: 35px 22px;
@@ -783,7 +790,7 @@
         max-width: 340px;
     }
     .modal {
-        padding: 30px 23px;
+        padding: 50px 23px 30px;
     }
     .modal__price .new__price-text {
         flex-direction: row;
@@ -871,6 +878,18 @@
     .footer__info-text {
         font-size: 3vw;
     }
+    .card__btn {
+        height: 90px;
+        padding: 10px 20px;
+        span {
+            font-size: 26px;
+        }
+
+        .order__btn-arrow {
+            width: 70px;
+            height: 70px;
+        }
+    }
 }
 
 @media (max-width: 414px) {
@@ -884,6 +903,18 @@
     }
     .fancybox-content {
         padding: 40px 20px;
+    }
+    .card__btn {
+        height: 21.7vw;
+        padding: 2vw 5vw;
+        span {
+            font-size: 6.2vw;
+        }
+
+        .order__btn-arrow {
+            width: 17vw;
+            height: 17vw;
+        }
     }
 }
 

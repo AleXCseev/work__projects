@@ -2,7 +2,7 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.time()
-		// this.modal()
+		this.modal()
 		// this.card()
 		// this.galary()
 	}, 
@@ -33,7 +33,7 @@ var landingFunctions = {
 					items: 1,
 					autoHeight: true,
 				},
-				1024:{
+				1025:{
 					items: 2,
 					autoHeight: false,
 				}
@@ -194,55 +194,78 @@ var landingFunctions = {
 
 	modal: function() {
 		function modal() {
-			$(".add__review").click(function () {
-				$(".modal__review").addClass("active")
+			$(".card__btn").click(function() {
+				$(".modal__block-wrapper").addClass("show");
+				$("body").css("overflow", "hidden");
+				var color = $(this).data("card");
+
+				$("." + color).click()
 			})
-	
+
 			function close() {
-				$(".modal__review").removeClass("active")
+				$(".modal__block-wrapper").removeClass("show");
+				$("body").css("overflow", "auto");
 			}
 	
-			$(".modal__review").click( function(e) {
+			$(".modal__block-wrapper").click( function(e) {
 				var target = e.target;
-				if(target.classList.contains("modal__close")) {
+				if(target.classList.contains("close")) {
 					close()
 				}
-				if(target.classList.contains("modal")) {
+				if(target.classList.contains("modal__block-wrapper")) {
 					close()
 				}
 			})
+
+			// $(".add__review").click(function () {
+			// 	$(".modal__review").addClass("active")
+			// })
 	
-			function readURL(input) {
-				if (input.files && input.files[0]) {
-					var reader = new FileReader();
-					console.log(reader)
-					reader.onload = function (e) {
-						$('.file img').attr('src', e.target.result).css("display", "block");
-					};
-					reader.readAsDataURL(input.files[0]);
-				}
-			}
+			// function close() {
+			// 	$(".modal__review").removeClass("active")
+			// }
 	
-			$(".modal__review .input__file").on("change", function () {
-				readURL(this);
-			});
+			// $(".modal__review").click( function(e) {
+			// 	var target = e.target;
+			// 	if(target.classList.contains("modal__close")) {
+			// 		close()
+			// 	}
+			// 	if(target.classList.contains("modal")) {
+			// 		close()
+			// 	}
+			// })
 	
-			$(".modal__review form").submit(function (e) {
-				e.preventDefault()
-				$(this).removeClass("active");
-				$(".send__window").addClass("active");
-				$(".modal__review .name__input").val("")
-				$(".modal__review .modal__area").val("")
-				$(".modal__review .file img").attr("src", "").css("display", "none")
-				delayClose()
-			})
-			function delayClose() {
-				setTimeout(function () {
-					$(".modal__review form").addClass("active");
-					$(".send__window").removeClass("active");
-					close();
-				}, 5000);
-			}
+			// function readURL(input) {
+			// 	if (input.files && input.files[0]) {
+			// 		var reader = new FileReader();
+			// 		console.log(reader)
+			// 		reader.onload = function (e) {
+			// 			$('.file img').attr('src', e.target.result).css("display", "block");
+			// 		};
+			// 		reader.readAsDataURL(input.files[0]);
+			// 	}
+			// }
+	
+			// $(".modal__review .input__file").on("change", function () {
+			// 	readURL(this);
+			// });
+	
+			// $(".modal__review form").submit(function (e) {
+			// 	e.preventDefault()
+			// 	$(this).removeClass("active");
+			// 	$(".send__window").addClass("active");
+			// 	$(".modal__review .name__input").val("")
+			// 	$(".modal__review .modal__area").val("")
+			// 	$(".modal__review .file img").attr("src", "").css("display", "none")
+			// 	delayClose()
+			// })
+			// function delayClose() {
+			// 	setTimeout(function () {
+			// 		$(".modal__review form").addClass("active");
+			// 		$(".send__window").removeClass("active");
+			// 		close();
+			// 	}, 5000);
+			// }
 		}
 	
 		modal()
