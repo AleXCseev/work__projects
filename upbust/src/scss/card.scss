@@ -1,0 +1,274 @@
+.card__section {
+    width: 100%;
+    height: auto;
+}
+
+.card__section-wrapper {
+    width: 100%;
+    max-width: 1020px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 50px;
+}
+
+.card__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0 50px;
+}
+
+.card__img {
+    width: 100%;
+    max-width: 217px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card__promo {
+    width: 382px;
+    height: auto;
+    background-color: rgba(244, 184, 156, 0.6);
+    border-style: solid;
+    border-color: rgb(232, 48, 140);
+    border-width: 3px;
+    border-radius: 30px;
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.card__decor {
+    position: absolute;
+    width: 130px;
+    height: auto;
+    top: -58px;
+    left: -15px;
+}
+
+.card__promo-title {
+    font-family: "KaushanScript", sans-serif;
+    color: rgb(255, 0, 128);
+    font-size: 37px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.6;
+    padding-left: 120px;
+}
+
+.card__promo-block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.card__beli {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 10px;
+    margin-left: -3px;
+}
+
+.card__deli-text {
+    color: rgb(200, 31, 23);
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.card__beli-price {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 10px;
+    margin-right: -3px;
+}
+
+.promo__block-1 {
+    .card__beli, .card__beli-price {
+        background-color: rgb(231, 44, 34);
+    }
+}
+
+.promo__block-2 {
+    .card__beli, .card__beli-price {
+        background-color: rgb(233, 171, 0);
+    }
+}
+
+.promo__block-3 {
+    .card__beli, .card__beli-price {
+        background-color: rgb(232, 48, 140);
+    }
+}
+
+.card {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__price {
+    margin-bottom: 30px;
+}
+
+.price {
+
+}
+
+.old__price-text {
+    text-decoration-line: line-through;
+    -webkit-text-decoration-line: line-through;
+    color: rgb(36, 36, 36);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+.old__price {
+}
+
+.new__price-text {
+    color: rgb(193, 1, 1);
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.new__price {
+}
+
+.card__info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.card__info-text {
+    font-weight: bold;
+}
+
+.card__raiting {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    svg {
+        width: 26px;
+        height: 30px;
+    }
+}
+
+.card__form {
+    width: 100%;
+    height: auto;
+    background-color: rgb(242, 242, 242);
+    border-style: solid;
+    border-color: rgb(228, 228, 228);
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 20px 10px 10px;
+}
+
+.card__text {
+    color: rgb(245, 20, 8);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+    text-shadow: rgb(228 228 228) 1px 2px 3px;
+    margin-bottom: 20px;
+}
+
+.card__input-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.card__input {
+    width: 100%;
+    height: 51px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 99px;
+    border-style: solid;
+    border-color: rgb(132, 132, 132);
+    border-width: 1px;
+    border-radius: 100px;
+    padding: 0 15px;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.card__submit {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(180deg, rgba(255, 28, 28, 1.0), rgba(183, 1, 1, 1.0));
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100px;
+    animation-name: pulse;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card__text-2 {
+    color: rgb(36, 36, 36);
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 30px;
+}
+
+.card__text-3 {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 10px;
+}

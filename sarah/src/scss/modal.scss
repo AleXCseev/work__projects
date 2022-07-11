@@ -235,6 +235,7 @@
 }
 
 .send {
+	display: inline-block;
 	width: 250px;
 	height: 50px;
 	background: #5B67C8;
@@ -245,9 +246,8 @@
 	line-height: 21px;
 	text-align: center;
 	color: #FFFFFF;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	// justify-content: center;
+	// align-items: center;
 	cursor: pointer;
 }
 
@@ -271,6 +271,7 @@
 }
 
 .send__massage {
+	display: inline-block;
 	width: 60%;
 	font-weight: normal;
 	font-size: 18px;

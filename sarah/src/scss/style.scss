@@ -134,6 +134,9 @@
             right: -500px;
         }
     }
+    .review__text-block {
+        height: 250px;
+    }
     .add__review {
         margin-right: 50px;
     }
@@ -352,6 +355,9 @@
     }
     .review__section-block {
         overflow: visible;
+    }
+    .review__text-block {
+        height: auto;
     }
     .review__decor-2 {
         left: -360px;
@@ -606,6 +612,11 @@
         width: 1000px;
         height: 500px;
         top: -250px;
+        z-index: 1;
+    }
+    .header__content {
+        position: relative;
+        z-index: 2;
     }
     .header__logo {
         margin-bottom: 21px;
@@ -782,12 +793,16 @@
     }
     .footer__section:before {
         background-position: center -50px;
+        z-index: 2;
+        
     }
     .footer__section-wrapper {
         padding-top: 110px;
     }
     .footer__content {
         width: 100%;
+        position: relative;
+        z-index: 2;
     }
     .footer__content .header__title {
         margin-bottom: 7px;
@@ -796,6 +811,7 @@
         width: 1000px;
         height: 500px;
         top: -100px;
+        z-index: 1;
     }
     .footer__decor {
         height: 121vw;

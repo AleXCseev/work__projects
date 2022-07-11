@@ -276,8 +276,8 @@ body {
   background: -webkit-radial-gradient(50% 50%, 50% 50%, #FD6130 0%, #FFB001 100%);
   background: -moz-radial-gradient(50% 50%, 50% 50%, #FD6130 0%, #FFB001 100%);
   background: radial-gradient(50% 50% at 50% 50%, #FD6130 0%, #FFB001 100%);
-  -webkit-filter: blur(100px);
-          filter: blur(100px);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
   position: absolute;
   top: -400px;
   left: 50%;
@@ -870,11 +870,11 @@ body {
      -moz-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-     -moz-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+     -moz-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1175,21 +1175,7 @@ body {
   background: transparent;
   border-radius: 10px;
   margin-right: 10px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: inline-block;
   font-size: 18px;
   line-height: 100%;
   text-align: center;
@@ -1270,28 +1256,6 @@ body {
 .card__submit {
   width: 145px;
   height: 130px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: -webkit-gradient(linear, left top, right top, from(#312B97), to(#672B97));
   background: -webkit-linear-gradient(left, #312B97 0%, #672B97 100%);
   background: -moz-linear-gradient(left, #312B97 0%, #672B97 100%);
@@ -1305,6 +1269,9 @@ body {
   cursor: pointer;
 }
 .card__submit img {
+  width: 52px;
+  height: auto;
+  margin: auto;
   margin-bottom: 8px;
 }
 .card__submit:hover {
@@ -1542,7 +1509,7 @@ body {
 
 .review__text-block {
   width: 100%;
-  height: 162px;
+  height: 225px;
   margin-bottom: 7px;
 }
 
@@ -1704,8 +1671,8 @@ body {
   background: -webkit-radial-gradient(50% 50%, 50% 50%, rgba(253, 97, 48, 0.46) 0%, #FFB001 100%);
   background: -moz-radial-gradient(50% 50%, 50% 50%, rgba(253, 97, 48, 0.46) 0%, #FFB001 100%);
   background: radial-gradient(50% 50% at 50% 50%, rgba(253, 97, 48, 0.46) 0%, #FFB001 100%);
-  -webkit-filter: blur(100px);
-          filter: blur(100px);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
   position: absolute;
   top: -200px;
   left: 50%;
@@ -1765,7 +1732,7 @@ body {
 }
 .footer__content .header__title {
   text-align: center;
-  margin-bottom: 52px;
+  margin-bottom: 98px;
 }
 .footer__content .header__title br {
   display: none;
@@ -2232,6 +2199,7 @@ body {
 }
 
 .send {
+  display: inline-block;
   width: 250px;
   height: 50px;
   background: #5B67C8;
@@ -2242,21 +2210,6 @@ body {
   line-height: 21px;
   text-align: center;
   color: #FFFFFF;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   cursor: pointer;
 }
 
@@ -2298,6 +2251,7 @@ body {
 }
 
 .send__massage {
+  display: inline-block;
   width: 60%;
   font-weight: normal;
   font-size: 18px;
@@ -2898,6 +2852,10 @@ body {
     right: -500px;
   }
 
+  .review__text-block {
+    height: 250px;
+  }
+
   .add__review {
     margin-right: 50px;
   }
@@ -3206,6 +3164,10 @@ body {
 
   .review__section-block {
     overflow: visible;
+  }
+
+  .review__text-block {
+    height: auto;
   }
 
   .review__decor-2 {
@@ -3563,6 +3525,12 @@ body {
     width: 1000px;
     height: 500px;
     top: -250px;
+    z-index: 1;
+  }
+
+  .header__content {
+    position: relative;
+    z-index: 2;
   }
 
   .header__logo {
@@ -3821,6 +3789,7 @@ body {
 
   .footer__section:before {
     background-position: center -50px;
+    z-index: 2;
   }
 
   .footer__section-wrapper {
@@ -3829,6 +3798,8 @@ body {
 
   .footer__content {
     width: 100%;
+    position: relative;
+    z-index: 2;
   }
 
   .footer__content .header__title {
@@ -3839,6 +3810,7 @@ body {
     width: 1000px;
     height: 500px;
     top: -100px;
+    z-index: 1;
   }
 
   .footer__decor {
