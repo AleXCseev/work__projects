@@ -13,5 +13,127 @@
 @import "footer";
 @import "modal";
 
-@media (max-width: 1480px) {
+@media (max-width: 1280px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: calc(100% - 30px);
+    }
+    .card__section-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .card__left {
+        margin-bottom: 50px;
+    }
+    .info__section-wrapper {
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .header__nav-none {
+        display: none;
+    }
+}
+
+@media (max-width: 540px) {
+    .header__title {
+        font-size: 6vw;
+    }
+    .header__nav-link {
+        font-size: 3.8vw;
+    }
+    .info__header-text {
+        display: none;
+    }
+    .info__title {
+        font-size: 6vw;
+        padding: 0;
+    }
+    .header__section-wrapper {
+        padding: 20px 0;
+    }
+    .info__img {
+        width: 100%;
+    }
+    .info__text {
+        font-size: 4vw;
+    }    
+    .info__blockquote {
+        padding-left: 0px;
+        border: none;
+        font-size: 5.5vw;
+    }
+    .card__left {
+        flex-direction: column-reverse;
+        margin-top: 80px;
+    }
+    .card__section-wrapper {
+        padding-bottom: 0;
+    }
+    .card__left {
+        width: 100%;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .card__img {
+        margin-top: 20px;
+    }
+    .card__info {
+        font-size: 3.8vw;
+    }
+    .card__raiting svg {
+        width: 5vw;
+        height: 6vw;
+    }
+    .card__text {
+        font-size: 4vw;
+    }
+    .card__promo {
+        width: 100%;
+    }
+    .card__promo-title {
+        font-size: 8vw;
+    }
+    .card__beli {
+        font-size: 6vw;
+    }
+    .card__beli-price {
+        font-size: 6vw;
+    }
+    .card__deli-text {
+        font-size: 4vw;
+    }
+    .review__section {
+        .container {
+            width: 100%;
+        }
+    }
+    .review__header {
+        margin: 0 15px;
+        margin-bottom: 15px;
+    }
+    .review__send-info {
+        padding-left: 15px;
+    }
+    .review__item {
+        padding: 20px 15px;
+    }
+    .review__photo-wrapper {
+        margin-right: 30px;
+    }
+    .review__name {
+        font-size: 4vw;
+    }
+    .review__text {
+        font-size: 4vw;
+    }
+    .footer__text {
+        font-size: 3.8vw;
+    }
 }
