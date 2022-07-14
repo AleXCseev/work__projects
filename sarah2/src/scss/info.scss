@@ -1,0 +1,122 @@
+.info__section {
+    width: 100%;
+    height: auto;
+}
+ 
+.info__section-wrapper {
+    width: 100vw;
+    // max-width: 1920px;
+    height: auto;
+    background-image: url(../img/info-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+}
+
+.info__block-wrapper {
+    width: 75vw;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.info__block {
+    width: 33.33%;
+    height: 21.7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2vw;
+}
+
+.info__block-1 {
+}
+
+.info__block-title {
+    font-weight: 700;
+    font-size: 2.2vw;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 41px;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 9.5vw;
+        height: 1px;
+        background: #FFFFFF;
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.info__block-text {
+    font-weight: 400;
+    font-size: 1.1vw;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.info__block-2 {
+    background: #FFFFFF;
+
+    img {
+        width: 100%;
+        height: auto;
+        margin-top: 7px;
+    }
+}
+
+.info__block-subtitle {
+    font-weight: 700;
+    font-size: 1.3vw;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.info__block-black-text {
+    font-weight: 400;
+    font-size: 1.1vw;
+    line-height: 1.2;
+    text-align: center;
+    color: #333333;
+}
+
+.info__block-3 {
+    background-image: url(../img/info-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.info__block-4 {
+    background: #8FE17A;
+
+    img {
+        margin-bottom: 30px;
+    }
+}
+
+.info__block-5 {
+    background: #C8F4FF;
+}
+
+.info__block-6 {
+    background: #FFF878;
+
+    img {
+        width: 14.2vw;
+        height: auto;
+    }
+}
