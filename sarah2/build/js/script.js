@@ -74,22 +74,27 @@ var landingFunctions = {
 			$(this).closest(".galary__block").find(".galary__number-current").html(String(index + 1).padStart(2, '0'));
 		});
 
-		// $(".review__slider").owlCarousel({
-		// 	loop: true,
-		// 	nav: true,
-		// 	dots: false,
-		// 	dotsEach: true,
-		// 	items: 1,
-		// 	margin: 100,
-		// 	responsive:{
-		// 		0:{
-		// 			dots: true,
-		// 		},
-		// 		1024:{
-		// 			dots: false,
-		// 		}
-		// 	}
-		// });
+		var reviewOwl = $(".review__slider").owlCarousel({
+			loop: true,
+			nav: true,
+			dots: false,
+			dotsEach: true,
+			items: 3,
+			margin: 40,
+			// responsive:{
+			// 	0:{
+			// 		dots: true,
+			// 	},
+			// 	1024:{
+			// 		dots: false,
+			// 	}
+			// }
+		});
+
+		reviewOwl.on("changed.owl.carousel", function(e) {
+			var index = e.relatedTarget.relative(e.item.index);
+			$(this).closest(".review__section-wrapper").find(".review__current").html(String(index + 1).padStart(2, '0'));
+		});
 
 		// if($(window).width() <= 700) {
 		// 	$(".galary").addClass("owl-carousel").owlCarousel({
@@ -222,28 +227,32 @@ var landingFunctions = {
 	card: function() {
 		function switchBtns(selector) {
 			$(selector + " .card__btn").click(function () {
-				var size = $(this).data("size")
 				$(this).closest(".card__btns").find(".card__btn").removeClass("active")
 				$(this).addClass("active");
-				$(this).closest(".card__size-block").find(".card__size-text").text(size);
 			})
 		}
 	
 		switchBtns(".card");
 
-		if($(window).width() <= 540) {
-			$(".card__right").addClass("owl-carousel").owlCarousel({
-				loop: true,
-				nav: true,
-				dots: false,
-				dotsEach: true,
-				items: 1,
-				margin: 20,
-				// mouseDrag: false,
-				// touchDrag: false,
-			});
-	
-		}
+		var cardOwl = $(".card__none").owlCarousel({
+			loop: true,
+			nav: false,
+			dots: false,
+			dotsEach: true,
+			items: 1,
+			margin: 50,
+			// mouseDrag: false,
+			// touchDrag: false,
+		});
+
+		$(".card__next-btn").click(function () {
+			cardOwl.trigger("next.owl.carousel");
+		});
+
+		$(".card__prev-btn").click(function () {
+			cardOwl.trigger("prev.owl.carousel");
+		});
+
 	},
 }
 

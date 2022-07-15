@@ -19,6 +19,7 @@
         top: -277px;
         left: -380px;
         background: rgba(255, 255, 255, 0.2);
+        animation: scale 5s infinite;
     }
 }
 
@@ -54,6 +55,8 @@
         bottom: -276px;
         right: -280px;
         z-index: -1;
+        animation: scale 5s infinite;
+        animation-delay: 2.5s;
     }
 }
 
@@ -192,8 +195,14 @@
     }
 }
 
-.date__1 {
-}
-
-.date__2 {
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
