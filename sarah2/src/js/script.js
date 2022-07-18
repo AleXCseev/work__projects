@@ -81,14 +81,17 @@ var landingFunctions = {
 			dotsEach: true,
 			items: 3,
 			margin: 40,
-			// responsive:{
-			// 	0:{
-			// 		dots: true,
-			// 	},
-			// 	1024:{
-			// 		dots: false,
-			// 	}
-			// }
+			autoHeight: false,
+			responsive:{
+				0:{
+					items: 1,
+					autoHeight: true,
+				},
+				1025:{
+					items: 3,
+					autoHeight: false,
+				}
+			}
 		});
 
 		reviewOwl.on("changed.owl.carousel", function(e) {
@@ -108,16 +111,16 @@ var landingFunctions = {
 		// }
 
 	
-		// AOS.init({
-		// 	disable : 'mobile',
-		// 	once: true,
-		// 	duration: 1000,
-		// 	offset : -200,
-		// });
+		AOS.init({
+			disable : 'mobile',
+			once: true,
+			duration: 1000,
+			offset : -200,
+		});
 	
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
+		$(window).resize(function() {
+			AOS.refresh();
+		})
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
@@ -241,8 +244,17 @@ var landingFunctions = {
 			dotsEach: true,
 			items: 1,
 			margin: 50,
+			autoHeight: false,
 			// mouseDrag: false,
 			// touchDrag: false,
+			responsive:{
+				0:{
+					autoHeight: true,
+				},
+				540:{
+					autoHeight: false,
+				},
+			}
 		});
 
 		$(".card__next-btn").click(function () {
