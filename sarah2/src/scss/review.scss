@@ -17,12 +17,13 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    z-index: 1;
 }
 
 .review__bg-1 {
     position: absolute;
     top: 0;
-    left: -320px;
+    left: -325px;
     height: 100%;
     width: auto;
     border-right: 1px solid #fff;
@@ -31,10 +32,11 @@
 .review__bg-2 {
     position: absolute;
     top: 0;
-    right: -349px;
+    right: -395px;
     height: 100%;
     width: auto;
     border-left: 1px solid #fff;
+    z-index: -1;
 }
 
 .review__section-title {
@@ -69,7 +71,7 @@
 }
 
 .review__text {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.2;
     color: #666666;
     margin-bottom: 15px;
@@ -87,6 +89,7 @@
     border-radius: 100%;
     flex-shrink: 0;
     margin-right: 20px;
+    overflow: hidden;
 }
 
 .review__name {

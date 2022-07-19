@@ -46,6 +46,16 @@ var landingFunctions = {
 			margin: 0,
 			mouseDrag: false,
 			touchDrag: false,
+			responsive:{
+				0:{
+					mouseDrag: true,
+					touchDrag: true,
+				},
+				700:{
+					mouseDrag: false,
+					touchDrag: false,
+				}
+			}
 		});
 
 		var owl2 = $(".galary__2-slider").owlCarousel({
@@ -237,24 +247,24 @@ var landingFunctions = {
 	
 		switchBtns(".card");
 
-		var cardOwl = $(".card__none").owlCarousel({
+		var cardOwl = $(".card__none-slider").owlCarousel({
 			loop: true,
 			nav: false,
 			dots: false,
 			dotsEach: true,
 			items: 1,
 			margin: 50,
-			autoHeight: false,
+			autoHeight: true,
 			// mouseDrag: false,
 			// touchDrag: false,
-			responsive:{
-				0:{
-					autoHeight: true,
-				},
-				540:{
-					autoHeight: false,
-				},
-			}
+			// responsive:{
+			// 	0:{
+			// 		autoHeight: true,
+			// 	},
+			// 	1025:{
+			// 		autoHeight: false,
+			// 	},
+			// }
 		});
 
 		$(".card__next-btn").click(function () {

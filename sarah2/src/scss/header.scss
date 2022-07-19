@@ -78,16 +78,16 @@
 
 .header__boot-1 {
     position: absolute;
-    top: 65px;
-    left: -321px;
+    top: 85px;
+    left: -330px;
     width: 426px;
     height: auto;
 }
 
 .header__boot-2 {
     position: absolute;
-    bottom: 85px;
-    right: -295px;
+    bottom: 65px;
+    right: -310px;
     width: 410px;
     height: auto;
 }
@@ -172,10 +172,16 @@
         line-height: 1.12;
         text-align: center;
         color: #FFFFFF;
+        transition: 0.3s ease;
     }
 
     &:hover {
-        padding: 0;
+        background: rgba(143, 225, 122, 0.5);
+
+        div {
+            background-color: #8FE17A;
+            // color: #E23C87;
+        }
     }
 }
 

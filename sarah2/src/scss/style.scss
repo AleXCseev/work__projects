@@ -339,6 +339,10 @@
     .card {
         margin-bottom: 50px;
     }
+    .card__block .card__decor {
+        right: -255px;
+        z-index: -1;
+    }
     .delivery__bg {
         display: none;
     }
@@ -418,6 +422,9 @@
     }
     .footer__section-wrapper {
         padding: 30px 0 20px;
+    }
+    .card__img-wrapper {
+        height: auto;
     }
 }
 
@@ -634,6 +641,7 @@
     .info__block-black-text {
         font-size: 5vw;
     }
+   
     .info__block-2 img {
         width: 100%;
         height: auto;
@@ -673,7 +681,7 @@
         font-size: 8vw;
     }
     .card__logo {
-        margin-top: -5px;
+        margin-top: 0px;
         width: 38vw !important;
     }
     .card__boot {
@@ -689,6 +697,9 @@
     }
     .card__size span {
         font-size: 4.5vw;
+    }
+    .card__size-divider {
+        display: none;
     }
     .card__price-text {
         font-size: 4.5vw;

@@ -403,6 +403,7 @@
 
     &:hover {
         background-color: #8FE17A;
+        // color: #E23C87;
     }
 }
 
@@ -429,7 +430,11 @@
         margin-bottom: 0;
     }
     .card__boot {
+        margin: auto;
         margin-bottom: 0;
+        width: auto !important;
+        max-width: 90% !important;
+        max-height: 278px !important;
     }
     .card__size {
         margin-bottom: 51px;
