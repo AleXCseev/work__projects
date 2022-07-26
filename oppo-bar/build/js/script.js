@@ -109,7 +109,7 @@ var landingFunctions = {
 				var el = $(".bar__column__1 .bar__item-active span").text()
 				$(".bar__item-center span").text(el)
 				$(".bar__item-center").addClass("scale");
-			}, 50)
+			}, 20)
 		}
 		
 		var interval = 0
@@ -188,6 +188,7 @@ $(document).ready(function() {
 	// $(".order__btn-start").hide()
 	// $(".header__title-header").hide()
 	// $(".header__decor").hide()
+	// $(".mobile__imgs").hide()
 	// $(".header__hide").fadeIn(1000);
 
 });

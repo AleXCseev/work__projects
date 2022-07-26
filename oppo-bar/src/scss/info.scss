@@ -155,6 +155,12 @@
     }
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.bar__info {
+        background: rgba(164, 175, 255, 0.8);
+    }
+}
+
 .bar__info-text {
     display: none;
     font-weight: 800;
