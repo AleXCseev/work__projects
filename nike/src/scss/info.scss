@@ -1,0 +1,146 @@
+.info__section {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(139.81deg, #00AAFF 0%, #FF71B1 100%);
+
+    .container {
+        width: 1366px;
+        height: auto;
+    }
+}
+
+.info__section-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.info__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -100px;
+    margin-bottom: 50px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.info__row-wrapper {
+    width: 422px;
+    height: auto;
+}
+
+.info__row-img {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.info__logo {
+    width: 208px;
+    height: auto;
+    margin-bottom: 25px;
+    margin-top: 100px;
+}
+
+.info__title {
+    width: 100%;
+    max-width: 309px;
+    font-family: 'Futura Bold Condensed Original', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.info__text {
+    width: 100%;
+    max-width: 309px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #FFFFFF;
+}
+
+
+.info__list {
+    width: 100%;
+    max-width: 402px;
+    margin-left: auto;
+
+}
+
+.info__list-item {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 51px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.info__list-icon {
+    flex-shrink: 0;
+    width: 90px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.info__list-title {
+    font-family: 'Futura Bold Condensed Original', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FAFF00;
+    margin-bottom: 16px;
+}
+
+.info__list-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #FFFFFF;
+}
+
+.info__row-wrapper {
+    .header__sale-wrapper {
+        margin: auto;
+    }
+
+    .header__order {
+        background: linear-gradient(102.39deg, #FF6B00 0%, #FF3931 100%);
+
+        &:before {
+            background: linear-gradient(102.39deg, #FF9900 0%, #FF0000 100%);
+        }
+    }
+}
+
+.info__sale-title {
+    font-family: 'Futura Bold Condensed Original', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 35px;
+}
+
