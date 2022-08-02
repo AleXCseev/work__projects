@@ -68,22 +68,24 @@
     &:hover {
         opacity: 1;
     }
-}
 
-.active {
-    opacity: 1;
-
-    &:before {
-        content: "";
-        width: 110%;
-        height: 3px;
-        background: #FFFFFF;
-        position: absolute;
-        bottom: -4px;
-        left: 50%;
-        transform: translateX(-50%);
+    &.active {
+        opacity: 1;
+    
+        &:before {
+            content: "";
+            width: 110%;
+            height: 3px;
+            background: #FFFFFF;
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }
+
+
 
 .header__title {
     font-family: 'Futura Bold Condensed Original', sans-serif;

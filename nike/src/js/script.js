@@ -2,8 +2,8 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		// this.time()
-		// this.modal()
-		// this.card()
+		this.modal()
+		this.card()
 		// this.galary()
 	}, 
 
@@ -29,9 +29,9 @@ var landingFunctions = {
 			margin: 0,
 			autoHeight: false,
 			smartSpeed: 800,
-			autoplay: true,
-			autoplayTimeout: 10000,
-			autoplayHoverPause: false,
+			// autoplay: true,
+			// autoplayTimeout: 10000,
+			// autoplayHoverPause: false,
 		});
 
 		$(".slide-next").click(function () {
@@ -44,6 +44,25 @@ var landingFunctions = {
 
 		$(".header__btn-slide").click(function () {
 			owl.trigger("next.owl.carousel");
+		});
+
+		$(".review__slider").owlCarousel({
+			loop: true,
+			nav: true,
+			dots: true,
+			dotsEach: true,
+			items: 1,
+			margin: 50,
+			stagePadding: 20,
+			autoHeight: false,
+		});
+
+		$.raty.path = $("body").data("path") +  '/img/raty';
+
+		$('.modal__raiting').raty({
+			half: true,
+			space: false,
+			number: 5,
 		});
 
 		// AOS.init({
@@ -178,90 +197,34 @@ var landingFunctions = {
 	},
 
 	card: function() {
-		function switchBtns(selector) {
-			$(selector + " .card__btn").click(function () {
-				$(selector + " .card__btn").removeClass("active")
-				$(this).addClass("active");
+		function galary(selector) {
+			function toggleDataSrcAtribute(string) {
+				$(selector + " .card__boot")
+					.hide()
+					.attr("src",  $(selector + " .card__boot").attr("data-" + string))
+					.fadeIn(1000)
+				$(selector + " .card__photo-wrapper img").each(function() {
+					$(this).parent().attr("href",  $(this).attr("data-" + string))
+					$(this)
+						.hide()
+						.attr("src",  $(this).attr("data-" + string))
+						.fadeIn(1000)
+				})
+			}
+	
+			$(selector + " .card__color-btn").click(function () {
+				var color = $(this).data("color")
+				toggleDataSrcAtribute(color)
+
+				$(selector + " .card__color-btn").removeClass("active")
+				$(this).addClass("active")
+
+				var price = $(this).data("price")
+				$(selector + " .new__price").text(price)
 			})
 		}
 	
-		switchBtns(".card__1");
-		switchBtns(".card__2");
-		// switchBtns(".card__3");
-
-		if($(window).width() <= 540) {
-			$(".card__right").addClass("owl-carousel").owlCarousel({
-				loop: true,
-				nav: true,
-				dots: false,
-				dotsEach: true,
-				items: 1,
-				margin: 20,
-				// mouseDrag: false,
-				// touchDrag: false,
-			});
-	
-		}
-	},
-
-	galary: function() {
-		var owl = $(".galary__main-slider").owlCarousel({
-			loop: true,
-			nav: false,
-			dots: false,
-			dotsEach: true,
-			items: 1,
-			margin: 0,
-			mouseDrag: false,
-			touchDrag: false,
-		});
-
-		var owl1 = $(".galary__small-1").owlCarousel({
-			loop: true,
-			nav: false,
-			dots: false,
-			dotsEach: true,
-			items: 1,
-			margin: 0,
-			mouseDrag: false,
-			touchDrag: false,
-		});
-
-		var owl2 = $(".galary__small-2").owlCarousel({
-			loop: true,
-			nav: false,
-			dots: false,
-			dotsEach: true,
-			items: 1,
-			margin: 0,
-			mouseDrag: false,
-			touchDrag: false,
-		});
-
-		var owl3 = $(".galary__small-3").owlCarousel({
-			loop: true,
-			nav: false,
-			dots: false,
-			dotsEach: true,
-			items: 1,
-			margin: 0,
-			mouseDrag: false,
-			touchDrag: false,
-		});
-
-		$(".next__btn").click(function () {
-			owl.trigger("next.owl.carousel");
-			owl1.trigger("next.owl.carousel");
-			owl2.trigger("next.owl.carousel");
-			owl3.trigger("next.owl.carousel");
-		});
-
-		$(".prev__btn").click(function () {
-			owl.trigger("prev.owl.carousel");
-			owl1.trigger("prev.owl.carousel");
-			owl2.trigger("prev.owl.carousel");
-			owl3.trigger("prev.owl.carousel");
-		});
+		galary(".card__2")
 	},
 }
 
