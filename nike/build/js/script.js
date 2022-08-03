@@ -4,7 +4,6 @@ var landingFunctions = {
 		// this.time()
 		this.modal()
 		this.card()
-		// this.galary()
 	}, 
 
 	initLibraris: function() {
@@ -29,9 +28,9 @@ var landingFunctions = {
 			margin: 0,
 			autoHeight: false,
 			smartSpeed: 800,
-			// autoplay: true,
-			// autoplayTimeout: 10000,
-			// autoplayHoverPause: false,
+			autoplay: true,
+			autoplayTimeout: 10000,
+			autoplayHoverPause: false,
 		});
 
 		$(".slide-next").click(function () {
@@ -65,16 +64,16 @@ var landingFunctions = {
 			number: 5,
 		});
 
-		// AOS.init({
-		// 	disable : 'mobile',
-		// 	once: true,
-		// 	duration: 1000,
-		// 	offset : -200,
-		// });
+		AOS.init({
+			disable : 'mobile',
+			once: true,
+			duration: 1000,
+			offset : -200,
+		});
 	
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
+		$(window).resize(function() {
+			AOS.refresh();
+		})
 
 		$('[data-fancybox]').fancybox({
 			loop: true,

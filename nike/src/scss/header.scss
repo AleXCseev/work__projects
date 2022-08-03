@@ -212,7 +212,7 @@
     height: 635px;
     position: absolute;
     border-radius: 100%;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
     box-shadow: 0px 0px 20px rgba(255, 94, 0, 0.5);
     top: 20px;
     right: -527px;
@@ -231,8 +231,10 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.05);
         box-shadow: 0px 0px 20px rgba(255, 94, 0, 0.5);
+        animation: scale 6s infinite;
+        animation-delay: 0.5s;
     }
 
     &:after {
@@ -244,8 +246,21 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.05);
         box-shadow: 0px 0px 20px rgba(255, 94, 0, 0.5);
+        animation: scale 6s infinite;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
     }
 }
 
