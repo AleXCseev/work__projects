@@ -145,6 +145,9 @@ body {
   font-family: "Arial", sans-serif;
   font-weight: 400;
   color: #FFFFFF;
+  background: -webkit-linear-gradient(347.61deg, #FF5E00 0%, #FF7B4A 100%);
+  background: -moz-linear-gradient(347.61deg, #FF5E00 0%, #FF7B4A 100%);
+  background: linear-gradient(102.39deg, #FF5E00 0%, #FF7B4A 100%);
 }
 
 .visually-hidden {
@@ -355,7 +358,7 @@ body {
   font-family: "Futura Bold Condensed Original", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 64px;
+  font-size: 54px;
   line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -523,7 +526,8 @@ body {
   border-radius: 100%;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0px 0px 20px rgba(255, 94, 0, 0.5);
-  top: 20px;
+  top: auto;
+  bottom: -60px;
   right: -527px;
   z-index: -1;
 }
@@ -546,6 +550,7 @@ body {
   -webkit-animation-delay: 0.5s;
      -moz-animation-delay: 0.5s;
           animation-delay: 0.5s;
+  z-index: auto;
 }
 .header__decor:after {
   content: "";
@@ -560,6 +565,7 @@ body {
   -webkit-animation: scale 6s infinite;
      -moz-animation: scale 6s infinite;
           animation: scale 6s infinite;
+  z-index: auto;
 }
 
 @-webkit-keyframes scale {
@@ -621,7 +627,7 @@ body {
       -ms-transform: translateX(-50%);
        -o-transform: translateX(-50%);
           transform: translateX(-50%);
-  z-index: 1;
+  z-index: 3;
 }
 
 .header__boot {
@@ -633,7 +639,7 @@ body {
       -ms-transform: translate(-50%, -50%);
        -o-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 3;
 }
 
 .header__slider-btns {
@@ -702,17 +708,17 @@ body {
        -o-transform: translateX(-50%);
           transform: translateX(-50%);
   bottom: -80px;
-  z-index: 2;
+  z-index: 4;
 }
 
 .header__boot-2 {
-  z-index: 1;
+  z-index: 3;
   top: 45%;
   left: 45%;
 }
 
 .header__boot-3 {
-  z-index: 3;
+  z-index: 4;
   top: 55%;
   left: 53%;
 }
@@ -784,7 +790,7 @@ body {
   font-family: "Futura Bold Condensed Original", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -1379,7 +1385,7 @@ body {
   border-radius: 30px;
   background-color: transparent;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1;
   color: #222222;
   padding: 0 20px;
@@ -1405,6 +1411,8 @@ body {
   background: -webkit-linear-gradient(347.61deg, #FF6B00 0%, #FF3931 100%);
   background: -moz-linear-gradient(347.61deg, #FF6B00 0%, #FF3931 100%);
   background: linear-gradient(102.39deg, #FF6B00 0%, #FF3931 100%);
+  display: inline-block;
+  text-align: center;
 }
 .card__submit:before {
   background: -webkit-linear-gradient(347.61deg, #FF9900 0%, #FF0000 100%);
@@ -1522,12 +1530,12 @@ body {
           align-items: center;
   border: 1px solid #20467E;
   border-radius: 30px;
-  padding: 10px 10px 10px 20px;
+  padding: 10px;
 }
 
 .card__color-text {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1;
   color: #222222;
 }
@@ -2806,12 +2814,17 @@ body {
   }
 
   .header__title {
-    font-size: 52px;
+    font-size: 62px;
+  }
+
+  .header__text {
+    font-size: 21px;
   }
 
   .header__decor {
     width: 580px;
     height: 580px;
+    bottom: -20px;
   }
   .header__decor .header__boot {
     width: 123% !important;
@@ -2983,11 +2996,11 @@ body {
   }
 
   .header__title {
-    font-size: 44px;
+    font-size: 54px;
   }
 
   .header__text {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .header__sale {
@@ -3011,7 +3024,7 @@ body {
   }
 
   .header__slider-btns {
-    top: 60%;
+    top: 70%;
     width: -webkit-calc(100% + 80px);
     width: -moz-calc(100% + 80px);
     width: calc(100% + 80px);
@@ -3034,7 +3047,7 @@ body {
   }
 
   .info__title {
-    font-size: 42px;
+    font-size: 32px;
     margin-bottom: 12px;
   }
 
@@ -3665,7 +3678,7 @@ body {
     width: 153vw;
     height: 153vw;
     margin-bottom: -22vw;
-    margin-top: -34vw;
+    margin-top: -28vw;
   }
   .header__decor .header__boot {
     width: 110vw !important;
@@ -3690,7 +3703,7 @@ body {
   }
 
   .header__sale {
-    font-size: 15vw;
+    font-size: 12vw;
   }
 
   .old__price {
@@ -3703,7 +3716,7 @@ body {
   }
 
   .header__slider-btns {
-    bottom: 25%;
+    bottom: 27%;
   }
 
   .header__slide-wrapper {
@@ -3817,7 +3830,7 @@ body {
   }
 
   .card__left-discount {
-    font-size: 12vw;
+    font-size: 10vw;
   }
 
   .card__header {
@@ -3923,25 +3936,36 @@ body {
   .footer__section-wrapper .header__content {
     padding: 110px 0 50px;
   }
+
+  .header__decor:before {
+    -webkit-animation: none;
+       -moz-animation: none;
+            animation: none;
+  }
+  .header__decor:after {
+    -webkit-animation: none;
+       -moz-animation: none;
+            animation: none;
+  }
 }
 @media (max-width: 414px) {
   .card__input {
-    height: 14.5vw;
-    font-size: 4.8vw;
+    height: 14vw;
+    font-size: 4.5vw;
   }
 
   .card__color {
-    height: 14.5vw;
-    padding: 2vw 2vw 2vw 4vw;
+    height: 14vw;
+    padding: 2vw;
   }
 
   .card__color-text {
-    font-size: 4.8vw;
+    font-size: 4.5vw;
   }
 
   .card__color-btn {
-    width: 9.5vw;
-    height: 9.5vw;
+    width: 9vw;
+    height: 9vw;
   }
 
   .fancybox-content {

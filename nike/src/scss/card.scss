@@ -143,7 +143,7 @@
     border-radius: 30px;
     background-color: transparent;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1;
     color: #222222;
     padding: 0 20px;
@@ -170,6 +170,8 @@
     bottom: -30px;
     cursor: pointer;
     background: linear-gradient(102.39deg, #FF6B00 0%, #FF3931 100%);
+    display: inline-block;
+    text-align: center;
 
     &:before {
         background: linear-gradient(102.39deg, #FF9900 0%, #FF0000 100%);
@@ -242,12 +244,12 @@
     align-items: center;
     border: 1px solid #20467E;
     border-radius: 30px;
-    padding: 10px 10px 10px 20px;
+    padding: 10px;
 }
 
 .card__color-text {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1;
     color: #222222;
 }

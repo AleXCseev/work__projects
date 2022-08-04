@@ -26,7 +26,7 @@ var landingFunctions = {
 			dotsEach: true,
 			items: 1,
 			margin: 0,
-			autoHeight: false,
+			autoHeight: true,
 			smartSpeed: 800,
 			autoplay: true,
 			autoplayTimeout: 10000,
@@ -54,6 +54,14 @@ var landingFunctions = {
 			margin: 50,
 			stagePadding: 20,
 			autoHeight: false,
+			responsive:{
+				0:{
+					autoHeight: true,
+				},
+				1001:{
+					autoHeight: false,
+				}
+			}
 		});
 
 		$.raty.path = $("body").data("path") +  '/img/raty';

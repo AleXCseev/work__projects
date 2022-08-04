@@ -18,11 +18,15 @@
         width: 470px;
     }
     .header__title {
-        font-size: 52px;
+        font-size: 62px;
+    }
+    .header__text {
+        font-size: 21px;
     }
     .header__decor {
         width: 580px;
         height: 580px;
+        bottom: -20px;
 
         .header__boot {
             width: 123% !important;
@@ -157,10 +161,10 @@
         font-size: 40px;
     }
     .header__title {
-        font-size: 44px;
+        font-size: 54px;
     }
     .header__text {
-        font-size: 20px;
+        font-size: 18px;
     }
     .header__sale {
         font-size: 54px;
@@ -181,7 +185,7 @@
         width: 117% !important;
     }
     .header__slider-btns {
-        top: 60%;
+        top: 70%;
         width: calc(100% + 80px);
     }
     .info__section .container {
@@ -198,7 +202,7 @@
         margin-top: 100px;
     }
     .info__title {
-        font-size: 42px;
+        font-size: 32px;
         margin-bottom: 12px;
     }
     .info__list-item {
@@ -644,7 +648,7 @@
         width: 153vw;
         height: 153vw;
         margin-bottom: -22vw;
-        margin-top: -34vw;
+        margin-top: -28vw;
 
         .header__boot {
             width: 110vw !important;
@@ -673,7 +677,7 @@
         }
     }
     .header__sale {
-        font-size: 15vw;
+        font-size: 12vw;
     }
     .old__price {
         font-size: 5.5vw;
@@ -683,7 +687,7 @@
         font-size: 7vw;
     }
     .header__slider-btns {
-        bottom: 25%;
+        bottom: 27%;
     }
     .header__slide-wrapper {
         padding: 30px 0 50px;
@@ -771,7 +775,7 @@
         height: 9.8vw;
     }
     .card__left-discount {
-        font-size: 12vw;
+        font-size: 10vw;
     }
     .card__header {
         flex-direction: column;
@@ -841,23 +845,31 @@
     .footer__section-wrapper .header__content {
         padding: 110px 0 50px;
     }
+    .header__decor {
+        &:before {
+            animation: none;
+        }
+        &:after {
+            animation: none;
+        }
+    }
 }
 
 @media (max-width: 414px) {
     .card__input {
-        height: 14.5vw;
-        font-size: 4.8vw;
+        height: 14vw;
+        font-size: 4.5vw;
     }
     .card__color {
-        height: 14.5vw;
-        padding: 2vw 2vw 2vw 4vw;
+        height: 14vw;
+        padding: 2vw;
     }
     .card__color-text {
-        font-size: 4.8vw;
+        font-size: 4.5vw;
     }
     .card__color-btn {
-        width: 9.5vw;
-        height: 9.5vw;
+        width: 9vw;
+        height: 9vw;
     }
     .fancybox-content {
         padding: 40px 20px;
