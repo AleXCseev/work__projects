@@ -2,8 +2,6 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.time()
-		// this.modal()
-		// this.video()
 	}, 
 
 	initLibraris: function() {
