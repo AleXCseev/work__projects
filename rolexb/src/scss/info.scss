@@ -1,0 +1,38 @@
+.info__section {
+    width: 100%;
+    height: auto;
+    background: #FFB734;
+}
+
+.info__section-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 44px 0 50px;
+}
+
+.info__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #021E29;
+    margin-bottom: 31px;
+}
+
+.info__text {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #021E29;
+    margin-bottom: 22px;
+}
+
+.info__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

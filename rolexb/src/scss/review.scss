@@ -1,0 +1,92 @@
+.review__section {
+    width: 100%;
+    height: auto;
+    background: #FFB734;
+}
+
+.review__section-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 44px 0 50px;
+
+    .owl-nav {
+        button {
+            background-image: url(../img/arrow-review.png) !important;
+            border: 1px solid rgba(2, 30, 41, 0.5) !important;
+
+            &:hover {
+                border: 1px solid rgba(2, 30, 41, 1) !important;
+            }
+        }
+    }
+
+    .owl-dots {
+        margin-bottom: 20px;
+
+        button {
+            border: 1px solid #021E29 !important;
+
+            &.active {
+                background: #021E29 !important;
+            }
+        }
+    }
+}
+
+.review__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #021E29;
+    margin-bottom: 22px;
+}
+
+.review__slider {
+    width: 100%;
+    height: auto;
+}
+
+.review__slide {
+    width: 100%;
+    height: auto;
+    background: #021E29;
+    padding: 0 30px 27px;
+}
+
+.review__quote {
+    width: 68px !important;
+    height: auto;
+    position: relative;
+    top: -30px;
+}
+
+.review__raiting {
+    display: flex;
+    margin-bottom: 19px;
+
+    img {
+        width: 18px !important;
+        height: 18px !important;
+        margin-right: 2px;
+    }
+}
+
+.review__text {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.review__name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    color: #FCD064;
+}
+
+.review__slider .owl-stage-outer {
+    padding: 30px 0 0;
+}
