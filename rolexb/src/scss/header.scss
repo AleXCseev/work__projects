@@ -86,6 +86,7 @@
 }
 
 .new__price {
+    display: inline-block;
     font-weight: 700;
     font-size: 30px;
     line-height: 1;
@@ -114,20 +115,21 @@
 
 .order__btn {
     width: 100%;
-    height: 60px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(268.93deg, #D6991F 0%, #F2C444 15%, #FFF5AB 45%, #F7E794 47%, #DAB849 53%, #E9B118 58%, #E9B118 60%, #F2C240 73%, #F2C652 88%, #F2C963 100%);
     position: relative;
     overflow: hidden;
+    padding: 10px 40px;
 
     span {
         position: relative;
         z-index: 5;
         font-weight: 500;
         font-size: 20px;
-        line-height: 1;
+        line-height: 1.3;
         text-align: center;
         color: #021E29;
     }
