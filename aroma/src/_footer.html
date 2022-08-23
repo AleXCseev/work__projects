@@ -11,7 +11,7 @@
         <div class="card__img-block">
             <img src="img/card-img-1.jpg" class="footer__img">
             <div class="card__discount">
-                50%
+                <span class="pulse">50%</span>    
             </div>
         </div>
     </div>
@@ -23,7 +23,7 @@
             </div>
             <div class="price__block">
                 <p class="new__price-text">Цена сегодня:</p>
-                <span class="new__price">1234 грн</span>
+                <span class="new__price tossing">1234 грн</span>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@
             <input type="tel" placeholder="Телефон" required class="card__input">
         </div>
         <button type="submit" class="order__btn card__submit">
-            заказать по скидке
+            <span>купить</span> 
         </button>
         <p class="quantity__text">
             Осталось по акции <span class="quantity" data-prefix="шт">12 шт</span>
@@ -45,10 +45,11 @@
         <div class="container">
             <div class="footer__line-wrapper">
                 <p class="footer__line-text">
-                    <a data-fancybox data-src="#modal-privacy" href="javascript:;">Política de privacidad</a>, todos los derechos de autor.
+                    <a data-fancybox data-src="#modal-privacy" href="javascript:;">Политика конфиденциальности</a>, все права защищены. 
                 </p>
                 <p class="footer__line-text">
-                    Copyright 2022 {{ $address }}
+                    Copyright 2022 ТОВ "SaleShop" г.Харьков, <br>
+                    ул. Шевченка, 32,ЕГРПОУ 39129343
                 </p>
             </div>
         </div>

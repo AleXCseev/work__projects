@@ -267,6 +267,9 @@ var landingFunctions = {
 			}
 	
 			$(selector + " .color__btn").click(function () {
+				if($(this).hasClass("active")) {
+					return false
+				}
 				var color = $(this).data("color")
 				toggleDataSrcAtribute(color)
 
