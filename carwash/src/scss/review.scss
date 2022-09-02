@@ -1,0 +1,124 @@
+.review__section {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, #AFE7EF 0%, #E0F1CB 100%);
+}
+
+.review__section-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 39px 0 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: center;
+    color: #013154;
+    margin-bottom: 42px;
+}
+
+.review__slider {
+    width: 100%;
+    height: auto;
+}
+
+.review__slide {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(90deg, #AFE7EF 0%, #E0F1CB 100%);
+    border: 3px solid #5843BE;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.review__img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+
+.review__nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 21px;
+}
+
+.review__nav-btn {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.review__nav-left {
+}
+
+.review__nav-right {
+    transform: rotate(180deg);
+}
+
+.review__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review__name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    color: #001528;
+    margin-bottom: 17px;
+}
+
+.review__raiting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 18px !important;
+        height: 18px !important;
+        margin-right: 2px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.review__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #222222;
+}
+
+.add__review {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    text-align: right;
+    color: #222222;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 14px;
+    display: inline-block;
+    align-self: flex-end;
+    margin-right: 30px;
+}

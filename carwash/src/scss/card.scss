@@ -1,0 +1,167 @@
+.card__section {
+    width: 100%;
+    height: auto;
+    padding: 35px 0 50px;
+    background: linear-gradient(90deg, #001528 0%, #003154 100%);
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.28;
+    text-align: center;
+    color: #4ED0EA;
+    margin-bottom: 19px;
+}
+
+.card__raiting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    img {
+        width: 18px;
+        height: auto;
+        margin-right: 2px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.card__img-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-image: url(../img/card-bg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom 70px;
+    background-size: contain;
+}
+
+.card__img {
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.card__img-left {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transition: 2s ease;
+    transform: translate(-105%, -50%) scale(0.85) rotate(-15deg);
+    filter: blur(5px);
+}
+
+.card__img-right {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transition: 2s ease;
+    transform: translate(5%, -50%) scale(0.85) rotate(15deg);
+    filter: blur(5px);
+}
+
+.card__img-active {
+    transform: translate(-50%, -50%);
+}
+
+.card__info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.card__info-item {
+    width: 190px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card__info-img {
+    width: 30px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.card__info-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+.card__form {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+}
+
+.card__input-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 1px;
+        height: 40px;
+        background-color: #D9D9D9;
+        position: absolute;
+        top: 15px;
+        left: 75px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.card__input {
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    padding: 0 25px 0 96px;
+    font-size: 20px;
+    line-height: 1;
+    color: #FFFFFF;
+    transition: 0.3s ease;
+
+    &:focus {
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 1px solid #FFD722;
+    }
+}
+
+.card__input-name {
+    background-image: url(../img/name.png);
+    background-repeat: no-repeat;
+    background-position: left 25px center;
+}
+
+.card__input-phone {
+    background-image: url(../img/phone.png);
+    background-repeat: no-repeat;
+    background-position: left 25px center;
+}
+
+
+.card__submit {
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+}
