@@ -242,7 +242,7 @@ body {
 
 .header__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 1.28;
   text-align: center;
   color: #4ED0EA;
@@ -571,7 +571,7 @@ body {
   line-height: 100%;
   text-align: center;
   color: #FFFFFF;
-  padding: 10px 20px 12px;
+  padding: 10px 10px 12px;
   background: #123C9E;
   border-radius: 10px;
   position: absolute;
@@ -587,10 +587,10 @@ body {
 
 .info__text-1 {
   position: absolute;
-  top: 28px;
-  right: 25px;
+  top: 18px;
+  right: 20px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1;
   text-align: center;
   color: #ED7101;
@@ -598,10 +598,10 @@ body {
 
 .info__text-2 {
   position: absolute;
-  bottom: 51px;
+  bottom: 45px;
   left: 223px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1;
   text-align: center;
   color: #123C9E;
