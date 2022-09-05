@@ -32,11 +32,11 @@ var landingFunctions = {
 		});
 
 		$(".review__nav-left").click(function () {
-			owl.trigger("next.owl.carousel");
+			owl.trigger("prev.owl.carousel");
 		});
 
 		$(".review__nav-right").click(function () {
-			owl.trigger("prev.owl.carousel");
+			owl.trigger("next.owl.carousel");
 		});
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
@@ -59,8 +59,19 @@ var landingFunctions = {
 			});
 		});
 
-		// AOS.init({
-		// 	disable : 'mobile',
+		$(window).scroll(function() {
+			$('.order__btn').each(function(){
+			var imagePos = $(this).offset().top;
+			
+	
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow + 1000) {
+					$(this).addClass("animate__rollIn");
+				}
+			});
+		});
+
+		// 	disable
 		// 	once: true,
 		// 	duration: 1000,
 		// 	offset : -200,

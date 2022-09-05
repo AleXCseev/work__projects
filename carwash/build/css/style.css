@@ -458,14 +458,22 @@ body {
   height: 80px;
   background: #FF4D00;
   border-radius: 20px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .order__btn span {
+  display: inline-block;
   font-weight: 500;
   font-size: 24px;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+.order__btn:hover {
+  background: #da0000;
 }
 
 .quantity__text {

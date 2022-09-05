@@ -159,14 +159,20 @@
     height: 80px;
     background: #FF4D00;
     border-radius: 20px;
+    transition: 0.3s ease;
 
     span {
+        display: inline-block;
         font-weight: 500;
         font-size: 24px;
         line-height: 1;
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
+    }
+
+    &:hover {
+        background: #da0000;
     }
 }
 
