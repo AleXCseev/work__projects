@@ -28,6 +28,10 @@
         top: 10%;
         transform: translate(-50%, -50%);
     }
+
+    .info__section-2 .info__text {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -147,4 +151,17 @@
             transform: translateX(-50%);
         }
     }
+    .bar__item {
+        img {
+            width: 15vw;
+            height: auto;
+        }
+    }
+    .divider__horizontal {
+        height: 28vw;
+    }
+}
+
+@media (max-width: 375px) {
+    
 }

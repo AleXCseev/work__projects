@@ -103,6 +103,7 @@
     background: rgba(39, 13, 3, 0.7);
     border-radius: 30px;
     position: relative;
+    overflow: hidden;
 }
 
 .bar__wrapper {
@@ -292,6 +293,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .info__text {
+        margin-bottom: 60px;
     }
 }
 
