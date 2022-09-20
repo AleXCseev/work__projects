@@ -19,10 +19,14 @@
     height: auto;
 }
 
+.review__slider .owl-stage-outer {
+    overflow: hidden;
+}
+
 .review__slide {
     width: 100%;
     height: auto;
-    box-shadow: 0px 0px 20px rgba(255, 170, 0, 0.35);
+    // box-shadow: 0px 0px 20px rgba(255, 170, 0, 0.35);
     border-radius: 20px;
     border: 2px solid #FFAA00;
     padding: 32px 20px 31px;
