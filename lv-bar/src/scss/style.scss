@@ -1,0 +1,150 @@
+@import "fonts";
+@import "main";
+@import "header";
+@import "info";
+
+@media (max-width: 1080px) {
+    .container {
+        width: 700px;
+    }
+    .info__block {
+        width: 100%;
+        align-items: center;
+    }
+    .info__block-bar {
+        width: 100%;
+    }
+    .info__block-img {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-bottom: 20px;
+    }
+    .info__text {
+        margin-bottom: 0;
+    }
+    .info__section-2:before {
+        top: 10%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: calc(100% - 30px);
+    }
+}
+
+@media (max-width: 540px) {
+    .info__section-2:before {
+        top: 7%;
+        background-image: url(../img/decor-mb.png);
+        width: 100%;
+        height: 180vw;
+    }
+    .info__block-img {
+        width: 115%;
+        height: 99vw;
+        margin-left: 20px;
+    }
+    .info__img-1 {
+        top: 0;
+        left: 10vw;
+        z-index: 2;
+        width: 47%;
+    }
+    .info__img-2 {
+        top: 10vw;
+        right: -6vw;
+        width: 91%;
+    }
+    .info__img-3 {
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+        width: 81%;
+    }
+    .discount {
+        width: 28vw;
+        height: 28vw;
+        top: 4vw;
+        right: 9vw;
+    }
+    .info__section-wrapper {
+        padding: 30px 0 70px;
+    }
+}
+
+@media (max-width: 414px) {
+    .info__block-img {
+        width: 115%;
+        height: 98vw;
+        margin-left: 20px;
+    }
+    .discount {
+        width: 30vw;
+        height: 30vw;
+        top: 4vw;
+        right: 8vw;
+        font-size: 6vw;
+    }
+    .info__title {
+        font-size: 7vw;
+    }
+    .info__text {
+        font-size: 6vw;
+        br {
+            display: none;
+        }
+    }
+    .bar__info-text {
+        font-size: 6vw;
+        margin-bottom: 6vw;
+    }
+    .bar {
+        width: 100%;
+        height: 86vw;
+    }
+    .bar__title {
+        font-size: 6vw;
+    }
+    .timer__title {
+        font-size: 5vw;
+    }
+    .timer__text {
+        font-size: 4.5vw;
+    }
+    .timer__number {
+        font-size: 6.5vw;
+    }
+    .timer__block {
+        width: 15vw;
+    }
+    .info__logo {
+        height: 12vw;
+        margin-bottom: 17px;
+    }
+    .info__block-img {
+        margin-bottom: 10px;
+    }
+    .order__btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    @keyframes decor {
+        0% {
+            opacity: 1;
+            transform: translateX(-50%);
+        }
+        50% {
+            opacity: 0.6;
+            transform: translateX(-50%) scale(1.05);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(-50%);
+        }
+    }
+}
