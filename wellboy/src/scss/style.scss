@@ -76,6 +76,9 @@
     .galary__block {
         margin-bottom: 60px;
     }
+    .video {
+        margin-left: 280px;
+    }
     .card__right {
         width: 600px;
         padding: 40px 50px 48px 170px;
@@ -128,6 +131,24 @@
     .footer__section .header__decor-1 {
         top: -176px;
         right: -630px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__goose {
+        bottom: 88px;
+        left: -225px;
+        width: 250px;
+    }
+    .footer__line-wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .galary__slide:hover {
+        &:before {
+            opacity: 0;
+        }
     }
 }
 
@@ -310,6 +331,9 @@
         width: 330px;
         height: 586px;
     }
+    .video {
+        margin-left: 0px;
+    }
     .card__right {
         width: 100%;
         padding: 0;
@@ -390,7 +414,11 @@
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
-
+    }
+    .card__photo {
+        &:hover {
+            transform: none;
+        }
     }
     .card__list {
         width: 100%;
@@ -672,6 +700,10 @@
     .card__list-item {
         font-size: 4.5vw;
     }
+    .card__photo {
+        width: 31.5%;
+        height: 17.5vw;
+    }
     .review__slider .owl-nav {
         width: 100%;
     }
@@ -693,14 +725,10 @@
         margin-right: 4vw;
     }
     .header__info-text span {
-        font-size: 5.5vw;
+        font-size: 5.2vw;
     }
     .header__info-text {
         font-size: 4.8vw;
-    }
-    .card__photo {
-        width: 32%;
-        height: 17.5vw;
     }
     .card__left:before {
         top: 41%;
@@ -710,6 +738,10 @@
     }
     .card__input {
         padding: 0 18px;
+    }
+    .card__photo {
+        width: 31.5%;
+        height: 16vw;
     }
     .header__date {
         font-weight: 400;

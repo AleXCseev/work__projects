@@ -2,7 +2,7 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.time()
-		this.video()
+		// this.video()
 		this.modal()
 	}, 
 
@@ -18,26 +18,6 @@ var landingFunctions = {
 				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
 			e.preventDefault();
 		})
-		
-		// $(".review__slider").owlCarousel({
-		// 	loop: true,
-		// 	nav: true,
-		// 	dots: false,
-		// 	dotsEach: true,
-		// 	items: 2,
-		// 	margin: 72,
-		// 	autoHeight: false,
-		// 	responsive:{
-		// 		0:{
-		// 			items:1,
-		// 			autoHeight: true,
-		// 		},
-		// 		1025:{
-		// 			items:2,
-		// 			autoHeight: false,
-		// 		}
-		// 	}
-		// });
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
 
