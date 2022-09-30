@@ -68,15 +68,15 @@ var landingFunctions = {
 				var h = String(23 - d.getHours()).padStart(2, "0");
 				var m = String(59 - d.getMinutes()).padStart(2, "0");
 				var s = String(60 - d.getSeconds()).padStart(2, "0");
-				var ms = String(1000 - d.getMilliseconds()).padStart(3, "0");
+				// var ms = String(1000 - d.getMilliseconds()).padStart(3, "0");
 				$(hoursSelector).text(h)
 				$(minutesSelector).text(m)
 				$(secondsSelector).text(s)
-				$(milisecondsSelector).text(ms)
+				// $(milisecondsSelector).text(ms)
 			}
 			setInterval(function () {
-				runMultiple(".hours", ".minutes", ".seconds", ".miliseconds")
-			}, 103);
+				runMultiple(".hours", ".minutes", ".seconds")
+			}, 1000);
 		}
 	
 		timer()

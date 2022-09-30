@@ -110,20 +110,15 @@ body {
 	width: 100%;
 	height: auto;
 	font-size: 15px;
-	font-family: 'Helvetica Neue', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: normal;
-	color: #ffffff;
-	background: url(../img/main-bg.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-color: #12254D;
+	color: #FFFFFF;
 }
 
 .visually-hidden {
 	position: absolute;
 	clip: rect(0 0 0 0);
-	// width: 1px;
+	width: 1px;
 	height: 1px;
 	margin: -1px;
 }
@@ -137,13 +132,16 @@ body {
 	justify-content: flex-start;
 	align-items: center;
 	overflow: hidden;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .container {
-	width: 1240px;
+	width: 1014px;
 	height: 100%;
 	margin: 0 auto;
-	position: relative;
 }
 
 .main {

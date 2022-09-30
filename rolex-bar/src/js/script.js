@@ -62,48 +62,21 @@ var landingFunctions = {
 			};
 		}
 
-		// function getDate(plusDays) {
-		// 	var today = new Date();
-		// 	var dd = String(today.getDate() + plusDays).padStart(2, '0');
-		// 	var mm = String(today.getMonth() + 1).padStart(2, '0');
-		// 	if (+dd < 0) {
-		// 		mm = String(today.getMonth()).padStart(2, '0');
-		// 	}
-			
-		// 	var yyyy = String(today.getFullYear());
-		// 	yyyy = yyyy.substr(yyyy.length - 2);
-		// 	var currentDaysInMonth = new Date().daysInMonth()
-		// 	if (+dd > currentDaysInMonth) {
-		// 		dd = String(dd - currentDaysInMonth).padStart(2, '0');
-		// 		mm = String(+mm + 1).padStart(2, '0');
-		// 	}
-		// 	if (+dd < 0) {
-		// 		dd = String(currentDaysInMonth + +dd).padStart(2, '0');
-		// 	}
-		// 	return dd + "." + mm + "." + yyyy
-		// }
-
-		// $(".date__1").text(getDate(-5));
-    	// $(".date__2").text(getDate(2));
-		// $(".header__date span").text(getDate(2));
-		// $(".card__date .date").text(getDate(2));
-		// $(".year").text(new Date().getFullYear());
-
 		function timer () {
 			function runMultiple(hoursSelector, minutesSelector, secondsSelector, milisecondsSelector) {
 				var d = new Date();
 				var h = String(23 - d.getHours()).padStart(2, "0");
 				var m = String(59 - d.getMinutes()).padStart(2, "0");
 				var s = String(60 - d.getSeconds()).padStart(2, "0");
-				var ms = String(1000 - d.getMilliseconds()).padStart(3, "0");
+				// var ms = String(1000 - d.getMilliseconds()).padStart(3, "0");
 				$(hoursSelector).text(h)
 				$(minutesSelector).text(m)
 				$(secondsSelector).text(s)
-				$(milisecondsSelector).text(ms)
+				// $(milisecondsSelector).text(ms)
 			}
 			setInterval(function () {
-				runMultiple(".hours", ".minutes", ".seconds", ".miliseconds")
-			}, 48);
+				runMultiple(".hours", ".minutes", ".seconds")
+			}, 1000);
 		}
 	
 		timer()
@@ -133,10 +106,10 @@ var landingFunctions = {
 
 		function scrollStop(selector) {
 			setTimeout(function() {
-				var el = $(".bar__column__1 .bar__item-active").html()
-				$(".bar__item-center").empty().append(el)
+				var el = $(".bar__column__1 .bar__item-active span").text()
+				$(".bar__item-center span").addClass("bar__item-logos").text(el)
 				$(".bar__item-center").addClass("scale");
-			}, 80)
+			}, 20)
 		}
 		
 		var interval = 0
@@ -150,7 +123,7 @@ var landingFunctions = {
 	
 					interval = setInterval(function() {
 						scrollBar(".bar__column")
-					}, 150)
+					}, 100)
 	
 					$(".start").hide()
 					$(".stop").fadeIn(200)
@@ -182,18 +155,19 @@ var landingFunctions = {
 			}
 			if(count === 4) {
 				setTimeout(function() {
-					$(".timer").hide()
-					$(".header__title-main").hide()
-					$(".info__section").hide()
-					$(".header__logo-main").hide()
-					$(".header__hide").fadeIn(1000);
+					$(".info__section-1").hide()
+					$(".info__section-2").fadeIn(1000)
 
-					$([document.documentElement, document.body]).animate(
-						{
-							scrollTop: $("body").offset().top,
-						},
-						1000
-					);
+					// if($(window).width() > 1000 ) {
+					// 	$(".site__wrapper").addClass("active")
+					// }
+
+					// $([document.documentElement, document.body]).animate(
+					// 	{
+					// 		scrollTop: $("body").offset().top,
+					// 	},
+					// 	1000
+					// );
 				}, 4000)
 			}
 		})
@@ -202,5 +176,14 @@ var landingFunctions = {
 
 $(document).ready(function() {
 	landingFunctions.init();
+	// $(".timer").hide()
+	// $(".bar__info").hide()
+	// $(".bar").hide()
+	// $(".order__btn-start").hide()
+	// $(".header__title-header").hide()
+	// $(".header__decor").hide()
+	// $(".mobile__imgs").hide()
+	// $(".header__hide").fadeIn(1000);
+
 });
 
