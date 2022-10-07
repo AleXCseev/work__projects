@@ -3,7 +3,7 @@ var landingFunctions = {
 		this.initLibraris()
 		this.time()
 		this.video()
-		// this.modal()
+		this.modal()
 	}, 
 
 	initLibraris: function() {
@@ -40,6 +40,25 @@ var landingFunctions = {
 		$('.galary__btn-left').click(function() {
 			owl.trigger('prev.owl.carousel');
 		})
+
+		function switchBtns(selector) {
+			$(selector + " .card__size-btn").click(function () {
+				$(this).closest(".card__size-btns").find(".card__size-btn").removeClass("active")
+				$(this).addClass("active");
+			})
+		}
+	
+		switchBtns(".card");
+
+		$(".review__slider").owlCarousel({
+			loop: true,
+			nav: false,
+			dots: true,
+			dotsEach: true,
+			items: 2,
+			margin: 20,
+			autoHeight: false,
+		});
 
 		// $(".galary__slider-2").owlCarousel({
 		// 	loop: true,
