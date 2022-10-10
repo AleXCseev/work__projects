@@ -66,6 +66,7 @@
     line-height: 1.2;
     text-align: center;
     color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 .galary__column-2 {
@@ -82,6 +83,7 @@
     top: -48px;
     right: -90px;
     z-index: 2;
+    animation: rotate 30s linear infinite;
 }
 
 .galary__slider-2 {
@@ -155,4 +157,21 @@
 
 .play {
     transition: 0.3s ease;
+}
+
+.galary__slider-mobile {
+    display: none !important;
+}
+
+.galary__btn-mobile {
+    display: none;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

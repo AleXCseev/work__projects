@@ -27,8 +27,9 @@
 .card {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-bottom: 75px;
+    position: relative;
 
     &:last-child {
         margin-bottom: 0;
@@ -38,7 +39,7 @@
 .card__1 {
    .card__discount {
         top: 33px;
-        right: 81px;
+        left: 640px;
    }
 
    .card__boot {
@@ -94,6 +95,10 @@
     // justify-content: space-between;
     // align-items: flex-start;
     flex-shrink: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
 }
 
 .card__photos {
@@ -319,6 +324,8 @@
     text-decoration: underline;
     color: #3B7197;
     margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
 }
 
 .card__form {
@@ -362,4 +369,10 @@
     span {
         font-weight: 700;
     }
+}
+
+.card__submit {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
 }

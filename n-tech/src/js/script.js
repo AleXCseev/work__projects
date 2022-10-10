@@ -7,17 +7,31 @@ var landingFunctions = {
 	}, 
 
 	initLibraris: function() {
+		if ($(window).width() > 700) {
+			$('[href*="#"]').on('click', function (e) {
+				var fixedOffset = 0;
+				// var cardHeight = $(this).outerHeight(false)
+				// var windowHeight = $(window).height()
+				$('html, body')
+					.stop()
+					// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+					.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+				e.preventDefault();
+			})
+		} else {
+			$('[href*="#"]').on('click', function (e) {
+				var fixedOffset = 20;
+				var cardHeight = $("#card").outerHeight(false)
+				var windowHeight = $(window).height()
 
-		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = 0;
-			// var cardHeight = $(this).outerHeight(false)
-			// var windowHeight = $(window).height()
-			$('html, body')
-				.stop()
-				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
-			e.preventDefault();
-		})
+				$('html, body')
+					.stop()
+					.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+					// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+				e.preventDefault();
+			})
+		}
+		
 
 		
 		var owl = $(".galary__slider-1, .galary__slider-2, .galary__slider-3").owlCarousel({
@@ -33,12 +47,24 @@ var landingFunctions = {
 			// animateOut: 'fadeOut',
 		});
 
+		var owl2 = $(".galary__slider-mobile").owlCarousel({
+			loop: true,
+			nav: false,
+			dots: false,
+			dotsEach: true,
+			items: 1,
+			margin: 20,
+			autoHeight: true,
+		});
+
 		$('.galary__btn-right').click(function() {
 			owl.trigger('next.owl.carousel');
+			owl2.trigger('next.owl.carousel');
 		})
 
 		$('.galary__btn-left').click(function() {
 			owl.trigger('prev.owl.carousel');
+			owl2.trigger('prev.owl.carousel');
 		})
 
 		function switchBtns(selector) {
@@ -58,79 +84,17 @@ var landingFunctions = {
 			items: 2,
 			margin: 20,
 			autoHeight: false,
+			responsive:{
+				0:{
+					items: 1,
+					autoHeight: true,
+				},
+				1025:{
+					items: 2,
+					autoHeight: false,
+				}
+			}
 		});
-
-		// $(".galary__slider-2").owlCarousel({
-		// 	loop: true,
-		// 	nav: false,
-		// 	dots: false,
-		// 	dotsEach: true,
-		// 	items: 1,
-		// 	margin: 0,
-		// 	autoHeight: false,
-		// 	mouseDrag: false,
-		// 	touchDrag: false,
-		// 	animateOut: 'fadeOut',
-		// });
-
-		// $(".galary__slider-3").owlCarousel({
-		// 	loop: true,
-		// 	nav: false,
-		// 	dots: false,
-		// 	dotsEach: true,
-		// 	items: 1,
-		// 	margin: 0,
-		// 	autoHeight: false,
-		// 	mouseDrag: false,
-		// 	touchDrag: false,
-		// 	animateOut: 'fadeOut',
-		// });
-
-		// $(".galary__2").owlCarousel({
-		// 	loop: true,
-		// 	nav: true,
-		// 	dots: true,
-		// 	dotsEach: true,
-		// 	items: 1,
-		// 	margin: 0,
-		// 	autoHeight: false,
-		// });
-
-		// var owl = $(".review__slider").owlCarousel({
-		// 	loop: true,
-		// 	nav: false,
-		// 	dots: false,
-		// 	dotsEach: true,
-		// 	items: 3,
-		// 	margin: 100,
-		// 	autoHeight: false,
-		// 	responsive:{
-		// 		0:{
-		// 			margin: 50,
-		// 			items: 1,
-		// 			nav: true,
-		// 			dots: true,
-		// 			autoHeight: true,
-		// 		},
-		// 		1001:{
-		// 			items: 3,
-		// 			nav: false,
-		// 			dots: false,
-		// 			autoHeight: false,
-		// 		},
-		// 		1241:{
-		// 			margin: 100,
-		// 		}
-		// 	}
-		// });
-
-		// $('.review__btn-right').click(function() {
-		// 	owl.trigger('next.owl.carousel');
-		// })
-
-		// $('.review__btn-left').click(function() {
-		// 	owl.trigger('prev.owl.carousel');
-		// })
 
 		// $(window).scroll(function() {
 		// 	$('.info__boot-1').each(function(){
@@ -156,16 +120,16 @@ var landingFunctions = {
 		// 	});
 		// });
 	
-		// AOS.init({
-		// 	disable : 'mobile',
-		// 	once: true,
-		// 	duration: 1000,
-		// 	offset : -200,
-		// });
+		AOS.init({
+			disable : 'mobile',
+			once: true,
+			duration: 1000,
+			offset : 0,
+		});
 	
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
+		$(window).resize(function() {
+			AOS.refresh();
+		})
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
