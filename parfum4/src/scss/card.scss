@@ -1,0 +1,337 @@
+.card__section {
+    width: 100%;
+    height: auto;
+}
+
+.card__section-wrapper {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+
+    .info__block-top {
+        font-size: 28px;
+        margin-top: -24px;
+    }
+}
+
+.card__section-subtitle {
+    color: rgb(0, 0, 0);
+    font-size: 82px;
+    line-height: 1.3;
+    margin-bottom: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card__block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .card {
+    width: 275px;
+    height: 500px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  
+  .close {
+    display: none;
+  }
+  
+  .card__header-discount {
+    width: auto;
+    height: auto;
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 4px;
+  }
+  
+  .card__flag {
+    width: 21px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .card__header-discount {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #95466F;
+  }
+  
+  .card__img {
+    width: auto;
+    height: auto;
+    max-height: 300px;
+    max-width: 250px;
+    object-fit: contain;
+    font-family: "object-fit: contain;";
+  }
+  
+  .card__footer {
+    padding-bottom: 21px;
+  }
+  
+  .card__brand {
+    font-family: ""Roboto", sans-serif", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 5px;
+  }
+  
+  .card__name {
+    font-family: ""Roboto", sans-serif", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  
+  .card__info {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 238, 247, 0.95);
+    backdrop-filter: blur(20px);
+    padding: 18px 15px 15px;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 15px 15px 20px rgba(96, 45, 72, 0.11);
+    z-index: 2;
+  }
+  .card__info .card__brand {
+    margin-bottom: 0;
+  }
+  .card__info .card__name {
+    margin-bottom: 4px;
+  }
+  .card__info .card__description,
+  .card__info .card__volume,
+  .card__info .card__manufactur {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+  }
+  .card__info .card__description {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    margin-bottom: 5px;
+  }
+  .card__info .card__manufactur {
+    margin-bottom: 4px;
+  }
+  .card__info.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .card__price {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+  }
+  
+  .card__price-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+  
+  .old__price {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: #000000;
+    position: relative;
+    margin-right: 15px;
+  }
+  .old__price:before {
+    content: "";
+    width: 105%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+  }
+  
+  .new__price {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #9978F7;
+  }
+  
+  .open__form-btn {
+    width: 245px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+    font-family: ""Roboto", sans-serif", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+    margin: auto;
+    transition: 0.3s ease;
+    flex-shrink: 0;
+  }
+  .open__form-btn:hover {
+    /* background-color: #ddd; */
+    background: linear-gradient(97.51deg, #FF44A6 -17.96%, #907DFF 107.83%);
+    color: #FFFFFF;
+    border: none;
+  }
+  
+  .card__form-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 238, 247, 0.95);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 3;
+    padding: 59px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card__form-block.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .card__form-block .card__brand {
+    margin-bottom: 0;
+  }
+  .card__form-block .card__name {
+    margin-bottom: 21px;
+  }
+  .card__form-block .card__price {
+    margin-bottom: 37px;
+  }
+  
+  .card__form-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  .card__form {
+    width: 245px;
+    margin-bottom: 15px;
+  }
+  .card__form .header__order-btn {
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: none;
+    border: 1px solid #000000;
+    color: #000;
+    transition: 0.3s ease;
+    &:hover {
+        background: linear-gradient(97.51deg, #FF44A6 -17.96%, #907DFF 107.83%);
+        color: #FFFFFF;
+        border: none;
+    }
+   
+  }
+  
+  .card__input-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .card__input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #000000;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    color: #000000;
+    padding: 0 20px;
+    background-color: transparent;
+  }
+  
+  .card__form-info {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .card__info-close {
+    display: none;
+  }
+  
+  .card__mobile-btns {
+    display: none;
+  }
