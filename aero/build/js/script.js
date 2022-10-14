@@ -4,7 +4,7 @@ var landingFunctions = {
 		this.time()
 		this.video()
 		this.modal()
-		this.paralax()
+		// this.paralax()
 	}, 
 
 	initLibraris: function() {
