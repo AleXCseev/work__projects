@@ -8,6 +8,7 @@
     width: 100%;
     height: auto;
     padding-bottom: 168px;
+    position: relative;
 }
 
 .info__block {
@@ -155,13 +156,90 @@
 
 .info__prod {
     position: absolute;
-    left: 160px;
+    left: 180px;
     top: 30px;
 }
 
 .info__prod-wrapper {
+    position: absolute;
+    bottom: -100px;
+    left: 0px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
 }
+
 .info__prod-2 {
+    width: 124px;
+    height: auto;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
 }
+
 .info__prod-3 {
+    position: absolute;
+    bottom: 48px;
+    left: -85px;
+    filter: blur(5px);
+    border-radius: 5px;
+    transform: rotate(-15deg);
+    width: 104px;
+    height: auto;
+
+}
+
+.info__prod-big {
+    position: absolute;
+    bottom: -140px;
+    right: -790px;
+    width: 1000px;
+    height: auto;
+}
+
+.info__leaf {
+    position: absolute;
+
+    img {
+        filter: blur(5px);
+        height: auto;
+    }
+}
+
+.info__leaf-1 {
+    top: 80px;
+    left: -240px;
+
+    img {
+        width: 150px;
+        transform: rotate(-30deg);
+    }
+}
+
+.info__leaf-2 {
+    left: -280px;
+    bottom: 150px;
+
+    img {
+        width: 350px;
+        transform: rotate(15deg);
+    }
+}
+
+.info__leaf-3 {
+    right: -140px;
+    top: 350px;
+
+    img {
+        width: 200px;
+        transform: rotate(180deg);
+    }
+}
+
+.info__leaf-4 {
+    right: 65px;
+    bottom: 460px;
+
+    img {
+        width: 100px;
+        transform: rotate(-55deg);
+    }
 }

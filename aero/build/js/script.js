@@ -8,118 +8,57 @@ var landingFunctions = {
 	}, 
 
 	initLibraris: function() {
-		if ($(window).width() > 700) {
-			$('[href*="#"]').on('click', function (e) {
-				var fixedOffset = 0;
-				// var cardHeight = $(this).outerHeight(false)
-				// var windowHeight = $(window).height()
-				$('html, body')
-					.stop()
-					// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-					.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
-				e.preventDefault();
-			})
-		} else {
-			$('[href*="#"]').on('click', function (e) {
-				var fixedOffset = 20;
-				var cardHeight = $("#card").outerHeight(false)
-				var windowHeight = $(window).height()
-
-				$('html, body')
-					.stop()
-					.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-					// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
-				e.preventDefault();
-			})
-		}
 		
+		$('[href*="#"]').on('click', function (e) {
+			var fixedOffset = 20;
+			var cardHeight = $("#card").outerHeight(false)
+			var windowHeight = $(window).height()
 
+			$('html, body')
+				.stop()
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+			e.preventDefault();
+		})
 		
-		var owl = $(".galary__slider-1, .galary__slider-2, .galary__slider-3").owlCarousel({
+		$.raty.path = $("body").data("path") +  '/img/raty';
+
+		$('.modal__raiting').raty({
+			half: true,
+			space: false,
+			number: 5,
+		});
+
+		$(".card__slider").owlCarousel({
 			loop: true,
-			nav: false,
-			dots: false,
+			nav: true,
+			dots: true,
 			dotsEach: true,
 			items: 1,
-			margin: 0,
+			margin: 50,
+			stagePadding: 15,
 			autoHeight: false,
-			mouseDrag: false,
-			touchDrag: false,
-			// animateOut: 'fadeOut',
 		});
-
-		var owl2 = $(".galary__slider-mobile").owlCarousel({
-			loop: true,
-			nav: false,
-			dots: false,
-			dotsEach: true,
-			items: 1,
-			margin: 20,
-			autoHeight: true,
-		});
-
-		$('.galary__btn-right').click(function() {
-			owl.trigger('next.owl.carousel');
-			owl2.trigger('next.owl.carousel');
-		})
-
-		$('.galary__btn-left').click(function() {
-			owl.trigger('prev.owl.carousel');
-			owl2.trigger('prev.owl.carousel');
-		})
-
-		function switchBtns(selector) {
-			$(selector + " .card__size-btn").click(function () {
-				$(this).closest(".card__size-btns").find(".card__size-btn").removeClass("active")
-				$(this).addClass("active");
-			})
-		}
-	
-		switchBtns(".card");
 
 		$(".review__slider").owlCarousel({
 			loop: true,
-			nav: false,
-			dots: true,
+			nav: true,
+			dots: false,
 			dotsEach: true,
 			items: 2,
-			margin: 20,
+			margin: 50,
 			autoHeight: false,
-			responsive:{
-				0:{
-					items: 1,
-					autoHeight: true,
-				},
-				1025:{
-					items: 2,
-					autoHeight: false,
-				}
-			}
+			// responsive:{
+			// 	0:{
+			// 		items: 1,
+			// 		autoHeight: true,
+			// 	},
+			// 	1025:{
+			// 		items: 2,
+			// 		autoHeight: false,
+			// 	}
+			// }
 		});
-
-		// $(window).scroll(function() {
-		// 	$('.info__boot-1').each(function(){
-		// 	var imagePos = $(this).offset().top;
-			
-	
-		// 	var topOfWindow = $(window).scrollTop();
-		// 		if (imagePos < topOfWindow + 1000) {
-		// 			$(this).addClass("animate__slideInLeft");
-		// 		}
-		// 	});
-		// });
-
-		// $(window).scroll(function() {
-		// 	$('.info__boot-2').each(function(){
-		// 	var imagePos = $(this).offset().top;
-			
-	
-		// 	var topOfWindow = $(window).scrollTop();
-		// 		if (imagePos < topOfWindow + 1000) {
-		// 			$(this).addClass("animate__slideInRight");
-		// 		}
-		// 	});
-		// });
 	
 		AOS.init({
 			disable : 'mobile',
@@ -187,13 +126,7 @@ var landingFunctions = {
 			return dd + "." + mm + "." + yyyy
 		}
 
-		// $(".date__1").text(getDate(-5));
-    	// $(".date__2").text(getDate(2));
-
 		$(".header__date span").text(getDate(2))
-		// $(".card__date .date").text(getDate(2))
-		
-		// $(".year").text(new Date().getFullYear())
 	},
 
 	modal: function() {
@@ -298,8 +231,8 @@ var landingFunctions = {
 			if (scenesParallax.length === 0) {
 				$('.parallax').each(function (i) {
 					scenesParallax[i] = new Parallax($(this).children('div').attr('data-depth', randomNum(10, 20)).end().get(0), {
-						frictionX: 0.002,
-						frictionY: 0.002,
+						frictionX: 0.001,
+						frictionY: 0.001,
 						invertX: Math.random() >= 0.5,
 						invertY: Math.random() >= 0.5
 					});
