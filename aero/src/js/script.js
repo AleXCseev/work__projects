@@ -4,7 +4,7 @@ var landingFunctions = {
 		this.time()
 		this.video()
 		this.modal()
-		// this.paralax()
+		this.paralax()
 	}, 
 
 	initLibraris: function() {
@@ -47,29 +47,31 @@ var landingFunctions = {
 			dotsEach: true,
 			items: 2,
 			margin: 50,
-			autoHeight: false,
-			// responsive:{
-			// 	0:{
-			// 		items: 1,
-			// 		autoHeight: true,
-			// 	},
-			// 	1025:{
-			// 		items: 2,
-			// 		autoHeight: false,
-			// 	}
-			// }
+			autoHeight: true,
+			responsive:{
+				0:{
+					items: 1,
+					dots: true,
+					// autoHeight: true,
+				},
+				1025:{
+					items: 2,
+					dots: false,
+					// autoHeight: false,
+				}
+			}
 		});
 	
-		AOS.init({
-			disable : 'mobile',
-			once: true,
-			duration: 1000,
-			offset : 0,
-		});
+		// AOS.init({
+		// 	disable : 'mobile',
+		// 	once: true,
+		// 	duration: 1000,
+		// 	offset : 0,
+		// });
 	
-		$(window).resize(function() {
-			AOS.refresh();
-		})
+		// $(window).resize(function() {
+		// 	AOS.refresh();
+		// })
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
