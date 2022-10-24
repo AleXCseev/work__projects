@@ -1,0 +1,141 @@
+.review__section {
+    width: 100%;
+    height: auto;
+    padding: 41px 0 27px;
+    background: linear-gradient(90deg, #58B3FF 0%, #1B82D8 50%, #006DC7 100%);
+
+}
+
+.review__section-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 44px;
+}
+
+.review__slider {
+    width: 100%;
+    height: auto;
+}
+
+.review__slide {
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 30px 20px 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review__raiting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    img {
+        width: 18px;
+        height: 18px;
+        margin-right: 2px;
+
+        &:last-child {
+        margin-right: 0;
+        }
+    }
+}
+
+.review__text {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #222222;
+    margin-bottom: 13px;
+}
+
+.review__quote {
+    height: 30px;
+    width: auto !important;
+    margin-bottom: 10px;
+}
+
+.review__name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #051E78;
+}
+
+.add__review {
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: transparent;
+    cursor: pointer;
+    margin: auto;
+}
+
+.owl-nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 20px;
+
+    button {
+        width: 50px;
+        height: 50px;
+        background-image: url(../img/arrow.png) !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: contain !important;
+
+        span {
+            display: none;
+        }
+    }
+
+    .owl-next {
+        transform: rotate(180deg);
+    }
+}
+
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: -30px;
+
+    button {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #FFFFFF !important;
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.active {
+            background: #FFC700 !important;
+        }
+    }
+}
