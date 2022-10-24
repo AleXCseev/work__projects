@@ -653,7 +653,7 @@
     }
     .info__item-title {
         font-size: 5.5vw;
-        padding: 0 16vw;
+        padding: 0 8vw;
     }
     .info__item-text {
         font-size: 4.8vw;
@@ -669,11 +669,11 @@
     }
     .info__leaf-3 {
         right: -28px;
-        top: 346vw;
+        top: 355vw;
         z-index: 5;
     }
     .info__list-title {
-        font-size: 11vw;
+        font-size: 10vw;
         margin-bottom: 36px;
     }
     .info__list-icon {
@@ -747,6 +747,7 @@
         bottom: auto;
         top: -3vw;
         right: -18vw;
+        left: auto;
         z-index: 5;
     }
     .card__text {
@@ -836,15 +837,30 @@
     }
 }
 
+@media (max-width: 384px) {
+    .header__leaf-2 {
+        bottom: 175vw;
+    }
+    .info__leaf-3 {
+        top: 370vw;
+    }
+}
+
+@media (max-width: 375px) {
+    .header__leaf-2 {
+        bottom: 180vw;
+    }
+}
+
 @media (max-width: 320px) {
+    .header__leaf-2 {
+        bottom: 200vw;
+    }
     .header__title {
         font-size: 6.9vw;
     }
     .order__btn {
         font-size: 18px;
-    }
-    .header__leaf-2 {
-        bottom: 172vw;
     }
     .header__leaf-3 {
         top: 300vw;
@@ -864,11 +880,11 @@
     }
     .info__item-title {
         font-size: 5.5vw;
-        padding: 0 15vw;
+        padding: 0px 8vw;
     }
     .info__leaf-3 {
         right: -28px;
-        top: 362vw;
+        top: 375vw;
         z-index: 5;
     }
 }
