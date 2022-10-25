@@ -76,6 +76,25 @@
     height: 63px;
     position: relative;
     background: linear-gradient(270deg, #008D0E 0%, #A6E000 100%);
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, #008D0E 0%, #A6E000 100%);
+        opacity: 0;
+        animation: bg 5s infinite;
+    }
+}
+
+@keyframes bg {
+    50% {
+        opacity: 1;
+    }
 }
 
 .price {
@@ -85,6 +104,8 @@
     justify-content: space-around;
     align-items: center;
     padding: 0 30px;
+    position: relative;
+    z-index: 1;
 }
 
 .old__price {

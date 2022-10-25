@@ -20,20 +20,22 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
-		// $(".card__slider").owlCarousel({
-		// 	items: 1,
-		// 	margin: 20,
-		// 	dots: true,
-		// 	nav: true,
-		// 	loop: true,
-		// });
-
-		$(".review__slider").owlCarousel({
+		$(".card__slider").owlCarousel({
 			items: 1,
-			margin: 20,
+			margin: 50,
 			dots: true,
 			nav: true,
 			loop: true,
+			stagePadding: 20,
+		});
+
+		$(".review__slider").owlCarousel({
+			items: 1,
+			margin: 50,
+			dots: true,
+			nav: true,
+			loop: true,
+			stagePadding: 20,
 			autoHeight: true,
 		});
 
@@ -215,7 +217,7 @@ var landingFunctions = {
 		if(localStorage.getItem("quantity")) {
 			$(".quantity").text(localStorage.getItem("quantity"));
 		} else {
-			currentNumber = 25
+			currentNumber = 28
 			localStorage.setItem("quantity", currentNumber)
 			$(".quantity").text(currentNumber);
 		}
@@ -227,7 +229,7 @@ var landingFunctions = {
 				$(".quantity").text(currentNumber);
 				localStorage.setItem("quantity", currentNumber)
 			} else {
-				currentNumber = 25;
+				currentNumber = 28;
 				localStorage.setItem("quantity", currentNumber)
 			}
 		}, 100000)
