@@ -8,18 +8,21 @@
     height: auto;
     padding: 38px 0 44px;
     position: relative;
+    z-index: 1;
 }
 
 .info__decor-1 {
     position: absolute;
     top: 7px;
-    left: -30px;
+    left: -40px;
+    z-index: -1;
 }
 
 .info__decor-2 {
     position: absolute;
-    top: 72px;
+    top: 62px;
     right: -43px;
+    z-index: -1;
 }
 
 .info__title {

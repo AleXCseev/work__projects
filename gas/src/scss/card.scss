@@ -46,7 +46,7 @@
     width: 440px;
     height: auto;
     overflow: hidden;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
 }
 
@@ -68,11 +68,11 @@
         width: 50px;
         height: 50px;
         border-radius: 100%;
-        // padding: 5px;
+        // padding: 5px !important;
         border: 1px solid rgba(0, 182, 248, 0.5) !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: inline-block;
+        text-align: center;
+        // line-height: 50px;
 
         span {
             display: inline-block;
@@ -82,8 +82,10 @@
             background-color: #00B6F8 !important;
             background-image: url(../img/array.png) !important;
             background-repeat: no-repeat !important;
-            background-position: center !important;
+            background-position: left 13px center !important;
             font-size: 0px;
+            line-height: 50px;
+        
         }
     }
 
@@ -209,6 +211,7 @@
 
 .card__submit {
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .header__date {
