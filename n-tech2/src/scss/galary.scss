@@ -1,0 +1,128 @@
+.galary__section {
+    width: 100%;
+    height: auto;
+    background-image: url(../img/galary-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.galary__section-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0 66px;
+}
+
+.galary__section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #DC1C37;
+    margin-bottom: 10px;
+}
+
+.galary__section-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.galary__section-text {
+    width: 100%;
+    max-width: 690px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.galary__block {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.galary__column {
+    width: 49%;
+    max-width: 410px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.galary__column-slider {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.galary__slider {
+    width: 100%;
+    height: auto;
+}
+
+.galary__slide {
+    width: 100%;
+    height: auto;
+
+    img {
+        width: 100%;
+        height: auto;
+        pointer-events: auto;
+    }
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    button {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #fff !important;
+        margin-right: 5px;
+        transition: 0.3s ease;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.active {
+            background-color: #DC1C37 !important;
+        }
+    }
+}
+
+.galary__column-1 {
+}
+.galary__column-2 {
+}
+.galary__column-3 {
+}
+.galary__column-4 {
+}
