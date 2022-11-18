@@ -1,0 +1,114 @@
+.card__section {
+    width: 100%;
+    height: auto;
+    background-image: url(../img/card-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.card__section-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.card__section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.card__items {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.card__item {
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 5px;
+    padding: 10px 20px;
+
+    img {
+        margin-right: 10px;
+    }
+
+    .red {
+        font-weight: 700;
+    }
+
+    .date {
+        color: #DC1C37;
+        font-weight: 700;
+    }
+}
+
+.card__wrapper {
+    width: 100%;
+}
+.card {
+}
+.card__raiting {
+}
+.card__star {
+}
+.card__boot {
+}
+.card__info-block {
+}
+.card__title {
+}
+.card__info {
+}
+.card__info-text {
+}
+.card__info-divider {
+}
+.card__color {
+}
+.black {
+}
+.card__price {
+}
+.price {
+}
+.card__price-text {
+}
+.old__price {
+}
+.new__price {
+}
+.card__photos {
+}
+.card__photo {
+}
+.card__form {
+}
+.card__input-wrapper {
+}
+.card__input {
+}
+.card__select {
+}
+.card__submit {
+}
+
