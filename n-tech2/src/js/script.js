@@ -2,14 +2,15 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.time()
+		this.card()
 		// this.video()
-		// this.modal()
+		this.modal()
 	}, 
 
 	initLibraris: function() {
 		if ($(window).width() > 700) {
 			$('[href*="#"]').on('click', function (e) {
-				var fixedOffset = 0;
+				var fixedOffset = 2;
 				// var cardHeight = $(this).outerHeight(false)
 				// var windowHeight = $(window).height()
 				$('html, body')
@@ -86,25 +87,38 @@ var landingFunctions = {
 	
 		// switchBtns(".card");
 
-		// $(".review__slider").owlCarousel({
-		// 	loop: true,
-		// 	nav: false,
-		// 	dots: true,
-		// 	dotsEach: true,
-		// 	items: 2,
-		// 	margin: 20,
-		// 	autoHeight: false,
-		// 	responsive:{
-		// 		0:{
-		// 			items: 1,
-		// 			autoHeight: true,
-		// 		},
-		// 		1025:{
-		// 			items: 2,
-		// 			autoHeight: false,
-		// 		}
-		// 	}
-		// });
+		var owl = $(".review__slider").owlCarousel({
+			loop: true,
+			nav: false,
+			dots: false,
+			dotsEach: true,
+			items: 3,
+			margin: 40,
+			autoHeight: false,
+			// responsive:{
+			// 	0:{
+			// 		items: 1,
+			// 		autoHeight: true,
+			// 	},
+			// 	1025:{
+			// 		items: 2,
+			// 		autoHeight: false,
+			// 	}
+			// }
+		});
+
+		$('.review__nav-next').click(function() {
+			owl.trigger('next.owl.carousel');
+		})
+
+		$('.review__nav-prev').click(function() {
+			owl.trigger('prev.owl.carousel');
+		})
+
+		owl.on("changed.owl.carousel", function(e) {
+			var index = e.relatedTarget.relative(e.item.index);
+			$(".nav__number").html(String(index + 1).padStart(2, '0'));
+		});
 
 		// $(window).scroll(function() {
 		// 	$('.info__boot-1').each(function(){
@@ -203,6 +217,49 @@ var landingFunctions = {
 		// $(".card__date .date").text(getDate(2))
 		
 		// $(".year").text(new Date().getFullYear())
+	},
+
+	card: function() {
+		function cardImg(selector) {
+			function toggleDataSrcAtribute(string) {
+				$(selector + " .card__boot")
+					.hide()
+					.attr("src",  $(selector + " .card__boot").attr("data-" + string))
+					.fadeIn(1000)
+				$(selector + " .card__photo img").each(function() {
+					$(this).parent().attr("href",  $(this).attr("data-" + string))
+					$(this)
+						.hide()
+						.attr("src",  $(this).attr("data-" + string))
+						.fadeIn(1000)
+				})
+			}
+	
+			$(selector + " .card__color").click(function () {
+				var color = $(this).data("color")
+				toggleDataSrcAtribute(color)
+	
+				$(selector + " .card__color").removeClass("active")
+				$(this).addClass("active")
+	
+				var price = $(this).data("price")
+				$(selector + " .new__price").text(price)
+	
+				var id = $(this).data("id")
+	
+				if ( id !== undefined ) {
+					$(this).closest(".product-card").find('input[name=products]').val(id);
+				}
+			})
+		}
+
+		$(".gender").click(function() {
+			$(".gender").removeClass("active")
+			$(this).addClass("active")
+		})
+		
+		cardImg(".card__2")
+		cardImg(".card__3")
 	},
 
 	modal: function() {
