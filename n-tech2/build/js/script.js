@@ -95,16 +95,20 @@ var landingFunctions = {
 			items: 3,
 			margin: 40,
 			autoHeight: false,
-			// responsive:{
-			// 	0:{
-			// 		items: 1,
-			// 		autoHeight: true,
-			// 	},
-			// 	1025:{
-			// 		items: 2,
-			// 		autoHeight: false,
-			// 	}
-			// }
+			responsive:{
+				0:{
+					items: 1,
+					autoHeight: true,
+				},
+				700: {
+					items: 2,
+					autoHeight: true,
+				},
+				1081:{
+					items: 3,
+					autoHeight: false,
+				}
+			}
 		});
 
 		$('.review__nav-next').click(function() {

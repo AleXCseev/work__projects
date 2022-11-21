@@ -3,7 +3,7 @@
     height: auto;
     background-image: url(../img/header-bg.jpg);
     background-repeat: no-repeat;
-    background-position: cener;
+    background-position: center;
     background-size: cover;
 }
 
@@ -133,6 +133,10 @@
     width: 100%;
     height: auto;
     margin-bottom: 25px;
+
+    .new__price {
+        font-size: 32px;
+    }
 }
 
 .price {
@@ -298,7 +302,7 @@
         content: "";
         position: absolute;
         width: 170px;
-        height: 1px;
+        height: 2px;
         background: rgba(220, 28, 55, 0.4);
         bottom: -10px;
         left: 0;

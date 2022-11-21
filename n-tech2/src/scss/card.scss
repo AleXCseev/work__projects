@@ -229,6 +229,10 @@
     width: 100%;
     height: auto;
     margin-bottom: 31px;
+
+    .card__info-divider {
+        display: none;
+    }
 }
 
 .price {
@@ -444,3 +448,8 @@
     right: -277px;
     transform: translateY(-50%);
 }
+
+// .card__color-wrapper {
+//     width: auto;
+//     display: inline-block;
+// }
